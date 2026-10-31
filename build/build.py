@@ -64,4 +64,5 @@ if __name__ == '__main__':
     build_index()
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_series.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_products.py')], check=True)
+    subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_solutions.py')], check=True)
     print('ok: index.html, catalog.html, products.html')

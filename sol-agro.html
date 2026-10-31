@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Агро: теплиці, поля, ферми — ARVIOM Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Structure follows milesight.com solution pages: hero → section tabs → challenges → solution intro → applications (tabs with devices) → benefits → stories → other solutions → CTA */
+:root{--ink:#1a2433;--text:#333c48;--muted:#545e6b;--line:#e3e7ec;--bg2:#f5f7f9;--blue:#0b5cd6;--blue2:#1a6ef0;--soft:#eef4ff;
+  --tile:linear-gradient(135deg,#edf1f6 0%,#f7f9fb 55%,#e7ecf2 100%);--f:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:120px;overflow-x:clip}
+body{background:#fff;color:var(--text);font-family:var(--f);font-weight:400;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:var(--blue);text-decoration:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+h1,h2,h3{color:var(--ink);font-weight:300;letter-spacing:-.01em}
+.wrap{max-width:1440px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+section.blk{padding-block:88px}
+.alt{background:var(--bg2)}
+.eyebrow{color:var(--blue);font-size:17px;margin-bottom:10px}
+.st{font-size:clamp(30px,3.4vw,44px);line-height:1.15}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;font-weight:400;padding:12px 22px;border-radius:5px;white-space:nowrap}
+.btn::after{content:"›";font-size:20px;line-height:1;transform:translateY(-1px)}
+.btn:hover{background:var(--blue2)}
+.btn.w{background:#fff;color:var(--blue)}
+
+.hero{position:relative;height:min(560px,70vh);min-height:420px;overflow:hidden;background:#0d1520}
+.hero>img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,14,22,.72) 0%,rgba(8,14,22,.35) 50%,rgba(8,14,22,.05) 80%)}
+.hero .tx{position:absolute;z-index:1;left:0;right:0;top:50%;transform:translateY(-50%)}
+.hero .eyebrow{color:#9cc2ff}
+.hero h1{color:#fff;font-size:clamp(34px,4.4vw,58px);line-height:1.08;max-width:18ch}
+.hero p{color:rgba(255,255,255,.92);font-size:19px;margin:16px 0 28px;max-width:48ch}
+
+.tabs{position:sticky;top:64px;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:52px}
+.tabs nav{display:flex;overflow-x:auto;scrollbar-width:none}.tabs nav::-webkit-scrollbar{display:none}
+.tabs nav a{color:var(--text);font-size:15px;padding:16px 18px;border-right:1px solid var(--line);white-space:nowrap}
+.tabs nav a:first-child{padding-left:0}.tabs nav a:last-child{border-right:0}
+.tabs nav a.on{background:var(--blue);color:#fff;padding-left:18px}
+.tabs .bc{font-size:14px;color:var(--muted);white-space:nowrap}.tabs .bc a{color:var(--muted)}
+
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:44px}
+.pc{background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+.pc .im{aspect-ratio:16/10;overflow:hidden;background:var(--bg2)}
+.pc .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.pc:hover .im img{transform:scale(1.04)}
+.pc h3{font-size:21px;font-weight:400;padding:20px 22px 6px}
+.pc p{color:var(--muted);font-size:16px;padding:0 22px 24px}
+
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:56px;align-items:center}
+.intro p{color:var(--muted);margin-top:16px;font-size:17px}
+.intro .pic{background:var(--tile);border-radius:8px;padding:24px;display:flex;align-items:center;justify-content:center}
+
+.apps{display:grid;grid-template-columns:320px minmax(0,1fr);background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.07);overflow:hidden;margin-top:44px;min-height:440px}
+.al{border-right:1px solid var(--line);display:flex;flex-direction:column}
+.al button{all:unset;cursor:pointer;padding:22px 28px;border-bottom:1px solid var(--line);font-size:18px;color:var(--ink);position:relative}
+.al button::after{content:"↘";position:absolute;right:24px;color:var(--muted)}
+.al button.on{color:var(--blue);background:var(--soft)}.al button.on::after{content:"↗";color:var(--blue)}
+.ap{display:none;padding:34px 40px}.ap.on{display:block}
+.ap .where{font-size:14px;color:var(--blue);margin-bottom:8px}
+.ap h3{font-size:26px;margin-bottom:10px}
+.ap p{color:var(--muted);max-width:60ch}
+.ap .apimg{border-radius:8px;overflow:hidden;margin:20px 0 0;max-height:260px}
+.ap .apimg img{width:100%;height:260px;object-fit:cover}
+.devs{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px;margin-top:24px}
+.dev{border:1px solid var(--line);border-radius:8px;padding:16px 12px;text-align:center;color:var(--ink);transition:background .3s}
+.dev:hover{background:var(--soft)}
+.dev .di{height:110px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.dev .di img{max-height:100%;max-width:80%;object-fit:contain}
+.dev b{display:block;font-weight:500;font-size:15px}.dev span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+
+.ben{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:44px}
+.ben div{border-top:1.5px solid var(--blue);padding-top:20px}
+.ben i{font-style:normal;font-size:42px;font-weight:200;color:var(--blue);display:block;line-height:1;margin-bottom:12px}
+.ben b{display:block;font-weight:400;font-size:19px;color:var(--ink);margin-bottom:6px}
+.ben span{color:var(--muted);font-size:16px}
+
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:44px}
+.cc{position:relative;border-radius:8px;overflow:hidden;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#fff;background:#24364b}
+.cc img{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s ease}
+.cc:hover img{transform:scale(1.04)}
+.cc::after{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.15) 0%,rgba(10,20,35,.1) 35%,rgba(10,20,35,.85) 100%)}
+.cc>*{position:relative;z-index:1}
+.cc .chip{align-self:flex-start;background:var(--blue);color:#fff;font-size:12px;border-radius:3px;padding:2px 9px;margin-bottom:auto}
+.cc h3{color:#fff;font-size:21px;line-height:1.3;font-weight:400}
+
+.others{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:36px}
+.oc{position:relative;border-radius:8px;overflow:hidden;min-height:170px;padding:20px;display:flex;align-items:flex-end;color:#fff}
+.oc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.oc:hover img{transform:scale(1.05)}
+.oc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.15),rgba(10,20,35,.85))}
+.oc b{position:relative;z-index:1;font-weight:400;font-size:18px}
+
+.cta{background:linear-gradient(100deg,#0b5cd6 0%,#2b7cf2 100%);border-radius:10px;color:#fff;padding:44px 48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta h2{color:#fff;font-size:30px}.cta p{opacity:.9;margin-top:6px}
+
+/* hub */
+.hub{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:44px}
+.hc{position:relative;border-radius:10px;overflow:hidden;min-height:340px;padding:32px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
+.hc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.hc:hover img{transform:scale(1.04)}
+.hc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.1) 0%,rgba(10,20,35,.35) 40%,rgba(10,20,35,.85) 100%)}
+.hc>*:not(img){position:relative;z-index:1}
+.hc h2{color:#fff;font-size:30px;line-height:1.15;max-width:20ch}
+.hc p{opacity:.92;margin:10px 0 20px;max-width:48ch}
+.hc .btn{align-self:flex-start}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+@media (max-width:900px){section.blk{padding-block:60px}.intro,.apps,.hub{grid-template-columns:1fr}.al{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line)}.al button{white-space:nowrap;border-bottom:0;padding:16px 36px 16px 18px;font-size:16px}.ap{padding:24px 20px}.ben{grid-template-columns:1fr 1fr}.tabs .bc{display:none}.cta{padding:32px 24px}}
+@media (max-width:560px){.ben{grid-template-columns:1fr}.hc{min-height:300px;padding:24px}}
+/* shared site chrome (header/footer) — same as home */
+.sxh{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid #e3e7ec;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300}
+.sxh .in,.sxf .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+.sxh .in{display:flex;align-items:center;gap:36px;height:64px}
+.sxh .lg{display:flex;align-items:baseline;gap:7px;color:#1a2433;text-decoration:none}
+.sxh .lg b{font-weight:500;font-size:21px;letter-spacing:.06em}.sxh .lg span{color:#0b5cd6;font-size:15px}
+.sxh nav{display:flex;gap:30px;font-size:16px}
+.sxh nav a{color:#333c48;text-decoration:none}.sxh nav a:hover,.sxh nav a[aria-current]{color:#0b5cd6}
+.sxh .rt{margin-left:auto;display:flex;gap:10px}
+.sxh .pl{display:inline-flex;align-items:center;border-radius:99px;padding:5px 14px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none}
+.sxh .pl.s{background:#0b5cd6;color:#fff}.sxh .pl.l{border:1.5px solid #0b5cd6;color:#0b5cd6}
+.sxf{background:#f5f7f9;border-top:1px solid #e3e7ec;padding:56px 0 28px;font-size:14px;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300;color:#6b7684}
+.sxf .g{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:32px}
+.sxf .tg{display:flex;align-items:baseline;gap:12px;color:#1a2433;font-size:17px}.sxf .tg i{width:1px;height:18px;background:#b9c3ce;align-self:center}
+.sxf h4{font-weight:400;color:#1a2433;font-size:16px;margin:0 0 12px}
+.sxf ul{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+.sxf a{color:#6b7684;text-decoration:none}.sxf a:hover{color:#0b5cd6}
+.sxf .b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid #e3e7ec;font-size:13px}
+@media (max-width:1100px){.sxh nav{display:none}}
+@media (max-width:900px){.sxf .g{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sxh .pl.l{display:none}}
+</style>
+</head>
+<body>
+<header class="sxh"><div class="in">
+  <a class="lg" href="./"><b>ARVIOM</b><span>Engineering</span></a>
+  <nav aria-label="Розділи"><a href="solutions.html">Рішення</a><a href="products.html">Продукти</a><a href="./#cases">Проєкти</a><a href="./#dev">Розробки</a><a href="./#learn">Навчання</a><a href="./#learn">Підтримка</a><a href="./#video">Відео</a></nav>
+  <div class="rt"><a class="pl l" href="partner.html">Вхід для партнерів</a><a class="pl s" href="./#contact">Зв'язатися</a></div>
+</div></header>
+<div class="hero"><img src="img/sol/agri-hero.webp" alt=""><div class="tx wrap"><div class="eyebrow">Рішення</div><h1>Агро: теплиці, поля, ферми</h1><p>Рішення на полі й у теплиці на основі даних, а не за календарем.</p><a class="btn" href="./#contact">Обговорити проєкт</a></div></div>
+<div class="tabs"><div class="wrap"><nav aria-label="Розділи"><a href="#problems" class="on">Виклики</a><a href="#solution">Рішення</a><a href="#apps">Застосування</a><a href="#benefits">Переваги</a><a href="#cases">Кейси</a></nav>
+<div class="bc"><a href="./">Головна</a> › <a href="solutions.html">Рішення</a> › Агро: теплиці, поля, ферми</div></div></div>
+<main>
+<section id="problems" class="blk"><div class="wrap"><h2 class="st center">З чим стикаються на об'єктах</h2>
+<div class="pgrid"><div class="pc rv"><div class="im"><img src="img/sol/agri-p1.webp" alt="" loading="lazy"></div><h3>Полив і підживлення за графіком</h3><p>Без даних з поля ресурсів то забагато, то замало.</p></div><div class="pc rv"><div class="im"><img src="img/sol/agri-p2.webp" alt="" loading="lazy"></div><h3>Великі відстані й багато ручної роботи</h3><p>Об&#x27;їзди полів і теплиць забирають час і пальне.</p></div><div class="pc rv"><div class="im"><img src="img/sol/agri-p3.webp" alt="" loading="lazy"></div><h3>Мінлива погода</h3><p>Заморозки, спека й злива потребують швидкої реакції.</p></div></div></div></section>
+<section id="solution" class="blk alt"><div class="wrap intro"><div><div class="eyebrow">Як це працює</div><h2 class="st">Датчики, що працюють роками без кабелю й розетки</h2><p>Датчики ґрунту, метеостанції й клімату в теплиці передають дані по LoRaWAN на кілометри. Контролери керують клапанами поливу за розкладом або за вологістю ґрунту.</p></div><div class="pic rv"><img src="img/sol/agri-scene.webp" alt="" loading="lazy"></div></div></section>
+<section id="apps" class="blk"><div class="wrap"><h2 class="st center">Застосування й обладнання</h2><div class="apps rv"><div class="al" role="tablist"><button type="button" class="on">Полив</button><button type="button">Метеодані</button><button type="button">Теплиці й ферми</button><button type="button">Резервуари й техніка</button></div><div><div class="ap on"><div class="where">Де: Поля, сади</div><h3>Полив</h3><p>Вологість, температура й провідність ґрунту; керування клапанами.</p><div class="devs"><a class="dev" href="s-em500.html#m-em500-smtc"><div class="di"><img src="img/cat/cat-soil-moisture-temperature-and-electrical-conductivity-sensor-em500-smtc.webp" alt="EM500-SMTC" loading="lazy"></div><b>EM500-SMTC</b><span>Датчик вологості, температури й провідності ґрунту</span></a><a class="dev" href="s-controllers.html#m-uc51x"><div class="di"><img src="img/cat/cat-solenoid-valve-controller.webp" alt="UC51x" loading="lazy"></div><b>UC51x</b><span>Контролер електромагнітних клапанів</span></a></div></div><div class="ap"><div class="where">Де: Поле, ферма</div><h3>Метеодані</h3><p>Температура, вологість, вітер, опади — прямо з поля.</p><div class="devs"><a class="dev" href="s-wts.html#m-wts506"><div class="di"><img src="img/cat/cat-iot-weather-station-wts506.webp" alt="WTS506" loading="lazy"></div><b>WTS506</b><span>IoT-метеостанція</span></a></div></div><div class="ap"><div class="where">Де: Теплиці, пташники, корівники</div><h3>Теплиці й ферми</h3><p>Клімат, CO₂ і освітленість для рослин і тварин.</p><div class="devs"><a class="dev" href="catalog.html#m-em300-th"><div class="di"><img src="img/em300-th.webp" alt="EM300-TH" loading="lazy"></div><b>EM300-TH</b><span>Датчик температури й вологості</span></a><a class="dev" href="s-em500.html#m-em500-co2"><div class="di"><img src="img/cat/cat-4-in-1-co2-sensor-em500-co2.webp" alt="EM500-CO2" loading="lazy"></div><b>EM500-CO2</b><span>Вуличний датчик CO₂</span></a><a class="dev" href="s-em500.html#m-em500-lgt"><div class="di"><img src="img/cat/cat-light-sensor-em500-lgt.webp" alt="EM500-LGT" loading="lazy"></div><b>EM500-LGT</b><span>Датчик освітленості</span></a></div></div><div class="ap"><div class="where">Де: Ємності, парк техніки</div><h3>Резервуари й техніка</h3><p>Рівень води в резервуарах і місцезнаходження техніки.</p><div class="devs"><a class="dev" href="s-em500.html#m-em500-swl"><div class="di"><img src="img/cat/cat-submersible-water-level-sensor-em500-swl.webp" alt="EM500-SWL" loading="lazy"></div><b>EM500-SWL</b><span>Заглибний датчик рівня води</span></a><a class="dev" href="s-at.html#m-at101"><div class="di"><img src="img/cat/cat-milesight-outdoor-asset-tracker-at101.webp" alt="AT101" loading="lazy"></div><b>AT101</b><span>Вуличний GPS-трекер</span></a><a class="dev" href="s-gateways.html#m-ug67"><div class="di"><img src="img/cat/cat-lorawan-outdoor-gateway.webp" alt="UG67" loading="lazy"></div><b>UG67</b><span>Вуличний LoRaWAN-шлюз</span></a></div></div></div></div></div></section>
+<section id="benefits" class="blk alt"><div class="wrap"><h2 class="st center">Що ви отримуєте</h2><div class="ben"><div class="rv"><i>01</i><b>Ефективне використання ресурсів</b><span>Вода й добрива — за потребою.</span></div><div class="rv"><i>02</i><b>Масштаб без кабелів</b><span>Датчики можна додати чи перенести будь-коли.</span></div><div class="rv"><i>03</i><b>Менше ручної праці</b><span>Дані приходять самі.</span></div><div class="rv"><i>04</i><b>Дистанційне керування</b><span>Полив і клімат — з телефона.</span></div></div></div></section>
+<section id="cases" class="blk"><div class="wrap"><h2 class="st center">Реалізовані проєкти</h2><div class="cg"><a class="cc rv" href="https://www.milesight.com/solution/smart-agriculture" target="_blank" rel="noopener"><img src="img/sol/agri-c1.webp" alt="" loading="lazy"><span class="chip">Джерело: Milesight</span><h3>Керування температурою й вентиляцією в теплицях (США)</h3></a><a class="cc rv" href="https://www.milesight.com/solution/smart-agriculture" target="_blank" rel="noopener"><img src="img/sol/agri-c2.webp" alt="" loading="lazy"><span class="chip">Джерело: Milesight</span><h3>Цифрове фермерство в Австрії</h3></a></div></div></section>
+<section class="blk alt" style="padding-block:72px"><div class="wrap"><h2 class="st">Інші рішення</h2><div class="others"><a class="oc" href="sol-energy.html"><img src="img/sol/energy-plant.webp" alt="" loading="lazy"><b>Енергомоніторинг і керування живленням</b></a><a class="oc" href="sol-building.html"><img src="img/sol/bld-hvac.webp" alt="" loading="lazy"><b>Розумна будівля та інтеграція з BMS</b></a><a class="oc" href="sol-industry.html"><img src="img/sol/ind-hero.webp" alt="" loading="lazy"><b>Промисловість і автоматизація</b></a><a class="oc" href="sol-air.html"><img src="img/sol/iaq-office.webp" alt="" loading="lazy"><b>Якість повітря в школах, офісах і лікарнях</b></a><a class="oc" href="sol-water.html"><img src="img/sol/water-a1.webp" alt="" loading="lazy"><b>Вода й протічки в будівлях</b></a></div></div></section>
+<section class="blk" style="padding-block:64px"><div class="wrap"><div class="cta"><div><h2>Обговоримо ваш об'єкт</h2><p>Підберемо обладнання й покажемо, як це працюватиме у вас.</p></div><a class="btn w" href="./#contact">Залишити заявку</a></div></div></section>
+</main>
+<footer class="sxf"><div class="in">
+  <div class="g">
+    <div><div class="tg"><b style="font-weight:500;letter-spacing:.06em">ARVIOM</b><i></i>Engineering</div><p style="margin-top:14px;max-width:30ch">Бездротова автоматизація об'єктів. Напрям IoT компанії ARVIOM.</p></div>
+    <div><h4>Продукти</h4><ul><li><a href="products.html">LoRaWAN-датчики</a></li><li><a href="products.html">Шлюзи</a></li><li><a href="products.html">Контролери</a></li><li><a href="catalog.html">Серія EM300</a></li></ul></div>
+    <div><h4>Рішення</h4><ul><li><a href="sol-energy.html">Енергетика</a></li><li><a href="sol-building.html">Будівлі й BMS</a></li><li><a href="sol-industry.html">Промисловість</a></li><li><a href="sol-air.html">Повітря</a></li><li><a href="./#cases">Проєкти</a></li></ul></div>
+    <div><h4>Ресурси</h4><ul><li><a href="./#dev">Розробки</a></li><li><a href="./#video">Відео</a></li><li><a href="./#learn">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
+    <div><h4>Компанія</h4><ul><li><a href="./#learn">Команда</a></li><li><a href="./#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
+  </div>
+  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span></div>
+</div></footer>
+<script>
+document.querySelectorAll(".apps").forEach(a=>{const b=[...a.querySelectorAll(".al button")],p=[...a.querySelectorAll(".ap")];b.forEach((x,i)=>x.onclick=()=>{b.forEach((y,j)=>{y.classList.toggle("on",i===j);p[j].classList.toggle("on",i===j)})})});
+const tabs=[...document.querySelectorAll(".tabs nav a")];
+if(tabs.length){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)tabs.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});tabs.forEach(a=>{const s=document.querySelector(a.getAttribute("href"));if(s)io2.observe(s)})}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

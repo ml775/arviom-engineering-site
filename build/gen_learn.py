@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+"""Генерує learn.html (Навчання) з content/learn.json у стилі сторінки IoT Academy Milesight."""
+import json, os, sys, html
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'build'))
+from gen_solutions import chrome
+e = lambda s: html.escape(str(s), quote=True)
+L = json.load(open(os.path.join(ROOT, 'content/learn.json')))
+EXT = ' target="_blank" rel="noopener"'
+aud = ''.join(f'<div class="rv"><i>0{i+1}</i><b>{e(a)}</b><span>{e(b)}</span></div>' for i, (a, b) in enumerate(L['audience']))
+ours = ''.join(f'<div class="pc rv lc"><div class="tag">{e(f)}</div><h3>{e(t)}</h3><p>{e(d)}</p><a href="./#contact">Записатися →</a></div>' for t, d, f in L['ours'])
+courses = ''.join(f'<a class="crs rv" href="{e(u)}"{EXT}><span>{e(c)}</span><b>{e(t)}</b>' + (f'<small>{e(m)}</small>' if m else '') + '<em>Академія Milesight ↗</em></a>' for c, t, u, m in L['courses'])
+faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(a)}</p></details>' for i, (q, a) in enumerate(L['faq']))
+CSS = '''<style>
+.lc{padding:28px 26px;display:flex;flex-direction:column;gap:10px}.lc h3,.lc p{padding:0}.lc .tag{font-size:13px;color:var(--blue)}.lc a{margin-top:auto}
+.lv{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.lv>div{background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line)}.lv img{width:100%;height:220px;object-fit:cover}
+.lv .tx{padding:24px 26px}.lv h3{font-size:24px;margin-bottom:8px}.lv p{color:var(--muted)}.lv .tx a{display:inline-block;margin-top:14px}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:44px;counter-reset:s}
+.steps div{border-top:1.5px solid var(--blue);padding-top:18px}.steps b{display:block;font-weight:400;font-size:19px;color:var(--ink);margin-bottom:6px}.steps span{color:var(--muted);font-size:16px}
+.steps small{display:block;color:var(--blue);font-size:14px;margin-bottom:6px}
+.facts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.facts span{background:var(--soft);color:var(--blue);border-radius:99px;padding:7px 16px;font-size:15px}
+.crsg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:44px}
+.crs{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px;display:flex;flex-direction:column;gap:8px;color:var(--ink);min-height:170px;transition:background .3s}
+.crs:hover{background:var(--soft)}.crs span{font-size:13px;color:var(--blue)}.crs b{font-weight:400;font-size:19px;line-height:1.3}.crs small{font-size:14px;color:var(--muted)}.crs em{font-style:normal;font-size:14px;color:var(--muted);margin-top:auto}
+.faq{max-width:1000px;margin:40px auto 0;border-top:1px solid var(--line)}.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-size:18px;color:var(--ink)}.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:18px;font-size:24px;color:var(--blue);font-weight:300}.faq details[open] summary::after{content:"×"}
+.faq p{color:var(--muted);padding:0 40px 22px 0}
+@media (max-width:900px){.lv{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+</style>'''
+body = CSS + f'''<div class="hero"><img src="img/learn/banner-academy.webp" alt=""><div class="tx wrap"><div class="eyebrow">Навчання</div><h1>Навчання IoT для інтеграторів та інженерів</h1><p>Від основ LoRaWAN до офіційної сертифікації Milesight — з нашою підтримкою українською.</p><a class="btn" href="./#contact">Записатися на навчання</a></div></div>
+<div class="tabs"><div class="wrap"><nav aria-label="Розділи"><a href="#who" class="on">Для кого</a><a href="#ours">Курси ARVIOM</a><a href="#cert">Сертифікація</a><a href="#open">Відкриті курси</a><a href="#faq">Питання</a></nav>
+<div class="bc"><a href="./">Головна</a> › Навчання</div></div></div>
+<main>
+<section id="who" class="blk"><div class="wrap"><h2 class="st center">Для кого це навчання</h2><div class="ben">{aud}</div></div></section>
+<section id="ours" class="blk alt"><div class="wrap"><h2 class="st center">Наші курси й практикуми</h2><p class="center" style="color:var(--muted);margin-top:12px">Українською, на реальному обладнанні. Розклад — за запитом: залиште заявку, і ми запропонуємо дату.</p><div class="pgrid">{ours}</div></div></section>
+<section id="cert" class="blk"><div class="wrap"><div class="eyebrow center">Академія Milesight</div><h2 class="st center">Офіційна сертифікація Milesight</h2>
+<p class="center" style="color:var(--muted);margin-top:12px;max-width:80ch;margin-inline:auto">Програми сертифікації дають глибоку галузеву експертизу. Зараз доступна програма «Розумне керування HVAC»; нові напрями Milesight додає поступово.</p>
+<div class="lv">
+<div class="rv"><img src="img/learn/specialist.webp" alt=""><div class="tx"><h3>Milesight IoT Certified Specialist</h3><p>Продукти й застосування: ключові можливості пристроїв, логіка рішень і проєктування під сценарій. 3 курси.</p><a href="https://milesight-academy.learnworlds.com/program/specialist-certificate-program-milesight-smart-hvac-management-solution"{EXT}>Програма Specialist ↗</a></div></div>
+<div class="rv"><img src="img/learn/expert.webp" alt=""><div class="tx"><h3>Milesight IoT Certified Expert</h3><p>Усе з рівня Specialist плюс монтаж і експлуатація: встановлення на об'єкті, налаштування пристроїв, інтеграція. 9 курсів.</p><a href="https://milesight-academy.learnworlds.com/program/expert-certificate-program-milesight-smart-hvac-management-solution"{EXT}>Програма Expert ↗</a></div></div>
+</div>
+<div class="steps">
+<div class="rv"><small>Крок 1</small><b>Кабінет</b><span>Реєстрація на платформі Академії: прогрес відео й отримані бейджі.</span></div>
+<div class="rv"><small>Крок 2</small><b>Навчання</b><span>Відеоуроки й слайди курсів для глибокого розбору.</span></div>
+<div class="rv"><small>Крок 3</small><b>Іспит</b><span>Онлайн-тест, 3 спроби на кожну сертифікацію.</span></div>
+<div class="rv"><small>Крок 4</small><b>Сертифікат</b><span>Електронний сертифікат одразу після іспиту, його можна додати в LinkedIn.</span></div>
+</div>
+<div class="facts"><span>Безкоштовно</span><span>Англійською, зі слайдами</span><span>Сертифікат на 1 рік</span><span>Досвідченим — одразу іспит</span></div>
+<p style="margin-top:28px"><a class="btn" href="https://milesight-academy.learnworlds.com/home"{EXT}>Перейти в Академію Milesight</a></p>
+</div></section>
+<section id="open" class="blk alt"><div class="wrap"><h2 class="st center">Відкриті курси</h2><p class="center" style="color:var(--muted);margin-top:12px">Окремі курси з програм сертифікації — без іспиту, для конкретної теми.</p><div class="crsg">{courses}</div></div></section>
+<section id="faq" class="blk"><div class="wrap"><h2 class="st center">Питання</h2><div class="faq">{faq}</div></div></section>
+<section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Хочете навчити команду?</h2><p>Організуємо вебінар або практикум на стенді під ваші задачі.</p></div><a class="btn w" href="./#contact">Залишити заявку</a></div></div></section>
+</main>'''
+open(os.path.join(ROOT, 'learn.html'), 'w').write(chrome(body, 'Навчання', 'learn').replace('<a href="./#learn">Навчання</a>', '<a href="learn.html" aria-current="page">Навчання</a>'))
+print('learn.html')

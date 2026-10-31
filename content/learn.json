@@ -1,0 +1,117 @@
+{
+ "audience": [
+  [
+   "Системні інтегратори",
+   "Стандартні підходи до монтажу й налаштування — щоб здавати проєкти розумних будівель швидше й без переробок."
+  ],
+  [
+   "Інженери з експлуатації будівель",
+   "Як дані з датчиків перетворити на економію енергії й менше аварій."
+  ],
+  [
+   "Дистриб'ютори й партнери",
+   "Технічна впевненість у розмові з клієнтом і правильний підбір обладнання."
+  ],
+  [
+   "Технічні інженери",
+   "Практика з усією лінійкою Milesight IoT і підготовка до офіційного сертифіката."
+  ]
+ ],
+ "ours": [
+  [
+   "LoRaWAN з нуля",
+   "Як працює LoRaWAN, як спланувати покриття об'єкта, як обрати шлюз і датчики.",
+   "Вебінар · українською"
+  ],
+  [
+   "Шлюзи й інтеграція",
+   "Налаштування UG65/UG56/EG71, мережевий сервер, передача даних по MQTT, HTTP, Modbus і BACnet.",
+   "Практикум на стенді · Київ"
+  ],
+  [
+   "Енергомоніторинг на практиці",
+   "Облік по лініях щита з CTH01, генератор, батарея й мережа, сповіщення в Telegram.",
+   "Практикум · за запитом"
+  ]
+ ],
+ "courses": [
+  [
+   "Технологія",
+   "Усе про LoRa, LoRaWAN і протокол Milesight D2D",
+   "https://milesight-academy.learnworlds.com/course/lorawan-and-milesight-d2d-protocol",
+   ""
+  ],
+  [
+   "Портфель продуктів",
+   "Огляд усієї лінійки Milesight IoT і застосувань",
+   "https://milesight-academy.learnworlds.com/course/milesight-iot-comprehensive-product-line-application-course",
+   ""
+  ],
+  [
+   "Огляд рішень",
+   "Шлюзи: функції, цінність, застосування",
+   "https://milesight-academy.learnworlds.com/course/milesight-solution-insight-series-gateways",
+   "Відео 17 хв"
+  ],
+  [
+   "Огляд рішень",
+   "Розумний HVAC: функції, цінність, застосування",
+   "https://milesight-academy.learnworlds.com/course/milesight-insight-course-series-smart-hvac-solution",
+   "Відео 38 хв · 34 слайдів"
+  ],
+  [
+   "Практика",
+   "Початок роботи з Milesight ToolBox",
+   "https://milesight-academy.learnworlds.com/course/milesight-hands-on-series-getting-started-with-milesight-toolbox",
+   "Відео 22 хв"
+  ],
+  [
+   "Практика",
+   "Монтаж і запуск стандартного LoRaWAN-шлюзу",
+   "https://milesight-academy.learnworlds.com/course/milesight-hands-on-series-gateway-field-installation-and-deployment",
+   "Відео 29 хв · 34 слайдів"
+  ],
+  [
+   "Практика",
+   "Збір, передача й інтеграція даних LoRaWAN",
+   "https://milesight-academy.learnworlds.com/course/milesight-hands-on-series-lorawan-data-acquisition-and-forwarding-and-integration",
+   "Відео 56 хв · 25 слайдів"
+  ],
+  [
+   "Практика",
+   "Шлюз для будівель EG71: монтаж, збір даних, інтеграція",
+   "https://milesight-academy.learnworlds.com/course/milesight-hands-on-series-deploy-and-connect-with-eg71-building-iot-gateway",
+   "Відео 1 год · 31 слайдів"
+  ],
+  [
+   "Практика",
+   "Розумні термостати: монтаж на об'єкті",
+   "https://milesight-academy.learnworlds.com/course/milesight-hands-on-series-smart-thermostats-field-installation-and-deployment",
+   "Відео 22 хв · 37 слайдів"
+  ],
+  [
+   "Практика",
+   "Налаштування розумних термостатів через ToolBox",
+   "https://milesight-academy.learnworlds.com/course/milesight-hands-on-series-configure-smart-thermostats-via-milesight-toolbox",
+   "Відео 49 хв · 33 слайдів"
+  ]
+ ],
+ "faq": [
+  [
+   "Якою мовою навчання?",
+   "Курси й іспити Академії Milesight — англійською, до кожного курсу є слайди. Наші вебінари й практикуми — українською, і ми допомагаємо підготуватися до іспиту Milesight."
+  ],
+  [
+   "Скільки коштує сертифікація Milesight?",
+   "Безкоштовно: усі програми й електронні сертифікати Академії Milesight доступні без оплати. Умови наших практикумів — уточнюйте в заявці."
+  ],
+  [
+   "Що як не складу іспит?",
+   "На кожну сертифікацію є 3 спроби. Перед наступною радимо переглянути відео курсу й слайди — або прийти на наш практикум."
+  ],
+  [
+   "Скільки діє сертифікат?",
+   "Один рік. Сертифікат варто оновлювати щороку, щоб знання відповідали новим продуктам."
+  ]
+ ]
+}

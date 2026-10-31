@@ -1,0 +1,80 @@
+                                                                                     UPS01 Datasheet
+
+
+
+Uninterruptible
+Power Supply
+
+UPS01
+
+
+
+                                         Milesight UPS01 is an advanced uninterruptible power supply (UPS)
+                                         designed to ensure uninterrupted operation of various devices for
+                                         up to 32 hours. Featuring IP67 and IK08 ratings, the UPS01 can
+                                         withstand demanding environments and provide reliable protection
+                                         against dust, water, and mechanical impact.
+                                         UPS01 makes it simple to prolong the working time of connected
+                                         devices and supply with not only internal batteries but also an
+                                         external power source through power adapter. Its plug-and-play
+                                         design enables quick and easy integration with various devices such
+                                         as gateways, routers, CPE, Dongle and sensing cameras, without the
+                                         need for additional configuration. For added flexibility, the UPS01
+                                         offers M12 and Type-C connectors to suit different power supply
+                                         scenarios.
+                                         What sets the UPS01 apart is its compatibility with Milesight
+                                         network devices. This allows for real-time monitoring of power
+                                         consumption and remote alarm notification to facilitate effective
+                                         and smart management.
+
+   Features
+  Robust and Distinctive Design
+   Adopt rechargeable 12000mAh high-capacity battery for providing up to 32 hours’ supplement
+   Equip with heating film for protecting battery in low-temperature environment
+   High IP67 and IK08 protection for adapting to harsh environment
+   Equip with a traffic light indicator and cooperate with smart internal logic for status display
+                                                                                              UPS01 Datasheet
+
+
+High Adaptability & Easy Configuration
+ Compact size with multiple deployment methods for adapting to different scenarios
+ Compatible with Milesight devices for managing both power monitoring and alarming remotely
+ Provide dual versions of connectors for satisfying different output voltages and devices
+ Support plug-and-play without further configuration
+ Overcharging and overdischarging protection
+
+
+
+ Specifications
+Model                                      Type-C Version                             M12 Version
+Power
+Power Input                                                        9~20V⎓ 2A
+Input Connector                                           DC Jack Female Connector
+Power Output                                     5V⎓ 4A                               6~8.4V⎓ 1.5A
+Output Connector                                 Type-C                         4-Pin M12 A-Coded Female
+Battery Capacity                              4 x 3000mAh Lithium-ion Rechargeable Batteries
+Battery Supply Time1                                                  6 ~ 32h
+Others
+LED Indicator                              1×Traffic Light Indicator (Battery Capacity & Diagnose)
+Button                                                     1×Reset Button (Internal)
+Software Features                    Power Monitoring, Alarm, Upgrade (Only with Milesight Devices )
+Physical Characteristics
+                                              DC IN: 30 cm                             DC IN: 30 cm
+Cable Length
+                                            Type-C: 100 cm                             M12: 150 cm
+Ingress Protection                                                 IP67 & IK08
+Material & Color                                            Aluminum, White & Silver
+Dimension                                   96×60×45mm (3.78×2.36×1.77 in) (Without Cable)
+                                            Charge Temperature: -20°C to +45°C (-4℉ to +113℉)
+Operating Temperature
+                                          Discharge Temperature: -20°C to +60°C (-4℉ to +140℉)
+Relative Humidity                                         0% - 95% (Non-condensing)
+Installation                       Wall Mounting, DIN Rail Mounting, Pole Mounting, Desktop Mounting
+1
+    The battery supply time is tested under laboratory and non-load conditions and for guideline purposes only. The
+actual power supply time of the UPS depends on the actual consumption of the connected device and its load.
+                   UPS01 Datasheet
+
+
+ Dimensions(mm)
+

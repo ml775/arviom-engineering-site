@@ -1,0 +1,126 @@
+                                                                                       VS34x Datasheet
+
+
+
+D e s k& S e a t
+Occupancy Sensor
+Featuring LoRaWAN®
+
+VS34x
+
+
+
+
+                                       VS34x is an occupancy sensor designed to detect whether desks or
+                                       seats in a workspace are occupied, allowing for better management
+                                       and optimization of space usage. The standard version of the sensor
+                                       VS340 uses PIR technology for detection. The pro version VS341
+                                       applies additional Thermopile IR technology to provide more
+                                       accurate and precise detection capabilities. VS34x features an
+                                       adjustable field of view angle for greater flexibility in different
+                                       scenarios. With wireless detection and easy configuration, the
+                                       VS34x offers reliable and convenient desk or seat arrangement
+                                       optimization. It is compatible with Milesight LoRaWAN® gateway
+                                       and Milesight Development Platform solution, enabling real-time
+                                       monitoring of desks and seats’ status for effective remote
+                                       management.
+                                       VS34x can be used in workstations, libraries, etc.
+    Features
+      Achieve up to 98% accuracy with a high-precision PIR sensor and an extra Thermopile IR
+       Temperature sensor in the pro version
+      Dual versions are available, including standard and Pro, to accommodate different latency
+       requirements
+      Provide different types of PIR covers for adjustable and flexible field angles and different
+       detecting ranges.
+                                                                                      VS34x Datasheet
+
+
+   Support Milesight D2D protocol to enable ultra-low latency and directly control without
+    gateways
+   V0 grade flame retardant material makes it adaptable to various scenarios, enhancing safety
+    and reliability
+   Equipped with NFC for one-touch configuration, support card emulation mode
+   Function well with standard LoRaWAN® gateways and network servers
+   Compatible with Milesight IoT Cloud and Milesight Development Platform
+
+
+
+ Specifications
+Model                                   VS340                                     VS341
+Occupancy Detection
+Technology                                 PIR                               PIR & Thermopile
+Recognition Rate                       Up to 95%                                 Up to 98%1
+PIR Detection Area                                 107 ° Horizontal, 107 ° Vertical
+PIR Detection Distance                                       Within 1m
+Thermopile Detection
+                                           ----                        50° (50% level of sensitivity)
+Area
+Wireless Transmission
+Protocol                                             LoRaWAN®, Milesight D2D
+Antenna                                                   Internal Antenna
+
+Frequency                   CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4
+Tx Power                         16 dBm (868 MHz)/20 dBm (915 MHz)/19 dBm (470 MHz)
+Sensitivity                                                  -137 dBm
+Mode                                                    OTAA/ABP Class A
+Others
+Button                                            1 x Power/Reset Button (Internal)
+Indicator                                               1 × Status Indicator
+Software
+Power On/Off                                Mobile App via NFC or Power Button
+Configuration                                      NFC via Mobile App, Downlink
+Advanced Feature                                      Milesight D2D Controller
+Physical Characteristics
+Power Supply                               1 x 4000 mAh ER18505 Li-SOCL2 Battery
+
+Battery Life2                 Over 10 Years (SF7, EU868 &             Over 10 Years (SF7, EU868 &
+                                                                                                   VS34x Datasheet
+
+
+     (1440 min interval +                          US915)                                   US915)
+     100 Triggers per Day,          Around 5.4 Years (SF10, EU868)               Around 5.2 Years (SF10, EU868)
+     LED Disabled, 25°C)            Around 5.2 Years (SF10, US915)               Around 5.1 Years (SF10, US915)
+     Operating Temperature                                          -20°C ~ +60°C
+     Relative Humidity                                       0 ~ 95% (Non-condensing)
+     Dimension                           73 x 73 x 26 mm ( 2.87 x 2.87 x 1.02 in) (Without PIR Cover)
+     Weight                                                                90g
+     Ingress Protection                                                   IP30
+     Color & Material                               White + Grey, PC + ABS (Flame Retardant)
+     Installation                                   3M Tape Mounting, Wall Screw Mounting
+1
+    The temperature range of thermopile to reach best recognition rate is +10 to +30 °C.
+2
+    Tested under laboratory conditions and for guideline purposes only.
+
+
+
+ PIR Cover Reference Guidance
+When installation height is 70cm, the PIR detection area can be referred as below:
+
+            PIR Cover                PIR Detection Area                            Usage Scenario
+                                  70 ° Horizontal, 60 ° Vertical,
+                                                                                   Single Person Desk
+                                          1 m × 0.9 m
+
+
+                                 70 ° Horizontal, 107 ° Vertical,
+                                                                                   Face to Face Desk
+                                          1 m × 1.8 m
+
+
+                                107 ° Horizontal, 53.5 ° Vertical,
+                                                                                       Bar Table
+                                        1.8 m × 0.9 m
+
+
+                                107 ° Horizontal, 107 ° Vertical,
+                                                                                      Round Table
+                                        1.8 m × 1.8 m
+
+
+                                                N/A                       Support to be tailored as required
+                    VS34x Datasheet
+
+
+ Dimensions (mm)
+

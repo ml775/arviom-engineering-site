@@ -1,0 +1,117 @@
+                                                                                                 UC711 Datasheet
+
+
+
+
+HVAC Controller
+ Featuring LoRaWAN®
+
+
+ UC711
+
+
+
+
+UC711 is a LoRaWAN® HVAC controller that supports heating and cooling systems, including heat pumps,
+furnaces, and PTAC devices, via BMS systems or paired Milesight WT401 thermostat. UC711 offers multiple
+temperature control modes and fan modes, enabling precise temperature adjustments in buildings. It allows for
+automatic control through scheduled programming and remote management via cloud system. Real-time
+monitoring ensures timely alerts for sudden temperature changes, prioritizing people’s safety and protecting
+assets.
+Moreover, the controller seamlessly integrates with hotel room card systems, allowing for convenient remote
+management. Compliant with Milesight LoRaWAN® gateway and Milesight Development Platform solution, users
+can control the room temperature via webpage remotely as well as be triggered by other sensors or appliances
+easily via D2D protocol.
+                                                                                                 UC711 Datasheet
+
+
+ Application Example
+
+
+
+
+ Features
+   Support 24VAC HVAC systems including PTAC, AC & furnaces, and heat pumps
+   Work with Milesight WT401 wireless thermostat via Bluetooth (wireless)
+   Optional data sources for environmental detection and accurate control: external NTC sensor, WT401
+    thermostat, Milesight sensors, external sensor data from network servers (Under Development)
+   Equipped with an external NTC sensor signal input and a dry contact input for keycard/magnet switches
+    (Under Development)
+
+   Equipped with RTC to keep time correct for 72 hours even without power supply
+   Adjust the room temperature manually or automatically with 8 working modes and allow up to 16 schedules
+    for each mode (Under Development)
+   Enabling real-time monitoring ensures timely alerts for sudden temperature changes (Under Development)
+   Store locally historical records and support retransmission to prevent data loss (Under Development)
+   Built-in NFC and Bluetooth for easy configuration
+   Function well with standard LoRaWAN® gateways and network servers
+   Compatible with Milesight Development Platform
+   Supports Milesight D2D protocol to enable ultra-low latency control without gateway (Under Development)
+   Supports multicast for control in bulk
+   Support Firmware Update Over the Air (FUOTA) feature
+                                                                                       UC711 Datasheet
+
+
+ Specifications
+   Wireless Transmission
+   Technology            LoRaWAN®, Milesight D2D
+
+   Antenna               Internal Antenna
+   Frequency             IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4
+   Tx Power              16dBm (868 MHz)/22 dBm (915 MHz)
+   Sensitivity           -137dBm
+   Mode                  OTAA/ABP Class C
+   Thermostat Feature
+   Compatibility         PTAC (2H/1C), AC & Furnaces (1H/1C) or Heat Pumps (2H/1C)
+   Wire Terminals        RC, C, Y1, W1, O/B, GM, GL, GH
+   Wire Relays           AC 24V (@Typ. 150mA, Max. 1A)
+   Temperature Control
+                         5°C ~ 35°C
+   Range
+   Temperature Control
+                         Heat, Cool, Auto
+   Mode
+   Fan Mode              Low, Medium, High, Auto, Circulate
+   Others
+                         1 × NTC Input, 1 × DI (Dry Contact) for Keycard Switches, Magnet
+   Inputs1
+                         Switches, etc. (Only for Physical Switches or Buttons)
+                         Freeze Protection, Fan Delay
+   Advanced Feature
+                         (Under Development: Open Window Detection, Local Control Schedule)
+   Others
+   LED Indicator         1 × SYS, 1 × BLE, 1 × LoRa, 1 × NFC
+   External Buttons      1 × Reboot/Reset Button, 1 × Manual Pairing Button
+   USB                   1 × Type-C for Power Supply and Console
+                         1 × 2-pin PowerBus Interface for WT401 Communication (Under
+   Powerbus
+                         Development)
+   Software
+   Configuration         Mobile App via NFC or Bluetooth® 5.3, Downlink
+   Communication         Pair with WT401 thermostat via Bluetooth
+                         Multicast, FUOTA
+                           (Under Development: Threshold Alarm, External Sensor Mode, Data
+   Advanced Feature
+                           Storage (1,000 Entries), Data Retransmission, Data Retrievability,
+                           Milesight D2D Controller & Agent, Milesight D2D Data Receiving)
+                                                                                                   UC711 Datasheet
+
+         Physical Characteristics
+                                      1. 24V AC (@ Typ. 150mA, Max. 1A) by Wire Terminals (RC+C)
+         Power Supply2
+                                      2. 5V DC by Type-C Port
+         Operating Temperature        -20°C ~ 60°C
+         Relative Humidity            0% to 95% (Non-condensing)
+         Ingress Protection           IP30
+         Material & Color             ABS (UL94 V2), Black
+         Dimension                    120 × 60 × 20.5 mm
+         Installation                 Wall Screws Mounting, 3M Tape Mounting
+ 1
+     : The features for NTC input and DI are under development.
+ 2
+     : The controller must be powered by 24VAC if it pairs with WT401 thermostat via PowerBus.
+
+
+
+ Dimensions (mm)
+

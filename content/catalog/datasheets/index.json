@@ -1,0 +1,52 @@
+{
+ "CTH01": {
+  "file": "CTH01.txt",
+  "title": "cth01-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/cth01-datasheet-en.pdf"
+ },
+ "EG71": {
+  "file": "EG71.txt",
+  "title": "eg71-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/eg71-datasheet-en.pdf"
+ },
+ "EM400-UDL": {
+  "file": "EM400_UDL.txt",
+  "title": "em400-udl-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/em400-udl-datasheet-en.pdf"
+ },
+ "EM410-RDL": {
+  "file": "EM410_RDL.txt",
+  "title": "em41x-rdl-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/em41x-rdl-datasheet-en.pdf"
+ },
+ "UC701": {
+  "file": "UC701.txt",
+  "title": "uc701-datasheet",
+  "url": "https://resource.milesight.com/milesight/iot/document/uc701-datasheet.pdf"
+ },
+ "UC711 + WT401": {
+  "file": "UC711_WT401.txt",
+  "title": "uc711-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/uc711-datasheet-en.pdf"
+ },
+ "UPS01": {
+  "file": "UPS01.txt",
+  "title": "ups01-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ups01-datasheet-en.pdf"
+ },
+ "VS340/VS341": {
+  "file": "VS340_VS341.txt",
+  "title": "vs34x-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/vs34x-datasheet-en.pdf"
+ },
+ "VS350": {
+  "file": "VS350.txt",
+  "title": "vs350-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/vs350-datasheet-en.pdf"
+ },
+ "VS351": {
+  "file": "VS351.txt",
+  "title": "vs351-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/vs351-datasheet-en.pdf"
+ }
+}

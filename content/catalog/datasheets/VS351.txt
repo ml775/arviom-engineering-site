@@ -1,0 +1,141 @@
+Mini AI
+                                                                                             VS351 Datasheet
+
+
+
+
+Thermopile
+People Counter
+Featuring LoRaWAN®
+
+
+VS351
+
+
+
+ VS351 is a compact AI thermopile people counter designed for indoor entrance and exit applications. It
+ delivers reliable, bi-directional people counting with consistent accuracy, providing dependable data for foot
+ traffic analysis and efficient space management. Combined with a radar sensor for presence detection, it
+ intelligently schedules the activation time of the thermopile to optimize power consumption. As a Milesight
+ D2D controller, the VS351 seamlessly communicates with other Milesight D2D devices, establishing more
+ possible connections and paving the way for smoother operations.
+ With easy configuration and wireless detection, the VS351 facilitates simple deployment and connectivity.
+ Compliant with the Milesight LoRaWAN® gateway and Milesight Development Platform solution, users can
+ know the number of people in any indoor space and trigger other sensors or appliances easily via a
+ webpage remotely.
+ VS351 can be used in meeting rooms, office buildings, etc.
+
+
+
+
+                       Battery Version                                Type-C Version
+
+
+   Features
+     Provide 80% - 90% detection accuracy1 for bi-directional people counting with radar (battery version
+      only) and the thermopile technology
+     A Built-in temperature sensor that can not only support environmental temperature detection but also
+                                                                                           VS351 Datasheet
+
+    monitor whether the operating temperature of the device is within a reasonable range
+   100% anonymity and GDPR-compliant without image capturing, free from privacy concerns
+   Type-C version (wired) and battery version (wireless) available for different installation environments
+   Ultra-low power consumption with up to 1.6-year battery life, complies with ESG standard
+   Wireless connectivity and convenient size improve the accessibility and simplicity of deployment
+   Store locally historical records and support retransmission to prevent data loss
+   Support Milesight D2D protocol to enable ultra-low latency and direct control without gateways
+   Equipped with NFC for one touch configuration
+   Function well with standard LoRaWAN® gateways and network servers
+   Compatible with Milesight IoT Cloud and Milesight Development Platform
+
+
+
+ Specifications
+Measurement
+
+People Counting
+Technology                 Radar (Battery Version Only) & Thermopile
+Installation Height        2m~3m
+Detection Width            3.6 m @ 3 m Installation Height
+Sensor Adjustable
+                           0°~90°
+Angle
+Best Operating
+                           15 °C ~ 30 °C
+Temperature
+
+Temperature
+Range                      -30°C ~ 70°C
+Accuracy                   ± 2°C
+
+Wireless Transmission
+Protocol                   LoRaWAN®, Milesight D2D
+Antenna                    Internal Antenna
+Frequency                  CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4
+Tx Power                   16 dBm (868 MHz) / 19 dBm (470 MHz) / 22 dBm (915 MHz)
+Sensitivity                -137dBm
+Mode                       OTAA/ABP Class A
+
+Others
+Button                     1 × Reset Button (Internal)
+
+Software
+                                                                                                          VS351 Datasheet
+
+Configuration                    NFC via Mobile App, Downlink
+                                 Data Storage (1,000 entries), Data Retransmission, Data Retrievability,
+Advanced Feature
+                                 Milesight D2D Controller
+Physical Characteristics
+                                     5V/1A by Type-C Port (Both Versions)
+Power Supply                         4 x 9000 mAh ER26500 Li-SOCl2 Replaceable Batteries (Battery
+                                      Version Only)
+                                 Around 1.7 Years (SF7, EU868&US915)
+Battery Life2                    Around 1.6 Years (SF10, EU868&US915)
+                                 (30-min Interval, 25 °C, 1000 People per Day )
+Operating Temperature            -20°C ~ 60°C
+Relative Humidity                0% ~ 95% (Non-condensing)
+Ingress Protection               IP30
+                                 Type-C Version: 70 x 68 x 32 mm ( 2.76 x 2.68 x 1.26 in)
+Dimension
+                                 Battery Version: 188 x 68 x 32 mm ( 7.40 x 2.68 x 1.26 in)
+Material & Color                 PC (Flame Retardant), White
+                                 Type-C Version: 72.3g
+Weight
+                                 Battery Version: 383g
+Installation                     Ceiling Mounting, Lintel Mounting
+Approvals
+Regulatory                       CE, FCC
+ 1
+      Tested under an installation height of 2.7m, with an average height of target of 1.7m and a temperature of 25°C.
+  2
+      Tested under laboratory conditions and for guideline purposes only.
+
+
+
+
+ Detection Area
+                             Installation Height (m)              Detection Width(m)
+                                         2.0                                 1.6
+
+                                         2.2                                 2.0
+
+                                         2.4                                2.57
+
+                                         2.6                                 2.9
+
+                                         2.8                                 3.2
+
+                                         3.0                                 3.6
+                     VS351 Datasheet
+
+
+ Dimensions (mm)
+ Type-C Version：
+
+
+
+
+ Battery Version :
+VS351 Datasheet
+

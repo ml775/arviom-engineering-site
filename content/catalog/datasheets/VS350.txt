@@ -1,0 +1,129 @@
+                                                                                               VS350 Datasheet
+
+
+
+Passage People
+Counter
+Featuring LoRaWAN®
+
+VS350
+
+
+
+
+                                           The VS350 is an exceptional indoor passage people counter that
+                                           detects and analyzes the flow of people, allowing for optimum space
+                                           management and usage. Equipped with dual PIR sensors, it offers a
+                                           high accuracy rate for bi-directional people counting. When combined
+                                           with the additional temperature sensor, the VS350 can achieve even
+                                           more potential triggers, increasing its detection capabilities. As a
+                                           Milesight D2D controller, the VS350 seamlessly communicates with
+                                           other Milesight D2D devices, establishing more possible connections
+                                           and paving the way for smoother operations.
+                                           With easy configuration and wireless detection, the VS350 facilitates
+                                           simple deployment and connectivity. Compliant with the Milesight
+                                           LoRaWAN® gateway and Milesight Development Platform solution,
+                                           users can know the number of passage people and trigger other
+                                           sensors or appliances easily via a webpage or mobile App remotely.
+                                           VS350 can be used in retails stores, offices, restrooms, etc.
+
+ Features
+   Provide good accuracy rate for bi-directional people counting with dual PIR sensors
+   Ultra-low power consumption with up to 4-year battery life without replacement
+   100% anonymity and GDPR-compliant without image capturing, free from privacy concerns
+   Equipped with a reliable and cost-effective sensor system for counting people through passages
+   Function well with people counting with perfect-fit detecting ranges
+                                                                                                VS350 Datasheet
+
+   Wireless connectivity and convenient size improve the accessibility and simplicity of deployment
+   Built-in temperature sensor, enabling environmental detection
+   Store locally historical records and support retransmission to prevent data loss
+   Support Milesight D2D protocol to enable ultra-low latency and directly control without gateways
+   Equipped with NFC for one touch configuration and support card emulation mode
+   Function well with standard LoRaWAN® gateways and network servers
+   Compatible with Milesight IoT Cloud and Milesight Development Platform
+
+
+
+ Specifications
+       Measurement
+       People Counting
+       Technology                 Dual PIR
+                                  Ceiling Mount: 2m - 3m
+       Installation Height
+                                  Wall Mount: 1.2m - 1.3m
+                                  Ceiling Mount: Passage Width = 3.1 m ( At the height of 3m)
+       Detection Range1
+                                  Wall Mount: Passage Width < 2.3 m
+       Best Operating
+                                  15 °C~30 °C
+       Temperature2
+       Bi-directional Counting    Support
+       Temperature
+       Measuring Range            -30°C ~ 70°C
+       Accuracy                   ± 0.5°C
+       Wireless Transmission
+       Protocol                   LoRaWAN®, Milesight D2D
+       Antenna                    Internal Antenna
+       Frequency                  CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4
+       Tx Power                   16 dBm (868 MHz)/19 dBm (470 MHz)/22 dBm (915 MHz)
+       Sensitivity                -137dBm
+       Mode                       OTAA/ABP Class A
+       Others
+       LED                        1 × LED Indicator (Internal)
+       Button                     1 × Reset Button (Internal)
+       Software
+       Configuration              NFC via Mobile App, Downlink
+       Advanced Feature           Data Storage (1,000 entries), Data Retransmission, Data Retrievability,
+                                                                                                            VS350 Datasheet
+
+                                      Milesight D2D Controller, Detection Sensitivity Report, Multiple
+                                      Threshold Trigger Report
+     Physical Characteristics
+     Power Supply                     2 x 2700 mAh ER14505 Li-SOCl2 Replaceable Batteries
+
+                                      Around 9.7 Years (SF7, EU868)
+     Battery Life3
+                                      Around 5.2 Years (SF10, EU868)
+     (10-min Interval, 25°C,
+                                      Around 8.7 Years (SF7, US915)
+     1000 People per Day)
+                                      Around 4.6 Years (SF10, US915)
+     Operating Temperature            -20°C ~ 60°C
+
+     Relative Humidity                0% - 95% (Non-condensing)
+     Ingress Protection               IP30
+     Dimension                        100 x 70 x 21 mm ( 3.94 x 2.76 x 0.83in)
+     Housing & Color                  PC (Flame Retardant), White
+     Weight                           99g (Batteries Included)
+     Installation                     Ceiling Mount, Wall Mount
+     Approvals
+     Regulatory                       CE, FCC
+     Environmental                    RoHS
+     1
+         This detection range works at an environment temperature of 20°C.
+     2
+         The sensitivity of PIRs is greatly influenced by ambient temperature. And the most effective working temperature
+          range is +15 to +30 °C.
+     3
+         Tested under laboratory conditions and for guideline purposes only.
+
+
+
+
+ Detection Area
+  The reference detection range of Ceiling Mount:
+
+                               Installation Height (m)          Passage Detection Width (m)
+                                          2.0                                  1.85
+
+                                          2.2                                  2.1
+                                          2.4                                  2.5
+                                          2.6                                  2.7
+                                          2.8                                  2.9
+                                          3.0                                  3.1
+                    VS350 Datasheet
+
+
+ Dimensions (mm)
+

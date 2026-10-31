@@ -1,0 +1,134 @@
+                                                                                                  UC701 Datasheet
+
+
+
+
+Smart AC Controller
+Featuring LoRaWAN®
+
+UC701
+
+
+
+
+UC701 is a LoRaWAN® smart AC controller that supports wireless IR control of mainstream air conditioning and
+PTAC systems via BMS systems or the paired Milesight WT401 thermostat. It allows automatic control through
+local schedules or remote cloud systems. UC701 provides built-in sensors and multiple interfaces to integrate
+with external sensors, enabling operational data collection, accurate control, and energy savings for air
+conditioning systems.
+Compliant with Milesight LoRaWAN® gateway and Milesight Development Platform solution, users can control the
+air conditioner systems via webpage remotely.
+
+
+
+
+  Features
+     Provide wireless IR control without any cable connections
+     Built-in IR code library compatible with mainstream air conditioner systems, with IR code learning capability
+     Built-in sensor and rich external sensor inputs for accurate AC monitoring and control
+     Built-in Bluetooth for easy configuration
+     Support 5V DC power supply via Type-C, with an optional external battery compartment for flexible
+      deployment
+     Work with Milesight WT401 wireless thermostat via Bluetooth
+                                                                                            UC701 Datasheet
+
+   Support local rules for AC time on/off and temperature adjustment
+   Enable real-time monitoring to ensure timely alerts for sudden temperature changes
+   Store historical records locally and supports retransmission to prevent data loss
+   Work well with standard LoRaWAN® gateways and network servers
+   Compatible with Milesight Development Platform
+   Support Firmware Update Over the Air (FUOTA)
+
+
+
+ Application Example
+
+
+
+
+ Specifications
+      Wireless Transmission
+      Technology                LoRaWAN®
+
+      Antenna                   Internal Antenna
+      Frequency                 IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4
+      Tx Power                  16dBm (868 MHz)/22 dBm (915 MHz)
+      Sensitivity               -137dBm
+      Mode                      OTAA/ABP Class B, Class C
+      Sensor
+      Universal IR Emitter
+                                Any air conditioner or heat pumps with a remote control. Including: Mini
+      Compatibility
+                                Split, Window AC, Cassette, Portable, PTAC/PTHP, Central AC, etc.
+                                                                                                     UC701 Datasheet
+
+        IR Operating Distance         360°, Up to 10 meters without barriers
+
+        IR Learning Frequency         38 kHz
+        Temperature
+        Operating Principle           Digital CMOSens® technology (MEMS)
+        Range                         -20°C ~ 60°C
+        Accuracy                      ±0.5°C (0°C ~ 60°C), ±1°C (-20 ~ 0°C)
+        Humidity
+        Operating Principle           Digital CMOSens® technology (MEMS)
+        Range                         0-100% RH
+        Accuracy                      ±3% RH (40-85% RH), ±5% RH (0-40% RH, 85-100% RH)
+        Others
+                                      1 × NTC Interface, 1 × Current Transformer Interface, 1 × IR Emitter
+        External Sensor Input
+                                      Interface
+        Others
+        LED Indicator                 1 × Two-color Indicator
+        External Buttons              1 × Reboot/Reset Button, 1 × IR Code Learning Button
+        USB                           1 × Type-C for Power Supply and Console
+        Software
+        Configuration                 Mobile App via Bluetooth®, Downlink
+        Communication                 Pair with WT401 thermostat via Bluetooth
+                                      IR Code Learning, Local Control Schedule, Temperature Limit Mode, Open
+        Advanced Feature                Window Detection, Threshold Alarm, Data Storage (1,200 entries), Data
+                                        Retransmission, Data Retrievability, FUOTA
+        Physical Characteristics
+        Power Supply                  5V DC/1A via Type-C Port1
+
+        Operating Temperature         -20°C ~ 60°C
+        Relative Humidity             0% to 95% (Non-condensing)
+        Ingress Protection            IP40
+        Material & Color              PC, White (Black Customizable)
+        Dimension                     96 × 48 × 26 mm
+        Installation                  Wall Screws Mounting, 3M Tape Mounting
+1
+    : The controller supports connection to an external plug-in battery compartment.
+                                                                                          UC701 Datasheet
+
+
+ Optional Extended Accessories
+      Type                  Introduction                                Parameters
+                 Detects the ambient temperature              Measuring Range: -20°C ~ 60°C
+   NTC Sensor        to monitor air conditioner                       Accuracy: ± 1°C
+                         operating status.                          Cable Length: 2.5 m
+                                                            Detection Parameter: RMS Current
+                                                                 Measuring Range: 0-30A
+                 Measures air conditioner current
+     Current                                            Accuracy: ± 1% (≥2.5A), ± 2% (1 - 2.5A), ± 5%
+                  to monitor operating status and
+   Transformer                                               (500mA - 1A), ± 20% (50 - 500 mA)
+                       power consumption.
+                                                             Color: White (Black Customizable)
+                                                                    Cable Length: 1.5 m
+                 Controls the air conditioner when            IR Learning Frequency: 38 kHz
+    IR Emitter
+                  UC701 is installed at a distance.                 Cable Length: 1.2 m
+                                                        Compatible: 3 × AA Alkaline 1.5 V Batteries
+     Battery                                            Battery Life: 2 years (EU868, Class B, 12-24
+                 Provide external battery power if a
+   Compartment                                         control numbers/day), 1.7 years (AU915, Class
+                 wired power source is difficult to
+     (Without                                                  B, 12-24 control numbers/day)
+                              deploy.
+    Batteries)                                              Operating Temperature: 0°C ~ 40°C
+                                                       Installation: Wall Screws or 3M Tape Mounting
+
+
+
+ Dimensions (mm)
+

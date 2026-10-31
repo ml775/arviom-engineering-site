@@ -1,0 +1,172 @@
+                                                                             EM41x-RDL Datasheet
+
+
+Ra d ar
+Di s t a n c e / L e v e l
+Se n s o r
+EM41x-RDL
+
+
+
+
+   EM41x-RDL is a non-contact Radar Distance/Level Sensor that adopts Millimeter Wave Radar
+   technology. By measuring millimeter-wave signals at higher frequencies, it provides more stable
+   performance over longer distances, and is less affected by environmental conditions. It can detect
+   the distance between the sensor and liquid of various types, unaffected by temperature, dust,
+   condensate etc. With IP68 waterproof and sealed enclosure, it can withstand the worst environment,
+   while maintaining the measurement accuracy, and does not require routine maintenance. It also
+   complies with ATEX(Zone 0) standards and offers excellent resistance to corrosion and wear.
+   Milesight offers LoRaWAN® version and Cellular version to meet different communication needs. The
+   LoRaWAN® version can be integrated with Milesight LoRaWAN® gateway and Milesight Development
+   Platform, enabling remote and visual management of all sensor data. The Cellular version supports
+   multiple application modes to be compatible with IoT platforms.
+   EM41x-RDL can used in sewers, rivers, impounding reservoir, storage tanks and high-salt mist
+   environments (including seawater, high-concentration brine), and other locations that require to
+   measure distance and level.
+                                                                             EM41x-RDL Datasheet
+
+
+ Features
+   8° Radar beam angle can be focused on the target fluid, enabling accurate measurement of
+
+    liquid level
+   Wide measuring range of 0.3m to 12m with small blind zone
+   Not affected by dust, condensate, temperature, acoustic noise, etc
+   Non- invasive liquid level monitoring, can detect hazardous or non-hazardous liquids
+   External antenna or internal antenna versions are optional for various applications
+   Built-in 3-axis accelerometer sensor to monitor device tilt status
+   Support to check radar-echo curve and one-click diagnostic to calibrate the distance, ensuring
+    the accurate measurement under different environments
+   Support blind zone alarm when the ranging results are within the blind zone
+   Adopt PVDF material, offering excellent corrosion resistance, wear resistance and
+    compressive strength for harsh environments
+   IP68 waterproof design, resistant in fresh water to a maximum depth of 1m for up to 48 hours
+   Supports ATEX Zone 0, and is suitable for special requirements for the performance of the
+    product. Ex marking as below:         Ex ia IIC T4 Ga (EM411-RDL Only)
+   Thread design for common tank installation without extra accessories needed
+   Store historical records locally and support retransmission to prevent data loss
+   Easy configuration via NFC and Bluetooth
+   Support management and OTA upgrade via Milesight Development Platform (EM410-RDL
+    Only)
+
+LoRaWAN® Version Only
+   Function well with standard LoRaWAN® gateways and network servers
+
+Cellular Version Only
+   Support multiple network protocols to be compatible with IoT platforms
+
+
+
+ Specifications
+ Model                         EM411-RDL               EM410-RDL             EM410-RDL-L0CEU
+ Measurement
+ Distance
+ Technology                                         Millimeter Wave Radar
+
+ Target                                        Liquids or Smooth Surface Solid
+                                                                            EM41x-RDL Datasheet
+
+
+Radar Frequency Band                                    60GHz
+Detection Angle                                          8°
+Detection Distance                                  0.3m ~ 12m
+
+                                                    Up to ± 2mm1
+Accuracy
+                                                    Up to ± 5mm2
+Resolution                                              1mm
+Device Position
+Status                                               Normal/Tilt
+Wireless Transmission
+                                                                               LTE (CAT 1):
+                                                                            B1/B3/B5/B7/B8/B2
+                       CN470/IN865/EU868/RU864/US915/AU915/
+Frequency                                                                       0/B28 for
+                                   KR920/AS923-1&2&3&4
+                                                                            EMEA/Australia/New
+                                                                                 Zealand
+                        16 dBm (868 MHz)/20 dBm (915MHz)/19
+Tx Power
+                                       dBm (470MHz)
+                                                                                    /
+Sensitivity                          -137dBm @300bps
+
+Mode                                 OTAA/ABP Class A
+                                                                            1 x Nano SIM (4FF)
+SIM Slot
+                                                                               Slot, 1.8V/3V
+                                                                             TCP/UDP/MQTT/
+                                              /
+                                                                              AWS/Milesight
+Application Mode
+                                                                               Development
+                                                                                 Platform
+                              Internal Antenna or External Antenna (Hardware Optional)
+Antenna
+                            External Antenna (EA) Version: 1 × 50 Ω SMB Male Connector
+Others
+LED Indicator                                1 × LED indicator (Internal)
+Configuration                        Mobile App via NFC or Bluetooth, Downlink
+                       Distance Threshold Alarm, Distance Change Alarm, Blind Zone Alarm,
+Advanced Feature           Radar-echo Curve, Diagnostic, Data Storage (2,000 entries), Data
+                              Retrievability (LoRaWAN® Version), Data Retransmission
+Physical Characteristics
+Power Supply                          1 × 19000 mAh ER34615 Li-SOCL2 Battery
+
+Battery Life3                          Around 7 Years                         Around 5 Years
+                                                                                           EM41x-RDL Datasheet
+
+
+    (15-min collection
+    Interval+1440-report
+    interval, 25°C)
+
+    Operating Temperature             -20°C ~ 60°C                 -40°C ~ 70°C                -35°C ~ 70°C
+
+    Relative Humidity                                     0 ~ 100% (non-condensing)
+                                  IP68 (1m underwater,
+    Ingress Protection              48 hours), ATEX                   IP68 (1m underwater, 48 hours)
+                                         (Zone0)
+    Dimension                                         Ф 101 × 87 mm (Ф 3.98 × 3.43 in)
+    Weight                                                             400g
+    Housing&Color                                        PVDF (UL94 V0), Blue + Grey
+
+    Supported Tank Thread                          G 1½” or NPT 1½” (Hardware Optional)
+
+    Installation                            Wall Bracket Mounting, Tank Threaded Installation
+    Approvals
+                                     CE, FCC, ATEX
+    Regulatory                                                       CE, FCC                         CE
+                                         (Zone0)
+    Environmental                                                      RoHS
+1
+  Perfectly smooth flat-surfaced solid, or still liquid surface.
+2
+  Relatively smooth flat-surfaced surface or stable liquid surface.
+3
+  The battery life based on test results under laboratory conditions using the standard battery provided by Milesight.
+Actual performance may vary depending on battery brand and environmental factors.
+
+
+
+ Ordering Information
+       Model                 PN                                         Description
+                              /           G 1½” , Internal Antenna
+
+                             EA           G 1½” , External Antenna
+    EM41x-RDL
+                            NPT           NPT 1½” , Internal Antenna
+
+                           EA-NPT         NPT 1½” , External Antenna
+                            EM41x-RDL Datasheet
+
+
+ Dimensions (mm)
+Internal Antenna Version:
+
+
+
+
+External Antenna Version:
+EM41x-RDL Datasheet
+

@@ -1,0 +1,267 @@
+                                                                                         EG71 Datasheet
+
+
+
+
+EG71
+Building IoT Gateway
+
+
+
+
+                                          EG71 is an intelligent and powerful edge IoT gateway designed for
+                                          smart building applications. Supporting both wired and wireless
+                                          connectivity, EG71 enables seamless data aggregation from
+                                          diverse field devices and ensures fast, plug-and-play BMS
+                                          deployment. It bridges field-level sensors and actuators with cloud
+                                          or BMS systems, providing reliable data processing, local
+                                          automation, and remote management in a compact form factor.
+                                          It is ideal for building automation, energy management, HVAC
+                                          control, and other IoT applications in commercial buildings,
+                                          campuses, hotels, and industrial facilities.
+
+
+    Features
+      Quad-core industrial-grade processor with large memory ensures stable performance for
+       large-scale device connectivity and edge processing
+      Comprehensive I/O interfaces with native support for RS485, KNX, M-BUS, LoRaWAN®, Wi-Fi
+       and Ethernet devices
+      Equips with NFC to add Milesight devices quickly
+      Multi backhaul options including Ethernet, cellular (4G) and Wi-Fi for reliable network
+       redundancy
+      Supports mainstream protocols such as Modbus, BACnet, MQTT, and HTTP for seamless
+       integration with third-party hardware or software
+                                                                                  EG71 Datasheet
+
+
+   Offers secondary development capabilities (Python SDK, Node-RED and Docker) to build
+    customized BMS systems
+   Enables security communication with multiple VPN tunnels and firewall rules
+   Enables centralized and simplified remote device management via Milesight Development
+    Platform
+
+
+
+ Application Example
+
+
+
+
+ Specifications
+Hardware System
+CPU                      Quad-core 1.5 GHz, 64-bit ARM Cortex-A53
+Memory                   2GB DDR4 RAM
+Flash                    32 GB eMMC
+Extendable Storage       1 × Micro SD Slot
+LoRaWAN®
+Antenna                  1 × 50 Ω SMB - Female External Connector
+Channel                  8 (Half-duplex)
+Frequency Band           CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4
+Sensitivity              -140dBm Sensitivity @292bps
+Tx Power                 27dBm Max
+Protocol                 V1.0 Class A/Class B/Class C and V1.0.2 Class A/Class B/Class C
+LBT                      Support
+                                                                             EG71 Datasheet
+
+
+Number of Devices    Around 2000 Devices (based on 10 min uplink interval)
+Advanced Features    Noise Analyzer, Gateway Fleet, Multicast, FUOTA
+Ethernet Interface
+Port                 2 × RJ45 Ports (WAN/LAN Software Switchable)
+Physical Layer       10/100/1000 Base-T (IEEE 802.3)
+Data Rate            10/100/1000 Mbps (Auto-Sensing)
+Interface            Auto MDI/MDIX
+Mode                 Full/Half Duplex (Auto-Sensing)
+Ethernet Isolation   1.5 kV RMS
+PoE                  1 × 802.3 af PoE PD on ETH1 Port
+Wi-Fi Interface
+Antenna              1 × 50 Ω SMB - Female External Connector
+Standards            IEEE 802.11 b/g/n, 2.4GHz
+                     802.11b: 18 dBm +/-2.0 dBm (11 Mbps)
+                     802.11g: 18 dBm +/-2.0 dBm (6 Mbps)
+                     802.11g: 17 dBm +/-2.0 dBm (54 Mbps)
+Tx Power             802.11n@2.4 GHz: 17 dBm +/-2.0 dBm (MCS0_HT20)
+                     802.11n@2.4 GHz: 16 dBm +/-2.0 dBm (MCS7_HT20)
+                     802.11n@2.4 GHz: 17 dBm +/-2.0 dBm (MCS0_HT40)
+                     802.11n@2.4 GHz: 16 dBm +/-2.0 dBm (MCS7_HT40)
+Mode                 AP or Client mode
+                     AP: WPA-PSK/WPA2-PSK authentication, WEP/TKIP/AES encryption
+Security             Client: WPA-PSK/WPA2-PSK/WPA-Enterprise/WPA2-Enterprise
+                     authentication, WEP/TKIP/AES encryption
+Cellular Interface
+Network              4G LTE(CAT1)/GSM
+Tx Power             Class 3 (23 dBm ±2 dB)
+Antenna              1 × 50 Ω SMB - Female External Connector
+                     L08GL (Global except North America):
+                     LTE-FDD: B1/2/3/4/5/7/8/12/13/17/18/19/20/25/26/28/66
+                     LTE-TDD: B34/38/39/40/41;
+Cellular Band
+                     GSM: B2/3/5/8
+                     L09NA (North America):
+                     LTE-FDD: B2/4/5/12/13/66
+SIM Slot             1 (Nano SIM-4FF)
+                                                                           EG71 Datasheet
+
+
+Data Interfaces
+RS485
+Numbers                2 × RS485
+                       1200/2400/4800/9600/19200/38400/57600/115200 (Software
+Baud Rate/bps
+                       Switchable)
+Terminal Resistor      1 × 120 Ω Terminal Resistor (Software Switchable)
+Number of Devices      Up to 128 Devices per RS485, total 256 Devices
+KNX
+Numbers                1 × KNX/TP1
+Bus Voltage            21-30 V DC, via the KNX bus
+Baud Rate              9600
+Number of Devices      Up to 63 Devices
+M-BUS
+Numbers                1 × M-BUS
+Voltage                22-34V
+Maximum Current Load   50mA / 30UL
+                       Type: 2-core shielded twisted pair cable
+Cable                  Length: Max. 350 m between a slave and the gateway which acts as a
+                       master
+Baud Rate/bps          1200/2400/4800/9600 (Software Switchable)
+Number of Devices      Up to 30 M-Bus unit loads (UL of 1.5 mA)
+Universal Input
+Numbers                8 × Universal Inputs (Software Switchable)
+                       Work Mode: Digital Input (Wet Contact)
+Digital Input
+                       Load: 0-24V DC
+                       Input Type: 0-10V or 4-20mA
+Analog Input           Resolution: 12bit
+                       Accuracy: ±1% FS
+                       Input Type: PT1000 or Ni1000
+RTD Input              Input Connection: 2-wire
+                       Accuracy: ±0.5°C
+                       Input Type: NTC 10K Type 2, NTC 10k Type 3 or NTC 20k
+NTC Input
+                       Accuracy: ±0.5°C at 25°C
+                       Input Type: 1000 Ω or 2000 Ω
+Resistance Input
+                       Accuracy: 1 Ω
+                                                                        EG71 Datasheet
+
+
+Digital Input
+Numbers             4 × Dry Contact Inputs
+Work Mode           Digital Input, Pulse Counter
+Frequency           >=1000Hz
+Digital Output
+Numbers             3 × Relay Outputs
+Resistive Load      Max. 3A@30 V DC or 3A@110 V AC
+Analog Output
+Numbers             4 × Analog Outputs
+Analog Type         4-20mA or 0-10V (Software Switchable)
+Maximum Load        20mA
+Resolution          12 bit
+Accuracy            ±1% FS
+Others
+Screen              1.3-inch OLED Screen, 128 × 64 Pixels
+Screen Buttons      7 × Screen Control Buttons
+NFC                 13.56MHz, support adding Milesight LoRaWAN® end devices
+Reset Button        1 × RST
+USB                 1 × USB Type-C for Power Supply and Console
+LED Indicators      1 × SYS
+Power Connector     1 × 2-Pin Terminal Block
+Built-in            Watchdog, RTC, Timer
+Software
+                    Data Acquisition:
+                    RS485: Modbus RTU, BACnet MS/TP
+                    KNX: KNX/TP
+Building Protocol   Ethernet/Wi-Fi: BACnet/IP, Modbus TCP, Modbus RTU over TCP
+                    M-BUS: Meter-Bus
+                    Data Forwarding:
+                    MQTT(s), HTTP(s), BACnet/IP, Modbus TCP, Modbus RTU over TCP
+Embedded Network    Built-in LoRaWAN® network server, support Gateway Fleet, Multicast,
+Server              FUOTA features
+VPN Tunnel          OpenVPN/IPsec/PPTP/L2TP/WireGuard
+                    Access Control, DMZ, Port Mapping (DNAT), MAC Binding, Filtering
+Firewalls
+                    (IP&Domain)
+                                                                                       EG71 Datasheet
+
+
+DDNS                             Supported 14 service providers, others can be configured manually
+Multilevel Authority             Multiple Levels of User Authority
+Reliability                      Link Failover
+Diagnostics Tools                Ping, Traceroute, Tcpdump, QXDM, Log Server
+Configuration                    Web, CLI (SSH/Telnet), On-demand dial up, SNMP
+Remote Management                Milesight Development Platform
+Event Alarm                      Power On, Network Up/Down, VPN Up/Down, etc.
+App                              Python SDK, Node-RED, Docker
+Power Supply and Consumption
+                                 1. 24 V DC/AC by Terminal Block
+Power Input                      2. 802.3 af PoE
+                                 3. 5V/3A by USB Type-C Port1
+Power Consumption                Typical 411mA@20V (8.2W), Maximum 562mA@20V (11.24 W)
+Physical Characteristics
+                                 MTBF > 500, 000 hours @ 25°C (according to Bellcore TR-332) -non
+Reliability
+                                 contractual
+Ingress Protection               IP30
+Material & Color                 PC+Aluminium Alloy, Grey
+Weight                           375.6g
+Dimensions                       123 x 90 x 36 mm (4.84 x 3.54 x 1.42 in)
+Wire Connection                  AWG 24-16
+Installation                     Wall Screw Mounting, DIN Rail Mounting
+Environmental
+Operating Temperature            -40°C to +60°C (-40°F to +140°F)
+Storage Temperature              -40°C to +85°C (-40°F to +185°F)
+Relative Humidity                0% to 95% (non-condensing) at 25°C/77°F
+Approvals
+Regulatory                       CE, CE (RED), FCC
+1
+    : When powered via USB, M-BUS and Universal Inputs will not work properly.
+                                                                             EG71 Datasheet
+
+
+ Hardware Overview
+
+
+
+
+ Wiring Diagram
+
+Power Supply             RS485                      M-BUS                     KNX
+
+
+
+
+  Digital Input       Digital Output                         Analog Output
+  Dry Contact         Resistive Load                4-20mA                    0-10V
+
+
+
+
+                                       Universal Input
+
+Digital Input-Wet   PT1000/Ni1000/NTC
+                                             Analog Input(4-20mA)     Analog Input(0-10V)
+     Contact            /Resistance
+                                                                                     EG71 Datasheet
+
+
+ Accessories
+
+
+
+     1 × LoRaWAN®                1 × Cellular              1 × Wi-Fi Magnetic        2 × Wall Mounting
+    Magnetic Antenna           Magnetic Antenna                 Antenna                    Kits
+
+
+
+
+      1 × Label Sticker      1 × AC-DC DIN Rail Power
+                                 Adapter (Optional)
+
+
+*Note: Contact us if you need any other special accessories or customized accessories.
+
+
+
+ Dimensions(mm)
+EG71 Datasheet
+

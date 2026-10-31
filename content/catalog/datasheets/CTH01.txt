@@ -1,0 +1,193 @@
+                                                                                      CTH01 Datasheet
+
+
+
+Smart                        Power
+Monitor Hub
+Featuring LoRaWAN®
+
+
+CT H 0 1
+
+
+
+
+    Introduction
+   The CTH01 Smart Power Monitor Hub is a high-performance, multi-channel device designed for the
+   collection and analysis of electrical parameters. Supporting simultaneous acquisition of 12 current
+   channels and 3 voltage channels, coupled with high-precision computation, the CTH01 delivers a
+   comprehensive set of electrical parameters including power, energy, power factor, harmonic
+   distortion, and voltage three-phase unbalance.
+   Featuring LoRaWAN® wireless communication and Bluetooth for local configuration, CTH01
+   integrates seamlessly into energy management systems, providing reliable data to support energy
+   savings, preventative maintenance, and cost allocation.
+   CTH01 is engineered for commercial buildings, industrial plants, data centers, and multi-tenant
+   apartments to enable precise energy consumption measurement, power quality monitoring, and
+   equipment operational analysis for critical circuits within electrical distribution systems.
+                                                                                CTH01 Datasheet
+
+
+ Features
+Comprehensive & Accurate Monitoring
+   Provides high-precision measurement of active, reactive, and apparent power and energy,
+    integrated with power quality analysis functions such as Voltage/Current THD and voltage
+    three-phase unbalance.
+   Compliant with IEC 62053-21/23 standards to ensure professional measurement.
+   Support external wire temperature sensor for cable temperature measurement.
+Flexible Configuration & Deployment
+   12 current channels can be independently configured for single-phase use, grouped into 4
+    three-phase circuits or mixed usage.
+   Supports mixed use of split-core Current Transformers (100A/300A/500A/1000A) and 4000A
+    Rogowski coils (coils must be consistent within a group).
+   Provides convenient voltage measurement through direct connection via voltage
+    measurement terminals or an optional non-invasive magnetic attachment, enabling flexible
+    installation.
+   Complete parameter setup, data reading, and current direction calibration can be performed
+    remotely via the Bluetooth-connected Toolbox APP, eliminating the need for physical access.
+Industrial-Grade Reliability & Storage
+   6-8kHz sampling frequency ensures data measuring accuracy.
+   Stores periodic data records, event logs, and up to 12 months of monthly maximum/minimum
+    values and energy totals.
+   Supports user-defined threshold alarms and device-initiated overload/out-of-range alarms.
+Powerful Expansion & Integration
+   Built-in LoRaWAN® protocol for seamless integration with Milesight Development Platform and
+    third-party platforms.
+   Supports Firmware-Update-Over-The-Air (FUOTA) updates for feature enhancements.
+
+
+
+      Specifications
+Electrical Measurement
+                                               RMS Voltage and Current
+                                                     Power Factor
+Detection
+                                           Active, Reactive, Apparent Power
+Parameter
+                        Active (Imported or Exported), Reactive (Imported or Exported), Apparent
+                                                        Energy
+                                                                        CTH01 Datasheet
+
+
+                                    Voltage Three-Phase Unbalance
+                               Voltage Total Harmonic Distortion (THDv)
+                                Current Total Harmonic Distortion (THDi)
+Sampling
+                                               6 - 8 kHz
+Frequency
+Working Frequency                              50 - 60 Hz
+                             Active Energy: ±1% (according to IEC 62053-21)
+Accuracy
+                            Reactive Energy: ±2% (according to IEC 62053-23)
+Voltage Interface
+                           Three-phase: phases L1 to L3 with or without Neutral
+Circuit
+                                 Single-phase: phases L with Neutral
+Configuration
+                                 Mixed Three-phase and Single-phase
+Measuring Range                              100 - 500V AC
+Measuring
+                                                 ±1 %
+Accuracy
+Maximum Voltage
+                                               290 Vrms
+(N-L)
+Maximum Voltage
+                                               500 Vrms
+(L-L)
+Wire Connection                               AWG 26 - 12
+Current Interface
+Range                                         Up to 4000A
+Interface Type                                   RJ11
+Port                                     12 × Current Channels
+Temperature
+Sensor Type                               External NTC Sensor
+Measuring range                              -20°C ~ 100°C
+Measuring
+                                                 ±1 °C
+Accuracy
+Wireless Transmission
+Protocol                                      LoRaWAN®
+Antenna Connector              1 × 50 Ω SMB - Female External Connector
+Frequency           CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4
+Tx Power                16 dBm (868 MHz)/20 dBm (915 MHz)/19 dBm (470 MHz)
+Sensitivity                                    -137dBm
+                                                                               CTH01 Datasheet
+
+
+Mode                                             OTAA/ABP Class C
+Others
+LED Indicator                                1 × Status/Alarm Indicator
+
+Button                                            1 × Reset Button
+
+USB                           1 × USB Type-C for Cable Temperature Sensor Connection
+Software
+Configuration                                 Mobile App via Bluetooth
+                      Data Storage (20, 000 entries, 2,000 alarms), Data Analysis (12 months of
+Advanced Feature
+                     energy statistics), Threshold Alarm, Out-of-Range alarm, Power Failure Alarm
+Physical Characteristics
+Power Supply                        12 V DC (via included AC~DC Power Adapter)
+Power Connector            1 × 2-pin 5 mm Terminal Block, with Reverse Polarity Protection
+Insulation Voltage                            4kVac(r.m.s)(1mA/1min)
+Intrinsic
+                                                     Max. 5.8 W
+Consumption
+Pollution Degree                                          2
+Overvoltage
+                                                         Ⅲ
+Category
+Maximum Altitude                                       2000 m
+Operating
+                                              -20°C~70°C (-4°F~158°F)
+Temperature
+Relative Humidity                             ≤ 95% (Non-condensing)
+Ingress Protection                                      IP30
+Housing&Color                             ABS+PC (UL94 V0), Starlight Grey
+
+Dimensions                            49.3 × 98 × 90 mm (1.94 × 3.86 × 3.54 in)
+
+Weight                                                  163 g
+Installation                     DIN 35 Rail Mounting, Magnetic Mounting (Optional)
+Approvals
+                                 ETL Listed (UL/CSA 61010-1, UL/CSA 61010-2-030),
+Regulatory
+                                             CE (RED&LVD), FCC, SRRC
+Environmental                                           RoHS
+                                                                                     CTH01 Datasheet
+
+
+ Current Transformer Options
+
+                                                                                         Rogowski
+    Type                                   Split-core CT
+                                                                                           coils
+Range*             0 - 100 A         0 - 300 A         0 - 500 A      0 - 1000 A        0 - 4000 A
+Measuring
+                                               Class: 0.5                                   ±2 %
+Accuracy
+Operating
+                                               -40°C~55°C (-40°F~131°F)
+Temperature
+Insulation
+                                                3kVac(r.m.s)(1mA/1min)
+Voltage
+Flame
+                                                        UL94 V0
+Retardant
+                  35.5 × 30.8 ×     56.5 × 36.5 ×    69 × 42.1 × 86   9631 × 595 ×
+Dimensions                                                                                    /
+                    45.6 mm           68.5 mm               mm           119 mm
+                    Ф 16 mm          Ф 24 mm          Ф 36.6 mm          Ф 51 mm         Ф 150 mm
+Wire Hole
+                   (Ф 0.63 in)       (Ф 0.94 in)       (Ф 1.44 in)     (Ф 2.01 in)       (Ф 5.91 in)
+Weight                100 g            195 g                287 g         835 g           115.1 g
+Installation                            Suspended on the Testing Conductor
+
+
+*Note: Contact us if you need to customize other ranges.
+                      CTH01 Datasheet
+
+
+   Dimensions (mm)
+

@@ -1,0 +1,153 @@
+                                                                               EM400-UDL Datasheet
+
+
+
+
+Ultrasonic Distance
+Se n s o r
+EM400-UDL
+
+
+
+
+    Introduction
+   EM400-UDL is a non-contact ultrasonic distance sensor designed for liquid level distance measurement.
+   It features multiple selective probes with varying detecting ranges to meet diverse requirements. With
+   high protection IP rating and waterproof enclosure, EM400-UDL can withstand harsh environments, and
+   it can work up to 10 years with two 9000 mAh batteries.
+   Milesight offers LoRaWAN® version and NB-IoT/Cat.M version to meet different communication needs.
+   The LoRaWAN® version can be integrated with Milesight LoRaWAN® gateway and Milesight IoT Cloud
+   solution, enabling remote and visual management of all sensor data. The NB-IoT/Cat.M version not only
+   supports multiple application modes to compatible with IoT platforms, but also is equipped with GNSS
+   for tracking and security purposes.
+   EM400-UDL can be used in outdoor applications such as water level measurement in static or
+   slow-flowing water bodies, monitoring fill level of water tanks, etc.
+                                                                             EM400-UDL Datasheet
+
+
+ Features
+Shared Values
+   Selective probes vary from 25 to 1000 cm for multiple applications
+   Two built-in 9000 mAh replaceable batteries that work for up to 10 years without replacement
+   Equipped with NTC temperature sensor for the detection and alarm of burning
+   Built-in 3-axis accelerometer sensor to monitor device tilt status
+   Damp-proof coating inside and IP67 waterproof enclosure for outdoor applications
+   Equipped with NFC for one touch configuration, support card emulation mode
+
+LoRaWAN® Version Only
+   Ultra-wide-distance wireless transmission up to line of sight of 15 km
+   Function well with standard LoRaWAN® gateways and network servers
+   Compatible with Milesight IoT Cloud for remote management
+
+NB-IoT/Cat.M Version Only
+   Equipped with GNSS positioning for tracking
+   Support cumulative number report function for power saving
+   Support multiple network protocols to be compatible with IoT platforms
+
+
+
+ Specifications
+Wireless Transmission
+LoRaWAN® Version
+Frequency                   CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4
+Tx Power                    16 dBm (868 MHz)/20 dBm (915MHz)/19 dBm (470MHz)
+Sensitivity                 -137dBm @300bps
+Mode                        OTAA/ABP Class A
+NB-IoT/Cat M Version
+                            Cat M1:
+                            B1/B2/B3/B4/B5/B8/B12/B13/B18/B19/B20/B25/B26/B27/B28/
+Cellular Band               B66/B85
+                            Cat NB2: B1/B2/B3/B4/B5/B8/ B12/B13/B18/B19/B20/B25/B28/
+                            B66/B71/B85
+SIM Slot                    1 (Micro SIM-3FF), 1.8V
+Application Mode            TCP/UDP/MQTT/AWS
+                                                                        EM400-UDL Datasheet
+
+
+Measurement
+Distance
+Model                           Standard Version                      Pro Version
+                                                                   W050: 30 ~ 500 cm
+Range                           C100: 25 ~ 1000 cm
+                                                                  W100: 50 ~ 1000 cm
+                           ± (1+0.3%*S) cm, S=distance                   ±1% FS
+Accuracy
+                                 (- 15°C ~ 60°C)1                    (- 30°C ~ 65°C)
+Resolution                                               1 mm
+Device Position
+Status                  Normal/Tilt
+Temperature
+Range                   -40 ~ 125°C
+Resolution              0.1°C
+GNSS Positioning (NB-IoT/Cat M Version Only)
+Parameters              Longitude/Latitude
+Resolution              0.000001
+Others
+LED                     1 × LED Indicator (Internal)
+Button                  1 × Power/Reset Button (Internal)
+Software
+Power On & Off          NFC, Power Button (Internal)
+Configuration           Mobile App (via NFC)
+                        Cumulative Report (NB Version Only), Calibration, Threshold Alarm,
+Advanced Features
+                        Tilt & Distance Switch
+Physical Characteristics
+Power Supply            2 x 9000 mAh ER26500 Li-SOCL2 Batteries
+
+                        LoRaWAN® Version: > 10 years (10-min Interval, 25°C)
+                        NB-IoT/Cat M Version: TCP/UDP—Around 10 Years,
+Battery Life2
+                        MQTT/AWS—Around 5 Years (4 Times Report per Day, per Report
+                        Includes 12 Packages with 30-min Collection Interval, 25°C)3
+
+Operating Temperature   - 30°C ~ 70°C
+
+Relative Humidity       ≤95% (Non-condensing)
+Ingress Protection      IP67
+Dimension               118 × 65 × 80 mm
+Housing                 ABS + PC (UL94 V0)
+                                                                                        EM400-UDL Datasheet
+
+
+    Color                        Black gray (C100), Gray (W050/W100)
+                                 C100: 252.7g (Batteries included)
+    Weight
+                                 W050&W100: 246.6g (Batteries included)
+    Installation                 On the Flat Surfaces with Screws
+    Approvals
+    Regulatory                   CE, FCC
+    Environmental                RoHS
+1
+  This accuracy is applicable to the measuring range of 25~800cm.
+2
+  Tested under laboratory conditions and for guideline purposes only.
+3
+  PSM is required for SIM card and will be impacted by cellular base station signals.
+
+
+ Beam Pattern
+C100：
+                                                                             EM400-UDL Datasheet
+
+
+W050:
+
+
+
+
+Typical beam pattern for 30cm target move left and right with the board parallel to the sensor face.
+
+
+W100：
+
+
+
+
+Typical beam pattern for 30cm target move left and right with the board parallel to the sensor face.
+
+
+
+
+ Dimensions (mm)
+EM400-UDL Datasheet
+

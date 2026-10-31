@@ -14,6 +14,7 @@
   --f:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:120px}
+html,body{overflow-x:clip}
 body{background:#fff;color:var(--text);font-family:var(--f);font-weight:300;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:var(--blue);text-decoration:none}
@@ -74,7 +75,7 @@ section.blk{padding-block:88px}
 .pc em{display:inline-block;font-style:normal;font-size:12px;color:var(--blue);background:var(--soft);border-radius:3px;padding:1px 8px;margin-top:8px}
 .ar{position:absolute;top:96px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font:inherit;font-size:22px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center}
 .ar:hover{border-color:var(--blue);color:var(--blue)}
-.ar.p{left:-48px}.ar.n{right:-48px}
+.ar.p{left:-20px}.ar.n{right:-20px}
 .ar[disabled]{opacity:.3;cursor:default}
 
 /* grid of products */
@@ -83,7 +84,7 @@ section.blk{padding-block:88px}
 .alt{background:var(--bg2)}
 .alt .pc{background:transparent}
 .wide .trk{grid-auto-columns:calc((100% - 120px)/3.5);gap:40px}
-.wide .ar.p{left:-52px}.wide .ar.n{right:-52px}
+.wide .ar.p{left:-20px}.wide .ar.n{right:-20px}
 .one{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:36px}
 .one .pc{max-width:360px;margin:0 auto}
 .one ul{list-style:none;display:grid;gap:10px}

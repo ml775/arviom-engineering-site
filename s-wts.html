@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Серія EM300 — ARVIOM Engineering</title>
+<title>Серія WTS — ARVIOM Engineering</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -186,8 +186,8 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
   <nav aria-label="Розділи"><a href="./#scenarios">Рішення</a><a href="products.html" aria-current="page">Продукти</a><a href="./#cases">Проєкти</a><a href="./#dev">Розробки</a><a href="./#learn">Навчання</a><a href="./#learn">Підтримка</a><a href="./#video">Відео</a></nav>
   <div class="rt"><a class="pl l" href="partner.html">Вхід для партнерів</a><a class="pl s" href="./#contact">Зв'язатися</a></div>
 </div></header>
-<div class="sxs"><div class="in"><nav aria-label="Категорії"><a href="products.html">Усі продукти</a><a href="catalog.html" aria-current="page">LoRaWAN-датчики</a><a href="products.html">Шлюзи</a><a href="products.html">Контролери</a></nav>
-  <div class="bc"><a href="./">Головна</a> › <a href="products.html">Продукти</a> › <span id="crumb-last">Серія EM300</span></div></div></div>
+<div class="sxs"><div class="in"><nav aria-label="Категорії"><a href="products.html">Усі продукти</a><a href="products.html#sensors" aria-current="page">LoRaWAN-датчики</a><a href="s-gateways.html">Шлюзи</a><a href="s-controllers.html">Контролери</a></nav>
+  <div class="bc"><a href="./">Головна</a> › <a href="products.html">Продукти</a> › <span id="crumb-last">Серія WTS</span></div></div></div>
 <main id="app"></main>
 
 <div class="tray" id="tray" aria-live="polite"><div class="wrap">
@@ -197,42 +197,48 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 </div></div>
 
 <script>
-__DATA__
-const GROUPS=[["all","Усі"],["clim","Клімат"],["leak","Протікання"],["door","Двері й вікна"],["pulse","Імпульси й облік"],["level","Рівень рідини"],["tilt","Нахил"]];
-const GROUP_OF={"EM300-TH":"clim","EM320-TH":"clim","EM300-MCS":"door","EM300-DI":"pulse","EM300-CL":"level","EM300-SLD":"leak","EM300-ZLD":"leak","EM300-MLD":"leak","EM320-TILT":"tilt"};
-const ROWS=[["purpose","Призначення"],["measures","Вимірює"],["range_accuracy","Діапазон і точність"],["probe","Датчик / зонд"],["interfaces","Входи"],["battery","Батарея"],["battery_life","Ресурс батареї"],["ip","Захист"],["temp","Робоча температура"],["range_lora","Дальність"],["config","Налаштування"],["storage","Пам'ять"],["mounting","Монтаж"],["dimensions","Розміри"],["weight","Вага"],["frequencies","Частотні плани"]];
-const slug=m=>m.toLowerCase();
+const MODELS=[{"model": "WTS506", "name_uk": "IoT-метеостанція", "img": "img/cat/cat-iot-weather-station-wts506.webp", "ext": "https://www.milesight.com/iot/product/lorawan-sensor/wts506", "specs": true, "purpose": "Комплексний моніторинг атмосферних умов просто неба для метеорології, розумного сільського господарства та розумних будівель.", "measures": ["Температура повітря", "Вологість", "Напрямок вітру", "Швидкість вітру", "Атмосферний тиск", "Кількість опадів"], "range_accuracy": "Темп.: -40…85 °C, ±0,3 °C; вологість: 0–100 % RH, ±3 % RH; напрямок вітру: 0–360°, ±3°; швидкість вітру: 0–60 м/с, ±0,3 м/с або ±3 %; тиск: 500–1100 гПа, ±0,5 гПа; опади: 0–1000 мм, ±0,5 мм (<10 мм), ±5 % (>10 мм)", "probe": "Термістор (темп.), ємнісний датчик (вологість), ультразвуковий (вітер), п'єзорезистивний (тиск), п'єзоелектричний (опади)", "interfaces": "Хаб: 1 × M12 A-coded 2-pin роз'єм живлення (15 В), 1 × M12 роз'єм даних для сенсора WTS, внутрішній USB Type-C (налаштування/консоль), внутрішня кнопка живлення/скидання, світлодіод", "network": "LoRaWAN, OTAA/ABP, Class A, внутрішня антена", "power": "Зовнішня сонячна панель 15 Вт (15 В, 1 А) з резервними акумуляторами", "battery": "2 × 2550 мАг ICR18650/26V, акумуляторні", "battery_life": "", "ip": "Сенсор IP65; хаб IP67", "temp": "Сенсор: -40…85 °C; хаб: -20…60 °C; сонячна панель: -20…80 °C", "dimensions": "Сенсор: ф160 × 263 × ф73 мм; хаб: 116 × 116 × 45,5 мм; панель: 343 × 283 × 16,5 мм", "weight": "Сенсор: 2,15 кг; панель: 1 кг (без кронштейна), 2,2 кг (з кронштейном)", "mounting": "Сенсор і панель — на щоглі; хаб — гвинтами", "range_lora": "До 15 км прямої видимості у сільській місцевості", "config": "Мобільний додаток (NFC) або ПЗ для ПК (USB Type-C)", "storage": "Понад 19 000 записів, повторна передача даних", "frequencies": "CN470/RU864/IN865/EU868/US915/AU915/KR920/AS923-1&2&3&4", "highlights": ["Шість датчиків в одному, ультразвуковий вітер без рухомих частин", "Сонячне живлення з резервними акумуляторами", "Корпус стійкий до води, UV та сольового туману; зв'язок до 15 км"]}];
+const CASES=[];
+const S={"code": "WTS", "title": "Серія WTS", "sub": "IoT-метеостанція", "text": "Вуличні метеодані для агро, міста й будівництва.", "card": [["measures", "Вимірює"], ["battery_life", "Батарея"], ["ip", "Захист"]]};
+const GROUPS=S.groups||[];
+const GROUP_OF=S.group_of||{};
+const ALLROWS=[["purpose","Призначення"],["measures","Вимірює / керує"],["range_accuracy","Діапазон і точність"],["probe","Сенсор / технологія"],["interfaces","Входи й порти"],["network","Зв'язок"],["power","Живлення"],["battery","Батарея"],["battery_life","Ресурс батареї"],["ip","Захист"],["temp","Робоча температура"],["range_lora","Дальність"],["config","Налаштування"],["storage","Пам'ять"],["mounting","Монтаж"],["dimensions","Розміри"],["weight","Вага"],["frequencies","Частотні плани"]];
+const empty=v=>v==null||(Array.isArray(v)?!v.length:!String(v).trim()||String(v).trim()==="—");
+const ROWS=ALLROWS.filter(([k])=>MODELS.some(m=>m.specs&&!empty(m[k])));
+const slug=m=>m.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 const short=s=>String(s||"—").split(/[(;]/)[0].trim();
 const esc=s=>String(s??"—").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const val=v=>Array.isArray(v)?"<ul>"+v.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>":esc(v);
+const val=v=>empty(v)?"—":Array.isArray(v)?"<ul>"+v.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>":esc(v);
 const sig=v=>{const t=(Array.isArray(v)?v.join(" "):String(v??"")).toLowerCase();const k=(t.match(/[0-9]+|[a-z]{2,}/g)||[]).join(" ");return k||t.replace(/[^\p{L}\p{N}]+/gu,"")};
 const picked=new Set(); let filter="all"; let onlyDiff=false;
 const app=document.getElementById("app");
 
 function series(){
-  document.getElementById("crumb-last").textContent="Серія EM300";
+  document.getElementById("crumb-last").textContent=S.title;
   app.innerHTML=`
   <section class="shead"><div class="wrap shead-in">
-    <div><div class="series-code">EM300<small>Серія компактних датчиків LoRaWAN</small></div>
-      <p>Один корпус і одна логіка налаштування — різні сенсори: клімат, протікання, двері, імпульсні лічильники, рівень і нахил. ${MODELS.length} моделей у серії.</p></div>
-    <div class="facts"><div><b>IP67</b><span>корпус для вулиці й підвалу</span></div><div><b>до 10 р.</b><span>від батареї*</span></div><div><b>NFC</b><span>налаштування телефоном</span></div></div>
+    <div><div class="series-code">${esc(S.code)}<small>${esc(S.sub)}</small></div>
+      <p>${esc(S.text)} ${MODELS.length>1?MODELS.length+" "+(MODELS.length<5?"моделі":"моделей")+" у серії.":""}</p></div>
+    ${S.facts&&S.facts.length?`<div class="facts">${S.facts.map(f=>`<div><b>${esc(f[0])}</b><span>${esc(f[1])}</span></div>`).join("")}</div>`:""}
   </div></section>
-  <div class="wrap"><div class="filters" role="group" aria-label="Фільтр за задачею">${GROUPS.map(([k,t])=>`<button class="chip" type="button" data-g="${k}" aria-pressed="${k===filter}">${t}</button>`).join("")}</div>
+  <div class="wrap">${GROUPS.length?`<div class="filters" role="group" aria-label="Фільтр за задачею">${GROUPS.map(([k,t])=>`<button class="chip" type="button" data-g="${k}" aria-pressed="${k===filter}">${t}</button>`).join("")}</div>`:'<div style="height:28px"></div>'}
   <div class="grid">${MODELS.map(card).join("")}</div>
-  <p style="font-size:13px;color:var(--muted);margin:-90px 0 110px">* Ресурс залежить від інтервалу передачі й умов; точні цифри — у порівнянні та на сторінці моделі.</p></div>`;
+  ${S.footnote?`<p style="font-size:13px;color:var(--muted);margin:-90px 0 110px">${esc(S.footnote)}</p>`:""}</div>`;
   app.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.g;series()});
   app.querySelectorAll(".cmp input").forEach(i=>i.onchange=()=>{i.checked?picked.add(i.value):picked.delete(i.value);tray()});
   applyFilter(); tray();
 }
 function card(m){
   const g=GROUPS.find(x=>x[0]===GROUP_OF[m.model])?.[1]||"";
-  return `<article class="card" data-g="${GROUP_OF[m.model]}">
-    <div class="pic"><img src="img/${slug(m.model)}.webp" alt="${esc(m.model)}" loading="lazy"></div>
-    <div class="plate"><span class="code">${esc(m.model)}</span><span class="tag">${g}</span></div>
+  const rows=(S.card||[["measures","Вимірює"],["battery_life","Батарея"],["ip","Захист"]]).filter(([k])=>!empty(m[k]));
+  const more=m.specs?`<a class="more" href="#m-${slug(m.model)}">Детальніше</a>`:`<a class="more" href="${m.ext}" target="_blank" rel="noopener">milesight.com ↗</a>`;
+  return `<article class="card" data-g="${GROUP_OF[m.model]||""}">
+    <div class="pic"><img src="${m.img}" alt="${esc(m.model)}" loading="lazy"></div>
+    <div class="plate"><span class="code">${esc(m.model)}</span>${g?`<span class="tag">${g}</span>`:""}</div>
     <div class="body"><h3>${esc(m.name_uk)}</h3>
-      <dl class="specs"><dt>Вимірює</dt><dd>${esc((m.measures||[]).map(short).join(", "))}</dd><dt>Батарея</dt><dd>${esc(short(m.battery_life))}</dd><dt>Захист</dt><dd>${esc(short(m.ip))}</dd></dl>
-      <div class="act"><label class="cmp"><input type="checkbox" value="${esc(m.model)}" ${picked.has(m.model)?"checked":""}> Порівняти</label>
-      <a class="more" href="#m-${slug(m.model)}">Детальніше</a></div></div></article>`;
+      <dl class="specs">${rows.map(([k,t])=>`<dt>${t}</dt><dd>${esc(Array.isArray(m[k])?m[k].map(short).join(", "):short(m[k]))}</dd>`).join("")}</dl>
+      <div class="act">${m.specs?`<label class="cmp"><input type="checkbox" value="${esc(m.model)}" ${picked.has(m.model)?"checked":""}> Порівняти</label>`:"<span></span>"}
+      ${more}</div></div></article>`;
 }
 function applyFilter(){app.querySelectorAll(".card").forEach(c=>c.hidden=!(filter==="all"||c.dataset.g===filter))}
 function tray(){
@@ -243,32 +249,32 @@ function tray(){
 document.getElementById("clear").onclick=()=>{picked.clear();route()};
 
 function compare(){
-  const list=(picked.size>=2?[...picked]:MODELS.map(m=>m.model)).map(id=>MODELS.find(m=>m.model===id));
+  const list=(picked.size>=2?[...picked]:MODELS.filter(m=>m.specs).map(m=>m.model)).map(id=>MODELS.find(m=>m.model===id));
   document.getElementById("crumb-last").textContent="Порівняння";
   document.getElementById("tray").classList.remove("on");
-  app.innerHTML=`<div class="wrap view"><a class="back" href="#">← До серії EM300</a>
+  app.innerHTML=`<div class="wrap view"><a class="back" href="#">← ${esc(S.title)}</a>
    <div class="vhead"><h1>Порівняння · ${list.length} моделі</h1>
    <label class="toggle"><input type="checkbox" id="od" ${onlyDiff?"checked":""}> Лише відмінності</label></div>
-   <div class="tablebox"><table class="cmpt" style="width:${190+list.length*280}px"><thead><tr><th scope="col"></th>${list.map(m=>`<th scope="col"><img src="img/${slug(m.model)}.webp" alt=""><div class="code">${esc(m.model)}</div><div style="font-weight:400;font-size:13px">${esc(m.name_uk)}</div></th>`).join("")}</tr></thead>
-   <tbody>${ROWS.map(([k,t])=>{const vs=list.map(m=>sig(m[k]));const diff=new Set(vs).size>1;
+   <div class="tablebox"><table class="cmpt" style="width:${190+list.length*280}px"><thead><tr><th scope="col"></th>${list.map(m=>`<th scope="col"><img src="${m.img}" alt=""><div class="code">${esc(m.model)}</div><div style="font-weight:400;font-size:13px">${esc(m.name_uk)}</div></th>`).join("")}</tr></thead>
+   <tbody>${ROWS.filter(([k])=>list.some(m=>!empty(m[k]))).map(([k,t])=>{const vs=list.map(m=>sig(m[k]));const diff=new Set(vs).size>1;
      return `<tr class="${diff?"diff":""}" ${onlyDiff&&!diff?"hidden":""}><th scope="row">${t}</th>${list.map(m=>`<td>${val(m[k])}</td>`).join("")}</tr>`}).join("")}</tbody></table></div>
    <p style="font-size:13px;color:var(--muted);margin-top:10px">Блакитним позначено рядки, де моделі відрізняються.</p></div>`;
   document.getElementById("od").onchange=e=>{onlyDiff=e.target.checked;compare()};
 }
 
 function product(id){
-  const m=MODELS.find(x=>slug(x.model)===id); if(!m){location.hash="";return}
+  const m=MODELS.find(x=>slug(x.model)===id); if(!m||!m.specs){location.hash="";return}
   document.getElementById("crumb-last").textContent=m.model;
   document.getElementById("tray").classList.remove("on");
-  const showCases=["EM300-TH","EM320-TH"].includes(m.model);
-  app.innerHTML=`<div class="wrap view"><a class="back" href="#">← Серія EM300</a>
-  <div class="pv"><div class="stage"><img src="img/${slug(m.model)}.webp" alt="${esc(m.model)}"><span class="bigcode">MILESIGHT · СЕРІЯ EM300</span></div>
+  const showCases=(S.cases_for||[]).includes(m.model)&&CASES.length;
+  app.innerHTML=`<div class="wrap view"><a class="back" href="#">← ${esc(S.title)}</a>
+  <div class="pv"><div class="stage"><img src="${m.img}" alt="${esc(m.model)}"><span class="bigcode">MILESIGHT · ${esc(S.title.toUpperCase())}</span></div>
    <div><h1>${esc(m.model)}</h1><div class="lead">${esc(m.name_uk)}</div><p class="purpose">${esc(m.purpose)}</p>
    <ol class="hl">${(m.highlights||[]).map((h,i)=>`<li><b>0${i+1}</b><span>${esc(h)}</span></li>`).join("")}</ol>
    <div class="ctas"><a class="btn" href="https://arviom.com" target="_blank" rel="noopener">Ціна на arviom.com</a><a class="btn ghost" href="#compare" onclick="picked.add('${m.model}')">Порівняти з іншими</a></div></div></div>
-  <section class="sec"><h2>Характеристики</h2><table class="stable"><tbody>${ROWS.map(([k,t])=>`<tr><th scope="row">${t}</th><td>${val(m[k])}</td></tr>`).join("")}</tbody></table></section>
+  <section class="sec"><h2>Характеристики</h2><table class="stable"><tbody>${ROWS.filter(([k])=>!empty(m[k])).map(([k,t])=>`<tr><th scope="row">${t}</th><td>${val(m[k])}</td></tr>`).join("")}</tbody></table></section>
   ${showCases?`<section class="sec"><h2>Кейси з цим датчиком <small>джерело: Milesight</small></h2><div class="cases">${CASES.map(c=>`<a class="case" href="${c.u}" target="_blank" rel="noopener"><span class="m">${esc(c.c)} · ${esc(c.i)}</span><strong>${esc(c.t)}</strong><span class="src">milesight.com</span></a>`).join("")}</div></section>`:""}
-  <section class="sec"><h2>Інші моделі серії</h2><div class="siblings">${MODELS.filter(x=>x!==m).map(x=>`<a href="#m-${slug(x.model)}">${esc(x.model)}</a>`).join("")}</div></section></div>`;
+  <section class="sec"><h2>Інші моделі серії</h2><div class="siblings">${MODELS.filter(x=>x!==m&&x.specs).map(x=>`<a href="#m-${slug(x.model)}">${esc(x.model)}</a>`).join("")}</div></section></div>`;
   window.scrollTo(0,0);
 }
 function route(){const h=location.hash.slice(1); if(h==="compare")compare(); else if(h.startsWith("m-"))product(h.slice(2)); else series()}

@@ -1,0 +1,17 @@
+{
+"am-series": "s-am.html",
+"occupancy-and-people-counting-series": "s-people.html",
+"wt-series": "s-wt.html",
+"gs-series": "s-gs.html",
+"cowork-series": "s-cowork.html",
+"wts-series": "s-wts.html",
+"ts-series": "s-ts.html",
+"em400-series": "s-em400.html",
+"em500-series": "s-em500.html",
+"at-series": "s-at.html",
+"ct-series": "s-ct.html",
+"iot-display": "s-iot-display.html",
+"gateways": "s-gateways.html",
+"controllers": "s-controllers.html",
+"em300-series": "catalog.html"
+}

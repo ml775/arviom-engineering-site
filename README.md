@@ -5,10 +5,10 @@
 ## Як змінити вміст
 - **Кейси, розробки, команда, логотипи** — `content/home.json`, потім `python3 build/build.py`.
 - **Каталог IoT (сторінка «Продукти»)** — `content/catalog/*.json`, назви українською — `build/uk.py`.
-- **Серія EM300 (каталог з порівнянням)** — `data.js` (дані), `catalog_tpl.html` (вигляд).
+- **Сторінки серій** (`s-*.html`, `catalog.html` = EM300): склад — `content/catalog/sensor_series.json` та `iot_catalog.json`, характеристики — `content/catalog/specs.json` (витягнуті з даташитів скриптом `build/specs.py`), вигляд — `build/series_tpl.html`, налаштування серій — `build/gen_series.py`. Серія EM300 — дані в `data.js`.
 - **Тексти й вигляд сторінок** — `build/index_tpl.html`, `build/products_tpl.html`, `partner.html`.
 
-Після зміни: `python3 build/build.py` → згенеруються `index.html`, `products.html`, `catalog.html`.
+Після зміни: `python3 build/build.py` → згенеруються `index.html`, `products.html`, `catalog.html`, `s-*.html`.
 
 ## Фото
 - `img/` — рендери й скриншоти, `img/ms/` — матеріали з milesight.com, `img/cat/` — фото каталогу Milesight.

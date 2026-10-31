@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Серія GS — ARVIOM Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: series header → filter strip → product grid with "nameplate" cards; compare table and product page share one grid language */
+:root{
+  --bg:#ffffff; --panel:#ffffff; --ink:#0f2235; --muted:#55677a; --line:#dde3ea; --grid:#f1f4f7;
+  --accent:#0b63b8; --accent-ink:#ffffff; --mark:#e39b12; --mark-ink:#2a1c00; --mark-soft:#e8f1fb;
+  --f-body:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-plate:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:4px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--accent)}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+.draft{background:#e39b12;color:#2a1c00;font-size:13px;text-align:center;padding:5px 12px}
+header.top{background:var(--panel);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:24px;height:60px}
+.logo{display:flex;align-items:baseline;gap:7px;text-decoration:none;color:var(--ink)}
+.logo b{font-family:var(--f-plate);font-weight:500;font-size:21px;letter-spacing:.04em}
+.logo span{color:var(--accent);font-weight:400;font-size:14px}
+.crumbs{font-size:14px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.login{margin-left:auto;color:var(--ink);text-decoration:none;font-size:15px;white-space:nowrap}.login:hover{color:var(--accent)}
+.crumbs a{color:var(--muted);text-decoration:none}.crumbs a:hover{color:var(--accent)}
+
+/* series head */
+.shead{padding-block:40px 28px;background:linear-gradient(180deg,#f1f4f7 0%,#fff 100%),
+  linear-gradient(var(--grid) 1px,transparent 1px) 0 0/24px 24px,
+  linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/24px 24px, var(--bg)}
+.shead-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:end}
+.series-code{font-family:var(--f-plate);font-weight:200;font-size:clamp(56px,9vw,112px);line-height:.9;letter-spacing:-.01em}
+.series-code small{display:block;font-family:var(--f-body);font-size:18px;font-weight:400;letter-spacing:0;margin-top:14px}
+.shead p{color:var(--muted);max-width:56ch;margin-top:10px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.facts div{padding:14px 16px;border-left:1px solid var(--line)}
+.facts div:first-child{border-left:0}
+.facts b{display:block;font-family:var(--f-plate);font-size:28px;font-weight:300;line-height:1.1}
+.facts span{font-size:13px;color:var(--muted)}
+@media (max-width:860px){.shead-in{grid-template-columns:minmax(0,1fr)}}
+
+/* filter */
+.filters{display:flex;gap:8px;flex-wrap:wrap;padding-block:18px;border-bottom:1px solid var(--line)}
+.chip{border:1.5px solid var(--line);background:var(--panel);border-radius:99px;padding:6px 14px;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* grid of nameplate cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;padding-block:24px 120px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card .pic{height:190px;padding:20px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);
+  background:radial-gradient(circle at 50% 60%,var(--bg) 0,var(--panel) 70%)}
+.card .pic img{height:140px;max-width:65%;width:auto;object-fit:contain;filter:drop-shadow(0 10px 14px rgba(20,30,40,.14))}
+.plate{display:flex;justify-content:space-between;align-items:stretch;border-bottom:1px solid var(--line)}
+.plate .code{font-family:var(--f-plate);font-weight:300;font-size:26px;padding:8px 14px;letter-spacing:.01em}
+.plate .tag{font-size:12px;font-weight:400;padding:0 12px;display:flex;align-items:center;border-left:1px solid var(--line);background:var(--mark-soft);color:var(--accent)}
+.card .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:15px;font-weight:400;line-height:1.3}
+.specs{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;font-size:13px}
+.specs dt{color:var(--muted)}
+.specs dd{font-variant-numeric:tabular-nums}
+.card .act{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;padding-top:6px}
+.cmp{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
+.cmp input{width:18px;height:18px;accent-color:var(--accent)}
+.more{font-size:14px;font-weight:400;text-decoration:none}
+.card[hidden]{display:none}
+
+/* compare tray */
+.tray{position:fixed;left:0;right:0;bottom:0;background:var(--ink);color:var(--bg);transform:translateY(110%);transition:transform .2s;z-index:10;
+  padding-bottom:env(safe-area-inset-bottom,0px)}
+.tray.on{transform:none}
+.tray .wrap{display:flex;align-items:center;gap:16px;min-height:64px;flex-wrap:wrap}
+.tray .picked{display:flex;gap:8px;flex-wrap:wrap;flex:1}
+.tray .picked span{font-family:var(--f-plate);font-weight:400;border:1px solid rgba(255,255,255,.35);padding:3px 10px}
+.btn{background:var(--accent);color:var(--accent-ink);border:0;padding:11px 18px;font-weight:400;cursor:pointer;text-decoration:none;display:inline-block;border-radius:var(--r)}
+.btn.ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
+@media (prefers-reduced-motion:reduce){.tray{transition:none}}
+
+/* compare view */
+.view{padding-block:28px 80px}
+.vhead{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.vhead h1{font-family:var(--f-plate);font-size:40px;line-height:1}
+.toggle{display:flex;align-items:center;gap:8px;font-size:14px}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+table.cmpt{border-collapse:separate;border-spacing:0;min-width:100%;font-size:15px;table-layout:fixed}
+.cmpt td,.cmpt thead th:not(:first-child){width:280px}
+.cmpt th,.cmpt td{border-bottom:1px solid var(--line);border-left:1px solid var(--line);padding:10px 12px;vertical-align:top;text-align:left}
+.cmpt thead th{position:sticky;top:0;background:var(--panel);border-bottom:2px solid var(--accent);vertical-align:bottom}
+.cmpt thead img{height:110px;width:auto;max-width:100%;object-fit:contain;margin:0 auto 12px}
+.cmpt thead .code{font-family:var(--f-plate);font-size:22px;font-weight:300;white-space:nowrap}
+.cmpt th[scope=row]{color:var(--muted);font-weight:400;width:190px;min-width:190px;border-left:0;background:var(--panel);position:sticky;left:0;z-index:1;box-shadow:1px 0 0 var(--line)}
+.cmpt thead th:first-child{position:sticky;left:0;z-index:3}
+.cmpt td{line-height:1.55}
+.cmpt tr.diff td{background:var(--mark-soft)}
+.cmpt tr[hidden]{display:none}
+.cmpt ul{padding-left:16px}
+
+/* product view */
+.pv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.pv .stage{background:var(--panel);border:1px solid var(--line);height:340px;display:flex;align-items:center;justify-content:center;padding:40px;position:relative}
+.pv .stage img{max-height:240px;max-width:70%;width:auto;object-fit:contain;filter:drop-shadow(0 16px 22px rgba(20,30,40,.16))}
+.pv .stage .bigcode{position:absolute;left:16px;bottom:10px;font-family:var(--f-plate);font-weight:500;font-size:15px;color:var(--muted)}
+.pv h1{font-family:var(--f-plate);font-size:clamp(44px,6vw,72px);line-height:.95}
+.pv .lead{font-size:19px;font-weight:400;margin-top:8px}
+.pv .purpose{color:var(--muted);margin-top:10px;max-width:52ch}
+.hl{list-style:none;margin-top:22px;border-top:2px solid var(--accent)}
+.hl li{padding:12px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px}
+.hl li b{font-family:var(--f-plate);color:var(--accent)}
+.pv .ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.sec{margin-top:56px}
+.sec h2{font-size:24px;margin-bottom:16px;display:flex;align-items:baseline;gap:12px}
+.sec h2 small{font-size:14px;color:var(--muted);font-weight:400}
+.stable{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);font-size:15px}
+.stable th,.stable td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.stable th{width:34%;color:var(--muted);font-weight:400}
+.cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.case{background:var(--panel);border:1px solid var(--line);padding:14px 16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:6px}
+.case:hover{border-color:var(--accent)}
+.case .m{font-size:13px;color:var(--muted)}
+.case .src{font-size:12px;color:var(--muted);margin-top:auto}
+.siblings{display:flex;gap:10px;flex-wrap:wrap}
+.siblings a{font-family:var(--f-plate);font-weight:400;border:1.5px solid var(--line);padding:6px 12px;text-decoration:none;color:var(--ink);background:var(--panel)}
+.siblings a:hover{border-color:var(--ink)}
+@media (max-width:860px){.pv{grid-template-columns:minmax(0,1fr)}}
+.back{font-size:14px;text-decoration:none;display:inline-block;margin-bottom:16px}
+/* thin type: Inter Tight only */
+body{font-weight:300}
+h1{font-weight:200}h2{font-weight:300}h3{font-weight:400}
+b,strong,th{font-weight:500}
+
+/* shared site chrome (header/footer) — same as home */
+.sxh{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid #e3e7ec;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300}
+.sxh .in,.sxf .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+.sxh .in{display:flex;align-items:center;gap:36px;height:64px}
+.sxh .lg{display:flex;align-items:baseline;gap:7px;color:#1a2433;text-decoration:none}
+.sxh .lg b{font-weight:500;font-size:21px;letter-spacing:.06em}.sxh .lg span{color:#0b5cd6;font-size:15px}
+.sxh nav{display:flex;gap:30px;font-size:16px}
+.sxh nav a{color:#333c48;text-decoration:none}.sxh nav a:hover,.sxh nav a[aria-current]{color:#0b5cd6}
+.sxh .rt{margin-left:auto;display:flex;gap:10px}
+.sxh .pl{display:inline-flex;align-items:center;border-radius:99px;padding:5px 14px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none}
+.sxh .pl.s{background:#0b5cd6;color:#fff}.sxh .pl.l{border:1.5px solid #0b5cd6;color:#0b5cd6}
+.sxf{background:#f5f7f9;border-top:1px solid #e3e7ec;padding:56px 0 28px;font-size:14px;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300;color:#6b7684}
+.sxf .g{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:32px}
+.sxf .tg{display:flex;align-items:baseline;gap:12px;color:#1a2433;font-size:17px}.sxf .tg i{width:1px;height:18px;background:#b9c3ce;align-self:center}
+.sxf h4{font-weight:400;color:#1a2433;font-size:16px;margin:0 0 12px}
+.sxf ul{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+.sxf a{color:#6b7684;text-decoration:none}.sxf a:hover{color:#0b5cd6}
+.sxf .b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid #e3e7ec;font-size:13px}
+@media (max-width:1100px){.sxh nav{display:none}}
+@media (max-width:900px){.sxf .g{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sxh .pl.l{display:none}}
+
+.sxs{border-bottom:1px solid #e3e7ec;background:#fff;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300;font-size:14px}
+.sxs .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px));display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:48px;flex-wrap:wrap}
+.sxs nav{display:flex;gap:0}
+.sxs nav a{color:#333c48;text-decoration:none;padding:14px 18px;border-right:1px solid #e3e7ec}
+.sxs nav a:first-child{padding-left:0}.sxs nav a:last-child{border-right:0}
+.sxs nav a[aria-current]{background:#0b5cd6;color:#fff;padding-left:18px}
+.sxs .bc{color:#6b7684}.sxs .bc a{color:#6b7684;text-decoration:none}
+@media (max-width:700px){.sxs nav{display:none}}
+
+/* readability: wider layout, regular weight for body text, darker grey, larger small text */
+:root{--muted:#545e6b}
+body{font-weight:400;font-size:17px}
+h1,h2,h3{font-weight:300}
+.wrap,.sxh .in,.sxf .in,.sxs .in{max-width:1440px!important}
+p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
+.pc span,.card p,.t p,.tr p,.sc .src,.bc .src,.sd,.faq p,.phead p,.devh p,.acc span,.left button,.tabs nav a,.sxf,.cdl dt,.person{font-size:16px!important}
+.pc b,.card h3,.vid h3{font-weight:500}
+.sxh nav a,nav.main a{font-weight:400}
+</style>
+</head>
+<body>
+<header class="sxh"><div class="in">
+  <a class="lg" href="./"><b>ARVIOM</b><span>Engineering</span></a>
+  <nav aria-label="Розділи"><a href="./#scenarios">Рішення</a><a href="products.html" aria-current="page">Продукти</a><a href="./#cases">Проєкти</a><a href="./#dev">Розробки</a><a href="./#learn">Навчання</a><a href="./#learn">Підтримка</a><a href="./#video">Відео</a></nav>
+  <div class="rt"><a class="pl l" href="partner.html">Вхід для партнерів</a><a class="pl s" href="./#contact">Зв'язатися</a></div>
+</div></header>
+<div class="sxs"><div class="in"><nav aria-label="Категорії"><a href="products.html">Усі продукти</a><a href="products.html#sensors" aria-current="page">LoRaWAN-датчики</a><a href="s-gateways.html">Шлюзи</a><a href="s-controllers.html">Контролери</a></nav>
+  <div class="bc"><a href="./">Головна</a> › <a href="products.html">Продукти</a> › <span id="crumb-last">Серія GS</span></div></div></div>
+<main id="app"></main>
+
+<div class="tray" id="tray" aria-live="polite"><div class="wrap">
+  <div class="picked" id="picked"></div>
+  <button class="btn ghost" type="button" id="clear">Очистити</button>
+  <a class="btn" href="#compare" id="go">Порівняти</a>
+</div></div>
+
+<script>
+const MODELS=[{"model": "GS301", "name_uk": "Датчик запаху в санвузлі", "img": "img/cat/cat-lorawan-bathroom-odor-detector-gs301.webp", "ext": "https://www.milesight.com/iot/product/lorawan-sensor/gs301", "specs": true, "purpose": "Виявляє аміак і сірководень у санвузлах та разом з температурою й вологістю контролює стан повітря; при перевищенні порогу вмикає світлову та звукову сигналізацію й передає дані віддалено.", "measures": ["Аміак (NH3)", "Сірководень (H2S)", "Температура", "Вологість", "Пряме керування вентиляцією через Milesight D2D"], "range_accuracy": "NH3: 0–10 ppm, ±5% FS, роздільність 0,01 ppm; H2S: 0–5 ppm, ±5% FS, роздільність 0,001 ppm; температура: -40…85 °C, ±0,2 °C; вологість: 0–100 %RH, ±2 %", "probe": "Вбудовані електрохімічні сенсори на твердому полімері (NH3, H2S), термін служби сенсорів понад 3 роки, дрейф <1 % на місяць", "interfaces": "Світлодіодний індикатор статусу/тривоги, зумер, зовнішня кнопка скидання/перезавантаження, NFC; внутрішня антена", "network": "LoRaWAN, клас A, OTAA/ABP; Milesight D2D (без шлюзу)", "power": "4 × ER18505 Li-SOCl2 змінні батареї", "battery": "4 × 4000 мА·год ER18505 Li-SOCl2, змінні", "battery_life": "Близько 3 років (інтервал 10 хв, 25 °C)", "ip": "IP30", "temp": "-40…55 °C, вологість 0–95 % (без конденсату)", "dimensions": "120 × 85 × 32,5 мм", "weight": "221,4 г (з батареями)", "mounting": "Настінний, на гвинти", "range_lora": "", "config": "Мобільний застосунок через NFC; Milesight IoT Cloud", "storage": "", "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4", "highlights": ["Точні електрохімічні сенсори NH3 і H2S (термін служби >3 роки) плюс температура й вологість", "Місцева сигналізація (LED + зумер) і керування вентиляцією через D2D без шлюзу", "Автономне живлення від батарей (~3 роки), налаштування через NFC, вологозахисне покриття"]}, {"model": "GS601", "name_uk": "Детектор вейпу", "img": "img/cat/cat-gs601.webp", "ext": "https://www.milesight.com/iot/product/lorawan-sensor/gs601", "specs": true, "purpose": "Виявляє події вейпінгу й куріння, подає місцеві світлову та звукову сигналізації та віддалено передає тривоги й дані про якість повітря через LoRaWAN.", "measures": ["Індекс вейпінгу", "Дим", "Температура", "Вологість", "TVOC", "PM1.0/PM2.5/PM10", "Вібрація (захист від саботажу)"], "range_accuracy": "Температура: -20…60 °C, ±0,2 °C; вологість: 0…100 % RH, ±2 % RH; індекс вейпінгу: 0…100, ±10; TVOC: 0…2000 мкг/м³, 20 мкг/м³ ±15 % (1…500 мкг/м³); PM1.0/PM2.5: 0…1000 мкг/м³, ±10 мкг/м³ (до 100) / ±10 % (100…1000); PM10: ±25 мкг/м³ (до 100) / ±25 % (100…1000)", "probe": "Вбудовані сенсори: температура/вологість — цифровий CMOSens® (MEMS); індекс вейпінгу та PM — лазерне розсіювання; TVOC — MOX (MEMS); вібродатчик", "interfaces": "1 × USB Type-C (живлення), 1 × кнопка скидання (зовнішня), 1 × світлодіодний індикатор статусу/тривоги, 1 × зумер (70 дБ@1 м), NFC", "network": "LoRaWAN®, OTAA/ABP, Class C, внутрішня антена", "power": "5 В/1 А через Type-C або (опційно) PoE-спліттер", "battery": "", "battery_life": "", "ip": "IP30", "temp": "-5…45 °C (вологість 0…95 %, без конденсації)", "dimensions": "Ф 128 × 40 мм", "weight": "178,6 г", "mounting": "Стельовий", "range_lora": "", "config": "Мобільний застосунок через NFC або downlink; поріг тривоги, захист від саботажу, калібрування, FUOTA", "storage": "", "frequencies": "RU864/IN865/EU868/US915/AU915/KR920/AS923-1&2&3&4", "highlights": ["Комбінований сенсор: вейп, дим, TVOC, PM, температура, вологість", "Захист від перешкод водяної пари й інших газів, вібродатчик проти саботажу", "NFC-налаштування, FUOTA та інтеграція з Milesight Development Platform"]}];
+const CASES=[];
+const S={"code": "GS", "title": "Серія GS", "sub": "Датчики запаху й вейпу", "text": "Контроль запахів у санвузлах і виявлення вейпу.", "card": [["measures", "Вимірює"], ["battery_life", "Батарея"], ["ip", "Захист"]]};
+const GROUPS=S.groups||[];
+const GROUP_OF=S.group_of||{};
+const ALLROWS=[["purpose","Призначення"],["measures","Вимірює / керує"],["range_accuracy","Діапазон і точність"],["probe","Сенсор / технологія"],["interfaces","Входи й порти"],["network","Зв'язок"],["power","Живлення"],["battery","Батарея"],["battery_life","Ресурс батареї"],["ip","Захист"],["temp","Робоча температура"],["range_lora","Дальність"],["config","Налаштування"],["storage","Пам'ять"],["mounting","Монтаж"],["dimensions","Розміри"],["weight","Вага"],["frequencies","Частотні плани"]];
+const empty=v=>v==null||(Array.isArray(v)?!v.length:!String(v).trim()||String(v).trim()==="—");
+const ROWS=ALLROWS.filter(([k])=>MODELS.some(m=>m.specs&&!empty(m[k])));
+const slug=m=>m.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const short=s=>String(s||"—").split(/[(;]/)[0].trim();
+const esc=s=>String(s??"—").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const val=v=>empty(v)?"—":Array.isArray(v)?"<ul>"+v.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>":esc(v);
+const sig=v=>{const t=(Array.isArray(v)?v.join(" "):String(v??"")).toLowerCase();const k=(t.match(/[0-9]+|[a-z]{2,}/g)||[]).join(" ");return k||t.replace(/[^\p{L}\p{N}]+/gu,"")};
+const picked=new Set(); let filter="all"; let onlyDiff=false;
+const app=document.getElementById("app");
+
+function series(){
+  document.getElementById("crumb-last").textContent=S.title;
+  app.innerHTML=`
+  <section class="shead"><div class="wrap shead-in">
+    <div><div class="series-code">${esc(S.code)}<small>${esc(S.sub)}</small></div>
+      <p>${esc(S.text)} ${MODELS.length>1?MODELS.length+" "+(MODELS.length<5?"моделі":"моделей")+" у серії.":""}</p></div>
+    ${S.facts&&S.facts.length?`<div class="facts">${S.facts.map(f=>`<div><b>${esc(f[0])}</b><span>${esc(f[1])}</span></div>`).join("")}</div>`:""}
+  </div></section>
+  <div class="wrap">${GROUPS.length?`<div class="filters" role="group" aria-label="Фільтр за задачею">${GROUPS.map(([k,t])=>`<button class="chip" type="button" data-g="${k}" aria-pressed="${k===filter}">${t}</button>`).join("")}</div>`:'<div style="height:28px"></div>'}
+  <div class="grid">${MODELS.map(card).join("")}</div>
+  ${S.footnote?`<p style="font-size:13px;color:var(--muted);margin:-90px 0 110px">${esc(S.footnote)}</p>`:""}</div>`;
+  app.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.g;series()});
+  app.querySelectorAll(".cmp input").forEach(i=>i.onchange=()=>{i.checked?picked.add(i.value):picked.delete(i.value);tray()});
+  applyFilter(); tray();
+}
+function card(m){
+  const g=GROUPS.find(x=>x[0]===GROUP_OF[m.model])?.[1]||"";
+  const rows=(S.card||[["measures","Вимірює"],["battery_life","Батарея"],["ip","Захист"]]).filter(([k])=>!empty(m[k]));
+  const more=m.specs?`<a class="more" href="#m-${slug(m.model)}">Детальніше</a>`:`<a class="more" href="${m.ext}" target="_blank" rel="noopener">milesight.com ↗</a>`;
+  return `<article class="card" data-g="${GROUP_OF[m.model]||""}">
+    <div class="pic"><img src="${m.img}" alt="${esc(m.model)}" loading="lazy"></div>
+    <div class="plate"><span class="code">${esc(m.model)}</span>${g?`<span class="tag">${g}</span>`:""}</div>
+    <div class="body"><h3>${esc(m.name_uk)}</h3>
+      <dl class="specs">${rows.map(([k,t])=>`<dt>${t}</dt><dd>${esc(Array.isArray(m[k])?m[k].map(short).join(", "):short(m[k]))}</dd>`).join("")}</dl>
+      <div class="act">${m.specs?`<label class="cmp"><input type="checkbox" value="${esc(m.model)}" ${picked.has(m.model)?"checked":""}> Порівняти</label>`:"<span></span>"}
+      ${more}</div></div></article>`;
+}
+function applyFilter(){app.querySelectorAll(".card").forEach(c=>c.hidden=!(filter==="all"||c.dataset.g===filter))}
+function tray(){
+  const t=document.getElementById("tray"); t.classList.toggle("on",picked.size>0);
+  document.getElementById("picked").innerHTML=[...picked].map(m=>`<span>${esc(m)}</span>`).join("")+(picked.size<2?'<em style="opacity:.7;font-size:14px">оберіть ще одну модель</em>':"");
+  document.getElementById("go").style.visibility=picked.size>=2?"visible":"hidden";
+}
+document.getElementById("clear").onclick=()=>{picked.clear();route()};
+
+function compare(){
+  const list=(picked.size>=2?[...picked]:MODELS.filter(m=>m.specs).map(m=>m.model)).map(id=>MODELS.find(m=>m.model===id));
+  document.getElementById("crumb-last").textContent="Порівняння";
+  document.getElementById("tray").classList.remove("on");
+  app.innerHTML=`<div class="wrap view"><a class="back" href="#">← ${esc(S.title)}</a>
+   <div class="vhead"><h1>Порівняння · ${list.length} моделі</h1>
+   <label class="toggle"><input type="checkbox" id="od" ${onlyDiff?"checked":""}> Лише відмінності</label></div>
+   <div class="tablebox"><table class="cmpt" style="width:${190+list.length*280}px"><thead><tr><th scope="col"></th>${list.map(m=>`<th scope="col"><img src="${m.img}" alt=""><div class="code">${esc(m.model)}</div><div style="font-weight:400;font-size:13px">${esc(m.name_uk)}</div></th>`).join("")}</tr></thead>
+   <tbody>${ROWS.filter(([k])=>list.some(m=>!empty(m[k]))).map(([k,t])=>{const vs=list.map(m=>sig(m[k]));const diff=new Set(vs).size>1;
+     return `<tr class="${diff?"diff":""}" ${onlyDiff&&!diff?"hidden":""}><th scope="row">${t}</th>${list.map(m=>`<td>${val(m[k])}</td>`).join("")}</tr>`}).join("")}</tbody></table></div>
+   <p style="font-size:13px;color:var(--muted);margin-top:10px">Блакитним позначено рядки, де моделі відрізняються.</p></div>`;
+  document.getElementById("od").onchange=e=>{onlyDiff=e.target.checked;compare()};
+}
+
+function product(id){
+  const m=MODELS.find(x=>slug(x.model)===id); if(!m||!m.specs){location.hash="";return}
+  document.getElementById("crumb-last").textContent=m.model;
+  document.getElementById("tray").classList.remove("on");
+  const showCases=(S.cases_for||[]).includes(m.model)&&CASES.length;
+  app.innerHTML=`<div class="wrap view"><a class="back" href="#">← ${esc(S.title)}</a>
+  <div class="pv"><div class="stage"><img src="${m.img}" alt="${esc(m.model)}"><span class="bigcode">MILESIGHT · ${esc(S.title.toUpperCase())}</span></div>
+   <div><h1>${esc(m.model)}</h1><div class="lead">${esc(m.name_uk)}</div><p class="purpose">${esc(m.purpose)}</p>
+   <ol class="hl">${(m.highlights||[]).map((h,i)=>`<li><b>0${i+1}</b><span>${esc(h)}</span></li>`).join("")}</ol>
+   <div class="ctas"><a class="btn" href="https://arviom.com" target="_blank" rel="noopener">Ціна на arviom.com</a><a class="btn ghost" href="#compare" onclick="picked.add('${m.model}')">Порівняти з іншими</a></div></div></div>
+  <section class="sec"><h2>Характеристики</h2><table class="stable"><tbody>${ROWS.filter(([k])=>!empty(m[k])).map(([k,t])=>`<tr><th scope="row">${t}</th><td>${val(m[k])}</td></tr>`).join("")}</tbody></table></section>
+  ${showCases?`<section class="sec"><h2>Кейси з цим датчиком <small>джерело: Milesight</small></h2><div class="cases">${CASES.map(c=>`<a class="case" href="${c.u}" target="_blank" rel="noopener"><span class="m">${esc(c.c)} · ${esc(c.i)}</span><strong>${esc(c.t)}</strong><span class="src">milesight.com</span></a>`).join("")}</div></section>`:""}
+  <section class="sec"><h2>Інші моделі серії</h2><div class="siblings">${MODELS.filter(x=>x!==m&&x.specs).map(x=>`<a href="#m-${slug(x.model)}">${esc(x.model)}</a>`).join("")}</div></section></div>`;
+  window.scrollTo(0,0);
+}
+function route(){const h=location.hash.slice(1); if(h==="compare")compare(); else if(h.startsWith("m-"))product(h.slice(2)); else series()}
+window.addEventListener("hashchange",route); route();
+</script>
+<footer class="sxf"><div class="in">
+  <div class="g">
+    <div><div class="tg"><b style="font-weight:500;letter-spacing:.06em">ARVIOM</b><i></i>Engineering</div><p style="margin-top:14px;max-width:30ch">Бездротова автоматизація об'єктів. Напрям IoT компанії ARVIOM.</p></div>
+    <div><h4>Продукти</h4><ul><li><a href="products.html">LoRaWAN-датчики</a></li><li><a href="products.html">Шлюзи</a></li><li><a href="products.html">Контролери</a></li><li><a href="catalog.html">Серія EM300</a></li></ul></div>
+    <div><h4>Рішення</h4><ul><li><a href="./#scenarios">Будівлі</a></li><li><a href="./#scenarios">Енергетика</a></li><li><a href="./#scenarios">Повітря</a></li><li><a href="./#cases">Проєкти</a></li></ul></div>
+    <div><h4>Ресурси</h4><ul><li><a href="./#dev">Розробки</a></li><li><a href="./#video">Відео</a></li><li><a href="./#learn">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
+    <div><h4>Компанія</h4><ul><li><a href="./#learn">Команда</a></li><li><a href="./#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
+  </div>
+  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span></div>
+</div></footer>
+</body>
+</html>

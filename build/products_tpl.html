@@ -59,7 +59,8 @@ section.blk{padding-block:88px}
 .left button.on{color:var(--blue)}
 .left button.on::before{border-color:var(--blue);background:radial-gradient(circle,var(--blue) 0 3px,transparent 3.5px)}
 .right{position:relative;padding:34px 56px;min-width:0;display:flex;flex-direction:column}
-.right .sn{font-size:22px;color:var(--ink);margin-bottom:18px}
+.right .sn{font-size:22px;color:var(--ink);margin-bottom:18px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.right .sn .all{font-size:16px;font-weight:400}
 .car{position:relative}
 .trk{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 80px)/2.6);gap:40px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 10px}
 .trk::-webkit-scrollbar{display:none}
@@ -197,11 +198,11 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 </section>
 
 <section id="gateways" class="blk" style="padding-top:24px">
-  <div class="wrap wide"><h2 class="st">LoRaWAN-шлюзи</h2><p class="sd">Збирають дані з датчиків і передають у вашу систему: у приміщенні, на вулиці, на сонячній панелі.</p><div class="car" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="gw"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
+  <div class="wrap wide"><h2 class="st">LoRaWAN-шлюзи</h2><p class="sd">Збирають дані з датчиків і передають у вашу систему: у приміщенні, на вулиці, на сонячній панелі. <a href="s-gateways.html">Порівняти шлюзи →</a></p><div class="car" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="gw"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
 </section>
 
 <section id="controllers" class="blk alt">
-  <div class="wrap wide"><h2 class="st">LoRaWAN-контролери</h2><p class="sd">Підключають наявне обладнання: лічильники Modbus, реле, клапани, кондиціонери.</p>
+  <div class="wrap wide"><h2 class="st">LoRaWAN-контролери</h2><p class="sd">Підключають наявне обладнання: лічильники Modbus, реле, клапани, кондиціонери. <a href="s-controllers.html">Порівняти контролери →</a></p>
     <div class="car" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="ctl"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
 </section>
 
@@ -255,12 +256,12 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 <script>
 const D=__DATA__;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const card=p=>`<a class="pc" href="${esc(p.h)}"${p.x?' target="_blank" rel="noopener"':''}><div class="im"><img src="${esc(p.i)}" alt="${esc(p.m)}" loading="lazy" style="height:${p.s}px"></div><b>${esc(p.m)}</b><span>${esc(p.n)}</span>${p.x?'':'<em>Каталог ARVIOM</em>'}</a>`;
+const card=p=>`<a class="pc" href="${esc(p.h)}"${p.x?' target="_blank" rel="noopener"':''}><div class="im"><img src="${esc(p.i)}" alt="${esc(p.m)}" loading="lazy" style="height:${p.s}px"></div><b>${esc(p.m)}</b><span>${esc(p.n)}</span></a>`;
 // sensors
 const left=document.getElementById("left"),strk=document.getElementById("strk"),sname=document.getElementById("sname");
 let mode="series";
 function groups(){return mode==="series"?D.series.map(s=>({h:null,k:s.k,t:s.t,p:s.p})):D.industry.flatMap(ind=>ind.g.map((g,i)=>({h:i===0?ind.t:null,k:g.k,t:g.t,p:g.p})))}
-function show(k){const g=groups().find(x=>x.k===k);left.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.k===k));sname.textContent=g.t;strk.innerHTML=g.p.map(card).join("");strk.scrollLeft=0;upd(strk)}
+function show(k){const g=groups().find(x=>x.k===k);left.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.k===k));const f=mode==="series"?(D.series.find(s=>s.k===k)||{}).f:"";sname.innerHTML=esc(g.t)+(f?` <a class="all" href="${f}">Уся серія і порівняння →</a>`:"");strk.innerHTML=g.p.map(card).join("");strk.scrollLeft=0;upd(strk)}
 function renderLeft(){left.innerHTML=groups().map(g=>(g.h?`<h4>${esc(g.h)}</h4>`:"")+`<button type="button" data-k="${g.k}">${esc(g.t)}</button>`).join("");left.querySelectorAll("button").forEach(b=>b.onclick=()=>show(b.dataset.k));show(groups()[mode==="series"?7:0].k)}
 document.querySelectorAll(".tog button").forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll(".tog button").forEach(x=>x.classList.toggle("on",x===b));renderLeft()});
 // other blocks

@@ -61,6 +61,7 @@ def build_catalog():
     open(os.path.join(ROOT, 'catalog.html'), 'w').write(t.replace('__DATA__', open(os.path.join(ROOT, 'data.js')).read(), 1))
 
 if __name__ == '__main__':
-    build_index(); build_catalog()
+    build_index()
+    subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_series.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_products.py')], check=True)
     print('ok: index.html, catalog.html, products.html')

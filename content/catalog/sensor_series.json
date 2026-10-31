@@ -1,0 +1,1070 @@
+[
+ {
+  "key": "ct-series",
+  "name": "CT Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/ct10x",
+    "img": "ct10x.png",
+    "model": "CT10x",
+    "name": "Smart Current Transformer"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ct3xx",
+    "img": "ct3xx.png",
+    "model": "CT3xx",
+    "name": "Smart Current Transformer"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/cth01",
+    "img": "cth01.png",
+    "model": "CTH01",
+    "name": "Smart Power Monitor Hub"
+   }
+  ]
+ },
+ {
+  "key": "am-series",
+  "name": "AM Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/am102",
+    "img": "2-in-1-iaq-sensor-am102-am102l.png",
+    "model": "AM102/AM102L",
+    "name": "2-in-1 IAQ Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/am103-am103l",
+    "img": "3-in-1-iaq-sensor-am103-am103l.png",
+    "model": "AM103/AM103L",
+    "name": "3-in-1 IAQ Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/am300",
+    "img": "am300.png",
+    "model": "AM300 Series",
+    "name": "All-in-1 IAQ Sensor"
+   }
+  ]
+ },
+ {
+  "key": "occupancy-and-people-counting-series",
+  "name": "People Sensing Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/vs121",
+    "img": "ai-workplace-occupancy-sensor-vs121.png",
+    "model": "VS121",
+    "name": "AI Workplace Occupancy Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs125",
+    "img": "ai-stereo-vision-people-counter-iot-page.png",
+    "model": "VS125 Series",
+    "name": "AI Stereo Vision People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs126",
+    "img": "ai-tof-people-counting-snesor-vs126.png",
+    "model": "VS126",
+    "name": "AI Ultra High-Mount People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs133",
+    "img": "ai-tof-people-counting-snesor-vs133.png",
+    "model": "VS133",
+    "name": "AI ToF People Counting Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs135",
+    "img": "vs135.png",
+    "model": "VS135",
+    "name": "Ultra ToF People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs330",
+    "img": "smart-occupancy-sensor-vs330.png",
+    "model": "VS330",
+    "name": "Bathroom Occupancy Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs34x",
+    "img": "vs341.png",
+    "model": "VS340/VS341",
+    "name": "Desk & Seat Occupancy Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs350",
+    "img": "passage-people-counter-vs350.png",
+    "model": "VS350",
+    "name": "Passage People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs351",
+    "img": "mini-ai-thermopile-people-counter-vs351.png",
+    "model": "VS351",
+    "name": "Mini AI Thermopile People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs360",
+    "img": "vs360.png",
+    "model": "VS360",
+    "name": "IR Breakbeam People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs373",
+    "img": "vs373-small-homepage.png",
+    "model": "VS373",
+    "name": "Radar Fall Detection Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs370",
+    "img": "vs370.png",
+    "model": "VS370",
+    "name": "Radar Human Presence Sensor"
+   }
+  ]
+ },
+ {
+  "key": "wt-series",
+  "name": "WT Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/wt101",
+    "img": "smart-radiator-thermostat.png",
+    "model": "WT10x",
+    "name": "Smart Radiator Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt201",
+    "img": "wt201.png",
+    "model": "WT2x1",
+    "name": "Smart Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt303-wt304",
+    "img": "wt303-304-small-homepage.png",
+    "model": "WT30x",
+    "name": "Smart Fan Coil Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt401",
+    "img": "wt401.png",
+    "model": "WT401",
+    "name": "Wireless Smart Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ptac-thermostat-kit",
+    "img": "ptac-thermostat-kit-product-thumbnail.png",
+    "model": "UC711 + WT401",
+    "name": "PTAC Thermostat Kit"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/thermostat-compatibility",
+    "img": "compatibility-checker.png",
+    "model": "Compatibility",
+    "name": "Checker"
+   }
+  ]
+ },
+ {
+  "key": "gs-series",
+  "name": "GS Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/gs301",
+    "img": "lorawan-bathroom-odor-detector-gs301.png",
+    "model": "GS301",
+    "name": "Bathroom Odor Detector"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/gs601",
+    "img": "gs601.png",
+    "model": "GS601",
+    "name": "Vape Detector"
+   }
+  ]
+ },
+ {
+  "key": "cowork-series",
+  "name": "CoWork Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/ws101",
+    "img": "smart-button-ws101.png",
+    "model": "WS101",
+    "name": "Smart Button"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws156",
+    "img": "smart-scene-panel-ws136-ws156.png",
+    "model": "WS156",
+    "name": "Smart Scene Panel"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws201",
+    "img": "smart-fill-level-monitoring-sensor-ws201.png",
+    "model": "WS201",
+    "name": "Smart Fill Level Monitoring Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws202",
+    "img": "pir-and-light-sensor-ws202.png",
+    "model": "WS202",
+    "name": "PIR & Light Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws203",
+    "img": "ws203-iot-page.png",
+    "model": "WS203",
+    "name": "Motion & TH Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws301",
+    "img": "wire-free-magnetic-contact-switch-ws301.png",
+    "model": "WS301",
+    "name": "Magnetic Contact Switch"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws302",
+    "img": "sound-level-sensor-ws302.png",
+    "model": "WS302",
+    "name": "Sound Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws303",
+    "img": "mini-leak-detection-sensor-ws303.png",
+    "model": "WS303",
+    "name": "Mini Leak Detection Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws50x",
+    "img": "smart-wall-switch-ws50x.png",
+    "model": "WS50x",
+    "name": "Smart Wall Switch"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws51x",
+    "img": "ws51x-smart-wall-socket.png",
+    "model": "WS51x",
+    "name": "Smart Wall Socket"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws523",
+    "img": "smart-portable-socket-ws523.png",
+    "model": "WS523",
+    "name": "Smart Portable Socket"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws558",
+    "img": "smart-light-controller-ws558.png",
+    "model": "WS558",
+    "name": "Smart Light Controller"
+   }
+  ]
+ },
+ {
+  "key": "wts-series",
+  "name": "WTS Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/wts506",
+    "img": "iot-weather-station-wts506.png",
+    "model": "WTS506",
+    "name": "IoT Weather Station"
+   }
+  ]
+ },
+ {
+  "key": "ts-series",
+  "name": "TS Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/ts60x",
+    "img": "ts601-ts602.png",
+    "model": "TS60x",
+    "name": "Temperature and Humidity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ts101",
+    "img": "insertion-temperature-sensor-ts101.png",
+    "model": "TS101",
+    "name": "Insertion Temperature Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ts201",
+    "img": "ts201.png",
+    "model": "TS201",
+    "name": "Cost Effective Temperature Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ts30x",
+    "img": "ts301-ts302.png",
+    "model": "TS301/TS302",
+    "name": "LoRaWAN® Temperature Sensor"
+   }
+  ]
+ },
+ {
+  "key": "em300-series",
+  "name": "EM300 Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em300-cl",
+    "img": "capacitive-level-sensor-em300-cl.png",
+    "model": "EM300-CL",
+    "name": "Capacitive Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em300-di",
+    "img": "pulse-counter-em300-di.png",
+    "model": "EM300-DI",
+    "name": "Pulse Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em300-mcs",
+    "img": "magnetic-contact-switch-em300-mcs.png",
+    "model": "EM300-MCS",
+    "name": "Magnetic Contact Switch"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em300-mld",
+    "img": "em300-mld.png",
+    "model": "EM300-MLD",
+    "name": "Membrane Leakage Detection Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em300-sld-zld",
+    "img": "leak-detection-sensor-em300-sld-zld.png",
+    "model": "EM300-SLD/ZLD",
+    "name": "Spot/Zone Leakage Detection Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em300-th",
+    "img": "temperature-and-humidity-sensor-em300-th.png",
+    "model": "EM300-TH",
+    "name": "Temperature and Humidity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em320-th",
+    "img": "temperature-and-humidity-sensor-em320-th.png",
+    "model": "EM320-TH",
+    "name": "Temperature and Humidity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em320-tilt",
+    "img": "tilt-sensor-em320-tilt.png",
+    "model": "EM320-TILT",
+    "name": "Tilt Sensor"
+   }
+  ]
+ },
+ {
+  "key": "em400-series",
+  "name": "EM400 Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em400-tld",
+    "img": "tof-laser-distance-sensor-em400-tld.png",
+    "model": "EM400-TLD",
+    "name": "ToF Laser Distance Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em400-mud",
+    "img": "multifunctional-ultrasonic-distance-sensor-em400-mud.png",
+    "model": "EM400-MUD",
+    "name": "Multifunctional Distance Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em400-udl",
+    "img": "ultrasonic-distance-sensor-em400-udl.png",
+    "model": "EM400-UDL",
+    "name": "Ultrasonic Distance/Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em410-rdl",
+    "img": "em410-rdl.png",
+    "model": "EM410-RDL",
+    "name": "LoRaWAN® Radar Distance/Level Sensor"
+   }
+  ]
+ },
+ {
+  "key": "em500-series",
+  "name": "EM500 Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em500-co2",
+    "img": "4-in-1-co2-sensor-em500-co2.png",
+    "model": "EM500-CO2",
+    "name": "Outdoor CO2 Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-lgt",
+    "img": "light-sensor-em500-lgt.png",
+    "model": "EM500-LGT",
+    "name": "Light Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-pp",
+    "img": "pipe-pressure-sensor-em500-pp.png",
+    "model": "EM500-PP",
+    "name": "Pipe Pressure Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-pt100",
+    "img": "industrial-temperature-sensor-em500-pt100.png",
+    "model": "EM500-PT100",
+    "name": "Platinum Temperature Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-smtc",
+    "img": "soil-moisture-temperature-and-electrical-conductivity-sensor-em500-smtc.png",
+    "model": "EM500-SMTC",
+    "name": "Soil Moisture, Temperature & Conductivity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-swl",
+    "img": "submersible-water-level-sensor-em500-swl.png",
+    "model": "EM500-SWL",
+    "name": "Submersible Water Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-udl",
+    "img": "ultrasonic-distance-level-sensor-em500-udl.png",
+    "model": "EM500-UDL",
+    "name": "Ultrasonic Distance/Level Sensor"
+   }
+  ]
+ },
+ {
+  "key": "at-series",
+  "name": "AT Series",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/at101",
+    "img": "milesight-outdoor-asset-tracker-at101.png",
+    "model": "AT101",
+    "name": "Outdoor Asset Tracker"
+   }
+  ]
+ },
+ {
+  "key": "iot-display",
+  "name": "IoT Display",
+  "products": [
+   {
+    "href": "/iot/product/iot-display/ds3604",
+    "img": "lorawan-iot-e-ink-display.png",
+    "model": "DS3604",
+    "name": "LoRaWAN® IoT E-Ink Display"
+   }
+  ]
+ },
+ {
+  "key": "occupancy-and-people-counting",
+  "name": "occupancy-and-people-counting",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/vs121",
+    "img": "ai-workplace-occupancy-sensor-vs121.png",
+    "model": "VS121",
+    "name": "AI Workplace Occupancy Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs125",
+    "img": "ai-stereo-vision-people-counter-iot-page.png",
+    "model": "VS125",
+    "name": "AI Stereo Vision People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs133",
+    "img": "ai-tof-people-counting-snesor-vs133.png",
+    "model": "VS133",
+    "name": "AI ToF People Counting Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs135",
+    "img": "vs135.png",
+    "model": "VS135",
+    "name": "Ultra ToF People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs330",
+    "img": "smart-occupancy-sensor-vs330.png",
+    "model": "VS330",
+    "name": "Bathroom Occupancy Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs34x",
+    "img": "vs341.png",
+    "model": "VS340/VS341",
+    "name": "Desk & Seat Occupancy Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs350",
+    "img": "passage-people-counter-vs350.png",
+    "model": "VS350",
+    "name": "Passage People Counter"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs370",
+    "img": "vs370.png",
+    "model": "VS370",
+    "name": "Radar Human Presence Sensor"
+   }
+  ]
+ },
+ {
+  "key": "indoor-air-quality",
+  "name": "indoor-air-quality",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/am102",
+    "img": "2-in-1-iaq-sensor-am102-am102l.png",
+    "model": "AM102/AM102L",
+    "name": "2-in-1 IAQ Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/am103-am103l",
+    "img": "3-in-1-iaq-sensor-am103-am103l.png",
+    "model": "AM103/AM103L",
+    "name": "3-in-1 IAQ Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/am300",
+    "img": "am300.png",
+    "model": "AM300 Series",
+    "name": "All-in-1 IAQ Sensor"
+   }
+  ]
+ },
+ {
+  "key": "smart-office",
+  "name": "smart-office",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/ws101",
+    "img": "smart-button-ws101.png",
+    "model": "WS101",
+    "name": "Smart Button"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws156",
+    "img": "smart-scene-panel-ws136-ws156.png",
+    "model": "WS156/136",
+    "name": "Smart Scene Panel"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws201",
+    "img": "smart-fill-level-monitoring-sensor-ws201.png",
+    "model": "WS201",
+    "name": "Smart Fill Level Monitoring Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws202",
+    "img": "pir-and-light-sensor-ws202.png",
+    "model": "WS202",
+    "name": "PIR & Light Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws203",
+    "img": "ws203-iot-page.png",
+    "model": "WS203",
+    "name": "Motion & TH Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws301",
+    "img": "wire-free-magnetic-contact-switch-ws301.png",
+    "model": "WS301",
+    "name": "Magnetic Contact Switch"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws302",
+    "img": "sound-level-sensor-ws302.png",
+    "model": "WS302",
+    "name": "Sound Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws303",
+    "img": "mini-leak-detection-sensor-ws303.png",
+    "model": "WS303",
+    "name": "Mini Leak Detection Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws50x",
+    "img": "smart-wall-switch-ws50x.png",
+    "model": "WS50x",
+    "name": "Smart Wall Switch"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws51x",
+    "img": "ws51x-smart-wall-socket.png",
+    "model": "WS51x",
+    "name": "Smart Wall Socket"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws523",
+    "img": "smart-portable-socket-ws523.png",
+    "model": "WS523",
+    "name": "Smart Portable Socket"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws558",
+    "img": "smart-light-controller-ws558.png",
+    "model": "WS558",
+    "name": "Smart Light Controller"
+   }
+  ]
+ },
+ {
+  "key": "smart-restroom",
+  "name": "smart-restroom",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em300-cl",
+    "img": "capacitive-level-sensor-em300-cl.png",
+    "model": "EM300-CL",
+    "name": "Capacitive Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em400-tld",
+    "img": "tof-laser-distance-sensor-em400-tld.png",
+    "model": "EM400-TLD",
+    "name": "ToF Laser Distance Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/gs301",
+    "img": "lorawan-bathroom-odor-detector-gs301.png",
+    "model": "GS301",
+    "name": "Bathroom Odor Detector"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs133",
+    "img": "ai-tof-people-counting-snesor-vs133.png",
+    "model": "VS133",
+    "name": "AI ToF People Counting Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws101",
+    "img": "smart-button-ws101.png",
+    "model": "WS101",
+    "name": "Smart Button"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws201",
+    "img": "smart-fill-level-monitoring-sensor-ws201.png",
+    "model": "WS201",
+    "name": "Smart Fill Level Monitoring Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws301",
+    "img": "wire-free-magnetic-contact-switch-ws301.png",
+    "model": "WS301",
+    "name": "Magnetic Contact Switch"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws303",
+    "img": "mini-leak-detection-sensor-ws303.png",
+    "model": "WS303",
+    "name": "Mini Leak Detection Sensor"
+   }
+  ]
+ },
+ {
+  "key": "smart-heating",
+  "name": "smart-heating",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/wt101",
+    "img": "smart-radiator-thermostat.png",
+    "model": "WT10x",
+    "name": "Smart Radiator Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt201",
+    "img": "wt201.png",
+    "model": "WT2x1",
+    "name": "Smart Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt303-wt304",
+    "img": "wt303-304-small-homepage.png",
+    "model": "WT30x",
+    "name": "Smart Fan Coil Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt401",
+    "img": "wt401.png",
+    "model": "WT401",
+    "name": "Wireless Smart Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/thermostat-compatibility",
+    "img": "compatibility-checker.png",
+    "model": "Compatibility",
+    "name": "Checker"
+   }
+  ]
+ },
+ {
+  "key": "parking-management1",
+  "name": "parking-management1",
+  "products": [
+   {
+    "href": "/iot/product/parking-camera/pm3322-e",
+    "img": "pm3322-e.png",
+    "model": "PM3322-E",
+    "name": "Indoor Parking Guidance Camera"
+   }
+  ]
+ },
+ {
+  "key": "shopper-counting-and-insights",
+  "name": "shopper-counting-and-insights",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/vs125",
+    "img": "ai-stereo-vision-people-counter-iot-page.png",
+    "model": "VS125 Series",
+    "name": "3D & AI-extended Shoppers Analytics"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs126",
+    "img": "ai-tof-people-counting-snesor-vs126.png",
+    "model": "VS126",
+    "name": "High Ceiling Retail People Counting"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs133-vs135",
+    "img": "vs13x.png",
+    "model": "VS13x",
+    "name": "Privacy-First Retail People Counting"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/vs121",
+    "img": "ai-workplace-occupancy-sensor-vs121.png",
+    "model": "VS121",
+    "name": "AI-Based Counting & Occupancy"
+   }
+  ]
+ },
+ {
+  "key": "temperature-and-humidity-monitoring-retail",
+  "name": "temperature-and-humidity-monitoring-retail",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/ts60x",
+    "img": "ts601-ts602.png",
+    "model": "TS60x",
+    "name": "Exceptional in Cold Chain Transportation"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ts30x",
+    "img": "ts301-ts302.png",
+    "model": "TS30x",
+    "name": "Food-Grade High-Accuracy Monitoring"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ts201",
+    "img": "ts201.png",
+    "model": "TS201",
+    "name": "Ideal for Pharmacy Retail"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em320-th",
+    "img": "temperature-and-humidity-sensor-em320-th.png",
+    "model": "EM320-TH",
+    "name": "Flexible Food-Grade Temperature Monitoring"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em300-th",
+    "img": "temperature-and-humidity-sensor-em300-th.png",
+    "model": "EM300-TH",
+    "name": "Suitable for Diverse Environments"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-pt100",
+    "img": "industrial-temperature-sensor-em500-pt100.png",
+    "model": "EM500-PT100",
+    "name": "Industrial-Grade High Accuracy"
+   }
+  ]
+ },
+ {
+  "key": "indoor-air-quality-retail",
+  "name": "indoor-air-quality-retail",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/am102",
+    "img": "2-in-1-iaq-sensor-am102-am102l.png",
+    "model": "AM102/AM102L",
+    "name": "2-in-1 IAQ Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/am103-am103l",
+    "img": "3-in-1-iaq-sensor-am103-am103l.png",
+    "model": "AM103/AM103L",
+    "name": "3-in-1 IAQ Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/am300",
+    "img": "am300.png",
+    "model": "AM300 Series",
+    "name": "All-in-1 IAQ Sensor"
+   }
+  ]
+ },
+ {
+  "key": "smart-hvac-controls",
+  "name": "smart-hvac-controls",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/wt101",
+    "img": "smart-radiator-thermostat.png",
+    "model": "WT10x",
+    "name": "Smart Radiator Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt201",
+    "img": "wt201.png",
+    "model": "WT201",
+    "name": "Smart Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt303-wt304",
+    "img": "wt303-304-small-homepage.png",
+    "model": "WT303/WT304",
+    "name": "Smart Fan Coil Thermostat"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/wt401",
+    "img": "wt401.png",
+    "model": "WT401",
+    "name": "Wireless Smart Thermostat"
+   }
+  ]
+ },
+ {
+  "key": "trash-bin-management",
+  "name": "trash-bin-management",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em400-tld",
+    "img": "tof-laser-distance-sensor-em400-tld.png",
+    "model": "EM400-TLD",
+    "name": "ToF Laser Distance Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em400-mud",
+    "img": "multifunctional-ultrasonic-distance-sensor-em400-mud.png",
+    "model": "EM400-MUD",
+    "name": "Multifunctional Distance Sensor"
+   }
+  ]
+ },
+ {
+  "key": "water-leak-management",
+  "name": "water-leak-management",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em300-mld",
+    "img": "em300-mld.png",
+    "model": "EM300-MLD",
+    "name": "Membrane Leakage Detection Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em300-sld-zld",
+    "img": "leak-detection-sensor-em300-sld-zld.png",
+    "model": "EM300-SLD/ZLD",
+    "name": "Spot/Zone Leakage Detection Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws303",
+    "img": "mini-leak-detection-sensor-ws303.png",
+    "model": "WS303",
+    "name": "Mini Leak Detection Sensor"
+   }
+  ]
+ },
+ {
+  "key": "temperature-and-humidity-monitoring",
+  "name": "temperature-and-humidity-monitoring",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em300-th",
+    "img": "temperature-and-humidity-sensor-em300-th.png",
+    "model": "EM300-TH",
+    "name": "Temperature and Humidity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em320-th",
+    "img": "temperature-and-humidity-sensor-em320-th.png",
+    "model": "EM320-TH",
+    "name": "Temperature and Humidity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-pt100",
+    "img": "industrial-temperature-sensor-em500-pt100.png",
+    "model": "EM500-PT100",
+    "name": "Platinum Temperature Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ts101",
+    "img": "insertion-temperature-sensor-ts101.png",
+    "model": "TS101",
+    "name": "Insertion Temperature Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ts30x",
+    "img": "ts301-ts302.png",
+    "model": "TS301/TS302",
+    "name": "LoRaWAN® Temperature Sensor"
+   }
+  ]
+ },
+ {
+  "key": "distance-or-level-monitoring",
+  "name": "distance-or-level-monitoring",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em400-tld",
+    "img": "tof-laser-distance-sensor-em400-tld.png",
+    "model": "EM400-TLD",
+    "name": "ToF Laser Distance Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em400-mud",
+    "img": "multifunctional-ultrasonic-distance-sensor-em400-mud.png",
+    "model": "EM400-MUD",
+    "name": "Multifunctional Distance Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em400-udl",
+    "img": "ultrasonic-distance-sensor-em400-udl.png",
+    "model": "EM400-UDL",
+    "name": "Ultrasonic Distance/Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em410-rdl",
+    "img": "em410-rdl.png",
+    "model": "EM410-RDL",
+    "name": "LoRaWAN® Radar Distance/Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-udl",
+    "img": "ultrasonic-distance-level-sensor-em500-udl.png",
+    "model": "EM500-UDL",
+    "name": "Ultrasonic Distance/Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/ws201",
+    "img": "smart-fill-level-monitoring-sensor-ws201.png",
+    "model": "WS201",
+    "name": "Smart Fill Level Monitoring Sensor"
+   }
+  ]
+ },
+ {
+  "key": "smart-metering",
+  "name": "smart-metering",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em300-di",
+    "img": "pulse-counter-em300-di.png",
+    "model": "EM300-DI",
+    "name": "Pulse Counter"
+   }
+  ]
+ },
+ {
+  "key": "parking-management",
+  "name": "parking-management",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em400-mud",
+    "img": "multifunctional-ultrasonic-distance-sensor-em400-mud.png",
+    "model": "EM400-MUD",
+    "name": "Multifunctional Distance Sensor"
+   },
+   {
+    "href": "/iot/product/parking-camera/pm3322-e",
+    "img": "pm3322-e.png",
+    "model": "PM3322-E",
+    "name": "Indoor Parking Guidance Camera"
+   }
+  ]
+ },
+ {
+  "key": "weather-monitoring",
+  "name": "weather-monitoring",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/wts506",
+    "img": "iot-weather-station-wts506.png",
+    "model": "WTS506",
+    "name": "IoT Weather Station"
+   }
+  ]
+ },
+ {
+  "key": "irrigation-and-greenhouse-automation",
+  "name": "irrigation-and-greenhouse-automation",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em300-th",
+    "img": "temperature-and-humidity-sensor-em300-th.png",
+    "model": "EM300-TH",
+    "name": "Temperature and Humidity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-co2",
+    "img": "4-in-1-co2-sensor-em500-co2.png",
+    "model": "EM500-CO2",
+    "name": "Outdoor CO2 Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-pp",
+    "img": "pipe-pressure-sensor-em500-pp.png",
+    "model": "EM500-PP",
+    "name": "Pipe Pressure Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-swl",
+    "img": "submersible-water-level-sensor-em500-swl.png",
+    "model": "EM500-SWL",
+    "name": "Submersible Water Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-udl",
+    "img": "ultrasonic-distance-level-sensor-em500-udl.png",
+    "model": "EM500-UDL",
+    "name": "Ultrasonic Distance/Level Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-smtc",
+    "img": "soil-moisture-temperature-and-electrical-conductivity-sensor-em500-smtc.png",
+    "model": "EM500-SMTC",
+    "name": "Soil Moisture, Temperature & Conductivity Sensor"
+   },
+   {
+    "href": "/iot/product/lorawan-sensor/em500-lgt",
+    "img": "light-sensor-em500-lgt.png",
+    "model": "EM500-LGT",
+    "name": "Light Sensor"
+   }
+  ]
+ },
+ {
+  "key": "poultry-and-husbandry",
+  "name": "poultry-and-husbandry",
+  "products": [
+   {
+    "href": "/iot/product/lorawan-sensor/em500-co2",
+    "img": "4-in-1-co2-sensor-em500-co2.png",
+    "model": "EM500-CO2",
+    "name": "Outdoor CO2 Sensor"
+   }
+  ]
+ }
+]

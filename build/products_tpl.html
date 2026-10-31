@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Продукти IoT — ARVIOM Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Structure follows milesight.com/iot: hero → sticky section tabs → sensors (series list + product carousel, by product / by industry) → gateways grid → controllers carousel → display → comparison guide → video → FAQ → CTA */
+:root{--ink:#1a2433;--text:#333c48;--muted:#6b7684;--line:#e3e7ec;--bg2:#f5f7f9;--blue:#0b5cd6;--blue2:#1a6ef0;--soft:#eef4ff;
+  --f:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{background:#fff;color:var(--text);font-family:var(--f);font-weight:300;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--blue);text-decoration:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+h1,h2,h3{color:var(--ink);font-weight:300}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+section.blk{padding-block:88px}
+.st{font-size:clamp(30px,3.4vw,44px);line-height:1.15;text-align:center;letter-spacing:-.01em}
+.sd{color:var(--muted);text-align:center;max-width:90ch;margin:14px auto 0;font-size:15px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;font-weight:400;padding:11px 22px;border-radius:5px;white-space:nowrap}
+.btn::after{content:"›";font-size:20px;line-height:1;transform:translateY(-1px)}
+.btn:hover{background:var(--blue2)}
+
+/* hero */
+.hero{position:relative;height:440px;overflow:hidden;background:#0d1520}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center right}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,14,22,.6) 0%,rgba(8,14,22,.15) 55%,rgba(8,14,22,0) 75%)}
+.hero .tx{position:absolute;z-index:1;left:0;right:0;top:50%;transform:translateY(-50%)}
+.hero h1{color:#fff;font-size:clamp(34px,4.4vw,56px);line-height:1.08;max-width:16ch}
+.hero p{color:rgba(255,255,255,.9);font-size:18px;margin-top:14px;max-width:46ch}
+
+/* sticky section tabs */
+.tabs{position:sticky;top:64px;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:52px}
+.tabs nav{display:flex;overflow-x:auto;scrollbar-width:none}
+.tabs nav::-webkit-scrollbar{display:none}
+.tabs nav a{color:var(--text);font-size:14px;padding:16px 18px;border-right:1px solid var(--line);white-space:nowrap}
+.tabs nav a:first-child{padding-left:0}.tabs nav a:last-child{border-right:0}
+.tabs nav a.on{background:var(--blue);color:#fff;padding-left:18px}
+.tabs .bc{font-size:14px;color:var(--muted);white-space:nowrap}.tabs .bc a{color:var(--muted)}
+
+/* sensors */
+#sensors{background:linear-gradient(180deg,#f1f6ff 0%,#fff 70%)}
+.tog{display:flex;justify-content:center;margin:28px 0 36px}
+.tog div{display:inline-flex;background:#e9edf2;border-radius:99px;padding:3px}
+.tog button{all:unset;cursor:pointer;padding:7px 22px;border-radius:99px;font-size:15px;color:var(--text)}
+.tog button.on{background:var(--blue);color:#fff}
+.card{display:grid;grid-template-columns:270px minmax(0,1fr);background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.07);min-height:470px;overflow:hidden}
+.left{padding:26px 0;border-right:1px solid var(--line);max-height:560px;overflow-y:auto}
+.left h4{font-weight:400;font-size:13px;color:var(--muted);padding:14px 28px 6px}
+.left button{all:unset;cursor:pointer;display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;padding:9px 28px;font-size:15px;color:var(--text)}
+.left button::before{content:"";width:12px;height:12px;border-radius:50%;border:1.5px solid #9fb3c8;flex:none}
+.left button.on{color:var(--blue)}
+.left button.on::before{border-color:var(--blue);background:radial-gradient(circle,var(--blue) 0 3px,transparent 3.5px)}
+.right{position:relative;padding:34px 56px;min-width:0;display:flex;flex-direction:column}
+.right .sn{font-size:22px;color:var(--ink);margin-bottom:18px}
+.car{position:relative}
+.trk{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 80px)/2.6);gap:40px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 10px}
+.trk::-webkit-scrollbar{display:none}
+.pc{scroll-snap-align:start;text-align:center;color:var(--ink);border-radius:8px;padding:18px 12px 20px;transition:background .3s}
+.pc:hover{background:var(--soft)}
+.pc .im{height:230px;align-items:flex-end;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.pc .im img{width:auto;max-width:100%;object-fit:contain;transition:transform .5s ease}
+.pc:hover .im img{transform:scale(1.05)}
+.pc b{display:block;font-weight:400;font-size:16px}
+.pc span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.pc em{display:inline-block;font-style:normal;font-size:12px;color:var(--blue);background:var(--soft);border-radius:3px;padding:1px 8px;margin-top:8px}
+.ar{position:absolute;top:96px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font:inherit;font-size:22px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center}
+.ar:hover{border-color:var(--blue);color:var(--blue)}
+.ar.p{left:-48px}.ar.n{right:-48px}
+.ar[disabled]{opacity:.3;cursor:default}
+
+/* grid of products */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:44px}
+.grid .pc{background:#fff}
+.alt{background:var(--bg2)}
+.alt .pc{background:transparent}
+.wide .trk{grid-auto-columns:calc((100% - 120px)/3.5);gap:40px}
+.wide .ar.p{left:-52px}.wide .ar.n{right:-52px}
+.one{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:36px}
+.one .pc{max-width:360px;margin:0 auto}
+.one ul{list-style:none;display:grid;gap:10px}
+.one li{display:flex;gap:10px;align-items:baseline}
+.one li::before{content:"";flex:none;width:4px;height:12px;background:var(--blue);transform:skewX(-14deg)}
+
+/* compare */
+.cmp .pc .im{height:120px}
+.cmp .pc b{font-size:15px}
+
+/* video */
+.vg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:44px}
+.vid{border-radius:8px;overflow:hidden;background:#fff;border:1px solid var(--line);color:var(--ink)}
+.vid .th{position:relative;aspect-ratio:16/9;overflow:hidden}
+.vid .th img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.vid:hover .th img{transform:scale(1.04)}
+.vid .th::after{content:"";position:absolute;left:50%;top:50%;width:56px;height:40px;margin:-20px 0 0 -28px;border-radius:10px;background:rgba(11,92,214,.9) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M9 7l8 5-8 5z'/%3E%3C/svg%3E") center/26px no-repeat}
+.vid h3{font-size:17px;font-weight:400;padding:16px 18px 18px;text-align:center}
+
+/* faq */
+.faq{max-width:1000px;margin:40px auto 0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-size:18px;color:var(--ink);font-weight:400}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:18px;font-size:24px;color:var(--blue);font-weight:300}
+.faq details[open] summary::after{content:"×"}
+.faq p{color:var(--muted);padding:0 40px 22px 0;font-size:15px}
+
+/* cta */
+.cta{background:linear-gradient(100deg,#0b5cd6 0%,#2b7cf2 100%);border-radius:10px;color:#fff;padding:44px 48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta h2{color:#fff;font-size:30px}
+.cta p{opacity:.9;margin-top:6px}
+.cta .btn{background:#fff;color:var(--blue)}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+@media (max-width:1100px){.ar.p{left:-6px}.ar.n{right:-6px}.wide .ar.p{left:-6px}.wide .ar.n{right:-6px}.right{padding:28px 40px}}
+@media (max-width:900px){
+  section.blk{padding-block:60px}
+  .card{grid-template-columns:1fr}
+  .left{display:flex;overflow-x:auto;max-height:none;padding:12px;border-right:0;border-bottom:1px solid var(--line);scrollbar-width:none}
+  .left h4{display:none}
+  .left button{width:auto;white-space:nowrap;padding:8px 14px}
+  .trk{grid-auto-columns:calc((100% - 24px)/2)}.wide .trk{grid-auto-columns:calc((100% - 24px)/2)}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .one,.vg{grid-template-columns:1fr}
+  .tabs .bc{display:none}
+}
+@media (max-width:560px){.trk,.wide .trk{grid-auto-columns:80%}.right{padding:22px 16px}.ar{display:none}.pc .im{height:170px}.cta{padding:32px 24px}}
+/* shared site chrome (header/footer) — same as home */
+.sxh{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid #e3e7ec;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300}
+.sxh .in,.sxf .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+.sxh .in{display:flex;align-items:center;gap:36px;height:64px}
+.sxh .lg{display:flex;align-items:baseline;gap:7px;color:#1a2433;text-decoration:none}
+.sxh .lg b{font-weight:500;font-size:21px;letter-spacing:.06em}.sxh .lg span{color:#0b5cd6;font-size:15px}
+.sxh nav{display:flex;gap:30px;font-size:16px}
+.sxh nav a{color:#333c48;text-decoration:none}.sxh nav a:hover,.sxh nav a[aria-current]{color:#0b5cd6}
+.sxh .rt{margin-left:auto;display:flex;gap:10px}
+.sxh .pl{display:inline-flex;align-items:center;border-radius:99px;padding:5px 14px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none}
+.sxh .pl.s{background:#0b5cd6;color:#fff}.sxh .pl.l{border:1.5px solid #0b5cd6;color:#0b5cd6}
+.sxf{background:#f5f7f9;border-top:1px solid #e3e7ec;padding:56px 0 28px;font-size:14px;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300;color:#6b7684}
+.sxf .g{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:32px}
+.sxf .tg{display:flex;align-items:baseline;gap:12px;color:#1a2433;font-size:17px}.sxf .tg i{width:1px;height:18px;background:#b9c3ce;align-self:center}
+.sxf h4{font-weight:400;color:#1a2433;font-size:16px;margin:0 0 12px}
+.sxf ul{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+.sxf a{color:#6b7684;text-decoration:none}.sxf a:hover{color:#0b5cd6}
+.sxf .b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid #e3e7ec;font-size:13px}
+@media (max-width:1100px){.sxh nav{display:none}}
+@media (max-width:900px){.sxf .g{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sxh .pl.l{display:none}}
+
+/* readability: wider layout, regular weight for body text, darker grey, larger small text */
+:root{--muted:#545e6b}
+body{font-weight:400;font-size:17px}
+h1,h2,h3{font-weight:300}
+.wrap,.sxh .in,.sxf .in,.sxs .in{max-width:1440px!important}
+p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
+.pc span,.card p,.t p,.tr p,.sc .src,.bc .src,.sd,.faq p,.phead p,.devh p,.acc span,.left button,.tabs nav a,.sxf,.cdl dt,.person{font-size:16px!important}
+.pc b,.card h3,.vid h3{font-weight:500}
+.sxh nav a,nav.main a{font-weight:400}
+</style>
+</head>
+<body>
+<header class="sxh"><div class="in">
+  <a class="lg" href="./"><b>ARVIOM</b><span>Engineering</span></a>
+  <nav aria-label="Розділи"><a href="./#scenarios">Рішення</a><a href="products.html" aria-current="page">Продукти</a><a href="./#cases">Проєкти</a><a href="./#dev">Розробки</a><a href="./#learn">Навчання</a><a href="./#learn">Підтримка</a><a href="./#video">Відео</a></nav>
+  <div class="rt"><a class="pl l" href="partner.html">Вхід для партнерів</a><a class="pl s" href="./#contact">Зв'язатися</a></div>
+</div></header>
+
+<div class="hero">
+  <img src="img/ms/ms-hero-uc722.webp" alt="">
+  <div class="tx wrap"><h1>LoRaWAN-датчики, шлюзи й контролери</h1><p>Повний каталог Milesight IoT. Підбираємо під об'єкт, налаштовуємо й підтримуємо в Україні.</p></div>
+</div>
+
+<div class="tabs"><div class="wrap">
+  <nav aria-label="Розділи каталогу"><a href="#sensors" class="on">LoRaWAN-датчики</a><a href="#gateways">Шлюзи</a><a href="#controllers">Контролери</a><a href="#display">Дисплей</a><a href="#compare">Порівняння</a><a href="#video">Відео</a><a href="#faq">Питання</a></nav>
+  <div class="bc"><a href="./">Головна</a> › Продукти IoT</div>
+</div></div>
+
+<main>
+<section id="sensors" class="blk">
+  <div class="wrap">
+    <h2 class="st">LoRaWAN-датчики</h2>
+    <p class="sd">Датчики LoRaWAN передають дані на відстань до кількох кілометрів і роками працюють від батареї: будівлі, рітейл, місто, промисловість і агро. Надійне покриття, проста інтеграція й масштабування від кількох до тисяч пристроїв.</p>
+    <div class="tog"><div role="tablist"><button type="button" class="on" data-m="series">За серією</button><button type="button" data-m="industry">За галуззю</button></div></div>
+    <div class="card rv">
+      <div class="left" id="left"></div>
+      <div class="right"><div class="sn" id="sname"></div><div class="car"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="strk"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gateways" class="blk" style="padding-top:24px">
+  <div class="wrap wide"><h2 class="st">LoRaWAN-шлюзи</h2><p class="sd">Збирають дані з датчиків і передають у вашу систему: у приміщенні, на вулиці, на сонячній панелі.</p><div class="car" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="gw"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
+</section>
+
+<section id="controllers" class="blk alt">
+  <div class="wrap wide"><h2 class="st">LoRaWAN-контролери</h2><p class="sd">Підключають наявне обладнання: лічильники Modbus, реле, клапани, кондиціонери.</p>
+    <div class="car" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="ctl"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
+</section>
+
+<section id="display" class="blk">
+  <div class="wrap"><h2 class="st">IoT-дисплей</h2>
+    <div class="one"><div id="disp"></div><ul><li>E-ink табло, що працює від батареї</li><li>Розклад переговорних, показники цеху, таблички</li><li>Оновлення по LoRaWAN</li></ul></div></div>
+</section>
+
+<section id="compare" class="blk alt">
+  <div class="wrap wide"><h2 class="st">Порівняння продуктів</h2><p class="sd">Який пристрій підходить саме вам?</p>
+    <div class="car cmp" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="cmp"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
+</section>
+
+<section id="video" class="blk">
+  <div class="wrap"><h2 class="st">LoRaWAN-датчики й шлюзи<br>в коротких роликах</h2>
+    <div class="vg">
+      <a class="vid rv" href="https://www.youtube.com/watch?v=3L9N9qc6FXs" target="_blank" rel="noopener"><div class="th"><img src="https://img.youtube.com/vi/3L9N9qc6FXs/hqdefault.jpg" alt="" loading="lazy"></div><h3>EG71: один шлюз для дротових і бездротових систем</h3></a>
+      <a class="vid rv" href="https://youtu.be/x_kxBUfAiVg" target="_blank" rel="noopener"><div class="th"><img src="https://img.youtube.com/vi/x_kxBUfAiVg/hqdefault.jpg" alt="" loading="lazy"></div><h3>Керування енергією в будівлі</h3></a>
+      <a class="vid rv" href="https://youtu.be/GAnnXN_yrcQ" target="_blank" rel="noopener"><div class="th"><img src="https://img.youtube.com/vi/GAnnXN_yrcQ/hqdefault.jpg" alt="" loading="lazy"></div><h3>Що таке LoRaWAN — за кілька хвилин</h3></a>
+    </div></div>
+</section>
+
+<section id="faq" class="blk alt">
+  <div class="wrap"><h2 class="st">Питання про LoRaWAN</h2>
+    <div class="faq">
+      <details open><summary>Як датчики LoRaWAN передають дані на шлюз?</summary><p>Датчик раз на заданий інтервал (наприклад, 10 хвилин) надсилає короткий радіопакет на частоті 868 МГц. Шлюз приймає пакети від усіх датчиків у радіусі покриття й передає їх мережевому серверу, а далі — у вашу систему через MQTT, HTTP, Modbus або BACnet.</p></details>
+      <details><summary>Яка дальність зв'язку?</summary><p>У місті — зазвичай від сотень метрів до 2–3 км, на відкритій місцевості — до 10–15 км. Бетонні перекриття й підвали зменшують дальність, тому під конкретний об'єкт ми робимо радіообстеження.</p></details>
+      <details><summary>Скільки працює батарея?</summary><p>Залежить від інтервалу передачі й моделі: для більшості датчиків — від 3 до 10 років. Що рідше датчик надсилає дані, то довше він працює.</p></details>
+      <details><summary>Наскільки це захищено?</summary><p>LoRaWAN шифрує дані двома ключами AES-128: один захищає вміст, другий — справжність пакета в мережі.</p></details>
+      <details><summary>Чи можна інтегрувати з нашою системою?</summary><p>Так. Шлюзи Milesight мають вбудований мережевий сервер і віддають дані через MQTT, HTTP, Modbus TCP і BACnet; також підтримуються ChirpStack, The Things Stack, Home Assistant, Node-RED. Ми допомагаємо з інтеграцією.</p></details>
+      <details><summary>Як обрати шлюз?</summary><p>Для офісу чи поверху — UG65 або міні UG63; для вулиці й складних умов — UG67 або UG56; для будівлі з дротовими системами — EG71; без живлення поруч — сонячний SG50. Напишіть нам — підберемо під об'єкт.</p></details>
+    </div></div>
+</section>
+
+<section class="blk" style="padding-block:64px">
+  <div class="wrap"><div class="cta"><div><h2>Підберемо обладнання під ваш проєкт</h2><p>Розкажіть про об'єкт — відповімо протягом робочого дня.</p></div><a class="btn" href="./#contact">Залишити заявку</a></div></div>
+</section>
+</main>
+
+<footer class="sxf"><div class="in">
+  <div class="g">
+    <div><div class="tg"><b style="font-weight:500;letter-spacing:.06em">ARVIOM</b><i></i>Engineering</div><p style="margin-top:14px;max-width:30ch">Бездротова автоматизація об'єктів. Напрям IoT компанії ARVIOM.</p></div>
+    <div><h4>Продукти</h4><ul><li><a href="products.html">LoRaWAN-датчики</a></li><li><a href="products.html">Шлюзи</a></li><li><a href="products.html">Контролери</a></li><li><a href="catalog.html">Серія EM300</a></li></ul></div>
+    <div><h4>Рішення</h4><ul><li><a href="./#scenarios">Будівлі</a></li><li><a href="./#scenarios">Енергетика</a></li><li><a href="./#scenarios">Повітря</a></li><li><a href="./#cases">Проєкти</a></li></ul></div>
+    <div><h4>Ресурси</h4><ul><li><a href="./#dev">Розробки</a></li><li><a href="./#video">Відео</a></li><li><a href="./#learn">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
+    <div><h4>Компанія</h4><ul><li><a href="./#learn">Команда</a></li><li><a href="./#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
+  </div>
+  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span></div>
+</div></footer>
+
+<script>
+const D=__DATA__;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const card=p=>`<a class="pc" href="${esc(p.h)}"${p.x?' target="_blank" rel="noopener"':''}><div class="im"><img src="${esc(p.i)}" alt="${esc(p.m)}" loading="lazy" style="height:${p.s}px"></div><b>${esc(p.m)}</b><span>${esc(p.n)}</span>${p.x?'':'<em>Каталог ARVIOM</em>'}</a>`;
+// sensors
+const left=document.getElementById("left"),strk=document.getElementById("strk"),sname=document.getElementById("sname");
+let mode="series";
+function groups(){return mode==="series"?D.series.map(s=>({h:null,k:s.k,t:s.t,p:s.p})):D.industry.flatMap(ind=>ind.g.map((g,i)=>({h:i===0?ind.t:null,k:g.k,t:g.t,p:g.p})))}
+function show(k){const g=groups().find(x=>x.k===k);left.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.k===k));sname.textContent=g.t;strk.innerHTML=g.p.map(card).join("");strk.scrollLeft=0;upd(strk)}
+function renderLeft(){left.innerHTML=groups().map(g=>(g.h?`<h4>${esc(g.h)}</h4>`:"")+`<button type="button" data-k="${g.k}">${esc(g.t)}</button>`).join("");left.querySelectorAll("button").forEach(b=>b.onclick=()=>show(b.dataset.k));show(groups()[mode==="series"?7:0].k)}
+document.querySelectorAll(".tog button").forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll(".tog button").forEach(x=>x.classList.toggle("on",x===b));renderLeft()});
+// other blocks
+document.getElementById("gw").innerHTML=D.gw.map(card).join("");
+document.getElementById("ctl").innerHTML=D.ctl.map(card).join("");
+document.getElementById("disp").innerHTML=D.disp.map(card).join("");
+document.getElementById("cmp").innerHTML=D.cmp.map(c=>`<a class="pc" href="${esc(c.h)}"${c.x?' target="_blank" rel="noopener"':''}><div class="im"><img src="${esc(c.i)}" alt="" loading="lazy" style="height:${c.s}px"></div><b>${esc(c.t)}</b></a>`).join("");
+// carousels
+function upd(t){const c=t.closest(".car");if(!c)return;const p=c.querySelector(".ar.p"),n=c.querySelector(".ar.n");p.disabled=t.scrollLeft<4;n.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4}
+document.querySelectorAll(".car").forEach(c=>{const t=c.querySelector(".trk"),st=()=>{const f=t.firstElementChild;return f?f.getBoundingClientRect().width+parseFloat(getComputedStyle(t).columnGap||24):300};
+  c.querySelector(".ar.p").onclick=()=>t.scrollBy({left:-st()});c.querySelector(".ar.n").onclick=()=>t.scrollBy({left:st()});t.addEventListener("scroll",()=>requestAnimationFrame(()=>upd(t)));upd(t)});
+renderLeft();
+// sticky tabs highlight
+const tabs=[...document.querySelectorAll(".tabs nav a")];
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){tabs.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}}),{rootMargin:"-45% 0px -50% 0px"});
+tabs.forEach(a=>{const s=document.querySelector(a.getAttribute("href"));if(s)io2.observe(s)});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

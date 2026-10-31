@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Вхід для партнерів — ARVIOM Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f2235;--muted:#5a6878;--line:#dde3ea;--accent:#0b63b8;--f:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:var(--ink);font-family:var(--f);font-weight:300;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:28px;height:64px}
+.logo{display:flex;align-items:baseline;gap:7px;text-decoration:none;color:var(--ink)}
+.logo b{font-weight:500;font-size:21px;letter-spacing:.06em}
+.logo span{color:var(--accent);font-size:15px}
+.back{margin-left:auto;color:var(--ink);text-decoration:none;font-size:15px}
+main{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px;padding-block:64px 80px;align-items:start}
+.eyebrow{color:var(--accent);font-size:20px;margin-bottom:10px}
+h1{font-weight:200;font-size:clamp(36px,5vw,60px);line-height:1.08;letter-spacing:-.015em}
+.lead{color:var(--muted);font-size:17px;margin-top:18px;max-width:48ch}
+ul{list-style:none;margin-top:32px;display:grid;gap:14px}
+li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px}
+li b{font-weight:400;display:block}
+li span{color:var(--muted);font-size:15px}
+li::before{content:"—";color:var(--accent)}
+.box{background:linear-gradient(135deg,#eef1f5 0%,#f6f8fa 55%,#e6eaf0 100%);border-radius:6px;padding:32px}
+.box h2{font-weight:300;font-size:26px;margin-bottom:20px}
+label{display:block;font-size:14px;color:var(--muted);margin:14px 0 6px}
+input{width:100%;font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink)}
+input:disabled{background:#f7f9fb}
+.btn{margin-top:20px;width:100%;font:inherit;font-weight:400;background:var(--accent);color:#fff;border:0;border-radius:5px;padding:12px;opacity:.45;cursor:not-allowed}
+.note{font-size:14px;color:var(--muted);margin-top:16px}
+@media (max-width:860px){main{grid-template-columns:1fr;padding-block:40px 56px}}
+
+/* shared site chrome (header/footer) — same as home */
+.sxh{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid #e3e7ec;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300}
+.sxh .in,.sxf .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+.sxh .in{display:flex;align-items:center;gap:36px;height:64px}
+.sxh .lg{display:flex;align-items:baseline;gap:7px;color:#1a2433;text-decoration:none}
+.sxh .lg b{font-weight:500;font-size:21px;letter-spacing:.06em}.sxh .lg span{color:#0b5cd6;font-size:15px}
+.sxh nav{display:flex;gap:30px;font-size:16px}
+.sxh nav a{color:#333c48;text-decoration:none}.sxh nav a:hover,.sxh nav a[aria-current]{color:#0b5cd6}
+.sxh .rt{margin-left:auto;display:flex;gap:10px}
+.sxh .pl{display:inline-flex;align-items:center;border-radius:99px;padding:5px 14px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none}
+.sxh .pl.s{background:#0b5cd6;color:#fff}.sxh .pl.l{border:1.5px solid #0b5cd6;color:#0b5cd6}
+.sxf{background:#f5f7f9;border-top:1px solid #e3e7ec;padding:56px 0 28px;font-size:14px;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300;color:#6b7684}
+.sxf .g{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:32px}
+.sxf .tg{display:flex;align-items:baseline;gap:12px;color:#1a2433;font-size:17px}.sxf .tg i{width:1px;height:18px;background:#b9c3ce;align-self:center}
+.sxf h4{font-weight:400;color:#1a2433;font-size:16px;margin:0 0 12px}
+.sxf ul{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+.sxf a{color:#6b7684;text-decoration:none}.sxf a:hover{color:#0b5cd6}
+.sxf .b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid #e3e7ec;font-size:13px}
+@media (max-width:1100px){.sxh nav{display:none}}
+@media (max-width:900px){.sxf .g{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sxh .pl.l{display:none}}
+
+/* readability: wider layout, regular weight for body text, darker grey, larger small text */
+:root{--muted:#545e6b}
+body{font-weight:400;font-size:17px}
+h1,h2,h3{font-weight:300}
+.wrap,.sxh .in,.sxf .in,.sxs .in{max-width:1440px!important}
+p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
+.pc span,.card p,.t p,.tr p,.sc .src,.bc .src,.sd,.faq p,.phead p,.devh p,.acc span,.left button,.tabs nav a,.sxf,.cdl dt,.person{font-size:16px!important}
+.pc b,.card h3,.vid h3{font-weight:500}
+.sxh nav a,nav.main a{font-weight:400}
+</style>
+</head>
+<body>
+<header class="sxh"><div class="in">
+  <a class="lg" href="./"><b>ARVIOM</b><span>Engineering</span></a>
+  <nav aria-label="Розділи"><a href="./#scenarios">Рішення</a><a href="products.html">Продукти</a><a href="./#cases">Проєкти</a><a href="./#dev">Розробки</a><a href="./#learn">Навчання</a><a href="./#learn">Підтримка</a><a href="./#video">Відео</a></nav>
+  <div class="rt"><a class="pl l" href="partner.html">Вхід для партнерів</a><a class="pl s" href="./#contact">Зв'язатися</a></div>
+</div></header>
+<main class="wrap">
+  <section>
+    <div class="eyebrow">Кабінет партнера</div>
+    <h1>Вхід для інтеграторів і монтажників</h1>
+    <p class="lead">Окремий кабінет для партнерів ARVIOM: усе, що потрібно для підбору обладнання й комерційної пропозиції, в одному місці.</p>
+    <ul>
+      <li><div><b>Ціни й наявність</b><span>партнерські ціни, склад у Києві, замовлення через B2B-портал</span></div></li>
+      <li><div><b>База знань</b><span>документація, типові рішення, фото інсталяцій для КП</span></div></li>
+      <li><div><b>Доступ для ШІ-асистентів</b><span>адреси й ключі MCP-серверів бази знань і B2B-порталу</span></div></li>
+      <li><div><b>Навчання й підтримка</b><span>матеріали, записи вебінарів, звернення до техпідтримки</span></div></li>
+    </ul>
+  </section>
+  <section class="box" aria-labelledby="lg">
+    <h2 id="lg">Вхід</h2>
+    <form onsubmit="return false">
+      <label for="em">Email</label>
+      <input id="em" type="email" autocomplete="off" disabled>
+      <label for="pw">Пароль</label>
+      <input id="pw" type="password" autocomplete="off" disabled>
+      <button class="btn" type="submit" disabled>Кабінет готується</button>
+    </form>
+    <p class="note">Поки кабінет у розробці, доступ видаємо вручну. <a href="./#contact">Запросити доступ →</a></p>
+  </section>
+</main>
+<footer class="sxf"><div class="in">
+  <div class="g">
+    <div><div class="tg"><b style="font-weight:500;letter-spacing:.06em">ARVIOM</b><i></i>Engineering</div><p style="margin-top:14px;max-width:30ch">Бездротова автоматизація об'єктів. Напрям IoT компанії ARVIOM.</p></div>
+    <div><h4>Продукти</h4><ul><li><a href="products.html">LoRaWAN-датчики</a></li><li><a href="products.html">Шлюзи</a></li><li><a href="products.html">Контролери</a></li><li><a href="catalog.html">Серія EM300</a></li></ul></div>
+    <div><h4>Рішення</h4><ul><li><a href="./#scenarios">Будівлі</a></li><li><a href="./#scenarios">Енергетика</a></li><li><a href="./#scenarios">Повітря</a></li><li><a href="./#cases">Проєкти</a></li></ul></div>
+    <div><h4>Ресурси</h4><ul><li><a href="./#dev">Розробки</a></li><li><a href="./#video">Відео</a></li><li><a href="./#learn">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
+    <div><h4>Компанія</h4><ul><li><a href="./#learn">Команда</a></li><li><a href="./#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
+  </div>
+  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span></div>
+</div></footer>
+</body>
+</html>

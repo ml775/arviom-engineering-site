@@ -1,0 +1,921 @@
+{
+ "hero": {
+  "title": null,
+  "text": "",
+  "series": [],
+  "products": [
+   {
+    "href": "https://www.milesight.com/support/resources/iot-academy",
+    "img": "https://www.milesight.com/static/pc/en/index-2025/iot-academy-index-banner.jpg?t=1793352182513",
+    "title": [
+     "Milesight IoT Academy:",
+     "Empowering the Future of IoT",
+     "",
+     "Master cutting-edge IoT technology, earn official certifications, and lead",
+     "the way in Smart Building, Retail and more advanced solutions.",
+     "",
+     "Learn More"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/iot-controller/uc701",
+    "img": "https://www.milesight.com/static/pc/en/index-2025/pc-uc701-banner.jpg?t=1793352182513",
+    "title": [
+     "UC701 Smart AC Controller",
+     "",
+     "Smarter AC Control, Lower Energy Costs",
+     "",
+     "Learn More"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/iot-controller/uc722",
+    "img": "https://www.milesight.com/static/pc/en/index-2025/uc722-banner-pc.png?t=1793352182513",
+    "title": [
+     "UC722 VRF System Controller",
+     "",
+     "Unified VRF Control for Every Space",
+     "",
+     "Learn More"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-sensor/ptac-thermostat-kit",
+    "img": "https://www.milesight.com/static/pc/en/index-2025/pc-uc711-banner.jpg?t=1793352182513",
+    "title": [
+     "PTAC Thermostat Kit",
+     "",
+     "Wireless PTAC Control, Built to Connect.",
+     "",
+     "Learn More"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/accessories/va05",
+    "img": "https://www.milesight.com/static/pc/en/index-2025/hero/va05/va05-advanced-staff-detection-kit-banner.png?t=1793352182513",
+    "title": [
+     "VA05",
+     "Advanced Staff Detection Kit",
+     "",
+     "High-precision Staff Tracking.",
+     "Built for High-End Retail.",
+     "",
+     "Pocket-size Design",
+     "",
+     "Explore Now"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/support/resources/iot-academy",
+    "img": "https://www.milesight.com/static/pc/en/index-2025/iot-academy-index-banner.jpg?t=1793352182513",
+    "title": [
+     "Milesight IoT Academy:",
+     "Empowering the Future of IoT",
+     "",
+     "Master cutting-edge IoT technology, earn official certifications, and lead",
+     "the way in Smart Building, Retail and more advanced solutions.",
+     "",
+     "Learn More"
+    ]
+   }
+  ]
+ },
+ "tabs-and-crumbs": {
+  "title": null,
+  "text": "",
+  "series": [],
+  "products": []
+ },
+ "lorawan-sensor": {
+  "title": "LoRaWAN® Sensor",
+  "text": "LoRaWAN® sensors provide long-range, low-power connectivity for various IoT applications, including smart building, smart city, industrial IoT, retail and agriculture. Milesight's LoRaWAN® sensors offer reliable performance, robust coverage, and seamless integration, making them ideal for scalable, user-friendly IoT deployments.",
+  "series": [
+   {
+    "key": "am-series",
+    "name": "AM Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/am102",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/indoor-air-quality-am-series/2-in-1-iaq-sensor-am102-am102l.png?t=1793352182511",
+      "title": [
+       "AM102/AM102L",
+       "2-in-1 IAQ Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/am103-am103l",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/indoor-air-quality-am-series/3-in-1-iaq-sensor-am103-am103l.png?t=1793352182511",
+      "title": [
+       "AM103/AM103L",
+       "3-in-1 IAQ Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/am300",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/indoor-air-quality-am-series/am300.png?t=1793352182511",
+      "title": [
+       "AM300 Series",
+       "All-in-1 IAQ Sensor"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "occupancy-and-people-counting-series",
+    "name": "People Sensing Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs121",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/ai-workplace-occupancy-sensor-vs121.png?t=1793352182511",
+      "title": [
+       "VS121AI Workplace Occupancy Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs125",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/ai-stereo-vision-people-counter-iot-page.png?t=1793352182511",
+      "title": [
+       "VS125 SeriesAI Stereo Vision People Counter"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs126",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/ai-tof-people-counting-snesor-vs126.png?t=1793352182511",
+      "title": [
+       "VS126AI Ultra High-Mount People Counter"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs133",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/ai-tof-people-counting-snesor-vs133.png?t=1793352182511",
+      "title": [
+       "VS133AI ToF People Counting Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs135",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/vs135.png?t=1793352182511",
+      "title": [
+       "VS135Ultra ToF People Counter"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs330",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/smart-occupancy-sensor-vs330.png?t=1793352182511",
+      "title": [
+       "VS330Bathroom Occupancy Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs34x",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/vs341.png?t=1793352182511",
+      "title": [
+       "VS340/VS341Desk & Seat Occupancy Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs350",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/passage-people-counter-vs350.png?t=1793352182511",
+      "title": [
+       "VS350Passage People Counter"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs351",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/mini-ai-thermopile-people-counter-vs351.png?t=1793352182511",
+      "title": [
+       "VS351Mini AI Thermopile People Counter"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs360",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/vs360.png?t=1793352182511",
+      "title": [
+       "VS360IR Breakbeam People Counter"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs373",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/vs373-small-homepage.png?t=1793352182511",
+      "title": [
+       "VS373Radar Fall Detection Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/vs370",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/occupancy-people-counting-series/vs370.png?t=1793352182511",
+      "title": [
+       "VS370Radar Human Presence Sensor"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "wt-series",
+    "name": "WT Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/wt101",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/wt-series/smart-radiator-thermostat.png?t=1793352182511",
+      "title": [
+       "WT10xSmart Radiator Thermostat"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/wt201",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/wt-series/wt201.png?t=1793352182511",
+      "title": [
+       "WT2x1Smart Thermostat"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/wt303-wt304",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/wt-series/wt303-304-small-homepage.png?t=1793352182511",
+      "title": [
+       "WT30xSmart Fan Coil Thermostat"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/wt401",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/wt-series/wt401.png?t=1793352182511",
+      "title": [
+       "WT401Wireless Smart Thermostat"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ptac-thermostat-kit",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/wt-series/ptac-thermostat-kit-product-thumbnail.png?t=1793352182511",
+      "title": [
+       "UC711 + WT401PTAC Thermostat Kit"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/thermostat-compatibility",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/wt-series/compatibility-checker.png?t=1793352182511",
+      "title": [
+       "CompatibilityChecker"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "gs-series",
+    "name": "GS Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/gs301",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/gas-sensor-gs-series/lorawan-bathroom-odor-detector-gs301.png?t=1793352182511",
+      "title": [
+       "GS301Bathroom Odor Detector"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/gs601",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/gas-sensor-gs-series/gs601.png?t=1793352182511",
+      "title": [
+       "GS601Vape Detector"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "cowork-series",
+    "name": "CoWork Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws101",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/smart-button-ws101.png?t=1793352182511",
+      "title": [
+       "WS101Smart Button"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws156",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/smart-scene-panel-ws136-ws156.png?t=1793352182511",
+      "title": [
+       "WS156Smart Scene Panel"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws201",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/smart-fill-level-monitoring-sensor-ws201.png?t=1793352182511",
+      "title": [
+       "WS201Smart Fill Level Monitoring Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws202",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/pir-and-light-sensor-ws202.png?t=1793352182511",
+      "title": [
+       "WS202PIR & Light Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws203",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/ws203-iot-page.png?t=1793352182511",
+      "title": [
+       "WS203Motion & TH Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws301",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/wire-free-magnetic-contact-switch-ws301.png?t=1793352182511",
+      "title": [
+       "WS301Magnetic Contact Switch"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws302",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/sound-level-sensor-ws302.png?t=1793352182511",
+      "title": [
+       "WS302Sound Level Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws303",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/mini-leak-detection-sensor-ws303.png?t=1793352182511",
+      "title": [
+       "WS303Mini Leak Detection Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws50x",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/smart-wall-switch-ws50x.png?t=1793352182511",
+      "title": [
+       "WS50xSmart Wall Switch"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws51x",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/ws51x-smart-wall-socket.png?t=1793352182511",
+      "title": [
+       "WS51xSmart Wall Socket"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws523",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/smart-portable-socket-ws523.png?t=1793352182511",
+      "title": [
+       "WS523Smart Portable Socket"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ws558",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/smart-workplace-cowork-series/smart-light-controller-ws558.png?t=1793352182511",
+      "title": [
+       "WS558Smart Light Controller"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "wts-series",
+    "name": "WTS Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/wts506",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/weather-station-wts-series/iot-weather-station-wts506.png?t=1793352182511",
+      "title": [
+       "WTS506IoT Weather Station"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ts-series",
+    "name": "TS Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ts60x",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/insertion-temperature-sensor-ts-series/ts601-ts602.png?t=1793352182511",
+      "title": [
+       "TS60xTemperature and Humidity Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ts101",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/insertion-temperature-sensor-ts-series/insertion-temperature-sensor-ts101.png?t=1793352182511",
+      "title": [
+       "TS101Insertion Temperature Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ts201",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/insertion-temperature-sensor-ts-series/ts201.png?t=1793352182511",
+      "title": [
+       "TS201Cost Effective Temperature Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ts30x",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/insertion-temperature-sensor-ts-series/ts301-ts302.png?t=1793352182511",
+      "title": [
+       "TS301/TS302LoRaWAN® Temperature Sensor"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "em300-series",
+    "name": "EM300 Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em300-cl",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/capacitive-level-sensor-em300-cl.png?t=1793352182511",
+      "title": [
+       "EM300-CLCapacitive Level Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em300-di",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/pulse-counter-em300-di.png?t=1793352182511",
+      "title": [
+       "EM300-DIPulse Counter"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em300-mcs",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/magnetic-contact-switch-em300-mcs.png?t=1793352182511",
+      "title": [
+       "EM300-MCSMagnetic Contact Switch"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em300-mld",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/em300-mld.png?t=1793352182511",
+      "title": [
+       "EM300-MLDMembrane Leakage DetectionSensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em300-sld-zld",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/leak-detection-sensor-em300-sld-zld.png?t=1793352182511",
+      "title": [
+       "EM300-SLD/ZLDSpot/Zone Leakage DetectionSensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em300-th",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/temperature-and-humidity-sensor-em300-th.png?t=1793352182511",
+      "title": [
+       "EM300-THTemperature and HumiditySensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em320-th",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/temperature-and-humidity-sensor-em320-th.png?t=1793352182511",
+      "title": [
+       "EM320-THTemperature and HumiditySensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em320-tilt",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/environmental-monitoring-em300-series/tilt-sensor-em320-tilt.png?t=1793352182511",
+      "title": [
+       "EM320-TILTTilt Sensor"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "em400-series",
+    "name": "EM400 Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em400-tld",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/distancelevel-measurement-em400-series/tof-laser-distance-sensor-em400-tld.png?t=1793352182511",
+      "title": [
+       "EM400-TLDToF Laser Distance Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em400-mud",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/distancelevel-measurement-em400-series/multifunctional-ultrasonic-distance-sensor-em400-mud.png?t=1793352182511",
+      "title": [
+       "EM400-MUDMultifunctional Distance Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em400-udl",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/distancelevel-measurement-em400-series/ultrasonic-distance-sensor-em400-udl.png?t=1793352182511",
+      "title": [
+       "EM400-UDLUltrasonic Distance/Level Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em410-rdl",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/distancelevel-measurement-em400-series/em410-rdl.png?t=1793352182511",
+      "title": [
+       "EM410-RDLLoRaWAN® Radar Distance/Level Sensor"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "em500-series",
+    "name": "EM500 Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em500-co2",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/outdoor-environmental-monitoring-em500-series/4-in-1-co2-sensor-em500-co2.png?t=1793352182511",
+      "title": [
+       "EM500-CO2Outdoor CO2 Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em500-lgt",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/outdoor-environmental-monitoring-em500-series/light-sensor-em500-lgt.png?t=1793352182511",
+      "title": [
+       "EM500-LGTLight Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em500-pp",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/outdoor-environmental-monitoring-em500-series/pipe-pressure-sensor-em500-pp.png?t=1793352182511",
+      "title": [
+       "EM500-PPPipe Pressure Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em500-pt100",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/outdoor-environmental-monitoring-em500-series/industrial-temperature-sensor-em500-pt100.png?t=1793352182511",
+      "title": [
+       "EM500-PT100Platinum Temperature Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em500-smtc",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/outdoor-environmental-monitoring-em500-series/soil-moisture-temperature-and-electrical-conductivity-sensor-em500-smtc.png?t=1793352182511",
+      "title": [
+       "EM500-SMTCSoil Moisture, Temperature & Conductivity Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em500-swl",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/outdoor-environmental-monitoring-em500-series/submersible-water-level-sensor-em500-swl.png?t=1793352182511",
+      "title": [
+       "EM500-SWLSubmersible Water Level Sensor"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/em500-udl",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/outdoor-environmental-monitoring-em500-series/ultrasonic-distance-level-sensor-em500-udl.png?t=1793352182511",
+      "title": [
+       "EM500-UDLUltrasonic Distance/Level Sensor"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "at-series",
+    "name": "AT Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/at101",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/asset-tracking-series/milesight-outdoor-asset-tracker-at101.png?t=1793352182511",
+      "title": [
+       "AT101Outdoor Asset Tracker"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ct-series",
+    "name": "CT Series",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ct10x",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/ct-sereis/ct10x.png?t=1793352182511",
+      "title": [
+       "CT10xSmart Current Transformer"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/ct3xx",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/ct-sereis/ct3xx.png?t=1793352182511",
+      "title": [
+       "CT3xxSmart Current Transformer"
+      ]
+     },
+     {
+      "href": "https://www.milesight.com/iot/product/lorawan-sensor/cth01",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-sensor/ct-sereis/cth01.png?t=1793352182511",
+      "title": [
+       "CTH01Smart Power Monitor Hub"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "iot-display",
+    "name": "IoT Display",
+    "products": [
+     {
+      "href": "https://www.milesight.com/iot/product/iot-display/ds3604",
+      "img": "https://www.milesight.com/static/pc/en/iot/index/lorawan-iot-e-ink-display.png?t=1793352182511",
+      "title": [
+       "DS3604LoRaWAN® IoT E-Ink Display"
+      ]
+     }
+    ]
+   },
+   {
+    "key": "smart-building",
+    "name": "Smart Building",
+    "products": []
+   },
+   {
+    "key": "smart-retail",
+    "name": "Smart Retail",
+    "products": []
+   },
+   {
+    "key": "smart-city",
+    "name": "Smart City",
+    "products": []
+   },
+   {
+    "key": "smart-agriculture",
+    "name": "Smart Agriculture",
+    "products": []
+   }
+  ],
+  "products": []
+ },
+ "lorawan-gateway": {
+  "title": "LoRaWAN® Gateway",
+  "text": "",
+  "series": [],
+  "products": [
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-gateway/sg50",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/gateway/sg50.png?t=1793352182511",
+    "title": [
+     "SG50",
+     "Ultra Low Power Solar LoRaWAN® Gateway"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-gateway/ug63",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/gateway/lorawan-mini-gateway.png?t=1793352182511",
+    "title": [
+     "UG63",
+     "Mini LoRaWAN® Gateway"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-gateway/ug56",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/gateway/lorawan-industrial-gateway.png?t=1793352182511",
+    "title": [
+     "UG56",
+     "Industrial LoRaWAN® Gateway"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-gateway/ug65",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/gateway/lorawan-indoor-gateway.png?t=1793352182511",
+    "title": [
+     "UG65",
+     "Indoor LoRaWAN® Gateway"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-gateway/ug67",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/gateway/lorawan-outdoor-gateway.png?t=1793352182511",
+    "title": [
+     "UG67",
+     "Outdoor LoRaWAN® Gateway"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-gateway/eg71",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/gateway/eg71-pc.png?t=1793352182511",
+    "title": [
+     "EG71",
+     "Building IoT Gateway"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/product/accessories/uninterruptible-power-supply-ups01",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/gateway/ups01.png?t=1793352182511",
+    "title": [
+     "UPS01",
+     "Uninterruptible Power Supply"
+    ]
+   }
+  ]
+ },
+ "lorawan-controller": {
+  "title": "LoRaWAN® Controller",
+  "text": "",
+  "series": [],
+  "products": [
+   {
+    "href": "https://www.milesight.com/iot/product/iot-controller/uc100",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/control/iot-controller-uc100.png?t=1793352182511",
+    "title": [
+     "UC100",
+     "Modbus to LoRaWAN® Converter"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/iot-controller/uc300",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/control/iot-controller-uc300.png?t=1793352182511",
+    "title": [
+     "UC300",
+     "LoRaWAN® & 4G IoT Controller"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/iot-controller/uc51x",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/control/solenoid-valve-controller.png?t=1793352182511",
+    "title": [
+     "UC51x",
+     "LoRaWAN® Solenoid Valve Controller"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/iot-controller/uc50x",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/control/iot-multi-interface-controller.png?t=1793352182511",
+    "title": [
+     "UC50x",
+     "LoRaWAN® Multi-interface Controller"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/iot-controller/uc701",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/control/uc701-pc.png?t=1793352182511",
+    "title": [
+     "UC701",
+     "Smart AC Controller"
+    ]
+   }
+  ]
+ },
+ "iot-display": {
+  "title": "IoT Display",
+  "text": "",
+  "series": [],
+  "products": [
+   {
+    "href": "https://www.milesight.com/iot/product/iot-display/ds3604",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/display/lorawan-iot-e-ink-display.png?t=1793352182511",
+    "title": [
+     "DS3604",
+     "IoT E-ink Display"
+    ]
+   }
+  ]
+ },
+ "product-comparison": {
+  "title": "Product Comparison Guide",
+  "text": "Which product is right for you?",
+  "series": [],
+  "products": [
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#iaq",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/iaq-sensors.png?t=1793352182511",
+    "title": [
+     "Compare IAQ Sensors"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#vs",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/people-counting-sensors.png?t=1793352182511",
+    "title": [
+     "Compare People Counting",
+     "Sensors"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#occupancy",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/occupancy-sensors.png?t=1793352182511",
+    "title": [
+     "Compare Occupancy Sensors"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#distance",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/distance-measuring-sensors.png?t=1793352182511",
+    "title": [
+     "Compare Distance Sensors"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#leakage",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/leakage-monitoring-sensors.png?t=1793352182511",
+    "title": [
+     "Compare Leakage Sensors"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#temperature",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/temperature-monitoring-sensors.png?t=1793352182511",
+    "title": [
+     "Compare Temperature & Humidity Sensors"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#4g",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/4g-routers.png?t=1793352182511",
+    "title": [
+     "Compare 4G Routers"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#5g",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/5g-routers.png?t=1793352182511",
+    "title": [
+     "Compare 5G Routers"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#controllers",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/comparison-guide/iot-controllers.png?t=1793352182511",
+    "title": [
+     "Compare IoT Controllers"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/comparison-guide#gateways",
+    "img": "https://www.milesight.com/static/pc/en/iot/product/comparison-guide/gateway/gateway.png?t=1793352182511",
+    "title": [
+     "Compare Gateways"
+    ]
+   }
+  ]
+ },
+ "lorawan-demo-kit": {
+  "title": "Milesight LoRaWAN® Demo Kit",
+  "text": "",
+  "series": [],
+  "products": [
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-ibox-kit/iaq-kit",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/kit/new/big/ibox-iaq-kit-overview.png?t=1793352182511",
+    "title": [
+     ""
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-ibox-kit/agriculture-kit",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/kit/new/big/ibox-agriculture-kit-overview.png?t=1793352182511",
+    "title": [
+     ""
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-ibox-kit/restroom-kit",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/kit/new/big/ibox-restroom-kit.png?t=1793352182511",
+    "title": [
+     ""
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-ibox-kit/smart-building-kit",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/kit/new/big/ibox-building-kit.png?t=1793352182511",
+    "title": [
+     ""
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-ibox-kit/cowork-smart-office-kit",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/kit/new/big/ibox-cowork-kit-a.png?t=1793352182511",
+    "title": [
+     ""
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/lorawan-ibox-kit/cowork-smart-office-kit",
+    "img": "https://www.milesight.com/static/pc/en/iot/index/kit/new/big/ibox-cowork-kit-b.png?t=1793352182511",
+    "title": [
+     ""
+    ]
+   }
+  ]
+ },
+ "video": {
+  "title": "Learn About LoRaWAN® Sensorsand Gateways Through Expert Videos",
+  "text": "",
+  "series": [],
+  "products": []
+ },
+ "container container--faq": {
+  "title": "LoRaWAN® Products FAQ: Key Information You Need to Know",
+  "text": "",
+  "series": [],
+  "products": []
+ },
+ "container container--form": {
+  "title": "Get Personalized Recommendations for Your IoT Projects",
+  "text": "",
+  "series": [],
+  "products": []
+ },
+ "contact-form-btm": {
+  "title": null,
+  "text": "",
+  "series": [],
+  "products": []
+ }
+}

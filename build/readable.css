@@ -1,0 +1,10 @@
+
+/* readability: wider layout, regular weight for body text, darker grey, larger small text */
+:root{--muted:#545e6b}
+body{font-weight:400;font-size:17px}
+h1,h2,h3{font-weight:300}
+.wrap,.sxh .in,.sxf .in,.sxs .in{max-width:1440px!important}
+p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
+.pc span,.card p,.t p,.tr p,.sc .src,.bc .src,.sd,.faq p,.phead p,.devh p,.acc span,.left button,.tabs nav a,.sxf,.cdl dt,.person{font-size:16px!important}
+.pc b,.card h3,.vid h3{font-weight:500}
+.sxh nav a,nav.main a{font-weight:400}

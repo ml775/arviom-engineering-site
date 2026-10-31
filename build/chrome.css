@@ -1,0 +1,21 @@
+/* shared site chrome (header/footer) — same as home */
+.sxh{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid #e3e7ec;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300}
+.sxh .in,.sxf .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+.sxh .in{display:flex;align-items:center;gap:36px;height:64px}
+.sxh .lg{display:flex;align-items:baseline;gap:7px;color:#1a2433;text-decoration:none}
+.sxh .lg b{font-weight:500;font-size:21px;letter-spacing:.06em}.sxh .lg span{color:#0b5cd6;font-size:15px}
+.sxh nav{display:flex;gap:30px;font-size:16px}
+.sxh nav a{color:#333c48;text-decoration:none}.sxh nav a:hover,.sxh nav a[aria-current]{color:#0b5cd6}
+.sxh .rt{margin-left:auto;display:flex;gap:10px}
+.sxh .pl{display:inline-flex;align-items:center;border-radius:99px;padding:5px 14px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none}
+.sxh .pl.s{background:#0b5cd6;color:#fff}.sxh .pl.l{border:1.5px solid #0b5cd6;color:#0b5cd6}
+.sxf{background:#f5f7f9;border-top:1px solid #e3e7ec;padding:56px 0 28px;font-size:14px;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300;color:#6b7684}
+.sxf .g{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:32px}
+.sxf .tg{display:flex;align-items:baseline;gap:12px;color:#1a2433;font-size:17px}.sxf .tg i{width:1px;height:18px;background:#b9c3ce;align-self:center}
+.sxf h4{font-weight:400;color:#1a2433;font-size:16px;margin:0 0 12px}
+.sxf ul{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+.sxf a{color:#6b7684;text-decoration:none}.sxf a:hover{color:#0b5cd6}
+.sxf .b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid #e3e7ec;font-size:13px}
+@media (max-width:1100px){.sxh nav{display:none}}
+@media (max-width:900px){.sxf .g{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sxh .pl.l{display:none}}

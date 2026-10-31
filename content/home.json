@@ -1,0 +1,186 @@
+{
+  "cases": [
+    {
+      "size": "big",
+      "own": true,
+      "title": "Енергомоніторинг складсько-виробничого комплексу в Україні",
+      "chips": [
+        "Проєкт ARVIOM",
+        "Енергетика"
+      ],
+      "note": "Облік по лініях, генератор і пальне, резервне живлення · працює без інтернету",
+      "image": "img/shot-energy.webp",
+      "link": "#dev"
+    },
+    {
+      "size": "big",
+      "own": false,
+      "title": "$250 000 економії за перший квартал у 62 офісних будівлях Канади",
+      "chips": [
+        "Розумна будівля",
+        "Енергоефективність"
+      ],
+      "note": "Джерело: Milesight",
+      "image": "img/ms/ms-case-canada.webp",
+      "link": "https://www.milesight.com/company/success-stories/smart-building-solution-optimizes-energy-efficiency-and-indoor-air-quality"
+    },
+    {
+      "size": "small",
+      "own": false,
+      "title": "100+ будинків в Італії: облік тепла й електроенергії без прокладання кабелів",
+      "chips": [
+        "Житлові будинки",
+        "BACnet"
+      ],
+      "note": "Джерело: Milesight",
+      "image": "img/ms/ms-case-italy-card.webp",
+      "link": "https://www.milesight.com/company/success-stories/bacnet-over-lorawan-for-smart-buildings-in-italy"
+    },
+    {
+      "size": "small",
+      "own": false,
+      "title": "7 000+ датчиків у холодильниках понад 1 000 супермаркетів Австрії",
+      "chips": [
+        "Рітейл",
+        "Температура"
+      ],
+      "note": "Джерело: Milesight",
+      "image": "img/ms/ms-case-austria-card.webp",
+      "link": "https://www.milesight.com/iot/success-stories/iot-retail-temperature-monitoring-austria"
+    },
+    {
+      "size": "small",
+      "own": false,
+      "title": "114 термостатів на радіаторах у палатах лікарні в Хорватії",
+      "chips": [
+        "Лікарня",
+        "Опалення"
+      ],
+      "note": "Джерело: Milesight",
+      "image": "img/ms/ms-case-croatia-card.webp",
+      "link": "https://www.milesight.com/iot/success-stories/beaveriot-powers-hospital-automation-project"
+    },
+    {
+      "size": "small",
+      "own": false,
+      "title": "61 точка моніторингу резервуарів і насосних станцій острова Невіс",
+      "chips": [
+        "Водоканал",
+        "Рівень і тиск"
+      ],
+      "note": "Джерело: Milesight",
+      "image": "img/ms/ms-case-nevis-card.webp",
+      "link": "https://www.milesight.com/iot/success-stories/iot-smart-water-management-caribbean"
+    }
+  ],
+  "cases_note": "Кейси Milesight — переклад і стислий виклад з milesight.com; повні історії за посиланнями.",
+  "software": [
+    {
+      "title": "Енергомоніторинг і керування живленням",
+      "tag": "Енергетика",
+      "text": "Генератор, батарея, сонце й мережа; щоденний план розряду батареї.",
+      "image": "img/shot-energy.webp",
+      "image_is_device": false,
+      "link": ""
+    },
+    {
+      "title": "Лічильники в мережі клінік",
+      "tag": "Облік ресурсів",
+      "text": "EM300-DI на лічильниках; нічні витоки видно зранку.",
+      "image": "img/shot-veselka.webp",
+      "image_is_device": false,
+      "link": ""
+    },
+    {
+      "title": "Якість повітря в школі",
+      "tag": "Повітря",
+      "text": "CO₂ по класах і сигнал, коли треба провітрити.",
+      "image": "img/shot-air.webp",
+      "image_is_device": false,
+      "link": ""
+    },
+    {
+      "title": "Моніторинг укриттів",
+      "tag": "Безпека",
+      "text": "Клімат, протічка, двері — сповіщення відповідальним.",
+      "image": "img/ms/ms-em300-th-t.webp",
+      "image_is_device": true,
+      "link": ""
+    },
+    {
+      "title": "Моніторинг парку інверторів Solis",
+      "tag": "У розробці",
+      "text": "Статистика станцій інсталятора: аномалії, стан батарей.",
+      "image": "img/cth01.webp",
+      "image_is_device": true,
+      "link": ""
+    },
+    {
+      "title": "База знань IoT через MCP",
+      "tag": "Для ШІ-асистентів",
+      "text": "Ваш асистент сам знаходить відповідь у документації й рішеннях.",
+      "image": "img/ug65.webp",
+      "image_is_device": true,
+      "link": "partner.html"
+    }
+  ],
+  "team": [
+    {
+      "name": "Максим",
+      "role": "Напрям IoT",
+      "photo": ""
+    },
+    {
+      "name": "Володимир",
+      "role": "Продажі",
+      "photo": ""
+    },
+    {
+      "name": "Михайло",
+      "role": "Техпідтримка",
+      "photo": ""
+    },
+    {
+      "name": "Олександр",
+      "role": "Розробка",
+      "photo": ""
+    },
+    {
+      "name": "Олег",
+      "role": "Розробка",
+      "photo": ""
+    },
+    {
+      "name": "Павло Данилюк",
+      "role": "SEO",
+      "photo": ""
+    },
+    {
+      "name": "Сервісний відділ",
+      "role": "Ремонт і гарантія",
+      "photo": ""
+    }
+  ],
+  "logos": [
+    {
+      "name": "МХП",
+      "image": ""
+    },
+    {
+      "name": "Партнер",
+      "image": ""
+    },
+    {
+      "name": "Партнер",
+      "image": ""
+    },
+    {
+      "name": "Партнер",
+      "image": ""
+    },
+    {
+      "name": "Партнер",
+      "image": ""
+    }
+  ]
+}

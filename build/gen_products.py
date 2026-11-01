@@ -21,13 +21,17 @@ for s in json.load(open(SP+'sensor_series.json')):
         for p in s['products']: MFILE.setdefault(p['model'],FILES[s['key']])
 for src,k in [('lorawan-gateway','gateways'),('lorawan-controller','controllers')]:
     for x in json.load(open(SP+'iot_catalog.json'))[src]['products']: MFILE.setdefault(x['title'][0],FILES.get(k,''))
+ALIAS={'WS156/136':'WS156','VS13x':'VS133','TS30x':'TS301/TS302','WT201':'WT2x1','WT303/WT304':'WT30x','VS125':'VS125 Series'}
+def hdimg(m):
+    p='img/hd/'+jslug(ALIAS.get(m,m))+'.webp'
+    return p if os.path.exists(ROOT+'/'+p) else None
 def jslug(m): return re.sub(r'^-|-$','',re.sub(r'[^a-z0-9]+','-',m.lower()))
 def link(model,href):
     if model in OURS: return 'catalog.html#m-'+OURS[model],0
     if model in SPECS and MFILE.get(model): return MFILE[model]+'#m-'+jslug(model),0
     return ('https://www.milesight.com'+href) if href.startswith('/') else href,1
 def P(model,name,im,href):
-    l,ext=link(model,href); i=img(im); return {'m':model,'n':UK.get(name,name),'i':i,'h':l,'x':ext,'s':hh(i)}
+    l,ext=link(model,href); i=hdimg(model) or img(im); return {'m':model,'n':UK.get(name,name),'i':i,'h':l,'x':ext,'s':hh(i)}
 bykey={s['key']:s for s in ser}
 products=[{'k':k,'t':SERIES[k],'f':FILES.get(k,''),'p':[P(p['model'],p['name'],p['img'],p['href']) for p in bykey[k]['products'] if p['model']!='Compatibility']} for k in SERIES]
 industry=[{'t':t,'g':[{'k':k,'t':lab,'p':[P(p['model'],p['name'],p['img'],p['href']) for p in bykey[k]['products'] if p['model']!='Compatibility']} for k,lab in grp]} for t,grp in IND]

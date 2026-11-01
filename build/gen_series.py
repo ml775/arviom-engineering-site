@@ -10,6 +10,8 @@ C = os.path.join(ROOT, 'content/catalog/')
 ser = {s['key']: s for s in json.load(open(C + 'sensor_series.json'))}
 cat = json.load(open(C + 'iot_catalog.json'))
 specs = json.load(open(C + 'specs.json')) if os.path.exists(C + 'specs.json') else {}
+media = json.load(open(C + 'media.json')) if os.path.exists(C + 'media.json') else {}
+HD = lambda m: 'img/hd/' + slug(m) + '.webp' if os.path.exists(os.path.join(ROOT, 'img/hd/' + slug(m) + '.webp')) else None
 img = lambda n: 'img/cat/cat-' + n.split('?')[0].split('/')[-1].rsplit('.', 1)[0] + '.webp'
 slug = lambda m: re.sub(r'^-|-$', '', re.sub(r'[^a-z0-9]+', '-', m.lower()))
 SENS = [["measures", "Вимірює"], ["battery_life", "Батарея"], ["ip", "Захист"]]
@@ -34,7 +36,10 @@ FILE = {k: 's-' + k.replace('-series', '').replace('occupancy-and-people-countin
 FILE['em300-series'] = 'catalog.html'
 
 def model(m, name, im, href):
-    d = {'model': m, 'name_uk': UK.get(name, name), 'img': img(im), 'ext': ('https://www.milesight.com' + href) if href.startswith('/') else href, 'specs': False}
+    d = {'model': m, 'name_uk': UK.get(name, name), 'img': HD(m) or img(im), 'ext': ('https://www.milesight.com' + href) if href.startswith('/') else href, 'specs': False}
+    md = media.get(m, {})
+    if md.get('gallery'): d['gallery'] = md['gallery']
+    if md.get('video'): d['video'] = md['video']
     s = specs.get(m)
     if s:
         d.update({k: v for k, v in s.items() if not k.startswith('_') and k != 'model'}); d['specs'] = True
@@ -62,7 +67,12 @@ if __name__ == '__main__':
     # EM300: curated data from data.js
     js = open(os.path.join(ROOT, 'data.js')).read()
     M = json.loads(re.search(r'const MODELS=(\[.*?\]);', js, re.S).group(1)); CASES = json.loads(re.search(r'const CASES=(\[.*?\]);', js, re.S).group(1))
-    for m in M: m['img'] = 'img/' + m['model'].lower() + '.webp'; m['specs'] = True
+    EMK = {'EM300-SLD': 'EM300-SLD/ZLD', 'EM300-ZLD': 'EM300-SLD/ZLD'}
+    for m in M:
+        m['img'] = 'img/' + m['model'].lower() + '.webp'; m['specs'] = True
+        md = media.get(EMK.get(m['model'], m['model']), {})
+        if md.get('gallery') and m['model'] != 'EM300-ZLD': m['gallery'] = md['gallery']
+        if md.get('video'): m['video'] = md['video']
     S = {'code': 'EM300', 'title': 'Серія EM300', 'sub': 'Серія компактних датчиків LoRaWAN',
          'text': 'Один корпус і одна логіка налаштування — різні сенсори: клімат, протікання, двері, імпульсні лічильники, рівень і нахил.',
          'facts': [['IP67', 'корпус для вулиці й підвалу'], ['до 10 р.', 'від батареї*'], ['NFC', 'налаштування телефоном']],

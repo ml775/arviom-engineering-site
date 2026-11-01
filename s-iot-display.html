@@ -169,6 +169,35 @@ b,strong,th{font-weight:500}
 .sxs .bc{color:#6b7684}.sxs .bc a{color:#6b7684;text-decoration:none}
 @media (max-width:700px){.sxs nav{display:none}}
 
+
+/* product hero (milesight-like) */
+.ph{background:linear-gradient(180deg,#f2f5f9 0%,#fff 100%);border-bottom:1px solid var(--line)}
+.ph-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px;align-items:center;padding-block:28px 48px}
+.ph h1{font-weight:200;font-size:clamp(34px,4vw,54px);line-height:1.08;margin-top:18px;max-width:16ch}
+.ph .purpose{color:var(--muted);margin-top:14px;max-width:52ch;font-size:17px}
+.badges{display:flex;gap:12px;align-items:center;margin-top:20px}
+.mbadge{border:1.5px solid var(--ink);border-radius:5px;padding:5px 14px;font-size:18px}
+.lw{font-weight:500;letter-spacing:.06em;color:var(--accent);font-size:17px}
+.hl2{list-style:none;margin-top:22px;display:grid;gap:10px}
+.hl2 li{display:flex;gap:12px;align-items:baseline;font-size:16px}
+.hl2 li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--accent);transform:translateY(-2px)}
+.ph .ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.ph-pic{display:grid;grid-template-columns:minmax(0,1fr) 92px;gap:20px;align-items:center}
+.mainpic{height:460px;display:flex;align-items:center;justify-content:center}
+.mainpic img{max-height:88%;max-width:82%;object-fit:contain;filter:drop-shadow(0 22px 28px rgba(20,30,45,.18));transition:opacity .15s}
+.thumbs{display:flex;flex-direction:column;gap:12px}
+.thumbs .th{all:unset;cursor:pointer;width:84px;height:84px;border-radius:50%;background:#fff;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(20,30,45,.08)}
+.thumbs .th img{max-width:60%;max-height:60%;object-fit:contain}
+.thumbs .th.on{border-color:var(--accent);box-shadow:0 0 0 3px #dbe8fb}
+.ptabs{position:sticky;top:64px;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.ptabs nav{display:flex}.ptabs nav a{padding:15px 22px;color:var(--ink);text-decoration:none;border-right:1px solid var(--line);font-size:15px}
+.ptabs nav a:first-child{background:var(--accent);color:#fff}
+.vbox{border-radius:8px;overflow:hidden;background:#000;max-width:1000px}.vbox video{width:100%;display:block;aspect-ratio:16/9}
+.sibs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.sibs a{border:1px solid var(--line);border-radius:8px;padding:14px;text-align:center;text-decoration:none;color:var(--ink);background:var(--panel)}
+.sibs a:hover{border-color:var(--accent)}.sibs img{height:90px;width:auto;max-width:100%;object-fit:contain;margin:0 auto 8px}.sibs b{font-weight:500;font-size:15px}
+@media (max-width:900px){.ph-in{grid-template-columns:1fr}.ph-pic{grid-template-columns:1fr}.thumbs{flex-direction:row;justify-content:center}.thumbs .th{width:64px;height:64px}.mainpic{height:300px}}
+
 /* readability: wider layout, regular weight for body text, darker grey, larger small text */
 :root{--muted:#545e6b}
 body{font-weight:400;font-size:17px}
@@ -197,7 +226,7 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 </div></div>
 
 <script>
-const MODELS=[{"model": "DS3604", "name_uk": "E-ink дисплей LoRaWAN", "img": "img/cat/cat-lorawan-iot-e-ink-display.webp", "ext": "https://www.milesight.com/iot/product/iot-display/ds3604", "specs": true, "purpose": "Відображення тексту, зображень і QR-кодів із віддаленим керуванням, наприклад для бронювання робочих місць і офісних табличок.", "measures": [], "range_accuracy": "", "probe": "Трикольоровий (чорний/білий/червоний) електрофоретичний E-ink екран 4,2\", 400 × 300 пікселів, 119 DPI, кут огляду 180°, оновлення 16 с (10–40 °C)", "interfaces": "NFC, кнопка скидання (внутрішня), кнопка екрана, зумер", "network": "LoRaWAN, OTAA/ABP, Class A/Class B (за замовчуванням OTAA Class B), внутрішня антена, Multicast", "power": "3 × літієві батареї CR2450", "battery": "3 × CR2450, 590 мАг", "battery_life": "≈5 років (Class A, 1 оновлення екрана на день); ≈1,2 року (Class B, 12 оновлень на день)", "ip": "IP30", "temp": "0…+40 °C (вологість 0–95 % без конденсату нижче 25 °C)", "dimensions": "99 × 87 × 10,5 мм", "weight": "95,2 г (з батареями)", "mounting": "На стіну: скотч 3M або шурупи", "range_lora": "", "config": "NFC через мобільний застосунок або Downlink; Multicast для групових налаштувань; API; шаблони відображення; Milesight IoT Cloud", "storage": "", "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4", "highlights": ["До 5 років роботи від батарей при наднизькому споживанні", "Віддалена зміна вмісту (текст, зображення, QR-код), до 150 мов, масове керування через Multicast", "Сумісність зі стандартними LoRaWAN шлюзами та мережевими серверами, зручне налаштування через NFC"]}];
+const MODELS=[{"model": "DS3604", "name_uk": "E-ink дисплей LoRaWAN", "img": "img/hd/ds3604.webp", "ext": "https://www.milesight.com/iot/product/iot-display/ds3604", "specs": true, "purpose": "Відображення тексту, зображень і QR-кодів із віддаленим керуванням, наприклад для бронювання робочих місць і офісних табличок.", "measures": [], "range_accuracy": "", "probe": "Трикольоровий (чорний/білий/червоний) електрофоретичний E-ink екран 4,2\", 400 × 300 пікселів, 119 DPI, кут огляду 180°, оновлення 16 с (10–40 °C)", "interfaces": "NFC, кнопка скидання (внутрішня), кнопка екрана, зумер", "network": "LoRaWAN, OTAA/ABP, Class A/Class B (за замовчуванням OTAA Class B), внутрішня антена, Multicast", "power": "3 × літієві батареї CR2450", "battery": "3 × CR2450, 590 мАг", "battery_life": "≈5 років (Class A, 1 оновлення екрана на день); ≈1,2 року (Class B, 12 оновлень на день)", "ip": "IP30", "temp": "0…+40 °C (вологість 0–95 % без конденсату нижче 25 °C)", "dimensions": "99 × 87 × 10,5 мм", "weight": "95,2 г (з батареями)", "mounting": "На стіну: скотч 3M або шурупи", "range_lora": "", "config": "NFC через мобільний застосунок або Downlink; Multicast для групових налаштувань; API; шаблони відображення; Milesight IoT Cloud", "storage": "", "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4", "highlights": ["До 5 років роботи від батарей при наднизькому споживанні", "Віддалена зміна вмісту (текст, зображення, QR-код), до 150 мов, масове керування через Multicast", "Сумісність зі стандартними LoRaWAN шлюзами та мережевими серверами, зручне налаштування через NFC"]}];
 const CASES=[];
 const S={"code": "DS", "title": "IoT-дисплей", "sub": "E-ink дисплей LoRaWAN", "text": "Табло для переговорних, складів і цехів, що працює від батареї.", "card": [["measures", "Вимірює"], ["battery_life", "Батарея"], ["ip", "Захист"]]};
 const GROUPS=S.groups||[];
@@ -267,14 +296,26 @@ function product(id){
   document.getElementById("crumb-last").textContent=m.model;
   document.getElementById("tray").classList.remove("on");
   const showCases=(S.cases_for||[]).includes(m.model)&&CASES.length;
-  app.innerHTML=`<div class="wrap view"><a class="back" href="#">← ${esc(S.title)}</a>
-  <div class="pv"><div class="stage"><img src="${m.img}" alt="${esc(m.model)}"><span class="bigcode">MILESIGHT · ${esc(S.title.toUpperCase())}</span></div>
-   <div><h1>${esc(m.model)}</h1><div class="lead">${esc(m.name_uk)}</div><p class="purpose">${esc(m.purpose)}</p>
-   <ol class="hl">${(m.highlights||[]).map((h,i)=>`<li><b>0${i+1}</b><span>${esc(h)}</span></li>`).join("")}</ol>
-   <div class="ctas"><a class="btn" href="https://arviom.com" target="_blank" rel="noopener">Ціна на arviom.com</a><a class="btn ghost" href="#compare" onclick="picked.add('${m.model}')">Порівняти з іншими</a></div></div></div>
-  <section class="sec"><h2>Характеристики</h2><table class="stable"><tbody>${ROWS.filter(([k])=>!empty(m[k])).map(([k,t])=>`<tr><th scope="row">${t}</th><td>${val(m[k])}</td></tr>`).join("")}</tbody></table></section>
+  const gal=(m.gallery&&m.gallery.length?m.gallery:[m.img]);
+  const hl=(m.highlights||[]);
+  const v=m.video;
+  app.innerHTML=`<section class="ph"><div class="wrap ph-in">
+   <div class="ph-tx"><a class="back" href="#">← ${esc(S.title)}</a>
+    <h1>${esc(m.name_uk)}</h1><p class="purpose">${esc(m.purpose)}</p>
+    <div class="badges"><span class="mbadge">${esc(m.model)}</span><span class="lw">LoRaWAN®</span></div>
+    <ul class="hl2">${hl.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
+    <div class="ctas"><a class="btn" href="./#contact">Запит ціни й наявності</a><a class="btn ghost" href="#compare" onclick="picked.add('${m.model}')">Порівняти</a></div></div>
+   <div class="ph-pic"><div class="mainpic"><img id="mainimg" src="${gal[0]}" alt="${esc(m.model)}"></div>
+    ${gal.length>1?`<div class="thumbs" role="tablist" aria-label="Ракурси">${gal.map((g,i)=>`<button type="button" class="th${i?"":" on"}" data-src="${g}" aria-label="Ракурс ${i+1}"><img src="${g}" alt="" loading="lazy"></button>`).join("")}</div>`:""}</div>
+  </div></section>
+  <div class="ptabs"><div class="wrap"><nav><a href="javascript:void(0)" data-t="specs" class="on">Характеристики</a>${v?'<a href="javascript:void(0)" data-t="video">Відео</a>':''}<a href="javascript:void(0)" data-t="more">Інші моделі</a></nav></div></div>
+  <div class="wrap view">
+  ${v?`<section class="sec" id="p-video"><h2>Відео <small>Milesight · англійською</small></h2><div class="vbox"><video controls preload="none" playsinline poster="${v.poster}"><source src="${v.src}" type="video/mp4"></video></div></section>`:""}
+  <section class="sec" id="p-specs"><h2>Характеристики</h2><table class="stable"><tbody>${ROWS.filter(([k])=>!empty(m[k])).map(([k,t])=>`<tr><th scope="row">${t}</th><td>${val(m[k])}</td></tr>`).join("")}</tbody></table></section>
   ${showCases?`<section class="sec"><h2>Кейси з цим датчиком <small>джерело: Milesight</small></h2><div class="cases">${CASES.map(c=>`<a class="case" href="${c.u}" target="_blank" rel="noopener"><span class="m">${esc(c.c)} · ${esc(c.i)}</span><strong>${esc(c.t)}</strong><span class="src">milesight.com</span></a>`).join("")}</div></section>`:""}
-  <section class="sec"><h2>Інші моделі серії</h2><div class="siblings">${MODELS.filter(x=>x!==m&&x.specs).map(x=>`<a href="#m-${slug(x.model)}">${esc(x.model)}</a>`).join("")}</div></section></div>`;
+  <section class="sec" id="p-more"><h2>Інші моделі серії</h2><div class="sibs">${MODELS.filter(x=>x!==m&&x.specs).map(x=>`<a href="#m-${slug(x.model)}"><img src="${x.img}" alt="" loading="lazy"><b>${esc(x.model)}</b></a>`).join("")}</div></section></div>`;
+  app.querySelectorAll(".thumbs .th").forEach(b=>b.onclick=()=>{const mi=document.getElementById("mainimg");mi.style.opacity=0;setTimeout(()=>{mi.src=b.dataset.src;mi.style.opacity=1},150);app.querySelectorAll(".thumbs .th").forEach(x=>x.classList.toggle("on",x===b))});
+  app.querySelectorAll(".ptabs a").forEach(a=>a.onclick=()=>{const s=document.getElementById("p-"+a.dataset.t);if(s)window.scrollTo({top:s.getBoundingClientRect().top+scrollY-130,behavior:"smooth"})});
   window.scrollTo(0,0);
 }
 function route(){const h=location.hash.slice(1); if(h==="compare")compare(); else if(h.startsWith("m-"))product(h.slice(2)); else series()}

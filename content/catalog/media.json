@@ -1,0 +1,771 @@
+{
+ "CT10x": {
+  "gallery": [
+   "img/hd/ct10x-g1.webp",
+   "img/hd/ct10x-g2.webp",
+   "img/hd/ct10x-g3.webp",
+   "img/hd/ct10x-g4.webp"
+  ],
+  "video": {
+   "src": "video/milesight-ct-series-smart-current-transformer-introduction-2.mp4",
+   "poster": "video/milesight-ct-series-smart-current-transformer-introduction-2.jpg",
+   "title": "Milesight CT Series Smart Current Transformer Introduction 202411",
+   "dur": 89
+  }
+ },
+ "CT3xx": {
+  "gallery": [
+   "img/hd/ct3xx-g1.webp",
+   "img/hd/ct3xx-g2.webp",
+   "img/hd/ct3xx-g3.webp"
+  ],
+  "video": {
+   "src": "video/milesight-ct-series-smart-current-transformer-introduction-2.mp4",
+   "poster": "video/milesight-ct-series-smart-current-transformer-introduction-2.jpg",
+   "title": "Milesight CT Series Smart Current Transformer Introduction 202411",
+   "dur": 89
+  }
+ },
+ "CTH01": {
+  "gallery": [
+   "img/hd/cth01-g1.webp",
+   "img/hd/cth01-g2.webp",
+   "img/hd/cth01-g3.webp",
+   "img/hd/cth01-g4.webp",
+   "img/hd/cth01-g5.webp"
+  ],
+  "video": {
+   "src": "video/introducing-cth01-smart-power-monitor-hub-subtitles-202603.mp4",
+   "poster": "video/introducing-cth01-smart-power-monitor-hub-subtitles-202603.jpg",
+   "title": "Introducing CTH01 Smart Power Monitor Hub Subtitles 202603",
+   "dur": 157
+  }
+ },
+ "AM102/AM102L": {
+  "gallery": [
+   "img/hd/am102-am102l-g1.webp",
+   "img/hd/am102-am102l-g2.webp",
+   "img/hd/am102-am102l-g3.webp",
+   "img/hd/am102-am102l-g4.webp"
+  ],
+  "video": {
+   "src": "video/am-series-iaq-sensor-202602.mp4",
+   "poster": "video/am-series-iaq-sensor-202602.jpg",
+   "title": "AM Series IAQ Sensor 202602",
+   "dur": 101
+  }
+ },
+ "AM103/AM103L": {
+  "gallery": [
+   "img/hd/am103-am103l-g1.webp",
+   "img/hd/am103-am103l-g2.webp",
+   "img/hd/am103-am103l-g3.webp",
+   "img/hd/am103-am103l-g4.webp",
+   "img/hd/am103-am103l-g5.webp"
+  ],
+  "video": {
+   "src": "video/am03-am03l-iaq-sensor-introduction-202211.mp4",
+   "poster": "video/am03-am03l-iaq-sensor-introduction-202211.jpg",
+   "title": "AM03 AM03L IAQ Sensor Introduction 202211",
+   "dur": 84
+  }
+ },
+ "AM300 Series": {
+  "gallery": [
+   "img/hd/am300-series-g1.webp",
+   "img/hd/am300-series-g2.webp",
+   "img/hd/am300-series-g3.webp"
+  ],
+  "video": {
+   "src": "video/am307-am319-iaq-sensor-introduction-202209.mp4",
+   "poster": "video/am307-am319-iaq-sensor-introduction-202209.jpg",
+   "title": "AM307 AM319 IAQ Sensor Introduction 202209",
+   "dur": 107
+  }
+ },
+ "VS121": {
+  "gallery": [
+   "img/hd/vs121-g1.webp",
+   "img/hd/vs121-g2.webp",
+   "img/hd/vs121-g3.webp",
+   "img/hd/vs121-g4.webp",
+   "img/hd/vs121-g5.webp"
+  ],
+  "video": {
+   "src": "video/milesight-vs121-ai-workplace-occupancy-sensor-202603.mp4",
+   "poster": "video/milesight-vs121-ai-workplace-occupancy-sensor-202603.jpg",
+   "title": "Milesight VS121 AI Workplace Occupancy Sensor 202603",
+   "dur": 85
+  }
+ },
+ "VS125 Series": {
+  "gallery": [
+   "img/hd/vs125-series-g1.webp",
+   "img/hd/vs125-series-g2.webp",
+   "img/hd/vs125-series-g3.webp",
+   "img/hd/vs125-series-g4.webp",
+   "img/hd/vs125-series-g5.webp"
+  ],
+  "video": {
+   "src": "video/vs125-202505.mp4",
+   "poster": "video/vs125-202505.jpg",
+   "title": "VS125 202505",
+   "dur": 245
+  }
+ },
+ "VS126": {
+  "gallery": [
+   "img/hd/vs126-g1.webp",
+   "img/hd/vs126-g2.webp",
+   "img/hd/vs126-g3.webp",
+   "img/hd/vs126-g4.webp"
+  ],
+  "video": {
+   "src": "video/milesight-stereo-vision-people-counting-series-retail-intell.mp4",
+   "poster": "video/milesight-stereo-vision-people-counting-series-retail-intell.jpg",
+   "title": "Milesight Stereo Vision People Counting Series – Retail Intelligence 202512",
+   "dur": 167
+  }
+ },
+ "VS133": {
+  "gallery": [
+   "img/hd/vs133-g1.webp",
+   "img/hd/vs133-g2.webp",
+   "img/hd/vs133-g3.webp",
+   "img/hd/vs133-g4.webp"
+  ],
+  "video": {
+   "src": "video/vs133-ai-tof-people-counting-sensor-202305.mp4",
+   "poster": "video/vs133-ai-tof-people-counting-sensor-202305.jpg",
+   "title": "VS133 AI ToF People Counting Sensor 202305",
+   "dur": 266
+  }
+ },
+ "VS135": {
+  "gallery": [
+   "img/hd/vs135-g1.webp",
+   "img/hd/vs135-g2.webp",
+   "img/hd/vs135-g3.webp",
+   "img/hd/vs135-g4.webp"
+  ],
+  "video": {
+   "src": "video/vs135-ultra-tof-people-counter-202402.mp4",
+   "poster": "video/vs135-ultra-tof-people-counter-202402.jpg",
+   "title": "VS135 Ultra ToF People Counter 202402",
+   "dur": 396
+  }
+ },
+ "VS330": {
+  "gallery": [
+   "img/hd/vs330-g1.webp",
+   "img/hd/vs330-g2.webp",
+   "img/hd/vs330-g3.webp",
+   "img/hd/vs330-g4.webp"
+  ],
+  "video": {
+   "src": "video/vs330-bathroom-occupancy-sensor-202303.mp4",
+   "poster": "video/vs330-bathroom-occupancy-sensor-202303.jpg",
+   "title": "VS330 Bathroom Occupancy Sensor 202303",
+   "dur": 47
+  }
+ },
+ "VS340/VS341": {
+  "gallery": [
+   "img/hd/vs340-vs341-g1.webp",
+   "img/hd/vs340-vs341-g2.webp",
+   "img/hd/vs340-vs341-g3.webp",
+   "img/hd/vs340-vs341-g4.webp"
+  ],
+  "video": {
+   "src": "video/milesight-vs34x-lorawan-desk-seat-occupancy-sensor-202308.mp4",
+   "poster": "video/milesight-vs34x-lorawan-desk-seat-occupancy-sensor-202308.jpg",
+   "title": "Milesight VS34x LoRaWAN Desk Seat Occupancy Sensor 202308",
+   "dur": 93
+  }
+ },
+ "VS350": {
+  "gallery": [
+   "img/hd/vs350-g1.webp",
+   "img/hd/vs350-g2.webp",
+   "img/hd/vs350-g3.webp",
+   "img/hd/vs350-g4.webp"
+  ],
+  "video": {
+   "src": "video/lorawan-passage-people-counter-202311.mp4",
+   "poster": "video/lorawan-passage-people-counter-202311.jpg",
+   "title": "LoRaWAN Passage People Counter 202311",
+   "dur": 63
+  }
+ },
+ "VS351": {
+  "gallery": [
+   "img/hd/vs351-g1.webp",
+   "img/hd/vs351-g2.webp",
+   "img/hd/vs351-g3.webp",
+   "img/hd/vs351-g4.webp"
+  ],
+  "video": {
+   "src": "video/vs351-product-introduction-202408.mp4",
+   "poster": "video/vs351-product-introduction-202408.jpg",
+   "title": "VS351 product introduction 202408",
+   "dur": 68
+  }
+ },
+ "VS360": {
+  "gallery": [],
+  "video": {
+   "src": "video/vs360-product-introduction-video-202409.mp4",
+   "poster": "video/vs360-product-introduction-video-202409.jpg",
+   "title": "VS360 Product Introduction Video 202409",
+   "dur": 66
+  }
+ },
+ "VS373": {
+  "gallery": [
+   "img/hd/vs373-g1.webp",
+   "img/hd/vs373-g2.webp",
+   "img/hd/vs373-g3.webp",
+   "img/hd/vs373-g4.webp",
+   "img/hd/vs373-g5.webp"
+  ],
+  "video": {
+   "src": "video/vs373-radar-fall-detector-solution-202501.mp4",
+   "poster": "video/vs373-radar-fall-detector-solution-202501.jpg",
+   "title": "VS373 Radar Fall Detector Solution 202501",
+   "dur": 90
+  }
+ },
+ "VS370": {
+  "gallery": [
+   "img/hd/vs370-g1.webp",
+   "img/hd/vs370-g2.webp",
+   "img/hd/vs370-g3.webp",
+   "img/hd/vs370-g4.webp"
+  ],
+  "video": {
+   "src": "video/radar-human-presence-sensor-for-meeting-room-202504.mp4",
+   "poster": "video/radar-human-presence-sensor-for-meeting-room-202504.jpg",
+   "title": "Radar Human Presence Sensor for Meeting Room 202504",
+   "dur": 108
+  }
+ },
+ "WT10x": {
+  "gallery": [
+   "img/hd/wt10x-g1.webp",
+   "img/hd/wt10x-g2.webp",
+   "img/hd/wt10x-g3.webp",
+   "img/hd/wt10x-g4.webp",
+   "img/hd/wt10x-g5.webp"
+  ],
+  "video": {
+   "src": "video/wt101-lorawan-smart-radiator-thermostat-202309.mp4",
+   "poster": "video/wt101-lorawan-smart-radiator-thermostat-202309.jpg",
+   "title": "WT101 LoRaWAN Smart Radiator Thermostat 202309",
+   "dur": 158
+  }
+ },
+ "WT2x1": {
+  "gallery": [
+   "img/hd/wt2x1-g1.webp",
+   "img/hd/wt2x1-g2.webp",
+   "img/hd/wt2x1-g3.webp",
+   "img/hd/wt2x1-g4.webp"
+  ],
+  "video": {
+   "src": "video/wt201-lorawan-smart-thermostat-202312.mp4",
+   "poster": "video/wt201-lorawan-smart-thermostat-202312.jpg",
+   "title": "WT201 LoRaWAN Smart Thermostat 202312",
+   "dur": 93
+  }
+ },
+ "WT30x": {
+  "gallery": [
+   "img/hd/wt30x-g1.webp",
+   "img/hd/wt30x-g2.webp",
+   "img/hd/wt30x-g3.webp",
+   "img/hd/wt30x-g4.webp",
+   "img/hd/wt30x-g5.webp"
+  ],
+  "video": {
+   "src": "video/introducing-smart-fan-coil-thermostat-202506.mp4",
+   "poster": "video/introducing-smart-fan-coil-thermostat-202506.jpg",
+   "title": "Introducing Smart Fan Coil Thermostat 202506",
+   "dur": 112
+  }
+ },
+ "WT401": {
+  "gallery": [
+   "img/hd/wt401-g1.webp",
+   "img/hd/wt401-g2.webp",
+   "img/hd/wt401-g3.webp",
+   "img/hd/wt401-g4.webp"
+  ]
+ },
+ "UC711 + WT401": {
+  "gallery": [
+   "img/hd/uc711-wt401-g1.webp",
+   "img/hd/uc711-wt401-g2.webp",
+   "img/hd/uc711-wt401-g3.webp",
+   "img/hd/uc711-wt401-g4.webp"
+  ]
+ },
+ "GS301": {
+  "gallery": [
+   "img/hd/gs301-g1.webp",
+   "img/hd/gs301-g2.webp",
+   "img/hd/gs301-g3.webp",
+   "img/hd/gs301-g4.webp",
+   "img/hd/gs301-g5.webp"
+  ],
+  "video": {
+   "src": "video/gs301-lorawan-bathroom-odor-detector-202303.mp4",
+   "poster": "video/gs301-lorawan-bathroom-odor-detector-202303.jpg",
+   "title": "GS301 LoRaWAN® Bathroom Odor Detector 202303",
+   "dur": 33
+  }
+ },
+ "GS601": {
+  "gallery": [
+   "img/hd/gs601-g1.webp",
+   "img/hd/gs601-g2.webp",
+   "img/hd/gs601-g3.webp",
+   "img/hd/gs601-g4.webp"
+  ],
+  "video": {
+   "src": "video/gs601-product-intro-202410.mp4",
+   "poster": "video/gs601-product-intro-202410.jpg",
+   "title": "GS601 Product Intro 202410",
+   "dur": 68
+  }
+ },
+ "WS101": {
+  "gallery": [
+   "img/hd/ws101-g1.webp",
+   "img/hd/ws101-g2.webp",
+   "img/hd/ws101-g3.webp",
+   "img/hd/ws101-g4.webp"
+  ]
+ },
+ "WS156": {
+  "gallery": [
+   "img/hd/ws156-g1.webp",
+   "img/hd/ws156-g2.webp",
+   "img/hd/ws156-g3.webp",
+   "img/hd/ws156-g4.webp"
+  ]
+ },
+ "WS201": {
+  "gallery": [
+   "img/hd/ws201-g1.webp",
+   "img/hd/ws201-g2.webp",
+   "img/hd/ws201-g3.webp",
+   "img/hd/ws201-g4.webp",
+   "img/hd/ws201-g5.webp"
+  ]
+ },
+ "WS202": {
+  "gallery": [
+   "img/hd/ws202-g1.webp",
+   "img/hd/ws202-g2.webp",
+   "img/hd/ws202-g3.webp",
+   "img/hd/ws202-g4.webp",
+   "img/hd/ws202-g5.webp"
+  ]
+ },
+ "WS203": {
+  "gallery": [
+   "img/hd/ws203-g1.webp",
+   "img/hd/ws203-g2.webp",
+   "img/hd/ws203-g3.webp",
+   "img/hd/ws203-g4.webp"
+  ]
+ },
+ "WS301": {
+  "gallery": [
+   "img/hd/ws301-g1.webp",
+   "img/hd/ws301-g2.webp",
+   "img/hd/ws301-g3.webp",
+   "img/hd/ws301-g4.webp"
+  ]
+ },
+ "WS302": {
+  "gallery": [
+   "img/hd/ws302-g1.webp",
+   "img/hd/ws302-g2.webp",
+   "img/hd/ws302-g3.webp",
+   "img/hd/ws302-g4.webp",
+   "img/hd/ws302-g5.webp"
+  ]
+ },
+ "WS303": {
+  "gallery": [
+   "img/hd/ws303-g1.webp",
+   "img/hd/ws303-g2.webp",
+   "img/hd/ws303-g3.webp",
+   "img/hd/ws303-g4.webp"
+  ]
+ },
+ "WS50x": {
+  "gallery": [
+   "img/hd/ws50x-g1.webp",
+   "img/hd/ws50x-g2.webp",
+   "img/hd/ws50x-g3.webp",
+   "img/hd/ws50x-g4.webp",
+   "img/hd/ws50x-g5.webp"
+  ]
+ },
+ "WS51x": {
+  "gallery": [
+   "img/hd/ws51x-g1.webp",
+   "img/hd/ws51x-g2.webp",
+   "img/hd/ws51x-g3.webp",
+   "img/hd/ws51x-g4.webp",
+   "img/hd/ws51x-g5.webp"
+  ]
+ },
+ "WS523": {
+  "gallery": [
+   "img/hd/ws523-g1.webp",
+   "img/hd/ws523-g2.webp",
+   "img/hd/ws523-g3.webp",
+   "img/hd/ws523-g4.webp",
+   "img/hd/ws523-g5.webp"
+  ]
+ },
+ "WS558": {
+  "gallery": [
+   "img/hd/ws558-g1.webp",
+   "img/hd/ws558-g2.webp",
+   "img/hd/ws558-g3.webp",
+   "img/hd/ws558-g4.webp",
+   "img/hd/ws558-g5.webp"
+  ]
+ },
+ "WTS506": {
+  "gallery": [
+   "img/hd/wts506-g1.webp",
+   "img/hd/wts506-g2.webp",
+   "img/hd/wts506-g3.webp",
+   "img/hd/wts506-g4.webp"
+  ]
+ },
+ "TS60x": {
+  "gallery": [
+   "img/hd/ts60x-g1.webp",
+   "img/hd/ts60x-g2.webp",
+   "img/hd/ts60x-g3.webp",
+   "img/hd/ts60x-g4.webp",
+   "img/hd/ts60x-g5.webp"
+  ]
+ },
+ "TS101": {
+  "gallery": [
+   "img/hd/ts101-g1.webp",
+   "img/hd/ts101-g2.webp",
+   "img/hd/ts101-g3.webp",
+   "img/hd/ts101-g4.webp"
+  ]
+ },
+ "TS201": {
+  "gallery": [
+   "img/hd/ts201-g1.webp"
+  ]
+ },
+ "TS301/TS302": {
+  "gallery": [
+   "img/hd/ts301-ts302-g1.webp",
+   "img/hd/ts301-ts302-g2.webp",
+   "img/hd/ts301-ts302-g3.webp",
+   "img/hd/ts301-ts302-g4.webp"
+  ]
+ },
+ "EM300-CL": {
+  "gallery": [
+   "img/hd/em300-cl-g1.webp",
+   "img/hd/em300-cl-g2.webp",
+   "img/hd/em300-cl-g3.webp",
+   "img/hd/em300-cl-g4.webp",
+   "img/hd/em300-cl-g5.webp"
+  ]
+ },
+ "EM300-DI": {
+  "gallery": [
+   "img/hd/em300-di-g1.webp",
+   "img/hd/em300-di-g2.webp",
+   "img/hd/em300-di-g3.webp",
+   "img/hd/em300-di-g4.webp"
+  ]
+ },
+ "EM300-MCS": {
+  "gallery": [
+   "img/hd/em300-mcs-g1.webp",
+   "img/hd/em300-mcs-g2.webp",
+   "img/hd/em300-mcs-g3.webp",
+   "img/hd/em300-mcs-g4.webp",
+   "img/hd/em300-mcs-g5.webp"
+  ]
+ },
+ "EM300-MLD": {
+  "gallery": [
+   "img/hd/em300-mld-g1.webp",
+   "img/hd/em300-mld-g2.webp",
+   "img/hd/em300-mld-g3.webp",
+   "img/hd/em300-mld-g4.webp"
+  ]
+ },
+ "EM300-SLD/ZLD": {
+  "gallery": [
+   "img/hd/em300-sld-zld-g1.webp",
+   "img/hd/em300-sld-zld-g2.webp",
+   "img/hd/em300-sld-zld-g3.webp",
+   "img/hd/em300-sld-zld-g4.webp"
+  ]
+ },
+ "EM300-TH": {
+  "gallery": [
+   "img/hd/em300-th-g1.webp",
+   "img/hd/em300-th-g2.webp",
+   "img/hd/em300-th-g3.webp",
+   "img/hd/em300-th-g4.webp",
+   "img/hd/em300-th-g5.webp"
+  ]
+ },
+ "EM320-TH": {
+  "gallery": [
+   "img/hd/em320-th-g1.webp",
+   "img/hd/em320-th-g2.webp",
+   "img/hd/em320-th-g3.webp",
+   "img/hd/em320-th-g4.webp"
+  ]
+ },
+ "EM320-TILT": {
+  "gallery": [
+   "img/hd/em320-tilt-g1.webp",
+   "img/hd/em320-tilt-g2.webp",
+   "img/hd/em320-tilt-g3.webp",
+   "img/hd/em320-tilt-g4.webp"
+  ]
+ },
+ "EM400-TLD": {
+  "gallery": [
+   "img/hd/em400-tld-g1.webp",
+   "img/hd/em400-tld-g2.webp",
+   "img/hd/em400-tld-g3.webp",
+   "img/hd/em400-tld-g4.webp"
+  ]
+ },
+ "EM400-MUD": {
+  "gallery": [
+   "img/hd/em400-mud-g1.webp",
+   "img/hd/em400-mud-g2.webp",
+   "img/hd/em400-mud-g3.webp",
+   "img/hd/em400-mud-g4.webp"
+  ]
+ },
+ "EM400-UDL": {
+  "gallery": [
+   "img/hd/em400-udl-g1.webp",
+   "img/hd/em400-udl-g2.webp",
+   "img/hd/em400-udl-g3.webp",
+   "img/hd/em400-udl-g4.webp"
+  ]
+ },
+ "EM410-RDL": {
+  "gallery": [
+   "img/hd/em410-rdl-g1.webp",
+   "img/hd/em410-rdl-g2.webp",
+   "img/hd/em410-rdl-g3.webp",
+   "img/hd/em410-rdl-g4.webp"
+  ]
+ },
+ "EM500-CO2": {
+  "gallery": [
+   "img/hd/em500-co2-g1.webp",
+   "img/hd/em500-co2-g2.webp",
+   "img/hd/em500-co2-g3.webp",
+   "img/hd/em500-co2-g4.webp"
+  ]
+ },
+ "EM500-LGT": {
+  "gallery": []
+ },
+ "EM500-PP": {
+  "gallery": [
+   "img/hd/em500-pp-g1.webp"
+  ]
+ },
+ "EM500-PT100": {
+  "gallery": []
+ },
+ "EM500-SMTC": {
+  "gallery": []
+ },
+ "EM500-SWL": {
+  "gallery": [
+   "img/hd/em500-swl-g1.webp",
+   "img/hd/em500-swl-g2.webp",
+   "img/hd/em500-swl-g3.webp",
+   "img/hd/em500-swl-g4.webp"
+  ]
+ },
+ "EM500-UDL": {
+  "gallery": [
+   "img/hd/em500-udl-g1.webp",
+   "img/hd/em500-udl-g2.webp",
+   "img/hd/em500-udl-g3.webp",
+   "img/hd/em500-udl-g4.webp",
+   "img/hd/em500-udl-g5.webp"
+  ]
+ },
+ "AT101": {
+  "gallery": [
+   "img/hd/at101-g1.webp",
+   "img/hd/at101-g2.webp",
+   "img/hd/at101-g3.webp",
+   "img/hd/at101-g4.webp"
+  ]
+ },
+ "DS3604": {
+  "gallery": [
+   "img/hd/ds3604-g1.webp",
+   "img/hd/ds3604-g2.webp",
+   "img/hd/ds3604-g3.webp",
+   "img/hd/ds3604-g4.webp"
+  ]
+ },
+ "VS125": {
+  "gallery": [
+   "img/hd/vs125-g1.webp",
+   "img/hd/vs125-g2.webp",
+   "img/hd/vs125-g3.webp",
+   "img/hd/vs125-g4.webp",
+   "img/hd/vs125-g5.webp"
+  ]
+ },
+ "WS156/136": {
+  "gallery": []
+ },
+ "PM3322-E": {
+  "gallery": [
+   "img/hd/pm3322-e-g1.webp",
+   "img/hd/pm3322-e-g2.webp",
+   "img/hd/pm3322-e-g3.webp",
+   "img/hd/pm3322-e-g4.webp"
+  ]
+ },
+ "VS13x": {
+  "gallery": []
+ },
+ "TS30x": {
+  "gallery": []
+ },
+ "WT201": {
+  "gallery": []
+ },
+ "WT303/WT304": {
+  "gallery": []
+ },
+ "SG50": {
+  "gallery": [
+   "img/hd/sg50-g1.webp",
+   "img/hd/sg50-g2.webp",
+   "img/hd/sg50-g3.webp",
+   "img/hd/sg50-g4.webp",
+   "img/hd/sg50-g5.webp"
+  ]
+ },
+ "UG63": {
+  "gallery": [
+   "img/hd/ug63-g1.webp",
+   "img/hd/ug63-g2.webp",
+   "img/hd/ug63-g3.webp",
+   "img/hd/ug63-g4.webp",
+   "img/hd/ug63-g5.webp"
+  ]
+ },
+ "UG56": {
+  "gallery": [
+   "img/hd/ug56-g1.webp",
+   "img/hd/ug56-g2.webp",
+   "img/hd/ug56-g3.webp",
+   "img/hd/ug56-g4.webp",
+   "img/hd/ug56-g5.webp"
+  ]
+ },
+ "UG65": {
+  "gallery": [
+   "img/hd/ug65-g1.webp",
+   "img/hd/ug65-g2.webp",
+   "img/hd/ug65-g3.webp",
+   "img/hd/ug65-g4.webp"
+  ]
+ },
+ "UG67": {
+  "gallery": [
+   "img/hd/ug67-g1.webp",
+   "img/hd/ug67-g2.webp",
+   "img/hd/ug67-g3.webp",
+   "img/hd/ug67-g4.webp",
+   "img/hd/ug67-g5.webp"
+  ]
+ },
+ "EG71": {
+  "gallery": [
+   "img/hd/eg71-g1.webp",
+   "img/hd/eg71-g2.webp",
+   "img/hd/eg71-g3.webp",
+   "img/hd/eg71-g4.webp"
+  ]
+ },
+ "UPS01": {
+  "gallery": [
+   "img/hd/ups01-g1.webp",
+   "img/hd/ups01-g2.webp",
+   "img/hd/ups01-g3.webp",
+   "img/hd/ups01-g4.webp"
+  ]
+ },
+ "UC100": {
+  "gallery": [
+   "img/hd/uc100-g1.webp",
+   "img/hd/uc100-g2.webp",
+   "img/hd/uc100-g3.webp",
+   "img/hd/uc100-g4.webp"
+  ]
+ },
+ "UC300": {
+  "gallery": [
+   "img/hd/uc300-g1.webp",
+   "img/hd/uc300-g2.webp",
+   "img/hd/uc300-g3.webp",
+   "img/hd/uc300-g4.webp",
+   "img/hd/uc300-g5.webp"
+  ]
+ },
+ "UC51x": {
+  "gallery": [
+   "img/hd/uc51x-g1.webp",
+   "img/hd/uc51x-g2.webp",
+   "img/hd/uc51x-g3.webp",
+   "img/hd/uc51x-g4.webp",
+   "img/hd/uc51x-g5.webp"
+  ]
+ },
+ "UC50x": {
+  "gallery": [
+   "img/hd/uc50x-g1.webp",
+   "img/hd/uc50x-g2.webp",
+   "img/hd/uc50x-g3.webp",
+   "img/hd/uc50x-g4.webp"
+  ]
+ },
+ "UC701": {
+  "gallery": [
+   "img/hd/uc701-g1.webp",
+   "img/hd/uc701-g2.webp",
+   "img/hd/uc701-g3.webp",
+   "img/hd/uc701-g4.webp",
+   "img/hd/uc701-g5.webp"
+  ]
+ }
+}

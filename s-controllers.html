@@ -208,6 +208,7 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 .pc b,.card h3,.vid h3{font-weight:500}
 .sxh nav a,nav.main a{font-weight:400}
 </style>
+<link rel="alternate" type="text/plain" title="Для ШІ-агентів" href="llms.txt">
 </head>
 <body>
 <header class="sxh"><div class="in">
@@ -321,6 +322,7 @@ function product(id){
 function route(){const h=location.hash.slice(1); if(h==="compare")compare(); else if(h.startsWith("m-"))product(h.slice(2)); else series()}
 window.addEventListener("hashchange",route); route();
 </script>
+<nav class="agent-list" aria-label="Моделі серії (текстові версії)" style="position:absolute;left:-9999px"><a href="models/uc100.md">UC100 — Конвертер Modbus → LoRaWAN</a> <a href="models/uc300.md">UC300 — IoT-контролер LoRaWAN і 4G</a> <a href="models/uc51x.md">UC51x — Контролер електромагнітних клапанів</a> <a href="models/uc50x.md">UC50x — Багатоінтерфейсний контролер</a> <a href="models/uc701.md">UC701 — Контролер кондиціонера</a> </nav>
 <footer class="sxf"><div class="in">
   <div class="g">
     <div><div class="tg"><b style="font-weight:500;letter-spacing:.06em">ARVIOM</b><i></i>Engineering</div><p style="margin-top:14px;max-width:30ch">Бездротова автоматизація об'єктів. Напрям IoT компанії ARVIOM.</p></div>
@@ -329,7 +331,7 @@ window.addEventListener("hashchange",route); route();
     <div><h4>Ресурси</h4><ul><li><a href="./#dev">Розробки</a></li><li><a href="./#video">Відео</a></li><li><a href="learn.html">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
     <div><h4>Компанія</h4><ul><li><a href="./#learn">Команда</a></li><li><a href="./#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
   </div>
-  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span></div>
+  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні · <a href="llms.txt">Для ШІ-агентів</a></span></div>
 </div></footer>
 </body>
 </html>

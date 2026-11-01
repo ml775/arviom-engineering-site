@@ -1,0 +1,35 @@
+{
+ "model": "UG56",
+ "name": "Промисловий LoRaWAN-шлюз",
+ "series": "LoRaWAN-шлюзи",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gateways.html#m-ug56",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ug56.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ug56.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ug56.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-gateway/ug56",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/unboxing-ug56-lorawan-gateway-202301.mp4",
+ "specs": {
+  "purpose": "Шлюз для підключення понад 2000 LoRaWAN-вузлів у закритих приміщеннях (розумні будівлі, промисловість) зі зв'язком із мережевими серверами та резервними каналами backhaul.",
+  "range_accuracy": "Чутливість -140 дБм @292 біт/с; Tx до 27 дБм; зона прямої видимості до 15 км, у міській забудові ~2 км",
+  "probe": "Чип LoRa SX1302, 4-ядерний процесор 1,3 ГГц ARM Cortex-A35",
+  "interfaces": "1 × RJ45 WAN 10/100 Мбіт/с (PoE PD), 1 × USB Type-C (живлення та консоль), 1 × SMA (LoRa), 1 × SMA (4G), 1 × Micro SD (внутрішній), 1 × Mini SIM, кнопка RST, LED SYSTEM і LoRa",
+  "network": "LoRaWAN V1.0/V1.0.2 Class A/B/C, 8 півдуплексних каналів; Ethernet; Wi-Fi 2,4 ГГц 802.11 b/g/n (AP/клієнт); 4G LTE (опційно); WAN Failover; VPN (IPsec, OpenVPN, L2TP, PPTP, DMVPN, WireGuard, GRE)",
+  "power": "802.3af PoE або 5 В/2 А через Type-C; споживання типово 1,8 Вт, макс. 6,9 Вт",
+  "ip": "IP30",
+  "temp": "-20…+60 °C (зберігання -40…+85 °C), вологість 0–95% без конденсації",
+  "range_lora": "До 15 км у прямій видимості, ~2 км у міській забудові",
+  "config": "Web, CLI (SSH/Telnet), SMS, SNMP, HTTP API, MQTT API, Milesight Development Platform, DeviceHub; Python SDK, Node-RED",
+  "storage": "8 ГБ eMMC, 512 МБ DDR3 RAM, слот Micro SD; повторна передача даних після відновлення мережі",
+  "mounting": "Настільний, настінний, на DIN-рейку (лише нові версії обладнання)",
+  "dimensions": "110 × 75 × 24 мм",
+  "weight": "186 г",
+  "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Понад 2000 вузлів, чип SX1302 та 4-ядерний процесор",
+   "Вбудований мережевий сервер, сумісність із The Things Stack, ChirpStack, Actility, AWS",
+   "Резервування каналу: Ethernet, Wi-Fi, 4G; інтеграція через MQTT, HTTP, BACnet, Modbus"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "UC100",
+ "name": "Конвертер Modbus → LoRaWAN",
+ "series": "LoRaWAN-контролери",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-controllers.html#m-uc100",
+ "markdown": "https://demo.arviom.com.ua/eng/models/uc100.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/uc100.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/uc100.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/iot-controller/uc100",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/uc100-iot-controller-202211.mp4",
+ "specs": {
+  "purpose": "Дистанційне керування та збір даних із пристроїв Modbus RS485 через мережі LoRaWAN, а також перетворення Modbus у LoRaWAN.",
+  "measures": [
+   "Опитування до 32 пристроїв/регістрів Modbus RTU",
+   "Прозора передача Modbus між сервером і пристроями RS485",
+   "Керування за умовами IF-THEN (порогові тривоги, тривоги за зміною)"
+  ],
+  "interfaces": "1 × RS485 (клемна колодка 3.5 мм, 2 контакти, перемикач резистора 120 Ом, 1200–115200 біт/с, Modbus RTU/Passthrough); 1 × USB Type-C (живлення, налаштування, консоль); кнопка скидання; світлодіод стану; антена SMA 50 Ом (опційно)",
+  "network": "LoRaWAN® клас C (OTAA/ABP), Milesight D2D",
+  "power": "DC 5–24 В через клемну колодку (захист від перенапруги та переполюсовки) або DC 5 В/1 А через USB Type-C; споживання < 0.5 Вт",
+  "ip": "IP30",
+  "temp": "−20…+60 °C; вологість 0–95% (без конденсації)",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "USB Type-C або Downlink",
+  "storage": "До 800 записів, з можливістю запиту та повторної передачі даних",
+  "mounting": "Настільний, настінний (на гвинти)",
+  "dimensions": "70 × 45 × 13 мм (без роз'ємів)",
+  "weight": "32 г",
+  "frequencies": "CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1/2/3/4",
+  "highlights": [
+   "Опитування до 32 пристроїв Modbus RTU та конвертація Modbus у LoRaWAN",
+   "Автономна робота за умовами IF-THEN навіть без мережі, вбудований watchdog",
+   "Локальне зберігання даних, D2D без шлюзу та оновлення прошивки по повітрю (FUOTA)"
+  ]
+ }
+}

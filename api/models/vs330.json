@@ -1,0 +1,40 @@
+{
+ "model": "VS330",
+ "name": "Датчик зайнятості санвузла",
+ "series": "Присутність і підрахунок людей",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-people.html#m-vs330",
+ "markdown": "https://demo.arviom.com.ua/eng/models/vs330.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/vs330.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/vs330.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/vs330",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/vs330-bathroom-occupancy-sensor-202303.mp4",
+ "specs": {
+  "purpose": "Моніторинг зайнятості санвузлів і кабінок громадських туалетів та інших приміщень за допомогою ToF і PIR сенсорів.",
+  "measures": [
+   "Зайнятість приміщення/кабінки",
+   "Присутність людини та рух",
+   "Відстань (ToF)"
+  ],
+  "range_accuracy": "ToF: 0,04–3,5 м, ±2 см, роздільність 1 мм; PIR: до 2,5 м; точність виявлення понад 99,5%",
+  "probe": "Двосенсорна технологія: ToF (поле зору 27°) + PIR (зона виявлення 80°)",
+  "interfaces": "1 × світлодіод стану/тесту, 1 × кнопка живлення/скидання, NFC",
+  "network": "LoRaWAN®, OTAA/ABP, Class A, внутрішня антена, потужність Tx 16 дБм (868 МГц)/19 дБм (470 МГц)/22 дБм (915 МГц)",
+  "power": "Від батарей",
+  "battery": "3 × 4000 мА·год ER18505 Li-SOCl2, змінні",
+  "battery_life": "≈4,2 року (SF7, EU868 і US915); ≈3,4 року (SF10, EU868); ≈3,3 року (SF10, US915) — при 90+ користувачах протягом 7 годин поспіль на день",
+  "ip": "IP30",
+  "temp": "-20…60 °C, вологість 0–95% (без конденсації)",
+  "config": "Мобільний застосунок через NFC; увімкнення/вимкнення через застосунок NFC або кнопку",
+  "mounting": "Стельовий або настінний: гвинти або скотч 3M; регульований кут сенсора 0°/15°/30°/45°/60°/75°",
+  "dimensions": "Ф100 × 24 мм",
+  "weight": "150 г (з батареями)",
+  "frequencies": "CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Точність понад 99,5% завдяки поєднанню ToF і PIR",
+   "100% анонімність, відповідність GDPR, працює в темряві",
+   "Вологозахисне покриття, NFC-налаштування та понад 3 роки роботи від батарей"
+  ]
+ }
+}

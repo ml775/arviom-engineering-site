@@ -1,0 +1,41 @@
+{
+ "model": "VS121",
+ "name": "ШІ-датчик зайнятості робочих місць",
+ "series": "Присутність і підрахунок людей",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-people.html#m-vs121",
+ "markdown": "https://demo.arviom.com.ua/eng/models/vs121.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/vs121.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/vs121.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/vs121",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/milesight-vs121-ai-workplace-occupancy-sensor-202603.mp4",
+ "specs": {
+  "purpose": "Моніторинг заповненості та використання офісних просторів на основі ШІ-розпізнавання людей без збору зображень (відповідає GDPR).",
+  "measures": [
+   "кількість людей (регіональний підрахунок, до 16 зон)",
+   "наявність/заповненість приміщення",
+   "час перебування (dwell time)",
+   "двонаправлений підрахунок перетину лінії",
+   "аналіз потоків людей (до 4 напрямків)"
+  ],
+  "range_accuracy": "Розпізнавання до 98%; стандартна версія: висота 2,5–4 м, зона до 6,8 × 18,8 м, FoV 190° × 112°; High Ceiling: висота 5–7 м, зона до 5,5 × 14 м, FoV 129,4° × 68,4°",
+  "probe": "ШІ-алгоритм розпізнавання людей (без зображень, режим Normal/Blur, до 8 масок приватності)",
+  "interfaces": "Wi-Fi 802.11 b/g/n 2,4 ГГц (AP-режим для налаштування); Type-C (живлення); кнопки Reset і Wi-Fi; LED Wi-Fi. У версії VS121-P: RJ45 10/100 Мбіт/с (PoE), DI/DO 1/1, RS485 (у розробці)",
+  "network": "LoRaWAN, Клас C, OTAA/ABP, Milesight D2D; (VS121-P: Ethernet — HTTP(S), MQTT(S), BACnet/IP)",
+  "power": "DC 5 В/2 А через Type-C (VS121-P: DC 5 В/2 А клемна колодка або PoE 802.3af)",
+  "ip": "IP30",
+  "temp": "-5…+55 °C",
+  "config": "Веб-інтерфейс через Wi-Fi (AP-режим), Milesight IoT Cloud",
+  "storage": "Локальне зберігання даних і повторна передача до 1000 пакетів",
+  "mounting": "Стельовий",
+  "dimensions": "85 × 85 × 20 мм",
+  "weight": "126,9 г",
+  "frequencies": "CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1/2/3/4",
+  "highlights": [
+   "Точність розпізнавання до 98% на основі ШІ",
+   "Відповідність GDPR — без збору зображень",
+   "Д2D-керування без шлюзу та Wi-Fi для налаштування без додаткових інструментів"
+  ]
+ }
+}

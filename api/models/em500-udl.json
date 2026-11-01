@@ -1,0 +1,41 @@
+{
+ "model": "EM500-UDL",
+ "name": "Ультразвуковий датчик відстані й рівня",
+ "series": "Серія EM500 · промислові",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-em500.html#m-em500-udl",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em500-udl.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em500-udl.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em500-udl.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em500-udl",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/milesight-em500-udl-lorawan-ultrasonic-distance-level-sensor.mp4",
+ "specs": {
+  "purpose": "Безконтактне вимірювання відстані до об'єкта або рівня (наприклад, рідини в резервуарі) у складних умовах із передачею даних через LoRaWAN.",
+  "measures": [
+   "Відстань до об'єкта",
+   "Рівень (рідини, води в баку)"
+  ],
+  "range_accuracy": "W050: 0,3–5 м, ±1% FS; W100: 0,5–10 м, ±1% FS; C050: 0,25–5 м, ±(1+0,3%·S) см; C100: 0,25–10 м, ±(1+0,3%·S) см; роздільна здатність 1 мм",
+  "probe": "Ультразуковий сенсор відстані (моделі W050/W100/C050/C100)",
+  "interfaces": "1 × світлодіод (внутрішній), 1 × кнопка живлення/скидання (внутрішня), 1 × USB Type-C (внутрішній) для налаштування та консолі, NFC",
+  "network": "LoRaWAN® Class A (OTAA/ABP), Milesight D2D, внутрішня антена",
+  "power": "1 × батарея ER34615 Li-SOCL2",
+  "battery": "19000 мА·год, змінна",
+  "battery_life": "до 10 років (інтервал 10 хв, 25°C)",
+  "ip": "IP67",
+  "temp": "W050/W100: від -30°C до +65°C; C050/C100: від -15°C до +60°C; вологість 0–80% (без конденсату)",
+  "range_lora": "До 10 км у прямій видимості",
+  "config": "Мобільний додаток (NFC), ПЗ для ПК (USB Type-C), даунлінк",
+  "storage": "1000 записів локально, повторна передача та вибірка даних",
+  "mounting": "На стовп, стіну або DIN-рейку",
+  "dimensions": "156,1 × 71 × 69,5 мм",
+  "weight": "C050/C100: 362,7 г; W050/W100: 370,4 г (з батареєю та кронштейном)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Безконтактне вимірювання відстані й рівня",
+   "Робота до 10 років від змінної батареї 19000 мА·год",
+   "Захист IP67 і зв'язок LoRaWAN до 10 км з налаштуванням через NFC"
+  ]
+ }
+}

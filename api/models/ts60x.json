@@ -1,0 +1,43 @@
+{
+ "model": "TS60x",
+ "name": "Датчик температури й вологості",
+ "series": "Серія TS · температура",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-ts.html#m-ts60x",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ts60x.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ts60x.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ts60x.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ts60x",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/ts60x-cold-chain-temperature-monitoring-sensor-202512.mp4",
+ "specs": {
+  "purpose": "Компактний датчик для точного моніторингу температури та вологості в складних умовах, зокрема при холодовому ланцюгу доставки їжі та ліків.",
+  "measures": [
+   "Температура",
+   "Вологість",
+   "Освітленість (відкриття вантажного відсіку)",
+   "Положення пристрою (нормальне/нахил) через 3-осьовий акселерометр",
+   "Координати (позиціонування за базовими станціями)"
+  ],
+  "range_accuracy": "TS601: температура -35…+70 °C, ±0,2 °C (0…65 °C); вологість 0–100 % RH, ±2 % RH. TS602: залежить від обраного зонда (PT100, DS18B20, TH)",
+  "probe": "TS601: вбудований цифровий сенсор CMOSens® (MEMS). TS602: опційні виносні зонди PT100 (-200…+500 °C залежно від версії), DS18B20 (-40…+125 °C), TH (-40…+125 °C, 0–100 % RH); корпус із харчового матеріалу",
+  "interfaces": "TS601: кнопка скидання/живлення, світлодіод стану, внутрішній USB Type-C (живлення), слот Micro SIM. TS602: 5-контактний роз'єм M12 A-coded для зонда, OLED-дисплей 0,96\", кнопка скидання/живлення, внутрішній USB Type-C, слот Micro SIM",
+  "network": "LTE Cat.1 (4G), протоколи TCP/UDP/MQTT/AWS/Milesight Development Platform; LoRaWAN, Ethernet і Wi-Fi не підтримуються",
+  "power": "2 × батареї CR18505 Li-MnO2; USB Type-C (внутрішній)",
+  "battery": "2 × 2500 мА·год CR18505 Li-MnO2",
+  "battery_life": "TS601: до ~5,1 року (UDP), ~4,8 (MQTT/TCP), ~3,9 (AWS); TS602: до ~4,6 року (UDP), ~4,2 (MQTT/TCP), ~3,5 (AWS) (6 звітів/добу, -20 °C, без позиціонування)",
+  "ip": "IP67",
+  "temp": "-35…+70 °C; вологість 0–95 % (без конденсату)",
+  "config": "Мобільний застосунок через NFC; увімкнення/вимкнення через NFC, USB або кнопку; OTA-оновлення через Milesight Development Platform та AWS",
+  "storage": "5000 записів, із повторною передачею даних",
+  "mounting": "Стяжка, 3M-скотч, настінні шурупи, магніт (опційно)",
+  "dimensions": "112 × 72 × 29 мм",
+  "weight": "TS601: 192 г; TS602: 200 г (з батареями)",
+  "frequencies": "LTE-FDD: B1/B3/B5/B7/B8/B20/B28 (EMEA + Австралія/Нова Зеландія)",
+  "highlights": [
+   "IP67, харчовий корпус, робота від -35 до 70 °C",
+   "Опційні виносні зонди PT100/DS18B20/TH та OLED-дисплей (TS602)",
+   "Позиціонування за базовими станціями, датчик світла й акселерометр для контролю вантажу"
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "model": "VS370",
+ "name": "Радарний датчик присутності",
+ "series": "Присутність і підрахунок людей",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-people.html#m-vs370",
+ "markdown": "https://demo.arviom.com.ua/eng/models/vs370.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/vs370.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/vs370.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/vs370",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/radar-human-presence-sensor-for-meeting-room-202504.mp4",
+ "specs": {
+  "purpose": "Виявлення присутності людини або легкого руху та підрахунок мобільності людей (переговорні, конференц-зали тощо) з автоматизацією освітлення та HVAC без порушення приватності.",
+  "measures": [
+   "Присутність людини (рух і легкий рух)",
+   "Статистика мобільності людей",
+   "Рівень освітленості (світло/темно)",
+   "Керування пристроями Milesight D2D (освітлення, HVAC)"
+  ],
+  "range_accuracy": "Радар: рух до 7,5 м, легкий рух до 4,8 м, кут 150°; PIR: до 7 м, кут 110°; точність розпізнавання до 99%",
+  "probe": "Міліметровий радар 24 ГГц + PIR-сенсор, датчик освітленості (Bright/Dim)",
+  "interfaces": "1 × внутрішня кнопка скидання; конфігурація через NFC та Bluetooth",
+  "network": "LoRaWAN® Class A (OTAA/ABP), Milesight D2D, внутрішня антена",
+  "power": "2 × батареї Li-SOCl2 ER14505 2700 мА·год",
+  "battery": "2 × ER14505 Li-SOCl2, 2700 мА·год",
+  "battery_life": "≈6,7 року (SF7, EU868 і US915); ≈5,3 року (SF10, EU868); ≈4,6 року (SF10, US915) при 50 спрацюваннях на добу, 25°C",
+  "ip": "IP30",
+  "temp": "0…30 °C; вологість 0–95% (без конденсації)",
+  "config": "Мобільний застосунок через NFC або Bluetooth, Downlink; налаштування чутливості PIR/радара, періоду гібернації, D2D-контролера; FUOTA/OTA",
+  "mounting": "На стіну через знімний магнітний кронштейн (додатковий нахил 30°)",
+  "dimensions": "Ø 70 × 48,5 мм",
+  "weight": "Корпус 89,6 г; магнітний кронштейн 38,2 г",
+  "frequencies": "CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Гібридне виявлення: міліметровий радар + PIR, точність до 99%",
+   "100% приватність, працює в повній темряві",
+   "D2D-керування без шлюзу та довге живлення від батареї (до 6,7 року)"
+  ]
+ }
+}

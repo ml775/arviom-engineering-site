@@ -1,0 +1,40 @@
+{
+ "model": "EG71",
+ "name": "IoT-шлюз для будівель",
+ "series": "LoRaWAN-шлюзи",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gateways.html#m-eg71",
+ "markdown": "https://demo.arviom.com.ua/eng/models/eg71.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/eg71.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/eg71.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-gateway/eg71",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/eg71-datasheet-en.pdf",
+ "video": "https://demo.arviom.com.ua/eng/video/introduce-eg71-building-iot-gateway-for-wired-and-wireless-i.mp4",
+ "specs": {
+  "purpose": "Периферійний шлюз, що збирає дані з польових пристроїв (датчиків і виконавчих механізмів), передає їх у хмару або BMS та забезпечує локальну автоматизацію й віддалене керування.",
+  "measures": [
+   "Збір даних із пристроїв RS485, KNX, M-BUS, LoRaWAN, Wi-Fi та Ethernet",
+   "Вимірювання сигналів: 8 універсальних входів (0-10 В, 4-20 мА, PT1000/Ni1000, NTC, опір, мокрий контакт)",
+   "4 цифрові входи (сухий контакт, лічильник імпульсів)",
+   "Керування: 3 релейні виходи, 4 аналогові виходи (4-20 мА / 0-10 В)"
+  ],
+  "range_accuracy": "Аналоговий вхід: 12 біт, ±1% FS; RTD: ±0,5 °C; NTC: ±0,5 °C при 25 °C; опір: 1 Ω; аналоговий вихід: 12 біт, ±1% FS",
+  "interfaces": "2 × RS485 (до 256 пристроїв), 1 × KNX/TP1 (до 63), 1 × M-BUS (до 30 UL), 8 × універсальних входів, 4 × цифрових входи (сухий контакт), 3 × релейні виходи (3 А @ 30 В DC / 110 В AC), 4 × аналогові виходи, 2 × RJ45 (1 Гбіт/с, WAN/LAN), USB Type-C, Micro SD, Nano SIM, OLED-екран 1,3″ з 7 кнопками, NFC",
+  "network": "LoRaWAN (Class A/B/C, 8 каналів, вбудований мережевий сервер), 4G LTE Cat1/GSM, Ethernet (PoE PD на ETH1), Wi-Fi 2,4 ГГц 802.11 b/g/n (AP/клієнт); резервування каналів (Link Failover)",
+  "power": "24 В DC/AC (клемна колодка), PoE 802.3af або 5 В/3 А через USB Type-C (при живленні по USB M-BUS і універсальні входи не працюють належно); споживання: типово 8,2 Вт, макс. 11,24 Вт",
+  "ip": "IP30",
+  "temp": "-40…+60 °C (зберігання -40…+85 °C), вологість 0–95% без конденсації",
+  "config": "Web, CLI (SSH/Telnet), SNMP, Milesight Development Platform; підтримка Python SDK, Node-RED, Docker",
+  "storage": "2 ГБ DDR4 RAM, 32 ГБ eMMC, слот Micro SD",
+  "mounting": "На стіну (гвинти) або на DIN-рейку",
+  "dimensions": "123 × 90 × 36 мм",
+  "weight": "375,6 г",
+  "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Чотириядерний 64-бітний процесор 1,5 ГГц для великої кількості пристроїв (~2000 LoRaWAN)",
+   "Широкий набір інтерфейсів: RS485, KNX, M-BUS, LoRaWAN, Wi-Fi, Ethernet, універсальні входи/виходи",
+   "Підтримка Modbus, BACnet, MQTT, HTTP, VPN і міжмережевого екрана, вторинна розробка (Python, Node-RED, Docker)"
+  ]
+ }
+}

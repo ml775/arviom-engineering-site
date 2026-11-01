@@ -1,0 +1,43 @@
+{
+ "model": "EM400-UDL",
+ "name": "Ультразвуковий датчик відстані й рівня",
+ "series": "Серія EM400 · відстань і рівень",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-em400.html#m-em400-udl",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em400-udl.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em400-udl.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em400-udl.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em400-udl",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/em400-udl-datasheet-en.pdf",
+ "video": "https://demo.arviom.com.ua/eng/video/em400-series-distance-level-measuring-sensors-202304.mp4",
+ "specs": {
+  "purpose": "Безконтактне вимірювання відстані до рівня рідини (рівень води у відкритих водоймах, наповнення резервуарів) в умовах вулиці.",
+  "measures": [
+   "Відстань (рівень рідини)",
+   "Температура",
+   "Положення пристрою (нормальне/нахил)",
+   "GNSS-координати (лише версія NB-IoT/Cat.M)"
+  ],
+  "range_accuracy": "Standard C100: 25–1000 см, ±(1+0,3%·S) см (−15…60 °C); Pro W050: 30–500 см, W100: 50–1000 см, ±1% FS (−30…65 °C); роздільна здатність 1 мм",
+  "probe": "Ультразвуковий зонд (C100, W050, W100) з різним діапазоном виявлення; NTC-датчик температури (−40…125 °C, 0,1 °C); 3-осьовий акселерометр",
+  "interfaces": "NFC (налаштування, режим емуляції картки), внутрішня кнопка живлення/скидання, внутрішній LED-індикатор; слот Micro SIM (3FF, 1,8 В) у версії NB-IoT/Cat.M",
+  "network": "LoRaWAN (OTAA/ABP, Class A) або NB-IoT/Cat.M (TCP/UDP/MQTT/AWS)",
+  "power": "Від батарей: 2 × ER26500 Li-SOCL2",
+  "battery": "2 × 9000 мАг, замінні",
+  "battery_life": "LoRaWAN: понад 10 років (інтервал 10 хв, 25 °C); NB-IoT/Cat.M: TCP/UDP ≈10 років, MQTT/AWS ≈5 років (4 звіти на добу, 25 °C)",
+  "ip": "IP67",
+  "temp": "−30…70 °C; вологість ≤95% (без конденсату)",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "Мобільний застосунок через NFC; увімкнення/вимкнення через NFC або кнопку; калібрування, порогові сигналізації, перемикання за нахилом і відстанню, кумулятивний звіт (лише NB)",
+  "mounting": "На плоску поверхню гвинтами",
+  "dimensions": "118 × 65 × 80 мм",
+  "weight": "C100: 252,7 г; W050/W100: 246,6 г (з батареями)",
+  "frequencies": "CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1/2/3/4; Cat M1/NB2 — діапазони B1/B2/B3/B4/B5/B8/B12/B13/B18/B19/B20/B25/B26/B27/B28/B66/B71/B85 (залежно від режиму)",
+  "highlights": [
+   "Змінні зонди від 25 до 1000 см",
+   "До 10 років роботи від двох батарей 9000 мАг",
+   "IP67, вологозахисне покриття, налаштування одним дотиком через NFC"
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "model": "WS301",
+ "name": "Магнітний датчик відкриття",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws301",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws301.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws301.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws301.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws301",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4",
+ "specs": {
+  "purpose": "Фіксує відкриття/закриття дверей, вікон чи шаф та переміщення предметів і надсилає сповіщення в реальному часі.",
+  "measures": [
+   "Стан відкрито/закрито",
+   "Тампер (зняття з поверхні)",
+   "Низький заряд батареї"
+  ],
+  "range_accuracy": "Відстань спрацювання між датчиком і магнітом: 10–15 мм",
+  "probe": "Магнітний контактний датчик: сенсор у нерухомій частині, мінімальний магніт — у рухомій",
+  "interfaces": "Внутрішня кнопка скидання, кнопка тампера, світлодіодний індикатор статусу/тривоги, NFC",
+  "network": "LoRaWAN® Class A (OTAA/ABP), Milesight D2D; внутрішня антена",
+  "power": "Батарея 1 × ER14250 Li-SOCl2",
+  "battery": "1200 мА·год, замінна",
+  "battery_life": "≈6,8 року (SF7, EU868/US915); ≈4,2 року (SF10, EU868); ≈3,5 року (SF10, US915) — інтервал 1080 хв + 30 спрацювань/добу, 25°C",
+  "ip": "IP20",
+  "temp": "−20…+60 °C; вологість ≤90% (без конденсації)",
+  "range_lora": "До 15 км на лінії прямої видимості",
+  "config": "NFC через мобільний застосунок (налаштування одним дотиком)",
+  "mounting": "На плоску поверхню гвинтами або скотчем 3M",
+  "dimensions": "Датчик: 50,5 × 31 × 18,5 мм; магніт: 30 × 13,5 × 10 мм",
+  "weight": "Датчик: 27,9 г (з батареєю); магніт: 4,1 г",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923",
+  "highlights": [
+   "Тривала робота від батареї (понад 5 років)",
+   "Далекий зв'язок LoRaWAN до 15 км",
+   "Налаштування через NFC та D2D-керування без шлюзу"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "model": "UPS01",
+ "name": "Джерело безперебійного живлення",
+ "series": "LoRaWAN-шлюзи",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gateways.html#m-ups01",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ups01.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ups01.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ups01.webp",
+ "vendor_page": "https://www.milesight.com/product/accessories/uninterruptible-power-supply-ups01",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/ups01-datasheet-en.pdf",
+ "specs": {
+  "purpose": "Забезпечує безперебійну роботу підключених пристроїв (шлюзи, роутери, CPE, донгли, камери) до 32 годин від акумулятора або зовнішнього живлення.",
+  "measures": [
+   "Моніторинг споживання енергії (лише з пристроями Milesight)",
+   "Віддалені сповіщення про тривоги (лише з пристроями Milesight)"
+  ],
+  "interfaces": "Вхід: DC-роз'єм (гніздо) 9~20В 2А; вихід: Type-C 5В 4А або 4-контактний M12 A-coded (гніздо) 6~8,4В 1,5А; внутрішня кнопка скидання; світлодіодний індикатор «світлофор»",
+  "power": "Вхід 9~20В DC, 2А (адаптер живлення)",
+  "battery": "4 × 3000 мА·год Li-ion акумулятори (12000 мА·год), з підігрівом (нагрівальна плівка) при низьких температурах, захист від перезаряду й переразряду",
+  "battery_life": "6–32 год (лабораторні умови без навантаження, залежить від споживання пристрою)",
+  "ip": "IP67, IK08",
+  "temp": "Заряд: -20…+45°C; розряд: -20…+60°C; вологість 0–95% (без конденсату)",
+  "config": "Plug-and-play, без додаткового налаштування; оновлення ПЗ лише з пристроями Milesight",
+  "mounting": "На стіну, DIN-рейку, трубу/щоглу, настільне розміщення",
+  "dimensions": "96×60×45 мм (без кабелю); кабелі: DC IN 30 см, Type-C 100 см, M12 150 см",
+  "highlights": [
+   "До 32 год автономної роботи (акумулятор 12000 мА·год)",
+   "Захист IP67/IK08 та підігрів для суворих умов",
+   "Plug-and-play, дві версії виходу (Type-C / M12) і моніторинг із пристроями Milesight"
+  ]
+ }
+}

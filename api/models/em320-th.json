@@ -1,0 +1,41 @@
+{
+ "model": "EM320-TH",
+ "name": "Датчик температури й вологості",
+ "series": "Серія EM300",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/catalog.html#m-em320-th",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em320-th.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em320-th.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em320-th.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em320-th",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/em320-th-temperature-and-humidity-sensor-product-videography.mp4",
+ "specs": {
+  "purpose": "Компактний захищений датчик для точного вимірювання температури й вологості в складних умовах, зокрема у морозильних і холодильних камерах та в контакті з їжею чи ліками.",
+  "measures": [
+   "температура",
+   "відносна вологість"
+  ],
+  "range_accuracy": "Температура: -30…+60 °C, ±0,3 °C (-30…0 °C), ±0,2 °C (0…60 °C), роздільність 0,1 °C; вологість: 0…100 % RH, ±2 % (25 °C), роздільність 0,5 % RH",
+  "probe": "Високоточний сенсор Sensirion, вбудований у корпус",
+  "interfaces": "NFC для налаштування, внутрішня кнопка живлення",
+  "network": "LoRaWAN, OTAA/ABP, клас A",
+  "power": "Від батарей",
+  "battery": "2 × 2700 мА·год ER14505 Li-SOCl2 (заміновані, загальна ємність 5400 мА·год)",
+  "battery_life": "≥10 років (інтервал 10 хв, 25 °C, лабораторні умови); у вступі — до 5 років",
+  "ip": "IP67",
+  "temp": "-30…+60 °C, вологість ≤95 %",
+  "range_lora": "До 15 км у сільській місцевості",
+  "config": "Мобільний застосунок через NFC",
+  "storage": "3000 історичних записів, підтримка повторної передачі",
+  "mounting": "Стандартна версія: на стіну або на трубу; магнітна версія: магніт",
+  "dimensions": "85 × 58 × 18 мм",
+  "weight": "93,2 г (стандартна версія), 102 г (магнітна версія)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Високоточний сенсор Sensirion, сертифікація EN12830 для холодового ланцюга",
+   "Харчовий корпус (FDA) з IP67, придатний для морозильних камер і контакту з їжею та ліками",
+   "Тривала робота від змінних батарей та дальність зв'язку до 15 км із локальним збереженням даних"
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "model": "EM300-TH",
+ "name": "Датчик температури й вологості",
+ "series": "Серія EM300",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/catalog.html#m-em300-th",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em300-th.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em300-th.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em300-th.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em300-th",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/milesight-temperature-and-humidity-monitoring-solution-20240.mp4",
+ "specs": {
+  "purpose": "Компактний датчик моніторингу навколишнього середовища для вимірювання температури й вологості та передачі даних через LoRaWAN у приміщеннях і на відкритому повітрі (офіси, лікарні, заводи, теплиці).",
+  "measures": [
+   "Температура",
+   "Відносна вологість"
+  ],
+  "range_accuracy": "Темп.: від -30 до +70 °C, ±0,3 °C (0…70 °C), ±0,6 °C (-30…0 °C), розд. 0,1 °C; вологість: 0–100 % RH, ±3 % (10–90 % RH), ±5 % (0–10 % та 90–100 % RH), розд. 0,5 % RH",
+  "probe": "Високоточний сенсорний чип Sensirion (вбудований)",
+  "interfaces": "1 × світлодіодний індикатор (внутрішній), 1 × кнопка живлення/скидання (внутрішня), NFC",
+  "network": "LoRaWAN, OTAA/ABP, клас A; Milesight D2D",
+  "power": "Від батареї",
+  "battery": "1 × 4000 мА·год ER18505 Li-SOCl2, змінна (опційно 8000 мА·год)",
+  "battery_life": "Понад 10 років (SF7, EU868 і US915); ≈5,8 року (SF10, EU868); ≈4,2 року (SF10, US915) при інтервалі 10 хв, 25 °C",
+  "ip": "IP67",
+  "temp": "-30…+70 °C",
+  "range_lora": "До 10 км (пряма видимість)",
+  "config": "NFC через мобільний застосунок, Downlink",
+  "storage": "2800 записів, повторна передача даних, можливість вивантаження історії",
+  "mounting": "Настінне кріплення гвинтами, скотч 3M, кріплення стяжкою",
+  "dimensions": "88,5 × 85,3 × 27 мм",
+  "weight": "95,6 г (з 1 батареєю)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Термін роботи від батареї понад 10 років",
+   "Передача на дальність до 10 км, IP67 та стійкість до УФ",
+   "Налаштування через NFC, локальне зберігання та повторна передача даних"
+  ]
+ }
+}

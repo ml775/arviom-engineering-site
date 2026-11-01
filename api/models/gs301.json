@@ -1,0 +1,42 @@
+{
+ "model": "GS301",
+ "name": "Датчик запаху в санвузлі",
+ "series": "Серія GS · запахи й вейп",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gs.html#m-gs301",
+ "markdown": "https://demo.arviom.com.ua/eng/models/gs301.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/gs301.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/gs301.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/gs301",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/gs301-lorawan-bathroom-odor-detector-202303.mp4",
+ "specs": {
+  "purpose": "Виявляє аміак і сірководень у санвузлах та разом з температурою й вологістю контролює стан повітря; при перевищенні порогу вмикає світлову та звукову сигналізацію й передає дані віддалено.",
+  "measures": [
+   "Аміак (NH3)",
+   "Сірководень (H2S)",
+   "Температура",
+   "Вологість",
+   "Пряме керування вентиляцією через Milesight D2D"
+  ],
+  "range_accuracy": "NH3: 0–10 ppm, ±5% FS, роздільність 0,01 ppm; H2S: 0–5 ppm, ±5% FS, роздільність 0,001 ppm; температура: -40…85 °C, ±0,2 °C; вологість: 0–100 %RH, ±2 %",
+  "probe": "Вбудовані електрохімічні сенсори на твердому полімері (NH3, H2S), термін служби сенсорів понад 3 роки, дрейф <1 % на місяць",
+  "interfaces": "Світлодіодний індикатор статусу/тривоги, зумер, зовнішня кнопка скидання/перезавантаження, NFC; внутрішня антена",
+  "network": "LoRaWAN, клас A, OTAA/ABP; Milesight D2D (без шлюзу)",
+  "power": "4 × ER18505 Li-SOCl2 змінні батареї",
+  "battery": "4 × 4000 мА·год ER18505 Li-SOCl2, змінні",
+  "battery_life": "Близько 3 років (інтервал 10 хв, 25 °C)",
+  "ip": "IP30",
+  "temp": "-40…55 °C, вологість 0–95 % (без конденсату)",
+  "config": "Мобільний застосунок через NFC; Milesight IoT Cloud",
+  "mounting": "Настінний, на гвинти",
+  "dimensions": "120 × 85 × 32,5 мм",
+  "weight": "221,4 г (з батареями)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Точні електрохімічні сенсори NH3 і H2S (термін служби >3 роки) плюс температура й вологість",
+   "Місцева сигналізація (LED + зумер) і керування вентиляцією через D2D без шлюзу",
+   "Автономне живлення від батарей (~3 роки), налаштування через NFC, вологозахисне покриття"
+  ]
+ }
+}

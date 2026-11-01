@@ -1,0 +1,40 @@
+{
+ "model": "WS202",
+ "name": "Датчик руху й освітленості",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws202",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws202.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws202.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws202.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws202",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4",
+ "specs": {
+  "purpose": "Виявлення руху або присутності людей у приміщенні за допомогою пасивного інфрачервоного датчика з відправкою змін через мережу LoRaWAN та можливістю запуску сценаріїв за рівнем освітленості.",
+  "measures": [
+   "рух/присутність (PIR)",
+   "освітленість (стан «світло/темно»)"
+  ],
+  "range_accuracy": "PIR: дальність до 8 м, зона виявлення 120° по горизонталі, 100° по вертикалі; освітленість: поріг 1–60000 лк (налаштовується) для визначення «світло/темно»",
+  "probe": "Пасивний інфрачервоний датчик (PIR) з лінзою Френеля; вбудований датчик освітленості",
+  "interfaces": "1 × світлодіодний індикатор стану, 1 × кнопка скидання (внутрішня), NFC для налаштування",
+  "network": "LoRaWAN® Class A (OTAA/ABP), Milesight D2D; внутрішня антена",
+  "power": "Живлення від батареї",
+  "battery": "1 × ER14335 Li-SOCl2, 1650 мА·год",
+  "battery_life": "≈4 роки (30 хв інтервал + 30 спрацювань на добу); ≈4,2 р. (SF7, EU868), ≈2,4 р. (SF10, EU868), ≈3,9 р. (SF7, US915), ≈2 р. (SF10, US915)",
+  "ip": "IP30",
+  "temp": "-20 °C ~ 60 °C; вологість 0–90 % (без конденсації)",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "Мобільний застосунок через NFC (підтримка режиму емуляції картки); Milesight D2D Controller, порогова сигналізація",
+  "mounting": "На плоску поверхню на шурупи або 3M-скотч",
+  "dimensions": "50 × 50 × 23,8 мм; лінза Ø 17,2 мм",
+  "weight": "40 г (з батареєю)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923",
+  "highlights": [
+   "Виявлення руху до 8 м із кутом огляду 120°×100°",
+   "Вбудований датчик освітленості для сценаріїв-тригерів",
+   "Налаштування через NFC та пряме керування Milesight D2D без шлюзу"
+  ]
+ }
+}

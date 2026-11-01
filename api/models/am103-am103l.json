@@ -1,0 +1,41 @@
+{
+ "model": "AM103/AM103L",
+ "name": "Датчик якості повітря 3-в-1",
+ "series": "Серія AM · якість повітря",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-am.html#m-am103-am103l",
+ "markdown": "https://demo.arviom.com.ua/eng/models/am103-am103l.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/am103-am103l.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/am103-am103l.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/am103-am103l",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/am03-am03l-iaq-sensor-introduction-202211.mp4",
+ "specs": {
+  "purpose": "Моніторинг температури, вологості та CO2 у приміщеннях (офіс, магазин, клас, лікарня) з оцінкою комфорту та віддаленою передачею даних через LoRaWAN.",
+  "measures": [
+   "Температура",
+   "Вологість",
+   "CO2"
+  ],
+  "range_accuracy": "Температура: -20…60 °C, ±0,3 °C (-20…0 °C), ±0,2 °C (0…60 °C); вологість: 0…100 % RH, ±2 % RH (25 °C); CO2: 400…5000 ppm, ±(30 ppm + 3 % показань)",
+  "probe": "Температура/вологість — цифровий CMOSens® (MEMS); CO2 — NDIR (недисперсійний інфрачервоний)",
+  "interfaces": "1 × кнопка живлення/скидання; 1 × світлодіод-світлофор; NFC; E-Ink екран (лише AM103)",
+  "network": "LoRaWAN®, OTAA/ABP, Class A, внутрішня антена; потужність Tx 16 dBm (868 МГц), 22 dBm (915 МГц), 19 dBm (470 МГц); чутливість -137 дБм @300 біт/с",
+  "power": "2 × замінні батареї ER14505 Li-SOCl2",
+  "battery": "2 × 2700 мА·год ER14505, Li-SOCl2, замінні",
+  "battery_life": "AM103: ~4,5 р. (SF7, EU868/US915), ~3 р. (SF10, EU868), ~2,3 р. (SF10, US915); AM103L: ~5 р. (SF7), ~3,3 р. (SF10, EU868), ~2,5 р. (SF10, US915); інтервал 10 хв, 25 °C",
+  "ip": "IP30",
+  "temp": "-20…+60 °C (E-Ink екран: 0…40 °C); вологість 0…95 % без конденсату",
+  "config": "Мобільний застосунок через NFC, даунлінк; калібрування, порогові сигнали, режим гібернації екрана, Smart Screen Mode; Milesight IoT Cloud та Development Platform",
+  "storage": "Локально 640 записів, можливість вичитування та повторної передачі даних",
+  "mounting": "На стіну: 3M-скотч або гвинти",
+  "dimensions": "68 × 65 × 20,5 мм",
+  "weight": "182,5 г (з батареями)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Три датчики в одному (температура, вологість, CO2) із E-Ink екраном та смайлами комфорту (AM103)",
+   "Світлофорний індикатор рівнів CO2 і понад 3 роки роботи від батарей",
+   "NFC-налаштування, локальне зберігання 640 записів із повторною передачею"
+  ]
+ }
+}

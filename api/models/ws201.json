@@ -1,0 +1,40 @@
+{
+ "model": "WS201",
+ "name": "Датчик заповнення ємностей",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws201",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws201.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws201.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws201.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws201",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/milesight-ws201-smart-fill-level-monitoring-sensor-202305.mp4",
+ "specs": {
+  "purpose": "Бездротовий датчик для контролю рівня заповнення невеликих контейнерів, зокрема коробок із серветками, у готелях, аеропортах і торгових центрах.",
+  "measures": [
+   "Рівень заповнення контейнера (у відсотках)",
+   "Відстань до вмісту (ToF)",
+   "Сигналізація за пороговими значеннями"
+  ],
+  "range_accuracy": "1–55 см; точність ±1 см; роздільність 1/2/3 мм залежно від відстані; кут огляду 25° (±5°)",
+  "probe": "Безконтактний ToF-датчик (Time-of-Flight)",
+  "interfaces": "Внутрішня кнопка скидання, внутрішній LED-індикатор, NFC",
+  "network": "LoRaWAN®, клас A, OTAA/ABP, внутрішня антена",
+  "power": "Батарея, 1 × CR2450",
+  "battery": "1 × CR2450 літієва, 590 мА·год",
+  "battery_life": "~3,2 року (SF7, EU868/US915); ~2,1 року (SF10, EU868); ~1,9 року (SF10, US915) — звіт раз на 60 хв, 25 °C",
+  "ip": "IP30",
+  "temp": "-10…+60 °C, вологість 0–95 % (без конденсації)",
+  "config": "Мобільний застосунок через NFC або даунлінк",
+  "mounting": "На пласку поверхню на скотч 3M",
+  "dimensions": "66 × 38 × 12 мм",
+  "weight": "24,7 г з батареєю (18,1 г без батареї)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Точний безконтактний ToF-вимір 1–55 см",
+   "Наднизьке енергоспоживання, до 3,2 року від батареї",
+   "Проста установка та налаштування через NFC, вологозахисне покриття"
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "model": "EM410-RDL",
+ "name": "Радарний датчик відстані й рівня",
+ "series": "Серія EM400 · відстань і рівень",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-em400.html#m-em410-rdl",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em410-rdl.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em410-rdl.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em410-rdl.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em410-rdl",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/em41x-rdl-datasheet-en.pdf",
+ "video": "https://demo.arviom.com.ua/eng/video/em410-rdl-radar-distance-and-level-sensor-202504.mp4",
+ "specs": {
+  "purpose": "Безконтактне вимірювання відстані та рівня рідин (або гладких твердих поверхонь) за допомогою міліметрового радара з передачею даних по LoRaWAN.",
+  "measures": [
+   "Відстань/рівень рідини",
+   "Положення пристрою (норма/нахил)"
+  ],
+  "range_accuracy": "0,3–12 м; точність до ±2 мм (ідеально гладка/нерухома поверхня), до ±5 мм (відносно гладка/стабільна поверхня); роздільна здатність 1 мм",
+  "probe": "Міліметровий радар 60 ГГц, кут променя 8°, корпус із PVDF; вбудований 3-осьовий акселерометр",
+  "interfaces": "Внутрішня або зовнішня антена (опція; зовнішня — 1 × SMB male, 50 Ω); 1 × внутрішній світлодіод; NFC і Bluetooth для налаштування",
+  "network": "LoRaWAN, OTAA/ABP, клас A",
+  "power": "Живлення від батареї",
+  "battery": "1 × ER34615 Li-SOCl2, 19000 мА·год",
+  "battery_life": "Близько 7 років (інтервал збору 15 хв, звітування раз на 1440 хв, 25°C)",
+  "ip": "IP68 (1 м під водою, 48 год)",
+  "temp": "-40°C ~ 70°C; вологість 0–100% (без конденсату)",
+  "config": "Мобільний застосунок через NFC або Bluetooth, downlink; Milesight Development Platform (керування та OTA-оновлення)",
+  "storage": "2000 записів локально; повторна передача даних і можливість їх отримання (LoRaWAN)",
+  "mounting": "Настінний кронштейн; різьбове кріплення на резервуар (G 1½\" або NPT 1½\", опція)",
+  "dimensions": "Ф 101 × 87 мм",
+  "weight": "400 г",
+  "frequencies": "CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Міліметровий радар 60 ГГц, діапазон 0,3–12 м, точність до ±2 мм, малa «мертва зона»",
+   "Не залежить від пилу, конденсату, температури та шуму; IP68, корпус PVDF стійкий до корозії",
+   "Тривала робота від батареї (~7 років), налаштування через NFC/Bluetooth, діагностика та крива радарного ехо"
+  ]
+ }
+}

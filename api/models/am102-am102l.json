@@ -1,0 +1,48 @@
+{
+ "model": "AM102/AM102L",
+ "name": "Датчик якості повітря 2-в-1",
+ "series": "Серія AM · якість повітря",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-am.html#m-am102-am102l",
+ "markdown": "https://demo.arviom.com.ua/eng/models/am102-am102l.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/am102-am102l.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/am102-am102l.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/am102",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/am-series-iaq-sensor-202602.mp4",
+ "specs": {
+  "purpose": "Моніторинг мікроклімату в офісах, магазинах, школах і лікарнях з виведенням даних на E-ink екран (AM102) та передачею через LoRaWAN.",
+  "measures": [
+   "Температура",
+   "Відносна вологість"
+  ],
+  "range_accuracy": "Температура: -20…60 °C, ±0,3 °C (-20…0 °C), ±0,2 °C (0…60 °C), роздільність 0,1 °C; вологість: 0…100 % RH, ±2 % RH (25 °C), роздільність 0,5 % RH",
+  "probe": "Цифровий датчик Sensirion, технологія CMOSens® (MEMS)",
+  "interfaces": "NFC для налаштування, 1 кнопка живлення/скидання, 1 світлодіод стану; AM102: E-ink екран 2,13\" чорно-білий (AM102L — без екрана)",
+  "network": "LoRaWAN, клас A, OTAA/ABP, внутрішня антена",
+  "power": "2 × змінні батареї ER14505 Li-SOCl2",
+  "battery": "2 × 2700 мА·год ER14505 (змінні)",
+  "battery_life": "AM102: понад 7 років (SF7, EU868/US915), ~4,2 р. (SF10, EU868), ~2,2 р. (SF10, US915); AM102L: понад 9 років (SF7), ~5,2 р. (SF10, EU868), ~2,4 р. (SF10, US915); інтервал 10 хв, 25 °C",
+  "ip": "IP30",
+  "temp": "-20…60 °C (E-ink екран: 0…40 °C); вологість 0…95 % без конденсації",
+  "config": "Мобільний застосунок через NFC, даунлінк; вмикання/вимикання через застосунок NFC або кнопку",
+  "storage": "1280 записів локально, з можливістю вигрузки та повторної передачі даних",
+  "mounting": "На стіну: 3M-скотч або гвинти",
+  "dimensions": "68 × 65 × 20,5 мм",
+  "frequencies": [
+   "CN470",
+   "IN865",
+   "RU864",
+   "EU868",
+   "US915",
+   "AU915",
+   "KR920",
+   "AS923-1/2/3/4"
+  ],
+  "highlights": [
+   "Високоточний датчик Sensirion і E-ink дисплей (AM102)",
+   "Понад 7 років (AM102) / 9 років (AM102L) роботи від батарей",
+   "Налаштування через NFC, локальне зберігання та повторна передача даних"
+  ]
+ }
+}

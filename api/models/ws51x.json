@@ -1,0 +1,42 @@
+{
+ "model": "WS51x",
+ "name": "Розумна настінна розетка",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws51x",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws51x.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws51x.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws51x.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws51x",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4",
+ "specs": {
+  "purpose": "Вбудована розетка стандарту 86 для керування живленням приладів та обліку споживання електроенергії локально або віддалено через LoRaWAN.",
+  "measures": [
+   "Напруга (VAC)",
+   "Струм (мА)",
+   "Коефіцієнт потужності (%)",
+   "Активна потужність (Вт)",
+   "Споживання електроенергії (кВт·год)",
+   "Керування ввімкненням/вимкненням живлення"
+  ],
+  "range_accuracy": "Типово ±3%, макс. ±5% (±1% на замовлення)",
+  "probe": "Вбудований вимірювальний модуль електричних параметрів",
+  "interfaces": "Розетка Type F (EU) або Type E (FR) із захисною шторкою; 1 кнопка (ввімк./вимк. живлення або скидання); 1 світлодіодний індикатор мережі/живлення; NFC",
+  "network": "LoRaWAN®, Milesight D2D; OTAA/ABP, клас C; внутрішня антена",
+  "power": "100~250 VAC, 50~60 Гц; макс. струм 16 А",
+  "ip": "IP20",
+  "temp": "-20°C…+60°C; вологість 0–95% (без конденсації)",
+  "range_lora": "До 15 км у прямій видимості",
+  "config": "Мобільний застосунок через NFC або Downlink; кнопка на корпусі",
+  "mounting": "Вбудований монтаж у стіну (стандарт 86)",
+  "dimensions": "Type F: 86,3 × 86,3 × 45,8 мм; Type E: 86,3 × 86,3 × 43,3 мм",
+  "weight": "98,8 г",
+  "frequencies": "IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Віддалене керування та відкладені вмикання/вимикання за розкладом",
+   "Облік струму, напруги, потужності й енергії із захистом від перевантаження",
+   "NFC-налаштування, Milesight D2D без шлюзу та групове керування (multicast)"
+  ]
+ }
+}

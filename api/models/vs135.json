@@ -1,0 +1,42 @@
+{
+ "model": "VS135",
+ "name": "ToF-лічильник людей",
+ "series": "Присутність і підрахунок людей",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-people.html#m-vs135",
+ "markdown": "https://demo.arviom.com.ua/eng/models/vs135.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/vs135.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/vs135.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/vs135",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/vs135-ultra-tof-people-counter-202402.mp4",
+ "specs": {
+  "purpose": "Високоточний лічильник людей на основі ToF та ШІ для приміщень і напівзовнішніх просторів із захистом приватності (без запису зображень, GDPR).",
+  "measures": [
+   "Двонапрямний підрахунок людей (до 4 ліній)",
+   "Регіональний підрахунок і час перебування (до 4 зон)",
+   "Групи людей, діти/дорослі, персонал (бейдж/ланьярд)",
+   "Фільтрація U-розворотів, виявлення перекриття",
+   "Рівень заповнення торгових візків (PoE, Cellular, Wi-Fi HaLow)",
+   "Теплова карта руху та перебування"
+  ],
+  "range_accuracy": "Точність підрахунку до 99,8%; діапазон 0,5–3,5 м (стандарт), 2–6,5 м (висока стеля); точність вимірювання відстані ±3,5 см / ±6,5 см",
+  "probe": "ToF другого покоління, 940 нм (невидимий), ШІ-алгоритм; 3-осьовий датчик нахилу; радар для режиму сну; FoV 98°×80° (стандарт), 60°×45° (висока стеля)",
+  "interfaces": "RJ45 10/100 Мбіт/с (PoE PD, ізоляція 1,5 кВ), DC-роз'єм, Alarm I/O 1/1 (PoE), Wi-Fi 2.4 ГГц (AP-режим для налаштування), SIM Nano 4FF (Cellular), кнопка Reset/Wi-Fi, RGB LED",
+  "network": "PoE: Ethernet; Cellular: LTE Cat 4/WCDMA/GSM; Wi-Fi HaLow: IEEE 802.11ah (STA); LoRaWAN Class C (OTAA/ABP); протоколи HTTP(S), MQTT(S), NTP, SSH, BACnet/IP (PoE)",
+  "power": "802.3at PoE+ або DC 12 В/2 А (PoE-версія); DC 12 В/2 А (інші); середнє споживання 7–10 Вт, макс. 15–24 Вт; у сплячому режимі 4–5 Вт",
+  "ip": "IP65",
+  "temp": "-20…+50 °C, вологість 0–95% (без конденсату)",
+  "config": "Веб-інтерфейс через Wi-Fi (AP-режим), Milesight DeviceHub, Milesight IoT Cloud (LoRaWAN), автовизначення висоти встановлення",
+  "storage": "До 1 млн записів у локальній пам'яті з експортом CSV; повторна передача даних: 8×50000 пакетів (PoE), 4000 (LoRaWAN); відеоперевірка 1 канал, до 4 год",
+  "mounting": "Стельовий, стельовий із подовжувачем, на перемичку (з опційним багатофункціональним кронштейном); висота до 3,5 м (стандарт) / до 6,5 м (висока стеля)",
+  "dimensions": "200 × 35 × 85 мм",
+  "weight": "409,8–419 г",
+  "frequencies": "LoRaWAN: CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1/2/3/4; HaLow: 863,5–867,5 МГц / 902,5–927,5 МГц; LTE: B1/B3/B7/B8/B20/B28",
+  "highlights": [
+   "Точність до 99,8% без збору зображень (GDPR)",
+   "Робота за будь-якого освітлення, висота до 6,5 м, IP65",
+   "Різні типи зв'язку (PoE, LTE, HaLow, LoRaWAN) та зшивання до 8 пристроїв"
+  ]
+ }
+}

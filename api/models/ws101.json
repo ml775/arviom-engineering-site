@@ -1,0 +1,43 @@
+{
+ "model": "WS101",
+ "name": "Розумна кнопка",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws101",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws101.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws101.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws101.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws101",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4",
+ "specs": {
+  "purpose": "Бездротова кнопка для керування пристроями, запуску сценаріїв і подачі сигналів тривоги (SOS) на базі LoRaWAN.",
+  "measures": [
+   "Коротке натискання",
+   "Довге натискання",
+   "Подвійне натискання",
+   "Запуск сцен",
+   "Керування пристроями",
+   "SOS-сигнал (червона кнопка)"
+  ],
+  "probe": "1 × зовнішня кнопка (Φ20 мм); біла для сцен, червона для SOS",
+  "interfaces": "1 × зовнішня кнопка, 1 × внутрішня кнопка скидання, 1 × світлодіодний індикатор статусу/тривоги, 1 × зумер, NFC",
+  "network": "LoRaWAN (OTAA/ABP, клас A), Milesight D2D; внутрішня антена",
+  "power": "Батарея 1 × ER14335 Li-SOCl2",
+  "battery": "1650 мА·год, ER14335 Li-SOCl2",
+  "battery_life": "≈9,5 року (SF7, EU868); ≈7,7 року (SF10, EU868); ≈9,3 року (SF7, US915); ≈7,1 року (SF10, US915) — інтервал звіту 1080 хв, 10 натискань на день, 25°C",
+  "ip": "IP30",
+  "temp": "-20…+60 °C; вологість ≤90% (без конденсації)",
+  "range_lora": "до 15 км (пряма видимість)",
+  "config": "Мобільний застосунок через NFC або Downlink; Milesight D2D Controller",
+  "mounting": "На плоску поверхню гвинтами або 3M-скотчем; шнурок (ремінець)",
+  "dimensions": "50 × 50 × 18 мм; кнопка Φ20 мм",
+  "weight": "38,8 г (з батареєю)",
+  "frequencies": "CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Кілька типів натискання з налаштовуваними діями",
+   "Дальність до 15 км та ~9,5 року від батареї",
+   "NFC-налаштування та D2D-керування без шлюзу"
+  ]
+ }
+}

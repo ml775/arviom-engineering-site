@@ -1,0 +1,42 @@
+{
+ "model": "EM500-SMTC",
+ "name": "Датчик вологості, температури й провідності ґрунту",
+ "series": "Серія EM500 · промислові",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-em500.html#m-em500-smtc",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em500-smtc.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em500-smtc.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em500-smtc.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em500-smtc",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/milesight-em500-smt-lorawan-soil-moisture-sensor-202303.mp4",
+ "specs": {
+  "purpose": "Вимірювання вологості, температури та електропровідності ґрунту в складних умовах і передача даних через LoRaWAN для віддаленого моніторингу.",
+  "measures": [
+   "Вологість ґрунту",
+   "Температура ґрунту",
+   "Електропровідність ґрунту"
+  ],
+  "range_accuracy": "Вологість: 0–100%, ±2% (0–50%), ±3% (50–100%); температура: -40…80 °C, ±0,5 °C; електропровідність: 0–20000 мкСм/см, ±3% (0–10000), ±5% (10000–20000)",
+  "probe": "Зонд із епоксидної смоли та нержавіючої сталі, стійкий до корозії, довжина щупа 50 мм, кабель 2 м",
+  "interfaces": "1 × USB Type-C (внутрішній, налаштування та консоль), 1 × світлодіод, 1 × кнопка живлення/скидання, NFC",
+  "network": "LoRaWAN® Class A (OTAA/ABP), Milesight D2D, внутрішня антена",
+  "power": "1 × батарея Li-SOCl2 ER34615",
+  "battery": "19000 мА·год, змінна",
+  "battery_life": "До 10 років (SF7/SF10, EU868; SF7, US915); близько 8 років (SF10, US915); інтервал 10 хв, 25 °C",
+  "ip": "Трансивер: IP67; датчик ґрунту: IP68",
+  "temp": "-30…70 °C; вологість 0–100% (без конденсату)",
+  "range_lora": "До 10 км у прямій видимості",
+  "config": "Мобільний застосунок (NFC), ПЗ для ПК (USB Type-C), Downlink",
+  "storage": "1000 записів, повторна передача та вивантаження даних",
+  "mounting": "Трансивер: на стовп, стіну або DIN-рейку; датчик: закопується в ґрунт",
+  "dimensions": "Трансивер: 105,4 × 71 × 69,5 мм; датчик: 88 × 68 × 26 мм",
+  "weight": "Трансивер: 328 г (з батареєю та кронштейном); датчик: 138 г (з кабелем)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Висока точність для різних типів ґрунту",
+   "Корозійностійкий міцний зонд, IP68",
+   "Робота до 10 років від батареї та дальність до 10 км"
+  ]
+ }
+}

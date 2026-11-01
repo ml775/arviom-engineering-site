@@ -1,0 +1,40 @@
+{
+ "model": "EM320-TILT",
+ "name": "Датчик нахилу",
+ "series": "Серія EM300",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/catalog.html#m-em320-tilt",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em320-tilt.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em320-tilt.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em320-tilt.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em320-tilt",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/em320-tilt-tilt-sensor-videography-202303.mp4",
+ "specs": {
+  "purpose": "Вимірювання кутів нахилу за трьома осями та виявлення переміщення об'єктів (дерева, опори, ґрунт) зі сповіщеннями за порогами.",
+  "measures": [
+   "Кут нахилу по осях X, Y, Z",
+   "Зміна положення відносно початкового",
+   "Порогові тривоги за кутом"
+  ],
+  "range_accuracy": "−90°…+90°, точність ±1°, роздільна здатність 0,01°",
+  "probe": "Вбудований MEMS 3-осьовий акселерометр",
+  "interfaces": "Внутрішня світлодіодна індикація (1 шт.), внутрішня кнопка живлення/скидання (1 шт.), NFC для налаштування",
+  "network": "LoRaWAN, OTAA/ABP, клас A, внутрішня антена, чутливість −137 дБм @300 біт/с",
+  "power": "Батарея 2 × ER14505 (Li-SOCl2)",
+  "battery": "2 × 2700 мА·год ER14505",
+  "battery_life": "≈4 роки (SF7) / ≈3 роки (SF10), інтервал 10 хв, 25 °C",
+  "ip": "IP67",
+  "temp": "−30…+60 °C, вологість ≤95% (без конденсації)",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "NFC через мобільний застосунок; увімкнення/вимкнення кнопкою живлення",
+  "mounting": "Настінне кріплення гвинтами, кріплення на опору; захист від викрадення на задній кришці",
+  "dimensions": "85 × 58 × 18 мм",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Вимірювання нахилу по 3 осях із точністю ±1°",
+   "Гнучкі порогові тривоги та відстеження зміни положення",
+   "Автономність до 4 років, IP67, зв'язок до 15 км"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "WS156",
+ "name": "Панель сценаріїв",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws156",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws156.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws156.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws156.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws156",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/ws156-lorawan-smart-scene-panel-202312.mp4",
+ "specs": {
+  "purpose": "Бездротова багатокнопкова панель, що одним натиском запускає наперед задані сцени та керує пристроями через LoRaWAN або Milesight D2D.",
+  "measures": [
+   "Керування сценами (до 6 сцен, кожна може містити кілька пристроїв)",
+   "Керування пристроями Milesight через LoRaWAN або D2D"
+  ],
+  "probe": "6 сенсорних/механічних кнопок сцен із синьою підсвіткою; 2,9\" чорно-білий E-ink екран",
+  "interfaces": "6 кнопок сцен, внутрішня кнопка скидання, світлодіодний індикатор, NFC, E-ink екран 128 × 296 пікселів",
+  "network": "LoRaWAN (OTAA/ABP, Class A), Milesight D2D, внутрішня антена",
+  "power": "2 × літієві батарейки CR2450",
+  "battery": "2 × CR2450, 590 мА·год",
+  "battery_life": "Понад 3 роки (інтервал 1080 хв + 20 натискань на день, 25°C)",
+  "ip": "IP30",
+  "temp": "-10°C ~ +50°C (E-ink екран: 0°C ~ 50°C)",
+  "config": "Мобільний застосунок через NFC або Downlink; кастомізація екрана",
+  "mounting": "Настільний, на 3M скотч, у монтажну коробку 86 типу",
+  "dimensions": "86 × 86 × 14 мм",
+  "weight": "90 г (з батареями)",
+  "frequencies": "CN470/RU864/IN865/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Програмований E-ink екран для гнучкого відображення сцен",
+   "До 6 сцен, Milesight D2D для керування без шлюзу з мінімальною затримкою",
+   "Монтаж без проводів, NFC-налаштування, робота від батарейок понад 3 роки"
+  ]
+ }
+}

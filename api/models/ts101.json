@@ -1,0 +1,38 @@
+{
+ "model": "TS101",
+ "name": "Зануреннєвий датчик температури",
+ "series": "Серія TS · температура",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-ts.html#m-ts101",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ts101.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ts101.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ts101.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ts101",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/how-to-configure-ts101-insertion-temperature-sensor-via-tool.mp4",
+ "specs": {
+  "purpose": "Моніторинг внутрішньої температури всередині тютюну, зерна, сіна, компосту та інших матеріалів на складах і фермах.",
+  "measures": [
+   "Температура (занурювальне вимірювання)"
+  ],
+  "range_accuracy": "-30…+70 °C; точність ±0,5 °C (тип.); роздільна здатність 0,1 °C",
+  "probe": "Цифровий датчик DS18B20; зонд з харчової нержавіючої сталі 316, стійкої до фосфіну, Ф7 × 400 мм",
+  "interfaces": "NFC для налаштування, кнопка живлення (внутрішня)",
+  "network": "LoRaWAN, OTAA/ABP, Class A, внутрішня антена",
+  "power": "Батарея 1 × ER18505 Li-SOCl2, замінна",
+  "battery": "4000 мА·год, замінна",
+  "battery_life": "До 10 років (SF7, EU868/US915, звіт щогодини, 25 °C); ~4,8 року (SF10, EU868); ~5,5 року (SF10, US915)",
+  "ip": "IP67; IK10 (трансивер)",
+  "temp": "-30…+70 °C; вологість 0–95 % (без конденсації)",
+  "config": "Мобільний застосунок через NFC; увімкнення/вимкнення через застосунок NFC або кнопку живлення",
+  "storage": "1200 записів; повторна передача та вилучення даних",
+  "mounting": "Занурювальний (вставний) монтаж",
+  "dimensions": "Трансивер: Ф92 × 92 × 26 мм; зонд: Ф7 × 400 мм",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Термін роботи від батареї до 10 років",
+   "Корпус IP67/IK10, стійкий до фосфіну, зонд з харчової нержавійки 316",
+   "Локальне зберігання 1200 записів з повторною передачею та сигналізацією різкої зміни температури"
+  ]
+ }
+}

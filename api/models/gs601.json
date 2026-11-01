@@ -1,0 +1,42 @@
+{
+ "model": "GS601",
+ "name": "Детектор вейпу",
+ "series": "Серія GS · запахи й вейп",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gs.html#m-gs601",
+ "markdown": "https://demo.arviom.com.ua/eng/models/gs601.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/gs601.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/gs601.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/gs601",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/gs601-product-intro-202410.mp4",
+ "specs": {
+  "purpose": "Виявляє події вейпінгу й куріння, подає місцеві світлову та звукову сигналізації та віддалено передає тривоги й дані про якість повітря через LoRaWAN.",
+  "measures": [
+   "Індекс вейпінгу",
+   "Дим",
+   "Температура",
+   "Вологість",
+   "TVOC",
+   "PM1.0/PM2.5/PM10",
+   "Вібрація (захист від саботажу)"
+  ],
+  "range_accuracy": "Температура: -20…60 °C, ±0,2 °C; вологість: 0…100 % RH, ±2 % RH; індекс вейпінгу: 0…100, ±10; TVOC: 0…2000 мкг/м³, 20 мкг/м³ ±15 % (1…500 мкг/м³); PM1.0/PM2.5: 0…1000 мкг/м³, ±10 мкг/м³ (до 100) / ±10 % (100…1000); PM10: ±25 мкг/м³ (до 100) / ±25 % (100…1000)",
+  "probe": "Вбудовані сенсори: температура/вологість — цифровий CMOSens® (MEMS); індекс вейпінгу та PM — лазерне розсіювання; TVOC — MOX (MEMS); вібродатчик",
+  "interfaces": "1 × USB Type-C (живлення), 1 × кнопка скидання (зовнішня), 1 × світлодіодний індикатор статусу/тривоги, 1 × зумер (70 дБ@1 м), NFC",
+  "network": "LoRaWAN®, OTAA/ABP, Class C, внутрішня антена",
+  "power": "5 В/1 А через Type-C або (опційно) PoE-спліттер",
+  "ip": "IP30",
+  "temp": "-5…45 °C (вологість 0…95 %, без конденсації)",
+  "config": "Мобільний застосунок через NFC або downlink; поріг тривоги, захист від саботажу, калібрування, FUOTA",
+  "mounting": "Стельовий",
+  "dimensions": "Ф 128 × 40 мм",
+  "weight": "178,6 г",
+  "frequencies": "RU864/IN865/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Комбінований сенсор: вейп, дим, TVOC, PM, температура, вологість",
+   "Захист від перешкод водяної пари й інших газів, вібродатчик проти саботажу",
+   "NFC-налаштування, FUOTA та інтеграція з Milesight Development Platform"
+  ]
+ }
+}

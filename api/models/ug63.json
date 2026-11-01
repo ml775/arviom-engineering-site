@@ -1,0 +1,33 @@
+{
+ "model": "UG63",
+ "name": "Міні LoRaWAN-шлюз",
+ "series": "LoRaWAN-шлюзи",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gateways.html#m-ug63",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ug63.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ug63.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ug63.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-gateway/ug63",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/milesight-ug63-mini-lorawan-gateway.mp4",
+ "specs": {
+  "purpose": "Компактний 8-канальний внутрішній LoRaWAN-шлюз на чипі SX1302 для автономних мереж у невеликих приміщеннях або для покриття «сліпих зон» разом із UG56/UG65/UG67.",
+  "probe": "Чип LoRa SX1302, чутливість -140 дБм @292 біт/с",
+  "interfaces": "1 × RJ45 WAN (10/100 Мбіт/с, ізоляція 1,5 кВ); 1 × USB 2.0 Type-C (живлення та консоль); 1 × зовнішня антена LoRa; 1 × антена 4G (опція); 1 × слот Micro SIM; 1 × кнопка Reset; світлодіоди SYSTEM, LTE",
+  "network": "LoRaWAN (8 напівдуплексних каналів, пристрої Class A/B/C); опційно 4G LTE Cat 1/GSM; Ethernet; Wi-Fi 2.4 ГГц (AP, лише для налаштування); резервування каналів зв'язку; Milesight, The Things Stack, ChirpStack, AWS IoT Core",
+  "power": "5 В/2 А через Type-C; 5–12 В через DC-кабель; PoE 802.3af через спліттер; споживання типово 1,3 Вт, макс. 3,1 Вт",
+  "ip": "IP30",
+  "temp": "-20…+50 °C (зберігання -40…+85 °C), вологість 0–95 % без конденсації",
+  "config": "Web, MQTT API, Milesight Development Platform, DeviceHub; оновлення через Web/платформу/DeviceHub; діагностика Ping; OpenVPN-клієнт",
+  "storage": "Flash 16 МБ, PSRAM 8 МБ",
+  "mounting": "Настільний, настінний або стельовий монтаж",
+  "dimensions": "Ф 115 × 21 мм (без антени)",
+  "weight": "140 г (без 4G), 158,2 г (з 4G)",
+  "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Чип SX1302: більше трафіку за меншого споживання",
+   "8 каналів, понад 2000 кінцевих вузлів",
+   "Компактний, 3 способи монтажу, Ethernet + 4G резервування"
+  ]
+ }
+}

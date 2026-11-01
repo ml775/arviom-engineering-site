@@ -1,0 +1,39 @@
+{
+ "model": "UC711 + WT401",
+ "name": "Комплект термостата PTAC",
+ "series": "Серія WT · термостати",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-wt.html#m-uc711-wt401",
+ "markdown": "https://demo.arviom.com.ua/eng/models/uc711-wt401.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/uc711-wt401.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/uc711-wt401.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ptac-thermostat-kit",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/uc711-datasheet-en.pdf",
+ "specs": {
+  "purpose": "Керування системами опалення, охолодження та вентиляції (теплові насоси, печі, PTAC) за температурою приміщення, за розкладом і віддалено через хмару або BMS.",
+  "measures": [
+   "Керує режимами Heat/Cool/Auto",
+   "Керує швидкістю вентилятора (Low, Medium, High, Auto, Circulate)",
+   "Температура приміщення (через термостат WT401 або зовнішній NTC-датчик)",
+   "Захист від замерзання, затримка вентилятора"
+  ],
+  "range_accuracy": "Діапазон встановлення температури 5…35 °C; точність вимірювання в даташиті не вказана",
+  "probe": "Зовнішній NTC-датчик (вхід, у розробці) або дані з термостата WT401 по Bluetooth",
+  "interfaces": "Клемні виходи RC, C, Y1, W1, O/B, GM, GL, GH (реле 24 В AC, типово 150 мА, макс. 1 А); 1 × NTC-вхід; 1 × DI (сухий контакт для карткових/магнітних перемикачів); 1 × USB Type-C (живлення і консоль); 2-pin PowerBus для WT401 (у розробці)",
+  "network": "LoRaWAN Class C (OTAA/ABP), Milesight D2D; Bluetooth 5.3 для зв'язку з WT401",
+  "power": "24 В AC (RC+C, типово 150 мА, макс. 1 А) або 5 В DC через Type-C; при з'єднанні з WT401 через PowerBus — лише 24 В AC",
+  "ip": "IP30",
+  "temp": "-20…60 °C; вологість 0…95 % (без конденсації)",
+  "config": "Мобільний застосунок через NFC або Bluetooth 5.3, Downlink; індикатори SYS/BLE/LoRa/NFC, кнопки Reboot/Reset і ручного спарювання",
+  "storage": "1000 записів локально з повторною передачею (у розробці); годинник RTC тримає час 72 год без живлення",
+  "mounting": "Настінний (гвинти) або на 3M-скотч",
+  "dimensions": "120 × 60 × 20,5 мм",
+  "frequencies": "IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Підтримка PTAC, кондиціонерів, печей і теплових насосів 24 В AC",
+   "8 режимів роботи, до 16 розкладів на режим (у розробці), інтеграція з готельними картками",
+   "Multicast, FUOTA, сумісність із Milesight Development Platform і D2D (у розробці)"
+  ]
+ }
+}

@@ -247,6 +247,21 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 0 28p
   .ucimg ul{left:16px;right:16px;top:16px}
 }
 
+
+/* AI access block */
+.ai{background:linear-gradient(120deg,#0a3f9a 0%,#0b5cd6 55%,#2b7cf2 100%);color:#fff}
+.ai-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.ai-lead{color:rgba(255,255,255,.9);margin-top:16px;max-width:52ch}
+.ai-l{list-style:none;margin-top:26px;display:grid;gap:14px}
+.ai-l li{border-left:2px solid rgba(255,255,255,.5);padding-left:16px}
+.ai-l b{display:block;font-weight:500;color:#fff}.ai-l span{color:rgba(255,255,255,.85);font-size:15px}.ai-l a{color:#fff;text-decoration:underline}
+.ai-b{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:28px}.ai-ln{color:#fff;font-weight:400}
+.ai-code{background:#0d1726;border-radius:10px;overflow:hidden;box-shadow:0 30px 60px rgba(0,10,40,.35)}
+.ai-bar{display:flex;gap:7px;align-items:center;padding:12px 16px;background:#121f33}.ai-bar i{width:10px;height:10px;border-radius:50%;background:#3a4a60}.ai-bar span{margin-left:10px;font-size:13px;color:#8fa3bd}
+.ai-code pre{margin:0;padding:22px 24px;font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#dbe6f5;white-space:pre-wrap}
+.ai-code .c{color:#6f84a0}.ai-code .k{color:#ffd27a}.ai-code .q{color:#fff}.ai-code .a{color:#7ee2a8}
+@media (max-width:900px){.ai-g{grid-template-columns:1fr;gap:32px}}
+
 /* readability: wider layout, regular weight for body text, darker grey, larger small text */
 :root{--muted:#545e6b}
 body{font-weight:400;font-size:17px}
@@ -257,6 +272,7 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 .pc b,.card h3,.vid h3{font-weight:500}
 .sxh nav a,nav.main a{font-weight:400}
 </style>
+<link rel="alternate" type="text/plain" title="Для ШІ-агентів" href="llms.txt">
 </head>
 <body>
 <header><div class="wrap bar">
@@ -363,6 +379,34 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
     </div>
   </section>
 
+  <!-- AI access -->
+  <section id="ai" class="ai">
+    <div class="wrap ai-g">
+      <div>
+        <div class="eyebrow" style="color:#9cc2ff">Для ШІ-асистентів</div>
+        <h2 class="h2" style="color:#fff">Підключіть свого ШІ-асистента<br>до наших даних</h2>
+        <p class="ai-lead">Claude, ChatGPT чи Codex самі знайдуть відповідь у базі знань, підберуть датчик і перевірять наявність і ціну на B2B-порталі. Без пошуку по PDF і листування з менеджером.</p>
+        <ul class="ai-l">
+          <li><b>MCP-сервер бази знань</b><span>даташити, інструкції, типові рішення й кейси — пошук за змістом</span></li>
+          <li><b>MCP-сервер B2B-порталу</b><span>наявність на складі, партнерські ціни, замовлення</span></li>
+          <li><b>Відкритий каталог для агентів</b><span>усі моделі й характеристики у форматах, зручних для ШІ: <a href="llms.txt">llms.txt</a> · <a href="api/catalog.json">catalog.json</a></span></li>
+        </ul>
+        <div class="ai-b"><a class="btn w" href="partner.html">Отримати ключі доступу</a><a class="ai-ln" href="llms.txt">Інструкція для агентів →</a></div>
+      </div>
+      <div class="ai-code rv"><div class="ai-bar"><i></i><i></i><i></i><span>Claude · підключення MCP</span></div>
+<pre><code><span class="c"># адреси й ключі — у кабінеті партнера</span>
+claude mcp add arviom-kb \
+  --transport http https://…/mcp/kb-<span class="k">ВАШ_КЛЮЧ</span>
+
+<span class="c"># далі просто питайте:</span>
+<span class="q">» Який датчик протічки підійде для
+  серверної і скільки їх є на складі?</span>
+
+<span class="a">✓ Знайдено в базі знань: WS303, EM300-SLD
+✓ Наявність і ціна: B2B-портал ARVIOM</span></code></pre></div>
+    </div>
+  </section>
+
   <!-- video -->
   <section id="video">
     <div class="wrap">
@@ -422,7 +466,7 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
       <div><h4>Ресурси</h4><ul><li><a href="#dev">Розробки</a></li><li><a href="#video">Відео</a></li><li><a href="learn.html">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
       <div><h4>Компанія</h4><ul><li><a href="#learn">Команда</a></li><li><a href="#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
     </div>
-    <div class="fb"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span></div>
+    <div class="fb"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні · <a href="llms.txt">Для ШІ-агентів</a></span></div>
   </div>
 </footer>
 

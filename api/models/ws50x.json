@@ -1,0 +1,42 @@
+{
+ "model": "WS50x",
+ "name": "Розумний настінний вимикач",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws50x",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws50x.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws50x.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws50x.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws50x",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/ws50x-lorawan-wall-switch-product-videography-202211.mp4",
+ "specs": {
+  "purpose": "Локальне та дистанційне керування освітленням і електроприладами з вимірюванням параметрів живлення, для приміщень (дім, офіс, готель, музей).",
+  "measures": [
+   "Керування навантаженням (реле): вмикання/вимикання",
+   "Напруга (В)",
+   "Струм (мА)",
+   "Коефіцієнт потужності (%)",
+   "Активна потужність (Вт)",
+   "Споживання електроенергії (кВт·год)"
+  ],
+  "range_accuracy": "Типово ±3%, максимум ±5% (можливо ±1% на замовлення)",
+  "probe": "Вбудований вимірювач електричних параметрів; реле високої надійності",
+  "interfaces": "Реле SPST, 1 або 2 клавіші (gang); NFC; світловий індикатор стану (льодяно-блакитний)",
+  "network": "LoRaWAN®, Class C (OTAA/ABP), Milesight D2D; внутрішня антена",
+  "power": "100~250 В AC, 50~60 Гц; 3-провідна схема (потрібен нульовий провід)",
+  "ip": "IP20",
+  "temp": "-20°C ~ 60°C; вологість 0%~95% (без конденсату)",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "Мобільний застосунок через NFC або Downlink",
+  "mounting": "Настінний, у стандартну монтажну коробку (86 мм або 118/120 мм)",
+  "dimensions": "Тип 86: 86 × 86 × 40 мм; тип 120: 118 × 72 × 46,9 мм",
+  "weight": "Тип 86: 94 г (1 клавіша), 103 г (2 клавіші); тип 120: 100,4 г",
+  "frequencies": "CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Пряма заміна звичайних вимикачів, 86 та 120 типорозмір",
+   "Вимірювання струму, напруги, потужності та споживання із захистом від перевантаження",
+   "Керування без шлюзу (Milesight D2D), мультикаст, налаштування через NFC"
+  ]
+ }
+}

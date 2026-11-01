@@ -2,7 +2,7 @@
 """Генерує сторінки серій s-<серія>.html з шаблону build/series_tpl.html.
 Дані: content/catalog/sensor_series.json, iot_catalog.json (склад серій, фото),
 content/catalog/specs.json (характеристики з даташитів), data.js (серія EM300)."""
-import json, os, re, sys
+import json, os, re, sys, html
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'build'))
 from uk import UK
@@ -53,6 +53,8 @@ def page(key, S, models, cases=None):
     act['__A_GW__' if key == 'gateways' else '__A_CTL__' if key == 'controllers' else '__A_SENS__'] = ' aria-current="page"'
     for k, v in act.items(): tpl = tpl.replace(k, v)
     out = tpl.replace('__TITLE__', S['title']).replace('__DATA__', data, 1)
+    sr = '<nav class="agent-list" aria-label="Моделі серії (текстові версії)" style="position:absolute;left:-9999px">' + ''.join('<a href="models/%s.md">%s — %s</a> ' % (slug(x['model']), html.escape(x['model']), html.escape(x['name_uk'])) for x in models) + '</nav>'
+    out = out.replace('<footer', sr + '\n<footer', 1)
     open(os.path.join(ROOT, FILE[key]), 'w').write(out)
     return FILE[key], sum(m['specs'] for m in models), len(models)
 

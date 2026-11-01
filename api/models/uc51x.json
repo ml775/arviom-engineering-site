@@ -1,0 +1,40 @@
+{
+ "model": "UC51x",
+ "name": "Контролер електромагнітних клапанів",
+ "series": "LoRaWAN-контролери",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-controllers.html#m-uc51x",
+ "markdown": "https://demo.arviom.com.ua/eng/models/uc51x.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/uc51x.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/uc51x.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/iot-controller/uc51x",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/uc51x-lorawan-solenoid-valve-controller-202211.mp4",
+ "specs": {
+  "purpose": "Дистанційне та локальне керування двома DC-соленоїдами бістабільних клапанів (поливу, зрошення) з моніторингом стану клапана чи витрати через два дискретні входи.",
+  "measures": [
+   "Керування (відкрити/закрити) 2 соленоїдами",
+   "2 цифрові входи (GPIO) для контролю витрати (лічильник імпульсів) або стану клапана"
+  ],
+  "range_accuracy": "Точність не вказана; логічні рівні входів: низький 0~0,8 В, високий 2,5~3,3 В; частота вхідних сигналів ≤ 4000 Гц",
+  "probe": "Вбудованих сенсорів немає; підключення DC 12 В 2-провідних бістабільних (latching) соленоїдів; входи в режимі Digital Input / Pulse Counter",
+  "interfaces": "2 × соленоїдні виходи (M12 A-coded male, кабель 1,5 м); 2 × цифрові входи (макс. 20 мА); 1 × Type-C (внутрішній, консоль); кнопка живлення/скидання та LED (внутрішні); для EA-версії — M12 роз'єм живлення",
+  "network": "UC511: LoRaWAN® (OTAA/ABP, Class A/B/C, Class C to B) та Milesight D2D; UC512: LoRaWAN® (OTAA/ABP, Class A/B)",
+  "power": "UC511: вбудована сонячна панель (6 В, 1,7 Вт) + 2 акумулятори; UC512: 3 змінні літієві батареї; EA-версія UC511 додатково DC 5–24 В через роз'єм живлення",
+  "battery": "UC511: 2 × 2550 мАг ICR18650 (акумуляторні); UC512: 3 × 9000 мАг ER26500 Li-SOCl2 (змінні)",
+  "battery_life": "UC511 (повний заряд, без підзарядки): Class A ≈ 8,4 р. (SF7) / ≈ 3,3 р. (SF10), Class B ≈ 1,1 р., Class C ≈ 26 днів; UC512: Class A > 10 р., Class B ≈ 6,2 р. (SF7) / ≈ 5,8 р. (SF10) (інтервал 20 хв + 4 керування клапаном на добу, 25°C)",
+  "ip": "IP68 (1 м під водою, 7 діб)",
+  "temp": "UC511: -20…60°C; UC512: -30…70°C; вологість 0–95% (без конденсату)",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "Мобільний застосунок через NFC; керування також через Milesight IoT Cloud / Development Platform; увімкнення/вимкнення через застосунок NFC, внутрішню кнопку або кабельне з'єднання",
+  "mounting": "На стіну або на трубу/стовп",
+  "dimensions": "116 × 116 × 45,5 мм (без роз'ємів)",
+  "weight": "UC511: 425 г (IA) / 467 г (EA); UC512: 479 г (IA) / 521 г (EA) — з батареями",
+  "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Сонячна панель і акумулятори (UC511) або батареї до 10+ років (UC512)",
+   "Корпус IP68 з роз'ємами M12, FUOTA, мультикаст і локальні правила без мережі",
+   "Дальність до 15 км та D2D-керування без шлюзу (UC511)"
+  ]
+ }
+}

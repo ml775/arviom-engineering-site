@@ -208,6 +208,7 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 .pc b,.card h3,.vid h3{font-weight:500}
 .sxh nav a,nav.main a{font-weight:400}
 </style>
+<link rel="alternate" type="text/plain" title="Для ШІ-агентів" href="llms.txt">
 </head>
 <body>
 <header class="sxh"><div class="in">
@@ -321,6 +322,7 @@ function product(id){
 function route(){const h=location.hash.slice(1); if(h==="compare")compare(); else if(h.startsWith("m-"))product(h.slice(2)); else series()}
 window.addEventListener("hashchange",route); route();
 </script>
+<nav class="agent-list" aria-label="Моделі серії (текстові версії)" style="position:absolute;left:-9999px"><a href="models/vs121.md">VS121 — ШІ-датчик зайнятості робочих місць</a> <a href="models/vs125-series.md">VS125 Series — ШІ-лічильник людей зі стереозором</a> <a href="models/vs126.md">VS126 — ШІ-лічильник людей для високих стель</a> <a href="models/vs133.md">VS133 — ToF-лічильник людей зі ШІ</a> <a href="models/vs135.md">VS135 — ToF-лічильник людей</a> <a href="models/vs330.md">VS330 — Датчик зайнятості санвузла</a> <a href="models/vs340-vs341.md">VS340/VS341 — Датчик зайнятості столу й місця</a> <a href="models/vs350.md">VS350 — Лічильник людей у проході</a> <a href="models/vs351.md">VS351 — Міні-лічильник людей (термопара, ШІ)</a> <a href="models/vs360.md">VS360 — ІЧ-лічильник людей на промінь</a> <a href="models/vs373.md">VS373 — Радарний датчик падіння</a> <a href="models/vs370.md">VS370 — Радарний датчик присутності</a> </nav>
 <footer class="sxf"><div class="in">
   <div class="g">
     <div><div class="tg"><b style="font-weight:500;letter-spacing:.06em">ARVIOM</b><i></i>Engineering</div><p style="margin-top:14px;max-width:30ch">Бездротова автоматизація об'єктів. Напрям IoT компанії ARVIOM.</p></div>
@@ -329,7 +331,7 @@ window.addEventListener("hashchange",route); route();
     <div><h4>Ресурси</h4><ul><li><a href="./#dev">Розробки</a></li><li><a href="./#video">Відео</a></li><li><a href="learn.html">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
     <div><h4>Компанія</h4><ul><li><a href="./#learn">Команда</a></li><li><a href="./#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
   </div>
-  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span></div>
+  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні · <a href="llms.txt">Для ШІ-агентів</a></span></div>
 </div></footer>
 </body>
 </html>

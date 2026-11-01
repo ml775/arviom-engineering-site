@@ -1,0 +1,42 @@
+{
+ "model": "VS351",
+ "name": "Міні-лічильник людей (термопара, ШІ)",
+ "series": "Присутність і підрахунок людей",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-people.html#m-vs351",
+ "markdown": "https://demo.arviom.com.ua/eng/models/vs351.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/vs351.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/vs351.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/vs351",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/vs351-datasheet-en.pdf",
+ "video": "https://demo.arviom.com.ua/eng/video/vs351-product-introduction-202408.mp4",
+ "specs": {
+  "purpose": "Компактний двонапрямний лічильник людей для входів і виходів приміщень (переговорні, офіси) для аналізу відвідуваності та керування простором.",
+  "measures": [
+   "Кількість людей (двонапрямний підрахунок вхід/вихід)",
+   "Температура навколишнього середовища та робоча температура пристрою",
+   "Керування іншими пристроями Milesight через D2D"
+  ],
+  "range_accuracy": "Точність підрахунку 80–90%; температура: -30°C…70°C, ±2°C; висота монтажу 2–3 м, ширина зони виявлення до 3,6 м (при 3 м)",
+  "probe": "Термопіл (thermopile) + радар (лише версія на батареях); без камери, повна анонімність, GDPR",
+  "interfaces": "Порт Type-C (живлення 5V/1A), 1 × внутрішня кнопка скидання, NFC для налаштування",
+  "network": "LoRaWAN® Class A (OTAA/ABP), Milesight D2D, внутрішня антена",
+  "power": "5V/1A через Type-C (обидві версії)",
+  "battery": "4 × ER26500 Li-SOCl2 9000 мА·год, замінні (лише версія на батареях)",
+  "battery_life": "Приблизно 1,6–1,7 року (SF7/SF10, інтервал 30 хв, 25°C, 1000 осіб/день)",
+  "ip": "IP30",
+  "temp": "-20°C…60°C; вологість 0–95% (без конденсату)",
+  "config": "NFC через мобільний застосунок, Downlink",
+  "storage": "1000 записів у пам'яті, повторна передача та вибірка даних",
+  "mounting": "На стелю, на перемичку (над дверним прорізом); кут датчика 0°–90°",
+  "dimensions": "Type-C: 70 × 68 × 32 мм; на батареях: 188 × 68 × 32 мм",
+  "weight": "Type-C: 72,3 г; на батареях: 383 г",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Точність 80–90% без зйомки зображень (GDPR, анонімно)",
+   "Версії Type-C (дротова) та на батареях (до 1,6 року автономності)",
+   "D2D-керування без шлюзу, NFC-налаштування, збереження й повторна передача даних"
+  ]
+ }
+}

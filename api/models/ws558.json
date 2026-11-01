@@ -1,0 +1,40 @@
+{
+ "model": "WS558",
+ "name": "Контролер освітлення",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws558",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws558.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws558.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws558.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws558",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/ws558-smart-light-controller-202210.mp4",
+ "specs": {
+  "purpose": "Локальне та дистанційне керування й моніторинг освітлення (а також вентиляторів, обігрівачів, обладнання) в приміщеннях без перепрокладання проводки.",
+  "measures": [
+   "Керування до 8 контурів освітлення",
+   "Напруга (VAC)",
+   "Струм (мА)",
+   "Коефіцієнт потужності (%)",
+   "Потужність (Вт)",
+   "Споживання електроенергії (кВт·год)"
+  ],
+  "range_accuracy": "Вимірювання лише для WS558-LN; точність у даташиті не вказана. Навантаження: до 5 А (ємнісне/індуктивне) та до 10 А (резистивне) на вихід, загалом 16 А.",
+  "interfaces": "WS558-LN: 8 активних виходів; WS558-Switch: 8 пасивних перемикачів; 1 × Type-C (налаштування та консоль); NFC; 8 кнопок перемикання + кнопка скидання; індикатори: 1 живлення + 8 стану",
+  "network": "LoRaWAN® Class C (OTAA/ABP), Milesight D2D (без шлюзу), внутрішня антена; сумісний із Milesight IoT Cloud",
+  "power": "100~240 VAC, 50~60 Гц",
+  "temp": "-20…+60 °C; вологість ≤ 95% (без конденсації)",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "NFC, USB Type-C або через downlink; керування локальною кнопкою чи віддалено",
+  "mounting": "На стіну або на DIN-рейку",
+  "dimensions": "145 × 90 × 40 мм",
+  "weight": "274 г (LN) / 261,3 г (Switch)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "2 типи (LN / Switch), до 8 контурів без перемонтажу проводки",
+   "Вимірювання струму, напруги, потужності та споживання (LN)",
+   "D2D, multicast і NFC-налаштування; зв'язок до 15 км"
+  ]
+ }
+}

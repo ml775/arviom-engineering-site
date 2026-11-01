@@ -1,0 +1,40 @@
+{
+ "model": "EM500-SWL",
+ "name": "Заглибний датчик рівня води",
+ "series": "Серія EM500 · промислові",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-em500.html#m-em500-swl",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em500-swl.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em500-swl.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em500-swl.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em500-swl",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/milesight-em500-swl-lorawan-submersible-water-level-sensor-2.mp4",
+ "specs": {
+  "purpose": "Вимірювання рівня рідини в складних умовах і передача даних по LoRaWAN, зокрема для моніторингу резервуарів і річок.",
+  "measures": [
+   "Рівень рідини (вода, за потреби інші рідини)"
+  ],
+  "range_accuracy": "0–3/5/10 м (до 200 м під замовлення); ±0,5% FS; роздільність 0,01 м; стабільність ≤±0,3% FS/рік",
+  "probe": "Занурювальний зонд із нержавійки 304, вентильований датчик надлишкового тиску (vented gauge), IP68, 130 × ø27 мм",
+  "interfaces": "Внутрішні: USB Type-C (налаштування/консоль), кнопка живлення/скидання, світлодіодний індикатор, NFC",
+  "network": "LoRaWAN, OTAA/ABP, Class A, внутрішня антена",
+  "power": "Батарея Li-SOCl2",
+  "battery": "1 × 19000 мА·год (ER34615), змінна",
+  "battery_life": "До 10 років (SF7/SF10 EU868; SF7 US915); близько 9 років (SF10 US915) при інтервалі 10 хв, 25°C",
+  "ip": "Трансівер IP67, зонд IP68",
+  "temp": "Трансівер: -30…70°C; зонд: -20…70°C; вологість 0–100% (без конденсату)",
+  "range_lora": "До 10 км прямої видимості",
+  "config": "Мобільний додаток (NFC), ПЗ для ПК (USB Type-C), даунлінк",
+  "storage": "1000 записів, повторна передача та вибірка даних",
+  "mounting": "На стовп, стіну або DIN-рейку",
+  "dimensions": "Трансівер: 105,4 × 71 × 69,5 мм; зонд: 130 × ø27 мм; кабель на 1–1,5 м довший за діапазон вимірювання",
+  "weight": "Трансівер 328 г (з батареєю та кронштейном); зонд залежить від довжини кабелю",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Корозійностійкий зонд із нержавійки, IP68",
+   "До 10 років роботи від змінної батареї 19000 мА·год",
+   "Дальність до 10 км, NFC-налаштування, локальне зберігання з повторною передачею"
+  ]
+ }
+}

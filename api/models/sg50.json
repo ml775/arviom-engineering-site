@@ -1,0 +1,36 @@
+{
+ "model": "SG50",
+ "name": "Сонячний LoRaWAN-шлюз з наднизьким споживанням",
+ "series": "LoRaWAN-шлюзи",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gateways.html#m-sg50",
+ "markdown": "https://demo.arviom.com.ua/eng/models/sg50.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/sg50.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/sg50.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-gateway/sg50",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/introducing-sg50-ultra-low-power-solar-lorawan-gateway-20231.mp4",
+ "specs": {
+  "purpose": "Автономний зовнішній LoRaWAN-шлюз з вбудованими акумуляторами та сонячною панеллю для об'єктів без доступу до електромережі (нафта і газ, гірництво, лісівництво, віддалені об'єкти).",
+  "range_accuracy": "Чутливість -140 дБм @292 біт/с; потужність передавача до 27 дБм",
+  "probe": "Чип SX1302, 8 каналів (напівдуплекс), GPS-модуль, 4G LTE Cat 1/GSM",
+  "interfaces": "1 × N-female (LoRa-антена 50 Ом); 1 × SIM-слот (Nano SIM); 1 × USB 2.0 Type-C (живлення і консоль); 1 × роз'єм живлення M12 A-coded; 1 × кнопка Reset/Wi-Fi; LED: SYSTEM, LTE, Wi-Fi; зовнішні антени Wi-Fi та LTE/GPS",
+  "network": "LoRaWAN Class A/B/C, ~2000 пристроїв; 4G LTE Cat 1/GSM; Wi-Fi 2.4 ГГц 802.11b/g/n (AP-режим, лише для налаштування); GPS; вбудований Network Server (до 100 пристроїв), MQTT; OpenVPN-клієнт",
+  "power": "Сонячна панель або DC 12–24 В через M12; USB Type-C 5 В/2 А; резервні акумулятори; типове споживання 0,8 Вт",
+  "battery": "Акумулятори 18650, 3,6 В, 25000 мА·год (заряджаються лише через M12)",
+  "battery_life": "До 4 днів без сонячного світла (100 вузлів, інтервал звітів 10 хв)",
+  "ip": "IP67",
+  "temp": "Робоча: -30…+70 °C; заряджання: -20…+50 °C; зберігання: -40…+85 °C",
+  "config": "Web, MQTT API, Milesight Development Platform, DeviceHub",
+  "storage": "Flash 16 МБ, PSRAM 8 МБ",
+  "mounting": "На стіну або на щоглу/трубу",
+  "dimensions": "250 × 157,5 × 46 мм",
+  "weight": "1,275 кг без акумуляторів; 1,755 кг з акумуляторами",
+  "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Повна автономність: вбудовані акумулятори й сонячна панель, до 4 днів без сонця",
+   "IP67, алюмінієвий корпус, робота при -30…+70 °C",
+   "8 каналів, до ~2000 вузлів, 4G-бекхол, вбудований NS та MQTT"
+  ]
+ }
+}

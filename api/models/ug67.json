@@ -1,0 +1,36 @@
+{
+ "model": "UG67",
+ "name": "Вуличний LoRaWAN-шлюз",
+ "series": "LoRaWAN-шлюзи",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-gateways.html#m-ug67",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ug67.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ug67.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ug67.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-gateway/ug67",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/ug67-lorawan-gateway-202203.mp4",
+ "specs": {
+  "purpose": "Міцний зовнішній LoRaWAN-шлюз для підключення понад 2000 вузлів у «розумному» сільському господарстві, обліку та інших зовнішніх застосуваннях.",
+  "range_accuracy": "Видимість до 15 км; чутливість −140 дБм @292 біт/с; потужність Tx до 27 дБм; точність позиціонування GNSS 2,5 м CEP",
+  "probe": "LoRa-чип SX1302, 4-ядерний процесор ARM Cortex-A53 1,5 ГГц (512 МБ DDR4, 8 ГБ eMMC)",
+  "interfaces": "1 × RJ45 WAN 10/100/1000 (PoE PD); 2 × N-female для LoRa; 1 × слот mini SIM; USB Type-C (консоль); роз'єм живлення M12 A-coded; кнопка RST; LED SYS/LoRa/LTE; внутрішні антени Wi-Fi, 4G, GNSS",
+  "network": "LoRaWAN V1.0/V1.0.2 Class A/B/C, 8 каналів (напів-/повний дуплекс); 4G LTE; Ethernet; Wi-Fi 2,4 ГГц (AP/Client); резервування WAN; VPN (IPsec, OpenVPN, L2TP, PPTP, GRE, DMVPN, WireGuard)",
+  "power": "802.3af PoE або 6–12 В DC через M12; споживання типово 3,6 Вт, макс. 4,8 Вт",
+  "battery": "Немає (конденсатор для відправлення сигналу тривоги при відключенні живлення)",
+  "ip": "IP67",
+  "temp": "−40…+70 °C (зниження якості 4G вище 60 °C); зберігання −40…+85 °C",
+  "range_lora": "До 15 км (пряма видимість)",
+  "config": "Web, CLI (SSH/Telnet), SMS, SNMP, HTTP API, MQTT API, DeviceHub, Milesight Development Platform; Python SDK, Node-RED",
+  "storage": "8 ГБ eMMC; ретрансляція даних після відновлення мережі",
+  "mounting": "На стіну або на трубу/щоглу",
+  "dimensions": "240 × 164 × 90,9 мм",
+  "weight": "1463 г",
+  "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "8 каналів, SX1302, понад 2000 вузлів",
+   "IP67, діапазон −40…+70 °C, дальність до 15 км",
+   "Резервування Ethernet/4G/Wi-Fi і вбудований мережевий сервер (MQTT, HTTP, BACnet, Modbus)"
+  ]
+ }
+}

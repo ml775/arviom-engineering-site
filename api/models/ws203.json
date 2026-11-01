@@ -1,0 +1,41 @@
+{
+ "model": "WS203",
+ "name": "Датчик руху, температури й вологості",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws203",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws203.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws203.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws203.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws203",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/ws203-motion-th-sensor-202312.mp4",
+ "specs": {
+  "purpose": "Виявлення руху/присутності та моніторинг температури й вологості в приміщеннях (розумні офіси, будівлі, лікарні) з передачею даних по LoRaWAN.",
+  "measures": [
+   "Рух/присутність (PIR)",
+   "Температура",
+   "Вологість"
+  ],
+  "range_accuracy": "PIR: до 6 м, 120° гор. / 100° верт.; температура: -20…60 °C, ±0.3 °C (-20…0 °C), ±0.2 °C (0…60 °C), роздільність 0.1 °C; вологість: 0–100 % RH, ±2 % RH (25 °C), роздільність 0.5 % RH",
+  "probe": "Пасивний інфрачервоний (PIR) сенсор з лінзою Френеля; вбудований високоточний датчик температури/вологості; змінні PIR-кришки для різних кутів і зон виявлення",
+  "interfaces": "Внутрішня кнопка живлення/скидання, світлодіодний індикатор статусу, NFC",
+  "network": "LoRaWAN (OTAA/ABP, Class A), Milesight D2D; внутрішня антена",
+  "power": "Батарея 1 × ER18505 Li-SOCl2",
+  "battery": "4000 мА·год, ER18505 Li-SOCl2",
+  "battery_life": "Близько 10,7 року (SF7, EU868), 5,4 року (SF10, EU868), 10,8 року (SF7, US915), 5,2 року (SF10, US915); звіт кожні 30 хв, 64 тригери/добу, LED вимкнено, 25 °C",
+  "ip": "IP30",
+  "temp": "-20…+60 °C; вологість 0–95 % (без конденсату)",
+  "config": "Мобільний застосунок через NFC або downlink",
+  "storage": "1000 записів локально, з можливістю повторної передачі даних",
+  "mounting": "На 3M-скотч або настінне кріплення гвинтами",
+  "dimensions": "73 × 73 × 26 мм (без PIR-кришки)",
+  "weight": "89,6 г (з батареєю)",
+  "frequencies": "CN470, IN865, EU868, RU864, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Комбінація PIR і датчика T/H з тригерами між сенсорами",
+   "Корпус із вогнетривкого матеріалу UL94 V0, змінні PIR-кришки",
+   "NFC-налаштування, зберігання 1000 записів і D2D без шлюзу"
+  ]
+ }
+}

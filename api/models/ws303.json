@@ -1,0 +1,41 @@
+{
+ "model": "WS303",
+ "name": "Міні-датчик протічки",
+ "series": "Серія CoWork · офіс",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-cowork.html#m-ws303",
+ "markdown": "https://demo.arviom.com.ua/eng/models/ws303.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/ws303.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/ws303.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/ws303",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/smart-water-leak-detection-solution-using-ws303-mini-leak-de.mp4",
+ "specs": {
+  "purpose": "Виявлення витоків води та передача сигналу тривоги через LoRaWAN, з локальним сповіщенням зумером.",
+  "measures": [
+   "Наявність витоку електропровідної рідини"
+  ],
+  "range_accuracy": "Спрацьовує, коли рівень рідини сягає 0,5 мм",
+  "probe": "Невеликий водяний зонд для електропровідних рідин",
+  "interfaces": [
+   "Вбудований зумер",
+   "NFC для налаштування"
+  ],
+  "network": "LoRaWAN®, режими OTAA/ABP, Class A; Milesight D2D; внутрішня антена",
+  "power": "1 × літієва батарея CR2450 590 мА·год (безпровідне живлення)",
+  "battery": "CR2450, 590 мА·год, літієва, замінна",
+  "battery_life": "Близько 5,7 року (одна година витоку на тиждень, 25 °C); до 5 років за описом",
+  "ip": "IP67",
+  "temp": "-10…+60 °C; вологість 0–100 % (без конденсату)",
+  "config": "Мобільний застосунок через NFC або Downlink",
+  "mounting": "Кріплення на 3M-скотч, настільне розміщення",
+  "dimensions": "63 × 63 × 14 мм",
+  "weight": "36,4 г з батареєю; 29,8 г без батареї",
+  "frequencies": "CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "До 5 років роботи від замінної батареї без проводів",
+   "IP67 і вбудований зумер для миттєвого локального сповіщення",
+   "Milesight D2D для прямого керування без шлюзів та налаштування через NFC"
+  ]
+ }
+}

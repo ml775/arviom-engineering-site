@@ -1,0 +1,42 @@
+{
+ "model": "UC300",
+ "name": "IoT-контролер LoRaWAN і 4G",
+ "series": "LoRaWAN-контролери",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-controllers.html#m-uc300",
+ "markdown": "https://demo.arviom.com.ua/eng/models/uc300.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/uc300.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/uc300.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/iot-controller/uc300",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/uc300-iot-controller-202211.mp4",
+ "specs": {
+  "purpose": "Дистанційне керування та збір даних із різних пристроїв через LoRaWAN® або 3/4G, з автономною роботою тригерів навіть без мережі.",
+  "measures": [
+   "4 цифрові входи (DI): сигнал або лічильник імпульсів",
+   "2 аналогові входи 4~20 мА",
+   "2 аналогові входи 0~10 В",
+   "2 входи PT100 RTD (температура)",
+   "2 релейні виходи (DO)",
+   "до 32 Modbus-пристроїв (читання 32 регістрів)"
+  ],
+  "range_accuracy": "PT100: -200°C ~ 800°C; точність AI: 4~20 мА ±5%, 0~10 В ±1%; роздільна здатність 12 біт",
+  "probe": "PT100 RTD (2- або 3-провідне підключення); зовнішні датчики через AI/DI/RS232/RS485",
+  "interfaces": "4 × DI (3-24 В DC, оптоізоляція, ≤ 4000 Гц), 2 × DO (реле SPDT, макс. 3 А @ 30 В DC / 250 В AC), 2 × AI 4~20 мА, 2 × AI 0~10 В, 2 × PT100, 1 × RS232, 1 × RS485 (1200~115200 бод), USB Type-C, 3.5 мм клемні колодки",
+  "network": "UC300-470M/868M/915M: LoRaWAN® (OTAA/ABP, клас C), Milesight D2D; UC300-L0xx: 4G LTE (CAT 1)/WCDMA/GSM (залежно від регіону), TCP/UDP/MQTT/AWS/Milesight IoT Cloud/SMS",
+  "power": "5-24 В DC через клемну колодку або 5 В через USB Type-C; захист від перенапруги та зворотної полярності",
+  "ip": "IP30",
+  "temp": "-20°C ~ 60°C (вологість 0~95%, без конденсату)",
+  "config": "USB Type-C або Downlink; Milesight IoT Cloud (веб/мобільний застосунок)",
+  "storage": "Збереження даних, відновлення та повторна передача даних (для LoRaWAN-версії)",
+  "mounting": "Настільний, настінний, на DIN-рейку",
+  "dimensions": "93 × 70 × 22 мм (без антенного роз'єму)",
+  "weight": "142,3 г (LoRaWAN) / 186 г (4G)",
+  "frequencies": "CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4",
+  "highlights": [
+   "Багато інтерфейсів: DI/DO, AI, PT100, RS232/RS485 з Modbus",
+   "Автономні тригери та дії (IF-THEN) навіть без мережі",
+   "Промисловий металевий корпус, -20°C ~ 60°C, вбудований watchdog"
+  ]
+ }
+}

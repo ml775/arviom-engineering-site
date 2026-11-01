@@ -1,0 +1,43 @@
+{
+ "model": "EM500-CO2",
+ "name": "Вуличний датчик CO₂",
+ "series": "Серія EM500 · промислові",
+ "vendor": "Milesight",
+ "page": "https://demo.arviom.com.ua/eng/s-em500.html#m-em500-co2",
+ "markdown": "https://demo.arviom.com.ua/eng/models/em500-co2.md",
+ "json": "https://demo.arviom.com.ua/eng/api/models/em500-co2.json",
+ "image": "https://demo.arviom.com.ua/eng/img/hd/em500-co2.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/em500-co2",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "video": "https://demo.arviom.com.ua/eng/video/em500-environment-monitoring-sensors-202403.mp4",
+ "specs": {
+  "purpose": "Вимірювання CO2, температури, вологості та атмосферного тиску в складних умовах із передачею даних через LoRaWAN.",
+  "measures": [
+   "CO2",
+   "температура",
+   "вологість",
+   "атмосферний тиск"
+  ],
+  "range_accuracy": "CO2: 400–5000 ppm, ±(30 ppm + 3 % показання); температура: −30…+70 °C, ±0,3 °C (0…+70 °C), ±0,6 °C (−30…0 °C); вологість: 0–100 % RH, ±3 % (10–90 % RH), ±5 % (поза цим діапазоном); тиск: 300–1100 hPa, ±1 hPa",
+  "probe": "CO2 — NDIR; температура, вологість і тиск — MEMS",
+  "interfaces": "USB Type-C (внутрішній, для налаштування та консолі); кнопка живлення/скидання; світлодіодний індикатор; NFC",
+  "network": "LoRaWAN, OTAA/ABP, клас A",
+  "power": "Батарея 1 × ER34615 Li-SOCL2",
+  "battery": "19000 мА·год, замінна",
+  "battery_life": "До 10 років (інтервал 10 хв, 25 °C)",
+  "ip": "IP65",
+  "temp": "−30…+70 °C; вологість 0–95 % (без конденсації)",
+  "range_lora": "До 10 км (пряма видимість)",
+  "config": "Мобільний застосунок (NFC), ПЗ для ПК (USB Type-C), Downlink",
+  "storage": "1000 записів, повторна передача та вигрузка даних",
+  "mounting": "На стовп, стіну або DIN-рейку",
+  "dimensions": "147,9 × 71 × 69,5 мм",
+  "weight": "434,7 г (з батареєю та кронштейном)",
+  "frequencies": "CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4",
+  "highlights": [
+   "Чотири датчики в одному пристрої (CO2, температура, вологість, тиск)",
+   "До 10 років роботи від замінної батареї 19000 мА·год",
+   "IP65 та дальність зв'язку до 10 км, налаштування через NFC"
+  ]
+ }
+}

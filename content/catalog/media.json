@@ -344,7 +344,13 @@
    "img/hd/ws101-g2.webp",
    "img/hd/ws101-g3.webp",
    "img/hd/ws101-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/cowork-smart-office-solution-202211.mp4",
+   "poster": "video/cowork-smart-office-solution-202211.jpg",
+   "title": "CoWork Smart Office Solution 202211",
+   "dur": 212
+  }
  },
  "WS156": {
   "gallery": [
@@ -352,7 +358,13 @@
    "img/hd/ws156-g2.webp",
    "img/hd/ws156-g3.webp",
    "img/hd/ws156-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ws156-lorawan-smart-scene-panel-202312.mp4",
+   "poster": "video/ws156-lorawan-smart-scene-panel-202312.jpg",
+   "title": "WS156 LoRaWAN Smart Scene Panel 202312",
+   "dur": 56
+  }
  },
  "WS201": {
   "gallery": [
@@ -361,7 +373,13 @@
    "img/hd/ws201-g3.webp",
    "img/hd/ws201-g4.webp",
    "img/hd/ws201-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/milesight-ws201-smart-fill-level-monitoring-sensor-202305.mp4",
+   "poster": "video/milesight-ws201-smart-fill-level-monitoring-sensor-202305.jpg",
+   "title": "Milesight WS201 Smart Fill Level Monitoring Sensor 202305",
+   "dur": 49
+  }
  },
  "WS202": {
   "gallery": [
@@ -370,7 +388,13 @@
    "img/hd/ws202-g3.webp",
    "img/hd/ws202-g4.webp",
    "img/hd/ws202-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/cowork-smart-office-solution-202211.mp4",
+   "poster": "video/cowork-smart-office-solution-202211.jpg",
+   "title": "CoWork Smart Office Solution 202211",
+   "dur": 212
+  }
  },
  "WS203": {
   "gallery": [
@@ -378,7 +402,13 @@
    "img/hd/ws203-g2.webp",
    "img/hd/ws203-g3.webp",
    "img/hd/ws203-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ws203-motion-th-sensor-202312.mp4",
+   "poster": "video/ws203-motion-th-sensor-202312.jpg",
+   "title": "WS203 Motion TH Sensor 202312",
+   "dur": 55
+  }
  },
  "WS301": {
   "gallery": [
@@ -386,7 +416,13 @@
    "img/hd/ws301-g2.webp",
    "img/hd/ws301-g3.webp",
    "img/hd/ws301-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/cowork-smart-office-solution-202211.mp4",
+   "poster": "video/cowork-smart-office-solution-202211.jpg",
+   "title": "CoWork Smart Office Solution 202211",
+   "dur": 212
+  }
  },
  "WS302": {
   "gallery": [
@@ -395,7 +431,13 @@
    "img/hd/ws302-g3.webp",
    "img/hd/ws302-g4.webp",
    "img/hd/ws302-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ws302-sound-level-sensor-202211.mp4",
+   "poster": "video/ws302-sound-level-sensor-202211.jpg",
+   "title": "WS302 Sound Level Sensor 202211",
+   "dur": 88
+  }
  },
  "WS303": {
   "gallery": [
@@ -403,7 +445,13 @@
    "img/hd/ws303-g2.webp",
    "img/hd/ws303-g3.webp",
    "img/hd/ws303-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/smart-water-leak-detection-solution-using-ws303-mini-leak-de.mp4",
+   "poster": "video/smart-water-leak-detection-solution-using-ws303-mini-leak-de.jpg",
+   "title": "Smart Water Leak Detection Solution Using WS303 Mini Leak Detection Sensor 202304",
+   "dur": 113
+  }
  },
  "WS50x": {
   "gallery": [
@@ -412,7 +460,13 @@
    "img/hd/ws50x-g3.webp",
    "img/hd/ws50x-g4.webp",
    "img/hd/ws50x-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ws50x-lorawan-wall-switch-product-videography-202211.mp4",
+   "poster": "video/ws50x-lorawan-wall-switch-product-videography-202211.jpg",
+   "title": "WS50x LoRaWAN Wall Switch Product Videography 202211",
+   "dur": 56
+  }
  },
  "WS51x": {
   "gallery": [
@@ -421,7 +475,13 @@
    "img/hd/ws51x-g3.webp",
    "img/hd/ws51x-g4.webp",
    "img/hd/ws51x-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/cowork-smart-office-solution-202211.mp4",
+   "poster": "video/cowork-smart-office-solution-202211.jpg",
+   "title": "CoWork Smart Office Solution 202211",
+   "dur": 212
+  }
  },
  "WS523": {
   "gallery": [
@@ -430,7 +490,13 @@
    "img/hd/ws523-g3.webp",
    "img/hd/ws523-g4.webp",
    "img/hd/ws523-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/cowork-smart-office-solution-202211.mp4",
+   "poster": "video/cowork-smart-office-solution-202211.jpg",
+   "title": "CoWork Smart Office Solution 202211",
+   "dur": 212
+  }
  },
  "WS558": {
   "gallery": [
@@ -439,7 +505,13 @@
    "img/hd/ws558-g3.webp",
    "img/hd/ws558-g4.webp",
    "img/hd/ws558-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ws558-smart-light-controller-202210.mp4",
+   "poster": "video/ws558-smart-light-controller-202210.jpg",
+   "title": "WS558 Smart Light Controller 202210",
+   "dur": 92
+  }
  },
  "WTS506": {
   "gallery": [
@@ -447,7 +519,13 @@
    "img/hd/wts506-g2.webp",
    "img/hd/wts506-g3.webp",
    "img/hd/wts506-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/wts506-iot-weather-station-videography-202302.mp4",
+   "poster": "video/wts506-iot-weather-station-videography-202302.jpg",
+   "title": "WTS506 IoT Weather Station Videography 202302",
+   "dur": 52
+  }
  },
  "TS60x": {
   "gallery": [
@@ -456,7 +534,13 @@
    "img/hd/ts60x-g3.webp",
    "img/hd/ts60x-g4.webp",
    "img/hd/ts60x-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ts60x-cold-chain-temperature-monitoring-sensor-202512.mp4",
+   "poster": "video/ts60x-cold-chain-temperature-monitoring-sensor-202512.jpg",
+   "title": "TS60x Cold Chain Temperature Monitoring Sensor 202512",
+   "dur": 82
+  }
  },
  "TS101": {
   "gallery": [
@@ -464,12 +548,24 @@
    "img/hd/ts101-g2.webp",
    "img/hd/ts101-g3.webp",
    "img/hd/ts101-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/how-to-configure-ts101-insertion-temperature-sensor-via-tool.mp4",
+   "poster": "video/how-to-configure-ts101-insertion-temperature-sensor-via-tool.jpg",
+   "title": "How to Configure TS101 Insertion Temperature Sensor via ToolBox",
+   "dur": 206
+  }
  },
  "TS201": {
   "gallery": [
    "img/hd/ts201-g1.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/milesight-ts201-cost-effective-temperature-sensor-introducti.mp4",
+   "poster": "video/milesight-ts201-cost-effective-temperature-sensor-introducti.jpg",
+   "title": "Milesight TS201 Cost Effective Temperature Sensor Introduction 202406",
+   "dur": 52
+  }
  },
  "TS301/TS302": {
   "gallery": [
@@ -477,7 +573,13 @@
    "img/hd/ts301-ts302-g2.webp",
    "img/hd/ts301-ts302-g3.webp",
    "img/hd/ts301-ts302-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/lorawan-temperature-sensor-ts30x-202311.mp4",
+   "poster": "video/lorawan-temperature-sensor-ts30x-202311.jpg",
+   "title": "LoRaWAN Temperature Sensor TS30x 202311",
+   "dur": 64
+  }
  },
  "EM300-CL": {
   "gallery": [
@@ -486,7 +588,13 @@
    "img/hd/em300-cl-g3.webp",
    "img/hd/em300-cl-g4.webp",
    "img/hd/em300-cl-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em300-cl-capacitive-level-sensor-introduction-202311.mp4",
+   "poster": "video/em300-cl-capacitive-level-sensor-introduction-202311.jpg",
+   "title": "EM300-CL Capacitive Level Sensor Introduction 202311",
+   "dur": 16
+  }
  },
  "EM300-DI": {
   "gallery": [
@@ -494,7 +602,13 @@
    "img/hd/em300-di-g2.webp",
    "img/hd/em300-di-g3.webp",
    "img/hd/em300-di-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/iot-based-smart-water-management-in-building-202508.mp4",
+   "poster": "video/iot-based-smart-water-management-in-building-202508.jpg",
+   "title": "IoT-Based Smart Water Management in Building 202508",
+   "dur": 76
+  }
  },
  "EM300-MCS": {
   "gallery": [
@@ -503,7 +617,13 @@
    "img/hd/em300-mcs-g3.webp",
    "img/hd/em300-mcs-g4.webp",
    "img/hd/em300-mcs-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/cowork-smart-office-solution-202211.mp4",
+   "poster": "video/cowork-smart-office-solution-202211.jpg",
+   "title": "CoWork Smart Office Solution 202211",
+   "dur": 212
+  }
  },
  "EM300-MLD": {
   "gallery": [
@@ -511,7 +631,13 @@
    "img/hd/em300-mld-g2.webp",
    "img/hd/em300-mld-g3.webp",
    "img/hd/em300-mld-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/introducing-em300-mld-membrane-leakage-detection-sensor-2023.mp4",
+   "poster": "video/introducing-em300-mld-membrane-leakage-detection-sensor-2023.jpg",
+   "title": "Introducing EM300-MLD Membrane Leakage Detection Sensor 202310",
+   "dur": 170
+  }
  },
  "EM300-SLD/ZLD": {
   "gallery": [
@@ -519,7 +645,13 @@
    "img/hd/em300-sld-zld-g2.webp",
    "img/hd/em300-sld-zld-g3.webp",
    "img/hd/em300-sld-zld-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/iot-based-smart-water-management-in-building-202508.mp4",
+   "poster": "video/iot-based-smart-water-management-in-building-202508.jpg",
+   "title": "IoT-Based Smart Water Management in Building 202508",
+   "dur": 76
+  }
  },
  "EM300-TH": {
   "gallery": [
@@ -528,7 +660,13 @@
    "img/hd/em300-th-g3.webp",
    "img/hd/em300-th-g4.webp",
    "img/hd/em300-th-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/milesight-temperature-and-humidity-monitoring-solution-20240.mp4",
+   "poster": "video/milesight-temperature-and-humidity-monitoring-solution-20240.jpg",
+   "title": "Milesight Temperature and Humidity Monitoring Solution 202405",
+   "dur": 136
+  }
  },
  "EM320-TH": {
   "gallery": [
@@ -536,7 +674,13 @@
    "img/hd/em320-th-g2.webp",
    "img/hd/em320-th-g3.webp",
    "img/hd/em320-th-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em320-th-temperature-and-humidity-sensor-product-videography.mp4",
+   "poster": "video/em320-th-temperature-and-humidity-sensor-product-videography.jpg",
+   "title": "EM320-TH Temperature and Humidity Sensor Product Videography 202211",
+   "dur": 55
+  }
  },
  "EM320-TILT": {
   "gallery": [
@@ -544,7 +688,13 @@
    "img/hd/em320-tilt-g2.webp",
    "img/hd/em320-tilt-g3.webp",
    "img/hd/em320-tilt-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em320-tilt-tilt-sensor-videography-202303.mp4",
+   "poster": "video/em320-tilt-tilt-sensor-videography-202303.jpg",
+   "title": "EM320-TILT Tilt Sensor Videography 202303",
+   "dur": 46
+  }
  },
  "EM400-TLD": {
   "gallery": [
@@ -552,7 +702,13 @@
    "img/hd/em400-tld-g2.webp",
    "img/hd/em400-tld-g3.webp",
    "img/hd/em400-tld-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em400-series-distance-level-measuring-sensors-202304.mp4",
+   "poster": "video/em400-series-distance-level-measuring-sensors-202304.jpg",
+   "title": "EM400 Series Distance Level Measuring Sensors 202304",
+   "dur": 289
+  }
  },
  "EM400-MUD": {
   "gallery": [
@@ -560,7 +716,13 @@
    "img/hd/em400-mud-g2.webp",
    "img/hd/em400-mud-g3.webp",
    "img/hd/em400-mud-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em400-series-distance-level-measuring-sensors-202304.mp4",
+   "poster": "video/em400-series-distance-level-measuring-sensors-202304.jpg",
+   "title": "EM400 Series Distance Level Measuring Sensors 202304",
+   "dur": 289
+  }
  },
  "EM400-UDL": {
   "gallery": [
@@ -568,7 +730,13 @@
    "img/hd/em400-udl-g2.webp",
    "img/hd/em400-udl-g3.webp",
    "img/hd/em400-udl-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em400-series-distance-level-measuring-sensors-202304.mp4",
+   "poster": "video/em400-series-distance-level-measuring-sensors-202304.jpg",
+   "title": "EM400 Series Distance Level Measuring Sensors 202304",
+   "dur": 289
+  }
  },
  "EM410-RDL": {
   "gallery": [
@@ -576,7 +744,13 @@
    "img/hd/em410-rdl-g2.webp",
    "img/hd/em410-rdl-g3.webp",
    "img/hd/em410-rdl-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em410-rdl-radar-distance-and-level-sensor-202504.mp4",
+   "poster": "video/em410-rdl-radar-distance-and-level-sensor-202504.jpg",
+   "title": "EM410-RDL Radar Distance and Level Sensor 202504",
+   "dur": 84
+  }
  },
  "EM500-CO2": {
   "gallery": [
@@ -584,21 +758,51 @@
    "img/hd/em500-co2-g2.webp",
    "img/hd/em500-co2-g3.webp",
    "img/hd/em500-co2-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em500-environment-monitoring-sensors-202403.mp4",
+   "poster": "video/em500-environment-monitoring-sensors-202403.jpg",
+   "title": "EM500 Environment Monitoring Sensors 202403",
+   "dur": 71
+  }
  },
  "EM500-LGT": {
-  "gallery": []
+  "gallery": [],
+  "video": {
+   "src": "video/em500-environment-monitoring-sensors-202403.mp4",
+   "poster": "video/em500-environment-monitoring-sensors-202403.jpg",
+   "title": "EM500 Environment Monitoring Sensors 202403",
+   "dur": 71
+  }
  },
  "EM500-PP": {
   "gallery": [
    "img/hd/em500-pp-g1.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/em500-environment-monitoring-sensors-202403.mp4",
+   "poster": "video/em500-environment-monitoring-sensors-202403.jpg",
+   "title": "EM500 Environment Monitoring Sensors 202403",
+   "dur": 71
+  }
  },
  "EM500-PT100": {
-  "gallery": []
+  "gallery": [],
+  "video": {
+   "src": "video/milesight-pt100-industrial-temperature-sensor-202303.mp4",
+   "poster": "video/milesight-pt100-industrial-temperature-sensor-202303.jpg",
+   "title": "Milesight PT100 Industrial Temperature Sensor 202303",
+   "dur": 118
+  }
  },
  "EM500-SMTC": {
-  "gallery": []
+  "gallery": [],
+  "video": {
+   "src": "video/milesight-em500-smt-lorawan-soil-moisture-sensor-202303.mp4",
+   "poster": "video/milesight-em500-smt-lorawan-soil-moisture-sensor-202303.jpg",
+   "title": "Milesight EM500-SMT LoRaWAN® Soil Moisture Sensor 202303",
+   "dur": 112
+  }
  },
  "EM500-SWL": {
   "gallery": [
@@ -606,7 +810,13 @@
    "img/hd/em500-swl-g2.webp",
    "img/hd/em500-swl-g3.webp",
    "img/hd/em500-swl-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/milesight-em500-swl-lorawan-submersible-water-level-sensor-2.mp4",
+   "poster": "video/milesight-em500-swl-lorawan-submersible-water-level-sensor-2.jpg",
+   "title": "Milesight EM500-SWL LoRaWAN® Submersible Water Level Sensor 202303",
+   "dur": 102
+  }
  },
  "EM500-UDL": {
   "gallery": [
@@ -615,7 +825,13 @@
    "img/hd/em500-udl-g3.webp",
    "img/hd/em500-udl-g4.webp",
    "img/hd/em500-udl-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/milesight-em500-udl-lorawan-ultrasonic-distance-level-sensor.mp4",
+   "poster": "video/milesight-em500-udl-lorawan-ultrasonic-distance-level-sensor.jpg",
+   "title": "Milesight EM500-UDL LoRAWAN Ultrasonic Distance Level Sensor 202303",
+   "dur": 117
+  }
  },
  "AT101": {
   "gallery": [
@@ -623,7 +839,13 @@
    "img/hd/at101-g2.webp",
    "img/hd/at101-g3.webp",
    "img/hd/at101-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/milesight-at101-outdoor-asset-tracker-202305.mp4",
+   "poster": "video/milesight-at101-outdoor-asset-tracker-202305.jpg",
+   "title": "Milesight AT101 Outdoor Asset Tracker 202305",
+   "dur": 69
+  }
  },
  "DS3604": {
   "gallery": [
@@ -631,7 +853,13 @@
    "img/hd/ds3604-g2.webp",
    "img/hd/ds3604-g3.webp",
    "img/hd/ds3604-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ds3604-iot-e-link-display-videography-202303.mp4",
+   "poster": "video/ds3604-iot-e-link-display-videography-202303.jpg",
+   "title": "DS3604 IoT E-link Display Videography 202303",
+   "dur": 52
+  }
  },
  "VS125": {
   "gallery": [
@@ -672,7 +900,13 @@
    "img/hd/sg50-g3.webp",
    "img/hd/sg50-g4.webp",
    "img/hd/sg50-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/introducing-sg50-ultra-low-power-solar-lorawan-gateway-20231.mp4",
+   "poster": "video/introducing-sg50-ultra-low-power-solar-lorawan-gateway-20231.jpg",
+   "title": "Introducing SG50 Ultra Low Power Solar LoRaWAN Gateway 202311",
+   "dur": 92
+  }
  },
  "UG63": {
   "gallery": [
@@ -681,7 +915,13 @@
    "img/hd/ug63-g3.webp",
    "img/hd/ug63-g4.webp",
    "img/hd/ug63-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/milesight-ug63-mini-lorawan-gateway.mp4",
+   "poster": "video/milesight-ug63-mini-lorawan-gateway.jpg",
+   "title": "Milesight UG63 Mini LoRaWAN Gateway",
+   "dur": 94
+  }
  },
  "UG56": {
   "gallery": [
@@ -690,7 +930,13 @@
    "img/hd/ug56-g3.webp",
    "img/hd/ug56-g4.webp",
    "img/hd/ug56-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/unboxing-ug56-lorawan-gateway-202301.mp4",
+   "poster": "video/unboxing-ug56-lorawan-gateway-202301.jpg",
+   "title": "Unboxing UG56 LoRaWAN Gateway 202301",
+   "dur": 101
+  }
  },
  "UG65": {
   "gallery": [
@@ -698,7 +944,13 @@
    "img/hd/ug65-g2.webp",
    "img/hd/ug65-g3.webp",
    "img/hd/ug65-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ug65-lorawan-gateway-202211.mp4",
+   "poster": "video/ug65-lorawan-gateway-202211.jpg",
+   "title": "UG65 LoRaWAN Gateway 202211",
+   "dur": 188
+  }
  },
  "UG67": {
   "gallery": [
@@ -707,7 +959,13 @@
    "img/hd/ug67-g3.webp",
    "img/hd/ug67-g4.webp",
    "img/hd/ug67-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/ug67-lorawan-gateway-202203.mp4",
+   "poster": "video/ug67-lorawan-gateway-202203.jpg",
+   "title": "UG67 LoRaWAN Gateway 202203",
+   "dur": 232
+  }
  },
  "EG71": {
   "gallery": [
@@ -715,7 +973,13 @@
    "img/hd/eg71-g2.webp",
    "img/hd/eg71-g3.webp",
    "img/hd/eg71-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/introduce-eg71-building-iot-gateway-for-wired-and-wireless-i.mp4",
+   "poster": "video/introduce-eg71-building-iot-gateway-for-wired-and-wireless-i.jpg",
+   "title": "Introduce EG71 Building IoT Gateway for Wired and Wireless Integration 202604",
+   "dur": 154
+  }
  },
  "UPS01": {
   "gallery": [
@@ -731,7 +995,13 @@
    "img/hd/uc100-g2.webp",
    "img/hd/uc100-g3.webp",
    "img/hd/uc100-g4.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/uc100-iot-controller-202211.mp4",
+   "poster": "video/uc100-iot-controller-202211.jpg",
+   "title": "UC100 IoT Controller 202211",
+   "dur": 94
+  }
  },
  "UC300": {
   "gallery": [
@@ -740,7 +1010,13 @@
    "img/hd/uc300-g3.webp",
    "img/hd/uc300-g4.webp",
    "img/hd/uc300-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/uc300-iot-controller-202211.mp4",
+   "poster": "video/uc300-iot-controller-202211.jpg",
+   "title": "UC300 IoT Controller 202211",
+   "dur": 104
+  }
  },
  "UC51x": {
   "gallery": [
@@ -749,7 +1025,13 @@
    "img/hd/uc51x-g3.webp",
    "img/hd/uc51x-g4.webp",
    "img/hd/uc51x-g5.webp"
-  ]
+  ],
+  "video": {
+   "src": "video/uc51x-lorawan-solenoid-valve-controller-202211.mp4",
+   "poster": "video/uc51x-lorawan-solenoid-valve-controller-202211.jpg",
+   "title": "UC51x LoRaWAN Solenoid Valve Controller 202211",
+   "dur": 100
+  }
  },
  "UC50x": {
   "gallery": [

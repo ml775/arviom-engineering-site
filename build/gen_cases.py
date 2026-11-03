@@ -111,11 +111,16 @@ PCSS = '''<style>
 .cp-loc{display:inline-flex;align-items:center;gap:8px;margin-top:26px;background:#fff;color:var(--blue);border-radius:5px;padding:8px 16px;font-size:16px}
 .cp-loc::before{content:"";width:9px;height:9px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--blue)}
 .cp-facts{position:relative;z-index:2;margin-top:-92px}
-.cp-facts .box{background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.12);padding:28px 36px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:28px;align-items:center}
+.cp-facts .box{background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.12);padding:28px 36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.5fr) minmax(0,1fr) auto;gap:28px;align-items:center}
 .cp-facts .f{border-right:1px solid var(--line);padding-right:24px;min-width:0}
 .cp-facts .f span{display:block;font-size:14px;color:var(--muted)}
 .cp-facts .f b{display:block;margin-top:6px;font-weight:400;font-size:17px;color:var(--ink)}
 .cp-facts .f:nth-child(4){border-right:0}
+.cp-facts .eq{list-style:none;margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.cp-facts .eq li{font-size:15px;background:var(--bg2);border-radius:4px;padding:3px 9px;white-space:nowrap;color:var(--ink)}
+.cp-diag{background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px 36px;margin-bottom:28px}
+.cp-diag img{display:block;width:100%;height:auto}
+.cp-diag p{margin-top:16px;font-size:14px;color:var(--muted)}
 .cp-tabs{position:sticky;top:64px;z-index:5;background:#fff;border-bottom:1px solid var(--line);margin-top:40px}
 .cp-tabs .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:56px}
 .cp-tabs nav{display:flex;gap:0;overflow-x:auto}
@@ -155,23 +160,29 @@ PCSS = '''<style>
 
 def case_page(c):
     P = c['page']
-    facts = ''.join(f'<div class="f"><span>{e(a)}</span><b>{e(b.replace("-", chr(0x2011)))}</b></div>' for a, b in P['facts'])
+    def fv(a, b):
+        nb = lambda x: e(x).replace('-', chr(0x2011)).replace(' × ', chr(0xa0) + '×' + chr(0xa0))
+        if a == 'Обладнання':
+            return '<ul class="eq">' + ''.join(f'<li>{nb(x)}</li>' for x in b.split(', ')) + '</ul>'
+        return f'<b>{nb(b)}</b>'
+    facts = ''.join(f'<div class="f f-{"eq" if a == "Обладнання" else "t"}"><span>{e(a)}</span>{fv(a, b)}</div>' for a, b in P['facts'])
     tabs = [('background', 'Передумови'), ('challenges', 'Виклики'), ('solution', 'Рішення'), ('results', 'Результат'), ('partner', 'Партнер')]
     nav = ''.join(f'<a href="#{k}">{e(v)}</a>' for k, v in tabs)
     bg = P['background']
     ch = ''.join(f'<div><h3>{e(t)}</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in items)}</ul></div>' for t, items in P['challenges'])
     sol = ''.join(f'<div><div class="im"><img src="{e(i)}" alt="" loading="lazy"></div><h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d, i in P['solution'])
     R = P['results']
+    diag = f'<figure class="cp-diag"><img src="{e(P["solution_img"])}" alt="Схема рішення" loading="lazy"><p>{e(P.get("solution_caption", ""))}</p></figure>' if P.get('solution_img') else ''
     res = ''.join(f'<div><b>{e(t)}</b><span>{e(d)}</span></div>' for t, d in R['items'])
     place = dict(P['facts']).get('Локація', c['place'])
     body = f'''{CSS}{PCSS}
 <div class="cp-hero"><img src="{e(P['hero'])}" alt=""><div class="wrap"><div class="eyebrow">Досвід Milesight у світі · {e(DIRS[c['dir']])}</div><h1>{e(P['h1'])}</h1><p>{e(P['sub'])}</p><span class="cp-loc">Локація: {e(place)}</span></div></div>
-<div class="cp-facts"><div class="wrap"><div class="box">{facts}<a class="btn" href="{e(c['link'])}" target="_blank" rel="noopener">Оригінал кейсу ↗</a></div></div></div>
+<div class="cp-facts"><div class="wrap"><div class="box">{facts}<a class="btn" href="{e(c['link'])}" target="_blank" rel="noopener">Оригінал кейсу</a></div></div></div>
 <div class="cp-tabs"><div class="wrap"><nav aria-label="Розділи кейсу">{nav}</nav><div class="bc"><a href="./">Головна</a> › <a href="vprovadzhennia.html">Впровадження</a> › {e(DIRS[c['dir']])}</div></div></div>
 <main>
 <section id="background" class="cp-sec"><div class="wrap cp-two"><div><h2>Передумови</h2>{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg['img'])}" alt="" loading="lazy"></div></section>
 <section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2>Виклики</h2><div class="cp-ch">{ch}</div></div></section>
-<section id="solution" class="cp-sec"><div class="wrap"><h2>Рішення</h2><div class="cp-sol">{sol}</div></div></section>
+<section id="solution" class="cp-sec"><div class="wrap"><h2>Рішення</h2>{diag}<div class="cp-sol">{sol}</div></div></section>
 <section id="results" class="cp-sec" style="background:var(--bg2)"><div class="wrap cp-two"><div><h2>Результат</h2><div class="cp-res">{res}</div>{f'<p class="cp-note">{e(R["note"])}</p>' if R.get('note') else ''}</div><img src="{e(R['img'])}" alt="" loading="lazy"></div></section>
 <section id="partner" class="cp-sec"><div class="wrap"><h2>Партнер</h2><p style="font-size:18px;max-width:70ch;color:var(--text)">{e(P['partner'])}</p>
 <p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c['link'])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></section>

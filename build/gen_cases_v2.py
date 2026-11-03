@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Сторінка кейсу у стилі milesight.com/success-stories/iot-non-invasive-electricity-monitoring… (прев'ю, варіант 2)."""
+"""Сторінка кейсу у стилі milesight.com/success-stories/iot-non-invasive-electricity-monitoring… (прев'ю, варіант 2). Викликається з gen_cases.py."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gen_cases import C, CSS, DIRS, ICONS, SPY, chrome, e, usable, img_info, ROOT

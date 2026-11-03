@@ -261,69 +261,67 @@ section.blk{padding-block:88px}
 @media (max-width:1000px){.cp-facts .box{grid-template-columns:1fr 1fr;padding:22px}.cp-facts .f{border-right:0;padding-right:0}.cp-facts .btn{grid-column:1/-1;justify-self:start}.cp-sol{grid-template-columns:1fr 1fr}.cp-tabs .bc{display:none}}
 @media (max-width:640px){.cp-two,.cp-ch,.cp-res,.cp-sol{grid-template-columns:1fr}.cp-facts .box{grid-template-columns:1fr}.cp-facts{margin-top:-60px}.cp-sec{padding-block:48px}.cp-tabs{top:64px}}
 </style><style>
-.cp-sec h2.ctr{text-align:center;margin-bottom:44px}
-.cp-tabs nav a.on{background:var(--blue);color:#fff}
-.cp-bg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
-.cp-bg .card{grid-column:1/2;grid-row:1;position:relative;z-index:1;background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.12);padding:44px 48px;margin-right:-80px}
-.cp-bg .card h2{margin-bottom:20px}
-.cp-bg .card p{font-size:18px;color:var(--text)}
-.cp-bg .card p+p{margin-top:14px}
-.cp-bg>img{grid-column:2/3;grid-row:1;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
-.cp-ch3{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:24px}
-.cp-ch3>div{background:#fff;border:1px solid #c9d6e8;border-radius:10px;padding:32px 30px}
-.cp-ch3 .ic{display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;margin:0 auto 22px}
-.cp-ch3 .ic svg{width:30px;height:30px}
-.cp-ch3 .ic-nature{background:var(--blue)}.cp-ch3 .ic-tools{background:#8a96a6}.cp-ch3 .ic-system{background:#0a3f9a}
-.cp-ch3 h3{font-weight:500;font-size:20px;margin-bottom:14px}
-.cp-ch3 ul{list-style:none;display:grid;gap:10px}
-.cp-ch3 li{padding-left:16px;position:relative;color:var(--text);font-size:16px}
-.cp-ch3 li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
-.cp-diag figcaption{margin-top:16px;font-size:14px;color:var(--muted)}
-.cp-bento{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;margin-top:20px}
-.sp{border-radius:10px;padding:22px;display:flex;gap:22px;align-items:center}
-.sp h3{font-weight:500;font-size:20px;margin-bottom:8px}
-.sp p{color:var(--text);font-size:16px;line-height:1.6}
-.sp .ph{display:flex;gap:12px;flex:none}
-.sp .ph img{width:172px;height:200px;object-fit:contain;background:#fff;padding:6px;border-radius:6px}
-.sp-wide{grid-column:1/-1}
-.sp-wide .st{flex:1}
-.sp-left{flex-direction:row-reverse}
-.sp-left .st,.sp-right .st{flex:1}
-.sp-tall{grid-column:2;grid-row:2/4;flex-direction:column;align-items:stretch}
-.sp-tall .ph{flex:1;min-height:240px}
-.sp-tall .ph img{flex:1;min-width:0;width:auto;height:100%}
-.sp-right .ph.n2{flex-direction:column}.sp-right .ph.n2 img{width:180px;height:120px}
-.sp,.sp-left,.sp-tall{flex-direction:column;align-items:stretch}
-.sp .ph,.sp-tall .ph,.sp-right .ph.n2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));flex:none;min-height:0}
-.sp .ph.n1{grid-template-columns:1fr}
-.sp .ph img,.sp-tall .ph img,.sp-right .ph.n2 img{width:100%;height:auto;max-height:260px;object-fit:contain;background:#fff;padding:10px;border-radius:6px}
-.sp-tall{grid-row:auto;grid-column:auto}
-.t-blue{background:#e8f1fb}.t-mint{background:#e8f5ef}.t-sand{background:#fbf5e8}.t-grey{background:#f2f4f7}
-.cp-resb{background:linear-gradient(120deg,#0a3f9a 0%,#0b5cd6 60%,#2b7cf2 100%);color:#fff}
-.cp-resb h2{color:#fff}
-.cp-res4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-.cp-res4>div{border:1px solid rgba(255,255,255,.45);border-radius:10px;padding:28px 30px;background:rgba(255,255,255,.06)}
-.cp-res4 h3{font-weight:500;font-size:20px;color:#fff;margin-bottom:10px}
-.cp-res4 p{color:rgba(255,255,255,.92);font-size:16px}
-.cp-scada{margin:36px auto 0;background:#fff;border-radius:10px;padding:14px}
-.cp-scada img{display:block;width:100%;border-radius:6px}
-.cp-scada figcaption{padding:12px 6px 4px;font-size:14px;color:var(--muted)}
-.cp-note2{margin-top:18px;font-size:14px;color:rgba(255,255,255,.85)}
-.cp-pt{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:36px 40px;max-width:1000px;margin:0 auto}
-.cp-pt .lg{font-weight:500;font-size:26px;letter-spacing:.04em;color:var(--ink);text-align:center;border-right:1px solid var(--line);padding-right:30px}
-.cp-pt p{font-size:17px;color:var(--text)}
-@media (max-width:1000px){.cp-ch3{grid-template-columns:1fr}.cp-bento{grid-template-columns:1fr}.sp-tall{grid-column:auto;grid-row:auto}.cp-bg{grid-template-columns:1fr}.cp-bg .card{margin:-60px 16px 0;grid-row:2}.cp-bg>img{grid-column:1;grid-row:1}}
-@media (max-width:640px){.sp{flex-direction:column!important;align-items:stretch}.sp .ph img{width:100%!important;height:200px!important}.sp .ph{flex-direction:column}.cp-res4{grid-template-columns:1fr}.cp-pt{grid-template-columns:1fr;padding:24px}.cp-pt .lg{border-right:0;padding-right:0}.cp-bg .card{padding:28px 24px}}
+.h2l{font-weight:300;font-size:clamp(30px,3.2vw,42px);line-height:1.1;margin-bottom:28px}
+.v2-hero{position:relative;height:clamp(420px,38vw,520px);overflow:hidden;background:#24364b}
+.v2-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.v2-hero .wrap{position:relative;z-index:1;display:block;min-height:0;padding-block:0;height:100%}
+.v2-hero .pan{position:absolute;left:var(--gutter,0);top:0;bottom:0;width:min(62%,780px);background:rgba(28,36,48,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:0 0 10px 10px;padding:clamp(36px,5vw,72px) clamp(28px,4vw,56px) 110px;display:flex;flex-direction:column;justify-content:center}
+.v2-hero .eyebrow{color:#fff;opacity:.85}
+.v2-hero h1{font-weight:400;font-size:clamp(28px,3.1vw,40px);line-height:1.18;color:#fff;text-wrap:balance}
+.v2-hero p{margin-top:14px;color:rgba(255,255,255,.9);font-size:17px;max-width:52ch}
+.v2-loc{display:inline-flex;align-items:center;gap:8px;margin-top:22px;background:var(--blue);color:#fff;border-radius:4px;padding:6px 12px;font-size:14px;align-self:flex-start}
+.v2-loc::before{content:"";width:8px;height:8px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#fff}
+.cp-facts{margin-top:-70px}
+.cp-facts .box{border-radius:6px;padding:22px 30px}
+.v2-bg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
+.v2-bg .card{grid-column:1/2;grid-row:1;position:relative;z-index:1;background:#fff;border-radius:8px;box-shadow:0 18px 50px rgba(20,40,80,.12);padding:36px 40px;margin-right:-80px}
+.v2-bg .card p{font-size:17px;color:var(--text)}.v2-bg .card p+p{margin-top:12px}
+.v2-bg>img{grid-column:2/3;grid-row:1;width:100%;aspect-ratio:5/3;object-fit:cover;border-radius:8px}
+.v2-ch{display:grid;grid-template-columns:repeat(var(--n,2),minmax(0,1fr));gap:24px}
+.v2-ch>div{position:relative;background:#fff;border-radius:8px;box-shadow:0 10px 30px rgba(20,40,80,.06);padding:30px 60px 30px 30px}
+.v2-ch .ic{position:absolute;right:-6px;top:-6px;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(20,40,80,.15)}
+.v2-ch .ic svg{width:22px;height:22px}
+.v2-ch .ic-nature{background:var(--blue)}.v2-ch .ic-tools{background:#1e9e6a}.v2-ch .ic-system{background:#0a3f9a}
+.v2-ch h3{font-weight:500;font-size:19px;margin-bottom:10px}
+.v2-ch p{color:var(--text);font-size:16px}
+.v2-diag{max-width:1100px;margin:0 auto 36px}
+.v2-diag img{display:block;width:100%;height:auto}
+.v2-diag figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center}
+.v2-prose p{font-size:17px;color:var(--text);max-width:1100px}
+.v2-prose p+p{margin-top:12px}
+.v2-prose b{font-weight:500;color:var(--ink)}
+.v2-ph{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:18px;margin-top:30px}
+.v2-ph img{width:100%;height:280px;object-fit:cover;border-radius:6px}
+.v2-sh{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:18px;margin-top:22px}
+.v2-sh img{width:100%;height:auto;max-height:300px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px}
+.v2-res{background:linear-gradient(160deg,#0a2650 0%,#0b3f8f 100%);color:#fff}
+.v2-res h2{color:#fff;text-align:center}
+.v2-res .g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.v2-res .g>div{border:1px solid rgba(255,255,255,.5);border-radius:8px;padding:26px 28px}
+.v2-res .g>div:first-child{grid-column:1/-1}
+.v2-res h3{font-weight:500;font-size:19px;color:#fff;margin-bottom:8px}
+.v2-res p{color:rgba(255,255,255,.9);font-size:16px}
+.v2-res figure{margin:36px auto 0;background:#fff;border-radius:8px;padding:12px}
+.v2-res figure img{display:block;width:100%;border-radius:4px}
+.v2-res figcaption{padding:10px 6px 2px;font-size:14px;color:var(--muted)}
+.v2-res .note{margin-top:16px;font-size:14px;color:rgba(255,255,255,.8)}
+.v2-pt{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);border-radius:8px;overflow:hidden;min-height:300px}
+.v2-pt .l{background:#e9edf2;display:flex;align-items:center;justify-content:center;padding:40px}
+.v2-pt .l span{background:#fff;border-radius:8px;padding:34px 42px;font-weight:500;font-size:26px;letter-spacing:.03em;color:var(--ink);text-align:center}
+.v2-pt .r{background:#2c343d;color:#fff;padding:44px 48px}
+.v2-pt .r h2{color:#fff;font-size:30px;font-weight:400;margin-bottom:16px}
+.v2-pt .r p{color:rgba(255,255,255,.88);font-size:16px}
+@media (max-width:1000px){.v2-hero .pan{width:auto;right:var(--gutter,0)}.v2-bg{grid-template-columns:1fr}.v2-bg .card{margin:-60px 16px 0;grid-row:2}.v2-bg>img{grid-column:1;grid-row:1}.v2-ch{grid-template-columns:1fr}.v2-ph{grid-template-columns:1fr 1fr}.v2-ph img{height:200px}.v2-sh{grid-template-columns:1fr}.v2-res .g{grid-template-columns:1fr}.v2-pt{grid-template-columns:1fr}}
 </style>
-<div class="cp-hero"><img src="img/cases/iot-airport-environmental-monitoring-turkey/banner.webp" alt=""><div class="wrap"><div class="eyebrow">Досвід Milesight у світі · Повітря</div><h1>Моніторинг якості повітря в реальному часі в аеропортах Туреччини</h1><p>Бездротова система на базі LoRaWAN® безперервно контролює повітря в залах очікування, на гейтах і у фудкортах терміналів TAV Airports.</p><span class="cp-loc">Локація: Туреччина: аеропорти İzmir, Ankara, Bodrum</span></div></div>
+<div class="v2-hero"><img src="img/cases/iot-airport-environmental-monitoring-turkey/banner.webp" alt=""><div class="wrap"><div class="pan"><div class="eyebrow">Досвід Milesight у світі · Повітря</div><h1>Моніторинг якості повітря в реальному часі в аеропортах Туреччини</h1><p>Бездротова система на базі LoRaWAN® безперервно контролює повітря в залах очікування, на гейтах і у фудкортах терміналів TAV Airports.</p><span class="v2-loc">Туреччина: аеропорти İzmir, Ankara, Bodrum</span></div></div></div>
 <div class="cp-facts"><div class="wrap"><div class="box"><div class="f f-t"><span>Партнер-інтегратор</span><b>DVM IoT Solutions (Туреччина)</b></div><div class="f f-t"><span>Локація</span><b>Туреччина: аеропорти İzmir, Ankara, Bodrum</b></div><div class="f f-eq"><span>Обладнання</span><ul class="eq"><li>AM308L × 106</li><li>UG63 і SG50 × 20 (разом)</li></ul></div><div class="f f-t"><span>Застосування</span><b>Якість повітря в приміщеннях · Керування інфраструктурою</b></div><a class="btn" href="https://www.milesight.com/iot/success-stories/iot-airport-environmental-monitoring-turkey" target="_blank" rel="noopener">Оригінал кейсу</a></div></div></div>
 <div class="cp-tabs"><div class="wrap"><nav aria-label="Розділи кейсу"><a href="#background">Передумови</a><a href="#challenges">Виклики</a><a href="#solution">Рішення</a><a href="#results">Результат</a><a href="#partner">Партнер</a></nav><div class="bc"><a href="./">Головна</a> › <a href="vprovadzhennia.html">Впровадження</a> › Повітря</div></div></div>
 <main>
-<section id="background" class="cp-sec"><div class="wrap"><div class="cp-bg"><div class="card rv"><h2>Передумови</h2><p>У 2024 році оператор великих аеропортів Туреччини TAV Airports зіткнувся зі зростанням щоденного пасажиропотоку в аеропортах İzmir, Ankara та Bodrum. У залах очікування, на гейтах і в зонах харчування рівні CO₂, температури, вологості та VOC часто різко змінювалися.</p><p>Ручні перевірки не дозволяли контролювати якість повітря в реальному часі та швидко коригувати роботу вентиляції. Тому TAV разом із Milesight і DVM IoT Solutions розгорнула в терміналах повністю бездротову систему моніторингу, що працює безперервно.</p></div><img src="img/cases/iot-airport-environmental-monitoring-turkey/background-banner.webp" alt="" loading="lazy"></div></div></section>
-<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="ctr">Виклики</h2><div class="cp-ch3" style="--n:2"><div class="rv"><i class="ic ic-nature"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l-5 7h3l-4 6h5v5h2v-5h5l-4-6h3z" fill="#fff"/></svg></i><h3>Середовище та навантаження</h3><ul><li>Сплески пасажиропотоку в залах очікування, на гейтах і у фудкортах різко змінюють якість повітря.</li><li>Динамічні потоки людей ускладнюють підтримання стабільних показників повітря в приміщеннях.</li></ul></div><div class="rv"><i class="ic ic-system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1L15 3.5h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.4L6.6 11a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.4zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="#fff"/></svg></i><h3>Контроль і керування</h3><ul><li>Ручні перевірки не фіксують зміни в реальному часі.</li><li>Між перевірками залишаються прогалини в покритті.</li></ul></div></div></div></section>
-<section id="solution" class="cp-sec"><div class="wrap"><h2 class="ctr">Рішення</h2><figure class="cp-diag"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-diagram.webp" alt="Схема рішення" loading="lazy"><figcaption>Схема рішення — Milesight.</figcaption></figure><div class="cp-bento"><div class="sp sp-wide t-blue rv"><div class="st"><h3>Датчики якості повітря</h3><p>У терміналах встановили датчики якості повітря AM308L. Вони постійно контролюють основні параметри повітря, зокрема CO₂, температуру, вологість і VOC, та бездротово передають дані в реальному часі.</p></div><div class="ph n2"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-am308l.webp" alt="" loading="lazy"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-am308l-2.webp" alt="" loading="lazy"></div></div><div class="sp sp-left t-mint rv"><div class="st"><h3>LoRaWAN®-зв&#x27;язок</h3><p>Дані з датчиків приймають шлюз UG63 та ультранизькоенергоспоживний сонячний шлюз SG50. Архітектуру LoRaWAN® обрали, щоб уникнути прокладання кабелів і забезпечити стабільну передачу на великі відстані у просторих приміщеннях аеропорту.</p></div><div class="ph n1"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-sg50.webp" alt="" loading="lazy"></div></div><div class="sp sp-right t-sand rv"><div class="st"><h3>Платформа Insight та сповіщення</h3><p>Усі дані збираються й візуалізуються на платформі Insight: дашборди в реальному часі, історичні тренди та рекомендації на основі ШІ щодо покращення повітря. У разі перевищення порогів система одразу надсилає сповіщення кількома каналами.</p></div><div class="ph n2"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-platform-insight.webp" alt="" loading="lazy"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-platform-insight-2.webp" alt="" loading="lazy"></div></div></div></div></section>
-<section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4"><div class="rv"><h3>Краща обізнаність</h3><p>Моніторинг у реальному часі підвищив увагу персоналу та пасажирів до якості повітря.</p></div><div class="rv"><h3>Проактивне керування</h3><p>Фахівці з експлуатації отримали миттєву видимість і прогнозні рекомендації, що прискорило реагування та покращило керування вентиляцією.</p></div><div class="rv"><h3>Комфорт пасажирів</h3><p>Стабільно якісне повітря підвищило комфорт і задоволеність пасажирів.</p></div><div class="rv"><h3>Енергоефективність і відповідність нормам</h3><p>Оптимізація вентиляції покращила енергоефективність і забезпечила відповідність стандартам громадського здоров&#x27;я.</p></div></div><figure class="cp-scada rv" style="max-width:904px"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-platform-insight.webp" alt="" loading="lazy"></figure></div></section>
-<section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">DVM IoT Solutions</div><div><p>DVM IoT Solutions (Туреччина) разом із Milesight впровадила систему моніторингу в терміналах TAV Airports.</p><p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="https://www.milesight.com/iot/success-stories/iot-airport-environmental-monitoring-turkey" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></div></div></section>
+<section id="background" class="cp-sec"><div class="wrap"><h2 class="h2l">Передумови</h2><div class="v2-bg"><div class="card rv"><p>У 2024 році оператор великих аеропортів Туреччини TAV Airports зіткнувся зі зростанням щоденного пасажиропотоку в аеропортах İzmir, Ankara та Bodrum. У залах очікування, на гейтах і в зонах харчування рівні CO₂, температури, вологості та VOC часто різко змінювалися.</p><p>Ручні перевірки не дозволяли контролювати якість повітря в реальному часі та швидко коригувати роботу вентиляції. Тому TAV разом із Milesight і DVM IoT Solutions розгорнула в терміналах повністю бездротову систему моніторингу, що працює безперервно.</p></div><img src="img/cases/iot-airport-environmental-monitoring-turkey/background-banner.webp" alt="" loading="lazy"></div></div></section>
+<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="h2l">Виклики</h2><div class="v2-ch" style="--n:2"><div class="rv"><i class="ic ic-nature"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l-5 7h3l-4 6h5v5h2v-5h5l-4-6h3z" fill="#fff"/></svg></i><h3>Середовище та навантаження</h3><p>Сплески пасажиропотоку в залах очікування, на гейтах і у фудкортах різко змінюють якість повітря. Динамічні потоки людей ускладнюють підтримання стабільних показників повітря в приміщеннях.</p></div><div class="rv"><i class="ic ic-system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1L15 3.5h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.4L6.6 11a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.4zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="#fff"/></svg></i><h3>Контроль і керування</h3><p>Ручні перевірки не фіксують зміни в реальному часі. Між перевірками залишаються прогалини в покритті.</p></div></div></div></section>
+<section id="solution" class="cp-sec"><div class="wrap"><h2 class="h2l" style="text-align:center">Рішення</h2><figure class="v2-diag"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-diagram.webp" alt="Схема рішення" loading="lazy"><figcaption>Схема рішення — Milesight.</figcaption></figure><div class="v2-prose"><p><b>Датчики якості повітря.</b> У терміналах встановили датчики якості повітря AM308L. Вони постійно контролюють основні параметри повітря, зокрема CO₂, температуру, вологість і VOC, та бездротово передають дані в реальному часі.</p><p><b>LoRaWAN®-зв&#x27;язок.</b> Дані з датчиків приймають шлюз UG63 та ультранизькоенергоспоживний сонячний шлюз SG50. Архітектуру LoRaWAN® обрали, щоб уникнути прокладання кабелів і забезпечити стабільну передачу на великі відстані у просторих приміщеннях аеропорту.</p><p><b>Платформа Insight та сповіщення.</b> Усі дані збираються й візуалізуються на платформі Insight: дашборди в реальному часі, історичні тренди та рекомендації на основі ШІ щодо покращення повітря. У разі перевищення порогів система одразу надсилає сповіщення кількома каналами.</p></div><div class="v2-ph" style="--n:3"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-am308l.webp" alt="" loading="lazy"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-am308l-2.webp" alt="" loading="lazy"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-sg50.webp" alt="" loading="lazy"></div><div class="v2-sh" style="--n:2"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-platform-insight.webp" alt="" loading="lazy"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-platform-insight-2.webp" alt="" loading="lazy"></div></div></section>
+<section id="results" class="cp-sec v2-res"><div class="wrap"><h2 class="h2l">Результат</h2><div class="g"><div class="rv"><h3>Краща обізнаність</h3><p>Моніторинг у реальному часі підвищив увагу персоналу та пасажирів до якості повітря.</p></div><div class="rv"><h3>Проактивне керування</h3><p>Фахівці з експлуатації отримали миттєву видимість і прогнозні рекомендації, що прискорило реагування та покращило керування вентиляцією.</p></div><div class="rv"><h3>Комфорт пасажирів</h3><p>Стабільно якісне повітря підвищило комфорт і задоволеність пасажирів.</p></div><div class="rv"><h3>Енергоефективність і відповідність нормам</h3><p>Оптимізація вентиляції покращила енергоефективність і забезпечила відповідність стандартам громадського здоров&#x27;я.</p></div></div><figure class="rv" style="max-width:900px"><img src="img/cases/iot-airport-environmental-monitoring-turkey/solution-platform-insight.webp" alt="" loading="lazy"></figure></div></section>
+<section id="partner" class="cp-sec"><div class="wrap"><h2 class="h2l">Партнер</h2><div class="v2-pt rv"><div class="l"><span>DVM IoT Solutions</span></div><div class="r"><h2>Про DVM IoT Solutions</h2><p>DVM IoT Solutions (Туреччина) разом із Milesight впровадила систему моніторингу в терміналах TAV Airports.</p></div></div><p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="https://www.milesight.com/iot/success-stories/iot-airport-environmental-monitoring-turkey" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></section>
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
 </main><script>
 (function(){var a=[].slice.call(document.querySelectorAll('.cp-tabs nav a'));if(!('IntersectionObserver' in window))return;

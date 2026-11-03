@@ -438,5 +438,6 @@ def case_page(c):
 
 
 if __name__ == '__main__':
-    pages = [case_page(c) for c in C['own'] + C['ms'] if c.get('page')]
+    from gen_cases_v2 import case_page_v2  # сторінка кейсу — стиль milesight «non-invasive electricity» (варіант 2)
+    pages = [case_page_v2(dict(c)) for c in C['own'] + C['ms'] if c.get('page')]
     print('case pages:', ', '.join(pages))

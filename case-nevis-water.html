@@ -261,69 +261,67 @@ section.blk{padding-block:88px}
 @media (max-width:1000px){.cp-facts .box{grid-template-columns:1fr 1fr;padding:22px}.cp-facts .f{border-right:0;padding-right:0}.cp-facts .btn{grid-column:1/-1;justify-self:start}.cp-sol{grid-template-columns:1fr 1fr}.cp-tabs .bc{display:none}}
 @media (max-width:640px){.cp-two,.cp-ch,.cp-res,.cp-sol{grid-template-columns:1fr}.cp-facts .box{grid-template-columns:1fr}.cp-facts{margin-top:-60px}.cp-sec{padding-block:48px}.cp-tabs{top:64px}}
 </style><style>
-.cp-sec h2.ctr{text-align:center;margin-bottom:44px}
-.cp-tabs nav a.on{background:var(--blue);color:#fff}
-.cp-bg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
-.cp-bg .card{grid-column:1/2;grid-row:1;position:relative;z-index:1;background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.12);padding:44px 48px;margin-right:-80px}
-.cp-bg .card h2{margin-bottom:20px}
-.cp-bg .card p{font-size:18px;color:var(--text)}
-.cp-bg .card p+p{margin-top:14px}
-.cp-bg>img{grid-column:2/3;grid-row:1;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
-.cp-ch3{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:24px}
-.cp-ch3>div{background:#fff;border:1px solid #c9d6e8;border-radius:10px;padding:32px 30px}
-.cp-ch3 .ic{display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;margin:0 auto 22px}
-.cp-ch3 .ic svg{width:30px;height:30px}
-.cp-ch3 .ic-nature{background:var(--blue)}.cp-ch3 .ic-tools{background:#8a96a6}.cp-ch3 .ic-system{background:#0a3f9a}
-.cp-ch3 h3{font-weight:500;font-size:20px;margin-bottom:14px}
-.cp-ch3 ul{list-style:none;display:grid;gap:10px}
-.cp-ch3 li{padding-left:16px;position:relative;color:var(--text);font-size:16px}
-.cp-ch3 li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
-.cp-diag figcaption{margin-top:16px;font-size:14px;color:var(--muted)}
-.cp-bento{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;margin-top:20px}
-.sp{border-radius:10px;padding:22px;display:flex;gap:22px;align-items:center}
-.sp h3{font-weight:500;font-size:20px;margin-bottom:8px}
-.sp p{color:var(--text);font-size:16px;line-height:1.6}
-.sp .ph{display:flex;gap:12px;flex:none}
-.sp .ph img{width:172px;height:200px;object-fit:contain;background:#fff;padding:6px;border-radius:6px}
-.sp-wide{grid-column:1/-1}
-.sp-wide .st{flex:1}
-.sp-left{flex-direction:row-reverse}
-.sp-left .st,.sp-right .st{flex:1}
-.sp-tall{grid-column:2;grid-row:2/4;flex-direction:column;align-items:stretch}
-.sp-tall .ph{flex:1;min-height:240px}
-.sp-tall .ph img{flex:1;min-width:0;width:auto;height:100%}
-.sp-right .ph.n2{flex-direction:column}.sp-right .ph.n2 img{width:180px;height:120px}
-.sp,.sp-left,.sp-tall{flex-direction:column;align-items:stretch}
-.sp .ph,.sp-tall .ph,.sp-right .ph.n2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));flex:none;min-height:0}
-.sp .ph.n1{grid-template-columns:1fr}
-.sp .ph img,.sp-tall .ph img,.sp-right .ph.n2 img{width:100%;height:auto;max-height:260px;object-fit:contain;background:#fff;padding:10px;border-radius:6px}
-.sp-tall{grid-row:auto;grid-column:auto}
-.t-blue{background:#e8f1fb}.t-mint{background:#e8f5ef}.t-sand{background:#fbf5e8}.t-grey{background:#f2f4f7}
-.cp-resb{background:linear-gradient(120deg,#0a3f9a 0%,#0b5cd6 60%,#2b7cf2 100%);color:#fff}
-.cp-resb h2{color:#fff}
-.cp-res4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-.cp-res4>div{border:1px solid rgba(255,255,255,.45);border-radius:10px;padding:28px 30px;background:rgba(255,255,255,.06)}
-.cp-res4 h3{font-weight:500;font-size:20px;color:#fff;margin-bottom:10px}
-.cp-res4 p{color:rgba(255,255,255,.92);font-size:16px}
-.cp-scada{margin:36px auto 0;background:#fff;border-radius:10px;padding:14px}
-.cp-scada img{display:block;width:100%;border-radius:6px}
-.cp-scada figcaption{padding:12px 6px 4px;font-size:14px;color:var(--muted)}
-.cp-note2{margin-top:18px;font-size:14px;color:rgba(255,255,255,.85)}
-.cp-pt{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:36px 40px;max-width:1000px;margin:0 auto}
-.cp-pt .lg{font-weight:500;font-size:26px;letter-spacing:.04em;color:var(--ink);text-align:center;border-right:1px solid var(--line);padding-right:30px}
-.cp-pt p{font-size:17px;color:var(--text)}
-@media (max-width:1000px){.cp-ch3{grid-template-columns:1fr}.cp-bento{grid-template-columns:1fr}.sp-tall{grid-column:auto;grid-row:auto}.cp-bg{grid-template-columns:1fr}.cp-bg .card{margin:-60px 16px 0;grid-row:2}.cp-bg>img{grid-column:1;grid-row:1}}
-@media (max-width:640px){.sp{flex-direction:column!important;align-items:stretch}.sp .ph img{width:100%!important;height:200px!important}.sp .ph{flex-direction:column}.cp-res4{grid-template-columns:1fr}.cp-pt{grid-template-columns:1fr;padding:24px}.cp-pt .lg{border-right:0;padding-right:0}.cp-bg .card{padding:28px 24px}}
+.h2l{font-weight:300;font-size:clamp(30px,3.2vw,42px);line-height:1.1;margin-bottom:28px}
+.v2-hero{position:relative;height:clamp(420px,38vw,520px);overflow:hidden;background:#24364b}
+.v2-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.v2-hero .wrap{position:relative;z-index:1;display:block;min-height:0;padding-block:0;height:100%}
+.v2-hero .pan{position:absolute;left:var(--gutter,0);top:0;bottom:0;width:min(62%,780px);background:rgba(28,36,48,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:0 0 10px 10px;padding:clamp(36px,5vw,72px) clamp(28px,4vw,56px) 110px;display:flex;flex-direction:column;justify-content:center}
+.v2-hero .eyebrow{color:#fff;opacity:.85}
+.v2-hero h1{font-weight:400;font-size:clamp(28px,3.1vw,40px);line-height:1.18;color:#fff;text-wrap:balance}
+.v2-hero p{margin-top:14px;color:rgba(255,255,255,.9);font-size:17px;max-width:52ch}
+.v2-loc{display:inline-flex;align-items:center;gap:8px;margin-top:22px;background:var(--blue);color:#fff;border-radius:4px;padding:6px 12px;font-size:14px;align-self:flex-start}
+.v2-loc::before{content:"";width:8px;height:8px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#fff}
+.cp-facts{margin-top:-70px}
+.cp-facts .box{border-radius:6px;padding:22px 30px}
+.v2-bg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
+.v2-bg .card{grid-column:1/2;grid-row:1;position:relative;z-index:1;background:#fff;border-radius:8px;box-shadow:0 18px 50px rgba(20,40,80,.12);padding:36px 40px;margin-right:-80px}
+.v2-bg .card p{font-size:17px;color:var(--text)}.v2-bg .card p+p{margin-top:12px}
+.v2-bg>img{grid-column:2/3;grid-row:1;width:100%;aspect-ratio:5/3;object-fit:cover;border-radius:8px}
+.v2-ch{display:grid;grid-template-columns:repeat(var(--n,2),minmax(0,1fr));gap:24px}
+.v2-ch>div{position:relative;background:#fff;border-radius:8px;box-shadow:0 10px 30px rgba(20,40,80,.06);padding:30px 60px 30px 30px}
+.v2-ch .ic{position:absolute;right:-6px;top:-6px;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(20,40,80,.15)}
+.v2-ch .ic svg{width:22px;height:22px}
+.v2-ch .ic-nature{background:var(--blue)}.v2-ch .ic-tools{background:#1e9e6a}.v2-ch .ic-system{background:#0a3f9a}
+.v2-ch h3{font-weight:500;font-size:19px;margin-bottom:10px}
+.v2-ch p{color:var(--text);font-size:16px}
+.v2-diag{max-width:1100px;margin:0 auto 36px}
+.v2-diag img{display:block;width:100%;height:auto}
+.v2-diag figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center}
+.v2-prose p{font-size:17px;color:var(--text);max-width:1100px}
+.v2-prose p+p{margin-top:12px}
+.v2-prose b{font-weight:500;color:var(--ink)}
+.v2-ph{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:18px;margin-top:30px}
+.v2-ph img{width:100%;height:280px;object-fit:cover;border-radius:6px}
+.v2-sh{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:18px;margin-top:22px}
+.v2-sh img{width:100%;height:auto;max-height:300px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px}
+.v2-res{background:linear-gradient(160deg,#0a2650 0%,#0b3f8f 100%);color:#fff}
+.v2-res h2{color:#fff;text-align:center}
+.v2-res .g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.v2-res .g>div{border:1px solid rgba(255,255,255,.5);border-radius:8px;padding:26px 28px}
+.v2-res .g>div:first-child{grid-column:1/-1}
+.v2-res h3{font-weight:500;font-size:19px;color:#fff;margin-bottom:8px}
+.v2-res p{color:rgba(255,255,255,.9);font-size:16px}
+.v2-res figure{margin:36px auto 0;background:#fff;border-radius:8px;padding:12px}
+.v2-res figure img{display:block;width:100%;border-radius:4px}
+.v2-res figcaption{padding:10px 6px 2px;font-size:14px;color:var(--muted)}
+.v2-res .note{margin-top:16px;font-size:14px;color:rgba(255,255,255,.8)}
+.v2-pt{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);border-radius:8px;overflow:hidden;min-height:300px}
+.v2-pt .l{background:#e9edf2;display:flex;align-items:center;justify-content:center;padding:40px}
+.v2-pt .l span{background:#fff;border-radius:8px;padding:34px 42px;font-weight:500;font-size:26px;letter-spacing:.03em;color:var(--ink);text-align:center}
+.v2-pt .r{background:#2c343d;color:#fff;padding:44px 48px}
+.v2-pt .r h2{color:#fff;font-size:30px;font-weight:400;margin-bottom:16px}
+.v2-pt .r p{color:rgba(255,255,255,.88);font-size:16px}
+@media (max-width:1000px){.v2-hero .pan{width:auto;right:var(--gutter,0)}.v2-bg{grid-template-columns:1fr}.v2-bg .card{margin:-60px 16px 0;grid-row:2}.v2-bg>img{grid-column:1;grid-row:1}.v2-ch{grid-template-columns:1fr}.v2-ph{grid-template-columns:1fr 1fr}.v2-ph img{height:200px}.v2-sh{grid-template-columns:1fr}.v2-res .g{grid-template-columns:1fr}.v2-pt{grid-template-columns:1fr}}
 </style>
-<div class="cp-hero"><img src="img/cases/nevis/nevis-hero.webp" alt=""><div class="wrap"><div class="eyebrow">Досвід Milesight у світі · Вода</div><h1>Розумне водопостачання острова Невіс на LoRaWAN</h1><p>Резервуари, насосні станції й тиск у мережі — під дистанційним контролем замість ручних обходів.</p><span class="cp-loc">Локація: Сент-Кіттс і Невіс</span></div></div>
+<div class="v2-hero"><img src="img/cases/nevis/nevis-hero.webp" alt=""><div class="wrap"><div class="pan"><div class="eyebrow">Досвід Milesight у світі · Вода</div><h1>Розумне водопостачання острова Невіс на LoRaWAN</h1><p>Резервуари, насосні станції й тиск у мережі — під дистанційним контролем замість ручних обходів.</p><span class="v2-loc">Сент-Кіттс і Невіс</span></div></div></div>
 <div class="cp-facts"><div class="wrap"><div class="box"><div class="f f-t"><span>Партнер-інтегратор</span><b>AMNETPRO SAS (Колумбія)</b></div><div class="f f-t"><span>Локація</span><b>Сент‑Кіттс і Невіс</b></div><div class="f f-eq"><span>Обладнання</span><ul class="eq"><li>UG67 × 6</li><li>UC300 × 27</li><li>EM500‑UDL × 9</li><li>EM500‑PP × 13</li><li>UPS01 × 6</li></ul></div><div class="f f-t"><span>Застосування</span><b>Водоканал · Розумне місто</b></div><a class="btn" href="https://www.milesight.com/iot/success-stories/iot-smart-water-management-caribbean" target="_blank" rel="noopener">Оригінал кейсу</a></div></div></div>
 <div class="cp-tabs"><div class="wrap"><nav aria-label="Розділи кейсу"><a href="#background">Передумови</a><a href="#challenges">Виклики</a><a href="#solution">Рішення</a><a href="#results">Результат</a><a href="#partner">Партнер</a></nav><div class="bc"><a href="./">Головна</a> › <a href="vprovadzhennia.html">Впровадження</a> › Вода</div></div></div>
 <main>
-<section id="background" class="cp-sec"><div class="wrap"><div class="cp-bg"><div class="card rv"><h2>Передумови</h2><p>Невіс — вулканічний острів у Карибському морі з тропічними лісами та складним рельєфом. Питну воду для всього острова розподіляє місцевий водний департамент.</p><p>Дротова система моніторингу в таких умовах постійно ламалася, тож перейшли на бездротові датчики LoRaWAN, хмарну платформу й прогнозну аналітику.</p></div><img src="img/cases/nevis/nevis-island.webp" alt="" loading="lazy"></div></div></section>
-<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="ctr">Виклики</h2><div class="cp-ch3" style="--n:3"><div class="rv"><i class="ic ic-nature"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l-5 7h3l-4 6h5v5h2v-5h5l-4-6h3z" fill="#fff"/></svg></i><h3>Природні умови</h3><ul><li>Часті удари блискавок виводять з ладу дротові датчики.</li><li>Вулканічний ґрунт і висока вологість прискорюють корозію.</li></ul></div><div class="rv"><i class="ic ic-tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.5a5 5 0 0 1-6.6 4.7L6.7 19.9a2 2 0 1 1-2.8-2.8l7.7-7.7A5 5 0 0 1 17.3 3l-3 3 .9 2.8 2.8.9z" fill="#fff"/></svg></i><h3>Інфраструктура</h3><ul><li>Резервуари розкидані по висотах — ручні обходи забирають багато часу.</li><li>Витоки в трубах помічають запізно, вода втрачається.</li><li>Тиском на насосних станціях керували вручну — зайві витрати енергії.</li></ul></div><div class="rv"><i class="ic ic-system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1L15 3.5h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.4L6.6 11a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.4zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="#fff"/></svg></i><h3>Керування</h3><ul><li>Аварії усували лише після того, як щось уже сталося.</li><li>Дані не зведені разом — важко планувати й розвивати мережу.</li></ul></div></div></div></section>
-<section id="solution" class="cp-sec"><div class="wrap"><h2 class="ctr">Рішення</h2><figure class="cp-diag"><img src="img/cases/nevis/nevis-solution.webp" alt="Схема рішення" loading="lazy"><figcaption>Схема системи: рівень у резервуарах, тиск у мережі й стан насосів → шлюзи UG67 з резервним живленням UPS01 → SCADA і хмарна платформа з ШІ. Схема — Milesight.</figcaption></figure><div class="cp-bento"><div class="sp sp-wide t-blue rv"><div class="st"><h3>Резервуари</h3><p>Ультразвуковий датчик EM500-UDL безконтактно міряє рівень до 10 м, корпус IP68 — підходить для високогірних резервуарів. Контролер UC300 поруч рахує витрату води з імпульсного входу й приймає сигнал тиску 4–20 мА.</p></div><div class="ph n2"><img src="img/cases/nevis/nevis-tank2.webp" alt="" loading="lazy"><img src="img/cases/nevis/nevis-tank.webp" alt="" loading="lazy"></div></div><div class="sp sp-left t-mint rv"><div class="st"><h3>Насосні станції</h3><p>UC300 по RS485 (Modbus RTU) читає 18 параметрів частотних перетворювачів — струм, напругу, частоту. Вбудований ПІД-регулятор підлаштовує швидкість насосів під тиск у мережі, а при збої одразу вмикає резервний насос.</p></div><div class="ph n1"><img src="img/cases/nevis/nevis-pump.webp" alt="" loading="lazy"></div></div><div class="sp sp-tall t-sand rv"><div class="st"><h3>Тиск у трубах</h3><p>EM500-PP міряє тиск 0–1,6 МПа з точністю 0,5 %, дискретні входи показують положення засувок, а аналіз вібрації помічає гідроудари. Дані йдуть у SCADA через LoRaWAN.</p></div><div class="ph n2"><img src="img/cases/nevis/nevis-pressure.webp" alt="" loading="lazy"><img src="img/cases/nevis/nevis-pressure2.webp" alt="" loading="lazy"></div></div><div class="sp sp-right t-grey rv"><div class="st"><h3>Мережа зв&#x27;язку</h3><p>Шлюзи UG67: 8 каналів LoRaWAN, захист від блискавки 10 кВ, резервний канал 4G + оптика. На висотах вони працюють як ретранслятори з живленням UPS01 — дані не губляться навіть у негоду.</p></div><div class="ph n2"><img src="img/cases/nevis/nevis-gw.webp" alt="" loading="lazy"><img src="img/cases/nevis/nevis-gw2.webp" alt="" loading="lazy"></div></div></div></div></section>
-<section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4"><div class="rv"><h3>Резервуари під контролем</h3><p>Рівень і тиск у реальному часі навіть у негоду; безперебійне живлення не дає втрачати дані на висотах.</p></div><div class="rv"><h3>Насосні станції на автоматиці</h3><p>Швидкість насосів підлаштовується під попит — менше витрат енергії; при збої сам вмикається резерв.</p></div><div class="rv"><h3>Тиск і витоки</h3><p>Мережа датчиків тиску рано попереджає про витоки й допомагає уникати розривів труб.</p></div><div class="rv"><h3>Єдина платформа</h3><p>Дані всіх підсистем — у 3D-інтерфейсі; мобільний застосунок для обходів і обслуговування.</p></div></div><figure class="cp-scada rv" style="max-width:1283px"><img src="img/cases/nevis/nevis-scada.webp" alt="" loading="lazy"><figcaption>Платформа водного департаменту: рівень у резервуарах, обсяги води й карта об&#x27;єктів острова.</figcaption></figure><p class="cp-note2">У переліку кейсів Milesight цей проєкт підписано як «економія 25 % ресурсів».</p></div></section>
-<section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">AMNETPRO SAS</div><div><p>AMNETPRO SAS — колумбійська компанія з промислової автоматизації: інтеграція SCADA, IoT-рішення для водних систем, проєкти в складних умовах експлуатації.</p><p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="https://www.milesight.com/iot/success-stories/iot-smart-water-management-caribbean" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></div></div></section>
+<section id="background" class="cp-sec"><div class="wrap"><h2 class="h2l">Передумови</h2><div class="v2-bg"><div class="card rv"><p>Невіс — вулканічний острів у Карибському морі з тропічними лісами та складним рельєфом. Питну воду для всього острова розподіляє місцевий водний департамент.</p><p>Дротова система моніторингу в таких умовах постійно ламалася, тож перейшли на бездротові датчики LoRaWAN, хмарну платформу й прогнозну аналітику.</p></div><img src="img/cases/nevis/nevis-island.webp" alt="" loading="lazy"></div></div></section>
+<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="h2l">Виклики</h2><div class="v2-ch" style="--n:3"><div class="rv"><i class="ic ic-nature"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l-5 7h3l-4 6h5v5h2v-5h5l-4-6h3z" fill="#fff"/></svg></i><h3>Природні умови</h3><p>Часті удари блискавок виводять з ладу дротові датчики. Вулканічний ґрунт і висока вологість прискорюють корозію.</p></div><div class="rv"><i class="ic ic-tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.5a5 5 0 0 1-6.6 4.7L6.7 19.9a2 2 0 1 1-2.8-2.8l7.7-7.7A5 5 0 0 1 17.3 3l-3 3 .9 2.8 2.8.9z" fill="#fff"/></svg></i><h3>Інфраструктура</h3><p>Резервуари розкидані по висотах — ручні обходи забирають багато часу. Витоки в трубах помічають запізно, вода втрачається. Тиском на насосних станціях керували вручну — зайві витрати енергії.</p></div><div class="rv"><i class="ic ic-system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1L15 3.5h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.4L6.6 11a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.4zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="#fff"/></svg></i><h3>Керування</h3><p>Аварії усували лише після того, як щось уже сталося. Дані не зведені разом — важко планувати й розвивати мережу.</p></div></div></div></section>
+<section id="solution" class="cp-sec"><div class="wrap"><h2 class="h2l" style="text-align:center">Рішення</h2><figure class="v2-diag"><img src="img/cases/nevis/nevis-solution.webp" alt="Схема рішення" loading="lazy"><figcaption>Схема системи: рівень у резервуарах, тиск у мережі й стан насосів → шлюзи UG67 з резервним живленням UPS01 → SCADA і хмарна платформа з ШІ. Схема — Milesight.</figcaption></figure><div class="v2-prose"><p><b>Резервуари.</b> Ультразвуковий датчик EM500-UDL безконтактно міряє рівень до 10 м, корпус IP68 — підходить для високогірних резервуарів. Контролер UC300 поруч рахує витрату води з імпульсного входу й приймає сигнал тиску 4–20 мА.</p><p><b>Насосні станції.</b> UC300 по RS485 (Modbus RTU) читає 18 параметрів частотних перетворювачів — струм, напругу, частоту. Вбудований ПІД-регулятор підлаштовує швидкість насосів під тиск у мережі, а при збої одразу вмикає резервний насос.</p><p><b>Тиск у трубах.</b> EM500-PP міряє тиск 0–1,6 МПа з точністю 0,5 %, дискретні входи показують положення засувок, а аналіз вібрації помічає гідроудари. Дані йдуть у SCADA через LoRaWAN.</p><p><b>Мережа зв&#x27;язку.</b> Шлюзи UG67: 8 каналів LoRaWAN, захист від блискавки 10 кВ, резервний канал 4G + оптика. На висотах вони працюють як ретранслятори з живленням UPS01 — дані не губляться навіть у негоду.</p></div><div class="v2-ph" style="--n:4"><img src="img/cases/nevis/nevis-tank2.webp" alt="" loading="lazy"><img src="img/cases/nevis/nevis-tank.webp" alt="" loading="lazy"><img src="img/cases/nevis/nevis-pump.webp" alt="" loading="lazy"><img src="img/cases/nevis/nevis-pressure.webp" alt="" loading="lazy"></div></div></section>
+<section id="results" class="cp-sec v2-res"><div class="wrap"><h2 class="h2l">Результат</h2><div class="g"><div class="rv"><h3>Резервуари під контролем</h3><p>Рівень і тиск у реальному часі навіть у негоду; безперебійне живлення не дає втрачати дані на висотах.</p></div><div class="rv"><h3>Насосні станції на автоматиці</h3><p>Швидкість насосів підлаштовується під попит — менше витрат енергії; при збої сам вмикається резерв.</p></div><div class="rv"><h3>Тиск і витоки</h3><p>Мережа датчиків тиску рано попереджає про витоки й допомагає уникати розривів труб.</p></div><div class="rv"><h3>Єдина платформа</h3><p>Дані всіх підсистем — у 3D-інтерфейсі; мобільний застосунок для обходів і обслуговування.</p></div></div><figure class="rv" style="max-width:1279px"><img src="img/cases/nevis/nevis-scada.webp" alt="" loading="lazy"><figcaption>Платформа водного департаменту: рівень у резервуарах, обсяги води й карта об&#x27;єктів острова.</figcaption></figure><p class="note">У переліку кейсів Milesight цей проєкт підписано як «економія 25 % ресурсів».</p></div></section>
+<section id="partner" class="cp-sec"><div class="wrap"><h2 class="h2l">Партнер</h2><div class="v2-pt rv"><div class="l"><span>AMNETPRO SAS</span></div><div class="r"><h2>Про AMNETPRO SAS</h2><p>AMNETPRO SAS — колумбійська компанія з промислової автоматизації: інтеграція SCADA, IoT-рішення для водних систем, проєкти в складних умовах експлуатації.</p></div></div><p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="https://www.milesight.com/iot/success-stories/iot-smart-water-management-caribbean" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></section>
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
 </main><script>
 (function(){var a=[].slice.call(document.querySelectorAll('.cp-tabs nav a'));if(!('IntersectionObserver' in window))return;

@@ -32,11 +32,14 @@
     {
       "dir": "energy",
       "title": "Енергомоніторинг складсько-виробничого комплексу в Україні",
-      "place": "",
+      "place": "Україна",
       "text": "Облік по лініях, генератор і пальне, резервне живлення на одному екрані. Працює без інтернету.",
       "devices": "",
       "image": "img/shot-energy.webp",
-      "link": "./#dev"
+      "link": "./#dev",
+      "obj": "Склад і виробництво",
+      "country": "Україна",
+      "featured": 1
     }
   ],
   "ms": [
@@ -47,7 +50,10 @@
       "text": "Облік енергії та якості повітря в мережі офісних будівель.",
       "devices": "",
       "image": "img/ms/ms-case-canada.webp",
-      "link": "https://www.milesight.com/company/success-stories/smart-building-solution-optimizes-energy-efficiency-and-indoor-air-quality"
+      "link": "https://www.milesight.com/company/success-stories/smart-building-solution-optimizes-energy-efficiency-and-indoor-air-quality",
+      "obj": "Офісні будівлі",
+      "country": "Канада",
+      "featured": 3
     },
     {
       "dir": "energy",
@@ -56,7 +62,9 @@
       "text": "Дані з лічильників передаються бездротово й потрапляють у BMS через BACnet.",
       "devices": "",
       "image": "img/ms/ms-case-italy-card.webp",
-      "link": "https://www.milesight.com/company/success-stories/bacnet-over-lorawan-for-smart-buildings-in-italy"
+      "link": "https://www.milesight.com/company/success-stories/bacnet-over-lorawan-for-smart-buildings-in-italy",
+      "obj": "Житлові будинки",
+      "country": "Італія"
     },
     {
       "dir": "energy",
@@ -65,7 +73,9 @@
       "text": "Партнер Heliotics поставив розрізні трансформатори струму на верстати — без відключення ліній і повторної перевірки електрики. Платформа порівнює споживання однакових машин і показує, де втрати і що час обслужити.",
       "devices": "CT10x",
       "image": "img/cases/energy-ct10x-factory.webp",
-      "link": "https://www.milesight.com/company/success-stories/iot-non-invasive-electricity-monitoring-solution-in-europe"
+      "link": "https://www.milesight.com/company/success-stories/iot-non-invasive-electricity-monitoring-solution-in-europe",
+      "obj": "Заводи",
+      "country": "Європа"
     },
     {
       "dir": "building",
@@ -74,7 +84,9 @@
       "text": "Старі контролери в номерах замінили бездротовими термостатами на наявній проводці. Близько 250 LoRaWAN-пристроїв і 2 шлюзи покривають усю будівлю, усе зведено в одну BMS.",
       "devices": "WT303, шлюзи Milesight",
       "image": "img/cases/hotel-novotel-bms.webp",
-      "link": "https://www.milesight.com/iot/success-stories/iot-hotel-bms-upgrade-monitoring-france"
+      "link": "https://www.milesight.com/iot/success-stories/iot-hotel-bms-upgrade-monitoring-france",
+      "obj": "Готелі",
+      "country": "Франція"
     },
     {
       "dir": "building",
@@ -83,7 +95,9 @@
       "text": "Контроль холодового ланцюга в торговій мережі в реальному часі.",
       "devices": "",
       "image": "img/ms/ms-case-austria-card.webp",
-      "link": "https://www.milesight.com/iot/success-stories/iot-retail-temperature-monitoring-austria"
+      "link": "https://www.milesight.com/iot/success-stories/iot-retail-temperature-monitoring-austria",
+      "obj": "Рітейл",
+      "country": "Австрія"
     },
     {
       "dir": "building",
@@ -92,7 +106,9 @@
       "text": "Автоматичне керування опаленням у палатах.",
       "devices": "",
       "image": "img/ms/ms-case-croatia-card.webp",
-      "link": "https://www.milesight.com/iot/success-stories/beaveriot-powers-hospital-automation-project"
+      "link": "https://www.milesight.com/iot/success-stories/beaveriot-powers-hospital-automation-project",
+      "obj": "Лікарні",
+      "country": "Хорватія"
     },
     {
       "dir": "industry",
@@ -101,7 +117,9 @@
       "text": "Розширення котла заввишки близько 12 поверхів раніше міряли вручну штангенциркулем. Тепер датчики з роздільністю 1 мм шлють дані через LoRaWAN, а при виході за допуск надходять SMS і e-mail.",
       "devices": "EM500-UDL",
       "image": "img/cases/tps-boiler-china.webp",
-      "link": "https://www.milesight.com/company/success-stories/ultrasonic-expansion-boiler"
+      "link": "https://www.milesight.com/company/success-stories/ultrasonic-expansion-boiler",
+      "obj": "Електростанції",
+      "country": "Китай"
     },
     {
       "dir": "air",
@@ -110,7 +128,10 @@
       "text": "Програма Міністерства освіти Квебеку. CO₂, температура й вологість у класах щоп'ять хвилин. Перед масштабуванням — 2 пілоти приблизно по 30 класів.",
       "devices": "AM107, UG65",
       "image": "img/cases/schools-iaq-quebec.webp",
-      "link": "https://www.milesight.com/company/success-stories/lorawan-iaq-deployment-in-canadian-public-schools"
+      "link": "https://www.milesight.com/company/success-stories/lorawan-iaq-deployment-in-canadian-public-schools",
+      "obj": "Школи",
+      "country": "Канада",
+      "featured": 4
     },
     {
       "dir": "water",
@@ -119,7 +140,10 @@
       "text": "Партнер Thingsfactory поставив датчики у ванних, кухнях, пральнях і техприміщеннях, 140+ контролерів і 15 шлюзів — приблизно по одному на кожні два поверхи.",
       "devices": "EM300-SLD, UC300, UG56, UG65, UG67",
       "image": "img/cases/leak-montreal-38floors.webp",
-      "link": "https://www.milesight.com/company/success-stories/water-leakage-monitoring-system-for-condominium-and-rental-buildings"
+      "link": "https://www.milesight.com/company/success-stories/water-leakage-monitoring-system-for-condominium-and-rental-buildings",
+      "obj": "Житлові будинки",
+      "country": "Канада",
+      "featured": 2
     },
     {
       "dir": "water",
@@ -252,7 +276,10 @@
         "partner": "AMNETPRO SAS — колумбійська компанія з промислової автоматизації: інтеграція SCADA, IoT-рішення для водних систем, проєкти в складних умовах експлуатації.",
         "solution_img": "img/cases/nevis/nevis-solution.webp",
         "solution_caption": "Схема системи: рівень у резервуарах, тиск у мережі й стан насосів → шлюзи UG67 з резервним живленням UPS01 → SCADA і хмарна платформа з ШІ. Схема — Milesight."
-      }
+      },
+      "obj": "Водоканал",
+      "country": "Сент-Кіттс і Невіс",
+      "featured": 1
     },
     {
       "dir": "agro",
@@ -261,7 +288,9 @@
       "text": "У кожній теплиці рослин на $150–450 тис. Контролери через свої входи й RS485 стежать за температурою та керують вентиляцією по LoRaWAN.",
       "devices": "UC1114 (зараз — UC502)",
       "image": "img/cases/greenhouses-usa.webp",
-      "link": "https://www.milesight.com/company/success-stories/agriculture-greenhouse-temperature-management"
+      "link": "https://www.milesight.com/company/success-stories/agriculture-greenhouse-temperature-management",
+      "obj": "Теплиці",
+      "country": "США"
     }
   ]
 }

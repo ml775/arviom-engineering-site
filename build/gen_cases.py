@@ -74,26 +74,143 @@ def card(c, own):
             f'<div class="more"><div><p>{e(c["text"])}</p>{dv}{src}</div></div></div></div></a>')
 
 
+LCSS = """<style>
+.lh{position:relative;height:clamp(440px,40vw,560px);overflow:hidden;background:#24364b;color:#fff}
+.lh>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lh::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,20,35,.62) 0%,rgba(10,20,35,.25) 55%,rgba(10,20,35,.05) 100%)}
+.lh .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:center;height:100%;min-height:0}
+.lh .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.lh .chips span{font-size:14px;background:#fff;color:var(--blue);border-left:4px solid var(--blue);padding:3px 10px;border-radius:2px}
+.lh h1{font-weight:400;font-size:clamp(30px,3.6vw,48px);line-height:1.1;color:#fff;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.25)}
+.lh .eyebrow{color:#fff;opacity:.9}
+.lh .btn{margin-top:26px}
+.lh-cards{display:flex;gap:16px;overflow:hidden;scroll-behavior:smooth}
+.lh-cards a{flex:0 0 230px;background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:14px;color:#fff}
+.lh-cards b{display:block;font-weight:500;font-size:15px;line-height:1.3;min-height:3.9em}
+.lh-cards small{display:block;margin:6px 0 10px;font-size:13px;opacity:.9}
+.lh-cards img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px}
+.lh-nav{display:flex;gap:10px;margin-top:16px}
+.lh-nav button{width:40px;height:40px;border:0;border-radius:5px;background:var(--blue);color:#fff;font-size:20px;cursor:pointer}
+.lh-nav button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.lb{display:grid;grid-template-columns:280px minmax(0,1fr);gap:40px;align-items:start;padding-block:48px 80px}
+.fl h2{font-weight:400;font-size:26px;margin-bottom:16px}
+.fl details{background:var(--bg2);border-radius:8px;padding:6px 18px 14px;margin-bottom:14px}
+.fl summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:17px;color:var(--ink)}
+.fl summary::-webkit-details-marker{display:none}
+.fl summary::after{content:"";border:6px solid transparent;border-top-color:#8a96a6;margin-top:6px}
+.fl details[open] summary::after{transform:rotate(180deg);margin-top:-6px}
+.fl summary i{font-style:normal;color:var(--muted);font-size:14px;margin-left:6px}
+.fl label{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:15px;color:var(--text);cursor:pointer}
+.fl label input{width:16px;height:16px;accent-color:var(--blue)}
+.fl label em{font-style:normal;color:var(--muted);font-size:13px;margin-left:auto}
+.fl .opts{max-height:260px;overflow:auto;padding-top:6px}
+.fl .rst{font:inherit;font-size:15px;background:none;border:0;color:var(--blue);cursor:pointer;padding:4px 0}
+.lr .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;color:var(--muted);font-size:15px}
+.lg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.lc{display:flex;flex-direction:column;background:var(--bg2);border-radius:8px;overflow:hidden;color:var(--ink);transition:box-shadow .3s,transform .3s}
+.lc:hover{box-shadow:0 18px 50px rgba(20,40,80,.1);transform:translateY(-2px)}
+.lc .im{position:relative;aspect-ratio:16/13;overflow:hidden;background:#dfe4ea}
+.lc .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.lc:hover .im img{transform:scale(1.04)}
+.lc .rb{position:absolute;left:0;top:14px;font-size:13px;color:#fff;background:rgba(26,36,51,.55);backdrop-filter:blur(6px);padding:4px 12px;border-left:6px solid var(--blue)}
+.lc .rb.ua{background:var(--blue);border-left-color:#ffd27a}
+.lc .tx{padding:16px 16px 18px;display:flex;flex-direction:column;gap:14px;flex:1}
+.lc h3{font-weight:500;font-size:18px;line-height:1.3;text-wrap:balance}
+.lc .mt{margin-top:auto;display:flex;gap:14px;align-items:center;font-size:14px;flex-wrap:wrap}
+.lc .mt .pin{color:var(--muted);display:inline-flex;gap:6px;align-items:center}
+.lc .mt .pin::before{content:"";width:8px;height:8px;border:1.5px solid var(--muted);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
+.lc .mt .ind{color:var(--blue)}
+.lc[hidden],.lc.pg{display:none!important}
+.lr .more{display:block;margin:30px auto 0;font:inherit;background:#fff;border:1.5px solid var(--blue);color:var(--blue);border-radius:5px;padding:11px 26px;cursor:pointer}
+.lr .none{padding:40px 0;color:var(--muted)}
+.lr .note{margin-top:28px;font-size:14px;color:var(--muted)}
+.fl-t{display:none}
+@media (max-width:1100px){.lg{grid-template-columns:repeat(2,minmax(0,1fr))}.lh .wrap{grid-template-columns:1fr}.lh-side{display:none}}
+@media (max-width:900px){.lb{grid-template-columns:1fr;gap:20px}.fl-t{display:block;font:inherit;background:var(--bg2);border:0;border-radius:6px;padding:10px 16px;color:var(--ink);cursor:pointer}.fl .grp{display:none}.fl.open .grp{display:block}.fl h2{display:none}}
+@media (max-width:560px){.lg{grid-template-columns:1fr}.lr .top span+span{display:none}}
+</style>"""
+
+LJS = """<script>
+(function(){
+var cards=[].slice.call(document.querySelectorAll('.lc')),boxes=[].slice.call(document.querySelectorAll('.fl input')),PAGE=12,shown=PAGE;
+var more=document.querySelector('.lr .more'),cnt=document.querySelector('.lr .cnt'),none=document.querySelector('.lr .none');
+function sel(g){return boxes.filter(function(b){return b.name===g&&b.checked}).map(function(b){return b.value})}
+function apply(){var G=['dir','obj','dev','src'],S={};G.forEach(function(g){S[g]=sel(g)});var n=0;
+cards.forEach(function(c){var ok=G.every(function(g){if(!S[g].length)return true;var v=(c.dataset[g]||'').split(' ');return S[g].some(function(x){return v.indexOf(x)>-1})});
+c.hidden=!ok;c.classList.remove('pg');if(ok){n++;if(n>shown)c.classList.add('pg')}});
+cnt.textContent=n;more.hidden=n<=shown;none.hidden=n>0}
+boxes.forEach(function(b){b.addEventListener('change',function(){shown=PAGE;apply()})});
+more.addEventListener('click',function(){shown+=PAGE;apply()});
+document.querySelector('.fl .rst').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});shown=PAGE;apply()});
+var t=document.querySelector('.fl-t');t.addEventListener('click',function(){var f=document.querySelector('.fl');f.classList.toggle('open');t.setAttribute('aria-expanded',f.classList.contains('open'))});
+var h=location.hash.slice(1),hb=boxes.filter(function(b){return b.name==='dir'&&b.value===h})[0];if(hb)hb.checked=true;
+apply();
+var tr=document.querySelector('.lh-cards');[].forEach.call(document.querySelectorAll('.lh-nav button'),function(b){b.addEventListener('click',function(){tr.scrollBy({left:(b.dataset.d==='1'?1:-1)*246})})});
+})();
+</script>"""
+
+
+def devs(c):
+    out = []
+    for x in (c.get('devices') or '').replace('(', ',').replace(')', ',').replace('—', ',').split(','):
+        for w in x.split():
+            w = w.strip()
+            if re.match(r'^[A-Z]{2,3}\d', w):
+                out.append(w)
+    return out
+
+
+def slug(x):
+    return re.sub(r'[^0-9a-zа-яіїєґ]+', '-', x.lower()).strip('-')
+
+
 def build():
-    btns = '<button type="button" data-f="all" aria-pressed="true">Усі</button>' + ''.join(
-        f'<button type="button" data-f="{k}" aria-pressed="false">{e(v)}</button>' for k, v in C['directions'])
-    body = f'''{CSS}
-<div class="cs-hero"><div class="wrap"><div class="eyebrow">{e(C['title'])}</div><h1>{e(C['h1'])}</h1><p>{e(C['lead'])}</p>
-<div class="cs-f" role="group" aria-label="Напрям">{btns}</div></div></div>
-<main>
-<section class="blk cs-sec cs-own"><div class="wrap"><h2>Проєкти в Україні <small>разом із партнерами-інтеграторами</small></h2><div class="cs-g" style="grid-template-columns:1fr">{''.join(card(c, True) for c in C['own'])}</div>
-<div class="cs-empty" hidden>У цьому напрямі проєкти в Україні готуються до публікації.</div></div></section>
-<section class="blk alt cs-sec"><div class="wrap"><h2>Досвід Milesight у світі <small>{len(C['ms'])} кейсів</small></h2><div class="cs-g">{''.join(card(c, False) for c in C['ms'])}</div>
-<div class="cs-empty" hidden>У цьому напрямі кейси ще додаються.</div>
-<p class="cs-note">Стислий виклад нашими словами за матеріалами milesight.com. Повні історії — за посиланнями на картках.</p></div></section>
-<section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Хочете такий результат на своєму об'єкті?</h2><p>Розкажіть про задачу — підберемо обладнання й покажемо схожі рішення.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
-</main>{JS}'''
+    items = [dict(c, src='ua') for c in C['own']] + [dict(c, src='ms') for c in C['ms']]
+    for c in items:
+        if c.get('page'):
+            c['link'] = c['page']['slug'] + '.html'
+        c['_dev'] = devs(c)
+    feat = sorted([c for c in items if c.get('featured')], key=lambda c: c['featured'])
+    hero = next((c for c in feat if c.get('page')), feat[0])
+    hero_img = hero['page']['hero'] if hero.get('page') else hero['image']
+    ext = lambda c: '' if not c['link'].startswith('http') else ' target="_blank" rel="noopener"'
+    nb = lambda t: re.sub(r'(\d) (\d)', '\\1\u00a0\\2', t)
+    side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><b>{e(nb(c["title"]))}</b><small>{e(c["country"])} · {e(DIRS[c["dir"]])}</small><img src="{e(c["image"])}" alt="" loading="lazy"></a>' for c in feat if c is not hero)
+    # filters
+    def grp(name, title, opts, open_=True):
+        rows = ''.join(f'<label><input type="checkbox" name="{name}" value="{e(v)}">{e(lbl)}<em>{n}</em></label>' for v, lbl, n in opts)
+        return f'<details class="grp"{" open" if open_ else ""}><summary>{e(title)}</summary><div class="opts">{rows}</div></details>'
+    cnt = lambda key, val: sum(1 for c in items if val in (c[key] if isinstance(c[key], list) else [c[key]]))
+    g_dir = [(k, v, cnt('dir', k)) for k, v in C['directions'] if cnt('dir', k)]
+    objs = sorted({c['obj'] for c in items})
+    g_obj = [(slug(o), o, cnt('obj', o)) for o in objs]
+    alld = sorted({d for c in items for d in c['_dev']})
+    g_dev = [(d.lower(), d, sum(1 for c in items if d in c['_dev'])) for d in alld]
+    g_src = [('ua', 'Україна', cnt('src', 'ua')), ('ms', 'Milesight у світі', cnt('src', 'ms'))]
+    filters = grp('dir', 'Напрям', g_dir) + grp('src', 'Де', g_src) + grp('obj', "Тип об'єкта", g_obj, False) + grp('dev', 'Обладнання', g_dev, False)
+    def lcard(c):
+        rb = '<span class="rb ua">Україна</span>' if c['src'] == 'ua' else ('<span class="rb">Обране</span>' if c.get('featured') else '')
+        return (f'<a class="lc" href="{e(c["link"])}"{ext(c)} data-dir="{e(c["dir"])}" data-obj="{e(slug(c["obj"]))}" data-src="{c["src"]}" data-dev="{e(" ".join(d.lower() for d in c["_dev"]))}">'
+                f'<div class="im"><img src="{e(c["image"])}" alt="" loading="lazy">{rb}</div>'
+                f'<div class="tx"><h3>{e(nb(c["title"]))}</h3><div class="mt"><span class="pin">{e(c["country"])}</span><span class="ind">{e(c["obj"])}</span></div></div></a>')
+    order = [c for c in items if c['src'] == 'ua'] + sorted([c for c in items if c['src'] == 'ms'], key=lambda c: (not c.get('featured'), c.get('featured', 99)))
+    cards = ''.join(lcard(c) for c in order)
+    body = f"""{CSS}{LCSS}
+<div class="lh"><img src="{e(hero_img)}" alt=""><div class="wrap"><div><div class="eyebrow">Впровадження</div><div class="chips"><span>{e(DIRS[hero['dir']])}</span><span>{e(hero['obj'])}</span></div><h1>{e(nb(hero['title']))}</h1><a class="btn" href="{e(hero['link'])}"{ext(hero)}>Детальніше</a></div>
+<div class="lh-side"><div class="lh-cards">{side}</div><div class="lh-nav"><button type="button" data-d="-1" aria-label="Назад">‹</button><button type="button" data-d="1" aria-label="Далі">›</button></div></div></div></div>
+<main><div class="wrap lb">
+<aside class="fl" aria-label="Фільтри"><h2>Фільтр</h2><button type="button" class="fl-t" aria-expanded="false">Фільтри</button>{filters}<button type="button" class="rst grp">Скинути фільтри</button></aside>
+<div class="lr"><div class="top"><span>Знайдено: <b class="cnt">{len(items)}</b></span><span>Проєкти в Україні — разом із партнерами-інтеграторами</span></div>
+<div class="lg">{cards}</div><p class="none" hidden>За цими фільтрами нічого не знайдено. Спробуйте прибрати частину позначок.</p><button type="button" class="more" hidden>Показати ще</button>
+<p class="note">Кейси Milesight — стислий виклад нашими словами за матеріалами milesight.com, фото — Milesight.</p></div>
+</div>
+<section class="blk" style="padding-block:0 72px"><div class="wrap"><div class="cta"><div><h2>Хочете такий результат на своєму об'єкті?</h2><p>Розкажіть про задачу — підберемо обладнання й партнера-інтегратора.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
+</main>{LJS}"""
     html = chrome(body, C['title'], 'cases')
-    # у шапці активний пункт — «Впровадження», а не «Рішення»
     html = html.replace('<a href="solutions.html" aria-current="page">Рішення</a>', '<a href="solutions.html">Рішення</a>')
     html = html.replace('<a href="vprovadzhennia.html">Впровадження</a>', '<a href="vprovadzhennia.html" aria-current="page">Впровадження</a>', 1)
     open(os.path.join(ROOT, 'vprovadzhennia.html'), 'w').write(html)
-    print('cases: vprovadzhennia.html', len(C['ms']) + len(C['own']))
+    print('cases: vprovadzhennia.html', len(items))
 
 
 if __name__ == '__main__':

@@ -173,7 +173,7 @@ c.hidden=!ok;c.classList.remove('pg');if(ok){n++;if(n<=(page-1)*PAGE||n>page*PAG
 cnt.textContent=n;none.hidden=n>0;
 [].forEach.call(document.querySelectorAll('.fl details'),function(d){var k=d.querySelectorAll('input:checked').length,i=d.querySelector('summary i');if(i)i.textContent='('+k+')'});
 var P=Math.ceil(n/PAGE),h='';if(P>1){h+='<button type="button" data-p="'+(page-1)+'"'+(page<=1?' disabled':'')+' aria-label="Назад">‹</button>';
-for(var i=1;i<=P;i++){if(P>7&&i>2&&i<P-1&&Math.abs(i-page)>1){if(h.slice(-13)!=='<span>…</span>')h+='<span>…</span>';continue}h+='<button type="button" data-p="'+i+'"'+(i===page?' class="on"':'')+'>'+i+'</button>'}
+var gap=false;for(var i=1;i<=P;i++){if(P>7&&i>2&&i<P-1&&Math.abs(i-page)>1){if(!gap)h+='<span>…</span>';gap=true;continue}gap=false;h+='<button type="button" data-p="'+i+'"'+(i===page?' class="on"':'')+'>'+i+'</button>'}
 h+='<button type="button" data-p="'+(page+1)+'"'+(page>=P?' disabled':'')+' aria-label="Далі">›</button>'}pgn.innerHTML=h}
 pgn.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b||b.disabled)return;page=+b.dataset.p;apply();grid.scrollIntoView({behavior:'smooth',block:'start'})});
 boxes.forEach(function(b){b.addEventListener('change',function(){page=1;apply()})});

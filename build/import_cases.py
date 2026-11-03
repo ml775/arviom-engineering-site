@@ -5,12 +5,14 @@ import json, os, sys, shutil
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 src = sys.argv[1]
 P = os.path.join(ROOT, 'content/cases.json'); D = json.load(open(P))
-have = {c['link'] for c in D['ms']}
+have = {c['link'].rstrip('/').split('/')[-1]: c for c in D['ms']}
 for slug in sorted(os.listdir(src)):
     f = os.path.join(src, slug, 'case.json')
     if not os.path.exists(f): continue
     c = json.load(open(f)); pg = c['page']
-    if c['link'] in have: print('skip', slug); continue
+    old = have.get(slug)
+    if old and old.get('page'): print('skip', slug); continue
+    if old: D['ms'].remove(old); print('replace', slug)  # старий запис без сторінки → повний
     dst = os.path.join(ROOT, 'img/cases', slug); os.makedirs(dst, exist_ok=True)
     def im(name):
         if not name: return ''

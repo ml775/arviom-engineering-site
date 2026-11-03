@@ -1,7 +1,7 @@
 {
  "site": "ARVIOM Engineering",
  "about": "Бездротова автоматизація об'єктів на обладнанні Milesight (LoRaWAN-датчики, шлюзи, контролери). Офіційний дистриб'ютор Milesight в Україні.",
- "updated": "2026-11-01",
+ "updated": "2026-11-03",
  "resources": {
   "catalog": "https://demo.arviom.com.ua/eng/api/catalog.json",
   "series": "https://demo.arviom.com.ua/eng/api/series.json",

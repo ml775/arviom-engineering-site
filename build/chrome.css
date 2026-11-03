@@ -5,6 +5,7 @@
 .sxh .lg{display:flex;align-items:baseline;gap:7px;color:#1a2433;text-decoration:none}
 .sxh .lg b{font-weight:500;font-size:21px;letter-spacing:.06em}.sxh .lg span{color:#0b5cd6;font-size:15px}
 .sxh nav{display:flex;gap:30px;font-size:16px}
+@media (max-width:1320px){.sxh nav{gap:20px}.sxh .in{gap:24px}}
 .sxh nav a{color:#333c48;text-decoration:none}.sxh nav a:hover,.sxh nav a[aria-current]{color:#0b5cd6}
 .sxh .rt{margin-left:auto;display:flex;gap:10px}
 .sxh .pl{display:inline-flex;align-items:center;border-radius:99px;padding:5px 14px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none}

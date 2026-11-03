@@ -536,7 +536,7 @@
       "place": "Сінгапур, об'єкти StorHub Self Storage",
       "text": "Датчики AM319 і LoRaWAN-шлюзи Milesight дали StorHub дані про якість повітря для сертифікації LEED без переобладнання інфраструктури. П'ять об'єктів отримали LEED Gold, два — LEED Silver.",
       "devices": "AM319, UG65, UG63",
-      "image": "img/cases/iot-iaq-solution-for-leed-certification/singapore-smart-building-wireless-iaq-solution-lee.webp",
+      "image": "img/cases/iot-iaq-solution-for-leed-certification/banner.webp",
       "link": "https://www.milesight.com/company/success-stories/iot-iaq-solution-for-leed-certification",
       "obj": "Самосховища",
       "country": "Сінгапур",
@@ -544,7 +544,7 @@
         "slug": "case-iot-iaq-solution-for-leed-certification",
         "h1": "Бездротовий IAQ-моніторинг для сертифікації LEED на об'єктах StorHub у Сінгапурі",
         "sub": "Бездротова модернізація на LoRaWAN® зібрала дані про повітря, воду та електроенергію для звітності LEED без дорогих змін в інфраструктурі.",
-        "hero": "img/cases/iot-iaq-solution-for-leed-certification/singapore-smart-building-wireless-iaq-solution-lee.webp",
+        "hero": "img/cases/iot-iaq-solution-for-leed-certification/banner.webp",
         "facts": [
           [
             "Партнер-інтегратор",
@@ -568,7 +568,7 @@
             "Зелений сертифікат підтверджує екологічність будівлі, але отримати його складно й довго. Процес спрощує встановлення сертифікованого обладнання. LEED — міжнародно визнаний стандарт сталого будівництва.",
             "StorHub Self Storage — провайдер самосховищ в Азіатсько-Тихоокеанському регіоні: понад 6,8 млн кв. футів GFA та більше 70 000 боксів в Австралії, Великому Китаї, Японії, Малайзії, Сінгапурі, Таїланді та Кореї. Разом з UnaBiz, CLAPPIO і GreenA Consultants компанія впровадила енергоефективні практики та цифрові технології на 14 об'єктах. У межах проєкту п'ять об'єктів отримали LEED Gold, ще два — LEED Silver."
           ],
-          "img": ""
+          "img": "img/cases/iot-iaq-solution-for-leed-certification/storhub-building.webp"
         },
         "challenges": [
           {
@@ -602,17 +602,26 @@
           {
             "t": "Датчики якості повітря AM319",
             "d": "AM319 — LoRaWAN®-сенсор 9-в-1. Він вимірює температуру, вологість, CO₂, освітленість, TVOC, HCHO/O3, атмосферний тиск, PM2.5, PM10 та рух. Дані в реальному часі відповідають вимогам стандартів зеленого будівництва й дають змогу проводити проактивне обслуговування. У проєкті встановлено 13 датчиків.",
-            "imgs": []
+            "imgs": [
+              "img/cases/iot-iaq-solution-for-leed-certification/installation-wall-iaq.webp",
+              "img/cases/iot-iaq-solution-for-leed-certification/iaq-series.webp"
+            ]
           },
           {
             "t": "LoRaWAN®-шлюзи UG65 та UG63",
             "d": "Напівпромислові шлюзи UG65 (12 шт.) забезпечують захищену передачу даних у хмару для обробки. Вони сумісні з мережевими серверами та різними каналами backhaul, тому їх можна встановлювати без переобладнання інфраструктури. Міні-шлюз UG63 (1 шт.) закриває сліпі зони покриття.",
-            "imgs": []
+            "imgs": [
+              "img/cases/iot-iaq-solution-for-leed-certification/gateways.webp",
+              "img/cases/iot-iaq-solution-for-leed-certification/installation-electric-box.webp"
+            ]
           },
           {
             "t": "Інтеграція даних і звітність",
             "d": "Дані про споживання електроенергії та води збирають інші пристрої, а показники IAQ — датчики AM319. Рішення реалізоване як бездротова модернізація у 2 етапи, з швидким монтажем. Дані для LEED автоматично передаються в інструмент звітності зі сталого розвитку.",
-            "imgs": []
+            "imgs": [
+              "img/cases/iot-iaq-solution-for-leed-certification/installation-water.webp",
+              "img/cases/iot-iaq-solution-for-leed-certification/installation-electricbox.webp"
+            ]
           }
         ],
         "results": {
@@ -635,9 +644,11 @@
             ]
           ],
           "note": "",
-          "img": ""
+          "img": "img/cases/iot-iaq-solution-for-leed-certification/leed-certificates.webp"
         },
-        "partner": "UnaBiz і CLAPPIO — партнери Milesight, які реалізували проєкт разом із консультантом GreenA Consultants."
+        "partner": "UnaBiz і CLAPPIO — партнери Milesight, які реалізували проєкт разом із консультантом GreenA Consultants.",
+        "solution_img": "img/cases/iot-iaq-solution-for-leed-certification/topology.webp",
+        "solution_caption": "Схема рішення — Milesight."
       }
     },
     {
@@ -1114,7 +1125,7 @@
       "place": "Австрія, дамба Chorinsky-Klause, долина Вайсенбах",
       "text": "На віддаленій альпійській дамбі без мережі й електрики розгорнули LoRaWAN-систему. Рівень води вимірюється кожні 10 хвилин, дані доступні у вебзастосунку без виїзду на об'єкт.",
       "devices": "UG67, UG85, EM500-UDL, EM500-SWL",
-      "image": "img/cases/real-time-flood-monitoring-solution-with-lorawan-in-austria/flood-monitoring-location.webp",
+      "image": "img/cases/real-time-flood-monitoring-solution-with-lorawan-in-austria/flood-monitoring-deployments.webp",
       "link": "https://www.milesight.com/company/success-stories/real-time-flood-monitoring-solution-with-lorawan-in-austria",
       "obj": "Дамби",
       "country": "Австрія",
@@ -1122,7 +1133,7 @@
         "slug": "case-real-time-flood-monitoring-solution-with-lorawan-in-austria",
         "h1": "Моніторинг рівня води та повеней на дамбі Chorinsky-Klause на базі LoRaWAN",
         "sub": "Датчики EM500 і LoRaWAN-шлюзи Milesight дають дані про рівень води на віддаленій альпійській дамбі в реальному часі.",
-        "hero": "img/cases/real-time-flood-monitoring-solution-with-lorawan-in-austria/flood-monitoring-header.webp",
+        "hero": "img/cases/real-time-flood-monitoring-solution-with-lorawan-in-austria/flood-monitoring-deployments.webp",
         "facts": [
           [
             "Партнер-інтегратор",

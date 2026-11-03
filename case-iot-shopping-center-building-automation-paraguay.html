@@ -284,7 +284,7 @@ section.blk{padding-block:88px}
 .sp h3{font-weight:500;font-size:20px;margin-bottom:8px}
 .sp p{color:var(--text);font-size:16px;line-height:1.6}
 .sp .ph{display:flex;gap:12px;flex:none}
-.sp .ph img{width:172px;height:200px;object-fit:cover;border-radius:6px}
+.sp .ph img{width:172px;height:200px;object-fit:contain;background:#fff;padding:6px;border-radius:6px}
 .sp-wide{grid-column:1/-1}
 .sp-wide .st{flex:1}
 .sp-left{flex-direction:row-reverse}
@@ -293,6 +293,11 @@ section.blk{padding-block:88px}
 .sp-tall .ph{flex:1;min-height:240px}
 .sp-tall .ph img{flex:1;min-width:0;width:auto;height:100%}
 .sp-right .ph.n2{flex-direction:column}.sp-right .ph.n2 img{width:180px;height:120px}
+.sp,.sp-left,.sp-tall{flex-direction:column;align-items:stretch}
+.sp .ph,.sp-tall .ph,.sp-right .ph.n2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));flex:none;min-height:0}
+.sp .ph.n1{grid-template-columns:1fr}
+.sp .ph img,.sp-tall .ph img,.sp-right .ph.n2 img{width:100%;height:auto;max-height:260px;object-fit:contain;background:#fff;padding:10px;border-radius:6px}
+.sp-tall{grid-row:auto;grid-column:auto}
 .t-blue{background:#e8f1fb}.t-mint{background:#e8f5ef}.t-sand{background:#fbf5e8}.t-grey{background:#f2f4f7}
 .cp-resb{background:linear-gradient(120deg,#0a3f9a 0%,#0b5cd6 60%,#2b7cf2 100%);color:#fff}
 .cp-resb h2{color:#fff}
@@ -300,7 +305,7 @@ section.blk{padding-block:88px}
 .cp-res4>div{border:1px solid rgba(255,255,255,.45);border-radius:10px;padding:28px 30px;background:rgba(255,255,255,.06)}
 .cp-res4 h3{font-weight:500;font-size:20px;color:#fff;margin-bottom:10px}
 .cp-res4 p{color:rgba(255,255,255,.92);font-size:16px}
-.cp-scada{margin-top:36px;background:#fff;border-radius:10px;padding:14px}
+.cp-scada{margin:36px auto 0;background:#fff;border-radius:10px;padding:14px}
 .cp-scada img{display:block;width:100%;border-radius:6px}
 .cp-scada figcaption{padding:12px 6px 4px;font-size:14px;color:var(--muted)}
 .cp-note2{margin-top:18px;font-size:14px;color:rgba(255,255,255,.85)}
@@ -318,8 +323,7 @@ section.blk{padding-block:88px}
 <section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="ctr">Виклики</h2><div class="cp-ch3" style="--n:2"><div class="rv"><i class="ic ic-tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.5a5 5 0 0 1-6.6 4.7L6.7 19.9a2 2 0 1 1-2.8-2.8l7.7-7.7A5 5 0 0 1 17.3 3l-3 3 .9 2.8 2.8.9z" fill="#fff"/></svg></i><h3>Розподілена інфраструктура та монтаж</h3><ul><li>Понад 100 установок AHU і фанкойлів розташовані по різних зонах і поверхах, тому важко забезпечити єдиний моніторинг, віддалене керування й обслуговування.</li><li>У діючому комплексі потрібне рішення з мінімумом прокладання кабелів і простим розгортанням.</li></ul></div><div class="rv"><i class="ic ic-system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1L15 3.5h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.4L6.6 11a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.4zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="#fff"/></svg></i><h3>Інтеграція систем і прозорість даних</h3><ul><li>HVAC, водопостачання, пожежна безпека й моніторинг насосів потрібно було об&#x27;єднати в одну систему, що ускладнює сумісність і координацію.</li><li>Резервуари, насоси та пожежне обладнання не мали централізованого моніторингу в реальному часі, тому виявляти несправності було складніше.</li></ul></div></div></div></section>
 <section id="solution" class="cp-sec"><div class="wrap"><h2 class="ctr">Рішення</h2><figure class="cp-diag"><img src="img/cases/iot-shopping-center-building-automation-paraguay/solution-5.webp" alt="Схема рішення" loading="lazy"><figcaption>Схема рішення — Milesight.</figcaption></figure><div class="cp-bento"><div class="sp sp-wide t-blue rv"><div class="st"><h3>WT30x — керування HVAC</h3><p>Термостати WT30x централізовано керують 103 установками AHU і фанкойлів та передають їхні дані в BMS. Це забезпечує стабільну роботу HVAC по всій будівлі.</p></div></div><div class="sp sp-left t-mint rv"><div class="st"><h3>EM500-SWL — рівень води</h3><p>Три датчики EM500-SWL вимірюють у реальному часі рівень і об&#x27;єм води в трьох резервуарах. Це дає дані для керування водопостачанням торгового центру.</p></div></div><div class="sp sp-tall t-sand rv"><div class="st"><h3>UC100 — моніторинг насосів</h3><p>Конвертери Modbus у LoRaWAN® UC100 під&#x27;єднано напряму до розумних частотних перетворювачів (VFD) трьох вторинних насосів HVAC. Робочі дані надходять у центральну систему кожні 5 хвилин.</p></div></div><div class="sp sp-right t-grey rv"><div class="st"><h3>UC300 — пожежна панель</h3><p>Контролер UC300 підключено до панелі системи пожежогасіння. Через цифрові входи він фіксує несправності й аварійні стани та передає статус у BMS/SCADA.</p></div></div></div></div></section>
 <section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4"><div class="rv"><h3>Повна автоматизація будівлі</h3><p>HVAC працює автоматично, інтегрована з освітленням. Ручні запуск і вимкнення більше не потрібні, робочий процес спростився.</p></div><div class="rv"><h3>Раніше виявлення збоїв поповнення води</h3><p>Несправності системи поповнення води видно на ранньому етапі. Це підвищує надійність і допомагає уникнути простоїв.</p></div><div class="rv"><h3>Віддалене керування стельовими установками</h3><p>Власник дистанційно керує температурою в приміщеннях. Багато пристроїв змонтовано на висоті понад 4 м, тому ручне керування ними недоцільне.</p></div><div class="rv"><h3>Узгодження HVAC і освітлення за даними середовища</h3><p>Алгоритми BMS і дані про зовнішню температуру оптимізують керування HVAC та освітленням. Мікроклімат у центрі стабільний, споживання енергії нижче.</p></div></div></div></section>
-<section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">E-Control SRL</div><div><p>E-Control SRL — технологічний партнер, який впровадив у торговому центрі рішення на пристроях Milesight і LoRaWAN®-інфраструктурі.</p>
-<p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="https://www.milesight.com/iot/success-stories/iot-shopping-center-building-automation-paraguay" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></div></div></section>
+<section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">E-Control SRL</div><div><p>E-Control SRL — технологічний партнер, який впровадив у торговому центрі рішення на пристроях Milesight і LoRaWAN®-інфраструктурі.</p><p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="https://www.milesight.com/iot/success-stories/iot-shopping-center-building-automation-paraguay" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></div></div></section>
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
 </main><script>
 (function(){var a=[].slice.call(document.querySelectorAll('.cp-tabs nav a'));if(!('IntersectionObserver' in window))return;

@@ -4,6 +4,21 @@ import json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gen_solutions import chrome, e, ROOT
 
+_IMC = {}
+def img_info(src):
+    # (ширина, «деталізація»): абстрактні фони з майже нульовою деталізацією не показуємо
+    if src not in _IMC:
+        try:
+            from PIL import Image, ImageStat, ImageFilter
+            im = Image.open(os.path.join(ROOT, src)); g = im.convert('L')
+            _IMC[src] = (im.size[0], ImageStat.Stat(g.filter(ImageFilter.FIND_EDGES)).mean[0])
+        except Exception:
+            _IMC[src] = (0, 0)
+    return _IMC[src]
+
+def usable(src):
+    return bool(src) and img_info(src)[1] >= 3
+
 C = json.load(open(os.path.join(ROOT, 'content/cases.json')))
 DIRS = dict(C['directions'])
 
@@ -300,7 +315,7 @@ PCSS2 = '''<style>
 .sp h3{font-weight:500;font-size:20px;margin-bottom:8px}
 .sp p{color:var(--text);font-size:16px;line-height:1.6}
 .sp .ph{display:flex;gap:12px;flex:none}
-.sp .ph img{width:172px;height:200px;object-fit:cover;border-radius:6px}
+.sp .ph img{width:172px;height:200px;object-fit:contain;background:#fff;padding:6px;border-radius:6px}
 .sp-wide{grid-column:1/-1}
 .sp-wide .st{flex:1}
 .sp-left{flex-direction:row-reverse}
@@ -309,6 +324,11 @@ PCSS2 = '''<style>
 .sp-tall .ph{flex:1;min-height:240px}
 .sp-tall .ph img{flex:1;min-width:0;width:auto;height:100%}
 .sp-right .ph.n2{flex-direction:column}.sp-right .ph.n2 img{width:180px;height:120px}
+.sp,.sp-left,.sp-tall{flex-direction:column;align-items:stretch}
+.sp .ph,.sp-tall .ph,.sp-right .ph.n2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));flex:none;min-height:0}
+.sp .ph.n1{grid-template-columns:1fr}
+.sp .ph img,.sp-tall .ph img,.sp-right .ph.n2 img{width:100%;height:auto;max-height:260px;object-fit:contain;background:#fff;padding:10px;border-radius:6px}
+.sp-tall{grid-row:auto;grid-column:auto}
 .t-blue{background:#e8f1fb}.t-mint{background:#e8f5ef}.t-sand{background:#fbf5e8}.t-grey{background:#f2f4f7}
 .cp-resb{background:linear-gradient(120deg,#0a3f9a 0%,#0b5cd6 60%,#2b7cf2 100%);color:#fff}
 .cp-resb h2{color:#fff}
@@ -316,7 +336,7 @@ PCSS2 = '''<style>
 .cp-res4>div{border:1px solid rgba(255,255,255,.45);border-radius:10px;padding:28px 30px;background:rgba(255,255,255,.06)}
 .cp-res4 h3{font-weight:500;font-size:20px;color:#fff;margin-bottom:10px}
 .cp-res4 p{color:rgba(255,255,255,.92);font-size:16px}
-.cp-scada{margin-top:36px;background:#fff;border-radius:10px;padding:14px}
+.cp-scada{margin:36px auto 0;background:#fff;border-radius:10px;padding:14px}
 .cp-scada img{display:block;width:100%;border-radius:6px}
 .cp-scada figcaption{padding:12px 6px 4px;font-size:14px;color:var(--muted)}
 .cp-note2{margin-top:18px;font-size:14px;color:rgba(255,255,255,.85)}
@@ -347,8 +367,8 @@ def case_page(c):
         if a == 'Обладнання':
             return '<ul class="eq">' + ''.join(f'<li>{nb(x)}</li>' for x in b.split(', ')) + '</ul>'
         return f'<b>{nb(b)}</b>'
-    facts = ''.join(f'<div class="f f-{"eq" if a == "Обладнання" else "t"}"><span>{e(a)}</span>{fv(a, b)}</div>' for a, b in P['facts'])
-    tabs = [('background', 'Передумови'), ('challenges', 'Виклики'), ('solution', 'Рішення'), ('results', 'Результат'), ('partner', 'Партнер')]
+    facts = ''.join(f'<div class="f f-{"eq" if a == "Обладнання" else "t"}"><span>{e(a)}</span>{fv(a, b)}</div>' for a, b in P['facts'] if b.strip() not in ('', '—', '-'))
+    tabs = [('background', 'Передумови'), ('challenges', 'Виклики'), ('solution', 'Рішення'), ('results', 'Результат')] + ([('partner', 'Партнер')] if P.get('partner') else [])
     nav = ''.join(f'<a href="#{k}">{e(v)}</a>' for k, v in tabs)
     bg = P['background']
     ch = ''.join(f'<div class="rv"><i class="ic ic-{e(x["icon"])}">{ICONS.get(x["icon"], "")}</i><h3>{e(x["t"])}</h3><ul>{"".join(f"<li>{e(y)}</li>" for y in x["items"])}</ul></div>' for x in P['challenges'])
@@ -361,23 +381,26 @@ def case_page(c):
     T = ['blue', 'mint', 'sand', 'grey']
     sols = P['solution'][:4]
     for k, x in enumerate(sols):
-        x.setdefault('layout', L[len(sols)][k]); x.setdefault('tint', T[k % 4]); x['imgs'] = (x.get('imgs') or [])[:2]
+        x.setdefault('layout', L[len(sols)][k]); x.setdefault('tint', T[k % 4]); x['imgs'] = [i for i in (x.get('imgs') or []) if i != P.get('solution_img') and usable(i)][:2]
     sol = ''.join(panel(x) for x in sols)
     R = P['results']
     diag = f'<figure class="cp-diag"><img src="{e(P["solution_img"])}" alt="Схема рішення" loading="lazy"><figcaption>{e(P.get("solution_caption", ""))}</figcaption></figure>' if P.get('solution_img') else ''
     res = ''.join(f'<div class="rv"><h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in R['items'])
     place = dict(P['facts']).get('Локація', c['place'])
+    SRC = f'<p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c['link'])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p>'
+    pname = dict(P['facts']).get('Партнер-інтегратор', '').split(' (')[0]
+    PART = (f'<section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">{e(pname)}</div><div><p>{e(P["partner"])}</p>{SRC}</div></div></div></section>'
+            if P.get('partner') else f'<section class="cp-sec" style="padding-block:8px 0"><div class="wrap">{SRC}</div></section>')
     body = f"""{CSS}{PCSS}{PCSS2}
 <div class="cp-hero"><img src="{e(P['hero'])}" alt=""><div class="wrap"><div class="eyebrow">Досвід Milesight у світі · {e(DIRS[c['dir']])}</div><h1>{e(P['h1'])}</h1><p>{e(P['sub'])}</p><span class="cp-loc">Локація: {e(place)}</span></div></div>
 <div class="cp-facts"><div class="wrap"><div class="box">{facts}<a class="btn" href="{e(c['link'])}" target="_blank" rel="noopener">Оригінал кейсу</a></div></div></div>
 <div class="cp-tabs"><div class="wrap"><nav aria-label="Розділи кейсу">{nav}</nav><div class="bc"><a href="./">Головна</a> › <a href="vprovadzhennia.html">Впровадження</a> › {e(DIRS[c['dir']])}</div></div></div>
 <main>
-<section id="background" class="cp-sec"><div class="wrap"><div class="cp-bg"><div class="card rv"><h2>Передумови</h2>{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg.get('img') or P['hero'])}" alt="" loading="lazy"></div></div></section>
+<section id="background" class="cp-sec"><div class="wrap"><div class="cp-bg"><div class="card rv"><h2>Передумови</h2>{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg['img'] if usable(bg.get('img')) else P['hero'])}" alt="" loading="lazy"></div></div></section>
 <section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="ctr">Виклики</h2><div class="cp-ch3" style="--n:{len(P['challenges'])}">{ch}</div></div></section>
 <section id="solution" class="cp-sec"><div class="wrap"><h2 class="ctr">Рішення</h2>{diag}<div class="cp-bento">{sol}</div></div></section>
-<section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4">{res}</div>{f'<figure class="cp-scada rv"><img src="{e(R["img"])}" alt="" loading="lazy">' + (f'<figcaption>{e(R["caption"])}</figcaption>' if R.get('caption') else '') + '</figure>' if R.get('img') else ''}{f'<p class="cp-note2">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
-<section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">{e(dict(P['facts']).get('Партнер-інтегратор', '').split(' (')[0])}</div><div><p>{e(P['partner'])}</p>
-<p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c['link'])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></div></div></section>
+<section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4">{res}</div>{f'<figure class="cp-scada rv" style="max-width:{img_info(R["img"])[0] + 28}px"><img src="{e(R["img"])}" alt="" loading="lazy">' + (f'<figcaption>{e(R["caption"])}</figcaption>' if R.get('caption') else '') + '</figure>' if usable(R.get('img')) else ''}{f'<p class="cp-note2">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
+{PART}
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
 </main>{SPY}"""
     html = chrome(body, P['h1'], 'case')

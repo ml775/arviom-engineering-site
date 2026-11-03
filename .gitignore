@@ -2,3 +2,4 @@ variants.html
 *.bak
 __pycache__/
 video/
+_preview.html

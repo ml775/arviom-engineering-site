@@ -31,3 +31,7 @@ for slug in sorted(os.listdir(src)):
                     'image': card_img, 'link': c['link'], 'obj': c['obj'], 'country': c['country'], 'page': page})
     print('added', slug, c['dir'])
 json.dump(D, open(P, 'w'), ensure_ascii=False, indent=2); open(P, 'a').write('\n')
+
+# превью для плашок — як на milesight.com (див. build/ms_cards.py)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import ms_cards; ms_cards.main()

@@ -285,7 +285,7 @@ PCSS2 = '''<style>
 .cp-bg .card p{font-size:18px;color:var(--text)}
 .cp-bg .card p+p{margin-top:14px}
 .cp-bg>img{grid-column:2/3;grid-row:1;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
-.cp-ch3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.cp-ch3{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:24px}
 .cp-ch3>div{background:#fff;border:1px solid #c9d6e8;border-radius:10px;padding:32px 30px}
 .cp-ch3 .ic{display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;margin:0 auto 22px}
 .cp-ch3 .ic svg{width:30px;height:30px}
@@ -354,8 +354,15 @@ def case_page(c):
     ch = ''.join(f'<div class="rv"><i class="ic ic-{e(x["icon"])}">{ICONS.get(x["icon"], "")}</i><h3>{e(x["t"])}</h3><ul>{"".join(f"<li>{e(y)}</li>" for y in x["items"])}</ul></div>' for x in P['challenges'])
     def panel(x):
         ims = ''.join(f'<img src="{e(i)}" alt="" loading="lazy">' for i in x['imgs'])
+        if not ims:
+            return f'<div class="sp sp-{e(x["layout"])} t-{e(x["tint"])} rv"><div class="st"><h3>{e(x["t"])}</h3><p>{e(x["d"])}</p></div></div>'
         return f'<div class="sp sp-{e(x["layout"])} t-{e(x["tint"])} rv"><div class="st"><h3>{e(x["t"])}</h3><p>{e(x["d"])}</p></div><div class="ph n{len(x["imgs"])}">{ims}</div></div>'
-    sol = ''.join(panel(x) for x in P['solution'])
+    L = {1: ['wide'], 2: ['wide', 'wide'], 3: ['wide', 'left', 'right'], 4: ['wide', 'left', 'tall', 'right']}
+    T = ['blue', 'mint', 'sand', 'grey']
+    sols = P['solution'][:4]
+    for k, x in enumerate(sols):
+        x.setdefault('layout', L[len(sols)][k]); x.setdefault('tint', T[k % 4]); x['imgs'] = (x.get('imgs') or [])[:2]
+    sol = ''.join(panel(x) for x in sols)
     R = P['results']
     diag = f'<figure class="cp-diag"><img src="{e(P["solution_img"])}" alt="Схема рішення" loading="lazy"><figcaption>{e(P.get("solution_caption", ""))}</figcaption></figure>' if P.get('solution_img') else ''
     res = ''.join(f'<div class="rv"><h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in R['items'])
@@ -365,10 +372,10 @@ def case_page(c):
 <div class="cp-facts"><div class="wrap"><div class="box">{facts}<a class="btn" href="{e(c['link'])}" target="_blank" rel="noopener">Оригінал кейсу</a></div></div></div>
 <div class="cp-tabs"><div class="wrap"><nav aria-label="Розділи кейсу">{nav}</nav><div class="bc"><a href="./">Головна</a> › <a href="vprovadzhennia.html">Впровадження</a> › {e(DIRS[c['dir']])}</div></div></div>
 <main>
-<section id="background" class="cp-sec"><div class="wrap"><div class="cp-bg"><div class="card rv"><h2>Передумови</h2>{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg['img'])}" alt="" loading="lazy"></div></div></section>
-<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="ctr">Виклики</h2><div class="cp-ch3">{ch}</div></div></section>
+<section id="background" class="cp-sec"><div class="wrap"><div class="cp-bg"><div class="card rv"><h2>Передумови</h2>{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg.get('img') or P['hero'])}" alt="" loading="lazy"></div></div></section>
+<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="ctr">Виклики</h2><div class="cp-ch3" style="--n:{len(P['challenges'])}">{ch}</div></div></section>
 <section id="solution" class="cp-sec"><div class="wrap"><h2 class="ctr">Рішення</h2>{diag}<div class="cp-bento">{sol}</div></div></section>
-<section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4">{res}</div><figure class="cp-scada rv"><img src="{e(R['img'])}" alt="Платформа SCADA водного департаменту" loading="lazy"><figcaption>Платформа водного департаменту: рівень у резервуарах, обсяги води й карта об'єктів острова.</figcaption></figure>{f'<p class="cp-note2">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
+<section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4">{res}</div>{f'<figure class="cp-scada rv"><img src="{e(R["img"])}" alt="" loading="lazy">' + (f'<figcaption>{e(R["caption"])}</figcaption>' if R.get('caption') else '') + '</figure>' if R.get('img') else ''}{f'<p class="cp-note2">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
 <section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">{e(dict(P['facts']).get('Партнер-інтегратор', '').split(' (')[0])}</div><div><p>{e(P['partner'])}</p>
 <p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c['link'])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></div></div></section>
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>

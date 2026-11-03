@@ -94,31 +94,42 @@ LCSS = """<style>
 .lh>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .lh::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,20,35,.62) 0%,rgba(10,20,35,.25) 55%,rgba(10,20,35,.05) 100%)}
 .lh .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:center;height:100%;min-height:0}
-.lh .chips{font-size:16px;color:rgba(255,255,255,.9);margin-bottom:14px}
+.lh .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.lh .chips span{position:relative;font-size:14px;color:#fff;border:1px solid rgba(255,255,255,.6);padding:5px 12px 5px 16px;background:rgba(10,20,35,.35)}
+.lh .chips span::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:5px;background:var(--blue);transform:skewX(-14deg)}
 .lh h1{font-weight:400;font-size:clamp(30px,3.6vw,48px);line-height:1.1;color:#fff;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.25)}
 .lh .eyebrow{color:#fff;opacity:.9}
 .lh .btn{margin-top:26px}
-.lh-side{min-width:0;justify-self:end;width:100%;max-width:520px}
+.lh-side{min-width:0;justify-self:end;width:100%;max-width:680px}
 .lh-cards{display:flex;gap:16px;overflow:hidden;scroll-behavior:smooth;scroll-snap-type:x mandatory}
-.lh-cards a{flex:0 0 calc((100% - 16px)/2);scroll-snap-align:start;background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:14px;color:#fff}
-.lh-cards img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:5px;margin-bottom:10px}
-.lh-cards b{display:block;font-weight:500;font-size:15px;line-height:1.3;min-height:3.9em}
-.lh-cards small{display:block;margin-top:6px;font-size:13px;opacity:.9}
-.lh-nav{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
-.lh-nav button{width:40px;height:40px;border:0;border-radius:5px;background:var(--blue);color:#fff;font-size:20px;cursor:pointer}
+.lh-cards a{flex:0 0 calc((100% - 32px)/3);scroll-snap-align:start;background:rgba(255,255,255,.16);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:14px;color:#fff;display:flex;flex-direction:column}
+.lh-cards b{display:block;font-weight:400;font-size:15px;line-height:1.3;min-height:3.9em}
+.lh-cards small{display:flex;align-items:center;gap:6px;margin:8px 0 10px;font-size:13px;opacity:.95}
+.lh-cards small::before{content:"";width:5px;height:12px;background:#5aa0ff;transform:skewX(-14deg)}
+.lh-cards img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;margin-top:auto}
+.lh-nav{display:flex;gap:8px;margin-top:16px;justify-content:flex-start}
+.lh-nav button{width:36px;height:36px;border:0;border-radius:4px;background:var(--blue);color:#fff;font-size:20px;cursor:pointer}
 .lh-nav button:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .lb{display:grid;grid-template-columns:280px minmax(0,1fr);gap:40px;align-items:start;padding-block:48px 80px}
 .fl h2{font-weight:400;font-size:26px;margin-bottom:16px}
 .fl details{background:var(--bg2);border-radius:8px;padding:6px 18px 14px;margin-bottom:14px}
 .fl summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:17px;color:var(--ink)}
+.fl summary i{font-style:normal;color:var(--muted)}
+.fl .sub{padding-left:26px}
+.fl .sub label{font-size:14px;color:var(--muted)}
+.fl-promo{background:var(--soft);border-radius:8px;padding:22px 20px;margin-top:6px}
+.fl-promo b{display:block;font-weight:500;font-size:18px;color:var(--ink)}
+.fl-promo p{margin-top:8px;font-size:14px;color:var(--text)}
+.fl-promo a{display:inline-block;margin-top:12px;color:var(--blue);font-size:15px}
 .fl summary::-webkit-details-marker{display:none}
 .fl summary::after{content:"";border:6px solid transparent;border-top-color:#8a96a6;margin-top:6px}
 .fl details[open] summary::after{transform:rotate(180deg);margin-top:-6px}
 .fl summary i{font-style:normal;color:var(--muted);font-size:14px;margin-left:6px}
 .fl label{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:15px;color:var(--text);cursor:pointer}
 .fl label input{width:16px;height:16px;accent-color:var(--blue)}
-.fl label em{font-style:normal;color:var(--muted);font-size:13px;margin-left:auto}
-.fl .opts{max-height:260px;overflow:auto;padding-top:6px}
+.fl label em{display:none}
+.fl .opts{padding-top:6px}
+.fl .dev .opts{max-height:320px;overflow:auto}
 .fl .rst{font:inherit;font-size:15px;background:none;border:0;color:var(--blue);cursor:pointer;padding:4px 0}
 .lr .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;color:var(--muted);font-size:15px}
 .lg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
@@ -127,17 +138,22 @@ LCSS = """<style>
 .lc .im{position:relative;aspect-ratio:16/13;overflow:hidden;background:#dfe4ea}
 .lc .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
 .lc:hover .im img{transform:scale(1.04)}
-.lc .rb{position:absolute;left:12px;top:12px;font-size:13px;color:#fff;background:var(--blue);padding:3px 10px;border-radius:3px}
+.lc .rb{position:absolute;left:0;top:14px;font-size:13px;color:#fff;background:rgba(10,20,35,.72);padding:4px 12px 4px 16px}
+.lc .rb::before{content:"";position:absolute;left:-2px;top:0;bottom:0;width:6px;background:var(--blue);transform:skewX(-14deg)}
 .lc .im.shot{background:var(--tile)}
 .lc .im.shot img{object-fit:contain;padding:44px 16px 12px;filter:drop-shadow(0 8px 14px rgba(20,30,45,.12))}
-.lc .tx{padding:16px 16px 18px;display:flex;flex-direction:column;gap:14px;flex:1}
-.lc h3{font-weight:500;font-size:18px;line-height:1.3;text-wrap:balance}
+.lc .tx{padding:16px 16px 18px;display:flex;flex-direction:column;gap:18px;flex:1}
+.lc h3{font-weight:500;font-size:17px;line-height:1.3;text-wrap:balance}
 .lc .mt{margin-top:auto;display:flex;gap:14px;align-items:center;font-size:14px;flex-wrap:wrap}
 .lc .mt .pin{color:var(--muted);display:inline-flex;gap:6px;align-items:center}
 .lc .mt .pin::before{content:"";width:8px;height:8px;border:1.5px solid var(--muted);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
 .lc .mt .ind{color:var(--blue)}
 .lc[hidden],.lc.pg{display:none!important}
-.lr .more{display:block;margin:30px auto 0;font:inherit;background:#fff;border:1.5px solid var(--blue);color:var(--blue);border-radius:5px;padding:11px 26px;cursor:pointer}
+.pgn{display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-top:30px}
+.pgn button{font:inherit;font-size:14px;min-width:30px;height:30px;border:0;border-radius:50%;background:none;color:var(--text);cursor:pointer;padding:0 6px}
+.pgn button.on{background:var(--blue);color:#fff}
+.pgn button:disabled{opacity:.35;cursor:default}
+.pgn span{color:var(--muted);padding:0 4px}
 .lr .none{padding:40px 0;color:var(--muted)}
 .lr .note{margin-top:28px;font-size:14px;color:var(--muted)}
 .fl-t{display:none}
@@ -148,20 +164,24 @@ LCSS = """<style>
 
 LJS = """<script>
 (function(){
-var cards=[].slice.call(document.querySelectorAll('.lc')),boxes=[].slice.call(document.querySelectorAll('.fl input')),PAGE=12,shown=PAGE;
-var more=document.querySelector('.lr .more'),cnt=document.querySelector('.lr .cnt'),none=document.querySelector('.lr .none');
+var cards=[].slice.call(document.querySelectorAll('.lc')),boxes=[].slice.call(document.querySelectorAll('.fl input')),PAGE=12,page=1;
+var pgn=document.querySelector('.pgn'),cnt=document.querySelector('.lr .cnt'),none=document.querySelector('.lr .none'),grid=document.querySelector('.lg');
 function sel(g){return boxes.filter(function(b){return b.name===g&&b.checked}).map(function(b){return b.value})}
 function apply(){var G=['dir','obj','dev','src'],S={};G.forEach(function(g){S[g]=sel(g)});var n=0;
 cards.forEach(function(c){var ok=G.every(function(g){if(!S[g].length)return true;var v=(c.dataset[g]||'').split(' ');return S[g].some(function(x){return v.indexOf(x)>-1})});
-c.hidden=!ok;c.classList.remove('pg');if(ok){n++;if(n>shown)c.classList.add('pg')}});
-cnt.textContent=n;more.hidden=n<=shown;none.hidden=n>0}
-boxes.forEach(function(b){b.addEventListener('change',function(){shown=PAGE;apply()})});
-more.addEventListener('click',function(){shown+=PAGE;apply()});
-document.querySelector('.fl .rst').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});shown=PAGE;apply()});
+c.hidden=!ok;c.classList.remove('pg');if(ok){n++;if(n<=(page-1)*PAGE||n>page*PAGE)c.classList.add('pg')}});
+cnt.textContent=n;none.hidden=n>0;
+[].forEach.call(document.querySelectorAll('.fl details'),function(d){var k=d.querySelectorAll('input:checked').length,i=d.querySelector('summary i');if(i)i.textContent='('+k+')'});
+var P=Math.ceil(n/PAGE),h='';if(P>1){h+='<button type="button" data-p="'+(page-1)+'"'+(page<=1?' disabled':'')+' aria-label="Назад">‹</button>';
+for(var i=1;i<=P;i++){if(P>7&&i>2&&i<P-1&&Math.abs(i-page)>1){if(h.slice(-13)!=='<span>…</span>')h+='<span>…</span>';continue}h+='<button type="button" data-p="'+i+'"'+(i===page?' class="on"':'')+'>'+i+'</button>'}
+h+='<button type="button" data-p="'+(page+1)+'"'+(page>=P?' disabled':'')+' aria-label="Далі">›</button>'}pgn.innerHTML=h}
+pgn.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b||b.disabled)return;page=+b.dataset.p;apply();grid.scrollIntoView({behavior:'smooth',block:'start'})});
+boxes.forEach(function(b){b.addEventListener('change',function(){page=1;apply()})});
+document.querySelector('.fl .rst').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});page=1;apply()});
 var t=document.querySelector('.fl-t');t.addEventListener('click',function(){var f=document.querySelector('.fl');f.classList.toggle('open');t.setAttribute('aria-expanded',f.classList.contains('open'))});
 var h=location.hash.slice(1),hb=boxes.filter(function(b){return b.name==='dir'&&b.value===h})[0];if(hb)hb.checked=true;
 apply();
-var tr=document.querySelector('.lh-cards');[].forEach.call(document.querySelectorAll('.lh-nav button'),function(b){b.addEventListener('click',function(){tr.scrollBy({left:(b.dataset.d==='1'?1:-1)*246})})});
+var tr=document.querySelector('.lh-cards');[].forEach.call(document.querySelectorAll('.lh-nav button'),function(b){b.addEventListener('click',function(){tr.scrollBy({left:(b.dataset.d==='1'?1:-1)*(tr.firstElementChild.offsetWidth+16)})})});
 })();
 </script>"""
 
@@ -193,11 +213,13 @@ def build():
     hero_img = hero['page']['hero'] if hero.get('page') else hero['image']
     ext = lambda c: '' if not c['link'].startswith('http') else ' target="_blank" rel="noopener"'
     nb = lambda t: re.sub(r'(\d) (\d)', '\\1\u00a0\\2', t)
-    side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><img src="{e(c["image"])}" alt="" loading="lazy"><b>{e(nb(c["title"]))}</b><small>{e(c["country"])} · {e(DIRS[c["dir"]])}</small></a>' for c in feat if c is not hero and "shot-" not in c["image"])
+    side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><b>{e(nb(c["title"]))}</b><small>{e(DIRS[c["dir"]])} · {e(c["country"])}</small><img src="{e(c["image"])}" alt="" loading="lazy"></a>' for c in feat if c is not hero and "shot-" not in c["image"])
     # filters
-    def grp(name, title, opts, open_=True):
-        rows = ''.join(f'<label><input type="checkbox" name="{name}" value="{e(v)}">{e(lbl)}<em>{n}</em></label>' for v, lbl, n in opts)
-        return f'<details class="grp"{" open" if open_ else ""}><summary>{e(title)}</summary><div class="opts">{rows}</div></details>'
+    def row(name, v, lbl):
+        return f'<label><input type="checkbox" name="{name}" value="{e(v)}">{e(lbl)}</label>'
+    def grp(name, title, opts, open_=True, rows=None):
+        rows = rows if rows is not None else ''.join(row(name, v, lbl) for v, lbl, n in opts)
+        return f'<details class="grp {name}"{" open" if open_ else ""}><summary>{e(title)} <i>(0)</i></summary><div class="opts">{rows}</div></details>'
     cnt = lambda key, val: sum(1 for c in items if val in (c[key] if isinstance(c[key], list) else [c[key]]))
     g_dir = [(k, v, cnt('dir', k)) for k, v in C['directions'] if cnt('dir', k)]
     objs = sorted({c['obj'] for c in items})
@@ -205,7 +227,10 @@ def build():
     alld = sorted({d for c in items for d in c['_dev']})
     g_dev = [(d.lower(), d, sum(1 for c in items if d in c['_dev'])) for d in alld]
     g_src = [('ua', 'Україна', cnt('src', 'ua')), ('ms', 'Milesight у світі', cnt('src', 'ms'))]
-    filters = grp('dir', 'Напрям', g_dir) + grp('src', 'Де', g_src) + grp('obj', "Тип об'єкта", g_obj, False) + grp('dev', 'Обладнання', g_dev, False)
+    # напрям → вкладені типи об'єктів (як Industry → підтипи на milesight.com)
+    nested = ''.join(row('dir', k, v) + '<div class="sub">' + ''.join(row('obj', slug(o), o) for o in sorted({c['obj'] for c in items if c['dir'] == k})) + '</div>' for k, v, n in g_dir)
+    filters = grp('dir', 'Напрям', [], rows=nested) + grp('src', 'Де', g_src) + grp('dev', 'Обладнання', g_dev, False)
+    promo = '<div class="fl-promo grp"><b>Ваш об\'єкт тут</b><p>Зробили впровадження на Milesight? Розкажіть — опублікуємо кейс із вашим логотипом.</p><a href="./#contact">Надіслати кейс →</a></div>'
     def lcard(c):
         rb = '<span class="rb">Україна</span>' if c['src'] == 'ua' else ''
         return (f'<a class="lc" href="{e(c["link"])}"{ext(c)} data-dir="{e(c["dir"])}" data-obj="{e(slug(c["obj"]))}" data-src="{c["src"]}" data-dev="{e(" ".join(d.lower() for d in c["_dev"]))}">'
@@ -214,12 +239,12 @@ def build():
     order = [c for c in items if c['src'] == 'ua'] + sorted([c for c in items if c['src'] == 'ms'], key=lambda c: (not c.get('featured'), c.get('featured', 99)))
     cards = ''.join(lcard(c) for c in order)
     body = f"""{CSS}{LCSS}
-<div class="lh"><img src="{e(hero_img)}" alt=""><div class="wrap"><div><div class="chips">{e(DIRS[hero['dir']])} · {e(hero['obj'])} · {e(hero['country'])}</div><h1>{e(nb(hero['title']))}</h1><a class="btn" href="{e(hero['link'])}"{ext(hero)}>Детальніше</a></div>
+<div class="lh"><img src="{e(hero_img)}" alt=""><div class="wrap"><div><div class="chips"><span>{e(DIRS[hero['dir']])}</span><span>{e(hero['obj'])}</span><span>{e(hero['country'])}</span></div><h1>{e(nb(hero['title']))}</h1><a class="btn" href="{e(hero['link'])}"{ext(hero)}>Детальніше</a></div>
 <div class="lh-side"><div class="lh-cards">{side}</div><div class="lh-nav"><button type="button" data-d="-1" aria-label="Назад">‹</button><button type="button" data-d="1" aria-label="Далі">›</button></div></div></div></div>
 <main><div class="wrap lb">
-<aside class="fl" aria-label="Фільтри"><h2>Фільтр</h2><button type="button" class="fl-t" aria-expanded="false">Фільтри</button>{filters}<button type="button" class="rst grp">Скинути фільтри</button></aside>
+<aside class="fl" aria-label="Фільтри"><h2>Фільтр</h2><button type="button" class="fl-t" aria-expanded="false">Фільтри</button>{filters}<button type="button" class="rst grp">Скинути фільтри</button>{promo}</aside>
 <div class="lr"><div class="top"><span>Знайдено: <b class="cnt">{len(items)}</b></span><span>Проєкти в Україні — разом із партнерами-інтеграторами</span></div>
-<div class="lg">{cards}</div><p class="none" hidden>За цими фільтрами нічого не знайдено. Спробуйте прибрати частину позначок.</p><button type="button" class="more" hidden>Показати ще</button>
+<div class="lg">{cards}</div><p class="none" hidden>За цими фільтрами нічого не знайдено. Спробуйте прибрати частину позначок.</p><nav class="pgn" aria-label="Сторінки"></nav>
 <p class="note">Кейси Milesight — стислий виклад нашими словами за матеріалами milesight.com, фото — Milesight.</p></div>
 </div>
 <section class="blk" style="padding-block:0 72px"><div class="wrap"><div class="cta"><div><h2>Хочете такий результат на своєму об'єкті?</h2><p>Розкажіть про задачу — підберемо обладнання й партнера-інтегратора.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>

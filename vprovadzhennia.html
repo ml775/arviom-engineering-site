@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Впровадження — ARVIOM Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Structure follows milesight.com solution pages: hero → section tabs → challenges → solution intro → applications (tabs with devices) → benefits → stories → other solutions → CTA */
+:root{--ink:#1a2433;--text:#333c48;--muted:#545e6b;--line:#e3e7ec;--bg2:#f5f7f9;--blue:#0b5cd6;--blue2:#1a6ef0;--soft:#eef4ff;
+  --tile:linear-gradient(135deg,#edf1f6 0%,#f7f9fb 55%,#e7ecf2 100%);--f:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:120px;overflow-x:clip}
+body{background:#fff;color:var(--text);font-family:var(--f);font-weight:400;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:var(--blue);text-decoration:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+h1,h2,h3{color:var(--ink);font-weight:300;letter-spacing:-.01em}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+section.blk{padding-block:88px}
+.alt{background:var(--bg2)}
+.eyebrow{color:var(--blue);font-size:17px;margin-bottom:10px}
+.st{font-size:clamp(30px,3.4vw,44px);line-height:1.15}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;font-weight:400;padding:12px 22px;border-radius:5px;white-space:nowrap}
+.btn::after{content:"›";font-size:20px;line-height:1;transform:translateY(-1px)}
+.btn:hover{background:var(--blue2)}
+.btn.w{background:#fff;color:var(--blue)}
+
+.hero{position:relative;height:min(560px,70vh);min-height:420px;overflow:hidden;background:#0d1520}
+.hero>img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,14,22,.72) 0%,rgba(8,14,22,.35) 50%,rgba(8,14,22,.05) 80%)}
+.hero .tx{position:absolute;z-index:1;left:0;right:0;top:50%;transform:translateY(-50%)}
+.hero .eyebrow{color:#9cc2ff}
+.hero h1{color:#fff;font-size:clamp(34px,4.4vw,58px);line-height:1.08;max-width:18ch}
+.hero p{color:rgba(255,255,255,.92);font-size:19px;margin:16px 0 28px;max-width:48ch}
+
+.tabs{position:sticky;top:64px;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:52px}
+.tabs nav{display:flex;overflow-x:auto;scrollbar-width:none}.tabs nav::-webkit-scrollbar{display:none}
+.tabs nav a{color:var(--text);font-size:15px;padding:16px 18px;border-right:1px solid var(--line);white-space:nowrap}
+.tabs nav a:first-child{padding-left:0}.tabs nav a:last-child{border-right:0}
+.tabs nav a.on{background:var(--blue);color:#fff;padding-left:18px}
+.tabs .bc{font-size:14px;color:var(--muted);white-space:nowrap}.tabs .bc a{color:var(--muted)}
+
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:44px}
+.pc{background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+.pc .im{aspect-ratio:16/10;overflow:hidden;background:var(--bg2)}
+.pc .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.pc:hover .im img{transform:scale(1.04)}
+.pc h3{font-size:21px;font-weight:400;padding:20px 22px 6px}
+.pc p{color:var(--muted);font-size:16px;padding:0 22px 24px}
+
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:56px;align-items:center}
+.intro p{color:var(--muted);margin-top:16px;font-size:17px}
+.intro .pic{background:var(--tile);border-radius:8px;padding:24px;display:flex;align-items:center;justify-content:center}
+
+.apps{display:grid;grid-template-columns:320px minmax(0,1fr);background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.07);overflow:hidden;margin-top:44px;min-height:440px}
+.al{border-right:1px solid var(--line);display:flex;flex-direction:column}
+.al button{all:unset;cursor:pointer;padding:22px 28px;border-bottom:1px solid var(--line);font-size:18px;color:var(--ink);position:relative}
+.al button::after{content:"↘";position:absolute;right:24px;color:var(--muted)}
+.al button.on{color:var(--blue);background:var(--soft)}.al button.on::after{content:"↗";color:var(--blue)}
+.ap{display:none;padding:34px 40px}.ap.on{display:block}
+.ap .where{font-size:14px;color:var(--blue);margin-bottom:8px}
+.ap h3{font-size:26px;margin-bottom:10px}
+.ap p{color:var(--muted);max-width:60ch}
+.ap .apimg{border-radius:8px;overflow:hidden;margin:20px 0 0;max-height:260px}
+.ap .apimg img{width:100%;height:260px;object-fit:cover}
+.devs{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px;margin-top:24px}
+.dev{border:1px solid var(--line);border-radius:8px;padding:16px 12px;text-align:center;color:var(--ink);transition:background .3s}
+.dev:hover{background:var(--soft)}
+.dev .di{height:110px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.dev .di img{max-height:100%;max-width:80%;object-fit:contain}
+.dev b{display:block;font-weight:500;font-size:15px}.dev span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+
+.ben{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:44px}
+.ben div{border-top:1.5px solid var(--blue);padding-top:20px}
+.ben i{font-style:normal;font-size:42px;font-weight:200;color:var(--blue);display:block;line-height:1;margin-bottom:12px}
+.ben b{display:block;font-weight:400;font-size:19px;color:var(--ink);margin-bottom:6px}
+.ben span{color:var(--muted);font-size:16px}
+
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:44px}
+.cc{position:relative;border-radius:8px;overflow:hidden;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#fff;background:#24364b}
+.cc img{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s ease}
+.cc:hover img{transform:scale(1.04)}
+.cc::after{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.15) 0%,rgba(10,20,35,.1) 35%,rgba(10,20,35,.85) 100%)}
+.cc>*{position:relative;z-index:1}
+.cc .chip{align-self:flex-start;background:var(--blue);color:#fff;font-size:12px;border-radius:3px;padding:2px 9px;margin-bottom:auto}
+.cc h3{color:#fff;font-size:21px;line-height:1.3;font-weight:400}
+
+.others{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:36px}
+.oc{position:relative;border-radius:8px;overflow:hidden;min-height:170px;padding:20px;display:flex;align-items:flex-end;color:#fff}
+.oc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.oc:hover img{transform:scale(1.05)}
+.oc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.15),rgba(10,20,35,.85))}
+.oc b{position:relative;z-index:1;font-weight:400;font-size:18px}
+
+.cta{background:linear-gradient(100deg,#0b5cd6 0%,#2b7cf2 100%);border-radius:10px;color:#fff;padding:44px 48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta h2{color:#fff;font-size:30px}.cta p{opacity:.9;margin-top:6px}
+
+/* hub */
+.hub{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:44px}
+.hc{position:relative;border-radius:10px;overflow:hidden;min-height:340px;padding:32px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
+.hc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.hc:hover img{transform:scale(1.04)}
+.hc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.1) 0%,rgba(10,20,35,.35) 40%,rgba(10,20,35,.85) 100%)}
+.hc>*:not(img){position:relative;z-index:1}
+.hc h2{color:#fff;font-size:30px;line-height:1.15;max-width:20ch}
+.hc p{opacity:.92;margin:10px 0 20px;max-width:48ch}
+.hc .btn{align-self:flex-start}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+@media (max-width:900px){section.blk{padding-block:60px}.intro,.apps,.hub{grid-template-columns:1fr}.al{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line)}.al button{white-space:nowrap;border-bottom:0;padding:16px 36px 16px 18px;font-size:16px}.ap{padding:24px 20px}.ben{grid-template-columns:1fr 1fr}.tabs .bc{display:none}.cta{padding:32px 24px}}
+@media (max-width:560px){.ben{grid-template-columns:1fr}.hc{min-height:300px;padding:24px}}
+.hng{grid-column:1/-1;position:relative;display:grid;grid-template-columns:57% 1fr;min-height:480px;border-radius:10px;overflow:hidden;background:#eceef1;color:var(--ink)}
+.hng img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 55%;transition:transform .8s ease}
+.hng:hover img{transform:scale(1.03)}
+.hng .tx{grid-column:2;position:relative;z-index:1;align-self:center;padding:48px 56px 48px 0}
+.hng .eyebrow{color:var(--blue);margin-bottom:10px}
+.hng h2{font-weight:300;font-size:clamp(34px,3.4vw,48px);line-height:1.08;color:var(--ink)}
+.hng p{color:var(--text);margin:14px 0 28px;max-width:36ch;font-size:18px}
+.hng .tg{position:absolute;z-index:1;font-size:14px;background:#fff;border-radius:99px;padding:6px 14px;white-space:nowrap;box-shadow:0 6px 16px rgba(20,30,45,.1)}
+.hng .tg.ok{left:12%;top:22%;color:#1d6b2a}.hng .tg.no{left:34%;top:12%;color:#a32020}
+.hng .src{position:absolute;z-index:1;left:20px;bottom:14px;font-size:13px;color:var(--muted)}
+@media (max-width:900px){.hng{grid-template-columns:1fr;min-height:0}.hng img{position:relative;height:260px;object-position:32% 60%}.hng .tx{grid-column:1;padding:28px 22px 32px}.hng .tg.ok{left:16px;top:16px}.hng .tg.no{left:auto;right:16px;top:16px}.hng .src{bottom:auto;top:228px}}
+/* shared site chrome (header/footer) — same as home */
+.sxh{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid #e3e7ec;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300}
+.sxh .in,.sxf .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+.sxh .in{display:flex;align-items:center;gap:36px;height:64px}
+.sxh .lg{display:flex;align-items:baseline;gap:7px;color:#1a2433;text-decoration:none}
+.sxh .lg b{font-weight:500;font-size:21px;letter-spacing:.06em}.sxh .lg span{color:#0b5cd6;font-size:15px}
+.sxh nav{display:flex;gap:30px;font-size:16px}
+@media (max-width:1320px){.sxh nav{gap:20px}.sxh .in{gap:24px}}
+.sxh nav a{color:#333c48;text-decoration:none}.sxh nav a:hover,.sxh nav a[aria-current]{color:#0b5cd6}
+.sxh .rt{margin-left:auto;display:flex;gap:10px}
+.sxh .pl{display:inline-flex;align-items:center;border-radius:99px;padding:5px 14px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none}
+.sxh .pl.s{background:#0b5cd6;color:#fff}.sxh .pl.l{border:1.5px solid #0b5cd6;color:#0b5cd6}
+.sxf{background:#f5f7f9;border-top:1px solid #e3e7ec;padding:56px 0 28px;font-size:14px;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300;color:#6b7684}
+.sxf .g{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:32px}
+.sxf .tg{display:flex;align-items:baseline;gap:12px;color:#1a2433;font-size:17px}.sxf .tg i{width:1px;height:18px;background:#b9c3ce;align-self:center}
+.sxf h4{font-weight:400;color:#1a2433;font-size:16px;margin:0 0 12px}
+.sxf ul{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+.sxf a{color:#6b7684;text-decoration:none}.sxf a:hover{color:#0b5cd6}
+.sxf .b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid #e3e7ec;font-size:13px}
+@media (max-width:1100px){.sxh nav{display:none}}
+@media (max-width:900px){.sxf .g{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sxh .pl.l{display:none}}
+
+.aitag{display:inline-flex;align-items:center;gap:6px;border:1px solid #c9d6e8;border-radius:99px;padding:3px 12px;font-size:13px;color:#0b5cd6!important;text-decoration:none;background:#fff}
+.aitag::before{content:"";width:6px;height:6px;border-radius:50%;background:#0b5cd6}
+.person .ph img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+</style>
+<link rel="alternate" type="text/plain" title="Для ШІ-агентів" href="llms.txt">
+</head>
+<body>
+<header class="sxh"><div class="in">
+  <a class="lg" href="./"><b>ARVIOM</b><span>Engineering</span></a>
+  <nav aria-label="Розділи"><a href="solutions.html">Рішення</a><a href="products.html">Продукти</a><a href="vprovadzhennia.html" aria-current="page">Впровадження</a><a href="./#dev">Розробки</a><a href="learn.html">Навчання</a><a href="./#learn">Підтримка</a><a href="./#video">Відео</a></nav>
+  <div class="rt"><a class="pl l" href="partner.html">Вхід для партнерів</a><a class="pl s" href="./#contact">Зв'язатися</a></div>
+</div></header>
+<style>
+.cs-hero{background:var(--tile);border-bottom:1px solid var(--line)}
+.cs-hero .wrap{display:block;min-height:0;padding-block:72px 56px}
+.cs-hero .eyebrow{color:var(--blue)}
+.cs-hero h1{font-weight:300;font-size:clamp(32px,4vw,54px);line-height:1.08;max-width:22ch;color:var(--ink);text-wrap:balance}
+.cs-hero p{margin-top:16px;max-width:60ch;color:var(--text);font-size:18px}
+.cs-f{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+.cs-f button{font:inherit;font-size:15px;border:1px solid var(--line);background:#fff;color:var(--text);border-radius:99px;padding:7px 16px;cursor:pointer}
+.cs-f button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.cs-f button:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.cs-sec h2{font-weight:300;font-size:clamp(26px,2.6vw,34px);margin-bottom:24px}
+.cs-sec h2 small{font-size:16px;color:var(--muted);margin-left:10px}
+.cs-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.cs-c{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;color:var(--ink);transition:box-shadow .3s}
+.cs-c:hover{box-shadow:0 18px 50px rgba(20,40,80,.07)}
+.cs-c .im{aspect-ratio:16/10;background:var(--bg2);overflow:hidden}
+.cs-c .im img{width:100%;height:100%;object-fit:cover}
+.cs-c .tx{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cs-c .ch{display:flex;gap:6px;flex-wrap:wrap}
+.cs-c .ch span{font-size:13px;border-radius:3px;padding:2px 9px;background:#e9f1ff;color:var(--blue)}
+.cs-c .ch span.pl{background:var(--bg2);color:var(--muted)}
+.cs-c .ch span.own{background:var(--blue);color:#fff}
+.cs-c h3{font-weight:500;font-size:19px;line-height:1.3}
+.cs-c p{color:var(--muted);font-size:16px}
+.cs-c .dv{font-size:14px;color:var(--text)}
+.cs-c .src{margin-top:auto;padding-top:6px;font-size:14px;color:var(--blue)}
+.cs-own .cs-c{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+.cs-own .cs-c .im{aspect-ratio:auto;min-height:280px}
+.cs-own .cs-c .tx{padding:32px;justify-content:center}
+.cs-own .cs-c h3{font-weight:300;font-size:30px;line-height:1.15}
+.cs-empty{color:var(--muted);padding:24px 0}
+[hidden]{display:none!important}
+.cs-note{margin-top:28px;font-size:14px;color:var(--muted)}
+@media (max-width:1000px){.cs-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.cs-g{grid-template-columns:1fr}.cs-own .cs-c{grid-template-columns:1fr}.cs-own .cs-c .im{min-height:200px}.cs-own .cs-c .tx{padding:22px}.cs-hero .wrap{padding-block:48px 40px}}
+</style>
+<div class="cs-hero"><div class="wrap"><div class="eyebrow">Впровадження</div><h1>Як бездротовий IoT працює на реальних об&#x27;єктах</h1><p>Наші проєкти та досвід Milesight у світі: що було на об&#x27;єкті, яке обладнання поставили і що це дало.</p>
+<div class="cs-f" role="group" aria-label="Напрям"><button type="button" data-f="all" aria-pressed="true">Усі</button><button type="button" data-f="energy" aria-pressed="false">Енергетика</button><button type="button" data-f="building" aria-pressed="false">Будівлі й BMS</button><button type="button" data-f="industry" aria-pressed="false">Промисловість</button><button type="button" data-f="air" aria-pressed="false">Повітря</button><button type="button" data-f="water" aria-pressed="false">Вода</button><button type="button" data-f="agro" aria-pressed="false">Агро</button></div></div></div>
+<main>
+<section class="blk cs-sec cs-own"><div class="wrap"><h2>Проєкти ARVIOM</h2><div class="cs-g" style="grid-template-columns:1fr"><a class="cs-c" data-dir="energy" href="./#dev"><div class="im"><img src="img/shot-energy.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span class="own">Проєкт ARVIOM</span><span>Енергетика</span><span class="pl">Україна</span></div><h3>Енергомоніторинг складсько-виробничого комплексу в Україні</h3><p>Облік по лініях, генератор і пальне, резервне живлення на одному екрані. Працює без інтернету.</p><div class="src">Детальніше →</div></div></a></div>
+<div class="cs-empty" hidden>У цьому напрямі наші проєкти готуються до публікації.</div></div></section>
+<section class="blk alt cs-sec"><div class="wrap"><h2>Досвід Milesight у світі <small>11 кейсів</small></h2><div class="cs-g"><a class="cs-c" data-dir="building" href="https://www.milesight.com/company/success-stories/smart-building-solution-optimizes-energy-efficiency-and-indoor-air-quality" target="_blank" rel="noopener"><div class="im"><img src="img/ms/ms-case-canada.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Будівлі й BMS</span><span class="pl">Канада</span></div><h3>4 400 датчиків заощадили $250 000 за перший квартал у 62 офісних будівлях</h3><p>Облік енергії та якості повітря в мережі офісних будівель.</p><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="energy" href="https://www.milesight.com/company/success-stories/bacnet-over-lorawan-for-smart-buildings-in-italy" target="_blank" rel="noopener"><div class="im"><img src="img/ms/ms-case-italy-card.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Енергетика</span><span class="pl">Італія</span></div><h3>Облік тепла й електроенергії в 100+ будинках без прокладання кабелів</h3><p>Дані з лічильників передаються бездротово й потрапляють у BMS через BACnet.</p><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="energy" href="https://www.milesight.com/company/success-stories/iot-non-invasive-electricity-monitoring-solution-in-europe" target="_blank" rel="noopener"><div class="im"><img src="img/cases/energy-ct10x-factory.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Енергетика</span><span class="pl">Заводи в Європі</span></div><h3>Облік електроенергії верстатів без втручання в проводку</h3><p>Партнер Heliotics поставив розрізні трансформатори струму на верстати — без відключення ліній і повторної перевірки електрики. Платформа порівнює споживання однакових машин і показує, де втрати і що час обслужити.</p><div class="dv">Обладнання: CT10x</div><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="building" href="https://www.milesight.com/iot/success-stories/iot-hotel-bms-upgrade-monitoring-france" target="_blank" rel="noopener"><div class="im"><img src="img/cases/hotel-novotel-bms.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Будівлі й BMS</span><span class="pl">Франція, Novotel, 7 300 м²</span></div><h3>Новий BMS для готелю на 170 номерів — без зупинки роботи</h3><p>Старі контролери в номерах замінили бездротовими термостатами на наявній проводці. Близько 250 LoRaWAN-пристроїв і 2 шлюзи покривають усю будівлю, усе зведено в одну BMS.</p><div class="dv">Обладнання: WT303, шлюзи Milesight</div><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="building" href="https://www.milesight.com/iot/success-stories/iot-retail-temperature-monitoring-austria" target="_blank" rel="noopener"><div class="im"><img src="img/ms/ms-case-austria-card.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Будівлі й BMS</span><span class="pl">Австрія</span></div><h3>7 000+ датчиків температури в холодильниках 1 000+ супермаркетів</h3><p>Контроль холодового ланцюга в торговій мережі в реальному часі.</p><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="building" href="https://www.milesight.com/iot/success-stories/beaveriot-powers-hospital-automation-project" target="_blank" rel="noopener"><div class="im"><img src="img/ms/ms-case-croatia-card.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Будівлі й BMS</span><span class="pl">Хорватія</span></div><h3>114 термостатів на радіаторах у палатах лікарні</h3><p>Автоматичне керування опаленням у палатах.</p><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="industry" href="https://www.milesight.com/company/success-stories/ultrasonic-expansion-boiler" target="_blank" rel="noopener"><div class="im"><img src="img/cases/tps-boiler-china.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Промисловість</span><span class="pl">Китай, ТЕС 2 000 МВт</span></div><h3>108 ультразвукових датчиків стежать за розширенням котлів ТЕС</h3><p>Розширення котла заввишки близько 12 поверхів раніше міряли вручну штангенциркулем. Тепер датчики з роздільністю 1 мм шлють дані через LoRaWAN, а при виході за допуск надходять SMS і e-mail.</p><div class="dv">Обладнання: EM500-UDL</div><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="air" href="https://www.milesight.com/company/success-stories/lorawan-iaq-deployment-in-canadian-public-schools" target="_blank" rel="noopener"><div class="im"><img src="img/cases/schools-iaq-quebec.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Повітря</span><span class="pl">Канада, Квебек</span></div><h3>47 000 датчиків якості повітря в школах</h3><p>Програма Міністерства освіти Квебеку. CO₂, температура й вологість у класах щоп&#x27;ять хвилин. Перед масштабуванням — 2 пілоти приблизно по 30 класів.</p><div class="dv">Обладнання: AM107, UG65</div><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="water" href="https://www.milesight.com/company/success-stories/water-leakage-monitoring-system-for-condominium-and-rental-buildings" target="_blank" rel="noopener"><div class="im"><img src="img/cases/leak-montreal-38floors.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Вода</span><span class="pl">Канада, Монреаль, 238 квартир</span></div><h3>1 200+ датчиків протічки в 38-поверховому будинку</h3><p>Партнер Thingsfactory поставив датчики у ванних, кухнях, пральнях і техприміщеннях, 140+ контролерів і 15 шлюзів — приблизно по одному на кожні два поверхи.</p><div class="dv">Обладнання: EM300-SLD, UC300, UG56, UG65, UG67</div><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="water" href="https://www.milesight.com/iot/success-stories/iot-smart-water-management-caribbean" target="_blank" rel="noopener"><div class="im"><img src="img/ms/ms-case-nevis-card.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Вода</span><span class="pl">Острів Невіс</span></div><h3>61 точка моніторингу резервуарів і насосних станцій</h3><p>Рівень і тиск у водопровідній мережі острова.</p><div class="src">Джерело: Milesight ↗</div></div></a><a class="cs-c" data-dir="agro" href="https://www.milesight.com/company/success-stories/agriculture-greenhouse-temperature-management" target="_blank" rel="noopener"><div class="im"><img src="img/cases/greenhouses-usa.webp" alt="" loading="lazy"></div><div class="tx"><div class="ch"><span>Агро</span><span class="pl">США</span></div><h3>Клімат і вентиляція в 100 теплицях</h3><p>У кожній теплиці рослин на $150–450 тис. Контролери через свої входи й RS485 стежать за температурою та керують вентиляцією по LoRaWAN.</p><div class="dv">Обладнання: UC1114 (зараз — UC502)</div><div class="src">Джерело: Milesight ↗</div></div></a></div>
+<div class="cs-empty" hidden>У цьому напрямі кейси ще додаються.</div>
+<p class="cs-note">Стислий виклад нашими словами за матеріалами milesight.com. Повні історії — за посиланнями на картках.</p></div></section>
+<section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Хочете такий результат на своєму об'єкті?</h2><p>Розкажіть про задачу — підберемо обладнання й покажемо схожі рішення.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
+</main><script>
+(function(){var b=document.querySelectorAll('.cs-f button'),c=document.querySelectorAll('[data-dir]');
+function set(d){b.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.f===d)});
+c.forEach(function(x){x.hidden=!(d==='all'||x.dataset.dir===d)});
+document.querySelectorAll('.cs-g').forEach(function(g){var e=g.parentNode.querySelector('.cs-empty');if(e)e.hidden=!!g.querySelector('[data-dir]:not([hidden])')})}
+b.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.f)})});
+var h=location.hash.slice(1);set(document.querySelector('.cs-f [data-f="'+h+'"]')?h:'all')})();
+</script>
+<footer class="sxf"><div class="in">
+  <div class="g">
+    <div><div class="tg"><b style="font-weight:500;letter-spacing:.06em">ARVIOM</b><i></i>Engineering</div><p style="margin-top:14px;max-width:30ch">Бездротова автоматизація об'єктів. Напрям IoT компанії ARVIOM.</p></div>
+    <div><h4>Продукти</h4><ul><li><a href="products.html">LoRaWAN-датчики</a></li><li><a href="products.html">Шлюзи</a></li><li><a href="products.html">Контролери</a></li><li><a href="catalog.html">Серія EM300</a></li></ul></div>
+    <div><h4>Рішення</h4><ul><li><a href="sol-energy.html">Енергетика</a></li><li><a href="sol-building.html">Будівлі й BMS</a></li><li><a href="sol-industry.html">Промисловість</a></li><li><a href="sol-air.html">Повітря</a></li><li><a href="zakhyst.html">Захист мереж</a></li><li><a href="vprovadzhennia.html">Впровадження</a></li></ul></div>
+    <div><h4>Ресурси</h4><ul><li><a href="./#dev">Розробки</a></li><li><a href="./#video">Відео</a></li><li><a href="learn.html">Навчання</a></li><li><a href="partner.html">База знань</a></li></ul></div>
+    <div><h4>Компанія</h4><ul><li><a href="./#learn">Команда</a></li><li><a href="./#contact">Контакти</a></li><li><a href="partner.html">Вхід для партнерів</a></li><li><a href="https://arviom.com" target="_blank" rel="noopener">arviom.com</a></li></ul></div>
+  </div>
+  <div class="b"><span>© 2026 ARVIOM Engineering</span><span>Офіційний дистриб'ютор Milesight в Україні</span><a class="aitag" href="llms.txt" title="Машиночитна версія сайту для ШІ-агентів">Для ШІ-агентів · llms.txt</a></div>
+</div></footer>
+<script>
+document.querySelectorAll(".apps").forEach(a=>{const b=[...a.querySelectorAll(".al button")],p=[...a.querySelectorAll(".ap")];b.forEach((x,i)=>x.onclick=()=>{b.forEach((y,j)=>{y.classList.toggle("on",i===j);p[j].classList.toggle("on",i===j)})})});
+const tabs=[...document.querySelectorAll(".tabs nav a")];
+if(tabs.length){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)tabs.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});tabs.forEach(a=>{const s=document.querySelector(a.getAttribute("href"));if(s)io2.observe(s)})}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

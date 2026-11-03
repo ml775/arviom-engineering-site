@@ -1,0 +1,125 @@
+{
+  "title": "Впровадження",
+  "h1": "Як бездротовий IoT працює на реальних об'єктах",
+  "lead": "Наші проєкти та досвід Milesight у світі: що було на об'єкті, яке обладнання поставили і що це дало.",
+  "directions": [
+    ["energy", "Енергетика"],
+    ["building", "Будівлі й BMS"],
+    ["industry", "Промисловість"],
+    ["air", "Повітря"],
+    ["water", "Вода"],
+    ["agro", "Агро"]
+  ],
+  "own": [
+    {
+      "dir": "energy",
+      "title": "Енергомоніторинг складсько-виробничого комплексу в Україні",
+      "place": "Україна",
+      "text": "Облік по лініях, генератор і пальне, резервне живлення на одному екрані. Працює без інтернету.",
+      "devices": "",
+      "image": "img/shot-energy.webp",
+      "link": "./#dev"
+    }
+  ],
+  "ms": [
+    {
+      "dir": "building",
+      "title": "4 400 датчиків заощадили $250 000 за перший квартал у 62 офісних будівлях",
+      "place": "Канада",
+      "text": "Облік енергії та якості повітря в мережі офісних будівель.",
+      "devices": "",
+      "image": "img/ms/ms-case-canada.webp",
+      "link": "https://www.milesight.com/company/success-stories/smart-building-solution-optimizes-energy-efficiency-and-indoor-air-quality"
+    },
+    {
+      "dir": "energy",
+      "title": "Облік тепла й електроенергії в 100+ будинках без прокладання кабелів",
+      "place": "Італія",
+      "text": "Дані з лічильників передаються бездротово й потрапляють у BMS через BACnet.",
+      "devices": "",
+      "image": "img/ms/ms-case-italy-card.webp",
+      "link": "https://www.milesight.com/company/success-stories/bacnet-over-lorawan-for-smart-buildings-in-italy"
+    },
+    {
+      "dir": "energy",
+      "title": "Облік електроенергії верстатів без втручання в проводку",
+      "place": "Заводи в Європі",
+      "text": "Партнер Heliotics поставив розрізні трансформатори струму на верстати — без відключення ліній і повторної перевірки електрики. Платформа порівнює споживання однакових машин і показує, де втрати і що час обслужити.",
+      "devices": "CT10x",
+      "image": "img/cases/energy-ct10x-factory.webp",
+      "link": "https://www.milesight.com/company/success-stories/iot-non-invasive-electricity-monitoring-solution-in-europe"
+    },
+    {
+      "dir": "building",
+      "title": "Новий BMS для готелю на 170 номерів — без зупинки роботи",
+      "place": "Франція, Novotel, 7 300 м²",
+      "text": "Старі контролери в номерах замінили бездротовими термостатами на наявній проводці. Близько 250 LoRaWAN-пристроїв і 2 шлюзи покривають усю будівлю, усе зведено в одну BMS.",
+      "devices": "WT303, шлюзи Milesight",
+      "image": "img/cases/hotel-novotel-bms.webp",
+      "link": "https://www.milesight.com/iot/success-stories/iot-hotel-bms-upgrade-monitoring-france"
+    },
+    {
+      "dir": "building",
+      "title": "7 000+ датчиків температури в холодильниках 1 000+ супермаркетів",
+      "place": "Австрія",
+      "text": "Контроль холодового ланцюга в торговій мережі в реальному часі.",
+      "devices": "",
+      "image": "img/ms/ms-case-austria-card.webp",
+      "link": "https://www.milesight.com/iot/success-stories/iot-retail-temperature-monitoring-austria"
+    },
+    {
+      "dir": "building",
+      "title": "114 термостатів на радіаторах у палатах лікарні",
+      "place": "Хорватія",
+      "text": "Автоматичне керування опаленням у палатах.",
+      "devices": "",
+      "image": "img/ms/ms-case-croatia-card.webp",
+      "link": "https://www.milesight.com/iot/success-stories/beaveriot-powers-hospital-automation-project"
+    },
+    {
+      "dir": "industry",
+      "title": "108 ультразвукових датчиків стежать за розширенням котлів ТЕС",
+      "place": "Китай, ТЕС 2 000 МВт",
+      "text": "Розширення котла заввишки близько 12 поверхів раніше міряли вручну штангенциркулем. Тепер датчики з роздільністю 1 мм шлють дані через LoRaWAN, а при виході за допуск надходять SMS і e-mail.",
+      "devices": "EM500-UDL",
+      "image": "img/cases/tps-boiler-china.webp",
+      "link": "https://www.milesight.com/company/success-stories/ultrasonic-expansion-boiler"
+    },
+    {
+      "dir": "air",
+      "title": "47 000 датчиків якості повітря в школах",
+      "place": "Канада, Квебек",
+      "text": "Програма Міністерства освіти Квебеку. CO₂, температура й вологість у класах щоп'ять хвилин. Перед масштабуванням — 2 пілоти приблизно по 30 класів.",
+      "devices": "AM107, UG65",
+      "image": "img/cases/schools-iaq-quebec.webp",
+      "link": "https://www.milesight.com/company/success-stories/lorawan-iaq-deployment-in-canadian-public-schools"
+    },
+    {
+      "dir": "water",
+      "title": "1 200+ датчиків протічки в 38-поверховому будинку",
+      "place": "Канада, Монреаль, 238 квартир",
+      "text": "Партнер Thingsfactory поставив датчики у ванних, кухнях, пральнях і техприміщеннях, 140+ контролерів і 15 шлюзів — приблизно по одному на кожні два поверхи.",
+      "devices": "EM300-SLD, UC300, UG56, UG65, UG67",
+      "image": "img/cases/leak-montreal-38floors.webp",
+      "link": "https://www.milesight.com/company/success-stories/water-leakage-monitoring-system-for-condominium-and-rental-buildings"
+    },
+    {
+      "dir": "water",
+      "title": "61 точка моніторингу резервуарів і насосних станцій",
+      "place": "Острів Невіс",
+      "text": "Рівень і тиск у водопровідній мережі острова.",
+      "devices": "",
+      "image": "img/ms/ms-case-nevis-card.webp",
+      "link": "https://www.milesight.com/iot/success-stories/iot-smart-water-management-caribbean"
+    },
+    {
+      "dir": "agro",
+      "title": "Клімат і вентиляція в 100 теплицях",
+      "place": "США",
+      "text": "У кожній теплиці рослин на $150–450 тис. Контролери через свої входи й RS485 стежать за температурою та керують вентиляцією по LoRaWAN.",
+      "devices": "UC1114 (зараз — UC502)",
+      "image": "img/cases/greenhouses-usa.webp",
+      "link": "https://www.milesight.com/company/success-stories/agriculture-greenhouse-temperature-management"
+    }
+  ]
+}

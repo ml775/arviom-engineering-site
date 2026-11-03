@@ -116,6 +116,19 @@ section.blk{padding-block:88px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
 @media (max-width:900px){section.blk{padding-block:60px}.intro,.apps,.hub{grid-template-columns:1fr}.al{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line)}.al button{white-space:nowrap;border-bottom:0;padding:16px 36px 16px 18px;font-size:16px}.ap{padding:24px 20px}.ben{grid-template-columns:1fr 1fr}.tabs .bc{display:none}.cta{padding:32px 24px}}
 @media (max-width:560px){.ben{grid-template-columns:1fr}.hc{min-height:300px;padding:24px}}
+.hng{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:48px;align-items:center;background:var(--soft);border:1px solid #dbe6f7;border-radius:10px;padding:44px 48px;color:var(--ink)}
+.hng .eyebrow{color:var(--blue);margin-bottom:8px}
+.hng h2{font-size:clamp(30px,3vw,40px);line-height:1.12;color:var(--ink)}
+.hng p{color:var(--muted);margin:12px 0 24px;max-width:44ch}
+.hng .rep{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px 24px;box-shadow:0 18px 50px rgba(20,40,80,.07)}
+.hng .rh{font-size:14px;color:var(--muted);margin-bottom:10px}
+.hng ul{list-style:none;margin:0;padding:0}
+.hng li{display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 128px;gap:10px;align-items:center;padding:12px 0;border-top:1px solid var(--line);font-size:15px}
+.hng li:first-child{border-top:0}
+.hng li i{font-style:normal;color:var(--muted)}
+.hng em{font-style:normal;font-size:13px;text-align:center;border-radius:99px;padding:4px 10px;white-space:nowrap}
+.hng em.ok{background:#e5f4e4;color:#1d6b2a}.hng em.no{background:#fbebeb;color:#a32020}.hng em.via{background:#e9f1ff;color:var(--blue)}
+@media (max-width:900px){.hng{grid-template-columns:1fr;gap:28px;padding:28px 22px}.hng li{grid-template-columns:minmax(0,1fr) auto}.hng li i,.hng li span:nth-of-type(2){display:none}}
 /* shared site chrome (header/footer) — same as home */
 .sxh{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid #e3e7ec;font-family:"Inter Tight",system-ui,sans-serif;font-weight:300}
 .sxh .in,.sxf .in{max-width:1280px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}

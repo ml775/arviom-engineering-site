@@ -61,7 +61,8 @@ def page(k, s):
 def hub():
     cards = ''.join(f'<a class="hc rv" href="sol-{k}.html"><img src="{e(D["items"][k]["tile"] if k!="energy" else D["items"][k]["hero"])}" alt="" loading="lazy"><h2>{e(D["items"][k]["title"])}</h2><p>{e(D["items"][k]["short"])}</p><span class="btn">Детальніше</span></a>' for k in D['order'])
     ng = json.load(open(C + 'netguard.json'))
-    cards += f'<a class="hc ng rv" href="zakhyst.html" style="background:var(--tile);color:var(--ink);border:1px solid var(--line)"><div class="eyebrow" style="color:var(--blue)">Новий напрям</div><h2>{e(ng["title"])}</h2><p style="color:var(--muted)">{e(ng["short"])}</p><span class="btn">Детальніше</span></a>'
+    rows = ''.join(f'<li><span>{e(a)}</span><i>→</i><span>{e(b)}</span><em class="{c}">{e(t)}</em></li>' for a, b, c, t in ng['hub_report'])
+    cards += f'<a class="hng rv" href="zakhyst.html"><div class="tx"><div class="eyebrow">Новий напрям</div><h2>{e(ng["title"])}</h2><p>{e(ng["short"])}</p><span class="btn">Детальніше</span></div><div class="rep" aria-label="Приклад звіту"><div class="rh">Приклад звіту по об\'єкту</div><ul>{rows}</ul></div></a'
     body = f'''<div class="hero" style="height:400px;min-height:360px"><img src="img/ms/ms-hero-uc722.webp" alt=""><div class="tx wrap"><div class="eyebrow">Рішення</div><h1>Рішення під ваш об'єкт</h1><p>Енергетика, будівлі, промисловість, повітря, вода й агро — бездротовий збір даних і автоматизація.</p></div></div>
 <main><section class="blk"><div class="wrap"><div class="hub">{cards}</div></div></section>
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Не знайшли свій випадок?</h2><p>Розкажіть про задачу — підкажемо, що підійде.</p></div><a class="btn w" href="./#contact">Залишити заявку</a></div></div></section></main>'''

@@ -79,17 +79,17 @@ LCSS = """<style>
 .lh>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .lh::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,20,35,.62) 0%,rgba(10,20,35,.25) 55%,rgba(10,20,35,.05) 100%)}
 .lh .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:center;height:100%;min-height:0}
-.lh .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
-.lh .chips span{font-size:14px;background:#fff;color:var(--blue);border-left:4px solid var(--blue);padding:3px 10px;border-radius:2px}
+.lh .chips{font-size:16px;color:rgba(255,255,255,.9);margin-bottom:14px}
 .lh h1{font-weight:400;font-size:clamp(30px,3.6vw,48px);line-height:1.1;color:#fff;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.25)}
 .lh .eyebrow{color:#fff;opacity:.9}
 .lh .btn{margin-top:26px}
-.lh-cards{display:flex;gap:16px;overflow:hidden;scroll-behavior:smooth}
-.lh-cards a{flex:0 0 230px;background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:14px;color:#fff}
+.lh-side{min-width:0;justify-self:end;width:100%;max-width:520px}
+.lh-cards{display:flex;gap:16px;overflow:hidden;scroll-behavior:smooth;scroll-snap-type:x mandatory}
+.lh-cards a{flex:0 0 calc((100% - 16px)/2);scroll-snap-align:start;background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:14px;color:#fff}
+.lh-cards img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:5px;margin-bottom:10px}
 .lh-cards b{display:block;font-weight:500;font-size:15px;line-height:1.3;min-height:3.9em}
-.lh-cards small{display:block;margin:6px 0 10px;font-size:13px;opacity:.9}
-.lh-cards img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px}
-.lh-nav{display:flex;gap:10px;margin-top:16px}
+.lh-cards small{display:block;margin-top:6px;font-size:13px;opacity:.9}
+.lh-nav{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
 .lh-nav button{width:40px;height:40px;border:0;border-radius:5px;background:var(--blue);color:#fff;font-size:20px;cursor:pointer}
 .lh-nav button:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .lb{display:grid;grid-template-columns:280px minmax(0,1fr);gap:40px;align-items:start;padding-block:48px 80px}
@@ -112,8 +112,9 @@ LCSS = """<style>
 .lc .im{position:relative;aspect-ratio:16/13;overflow:hidden;background:#dfe4ea}
 .lc .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
 .lc:hover .im img{transform:scale(1.04)}
-.lc .rb{position:absolute;left:0;top:14px;font-size:13px;color:#fff;background:rgba(26,36,51,.55);backdrop-filter:blur(6px);padding:4px 12px;border-left:6px solid var(--blue)}
-.lc .rb.ua{background:var(--blue);border-left-color:#ffd27a}
+.lc .rb{position:absolute;left:12px;top:12px;font-size:13px;color:#fff;background:var(--blue);padding:3px 10px;border-radius:3px}
+.lc .im.shot{background:var(--tile)}
+.lc .im.shot img{object-fit:contain;padding:44px 16px 12px;filter:drop-shadow(0 8px 14px rgba(20,30,45,.12))}
 .lc .tx{padding:16px 16px 18px;display:flex;flex-direction:column;gap:14px;flex:1}
 .lc h3{font-weight:500;font-size:18px;line-height:1.3;text-wrap:balance}
 .lc .mt{margin-top:auto;display:flex;gap:14px;align-items:center;font-size:14px;flex-wrap:wrap}
@@ -175,7 +176,7 @@ def build():
     hero_img = hero['page']['hero'] if hero.get('page') else hero['image']
     ext = lambda c: '' if not c['link'].startswith('http') else ' target="_blank" rel="noopener"'
     nb = lambda t: re.sub(r'(\d) (\d)', '\\1\u00a0\\2', t)
-    side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><b>{e(nb(c["title"]))}</b><small>{e(c["country"])} · {e(DIRS[c["dir"]])}</small><img src="{e(c["image"])}" alt="" loading="lazy"></a>' for c in feat if c is not hero)
+    side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><img src="{e(c["image"])}" alt="" loading="lazy"><b>{e(nb(c["title"]))}</b><small>{e(c["country"])} · {e(DIRS[c["dir"]])}</small></a>' for c in feat if c is not hero and "shot-" not in c["image"])
     # filters
     def grp(name, title, opts, open_=True):
         rows = ''.join(f'<label><input type="checkbox" name="{name}" value="{e(v)}">{e(lbl)}<em>{n}</em></label>' for v, lbl, n in opts)
@@ -189,14 +190,14 @@ def build():
     g_src = [('ua', 'Україна', cnt('src', 'ua')), ('ms', 'Milesight у світі', cnt('src', 'ms'))]
     filters = grp('dir', 'Напрям', g_dir) + grp('src', 'Де', g_src) + grp('obj', "Тип об'єкта", g_obj, False) + grp('dev', 'Обладнання', g_dev, False)
     def lcard(c):
-        rb = '<span class="rb ua">Україна</span>' if c['src'] == 'ua' else ('<span class="rb">Обране</span>' if c.get('featured') else '')
+        rb = '<span class="rb">Україна</span>' if c['src'] == 'ua' else ''
         return (f'<a class="lc" href="{e(c["link"])}"{ext(c)} data-dir="{e(c["dir"])}" data-obj="{e(slug(c["obj"]))}" data-src="{c["src"]}" data-dev="{e(" ".join(d.lower() for d in c["_dev"]))}">'
-                f'<div class="im"><img src="{e(c["image"])}" alt="" loading="lazy">{rb}</div>'
+                f'<div class="im{" shot" if "shot-" in c["image"] else ""}"><img src="{e(c["image"])}" alt="" loading="lazy">{rb}</div>'
                 f'<div class="tx"><h3>{e(nb(c["title"]))}</h3><div class="mt"><span class="pin">{e(c["country"])}</span><span class="ind">{e(c["obj"])}</span></div></div></a>')
     order = [c for c in items if c['src'] == 'ua'] + sorted([c for c in items if c['src'] == 'ms'], key=lambda c: (not c.get('featured'), c.get('featured', 99)))
     cards = ''.join(lcard(c) for c in order)
     body = f"""{CSS}{LCSS}
-<div class="lh"><img src="{e(hero_img)}" alt=""><div class="wrap"><div><div class="eyebrow">Впровадження</div><div class="chips"><span>{e(DIRS[hero['dir']])}</span><span>{e(hero['obj'])}</span></div><h1>{e(nb(hero['title']))}</h1><a class="btn" href="{e(hero['link'])}"{ext(hero)}>Детальніше</a></div>
+<div class="lh"><img src="{e(hero_img)}" alt=""><div class="wrap"><div><div class="chips">{e(DIRS[hero['dir']])} · {e(hero['obj'])} · {e(hero['country'])}</div><h1>{e(nb(hero['title']))}</h1><a class="btn" href="{e(hero['link'])}"{ext(hero)}>Детальніше</a></div>
 <div class="lh-side"><div class="lh-cards">{side}</div><div class="lh-nav"><button type="button" data-d="-1" aria-label="Назад">‹</button><button type="button" data-d="1" aria-label="Далі">›</button></div></div></div></div>
 <main><div class="wrap lb">
 <aside class="fl" aria-label="Фільтри"><h2>Фільтр</h2><button type="button" class="fl-t" aria-expanded="false">Фільтри</button>{filters}<button type="button" class="rst grp">Скинути фільтри</button></aside>

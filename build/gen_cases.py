@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Сторінка «Впровадження» (vprovadzhennia.html) з content/cases.json."""
-import json, os, sys
+import json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gen_solutions import chrome, e, ROOT
 
@@ -20,28 +20,36 @@ CSS = '''<style>
 .cs-sec h2{font-weight:300;font-size:clamp(26px,2.6vw,34px);margin-bottom:24px}
 .cs-sec h2 small{font-size:16px;color:var(--muted);margin-left:10px}
 .cs-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-.cs-c{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;color:var(--ink);transition:box-shadow .3s}
-.cs-c:hover{box-shadow:0 18px 50px rgba(20,40,80,.07)}
-.cs-c .im{aspect-ratio:16/10;background:var(--bg2);overflow:hidden}
-.cs-c .im img{width:100%;height:100%;object-fit:cover}
-.cs-c .tx{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cs-c{position:relative;display:block;min-height:380px;border-radius:10px;overflow:hidden;color:#fff;background:#24364b}
+.cs-c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.cs-c:hover img{transform:scale(1.05)}
+.cs-c::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.15) 0%,rgba(10,20,35,.2) 35%,rgba(10,20,35,.88) 100%)}
+.cs-c .ov{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;justify-content:space-between;padding:22px}
 .cs-c .ch{display:flex;gap:6px;flex-wrap:wrap}
-.cs-c .ch span{font-size:13px;border-radius:3px;padding:2px 9px;background:#e9f1ff;color:var(--blue)}
-.cs-c .ch span.pl{background:var(--bg2);color:var(--muted)}
+.cs-c .ch span{font-size:13px;border-radius:3px;padding:2px 9px;background:#fff;color:var(--blue)}
 .cs-c .ch span.own{background:var(--blue);color:#fff}
-.cs-c h3{font-weight:500;font-size:19px;line-height:1.3}
-.cs-c p{color:var(--muted);font-size:16px}
-.cs-c .dv{font-size:14px;color:var(--text)}
-.cs-c .src{margin-top:auto;padding-top:6px;font-size:14px;color:var(--blue)}
-.cs-own .cs-c{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
-.cs-own .cs-c .im{aspect-ratio:auto;min-height:280px}
-.cs-own .cs-c .tx{padding:32px;justify-content:center}
-.cs-own .cs-c h3{font-weight:300;font-size:30px;line-height:1.15}
+.cs-c h3{font-weight:400;font-size:22px;line-height:1.25;color:#fff;text-wrap:balance}
+.cs-c .pl{margin-top:8px;font-size:14px;color:rgba(255,255,255,.85)}
+.cs-c .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.cs-c .more>div{overflow:hidden}
+.cs-c:hover .more,.cs-c:focus-visible .more{grid-template-rows:1fr}
+.cs-c p{margin-top:10px;font-size:15px;color:rgba(255,255,255,.92)}
+.cs-c .dv{margin-top:6px;font-size:13px;color:rgba(255,255,255,.8)}
+.cs-c .src{margin-top:12px;font-size:14px;color:#fff;opacity:.9}
+.cs-c:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.cs-own .cs-c{min-height:440px}
+.cs-own .cs-c::after{background:linear-gradient(90deg,rgba(10,20,35,.94) 0%,rgba(10,20,35,.82) 42%,rgba(10,20,35,.15) 100%)}
+.cs-own .cs-c img{object-position:right top}
+.cs-own .cs-c .ov{padding:36px 40px}
+.cs-own .cs-c h3{font-weight:300;font-size:clamp(28px,3vw,40px);max-width:24ch}
+.cs-own .cs-c .more{grid-template-rows:1fr}
+.cs-own .cs-c p{max-width:60ch;font-size:17px}
+@media (hover:none){.cs-c .more{grid-template-rows:1fr}}
 .cs-empty{color:var(--muted);padding:24px 0}
 [hidden]{display:none!important}
 .cs-note{margin-top:28px;font-size:14px;color:var(--muted)}
 @media (max-width:1000px){.cs-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:640px){.cs-g{grid-template-columns:1fr}.cs-own .cs-c{grid-template-columns:1fr}.cs-own .cs-c .im{min-height:200px}.cs-own .cs-c .tx{padding:22px}.cs-hero .wrap{padding-block:48px 40px}}
+@media (max-width:640px){.cs-g{grid-template-columns:1fr}.cs-c{min-height:340px}.cs-hero .wrap{padding-block:48px 40px}}
 </style>'''
 
 JS = '''<script>
@@ -55,12 +63,14 @@ var h=location.hash.slice(1);set(document.querySelector('.cs-f [data-f="'+h+'"]'
 
 
 def card(c, own):
+    c = dict(c, title=re.sub(r'(\d) (\d)', '\\1\u00a0\\2', c['title']))
     ext = '' if not c['link'].startswith('http') else ' target="_blank" rel="noopener"'
-    chips = (f'<span class="own">Проєкт ARVIOM</span>' if own else '') + f'<span>{e(DIRS[c["dir"]])}</span><span class="pl">{e(c["place"])}</span>'
+    chips = (f'<span class="own">Проєкт ARVIOM</span>' if own else '') + f'<span>{e(DIRS[c["dir"]])}</span>'
     dv = f'<div class="dv">Обладнання: {e(c["devices"])}</div>' if c.get('devices') else ''
     src = '<div class="src">Детальніше →</div>' if own else '<div class="src">Джерело: Milesight ↗</div>'
-    return (f'<a class="cs-c" data-dir="{e(c["dir"])}" href="{e(c["link"])}"{ext}><div class="im"><img src="{e(c["image"])}" alt="" loading="lazy"></div>'
-            f'<div class="tx"><div class="ch">{chips}</div><h3>{e(c["title"])}</h3><p>{e(c["text"])}</p>{dv}{src}</div></a>')
+    return (f'<a class="cs-c" data-dir="{e(c["dir"])}" href="{e(c["link"])}"{ext}><img src="{e(c["image"])}" alt="" loading="lazy">'
+            f'<div class="ov"><div class="ch">{chips}</div><div><h3>{e(c["title"])}</h3><div class="pl">{e(c["place"])}</div>'
+            f'<div class="more"><div><p>{e(c["text"])}</p>{dv}{src}</div></div></div></div></a>')
 
 
 def build():

@@ -18,15 +18,23 @@ def text_of(h):
     cut = re.search(r'(?i)which area are you interested|discover more about milesight products', t)
     return t[:cut.start()] if cut else t
 
-def images(h, slug):
-    urls = re.findall(r'(?:src|data-src)="([^"]+\.(?:jpg|jpeg|png|webp))[^"]*"', h) + re.findall(r'url\(["\']?([^"\')]+\.(?:jpg|jpeg|png|webp))', h)
+def images(h, slug, url):
+    from collections import Counter
+    found = re.findall(r'[^"\'( ,<>]*\.(?:jpg|jpeg|png|webp)', h)
+    folders = Counter(x.rsplit('/', 1)[0] for x in found if '/success-stories/' in x and slug[:12] in x)
+    if not folders:
+        folders = Counter(x.rsplit('/', 1)[0] for x in found if '/success-stories/' in x)
+    own = folders.most_common(1)[0][0] if folders else ''
+    if not own:
+        part = 'iot' if '/iot/' in url else 'company'
+        own = f'/static/pc/en/{part}/success-stories/{slug}'
     keep = []
-    for u in urls:
-        if '/nav/' in u or 'icon' in u.lower() or 'logo' in u.lower() or 'index-new' in u or '/blog/page/' in u: continue
-        if not ('success-stories/' in u or 'wp-content/uploads' in u): continue
-        if re.search(r'/(logo[^/]*|square|earth)\.', u): continue
-        if u.startswith('/'): u = 'https://www.milesight.com' + u
-        if u not in keep: keep.append(u)
+    for x in found:
+        if '/' not in x: x = own + '/' + x
+        if x.rsplit('/', 1)[0] != own and 'wp-content/uploads' not in x: continue
+        if re.search(r'(?i)(discover-more|partner|why-choose|logo|icon|/nav/|footer)', x): continue
+        if x.startswith('/'): x = 'https://www.milesight.com' + x
+        if x not in keep: keep.append(x)
     return keep
 
 def claude(prompt, model='claude-sonnet-5-5'):
@@ -50,7 +58,7 @@ SCHEMA = '''Поверни ЛИШЕ JSON (без ``` і пояснень) так
    "solution": [{"t":"назва","d":"2-3 речення з конкретикою: моделі, діапазони, інтерфейси"}],
    "results": {"items": [["заголовок","1-2 речення"]], "note": "необов'язково"},
    "partner": "1-2 речення про партнера або порожньо",
-   "hero": "файл для головного банера (найширше фото об'єкта, не схема)",
+   "hero": "файл для головного банера: найширше ФОТО об'єкта або банер (у назві часто banner/background/header), не схема і не скриншот",
    "bg_img": "файл фото для блоку передумов",
    "solution_img": "файл схеми/топології рішення або порожньо",
    "results_img": "файл скриншота платформи/графіка або порожньо"}}
@@ -66,7 +74,7 @@ def run(url):
     slug = url.rstrip('/').split('/')[-1]; d = os.path.join(OUT, slug); os.makedirs(d, exist_ok=True)
     h = get(url); t = text_of(h); open(os.path.join(d, 'text.txt'), 'w').write(t)
     imgs = []
-    for i, u in enumerate(images(h, slug)):
+    for i, u in enumerate(images(h, slug, url)):
         try:
             im = Image.open(io.BytesIO(get(u, True))).convert('RGB')
         except Exception as e:

@@ -19,11 +19,12 @@ def text_of(h):
     return t[:cut.start()] if cut else t
 
 def images(h, slug):
-    urls = re.findall(r'(?:src|data-src)="([^"]+\.(?:jpg|jpeg|png|webp))[^"]*"', h)
+    urls = re.findall(r'(?:src|data-src)="([^"]+\.(?:jpg|jpeg|png|webp))[^"]*"', h) + re.findall(r'url\(["\']?([^"\')]+\.(?:jpg|jpeg|png|webp))', h)
     keep = []
     for u in urls:
         if '/nav/' in u or 'icon' in u.lower() or 'logo' in u.lower() or 'index-new' in u or '/blog/page/' in u: continue
-        if not (slug in u or 'wp-content/uploads' in u): continue
+        if not ('success-stories/' in u or 'wp-content/uploads' in u): continue
+        if re.search(r'/(logo[^/]*|square|earth)\.', u): continue
         if u.startswith('/'): u = 'https://www.milesight.com' + u
         if u not in keep: keep.append(u)
     return keep
@@ -48,7 +49,12 @@ SCHEMA = '''Поверни ЛИШЕ JSON (без ``` і пояснень) так
    "challenges": [{"icon":"nature|tools|system","t":"назва групи","items":["...","..."]}],
    "solution": [{"t":"назва","d":"2-3 речення з конкретикою: моделі, діапазони, інтерфейси"}],
    "results": {"items": [["заголовок","1-2 речення"]], "note": "необов'язково"},
-   "partner": "1-2 речення про партнера або порожньо"}}'''
+   "partner": "1-2 речення про партнера або порожньо",
+   "hero": "файл для головного банера (найширше фото об'єкта, не схема)",
+   "bg_img": "файл фото для блоку передумов",
+   "solution_img": "файл схеми/топології рішення або порожньо",
+   "results_img": "файл скриншота платформи/графіка або порожньо"}}
+У кожному блоці solution додай "imgs": [1-2 файли з переліку, що найкраще ілюструють блок, ширина від 400 px]. Файли бери ЛИШЕ з переліку ЗОБРАЖЕННЯ, не повторюй один файл у різних місцях.'''
 
 RULES = '''Ти пишеш кейс для сайту українського дистриб'ютора Milesight. Мова — українська. Пиши своїми словами, стисло, по-інженерному, без реклами, без перекладу дослівно.
 Використовуй ЛИШЕ факти з тексту нижче: цифри, моделі, кількості, назви — тільки якщо вони є в тексті. Нічого не вигадуй. Якщо партнера немає — "—".
@@ -70,7 +76,8 @@ def run(url):
         if w > 2000: im.thumbnail((2000, 2000))
         im.save(os.path.join(d, name), 'WEBP', quality=86); imgs.append({'file': name, 'w': w, 'h': hh, 'url': u})
     banner = [x for x in imgs if 'banner' in x['file'] or x['w'] >= 1600]
-    raw = claude(RULES + '\n\n' + SCHEMA + '\n\nТЕКСТ КЕЙСУ:\n' + t[:24000])
+    lst = '\n'.join(f"{x['file']} {x['w']}x{x['h']}" for x in imgs if x['w'] >= 200)
+    raw = claude(RULES + '\n\n' + SCHEMA + '\n\nЗОБРАЖЕННЯ (файл ширина x висота):\n' + lst + '\n\nТЕКСТ КЕЙСУ:\n' + t[:24000])
     m = re.search(r'\{.*\}', raw, re.S); c = json.loads(m.group(0))
     c['link'] = url; c['slug'] = slug; c['images'] = imgs; c['hero_file'] = banner[0]['file'] if banner else (max(imgs, key=lambda x: x['w'])['file'] if imgs else '')
     json.dump(c, open(os.path.join(d, 'case.json'), 'w'), ensure_ascii=False, indent=1)

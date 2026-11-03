@@ -185,6 +185,8 @@ def build():
     for c in items:
         if c.get('page'):
             c['link'] = c['page']['slug'] + '.html'
+        if c.get('page') and not usable(c['image']):
+            c['image'] = c['page']['hero']  # абстрактний фон без змісту → головне фото кейсу
         c['_dev'] = devs(c)
     feat = sorted([c for c in items if c.get('featured')], key=lambda c: c['featured'])
     hero = next((c for c in feat if c.get('page')), feat[0])

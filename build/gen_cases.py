@@ -158,6 +158,70 @@ PCSS = '''<style>
 </style>'''
 
 
+PCSS2 = '''<style>
+.cp-sec h2.ctr{text-align:center;margin-bottom:44px}
+.cp-tabs nav a.on{background:var(--blue);color:#fff}
+.cp-bg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
+.cp-bg .card{grid-column:1/2;grid-row:1;position:relative;z-index:1;background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(20,40,80,.12);padding:44px 48px;margin-right:-80px}
+.cp-bg .card h2{margin-bottom:20px}
+.cp-bg .card p{font-size:18px;color:var(--text)}
+.cp-bg .card p+p{margin-top:14px}
+.cp-bg>img{grid-column:2/3;grid-row:1;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+.cp-ch3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.cp-ch3>div{background:#fff;border:1px solid #c9d6e8;border-radius:10px;padding:32px 30px}
+.cp-ch3 .ic{display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;margin:0 auto 22px}
+.cp-ch3 .ic svg{width:30px;height:30px}
+.cp-ch3 .ic-nature{background:var(--blue)}.cp-ch3 .ic-tools{background:#8a96a6}.cp-ch3 .ic-system{background:#0a3f9a}
+.cp-ch3 h3{font-weight:500;font-size:20px;margin-bottom:14px}
+.cp-ch3 ul{list-style:none;display:grid;gap:10px}
+.cp-ch3 li{padding-left:16px;position:relative;color:var(--text);font-size:16px}
+.cp-ch3 li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.cp-diag figcaption{margin-top:16px;font-size:14px;color:var(--muted)}
+.cp-bento{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;margin-top:20px}
+.sp{border-radius:10px;padding:22px;display:flex;gap:22px;align-items:center}
+.sp h3{font-weight:500;font-size:20px;margin-bottom:8px}
+.sp p{color:var(--text);font-size:16px;line-height:1.6}
+.sp .ph{display:flex;gap:12px;flex:none}
+.sp .ph img{width:172px;height:200px;object-fit:cover;border-radius:6px}
+.sp-wide{grid-column:1/-1}
+.sp-wide .st{flex:1}
+.sp-left{flex-direction:row-reverse}
+.sp-left .st,.sp-right .st{flex:1}
+.sp-tall{grid-column:2;grid-row:2/4;flex-direction:column;align-items:stretch}
+.sp-tall .ph{flex:1;min-height:240px}
+.sp-tall .ph img{flex:1;min-width:0;width:auto;height:100%}
+.sp-right .ph.n2{flex-direction:column}.sp-right .ph.n2 img{width:180px;height:120px}
+.t-blue{background:#e8f1fb}.t-mint{background:#e8f5ef}.t-sand{background:#fbf5e8}.t-grey{background:#f2f4f7}
+.cp-resb{background:linear-gradient(120deg,#0a3f9a 0%,#0b5cd6 60%,#2b7cf2 100%);color:#fff}
+.cp-resb h2{color:#fff}
+.cp-res4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.cp-res4>div{border:1px solid rgba(255,255,255,.45);border-radius:10px;padding:28px 30px;background:rgba(255,255,255,.06)}
+.cp-res4 h3{font-weight:500;font-size:20px;color:#fff;margin-bottom:10px}
+.cp-res4 p{color:rgba(255,255,255,.92);font-size:16px}
+.cp-scada{margin-top:36px;background:#fff;border-radius:10px;padding:14px}
+.cp-scada img{display:block;width:100%;border-radius:6px}
+.cp-scada figcaption{padding:12px 6px 4px;font-size:14px;color:var(--muted)}
+.cp-note2{margin-top:18px;font-size:14px;color:rgba(255,255,255,.85)}
+.cp-pt{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:36px 40px;max-width:1000px;margin:0 auto}
+.cp-pt .lg{font-weight:500;font-size:26px;letter-spacing:.04em;color:var(--ink);text-align:center;border-right:1px solid var(--line);padding-right:30px}
+.cp-pt p{font-size:17px;color:var(--text)}
+@media (max-width:1000px){.cp-ch3{grid-template-columns:1fr}.cp-bento{grid-template-columns:1fr}.sp-tall{grid-column:auto;grid-row:auto}.cp-bg{grid-template-columns:1fr}.cp-bg .card{margin:-60px 16px 0;grid-row:2}.cp-bg>img{grid-column:1;grid-row:1}}
+@media (max-width:640px){.sp{flex-direction:column!important;align-items:stretch}.sp .ph img{width:100%!important;height:200px!important}.sp .ph{flex-direction:column}.cp-res4{grid-template-columns:1fr}.cp-pt{grid-template-columns:1fr;padding:24px}.cp-pt .lg{border-right:0;padding-right:0}.cp-bg .card{padding:28px 24px}}
+</style>'''
+
+SPY = '''<script>
+(function(){var a=[].slice.call(document.querySelectorAll('.cp-tabs nav a'));if(!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)a.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id)})})},{rootMargin:'-40% 0px -55% 0px'});
+a.forEach(function(l){var t=document.querySelector(l.getAttribute('href'));if(t)io.observe(t)})})();
+</script>'''
+
+
+ICONS = {
+ 'nature': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l-5 7h3l-4 6h5v5h2v-5h5l-4-6h3z" fill="#fff"/></svg>',
+ 'tools': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.5a5 5 0 0 1-6.6 4.7L6.7 19.9a2 2 0 1 1-2.8-2.8l7.7-7.7A5 5 0 0 1 17.3 3l-3 3 .9 2.8 2.8.9z" fill="#fff"/></svg>',
+ 'system': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1L15 3.5h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.4L6.6 11a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.4zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="#fff"/></svg>'}
+
+
 def case_page(c):
     P = c['page']
     def fv(a, b):
@@ -169,25 +233,28 @@ def case_page(c):
     tabs = [('background', 'Передумови'), ('challenges', 'Виклики'), ('solution', 'Рішення'), ('results', 'Результат'), ('partner', 'Партнер')]
     nav = ''.join(f'<a href="#{k}">{e(v)}</a>' for k, v in tabs)
     bg = P['background']
-    ch = ''.join(f'<div><h3>{e(t)}</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in items)}</ul></div>' for t, items in P['challenges'])
-    sol = ''.join(f'<div><div class="im"><img src="{e(i)}" alt="" loading="lazy"></div><h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d, i in P['solution'])
+    ch = ''.join(f'<div class="rv"><i class="ic ic-{e(x["icon"])}">{ICONS.get(x["icon"], "")}</i><h3>{e(x["t"])}</h3><ul>{"".join(f"<li>{e(y)}</li>" for y in x["items"])}</ul></div>' for x in P['challenges'])
+    def panel(x):
+        ims = ''.join(f'<img src="{e(i)}" alt="" loading="lazy">' for i in x['imgs'])
+        return f'<div class="sp sp-{e(x["layout"])} t-{e(x["tint"])} rv"><div class="st"><h3>{e(x["t"])}</h3><p>{e(x["d"])}</p></div><div class="ph n{len(x["imgs"])}">{ims}</div></div>'
+    sol = ''.join(panel(x) for x in P['solution'])
     R = P['results']
-    diag = f'<figure class="cp-diag"><img src="{e(P["solution_img"])}" alt="Схема рішення" loading="lazy"><p>{e(P.get("solution_caption", ""))}</p></figure>' if P.get('solution_img') else ''
-    res = ''.join(f'<div><b>{e(t)}</b><span>{e(d)}</span></div>' for t, d in R['items'])
+    diag = f'<figure class="cp-diag"><img src="{e(P["solution_img"])}" alt="Схема рішення" loading="lazy"><figcaption>{e(P.get("solution_caption", ""))}</figcaption></figure>' if P.get('solution_img') else ''
+    res = ''.join(f'<div class="rv"><h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in R['items'])
     place = dict(P['facts']).get('Локація', c['place'])
-    body = f'''{CSS}{PCSS}
+    body = f"""{CSS}{PCSS}{PCSS2}
 <div class="cp-hero"><img src="{e(P['hero'])}" alt=""><div class="wrap"><div class="eyebrow">Досвід Milesight у світі · {e(DIRS[c['dir']])}</div><h1>{e(P['h1'])}</h1><p>{e(P['sub'])}</p><span class="cp-loc">Локація: {e(place)}</span></div></div>
 <div class="cp-facts"><div class="wrap"><div class="box">{facts}<a class="btn" href="{e(c['link'])}" target="_blank" rel="noopener">Оригінал кейсу</a></div></div></div>
 <div class="cp-tabs"><div class="wrap"><nav aria-label="Розділи кейсу">{nav}</nav><div class="bc"><a href="./">Головна</a> › <a href="vprovadzhennia.html">Впровадження</a> › {e(DIRS[c['dir']])}</div></div></div>
 <main>
-<section id="background" class="cp-sec"><div class="wrap cp-two"><div><h2>Передумови</h2>{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg['img'])}" alt="" loading="lazy"></div></section>
-<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2>Виклики</h2><div class="cp-ch">{ch}</div></div></section>
-<section id="solution" class="cp-sec"><div class="wrap"><h2>Рішення</h2>{diag}<div class="cp-sol">{sol}</div></div></section>
-<section id="results" class="cp-sec" style="background:var(--bg2)"><div class="wrap cp-two"><div><h2>Результат</h2><div class="cp-res">{res}</div>{f'<p class="cp-note">{e(R["note"])}</p>' if R.get('note') else ''}</div><img src="{e(R['img'])}" alt="" loading="lazy"></div></section>
-<section id="partner" class="cp-sec"><div class="wrap"><h2>Партнер</h2><p style="font-size:18px;max-width:70ch;color:var(--text)">{e(P['partner'])}</p>
-<p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c['link'])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></section>
+<section id="background" class="cp-sec"><div class="wrap"><div class="cp-bg"><div class="card rv"><h2>Передумови</h2>{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg['img'])}" alt="" loading="lazy"></div></div></section>
+<section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="ctr">Виклики</h2><div class="cp-ch3">{ch}</div></div></section>
+<section id="solution" class="cp-sec"><div class="wrap"><h2 class="ctr">Рішення</h2>{diag}<div class="cp-bento">{sol}</div></div></section>
+<section id="results" class="cp-sec cp-resb"><div class="wrap"><h2 class="ctr">Результат</h2><div class="cp-res4">{res}</div><figure class="cp-scada rv"><img src="{e(R['img'])}" alt="Платформа SCADA водного департаменту" loading="lazy"><figcaption>Платформа водного департаменту: рівень у резервуарах, обсяги води й карта об'єктів острова.</figcaption></figure>{f'<p class="cp-note2">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
+<section id="partner" class="cp-sec"><div class="wrap"><h2 class="ctr">Партнер</h2><div class="cp-pt rv"><div class="lg">{e(dict(P['facts']).get('Партнер-інтегратор', '').split(' (')[0])}</div><div><p>{e(P['partner'])}</p>
+<p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c['link'])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></div></div></section>
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
-</main>'''
+</main>{SPY}"""
     html = chrome(body, P['h1'], 'case')
     html = html.replace('<a href="solutions.html" aria-current="page">Рішення</a>', '<a href="solutions.html">Рішення</a>')
     html = html.replace('<a href="vprovadzhennia.html">Впровадження</a>', '<a href="vprovadzhennia.html" aria-current="page">Впровадження</a>', 1)

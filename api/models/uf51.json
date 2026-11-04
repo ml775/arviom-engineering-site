@@ -1,0 +1,38 @@
+{
+ "model": "UF51",
+ "name": "5G CPE-роутер IP67, Wi-Fi 6",
+ "series": "Промислові роутери",
+ "vendor": "Milesight",
+ "page": "https://engineering.arviom.com/s-routers.html#m-uf51",
+ "markdown": "https://engineering.arviom.com/models/uf51.md",
+ "json": "https://engineering.arviom.com/api/models/uf51.json",
+ "image": "https://engineering.arviom.com/img/hd/uf51.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/5g/uf51",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/uf51-datasheet-en.pdf",
+ "specs": {
+  "purpose": "Економічне рішення для швидкого бездротового 5G-зв'язку в приміщеннях і просто неба: відеоспостереження, промислова автоматизація, M2M та IoT-застосунки.",
+  "measures": [
+   "Не вимірює фізичні величини",
+   "Збір даних через RS485/RS232 (Modbus RTU/TCP)",
+   "Цифровий вхід DI (сухий контакт) та вихід DO (мокрий контакт, до 0,3 А@30 В DC)",
+   "Геопозиціонування GNSS (GPS/GLONASS/Beidou/Galileo/QZSS), точність 2 м CEP"
+  ],
+  "interfaces": "1×2,5GbE (LAN1/WAN, PoE PD) + 1×GbE (LAN2); 1×RS485 (RS232 опціонально); 1×DI + 1×DO з гальванічною ізоляцією; USB 3.0 Type-C; 1 слот Micro SIM; Wi-Fi (опція)",
+  "network": "5G NR SA/NSA, 4G LTE, WCDMA; Wi-Fi 6 (2,4 та 5 ГГц, 4×4 MIMO, режим AP або клієнт); автоматичний failover Ethernet/мобільна мережа/Wi-Fi; VPN (IPsec, OpenVPN, L2TP, PPTP)",
+  "power": "9–48 В DC (клемна колодка) або 802.3at PoE PD (одночасно не використовуються); споживання: без Wi-Fi типово 4,8 Вт (макс. 6,5 Вт), з Wi-Fi типово 9,9 Вт (макс. 14,4 Вт)",
+  "ip": "IP67",
+  "temp": "від -30 до +60 °C (зберігання від -40 до +85 °C)",
+  "config": "Веб-інтерфейс, SNMP v1/v2c/v3, DeviceHub, SMS, Node-RED; оновлення через веб або DeviceHub",
+  "storage": "1 ГБ NAND Flash, 1 ГБ LPDDR4x RAM",
+  "mounting": "На стіну, на стовп, настільний, кріплення гвинтом знизу",
+  "dimensions": "ф105 × 110 × 187 мм (без водонепроникного роз'єму); ф105 × 110 × 218 мм (з роз'ємом)",
+  "weight": "957,3 г",
+  "frequencies": "5G: N1/N3/N5/N7/N8/N20/N28/N38/N40/N41/N77/N78; LTE FDD: B1/B3/B5/B7/B8/B20/B28/B32; LTE TDD: B38/B40/B41/B42/B43; WCDMA: B1/B5/B8",
+  "highlights": [
+   "Швидкий 5G (до 4,67 Гбіт/с) та Wi-Fi 6 (до 3,6 Гбіт/с)",
+   "Надійність: IP67, -30…+60 °C, апаратний watchdog, WAN failover",
+   "Гнучкість: PoE/DC живлення, RS485, DI/DO, GNSS, VPN, Node-RED, DeviceHub"
+  ]
+ }
+}

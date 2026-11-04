@@ -403,5 +403,47 @@
    "name": "Контролер кондиціонера",
    "json": "https://engineering.arviom.com/api/models/uc701.json"
   }
+ ],
+ "Промислові роутери": [
+  {
+   "model": "UR32",
+   "name": "Промисловий 4G-роутер, серія Pro",
+   "json": "https://engineering.arviom.com/api/models/ur32.json"
+  },
+  {
+   "model": "UR32L",
+   "name": "4G-роутер, серія Lite",
+   "json": "https://engineering.arviom.com/api/models/ur32l.json"
+  },
+  {
+   "model": "UR32S",
+   "name": "4G-роутер Lite з Wi-Fi",
+   "json": "https://engineering.arviom.com/api/models/ur32s.json"
+  },
+  {
+   "model": "UR35",
+   "name": "Промисловий 4G-роутер, 5 портів",
+   "json": "https://engineering.arviom.com/api/models/ur35.json"
+  },
+  {
+   "model": "UR41",
+   "name": "Міні-роутер 4G для вбудованих систем",
+   "json": "https://engineering.arviom.com/api/models/ur41.json"
+  },
+  {
+   "model": "UR75",
+   "name": "Промисловий 5G-роутер Wi-Fi 6",
+   "json": "https://engineering.arviom.com/api/models/ur75.json"
+  },
+  {
+   "model": "UF31",
+   "name": "5G-донгл для щитів і шаф",
+   "json": "https://engineering.arviom.com/api/models/uf31.json"
+  },
+  {
+   "model": "UF51",
+   "name": "5G CPE-роутер IP67, Wi-Fi 6",
+   "json": "https://engineering.arviom.com/api/models/uf51.json"
+  }
  ]
 }

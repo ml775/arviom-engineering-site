@@ -1,7 +1,7 @@
 {
  "updated": "2026-11-04",
  "source": "https://engineering.arviom.com/",
- "count": 75,
+ "count": 83,
  "models": [
   {
    "model": "CT10x",
@@ -3056,6 +3056,288 @@
      "Бездротове ІЧ-керування з вбудованою бібліотекою кодів і навчанням, до 10 м, 360°",
      "Локальні розклади, обмеження температури, виявлення відкритого вікна, порогові тривоги",
      "Сумісність із WT401, Milesight Development Platform, FUOTA та живлення Type-C або від батарей"
+    ]
+   }
+  },
+  {
+   "model": "UR32",
+   "name": "Промисловий 4G-роутер, серія Pro",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-ur32",
+   "markdown": "https://engineering.arviom.com/models/ur32.md",
+   "json": "https://engineering.arviom.com/api/models/ur32.json",
+   "image": "https://engineering.arviom.com/img/hd/ur32.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/cellular/ur32",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/ur32-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Економічний промисловий 3G/4G роутер для M2M/IoT-застосунків із безперервним доступом до інтернету та віддаленим керуванням.",
+    "measures": [
+     "Керує мережевим трафіком і маршрутизацією (LTE/WCDMA, Ethernet, Wi-Fi)",
+     "Читає 1 цифровий вхід (DI) і керує 1 цифровим виходом (DO)",
+     "Мостить Modbus RTU/TCP та DLMS через послідовний порт",
+     "Дає GNSS-позиціонування (опційно)"
+    ],
+    "interfaces": "2 × RJ45 10/100 Мбіт/с (1 WAN + 1 LAN або 2 LAN), опційно 2 × PoE PSE (802.3af/at); 1 × RS232 (RS485 опційно); 1 × DI (сухий контакт) + 1 × DO (мокрий контакт, макс. 0,3 А@30 В DC); 2 × SIM (Mini SIM); 1 × Micro SD; 2 × SMA (стільникові антени); опційно Wi-Fi (RP-SMA) і GNSS (SMA)",
+    "network": "4G LTE CAT4/WCDMA/GSM (залежить від регіону), Dual SIM, Ethernet, Wi-Fi 802.11b/g/n 2,4 ГГц (AP/клієнт, до 15 користувачів, опційно), автоматичний failover/failback; VPN: IPsec, OpenVPN, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier",
+    "power": "9–48 В DC (для PoE потрібно 48 В); клемник 2-pin 5,08 мм із захистом від перенапруги та зворотної полярності; споживання типово 1,9 Вт, макс. 2,4 Вт (без PoE)",
+    "ip": "IP30",
+    "temp": "від -40 °C до +70 °C (знижена продуктивність стільникового зв'язку вище 60 °C)",
+    "config": "Web, CLI (SSH/Telnet), SMS, SNMP v1/v2c/v3, TR069, DeviceHub, Milesight Development Platform, HTTP(s) API; оновлення через Web, DeviceHub, Development Platform; вбудований Python SDK",
+    "storage": "128 МБ Flash, 128 МБ DDR3 RAM, слот Micro SD для розширення",
+    "mounting": "Настільний, настінний або на DIN-рейку",
+    "dimensions": "108 × 90 × 26 мм",
+    "weight": "271 г",
+    "frequencies": "4G LTE/WCDMA/GSM залежно від регіону; Wi-Fi 2,4 ГГц; GNSS: GPS/GLONASS/BDS/Galileo/QZSS",
+    "highlights": [
+     "Dual SIM і автоматичний failover між LTE, Ethernet та Wi-Fi",
+     "Широкий набір VPN і безпеки (AAA, SPI-файрвол, апаратний watchdog)",
+     "Модульна конструкція, робота від -40 °C до +70 °C, 3 роки гарантії"
+    ]
+   }
+  },
+  {
+   "model": "UR32L",
+   "name": "4G-роутер, серія Lite",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-ur32l",
+   "markdown": "https://engineering.arviom.com/models/ur32l.md",
+   "json": "https://engineering.arviom.com/api/models/ur32l.json",
+   "image": "https://engineering.arviom.com/img/hd/ur32l.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/cellular/ur32lite",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/ur32l-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Бюджетний промисловий 3G/4G роутер із вбудованими розумними функціями для M2M/IoT-застосунків, що забезпечує стабільний доступ до інтернету.",
+    "measures": [
+     "Датчиків не має: це роутер",
+     "Керує мережевим трафіком, переключенням каналів (WAN failover) та VPN-тунелями",
+     "Живить PoE-пристрої 802.3af/at (опція)"
+    ],
+    "interfaces": "2 × RJ45 10/100 Мбіт/с (1 WAN + 1 LAN або 2 × LAN), ізоляція 1,5 кВ; опційно 2 × PoE PSE 802.3af/at; 1 × SMA (антена); 1 × слот SIM (Mini SIM); кнопка RESET; 2-контактна клемна колодка живлення",
+    "network": "4G LTE Cat 4 / WCDMA / GSM (залежно від регіону); автоперемикання Ethernet ↔ стільниковий зв'язок; VPN: IPsec, OpenVPN, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier",
+    "power": "9–48 В DC (для PoE потрібно 48 В); споживання: типово 1,8 Вт, макс. 2,2 Вт (без PoE); PoE до 30 Вт на порт, разом до 60 Вт",
+    "ip": "IP30",
+    "temp": "−40…+70 °C (знижена продуктивність стільникового зв'язку вище 60 °C)",
+    "config": "Web-інтерфейс, CLI (SSH/Telnet), SMS, SNMP v1/v2c/v3, TR069, DeviceHub, Milesight Development Platform, HTTP(s) API",
+    "storage": "128 МБ Flash, 128 МБ DDR3 RAM",
+    "mounting": "Настільний, настінний або на DIN-рейку",
+    "dimensions": "108 × 90 × 26 мм",
+    "highlights": [
+     "Надійний 4G Cat 4/3G зв'язок з автоперемиканням WAN і апаратним watchdog",
+     "Промислове виконання: ARM Cortex-A7, металевий корпус, −40…+70 °C",
+     "Широкий захист і VPN та зручне віддалене керування (DeviceHub, SNMP, TR069)"
+    ]
+   }
+  },
+  {
+   "model": "UR32S",
+   "name": "4G-роутер Lite з Wi-Fi",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-ur32s",
+   "markdown": "https://engineering.arviom.com/models/ur32s.md",
+   "json": "https://engineering.arviom.com/api/models/ur32s.json",
+   "image": "https://engineering.arviom.com/img/hd/ur32s.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/cellular/ur32lite",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/ur32s-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Економічний промисловий стільниковий роутер для M2M/IoT-застосувань, що забезпечує стабільний доступ до інтернету з автоматичним резервуванням каналів.",
+    "measures": [
+     "Мережевий трафік і маршрутизація (WAN/LAN, VPN)",
+     "Живлення PoE-пристроїв (опція)",
+     "Керування через SMS"
+    ],
+    "interfaces": "2 × RJ45 10/100 Мбіт/с (1 WAN + 1 LAN або 2 × LAN), опційно 2 × PoE PSE 802.3af/at; 1 × SMA (стільникова антена); 1 × RP-SMA (Wi-Fi антена); 1 × слот SIM (Mini SIM); кнопка RESET; 2-контактна клемна колодка живлення",
+    "network": "4G LTE (CAT4)/WCDMA/GSM (залежно від регіону); Wi-Fi 802.11 b/g/n 2.4 ГГц (AP або клієнт, до 15 підключень); 2 × Ethernet; failover Ethernet/SIM; VPN (IPsec, OpenVPN, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier)",
+    "power": "9–48 В DC (для PoE потрібно 48 В); споживання typ. 1,8 Вт, макс. 2,2 Вт (без PoE); опційний PoE-вихід до 30 Вт на порт, до 60 Вт загалом",
+    "ip": "IP30",
+    "temp": "від -40°C до +70°C (зниження стільникової продуктивності вище 60°C)",
+    "config": "Веб-інтерфейс, CLI (SSH/Telnet), SMS, SNMP v1/v2c/v3, TR069, DeviceHub, Milesight Development Platform, HTTP(s) API, MilesightVPN",
+    "storage": "128 МБ DDR3 RAM, 128 МБ Flash",
+    "mounting": "Настільний, настінний або на DIN-рейку",
+    "dimensions": "108 × 90 × 26 мм",
+    "highlights": [
+     "Автоматичне резервування між Ethernet і стільниковим зв'язком + апаратний watchdog",
+     "Промисловий дизайн: -40…+70°C, металевий корпус, DIN-рейка",
+     "Широкий набір VPN і захисту, централізоване керування через DeviceHub"
+    ]
+   }
+  },
+  {
+   "model": "UR35",
+   "name": "Промисловий 4G-роутер, 5 портів",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-ur35",
+   "markdown": "https://engineering.arviom.com/models/ur35.md",
+   "json": "https://engineering.arviom.com/api/models/ur35.json",
+   "image": "https://engineering.arviom.com/img/hd/ur35.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/cellular/ur35",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/ur35-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Економічний промисловий роутер із вбудованим стільниковим модемом для надійного підключення M2M/IoT-пристроїв до мережі.",
+    "measures": [
+     "Керування цифровим виходом (1 DO)",
+     "Читання цифрового входу (1 DI)",
+     "Позиціонування GNSS (опційно)"
+    ],
+    "interfaces": "5 × RJ45 10/100 Мбіт/с (1 WAN + 4 LAN), опційно 4 × PoE PSE 802.3af/at; 1 × RS232 + 1 × RS485; 1 × DI (сухий контакт) + 1 × DO (мокрий контакт, до 0,3 А@30 В DC); 1 × Micro SD; 2 × SIM (Mini SIM); 2 × SMA стільникові, 1 × RP-SMA Wi-Fi, 1 × SMA GNSS; кнопка RESET",
+    "network": "4G LTE CAT4/3G, дві SIM, Wi-Fi 802.11 b/g/n 2,4 ГГц (AP або клієнт, до 15 користувачів), Ethernet; автоматичний failover/failback; VPN: IPsec, OpenVPN, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier",
+    "power": "9–48 В DC (для PoE потрібно 48 В); споживання типово 3,9 Вт, макс. 4,6 Вт (без PoE); PoE до 30 Вт на порт, до 60 Вт сумарно",
+    "ip": "IP30",
+    "temp": "від -40°C до +70°C (знижена стільникова продуктивність вище 60°C); зберігання від -40°C до +85°C",
+    "config": "Web GUI, CLI (SSH/Telnet), SMS, SNMP v1/v2c/v3, TR069, DeviceHub, Milesight Development Platform, HTTP(s) API; оновлення через Web, DeviceHub, Milesight Development Platform; Python SDK",
+    "storage": "128 МБ Flash, 128 МБ DDR3 RAM, слот Micro SD для розширення",
+    "mounting": "Настільний, настінний (на гвинти), на DIN-рейку",
+    "dimensions": "135 × 103 × 45 мм",
+    "weight": "485 г",
+    "highlights": [
+     "Двосімковий 4G LTE CAT4 з автоматичним резервуванням між Ethernet, стільниковою мережею та Wi-Fi",
+     "Широкий набір VPN і захисту, апаратний watchdog",
+     "Модульна конструкція (I/O, RS232/RS485, Wi-Fi, GPS, PoE), Python SDK, робота від -40°C до +70°C"
+    ]
+   }
+  },
+  {
+   "model": "UR41",
+   "name": "Міні-роутер 4G для вбудованих систем",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-ur41",
+   "markdown": "https://engineering.arviom.com/models/ur41.md",
+   "json": "https://engineering.arviom.com/api/models/ur41.json",
+   "image": "https://engineering.arviom.com/img/hd/ur41.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/cellular/ur41",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/ur41-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Компактний промисловий 4G-роутер для надійного підключення локального обладнання (торгові автомати, роботи, промислові пристрої) до мережі з безпечними VPN-тунелями.",
+    "measures": [
+     "Не є датчиком, а роутером",
+     "Читання цифрового входу (DI, сухий контакт)",
+     "Керування цифровим виходом (DO) за DI, SMS, CLI, Modbus, MQTT",
+     "Дані GNSS (лише UR41)"
+    ],
+    "interfaces": "1 × RJ45 10/100 Мбіт/с; 1 × RS232 або RS485 (перемикається програмно, 3.5 мм клемник, 300–230400 біт/с, резистор 120 Ом); 1 × DI + 1 × DO (гальванічна розв'язка, DO макс. 0.3 А@30 В DC); 1 × USB 2.0 Type-C; 1 × SIM (Nano); SMA-антени для LTE і GNSS; кнопка RESET; 2 світлодіоди",
+    "network": "4G LTE CAT 4/WCDMA/GSM (UR41), 4G LTE CAT 1 (UR41L); Multi-APN (лише UR41); WAN Failover, VRRP; VPN: IPsec, OpenVPN, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier",
+    "power": "5–24 В DC (2-контактний клемник із захистом від перенапруги та зворотної полярності) або 5 В/1 А через USB Type-C",
+    "ip": "IP30",
+    "temp": "від -40 до +60 °C (зберігання: від -40 до +85 °C; вологість 0–95 % без конденсату)",
+    "config": "Web, CLI (SSH/Telnet), SMS, SNMP v1/v2c/v3, TR069, DeviceHub, Milesight Development Platform",
+    "storage": "128 МБ Flash",
+    "mounting": "На стіл, на стіну, на DIN-рейку",
+    "dimensions": "70 × 55 × 22 мм (без антенного роз'єму)",
+    "weight": "103 г",
+    "highlights": [
+     "Компактний металевий корпус для вбудованих рішень",
+     "Широкий вибір інтерфейсів: DI/DO/RS232/RS485 та безпечні VPN",
+     "Енергоощадні режими idle і standby, апаратний watchdog"
+    ]
+   }
+  },
+  {
+   "model": "UR75",
+   "name": "Промисловий 5G-роутер Wi-Fi 6",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-ur75",
+   "markdown": "https://engineering.arviom.com/models/ur75.md",
+   "json": "https://engineering.arviom.com/api/models/ur75.json",
+   "image": "https://engineering.arviom.com/img/hd/ur75.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/5g/ur75",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/ur75-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Високопродуктивний промисловий 5G-роутер для M2M/IoT-застосувань: збір даних і швидка передача в розумних мережах, автоматизації, телеметрії та на цифрових фабриках.",
+    "interfaces": "5 × Gigabit Ethernet (1 WAN + 4 LAN, опційно PoE af/at), 1 × RS232 + 1 × RS485, 1 × DI (сухий контакт) + 1 × DO (мокрий контакт, 0,3 А@30 В DC), 1 × USB 3.0 Type-C, 2 × SIM, M.2 NVMe SSD, 4 антени SMA (стільникові), 4 антени RP-SMA (Wi-Fi), 1 антена GNSS",
+    "network": "5G NR SA/NSA, 4G LTE, WCDMA, dual SIM, Wi-Fi 6 (2.4/5 ГГц, до 1,8 Гбіт/с), Gigabit Ethernet, WAN failover; без LoRaWAN",
+    "power": "9–48 В DC через клемник (48 В для PoE) або 5 В/3 А через USB Type-C; споживання без Wi-Fi: типово 2,8 Вт, макс. 5,5 Вт; з Wi-Fi: типово 7 Вт, макс. 13,7 Вт",
+    "ip": "IP30",
+    "temp": "−40…+70 °C (зберігання −40…+85 °C)",
+    "config": "Веб-інтерфейс, SNMP v1/v2c/v3, DeviceHub, MilesightVPN, Node-RED, SMS-керування",
+    "storage": "1 ГБ NAND Flash, 1 ГБ LPDDR4x RAM, розширення через M.2 NVMe SSD",
+    "mounting": "Настільний, настінний або на DIN-рейку",
+    "dimensions": "135 × 115 × 36,4 мм",
+    "weight": "567,2 г",
+    "frequencies": "5G Sub-6: N1/N3/N5/N7/N8/N20/N28/N38/N40/N41/N77/N78; LTE FDD: B1/B3/B5/B7/B8/B20/B28/B32; LTE TDD: B38/B40/B41/B42/B43; WCDMA: B1/B5/B8",
+    "highlights": [
+     "Глобальний 5G (SA/NSA) із dual SIM, 2CC CA та швидкістю до 4,67 Гбіт/с",
+     "Автоматичний failover між Ethernet, стільниковим зв'язком і Wi-Fi, апаратний watchdog, VPN (IPsec/OpenVPN)",
+     "Промисловий дизайн −40…+70 °C, I/O, RS232/RS485, GNSS, 3 роки гарантії"
+    ]
+   }
+  },
+  {
+   "model": "UF31",
+   "name": "5G-донгл для щитів і шаф",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-uf31",
+   "markdown": "https://engineering.arviom.com/models/uf31.md",
+   "json": "https://engineering.arviom.com/api/models/uf31.json",
+   "image": "https://engineering.arviom.com/img/hd/uf31.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/5g/uf31",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/uf31-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Високопродуктивний 5G-модем для бездротового доступу в інтернет польових пристроїв через Ethernet або USB Type-C.",
+    "interfaces": "1 × Gigabit Ethernet (10/100/1000 Мбіт/с); 1 × USB 3.0 Type-C (живлення, мережа, налагодження); 4 × SMA для стільникових антен; 1 × SMA для GNSS; 1 × Micro SIM (3FF); кнопка RESET; 2 світлодіоди (STATUS, мережа)",
+    "network": "5G NR SA/NSA, 4G LTE, WCDMA; Gigabit Ethernet; IPv4/IPv6, VPN (IPsec, OpenVPN); Wi-Fi та LoRaWAN відсутні",
+    "power": "5–24 В DC (2-контактна клемна колодка 3,5 мм, захист від перенапруги та переполюсовки) або 5 В/3 А через USB Type-C; типове споживання 3,9 Вт",
+    "ip": "IP30",
+    "temp": "−20…+50 °C (зберігання −40…+85 °C)",
+    "config": "Web GUI, CLI, DeviceHub (віддалений моніторинг, масове налаштування, централізоване керування)",
+    "storage": "1 ГБ NAND Flash",
+    "mounting": "Настільний, настінний, на DIN-рейку",
+    "dimensions": "90 × 72 × 15 мм",
+    "frequencies": "5G: N1/N3/N5/N7/N8/N20/N28/N38/N40/N41/N77/N78/N79; LTE FDD: B1/B3/B5/B7/B8/B18/B19/B20/B28/B32; LTE TDD: B38/B40/B41/B42/B43/B46; WCDMA: B1/B5/B8",
+    "highlights": [
+     "Глобальна підтримка 5G NSA/SA, 4G LTE, WCDMA зі швидкістю до 2,5 Гбіт/с",
+     "Plug and play, апаратний watchdog, компактний металевий корпус для промислового використання",
+     "Безпека (iptables-фаєрвол, IPsec/OpenVPN) та віддалене керування через DeviceHub"
+    ]
+   }
+  },
+  {
+   "model": "UF51",
+   "name": "5G CPE-роутер IP67, Wi-Fi 6",
+   "series": "Промислові роутери",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-routers.html#m-uf51",
+   "markdown": "https://engineering.arviom.com/models/uf51.md",
+   "json": "https://engineering.arviom.com/api/models/uf51.json",
+   "image": "https://engineering.arviom.com/img/hd/uf51.webp",
+   "vendor_page": "https://www.milesight.com/iot/product/5g/uf51",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/uf51-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Економічне рішення для швидкого бездротового 5G-зв'язку в приміщеннях і просто неба: відеоспостереження, промислова автоматизація, M2M та IoT-застосунки.",
+    "measures": [
+     "Не вимірює фізичні величини",
+     "Збір даних через RS485/RS232 (Modbus RTU/TCP)",
+     "Цифровий вхід DI (сухий контакт) та вихід DO (мокрий контакт, до 0,3 А@30 В DC)",
+     "Геопозиціонування GNSS (GPS/GLONASS/Beidou/Galileo/QZSS), точність 2 м CEP"
+    ],
+    "interfaces": "1×2,5GbE (LAN1/WAN, PoE PD) + 1×GbE (LAN2); 1×RS485 (RS232 опціонально); 1×DI + 1×DO з гальванічною ізоляцією; USB 3.0 Type-C; 1 слот Micro SIM; Wi-Fi (опція)",
+    "network": "5G NR SA/NSA, 4G LTE, WCDMA; Wi-Fi 6 (2,4 та 5 ГГц, 4×4 MIMO, режим AP або клієнт); автоматичний failover Ethernet/мобільна мережа/Wi-Fi; VPN (IPsec, OpenVPN, L2TP, PPTP)",
+    "power": "9–48 В DC (клемна колодка) або 802.3at PoE PD (одночасно не використовуються); споживання: без Wi-Fi типово 4,8 Вт (макс. 6,5 Вт), з Wi-Fi типово 9,9 Вт (макс. 14,4 Вт)",
+    "ip": "IP67",
+    "temp": "від -30 до +60 °C (зберігання від -40 до +85 °C)",
+    "config": "Веб-інтерфейс, SNMP v1/v2c/v3, DeviceHub, SMS, Node-RED; оновлення через веб або DeviceHub",
+    "storage": "1 ГБ NAND Flash, 1 ГБ LPDDR4x RAM",
+    "mounting": "На стіну, на стовп, настільний, кріплення гвинтом знизу",
+    "dimensions": "ф105 × 110 × 187 мм (без водонепроникного роз'єму); ф105 × 110 × 218 мм (з роз'ємом)",
+    "weight": "957,3 г",
+    "frequencies": "5G: N1/N3/N5/N7/N8/N20/N28/N38/N40/N41/N77/N78; LTE FDD: B1/B3/B5/B7/B8/B20/B28/B32; LTE TDD: B38/B40/B41/B42/B43; WCDMA: B1/B5/B8",
+    "highlights": [
+     "Швидкий 5G (до 4,67 Гбіт/с) та Wi-Fi 6 (до 3,6 Гбіт/с)",
+     "Надійність: IP67, -30…+60 °C, апаратний watchdog, WAN failover",
+     "Гнучкість: PoE/DC живлення, RS485, DI/DO, GNSS, VPN, Node-RED, DeviceHub"
     ]
    }
   }

@@ -12,6 +12,7 @@
 "ct-series": "s-ct.html",
 "iot-display": "s-iot-display.html",
 "gateways": "s-gateways.html",
+"routers": "s-routers.html",
 "controllers": "s-controllers.html",
 "em300-series": "catalog.html"
 }

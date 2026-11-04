@@ -19,7 +19,7 @@ MFILE={}
 for s in json.load(open(SP+'sensor_series.json')):
     if s['key'] in FILES:
         for p in s['products']: MFILE.setdefault(p['model'],FILES[s['key']])
-for src,k in [('lorawan-gateway','gateways'),('lorawan-controller','controllers')]:
+for src,k in [('lorawan-gateway','gateways'),('lorawan-controller','controllers'),('cellular-router','routers')]:
     for x in json.load(open(SP+'iot_catalog.json'))[src]['products']: MFILE.setdefault(x['title'][0],FILES.get(k,''))
 ALIAS={'WS156/136':'WS156','VS13x':'VS133','TS30x':'TS301/TS302','WT201':'WT2x1','WT303/WT304':'WT30x','VS125':'VS125 Series'}
 def hdimg(m):
@@ -36,13 +36,13 @@ bykey={s['key']:s for s in ser}
 products=[{'k':k,'t':SERIES[k],'f':FILES.get(k,''),'p':[P(p['model'],p['name'],p['img'],p['href']) for p in bykey[k]['products'] if p['model']!='Compatibility']} for k in SERIES]
 industry=[{'t':t,'g':[{'k':k,'t':lab,'p':[P(p['model'],p['name'],p['img'],p['href']) for p in bykey[k]['products'] if p['model']!='Compatibility']} for k,lab in grp]} for t,grp in IND]
 def simple(key): return [P(x['title'][0],' '.join(x['title'][1:]),x['img'].split('?')[0].split('/')[-1],x['href']) for x in cat[key]['products']]
-gw=simple('lorawan-gateway'); ctl=simple('lorawan-controller'); disp=simple('iot-display')
+gw=simple('lorawan-gateway'); ctl=simple('lorawan-controller'); disp=simple('iot-display'); rt=simple('cellular-router')
 cmp=[]
 for x in cat['product-comparison']['products']:
     t=' '.join(x['title']); href=x['href']
     if 'temperature' in href or 'leakage' in href: href='catalog.html#compare'
     ci=img(x['img'].split('?')[0].split('/')[-1]); cmp.append({'t':CMP.get(t,t),'i':ci,'h':href,'x':0 if href.startswith('catalog') else 1,'s':hh(ci,T=200*75,HMAX=100,WMAX=260)})
-data={'files':FILES,'series':products,'industry':industry,'gw':gw,'ctl':ctl,'disp':disp,'cmp':cmp}
+data={'files':FILES,'series':products,'industry':industry,'gw':gw,'ctl':ctl,'rt':rt,'disp':disp,'cmp':cmp}
 tpl=open(ROOT+'/build/products_tpl.html').read()
 open(ROOT+'/products.html','w').write(tpl.replace('__DATA__',json.dumps(data,ensure_ascii=False)))
 print('series',len(products),'models',sum(len(s['p']) for s in products),'gw',len(gw),'ctl',len(ctl),'cmp',len(cmp))

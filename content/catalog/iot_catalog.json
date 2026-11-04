@@ -917,5 +917,76 @@
   "text": "",
   "series": [],
   "products": []
+ },
+ "cellular-router": {
+  "title": "Cellular routers",
+  "text": "",
+  "series": [],
+  "products": [
+   {
+    "href": "https://www.milesight.com/iot/product/cellular/ur32",
+    "img": "img/hd/ur32.webp",
+    "title": [
+     "UR32",
+     "Промисловий 4G-роутер, серія Pro"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/cellular/ur32lite",
+    "img": "img/hd/ur32l.webp",
+    "title": [
+     "UR32L",
+     "4G-роутер, серія Lite"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/cellular/ur32lite",
+    "img": "img/hd/ur32s.webp",
+    "title": [
+     "UR32S",
+     "4G-роутер Lite з Wi-Fi"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/cellular/ur35",
+    "img": "img/hd/ur35.webp",
+    "title": [
+     "UR35",
+     "Промисловий 4G-роутер, 5 портів"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/cellular/ur41",
+    "img": "img/hd/ur41.webp",
+    "title": [
+     "UR41",
+     "Міні-роутер 4G для вбудованих систем"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/5g/ur75",
+    "img": "img/hd/ur75.webp",
+    "title": [
+     "UR75",
+     "Промисловий 5G-роутер Wi-Fi 6"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/5g/uf31",
+    "img": "img/hd/uf31.webp",
+    "title": [
+     "UF31",
+     "5G-донгл для щитів і шаф"
+    ]
+   },
+   {
+    "href": "https://www.milesight.com/iot/product/5g/uf51",
+    "img": "img/hd/uf51.webp",
+    "title": [
+     "UF51",
+     "5G CPE-роутер IP67, Wi-Fi 6"
+    ]
+   }
+  ]
  }
 }

@@ -31,6 +31,7 @@ SERIES = {
  'iot-display': ('DS', 'IoT-дисплей', 'E-ink дисплей LoRaWAN', 'Табло для переговорних, складів і цехів, що працює від батареї.', SENS),
 }
 OTHER = {'gateways': ('lorawan-gateway', 'UG', 'LoRaWAN-шлюзи', 'Шлюзи для приміщень і вулиці', 'Збирають дані з датчиків і передають у вашу систему: MQTT, HTTP, Modbus, BACnet.', NET),
+         'routers': ('cellular-router', 'UR', 'Промислові роутери', '4G і 5G для щитів, насосних і віддалених майданчиків', 'Промислові стільникові роутери Milesight: 4G і 5G, Wi-Fi, подвійна SIM, VPN, послідовні порти й DI/DO для зв\'язку об\'єктів без дротового інтернету.', NET),
          'controllers': ('lorawan-controller', 'UC', 'LoRaWAN-контролери', 'Контролери й конвертери', 'Підключають наявне обладнання: лічильники Modbus, реле, клапани, кондиціонери.', NET)}
 FILE = {k: 's-' + k.replace('-series', '').replace('occupancy-and-people-counting', 'people') + '.html' for k in list(SERIES) + list(OTHER)}
 FILE['em300-series'] = 'catalog.html'
@@ -49,8 +50,8 @@ def model(m, name, im, href):
 def page(key, S, models, cases=None):
     tpl = open(os.path.join(ROOT, 'build/series_tpl.html')).read()
     data = 'const MODELS=%s;\nconst CASES=%s;\nconst S=%s;' % (json.dumps(models, ensure_ascii=False), json.dumps(cases or [], ensure_ascii=False), json.dumps(S, ensure_ascii=False))
-    act = {'__A_SENS__': '', '__A_GW__': '', '__A_CTL__': ''}
-    act['__A_GW__' if key == 'gateways' else '__A_CTL__' if key == 'controllers' else '__A_SENS__'] = ' aria-current="page"'
+    act = {'__A_SENS__': '', '__A_GW__': '', '__A_CTL__': '', '__A_RT__': ''}
+    act['__A_GW__' if key == 'gateways' else '__A_CTL__' if key == 'controllers' else '__A_RT__' if key == 'routers' else '__A_SENS__'] = ' aria-current="page"'
     for k, v in act.items(): tpl = tpl.replace(k, v)
     out = tpl.replace('__TITLE__', S['title']).replace('__DATA__', data, 1)
     def mdslug(m):

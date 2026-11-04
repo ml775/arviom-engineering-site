@@ -1,0 +1,35 @@
+{
+ "model": "UR32L",
+ "name": "4G-роутер, серія Lite",
+ "series": "Промислові роутери",
+ "vendor": "Milesight",
+ "page": "https://engineering.arviom.com/s-routers.html#m-ur32l",
+ "markdown": "https://engineering.arviom.com/models/ur32l.md",
+ "json": "https://engineering.arviom.com/api/models/ur32l.json",
+ "image": "https://engineering.arviom.com/img/hd/ur32l.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/cellular/ur32lite",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/ur32l-datasheet-en.pdf",
+ "specs": {
+  "purpose": "Бюджетний промисловий 3G/4G роутер із вбудованими розумними функціями для M2M/IoT-застосунків, що забезпечує стабільний доступ до інтернету.",
+  "measures": [
+   "Датчиків не має: це роутер",
+   "Керує мережевим трафіком, переключенням каналів (WAN failover) та VPN-тунелями",
+   "Живить PoE-пристрої 802.3af/at (опція)"
+  ],
+  "interfaces": "2 × RJ45 10/100 Мбіт/с (1 WAN + 1 LAN або 2 × LAN), ізоляція 1,5 кВ; опційно 2 × PoE PSE 802.3af/at; 1 × SMA (антена); 1 × слот SIM (Mini SIM); кнопка RESET; 2-контактна клемна колодка живлення",
+  "network": "4G LTE Cat 4 / WCDMA / GSM (залежно від регіону); автоперемикання Ethernet ↔ стільниковий зв'язок; VPN: IPsec, OpenVPN, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier",
+  "power": "9–48 В DC (для PoE потрібно 48 В); споживання: типово 1,8 Вт, макс. 2,2 Вт (без PoE); PoE до 30 Вт на порт, разом до 60 Вт",
+  "ip": "IP30",
+  "temp": "−40…+70 °C (знижена продуктивність стільникового зв'язку вище 60 °C)",
+  "config": "Web-інтерфейс, CLI (SSH/Telnet), SMS, SNMP v1/v2c/v3, TR069, DeviceHub, Milesight Development Platform, HTTP(s) API",
+  "storage": "128 МБ Flash, 128 МБ DDR3 RAM",
+  "mounting": "Настільний, настінний або на DIN-рейку",
+  "dimensions": "108 × 90 × 26 мм",
+  "highlights": [
+   "Надійний 4G Cat 4/3G зв'язок з автоперемиканням WAN і апаратним watchdog",
+   "Промислове виконання: ARM Cortex-A7, металевий корпус, −40…+70 °C",
+   "Широкий захист і VPN та зручне віддалене керування (DeviceHub, SNMP, TR069)"
+  ]
+ }
+}

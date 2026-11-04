@@ -228,7 +228,7 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
   <nav aria-label="Розділи"><a href="solutions.html">Рішення</a><a href="products.html" aria-current="page">Продукти</a><a href="vprovadzhennia.html">Впровадження</a><a href="./#dev">Розробки</a><a href="learn.html">Навчання</a><a href="./#learn">Підтримка</a><a href="./#video">Відео</a></nav>
   <div class="rt"><a class="pl l" href="partner.html">Вхід для партнерів</a><a class="pl s" href="./#contact">Зв'язатися</a></div>
 </div></header>
-<div class="sxs"><div class="in"><nav aria-label="Категорії"><a href="products.html">Усі продукти</a><a href="products.html#sensors" aria-current="page">LoRaWAN-датчики</a><a href="s-gateways.html">Шлюзи</a><a href="s-controllers.html">Контролери</a></nav>
+<div class="sxs"><div class="in"><nav aria-label="Категорії"><a href="products.html">Усі продукти</a><a href="products.html#sensors" aria-current="page">LoRaWAN-датчики</a><a href="s-gateways.html">Шлюзи</a><a href="s-controllers.html">Контролери</a><a href="s-routers.html">Роутери</a></nav>
   <div class="bc"><a href="./">Головна</a> › <a href="products.html">Продукти</a> › <span id="crumb-last">Серія CT</span></div></div></div>
 <main id="app"></main>
 
@@ -244,7 +244,7 @@ const CASES=[];
 const S={"code": "CT", "title": "Серія CT", "sub": "Струм і енергія", "text": "Трансформатори струму й хаб енергомоніторингу щита без розриву ліній.", "card": [["measures", "Вимірює"], ["battery_life", "Батарея"], ["ip", "Захист"]]};
 const GROUPS=S.groups||[];
 const GROUP_OF=S.group_of||{};
-const ALLROWS=[["purpose","Призначення"],["measures","Вимірює / керує"],["range_accuracy","Діапазон і точність"],["probe","Сенсор / технологія"],["interfaces","Входи й порти"],["network","Зв'язок"],["power","Живлення"],["battery","Батарея"],["battery_life","Ресурс батареї"],["ip","Захист"],["temp","Робоча температура"],["range_lora","Дальність"],["config","Налаштування"],["storage","Пам'ять"],["mounting","Монтаж"],["dimensions","Розміри"],["weight","Вага"],["frequencies","Частотні плани"]];
+const ALLROWS=[["purpose","Призначення"],["measures","Вимірює / керує"],["range_accuracy","Діапазон і точність"],["probe","Сенсор / технологія"],["interfaces","Входи й порти"],["cpu","Платформа"],["network","Зв'язок"],["power","Живлення"],["battery","Батарея"],["battery_life","Ресурс батареї"],["ip","Захист"],["temp","Робоча температура"],["range_lora","Дальність"],["config","Налаштування"],["storage","Пам'ять"],["mounting","Монтаж"],["dimensions","Розміри"],["weight","Вага"],["frequencies","Частотні плани"]];
 const empty=v=>v==null||(Array.isArray(v)?!v.length:!String(v).trim()||String(v).trim()==="—");
 const ROWS=ALLROWS.filter(([k])=>MODELS.some(m=>m.specs&&!empty(m[k])));
 const slug=m=>m.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
@@ -315,7 +315,7 @@ function product(id){
   app.innerHTML=`<section class="ph"><div class="wrap ph-in">
    <div class="ph-tx"><a class="back" href="#">← ${esc(S.title)}</a>
     <h1>${esc(m.name_uk)}</h1><p class="purpose">${esc(m.purpose)}</p>
-    <div class="badges"><span class="mbadge">${esc(m.model)}</span><span class="lw">LoRaWAN®</span></div>
+    <div class="badges"><span class="mbadge">${esc(m.model)}</span>${S.code==="UR"?`<span class="lw">${/^UF|UR75/.test(m.model)?"5G":"4G"}</span>`:`<span class="lw">LoRaWAN®</span>`}</div>
     <ul class="hl2">${hl.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
     <div class="ctas"><a class="btn" href="./#contact">Запит ціни й наявності</a><a class="btn ghost" href="#compare" onclick="picked.add('${m.model}')">Порівняти</a></div></div>
    <div class="ph-pic"><div class="mainpic"><img id="mainimg" src="${gal[0]}" alt="${esc(m.model)}"></div>

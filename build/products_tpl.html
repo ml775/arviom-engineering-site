@@ -187,7 +187,7 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 </div>
 
 <div class="tabs"><div class="wrap">
-  <nav aria-label="Розділи каталогу"><a href="#sensors" class="on">LoRaWAN-датчики</a><a href="#gateways">Шлюзи</a><a href="#controllers">Контролери</a><a href="#display">Дисплей</a><a href="#compare">Порівняння</a><a href="#video">Відео</a><a href="#faq">Питання</a></nav>
+  <nav aria-label="Розділи каталогу"><a href="#sensors" class="on">LoRaWAN-датчики</a><a href="#gateways">Шлюзи</a><a href="#controllers">Контролери</a><a href="#routers">Роутери</a><a href="#display">Дисплей</a><a href="#compare">Порівняння</a><a href="#video">Відео</a><a href="#faq">Питання</a></nav>
   <div class="bc"><a href="./">Головна</a> › Продукти IoT</div>
 </div></div>
 
@@ -211,6 +211,11 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
 <section id="controllers" class="blk alt">
   <div class="wrap wide"><h2 class="st">LoRaWAN-контролери</h2><p class="sd">Підключають наявне обладнання: лічильники Modbus, реле, клапани, кондиціонери. <a href="s-controllers.html">Порівняти контролери →</a></p>
     <div class="car" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="ctl"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
+</section>
+
+<section id="routers" class="blk">
+  <div class="wrap wide"><h2 class="st">Промислові роутери</h2><p class="sd">4G і 5G для щитів, насосних, торгових автоматів і віддалених майданчиків: резервування каналів, VPN, Wi-Fi, послідовні порти. <a href="s-routers.html">Порівняти роутери →</a></p>
+    <div class="car" style="margin-top:44px"><button class="ar p" type="button" aria-label="Назад">‹</button><div class="trk" id="rt"></div><button class="ar n" type="button" aria-label="Далі">›</button></div></div>
 </section>
 
 <section id="display" class="blk">
@@ -274,6 +279,7 @@ document.querySelectorAll(".tog button").forEach(b=>b.onclick=()=>{mode=b.datase
 // other blocks
 document.getElementById("gw").innerHTML=D.gw.map(card).join("");
 document.getElementById("ctl").innerHTML=D.ctl.map(card).join("");
+document.getElementById("rt").innerHTML=D.rt.map(card).join("");
 document.getElementById("disp").innerHTML=D.disp.map(card).join("");
 document.getElementById("cmp").innerHTML=D.cmp.map(c=>`<a class="pc" href="${esc(c.h)}"${c.x?' target="_blank" rel="noopener"':''}><div class="im"><img src="${esc(c.i)}" alt="" loading="lazy" style="height:${c.s}px"></div><b>${esc(c.t)}</b></a>`).join("");
 // carousels

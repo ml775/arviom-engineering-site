@@ -23,7 +23,7 @@ KEYS = [('purpose', 'Призначення'), ('measures', 'Вимірює / к
         ('interfaces', 'Входи й порти'), ('network', "Зв'язок"), ('power', 'Живлення'), ('battery', 'Батарея'), ('battery_life', 'Ресурс батареї'),
         ('ip', 'Захист'), ('temp', 'Робоча температура'), ('range_lora', 'Дальність'), ('config', 'Налаштування'), ('storage', "Пам'ять"),
         ('mounting', 'Монтаж'), ('dimensions', 'Розміри'), ('weight', 'Вага'), ('frequencies', 'Частотні плани'), ('highlights', 'Ключові переваги')]
-SERIES_NAMES = dict(SERIES_UK); SERIES_NAMES.update({'gateways': 'LoRaWAN-шлюзи', 'controllers': 'LoRaWAN-контролери'})
+SERIES_NAMES = dict(SERIES_UK); SERIES_NAMES.update({'gateways': 'LoRaWAN-шлюзи', 'controllers': 'LoRaWAN-контролери', 'routers': 'Промислові роутери'})
 models = {}
 def add(m, name, href, skey):
     if m in models or m == 'Compatibility': return
@@ -42,7 +42,7 @@ def add(m, name, href, skey):
 for s in ser:
     if s['key'] in files:
         for p in s['products']: add(p['model'], p['name'], p['href'], s['key'])
-for src, k in [('lorawan-gateway', 'gateways'), ('lorawan-controller', 'controllers')]:
+for src, k in [('lorawan-gateway', 'gateways'), ('lorawan-controller', 'controllers'), ('cellular-router', 'routers')]:
     for x in cat[src]['products']: add(x['title'][0], ' '.join(x['title'][1:]), x['href'].replace('https://www.milesight.com', ''), k)
 def md(d):
     L = ['# %s — %s' % (d['model'], d['name']), '', 'Виробник: Milesight · Серія: %s · Постачальник в Україні: ARVIOM' % d['series'], '',

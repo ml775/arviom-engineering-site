@@ -1,0 +1,37 @@
+{
+ "model": "UR41",
+ "name": "Міні-роутер 4G для вбудованих систем",
+ "series": "Промислові роутери",
+ "vendor": "Milesight",
+ "page": "https://engineering.arviom.com/s-routers.html#m-ur41",
+ "markdown": "https://engineering.arviom.com/models/ur41.md",
+ "json": "https://engineering.arviom.com/api/models/ur41.json",
+ "image": "https://engineering.arviom.com/img/hd/ur41.webp",
+ "vendor_page": "https://www.milesight.com/iot/product/cellular/ur41",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+ "datasheet": "https://resource.milesight.com/milesight/iot/document/ur41-datasheet-en.pdf",
+ "specs": {
+  "purpose": "Компактний промисловий 4G-роутер для надійного підключення локального обладнання (торгові автомати, роботи, промислові пристрої) до мережі з безпечними VPN-тунелями.",
+  "measures": [
+   "Не є датчиком, а роутером",
+   "Читання цифрового входу (DI, сухий контакт)",
+   "Керування цифровим виходом (DO) за DI, SMS, CLI, Modbus, MQTT",
+   "Дані GNSS (лише UR41)"
+  ],
+  "interfaces": "1 × RJ45 10/100 Мбіт/с; 1 × RS232 або RS485 (перемикається програмно, 3.5 мм клемник, 300–230400 біт/с, резистор 120 Ом); 1 × DI + 1 × DO (гальванічна розв'язка, DO макс. 0.3 А@30 В DC); 1 × USB 2.0 Type-C; 1 × SIM (Nano); SMA-антени для LTE і GNSS; кнопка RESET; 2 світлодіоди",
+  "network": "4G LTE CAT 4/WCDMA/GSM (UR41), 4G LTE CAT 1 (UR41L); Multi-APN (лише UR41); WAN Failover, VRRP; VPN: IPsec, OpenVPN, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier",
+  "power": "5–24 В DC (2-контактний клемник із захистом від перенапруги та зворотної полярності) або 5 В/1 А через USB Type-C",
+  "ip": "IP30",
+  "temp": "від -40 до +60 °C (зберігання: від -40 до +85 °C; вологість 0–95 % без конденсату)",
+  "config": "Web, CLI (SSH/Telnet), SMS, SNMP v1/v2c/v3, TR069, DeviceHub, Milesight Development Platform",
+  "storage": "128 МБ Flash",
+  "mounting": "На стіл, на стіну, на DIN-рейку",
+  "dimensions": "70 × 55 × 22 мм (без антенного роз'єму)",
+  "weight": "103 г",
+  "highlights": [
+   "Компактний металевий корпус для вбудованих рішень",
+   "Широкий вибір інтерфейсів: DI/DO/RS232/RS485 та безпечні VPN",
+   "Енергоощадні режими idle і standby, апаратний watchdog"
+  ]
+ }
+}

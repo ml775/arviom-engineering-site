@@ -72,7 +72,13 @@ if __name__ == '__main__':
         res.append(page(key, {'code': code, 'title': title, 'sub': sub, 'text': text, 'card': card}, ms))
     for key, (src, code, title, sub, text, card) in OTHER.items():
         ms = [model(x['title'][0], ' '.join(x['title'][1:]), x['img'], x['href'].replace('https://www.milesight.com', '')) for x in cat[src]['products']]
-        res.append(page(key, {'code': code, 'title': title, 'sub': sub, 'text': text, 'card': card}, ms))
+        rc = []
+        if key == 'routers':
+            names = {m['model'] for m in ms}
+            for c in json.load(open(os.path.join(ROOT, 'content/cases.json')))['ms']:
+                dv = [d.strip() for d in c.get('devices', '').split(',') if d.strip() in names]
+                if dv and c.get('page'): rc.append({'c': c['country'], 'i': c['obj'], 't': c['title'], 'u': c['page']['slug'] + '.html', 'm': dv})
+        res.append(page(key, {'code': code, 'title': title, 'sub': sub, 'text': text, 'card': card}, ms, rc))
     # EM300: curated data from data.js
     js = open(os.path.join(ROOT, 'data.js')).read()
     M = json.loads(re.search(r'const MODELS=(\[.*?\]);', js, re.S).group(1)); CASES = json.loads(re.search(r'const CASES=(\[.*?\]);', js, re.S).group(1))

@@ -308,7 +308,7 @@ function product(id){
   const m=MODELS.find(x=>slug(x.model)===id); if(!m||!m.specs){location.hash="";return}
   document.getElementById("crumb-last").textContent=m.model;
   document.getElementById("tray").classList.remove("on");
-  const showCases=(S.cases_for||[]).includes(m.model)&&CASES.length;
+  const mc=CASES.filter(c=>!c.m||c.m.includes(m.model)),showCases=((S.cases_for||[]).includes(m.model)||S.code==='UR')&&mc.length;
   const gal=(m.gallery&&m.gallery.length?m.gallery:[m.img]);
   const hl=(m.highlights||[]);
   const v=m.video;
@@ -325,7 +325,7 @@ function product(id){
   <div class="wrap view">
   ${v?`<section class="sec" id="p-video"><h2>Відео <small>Milesight · англійською</small></h2><div class="vbox"><video controls preload="none" playsinline poster="${v.poster}"><source src="${v.src}" type="video/mp4"></video></div></section>`:""}
   <section class="sec" id="p-specs"><h2>Характеристики</h2><table class="stable"><tbody>${ROWS.filter(([k])=>!empty(m[k])).map(([k,t])=>`<tr><th scope="row">${t}</th><td>${val(m[k])}</td></tr>`).join("")}</tbody></table></section>
-  ${showCases?`<section class="sec"><h2>Кейси з цим датчиком <small>джерело: Milesight</small></h2><div class="cases">${CASES.map(c=>`<a class="case" href="${c.u}" target="_blank" rel="noopener"><span class="m">${esc(c.c)} · ${esc(c.i)}</span><strong>${esc(c.t)}</strong><span class="src">milesight.com</span></a>`).join("")}</div></section>`:""}
+  ${showCases?`<section class="sec"><h2>Кейси з ${S.code==='UR'?'цим роутером':'цим датчиком'} <small>джерело: Milesight</small></h2><div class="cases">${mc.map(c=>`<a class="case" href="${c.u}"${/^http/.test(c.u)?' target="_blank" rel="noopener"':''}><span class="m">${esc(c.c)} · ${esc(c.i)}</span><strong>${esc(c.t)}</strong><span class="src">${/^http/.test(c.u)?"milesight.com":"кейс на нашому сайті"}</span></a>`).join("")}</div></section>`:""}
   <section class="sec" id="p-more"><h2>Інші моделі серії</h2><div class="sibs">${MODELS.filter(x=>x!==m&&x.specs).map(x=>`<a href="#m-${slug(x.model)}"><img src="${x.img}" alt="" loading="lazy"><b>${esc(x.model)}</b></a>`).join("")}</div></section></div>`;
   app.querySelectorAll(".thumbs .th").forEach(b=>b.onclick=()=>{const mi=document.getElementById("mainimg");mi.style.opacity=0;setTimeout(()=>{mi.src=b.dataset.src;mi.style.opacity=1},150);app.querySelectorAll(".thumbs .th").forEach(x=>x.classList.toggle("on",x===b))});
   app.querySelectorAll(".ptabs a").forEach(a=>a.onclick=()=>{const s=document.getElementById("p-"+a.dataset.t);if(s)window.scrollTo({top:s.getBoundingClientRect().top+scrollY-130,behavior:"smooth"})});

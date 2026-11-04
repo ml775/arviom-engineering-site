@@ -1,0 +1,11 @@
+{
+  "title": "Новини",
+  "eyebrow": "Що нового",
+  "count": 4,
+  "items": [
+    {"date": "2026-11-03", "tag": "Новий напрям", "title": "Захист мереж об'єктів: бачимо, куди «дзвонить» обладнання, і закриваємо зайве", "image": "img/sol/netguard-ur75.webp", "link": "zakhyst.html"},
+    {"date": "2026-11-04", "tag": "Впровадження", "title": "100 кейсів Milesight за галузями й напрямами — у розділі «Впровадження»", "image": "img/cases/smart-lighting-control-system-dubai/card.webp", "link": "vprovadzhennia.html"},
+    {"date": "2026-10-30", "tag": "Для партнерів", "title": "База знань через MCP: підключіть Claude або ChatGPT до даташитів і кейсів", "image": "img/learn/expert.webp", "link": "./#ai"},
+    {"date": "2026-10-20", "tag": "Навчання", "title": "LoRaWAN з нуля: як спланувати покриття об'єкта, обрати шлюз і датчики", "image": "img/learn/banner-academy.webp", "link": "learn.html"}
+  ]
+}

@@ -143,6 +143,18 @@ nav.main a{color:var(--text)}nav.main a:hover{color:var(--blue)}
 .sc h3{font-size:18px;line-height:1.35;font-weight:400}
 .sc .src{font-size:13px;color:var(--muted);margin-top:6px}
 .note{font-size:13px;color:var(--muted);margin-top:24px}
+.news4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.nc{display:flex;flex-direction:column;background:var(--bg2);border-radius:8px;overflow:hidden;color:var(--ink)}
+.nc img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .8s ease}
+.nc:hover img{transform:scale(1.04)}
+.nc div{padding:16px 18px 20px}
+.nc small{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.nc .tag{font-size:13px;color:var(--blue);background:#fff;border:1px solid var(--line);border-radius:4px;padding:3px 9px}
+.nc h3{font-size:17px;line-height:1.35;font-weight:500;margin-top:10px}
+.sh .ln{color:var(--blue);font-size:16px}
+@media (max-width:1000px){.news4{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.news4{grid-template-columns:1fr}}
+
 
 /* our software: carousel */
 #dev{background:var(--bg2)}
@@ -399,6 +411,22 @@ p,li,dd,summary,.sd,.src,.note,.fnote{font-weight:400}
         </a>
       </div>
       <p class="note">Кейси Milesight — переклад і стислий виклад з milesight.com; повні історії за посиланнями.</p>
+    </div>
+  </section>
+
+  <!-- Новини -->
+  <section id="news" style="padding-top:0">
+    <div class="wrap">
+      <div class="sh">
+        <div><div class="eyebrow">Що нового</div><h2 class="h2">Новини</h2></div>
+        <a class="ln" href="news.html">Усі новини →</a>
+      </div>
+      <div class="news4">
+        <a class="nc rv" href="vprovadzhennia.html"><img src="img/cases/smart-lighting-control-system-dubai/card.webp" alt="" loading="lazy"><div><small><span class="tag">Впровадження</span>4 лист. 2026</small><h3>100 кейсів Milesight за галузями й напрямами — у розділі «Впровадження»</h3></div></a>
+        <a class="nc rv" href="zakhyst.html"><img src="img/sol/netguard-ur75.webp" alt="" loading="lazy"><div><small><span class="tag">Новий напрям</span>3 лист. 2026</small><h3>Захист мереж об&#x27;єктів: бачимо, куди «дзвонить» обладнання, і закриваємо зайве</h3></div></a>
+        <a class="nc rv" href="./#ai"><img src="img/learn/expert.webp" alt="" loading="lazy"><div><small><span class="tag">Для партнерів</span>30 жовт. 2026</small><h3>База знань через MCP: підключіть Claude або ChatGPT до даташитів і кейсів</h3></div></a>
+        <a class="nc rv" href="learn.html"><img src="img/learn/banner-academy.webp" alt="" loading="lazy"><div><small><span class="tag">Навчання</span>20 жовт. 2026</small><h3>LoRaWAN з нуля: як спланувати покриття об&#x27;єкта, обрати шлюз і датчики</h3></div></a>
+      </div>
     </div>
   </section>
 

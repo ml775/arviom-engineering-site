@@ -46,11 +46,23 @@ def logos(items):
     cells = ''.join(f'<div class="ls">' + (f'<img src="{e(l["image"])}" alt="{e(l["name"])}">' if l.get('image') else e(l['name'])) + '</div>' for l in items)
     return f'<div class="logos" aria-label="Клієнти й партнери"><span class="lb">З нами працюють</span>{cells}</div>'
 
+MONTHS = ['січ.', 'лют.', 'бер.', 'квіт.', 'трав.', 'черв.', 'лип.', 'серп.', 'вер.', 'жовт.', 'лист.', 'груд.']
+
+def news(n):
+    items = sorted(n['items'], key=lambda x: x['date'], reverse=True)[:n.get('count', 4)]
+    out = []
+    for x in items:
+        y, m, d = x['date'].split('-')
+        out.append(f'''        <a class="nc rv" href="{e(x['link'])}"{ext(x['link'])}><img src="{e(x['image'])}" alt="" loading="lazy"><div><small><span class="tag">{e(x['tag'])}</span>{int(d)} {MONTHS[int(m) - 1]} {y}</small><h3>{e(x['title'])}</h3></div></a>''')
+    return '<div class="news4">\n' + '\n'.join(out) + '\n      </div>'
+
 def build_index():
     d = json.load(open(os.path.join(ROOT, 'content/home.json')))
+    n = json.load(open(os.path.join(ROOT, 'content/news.json')))
     t = open(os.path.join(ROOT, 'build/index_tpl.html')).read()
     t = (t.replace('<!--@CASES-->', cases(d['cases']))
           .replace('<!--@CASES_NOTE-->', f'<p class="note">{e(d["cases_note"])}</p>')
+          .replace('<!--@NEWS-->', news(n))
           .replace('<!--@SOFTWARE-->', software(d['software']))
           .replace('<!--@TEAM-->', team(d['team']))
           .replace('<!--@LOGOS-->', logos(d['logos'])))
@@ -67,6 +79,7 @@ if __name__ == '__main__':
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_solutions.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_netguard.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_cases.py')], check=True)
+    subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_news.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_learn.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_agents.py')], check=True)
     print('ok: index.html, catalog.html, products.html')

@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 """Сторінка кейсу у стилі milesight.com/success-stories/iot-non-invasive-electricity-monitoring… (прев'ю, варіант 2). Викликається з gen_cases.py."""
 import os, sys
@@ -74,7 +75,11 @@ def case_page_v2(c, out=None):
     P = c['page']
     nbx = lambda x: e(x).replace('-', chr(0x2011)).replace(' × ', chr(0xa0) + '×' + chr(0xa0))
     def fv(a, b):
-        return '<ul class="eq">' + ''.join(f'<li>{nbx(x)}</li>' for x in b.split(', ')) + '</ul>' if a == 'Обладнання' else f'<b>{nbx(b)}</b>'
+        def li(x):
+            m = re.match(r'(UR32[LS]?|UR35|UR41L?|UR75|UF31|UF51)\b', x.strip())
+            if not m: return f'<li>{nbx(x)}</li>'
+            return f'<li><a href="s-routers.html#m-{m.group(1).lower().rstrip("l") if m.group(1) == "UR41L" else m.group(1).lower()}">{nbx(x)}</a></li>'
+        return '<ul class="eq">' + ''.join(li(x) for x in b.split(', ')) + '</ul>' if a == 'Обладнання' else f'<b>{nbx(b)}</b>'
     facts = ''.join(f'<div class="f f-{"eq" if a == "Обладнання" else "t"}"><span>{e(a)}</span>{fv(a, b)}</div>' for a, b in P['facts'] if b.strip() not in ('', '—', '-'))
     tabs = [('background', 'Передумови'), ('challenges', 'Виклики'), ('solution', 'Рішення'), ('results', 'Результат')] + ([('partner', 'Партнер')] if P.get('partner') else [])
     nav = ''.join(f'<a href="#{k}">{e(v)}</a>' for k, v in tabs)

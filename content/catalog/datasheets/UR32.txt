@@ -1,0 +1,236 @@
+                                                                  UR32 Datasheet
+
+
+
+Pro Series
+Industrial Router
+
+UR32
+
+
+
+
+                   UR32 is a cost-effective industrial cellular router with embedded
+                   intelligent features that are designed for multifarious M2M/IoT
+                   applications. Global WCDMA and 4G LTE carrier supported make this
+                   drop-in connectivity a great help for operators in maximizing uptime.
+
+                   Integrating embedded cellular modem and dual SIM function, the UR32
+                   provides 3G/4G cellular network with maximum 150 Mbps download
+                   and 50 Mbps uplink, it also has 2 fast Ethernet ports and supports Wi-Fi
+                   that compliance with 802.11b/g/n standard. All these capabilities
+                   deliver users an uninterrupted internet access.
+
+                   Easy deployment and comprehensive remote device management
+                   makes UR32 versatile in most of IoT/M2M applications.
+
+   Application Example
+                                                                                UR32 Datasheet
+
+
+
+ Benefits                                            Capabilities
+-   NXP industrial grade processor                   -   Link remote devices in an environment
+-   Global 4G LTE CAT4/3G network with dual              where communication technologies are
+    SIM cards for backup between multiple                constantly changing
+    carrier networks                                 -   Support 802.11 b/g/n, as AP or client
+-   Multiple APN interfaces for simultaneous             mode, to establish versatile wireless
+    access to different network services                 network or be the backup WAN link for
+-   Embedded Python SDK for secondary                    4G/3G
+    development                                      -   Support rich protocols like SNMP, TR069,
+-   Flexible modular design provides users               MQTT, Modbus bridging, RIP, OSPF
+    with different connection modules like           -   Provide power to 802.3af/at PoE devices
+    Ethernet, I/O, serial port, Wi-Fi, GPS for           and     support    power     management
+    connecting diverse field assets                      (optional)
+-   Rugged enclosure, optimized for DIN rail or      -   Support wide operating temperature rangi
+    shelf mounting                                       ng from -40°C to +70°C/-40℉ to +158℉
+-   3-year warranty included
+
+                                                      Easy Maintenance
+ Security & Reliability                             -   DeviceHub and Milesight Development
+-   Automated       failover/failback    between         Platform provides easy setup, mass
+    Ethernet, Cellular (dual SIM) and Wi-Fi              configuration,        and      centralized
+-   Secure transmission with VPN tunnels like            management of remote devices
+    IPsec/OpenVPN/GRE/L2TP/PPTP/DMVPN                -   The user-friendly web interface design
+    /WireGuard/ZeroTier                                  and more than one option of upgrade
+-   Embeds       hardware        watchdog       to       help administrator to manage the device
+    automatically      recover    from     various       as easy as pie
+    failures, ensure highest level of availability   -   Network & Cellular status visualization
+-   Establishes a secured mechanism on centr         -   WEB GUI and CLI enable the admin to
+    alized authentication and authorization of           achieve simple management and quick
+    device access by supporting AAA (Radius,             configuration among a large quantity of
+    TACACS+, LDAP, local Authentication) and             devices
+    multiple levels of user authority                -   Efficiently manage the remote routers on
+                                                         the   existing    platform   through      the
+                                                         industrial standard SNMP and TR069
+                                                                            UR32 Datasheet
+
+
+ Hardware Specifications
+Hardware System
+CPU                    ARM Cortex-A7，528 MHz
+Memory                 128 MB DDR3 RAM and 128MB Flash
+Extendable Storage     1 × Micro SD Slot
+Cellular Interface
+Network                4G LTE (CAT 4)/WCDMA/GSM (Differ as regions)
+Antenna Connector      2 × 50 Ω SMA Connectors (Center PIN: SMA Female)
+SIM Slots              2 × SIM Slot (Mini SIM-2FF), 1.8V/3V
+Tx Power               LTE: Class 3 (23 dBm ± 2 dB)
+Ethernet Interface
+Numbers                2 × RJ45 10/100 Mbps
+Property               1 × WAN + 1 × LAN or 2 × LAN
+Mode                   Full or half duplex (Auto-Sensing)
+Ethernet Isolation     1.5 kV RMS
+PoE (Optional)         2 × 802.3 af/at PoE PSE on LAN Ports
+Wi-Fi Interface (Optional)
+Antenna Connector      1 × 50 Ω SMA Connector (Center PIN: RP-SMA Female)
+Standards              IEEE 802.11 b/g/n，2.4GHz
+                       802.11b: 16 dBm +/-1.5 dBm (11 Mbps)
+Tx Power               802.11g: 14 dBm +/-1.5 dBm (54 Mbps)
+                       802.11n: 13 dBm +/-1.5 dBm (65 Mbps, HT20/40 MCS7)
+GNSS (Optional by Region)
+Antenna Connector      1 × 50 Ω SMA Connector (Center PIN: SMA Female)
+Technology             GPS/GLONASS/BDS/Galileo/QZSS
+Positioning Accuracy   2.5m CEP (Open Air)
+Serial Port
+Numbers                1 × RS232 (RS485 Hardware Optional)
+Connector              3.5mm Terminal Block
+Baud Rate              300bps to 230400bps
+DI/DO
+Numbers                1 × DI + 1 × DO, Galvanic Isolation
+Connector              3.5mm Terminal Block
+Digital Input          Dry Contact
+                                                                              UR32 Datasheet
+
+
+Digital Output          Wet Contact, maximum 0.3A@30VDC
+Others
+Reset Button            1 × RESET
+LED Indicators          1 × POWER, 1 × SYSTEM, 1 × SIM, 3 × Signal strength
+                        1 × 2-pin 5.08 mm Terminal Block, with Surge-Protection and Reverse
+Power Connector
+                        Polarity Protection
+Built-in                Watchdog, Timer
+Power Supply and Consumption
+Power Input             9-48 VDC (48V is needed for PoE output)
+Power Output            2 × 802.3 af/at PoE PSE on LAN Ports
+(Optional)              Per Port 30W Max., Total 60W Max.
+Power Consumption       Typical 1.9 W, Max 2.4 W (In Non-PoE mode)
+Physical Characteristics
+Ingress Protection      IP30
+Housing & Color         Metal, Black
+Weight                  271 g
+Dimension               108 x 90 x 26 mm (4.25 x 3.54 x 1.02 in)
+Installation            Desktop, Wall or DIN Rail Mounting
+Environmental
+                        -40°C to +70°C (-40℉ to +158℉)
+Operating Temperature
+                        Reduced Cellular Performance Above 60°C
+Storage Temperature     -40°C to +85°C (-40℉ to +185℉)
+Relative Humidity       0% to 95% (non-condensing) at 25°C/77℉
+Approvals
+Regulatory              CE, CE (RED), FCC, RCM, NBTC, JATE, Telec
+Carrier                 Verizon
+Environmental           RoHS
+EMC                     EN 55032, EN 55035
+                        IEC 61000-4-2 Level 3
+                        IEC 61000-4-3 Level 2
+                        IEC 61000-4-4 Level 2
+EMS                     IEC 61000-4-5 Level 2
+                        IEC 61000-4-6 Level 3
+                        IEC 61000-4-8 Level 1
+                        IEC 61000-4-11 Level 3
+                                                                                UR32 Datasheet
+
+
+                         EN 301 489-1/17/19/52, EN 301 511, EN 301 908-1/2/13, EN 303 413,
+Radio Frequency
+                         EN300 328
+Safety                   EN62368-1
+
+
+
+ Software Specifications
+Network
+                       IPv4/IPv6, PPP, PPPoE, SNMP v1/v2c/v3, TCP, UDP, DHCP, RIPv1/v2,
+Network Protocols      OSPF, DDNS, VRRP, HTTP, HTTPS, DNS, ARP, QOS, SNTP, Telnet, VLAN,
+                       SSH, MQTT, MQTTS, TR069, etc.
+Routing                Static Routing, Priority Based Routing, RIP, OSPF
+DDNS                   Supported >16 service providers, others can be configured manually
+QoS                    Upload/Download Bandwidth Limit
+IP Passthrough         Support to assign Cellular IP address to the device
+Reliability            VRRP, WAN Failover, Dual SIM Backup
+                       Ping, Traceroute, TCPDUMP, QXDM, Log Server, Cellular AT Command
+Diagnostics Tools
+                       Debugger, Firewall iptables Debugger
+Wi-Fi Interface (Optional)
+Modes                  AP or Client mode
+                       WEP/WPA-PSK/WPA2-PSK/WPA-EAP/WPA2-EAP authentication,
+Security
+                       TKIP/AES encryption
+Wi-Fi Users            Up to 15 simultaneous connections
+MAC Filter             Blacklist, Whitelist
+GNSS (Optional by Region)
+Protocol               NMEA0183, PMTK
+Mode                   Support reading by Serial Port, MQTT, TCP Client/Server, UDP Server
+Security
+                       Access Control, DMZ, Port Mapping, MAC Binding, SPI Firewalls,
+Firewalls
+                       DoS&DDoS Protection, Filtering(IP&Domain)
+VLAN                   Port and tag-based VLAN separation
+AAA                    Radius, Tacacs+, LDAP, Local Authentication, 802.1x
+Multilevel Authority   Multiple Levels of User Authority
+VPN
+OpenVPN                Multiple Clients and a Server Support
+IPsec                  Multiple Clients and a Server Support
+GRE                    GRE Tunnel Support
+                                                                              UR32 Datasheet
+
+
+L2TP                L2TP Client Support
+PPTP                PPTP Client Support
+DMVPN               DMVPN Spoke Support
+WireGuard           Support
+ZeroTier            Support
+Others
+                    Transparent(TCP Client/Server, UDP Server, MQTT Client), Modbus
+Serial Mode         Server/Client, Modbus Gateway (Modbus RTU to Modbus TCP), DLMS
+                    Client
+Digital Input       Support reading by SMS, Email, CLI, Modbus TCP/RTU Server, MQTT
+Digital Output      Support triggering by DI, SMS, CLI, Modbus TCP/RTU Server, MQTT
+App                 Python SDK
+Management
+                    Web, CLI (SSH/Telnet), SMS, On-demand dial up, SNMP v1/v2c/v3, TR069,
+Configuration
+                    DeviceHub, Milesight Development Platform, HTTP(s) API
+Update              Web, DeviceHub, Milesight Development Platform
+Device Management   DeviceHub, Milesight Development Platform, MilesightVPN
+SNMP                SNMP v1/v2/v3, Support SNMP Trap
+TR069               Support
+SMS                 Send/Receive SMS, SMS Control, SMS Configuration
+Event Alarm         System Restart/Reboot, Network Up/Down, Link Switch, etc.
+
+
+
+ Hardware Overview
+                                                                                   UR32 Datasheet
+
+
+  Accessories
+
+
+
+ 1 × Power Adapter      1 × 6-Pin Pluggable     1 × DIN Rail      4 × Wall Mounting      2 × Magnetic
+                              Terminal            Clip Kit               Kits          Cellular Antennas
+
+
+
+
+ 1 × Wi-Fi Antenna       1 × GPS Antenna         2 × Stubby Cellular     1 × DIN Mounting
+(Wi-Fi Version Only) (GPS Version Only)         Antennas (Optional) Bracket Kit (Optional)
+ *Note: Contact us if you need any other special accessories or customized accessories.
+
+
+
+  Dimensions(mm)
+

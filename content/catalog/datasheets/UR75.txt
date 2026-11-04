@@ -1,0 +1,220 @@
+                                                       UR75 Datasheet
+
+
+
+Ultra Series
+Industrial Router
+
+UR75
+
+
+
+
+                Milesight UR75 is an high-performance industrial-grade 5G
+                router designed for a variety of M2M/IoT applications.
+                Made for high-performance, industrial standard, it has
+                quad-core CPU and cellular module that supports global
+                WCDMA, 4G LTE and 5G sub-6 Ghz NSA and SA network.
+
+                Meanwhile, UR75 also supports 5-port Gigabit Ethernet
+                switch, RS232/RS485 serial ports and Digital input/Digital
+                output, which enable users to scale up M2M application
+                combining data collection and high-speed transmission in
+                limited time and budget.
+
+                UR75 is particularly suitable for smart grid, digital media
+                installations, industrial automation, telemetry equipment,
+                medical device, digital factory, finance, payment device,
+                environment protection, water conservancy and so on.
+                                                                           UR75 Datasheet
+
+
+
+ Ultra Fast Connectivity                        Security & Reliability
+-   Industrial-grade quad-core CPU ARM          -   Automated failover/failback backup
+    Cortex-A55 with big memory, providing           among Ethernet, Cellular (dual SIM) and
+    high performance for data transmission          Wi-Fi
+-   Global 5G (NSA/SA)/4G LTE network with      -   Secure transmission with VPN tunnels
+    dual SIM cards for backup between               like IPsec/OpenVPN
+    multiple carrier networks                   -   Embedded with hardware watchdog to
+-   Dual carrier aggregation (2CC CA) is            automatically recover from various
+    supported in the 5G Sub-6GHz, enabling          failures, ensures the highest level of
+    wider signal coverage with superb               availability
+    download speed up to 4.67 Gbps              -   Equipped with multiple security
+-   Plug& play, supply lightning transmission       protection measures such as ACL, DMZ,
+    via Gigabit Ethernet ports or USB Type-C        SYN-Flood protection, and data filtering
+    interface                                       to ensure that the network is secured
+-   Support Wi-Fi 6, allows 2.4G & 5G dual      -   Support policy routing and NAT for more
+    band concurrent connections up to 1.8           secure intranet access
+    Gbps download speed
+
+
+
+ Industrial-Grade Design                        Ease of Maintenance
+-   Wide operating temperature range from       -   DeviceHub provides easy setup, mass
+    -40°C to 70°C and industrial design for         configuration, and centralized
+    harsh environment                               management of remote devices.
+-   Rugged enclosure with IP30 protection,      -   The user-friendly web interface design
+    optimized for DIN rail or shelf mounting.       and more than one option for upgrading.
+-   Equipped with I/O, serial port, GPS for         helps the administrator to manage the
+    industrial transmission applications            device easily
+-   3-year warranty included                    -   Support multilevel user authorities for
+                                                    security management
+                                                -   Fast and user-friendly programming by
+                                                    Node-RED development tool
+                                                                             UR75 Datasheet
+
+
+ Hardware Specifications
+Hardware System
+CPU                    Quad-core ARM Cortex-A55，2 GHz
+Memory                 1 GB LDDR4x RAM and 1 GB NAND Flash
+Extendable Storage     1 × M.2 NVMe SSD Interface
+Cellular Interface
+Network                5G NR SA & NSA/4G LTE/WCDMA
+                       5G Sub-6: N1/N3/N5/N7/N8/N20/N28/N38/N40/N41/N77/N78
+                       LTE FDD: B1/B3/B5/B7/B8/B20/B28/B32
+Frequency
+                       LTE TDD: B38/B40/B41/B42/B43
+                       WCDMA: B1/B5/B8
+Antenna                4 × 50 Ω SMA Connectors (Center PIN: SMA Female)
+SIM Slot               2 (Mini SIM-2FF), 1.8V/3V
+Ethernet Interface
+Numbers                5 × 10/100/1000 Mbps
+Property               1 × WAN +4 × LAN
+Mode                   Full or Half Duplex (Auto-Sensing)
+Ethernet Isolation     1.5 kV RMS
+PoE (Optional)         4 × 802.3 af/at PoE PSE on LAN Ports
+Wi-Fi Interface
+Antenna                4 × 50 Ω SMA Connectors (Center PIN: RP-SMA Female)
+                       IEEE 802.11b/g/n/ax 2 x 2 MIMO, 2.4 GHz
+Standards
+                       IEEE 802.11a/n/ac/ax 2 x 2 MIMO, 5 GHz
+Max Bit Rate           2.4 GHz: 600 Mbps, 5 GHz: 1200 Mbps
+GNSS
+Antenna                1 × 50 Ω SMA Connector (Center PIN: SMA Female)
+Technology             GPS/GLONASS/BDS/Galileo/QZSS
+Positioning Accuracy   2m CEP (Open Air)
+Serial Interface
+Numbers                1 × RS232 + 1 × RS485
+Connector              3.5 mm Terminal Block
+Baud Rate              300bps to 230400bps
+DI/DO
+Numbers                1 × DI + 1 × DO, Galvanic Isolation
+                                                                             UR75 Datasheet
+
+
+Connector             3.5 mm Terminal Block
+Digital Input         Dry Contact
+Digital Output        Wet Contact, maximum 0.3A@30VDC
+Others
+USB                   1 × USB 3.0 (Type-C) for Power Supply, Network Supply and Debug
+Reset Button          1 × RESET
+LED Indicators        1 × SYSTEM，1 × SIM1，1 × SIM2
+                      1 × 2-pin 5.08 mm Terminal Block, with Surge-Protection and Reverse
+Power Connector
+                      Polarity Protection
+Built-in              Watchdog, Timer
+Power Supply and Consumption
+                      1. 9-48 VDC by Power Connector (48V is need for PoE)
+Power Input
+                      2. 5V, 3A by Type-C Port
+Power Output          4 × 802.3 af/at PoE PSE on LAN Ports
+(Optional)            Per Port 30W Max., Total 60W Max.
+Power Consumption     Without Wi-Fi: Typical 2.8 W, Max 5.5 W
+(In Non-PoE mode)     With Wi-Fi: Typical 7 W, Max 13.7 W
+Physical Characteristics
+Ingress Protection    IP30
+Housing & Color       Metal, Black
+Weight                567.2g
+Dimension             135 x 115 x 36.4 mm (5.31 x 4.53 x 1.43 in)
+Installation          Desktop, Wall or DIN Rail Mounting
+Environmental
+Operating
+                      -40°C to +70°C (-40°F to +158°F)
+Temperature
+Storage Temperature   -40°C to +85°C (-40°F to +185°F)
+Relative Humidity     0% to 95% (Non-condensing) at 25°C/77°F
+Approvals
+Regulatory            CE, RCM
+Environmental         RoHS
+                                                                                UR75 Datasheet
+
+
+ Software Specifications
+Network
+                       IPv4/IPv6, TCP, UDP, DHCP, HTTP, HTTPS, ARP, NTP, DNS, SSH, VLAN,
+Network Protocols
+                       DDNS, SNMP, MQTT, MQTTS, etc.
+Routing                Static Routing
+DDNS                   Supported >14 service providers, others can be configured manually
+IP Passthrough         Support to assign WAN IP address to the device on LAN
+Reliability            WAN Failover, Dual SIM Backup
+                       Ping, Traceroute, Nslookup, TCPDUMP, Logs, Cellular AT Command
+Diagnostics Tools
+                       Debugger, Firewall iptables Debugger
+Wi-Fi Interface
+Modes                  AP or Client mode
+Security               WEP/WPA/WPA2/WPA3 authentication, WEP/TKIP/AES encryption
+MAC Filter             Blacklist, Whitelist
+GNSS
+Protocol               NMEA0183
+Mode                   Support reading by Serial Port, MQTT, TCP Client/Server, UDP Server
+Security
+                       Access Control, DMZ, Port Mapping (DNAT), SYN-Flood Protection,
+Firewalls
+                        Filtering(IP&Domain), Custom iptables Rules
+VLAN                   Port and tag-based VLAN separation
+Multilevel Authority   Multiple Levels of User Authority
+VPN
+OpenVPN                Multiple Clients and a Server Support
+IPsec                  Multiple Clients and a Server Support
+L2TP                   L2TP Client Support
+PPTP                   PPTP Client Support
+Others
+                       Transparent(TCP Client/Server, UDP Server, MQTT Client), Modbus
+Serial Mode
+                       TCP/RTU Client, Modbus Gateway (Modbus RTU to Modbus TCP)
+Digital Input          Support reading by SMS, MQTT
+Digital Output         Support triggering by DI, SMS, MQTT
+App                    Node-RED
+Management
+                                                                                       UR75 Datasheet
+
+
+Configuration            Web, SNMP v1/v2c/v3, DeviceHub
+Update                   Web, DeviceHub
+Device Management        DeviceHub, MilesightVPN
+SNMP                     SNMP v1/v2/v3, Support SNMP Trap
+SMS                      Send/Receive SMS, SMS Control
+                         System Startup/Reboot, Network Up/Down, Link Switch, VPN Up/Down,
+Event Alarm
+                         Cellular Traffic Monitoring, etc.
+
+
+
+
+ Hardware Overview
+
+
+
+
+ Accessories
+
+
+
+1 × Power Adapter        1 × 8-Pin Pluggable        1 × DIN Rail Clip Kit   4 × Stubby Cellular
+                               Terminal                                          Antennas
+
+
+
+
+ 4 × Stubby Wi-Fi          1 × GPS Antenna          Antenna Magnetic
+    Antennas                                              Mount
+                                                        (Optional)
+*Note: Contact us if you need any other special accessories or customized accessories.
+                   UR75 Datasheet
+
+
+ Dimensions(mm)
+

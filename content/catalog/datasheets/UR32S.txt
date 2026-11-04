@@ -1,0 +1,212 @@
+                                                                   UR32S Datasheet
+
+
+
+Lite Series
+Industrial Router
+
+UR32S
+
+
+
+
+                 UR32S is a cost-effective industrial cellular router with embedded intelligent
+                 features that are designed for multifarious M2M/IoT applications. Global
+                 WCDMA and 4G LTE carrier supported make this drop-in connectivity a
+                 great help for operators in maximizing uptime. UR32S also has 2 fast
+                 Ethernet ports, which delivers users an uninterrupted internet access.
+
+                 Integrating watchdog and multi-link failover detection, UR32S provides
+                 stable communications. Combining Milesight Development Platform,
+                 DeviceHub and MilesightVPN, UR32S can help you manage network easily
+                 and efficiently.
+
+                 Easy deployment and comprehensive remote device management makes
+                 UR32S versatile in most of IoT/M2M applications.
+
+
+   Application Example
+                                                                         UR32S Datasheet
+
+
+ Features
+Reliable 3G/4G Network
+   Global 4G LTE CAT4/3G network with multiple carrier networks
+   Automated failover/failback between Ethernet and cellular (SIM card)
+   Multiple APN interfaces for simultaneous access to different network services
+
+
+Industrial-Grade Design
+   NXP industrial grade processor
+   Rugged enclosure with IP30 protection for harsh environment
+   DIN rail or shelf mounting
+   Support wide operating temperature ranging from -40°C to +70°C/-40℉ to +158℉
+
+
+Security & Reliability
+   Secure transmission with VPN tunnels like IPsec/OpenVPN/GRE/L2TP/PPTP
+    /DMVPN/WireGuard/ZeroTier
+   Embeds hardware watchdog to automatically recover from various failures, ensure
+    highest level of availability
+   Supports access control lists, DMZ, DDoS Protection, Filters, SPI firewalls, etc
+   Establishes a secured mechanism on centralized authentication and authorization
+    of device access by supporting AAA (Radius, TACACS+, LDAP, local Authentication
+    802.1x) and multiple levels of user authority
+
+
+Easy Maintenance
+   DeviceHub and Development Platform provide easy setup, mass configuration, and
+    centralized management of remote devices
+   The user-friendly web interface design and more than one option of upgrade help
+    administrator to manage the device as easy as pie
+   WEB GUI and CLI enable the admin to achieve simple management and quick
+    configuration among a large quantity of devices
+   Efficiently manage the remote routers on the existing platform through the
+    industrial standard SNMP and TR069
+   Provide power to 802.3af/at standard PoE devices and support power
+    management
+                                                                           UR32S Datasheet
+
+
+ Hardware Specifications
+Hardware System
+CPU                  ARM Cortex-A7，528 MHz
+Memory               128 MB DDR3 RAM and 128MB Flash
+Cellular Interface
+Network              4G LTE (CAT 4)/WCDMA/GSM (Differ as regions)
+Antenna Connector    1 × 50 Ω SMA Connectors (Center PIN: SMA Female)
+SIM Slots            1 × SIM Slot (Mini SIM-2FF), 1.8V/3V
+Tx Power             LTE: Class 3 (23 dBm ± 2 dB)
+Ethernet Interface
+Numbers              2 × RJ45 10/100 Mbps
+Property             1 × WAN + 1 × LAN or 2 × LAN
+Mode                 Full or half duplex (Auto-Sensing)
+Ethernet Isolation   1.5 kV RMS
+PoE (Optional)       2 × 802.3 af/at PoE PSE on LAN Ports
+Wi-Fi Interface
+Antenna Connector    1 × 50 Ω SMA Connector (Center PIN: RP-SMA Female)
+Standards            IEEE 802.11 b/g/n，2.4GHz
+                     802.11b: 16 dBm +/-1.5 dBm (11 Mbps)
+Tx Power
+                     802.11g: 14 dBm +/-1.5 dBm (54 Mbps)
+                     802.11n: 13 dBm +/-1.5 dBm (65 Mbps, HT20/40 MCS7)
+Others
+Reset Button         1 × RESET
+LED Indicators       1 × POWER, 1 × SYSTEM, 1 × SIM, 3 × Signal strength
+                     1 × 2-pin 5.08 mm Terminal Block, with Surge-Protection and Reverse
+Power Connector
+                     Polarity Protection
+Built-in             Watchdog, Timer
+Power Supply and Consumption
+Power Input          9-48 VDC (48V is needed for PoE output)
+Power Output         2 × 802.3 af/at PoE PSE on LAN Ports
+(Optional)           Per Port 30W Max., Total 60W Max.
+Power Consumption    Typical 1.8 W, Max 2.2 W (In Non-PoE mode)
+Physical Characteristics
+Ingress Protection   IP30
+                                                                              UR32S Datasheet
+
+
+Housing & Color       Metal, Black
+Dimension             108 x 90 x 26 mm (4.25 x 3.54 x 1.02 in)
+Installation          Desktop, Wall or DIN Rail Mounting
+Environmental
+Operating             -40°C to +70°C (-40°F to +158°F)
+Temperature           Reduced Cellular Performance Above 60°C
+Storage Temperature   -40°C to +85°C (-40°F to +185°F)
+Relative Humidity     0% to 95% (non-condensing) at 25°C/77°F
+Approvals
+Regulatory            CE, CE (RED), FCC, RCM, Telec
+Environmental         RoHS
+EMC                   EN 55032, EN 55035
+                      IEC 61000-4-2 Level 3
+                      IEC 61000-4-3 Level 2
+                      IEC 61000-4-4 Level 2
+EMS                   IEC 61000-4-5 Level 2
+                      IEC 61000-4-6 Level 3
+                      IEC 61000-4-8 Level 1
+                      IEC 61000-4-11 Level 3
+Radio Frequency       EN 301 489-1/17/19/52, EN 301 511, EN 301 908-1/2/13, EN 303 413
+Safety                EN62368-1
+
+
+
+ Software Specifications
+Network
+                        IPv4/IPv6, PPP, PPPoE, SNMP v1/v2c/v3, TCP, UDP, DHCP, RIPv1/v2,
+Network Protocols       OSPF, DDNS, VRRP, HTTP, HTTPS, DNS, ARP, QOS, SNTP, Telnet, VLAN,
+                        SSH, MQTT, MQTTS, TR069, etc.
+Routing                 Static Routing, Priority Based Routing, RIP, OSPF
+DDNS                    Supported >16 service providers, others can be configured manually
+QoS                     Upload/Download Bandwidth Limit
+IP Passthrough          Support to assign Cellular IP address to the device
+Reliability             VRRP, WAN Failover
+                        Ping, Traceroute, TCPDUMP, QXDM, Log Server, Cellular AT Command
+Diagnostics Tools
+                        Debugger, Firewall iptables Debugger
+Wi-Fi Interface
+                                                                             UR32S Datasheet
+
+
+Modes                  AP or Client mode
+                       WEP/WPA-PSK/WPA2-PSK/WPA-EAP/WPA2-EAP authentication,
+Security
+                       TKIP/AES encryption
+Wi-Fi Users            Up to 15 simultaneous connections
+MAC Filter             Blacklist, Whitelist
+Security
+                       Access Control, DMZ, Port Mapping, MAC Binding, SPI Firewalls,
+Firewalls
+                       DoS&DDoS Protection, Filtering(IP&Domain)
+VLAN                   Port and tag-based VLAN separation
+AAA                    Radius, Tacacs+, LDAP, Local Authentication, 802.1x
+
+Multilevel Authority   Multiple Levels of User Authority
+
+VPN
+OpenVPN                Multiple Clients and a Server Support
+IPsec                  Multiple Clients and a Server Support
+GRE                    GRE Tunnel Support
+L2TP                   L2TP Client Support
+PPTP                   PPTP Client Support
+DMVPN                  DMVPN Spoke Support
+WireGuard              Support
+ZeroTier               Support
+Management
+                       Web, CLI (SSH/Telnet), SMS, On-demand dial up, SNMP v1/v2c/v3,
+Configuration
+                       TR069, DeviceHub, Milesight Development Platform, HTTP(s) API
+Update                 Web, DeviceHub, Milesight Development Platform
+Device Management      DeviceHub, Milesight Development Platform, MilesightVPN
+SNMP                   SNMP v1/v2/v3, Support SNMP Trap
+TR069                  Support
+SMS                    Send/Receive SMS, SMS Control, SMS Configuration
+Event Alarm            System Restart/Reboot, Network Up/Down, Link Switch, etc.
+                                                                                   UR32S Datasheet
+
+
+ Hardware Overview
+
+
+
+
+ Accessories
+
+
+
+   1 × Power Adapter           1 × DIN Rail Clip Kit    4 × Wall Mounting          1 × Magnetic
+                                                               Kits               Cellular Antenna
+
+
+
+
+   1 × Stubby Cellular         1 × DIN Mounting
+        Antenna                   Bracket Kit
+        (Optional)                 (Optional)
+
+*Note: Contact us if you need any other special accessories or customized accessories.
+                   UR32S Datasheet
+
+
+ Dimensions(mm)
+

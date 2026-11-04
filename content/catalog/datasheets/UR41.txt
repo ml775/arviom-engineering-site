@@ -1,0 +1,221 @@
+                                                                      UR41(L) Datasheet
+
+
+
+
+UR41(L)
+Mi n i In d u s t r i a l
+Rou t e r
+
+
+
+
+                   Milesight mini industrial router UR41(L) supports 4G connection, and also
+                   satisfies multi-type local data access requirements through rich industrial
+                   interfaces, including DI, DO, RS232 or RS485. UR41(L) make it easy for
+                   forming a reliable, secure, and maintainable solution through its built-in
+                   watchdog and secure VPN tunnels, realizing stable data transmission and
+                   high-speed mobile connectivity.
+                   With a compact size and industry-grade design, UR41(L) is more flexible in
+                   a variety of installation and deployment scenarios. UR41(L) adopts a
+                   power-saving design with both idle mode and standby mode for providing
+                   users with an energy-saving option. UR41(L) could be managed and
+                   monitored remotely by Milesight DeviceHub and Milesight Development
+                   Platform Milesight , UR41(L) could be applied in wide scenarios including
+                   vending machines, robots, industrial equipment, and other IoT applications
+                   with optimal cost and performance.
+
+    Application Example
+                                                                            UR41(L) Datasheet
+
+
+ Features
+Highlight Features
+   Compact size for suiting small embedded scenarios
+   Global 4G LTE network with multiple carrier networks
+   Multi-APN for simultaneous access to different network services (UR41 Only)
+   Easy to connect with diverse wired devices through DI/DO/RS232/RS485 interfaces
+   Power-saving design for both idle mode and standby mode for providing users with an
+    energy-saving option
+
+Industrial-Grade Design
+   NXP industrial grade processor
+   Rugged enclosure with IP30 protection
+   Desk, wall or DIN rail mounting
+   Wide operating temperature range from -40 °C to 60 °C/-40 °F to +140 °F
+
+Security & Reliability
+   Secure transmission with VPN tunnels like IPsec/OpenVPN/GRE/L2TP/PPTP
+    /DMVPN/WireGuard/ZeroTier
+   Embeds hardware watchdog to automatically recover from various failures, ensuring
+    highest level of availability
+   Supports access control lists, DMZ, DDoS Protection, Filters, SPI firewalls, etc
+   Establishes a secured mechanism on centralized authentication and authorization of d
+    evice accessed by supporting AAA (Radius, TACACS+, LDAP, local Authentication) and
+    multiple levels of user authority
+
+Easy Maintenance
+   DeviceHub and Milesight Development Platform provides easy setup, mass
+    configuration, and centralized management of remote devices
+   The user-friendly web interface design and more than one option of upgrade help
+    administrators to manage the device as easy as pie
+   WEB GUI and CLI enable the admin to achieve simple management and quick
+    configuration among a large quantity of devices
+   Efficiently manage the remote routers on the existing platform through the industrial
+    standard SNMP and TR069
+                                                                                     UR41(L) Datasheet
+
+
+ Hardware Specifications
+Model                               UR41L                                       UR41
+Hardware System
+CPU                                               ARM Cortex-A7, 528 MHz
+Memory                                       128 MB DDR3 RAM and 128 MB Flash
+Cellular Interface
+Network                         4G LTE (CAT 1)                     4G LTE (CAT 4)/WCDMA/GSM
+Antenna Connector                  1 × 50 Ω SMA Connector (Center PIN: SMA Female)
+SIM Slot                                             1（Nano SIM-4FF）
+Tx Power                                         LTE: Class 3 (23 dBm ± 2 dB)
+Ethernet Interface
+Numbers                                        1 × RJ45 10/100 Mbps LAN Port
+Mode                                          Full or Half Duplex (Auto-Sensing)
+Ethernet Isolation                                       1.5 kV RMS
+GNSS
+                                                                       1 × 50 Ω SMA Connector
+Antenna Connector                      ---
+                                                                       (Center PIN: SMA Female)
+Technology                             ---                      GPS/GLONASS/Beidou/Galileo/QZSS
+Positioning Accuracy                   ---                               2.5m CEP (Open Air)
+Serial Port
+Number                               1 × RS232 or 1 × RS485 (Software Switchable)
+Connector                                           3.5mm Terminal Block
+Terminal Resistor                            1 × 120 Ω Resister Switch (for RS485)
+Baud Rate                                           300bps to 230400bps
+DI/DO
+Numbers                                       1 × DI + 1 × DO, Galvanic Isolation
+Connector                                           3.5mm Terminal Block
+Digital Input                                            Dry Contact
+Digital Output                         Wet Contact, maximum 0.3A@30VDC (DO)
+Others
+Button                                                    1 × RESET
+USB                        1 × USB 2.0 (Type-C) for Power Supply, Network Supply and Debug
+LED Indicators                                      1 × SYSTEM，1 × SIM
+Power Connector        1 × 2-pin 3.5 mm Terminal Block, with Surge-Protection and Reverse Polarity
+                                                                                             UR41(L) Datasheet
+
+
+                                                                    Protection
+Built-in                                                        Watchdog, Timer
+Power Supply and Consumption
+                                                1) 5-24 VDC by 2-pin 3.5 mm Terminal Block
+Power Input
+                                                         2) 5V/1A by USB Type-C Port
+                                  Standby mode: 6.3 mA@12V                       Standby mode: 6.3 mA@12V
+Power Consumption*                    Idle mode: 70mA@12V                          Idle mode: 78mA@12V
+                                     Data link : 157mA @12V                        Data link: 226mA @12V
+Physical Characteristics
+Ingress Protection                                                       IP30
+Housing & Color                                                    Metal, Black
+Weight                                                                   103g
+Dimension                        70 × 55 × 22 mm (2.76 × 2.17 × 0.87 in) (Antenna Connector Excluded)
+Installation                                     Desktop, Wall Mounting, DIN Rail Mounting
+Environmental
+Operating
+                                                       -40°C to +60°C (-40°F to +140°F)
+Temperature
+Storage Temperature                                    -40°C to +85°C (-40°F to +185°F)
+Relative Humidity                                         0% to 95% (Non-condensing)
+Approvals
+Regulatory                                  CE, CE (RED)                             CE, CE (RED), FCC
+Environmental                                                            RoHS
+*: Tested under laboratory conditions and for guideline purposes only.
+
+
+ Software Specifications
+   Network
+                               IPv4/IPv6, PPP, SNMP v1/v2c/v3, TCP, UDP, DHCP, RIPv1/v2, OSPF,
+   Network Protocols           DDNS, VRRP, HTTP, HTTPS, DNS, ARP, QOS, SNTP, Telnet, SSH, MQTT,
+                               MQTTS, TR069, etc.
+   Routing                     Static Routing, Priority Based Routing, RIP, OSPF, Routing Filtering
+   DDNS                        Supported >16 service providers, others can be configured manually
+   QoS                         Upload/Download Bandwidth Limit
+   IP Passthrough              Support to assign Cellular IP address to the device
+   Reliability                 VRRP, WAN Failover
+   Diagnostics Tools           Ping, Traceroute, TCPDUMP, QXDM, Log Server, Cellular AT Command
+                                                                               UR41(L) Datasheet
+
+
+                       Debugger, Firewall iptables Debugger
+GNSS (UR41 Only)
+Protocol               NMEA0183, PMTK
+Work Type              Support reading by Serial Port, MQTT, TCP Client/Server, UDP Server
+Security
+                       Access Control, DMZ, Port Mapping, MAC Binding, SPI Firewalls,
+Firewalls
+                       DoS&DDoS Protection, Filtering(IP&Domain)
+AAA                    Radius, Tacacs+, LDAP, Local Authentication
+Multilevel Authority   Multiple Levels of User Authority
+VPN
+OpenVPN                Multiple Clients and a Server Support
+IPsec                  Multiple Clients and a Server Support
+GRE                    GRE Tunnel Support
+L2TP                   L2TP Client Support
+PPTP                   PPTP Client Support
+DMVPN                  DMVPN Spoke Support
+WireGuard              Support
+ZeroTier               Support
+Others
+                       Transparent(TCP Client/Server, UDP Server, MQTT Client), Modbus
+Serial Mode            TCP/RTU Client, Modbus Gateway (Modbus RTU to Modbus TCP), DLMS
+                       Client
+Digital Input          Support reading by SMS, Email, CLI, Modbus TCP/RTU Server, MQTT
+Digital Output         Support triggering by DI, SMS, CLI, Modbus TCP/RTU Server, MQTT
+Power Management       Support standby mode, and waking up by schedule, SMS, DI, etc.
+Management
+                       Web, CLI (SSH/Telnet), On-demand dial up, SMS, SNMP v1/v2c/v3, TR069,
+Configuration
+                       DeviceHub, Milesight Development Platform
+Update                 Web, DeviceHub, Milesight Development Platform
+Device Management      DeviceHub, Milesight Development Platform, MilesightVPN
+SNMP                   SNMP v1/v2/v3, Support SNMP Trap
+TR069                  Support
+SMS                    Send/Receive SMS, SMS Control
+Event Alarm            System Startup/Reboot, Network Up/Down, Wakeup, etc.
+                                                                                         UR41(L) Datasheet
+
+
+
+
+ Hardware Overview
+
+
+
+
+ Accessories
+
+
+
+ 1 × Power Adapter          1 × 8-Pin Pluggable           1 x Wall Mounting          4 × Wall Mounting
+                                  Terminal               Bracket with Screws               Kits
+
+
+
+
+    1 × SIM Card               1 × Magnetic                1 × GPS Antenna           1 × 108mm Stubby
+    Ejector Tool              Cellular Antenna               (UR41 Only)              Cellular Antenna
+                                                                                          (Optional)
+
+
+
+
+   1 × Mini Stubby          1 × USB 2.0 Cable             1 × DIN Rail Clip Kit
+   Cellular Antenna             (Optional)                     (Optional)
+      (Optional)
+*Note: Contact us if you need any other special accessories or customized accessories.
+                   UR41(L) Datasheet
+
+
+
+
+ Dimensions(mm)
+

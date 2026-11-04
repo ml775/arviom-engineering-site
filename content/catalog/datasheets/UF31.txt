@@ -1,0 +1,122 @@
+                                                                              UF31 Datasheet
+
+
+
+
+5G Dongle
+UF31
+
+
+                                    UF31 is a high-performance 5G modem for 5G wireless
+                                    networking applications. It supports 5G NSA&SA, 4G LTE
+                                    and 3G networks from telecom service providers of most
+                                    countries in the world. The USB type-C port and Ethernet
+                                    port are adopted to provide high-speed internet access
+                                    for field devices.
+
+                                    With a compact size and industrial design, UF31 is easy
+                                    to carry out or embed to any equipment, which is
+                                    particularly suitable for smart offices, video surveillance,
+                                    digital media implementations, industrial automation,
+                                    traffic applications, robots and so on.
+
+  Features
+  Support global 5G NSA&SA/4G LTE/WCDMA network, enables up to 2.5 Gbps
+    download speeds
+  Plug and play, provide lightning transmission via Gigabit Ethernet port or USB 3.0
+  Embeds hardware watchdog to automatically recover from various failure, ensure
+    highest level of availability
+  Wide operating temperature range from -20°C to 50°C and industrial design for
+    harsh environment
+  USB or DC power supply optional
+  Easy to deploy anywhere with compact size, suit for embedded installation
+                                                                             UF31 Datasheet
+
+
+ Iptables firewall and VPN tunnels to ensure security data transmission
+ WEB GUI and CLI enable the admin to achieve simple management and quick
+   configuration among a large quantity of devices
+ DeviceHub provides remote monitoring, bulk configuration, and centralized
+   management
+
+
+ Specifications
+
+ Hardware System
+ CPU                  Quad-core ARM Cortex-A55，2 GHz
+ Memory               1 GB LPDDR4X RAM and 1 GB NAND Flash
+ Cellular Interface
+ Network              5G NR SA&NSA/4G LTE/WCDMA
+                      5G Sub-6: N1/N3/N5/N7/N8/N20/N28/N38/N40/N41/N77/N78/N79
+                      LTE FDD: B1/B3/B5/B7/B8/B18/B19/B20/B28/B32
+ Frequency
+                      LTE TDD: B38/B40/B41/B42/B43/B46
+                      WCDMA: B1/B5/B8
+ Antenna Connector    4 × 50 Ω SMA Connectors (Center PIN: SMA Female)
+ SIM Slot             1（Micro SIM-3FF）
+ Ethernet Interface
+ Numbers              1 × 10/100/1000 Mbps LAN Port
+ Mode                 Full or Half Duplex (Auto-Sensing)
+ GNSS
+ Antenna Connector    1 × 50 Ω SMA Connector (Center PIN: SMA Female)
+ Technology           GPS/GLONASS/Beidou/Galileo/QZSS
+ Others
+ USB                  1 × USB 3.0 (Type-C) for Power Supply, Network Supply and Debug
+ Reset Button         1 × RESET (Internal)
+ LED Indicators       1 × STATUS，1 × Cellular Network
+ Built-in             Watchdog, Timer
+ Software
+                      IPv4/IPv6, TCP, UDP, DHCPv4/DHCPv6, HTTP, HTTPS, DNS, ARP, Telnet,
+ Network Protocols
+                      SSH, etc.
+ VPN                  IPsec, OpenVPN
+ Security             Access Control, Port Mapping, DMZ, SYN-Flood Protection, Filtering (IP &
+                                                                              UF31 Datasheet
+
+
+                      MAC & Domain)
+ Management           Web, CLI, DeviceHub
+ Power Supply and Consumption
+ Power Connector      2-pin 3.5 mm Terminal Block
+                      1. 5-24 VDC, with Surge-Protection and Reverse Polarity Protection
+ Power Input
+                      2. 5V/3A by USB Type-C Port
+ Power Consumption    Typical 3.9 W
+ Physical Characteristics
+ Ingress Protection   IP30
+ Housing & Color      Metal, Black
+ Dimension            90 x 72 x 15 mm (3.54 x 2.83 x 0.59 in)
+ Installation         Desktop, Wall Mounting, DIN Rail Mounting
+ Environmental
+ Operating
+                      -20°C to +50°C (-4℉ to +122℉)
+ Temperature
+ Storage
+                      -40°C to +85°C (-40℉ to +185℉)
+ Temperature
+ Ethernet Isolation   1.5 kV RMS
+ Relative Humidity    0% to 95% (Non-condensing) at 25°C/77℉
+
+
+
+ Dimensions (mm)
+
+
+
+
+ Accessories
+
+
+
+1 × Power Adapter        2 × Mounting Ear           4 × Wall Mounting        4 × Mini Stubby
+                               Kits                       Kits              Cellular Antennas
+                                                                                     UF31 Datasheet
+
+
+
+
+    1 × GPS Antenna           1 × DIN Rail Clip      4 × Stubby Cellular
+                                 (Optional)          Antennas (Optional)
+
+*Note: Contact us if you need any other special accessories or customized accessories.
+

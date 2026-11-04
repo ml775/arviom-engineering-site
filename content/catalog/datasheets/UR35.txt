@@ -1,0 +1,237 @@
+                                                                UR35 Datasheet
+
+
+
+Pro Series
+Industrial Router
+
+UR35
+
+
+
+
+                    UR35 is a cost-effective industrial cellular router with embedded
+                    intelligent features that are designed for multifarious M2M/IoT
+                    applications. Global WCDMA and 4G LTE carrier supported make
+                    this drop-in connectivity a great help for operators in maximizing
+                    uptime.
+
+                    Integrating embedded cellular modem and dual SIM function, the
+                    UR35 provides 3G/4G cellular network with maximum 150 Mbps
+                    download and 50 Mbps uplink, it also has 5 fast Ethernet ports and
+                    supports Wi-Fi that compliance with 802.11b/g/n standard. All
+                    these capabilities deliver users an uninterrupted internet access.
+
+                    Easy deployment and comprehensive remote device management
+                    makes UR35 versatile in most of IoT/M2M applications.
+
+   Application Example
+                                                                            UR35 Datasheet
+
+
+
+ Benefits                                         Easy Maintenance
+-   NXP industrial grade processor                -   DeviceHub and Milesight Development
+-   Global 4G LTE CAT4/3G network with dual           Platform provide easy setup, mass
+    SIM cards for backup between multiple             configuration, and centralized
+    carrier networks                                  management of remote devices
+-   Multi-APN interfaces for simultaneous         -   The user-friendly web interface design
+    access to different network services              and more than one option of upgrade
+-   Embedded Python SDK for secondary                 help administrator to manage the device
+    development                                       as easy as pie
+-   Flexible modular design provides users        -   WEB GUI and CLI enable the admin to
+    with different connection modules like            achieve simple management and quick
+    Ethernet, I/O, serial port, Wi-Fi, GPS for        configuration among a large quantity of
+    connecting diverse field assets                   devices
+-   Rugged enclosure, optimized for DIN rail or   -   Efficiently manage the remote routers on
+    shelf mounting                                    the existing platform through the
+-   3-year warranty included                          industrial standard SNMP and TR069
+
+
+
+ Security & Reliability                           Capabilities
+-   Automated failover/failback between           -   Link remote devices in an environment
+    Ethernet, Cellular (dual SIM) and Wi-Fi           where communication technologies are
+-   Secure transmission with VPN tunnels like         constantly changing
+    IPsec/OpenVPN/GRE/L2TP/PPTP/DMVPN             -   Support 802.11 b/g/n, as AP or client
+    /WireGuard/ZeroTier                               mode, to establish versatile wireless
+-   Embeds hardware watchdog to                       network or be the backup WAN link for
+    automatically recover from various failure,       4G/3G
+    ensure highest level of availability          -   Support rich protocols like SNMP, TR069,
+-   Establishes a secured mechanism on centr          MQTT, Modbus bridging, RIP, OSPF
+    alized authentication and authorization of    -   Provide power to 802.3af/at standard
+    device access by supporting AAA (Radius,          PoE devices and support power
+    TACACS+, LDAP, local Authentication) and          management (optional)
+    multiple levels of user authority             -   Support wide operating temperature rangi
+                                                      ng from -40°C to +70°C/-40°F to +158°F
+                                                                            UR35 Datasheet
+
+
+ Hardware Specifications
+Hardware System
+CPU                    ARM Cortex-A7，528 MHz
+Memory                 128 MB DDR3 RAM and 128MB Flash
+Extendable Storage     1 × Micro SD Slot
+Cellular Interface
+Network                4G LTE (CAT 4)/WCDMA/GSM (Differ as regions)
+Antenna Connector      2 × 50 Ω SMA Connectors (Center PIN: SMA Female)
+SIM                    2 × SIM Slot (Mini SIM-2FF), 1.8V/3V
+Tx Power               LTE: Class 3 (23 dBm ± 2 dB)
+Ethernet Interface
+Numbers                5 × RJ45 10/100 Mbps
+Property               1 × WAN + 4 × LAN
+Mode                   Full or half duplex (Auto-Sensing)
+Ethernet Isolation     1.5 kV RMS
+PoE (Optional)         4 × 802.3 af/at PoE PSE on LAN Ports
+Wi-Fi Interface
+Antenna Connector      1 × 50 Ω SMA Connector (Center PIN: RP-SMA Female)
+Standards              IEEE 802.11 b/g/n，2.4GHz
+                       802.11b: 16 dBm +/-1.5 dBm (11 Mbps)
+Tx Power               802.11g: 14 dBm +/-1.5 dBm (54 Mbps)
+                       802.11n: 13 dBm +/-1.5 dBm (65 Mbps, HT20/40 MCS7)
+GNSS (Optional by Region)
+Antenna Connector      1 × 50 Ω SMA Connector (Center PIN: SMA Female)
+Technology             GPS/GLONASS/BDS/Galileo/QZSS
+Positioning Accuracy   2.5m CEP (Open Air)
+Serial Port
+Numbers                1 × RS232 + 1 × RS485
+Connector              3.5mm Terminal Block
+Baud Rate              300bps to 230400bps
+DI/DO
+Numbers                1 × DI + 1 × DO, Galvanic Isolation
+Connector              3.5mm Terminal Block
+Digital Input          Dry Contact
+                                                                               UR35 Datasheet
+
+
+Digital Output          Wet Contact, maximum 0.3A@30VDC
+Others
+Reset Button            1 × RESET
+LED Indicators          1 × POWER, 1 × SYSTEM, 1 × SIM, 1 × Wi-Fi, 1 × VPN, 3 × Signal strength
+                        1 × 2-pin 5.08 mm Terminal Block, with Surge-Protection and Reverse
+Power Connector
+                        Polarity Protection
+Built-in                Watchdog, Timer
+Power Supply and Consumption
+Power Input             9-48 VDC(48V is need for PoE)
+Power Output            4 × 802.3 af/at PoE PSE on LAN Ports
+(Optional)              Per Port 30W Max., Total 60W Max.
+Power Consumption       Typical 3.9 W, Max 4.6 W (In Non-PoE mode)
+Physical Characteristics
+Ingress Protection      IP30
+Housing & Color         Metal, Black
+Weight                  485 g
+Dimension               135 x 103 x 45 mm (5.31 x 4.06 x 1.77 in)
+Installation            Desktop, Wall Screw Mounting, DIN Rail Mounting
+Environmental
+                        -40°C to +70°C (-40°F to +158°F)
+Operating Temperature
+                        Reduced Cellular Performance Above 60°C
+Storage Temperature     -40°C to +85°C (-40°F to +185°F)
+Relative Humidity       0% to 95% (non-condensing) at 25°C/77℉
+Approvals
+Regulatory              CE, CE (RED), FCC, RCM, JATE, Telec
+Environmental           RoHS
+EMC                     EN 55032, EN 55035
+                        IEC 61000-4-2 Level 3
+                        IEC 61000-4-3 Level 2
+                        IEC 61000-4-4 Level 3
+EMS                     IEC 61000-4-5 Level 3
+                        IEC 61000-4-6 Level 3
+                        IEC 61000-4-8 Level 4
+                        IEC 61000-4-11 Level 3
+Radio Frequency         EN 301 489-1/17/19/52, EN 301 511, EN 301 908-1/2/13, EN 303 413,
+                                                                               UR35 Datasheet
+
+
+                         EN300 328
+Safety                   EN62368-1
+
+
+
+ Software Specifications
+Network
+                       IPv4/IPv6, PPP, PPPoE, SNMP v1/v2c/v3, TCP, UDP, DHCP, RIPv1/v2,
+Network Protocols      OSPF, DDNS, VRRP, HTTP, HTTPS, DNS, ARP, QOS, SNTP, Telnet, VLAN,
+                       SSH, MQTT, MQTTS, TR069, etc.
+Routing                Static Routing, Priority Based Routing, RIP, OSPF
+DDNS                   Supported >16 service providers, others can be configured manually
+QoS                    Upload/Download Bandwidth Limit
+IP Passthrough         Support to assign Cellular IP address to the device
+Reliability            VRRP, WAN Failover, Dual SIM Backup
+                       Ping, Traceroute, TCPDUMP, QXDM, Log Server, Cellular AT Command
+Diagnostics Tools
+                       Debugger, Firewall iptables Debugger
+Wi-Fi Interface
+Modes                  AP or Client mode
+                       WEP/WPA-PSK/WPA2-PSK/WPA-EAP/WPA2-EAP authentication,
+Security
+                       TKIP/AES encryption
+Wi-Fi Users            Up to 15 simultaneous connections
+MAC Filter             Blacklist, Whitelist
+GNSS (Optional by Region)
+Protocol               NMEA0183, PMTK
+Mode                   Support reading by Serial Port, MQTT, TCP Client/Server, UDP Server
+Security
+                       Access Control, DMZ, Port Mapping, MAC Binding, SPI Firewalls,
+Firewalls
+                       DoS&DDoS Protection, Filtering (IP&Domain)
+VLAN                   Port and tag-based VLAN separation
+AAA                    Radius, Tacacs+, LDAP, Local Authentication, 802.1x
+Multilevel Authority   Multiple Levels of User Authority
+VPN
+OpenVPN                Multiple Clients and a Server Support
+IPsec                  Multiple Clients and a Server Support
+GRE                    GRE Tunnel Support
+                                                                          UR35 Datasheet
+
+
+L2TP                L2TP Client Support
+PPTP                PPTP Client Support
+DMVPN               DMVPN Spoke Support
+WireGuard           Support
+ZeroTier            Support
+Others
+                    Transparent(TCP Client/Server, UDP Server, MQTT Client), Modbus
+Serial Mode         Server/Client, Modbus Gateway (Modbus RTU to Modbus TCP), DLMS
+                    Client
+Digital Input       Support reading by SMS, Email, CLI, Modbus TCP/RTU Server, MQTT
+Digital Output      Support triggering by DI, SMS, CLI, Modbus TCP/RTU Server, MQTT
+App                 Python SDK
+Management
+                    Web, CLI (SSH/Telnet), SMS, On-demand dial up, SNMP v1/v2c/v3,
+Configuration
+                    TR069, DeviceHub, Milesight Development Platform, HTTP(s) API
+Update              Web, DeviceHub, Milesight Development Platform
+Device Management   DeviceHub, Milesight Development Platform, MilesightVPN
+SNMP                SNMP v1/v2/v3, Support SNMP Trap
+TR069               Support
+SMS                 Send/Receive SMS, SMS Control, SMS Configuration
+Event Alarm         System Restart/Reboot, Network Up/Down, Link Switch, etc.
+
+
+
+ Hardware Overview
+                                                                                    UR35 Datasheet
+
+
+ Accessories
+
+
+
+  1 × Power Adapter           1 × 8-Pin Pluggable        1 × DIN Rail Clip Kit       2 × Magnetic
+                                    Terminal                                       Cellular Antennas
+
+
+
+
+ 1 × Wi-Fi Antenna             1 × GPS Antenna           2 × Stubby Cellular
+(Wi-Fi Version Only)          (GPS Version Only)              Antennas
+                                                              (Optional)
+
+*Note: Contact us if you need any other special accessories or customized accessories.
+
+
+
+ Dimensions(mm)
+

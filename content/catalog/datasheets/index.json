@@ -48,5 +48,45 @@
   "file": "VS351.txt",
   "title": "vs351-datasheet-en",
   "url": "https://resource.milesight.com/milesight/iot/document/vs351-datasheet-en.pdf"
+ },
+ "UR32": {
+  "file": "UR32.txt",
+  "title": "ur32-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ur32-datasheet-en.pdf"
+ },
+ "UR32L": {
+  "file": "UR32L.txt",
+  "title": "ur32l-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ur32l-datasheet-en.pdf"
+ },
+ "UR32S": {
+  "file": "UR32S.txt",
+  "title": "ur32s-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ur32s-datasheet-en.pdf"
+ },
+ "UR35": {
+  "file": "UR35.txt",
+  "title": "ur35-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ur35-datasheet-en.pdf"
+ },
+ "UR41": {
+  "file": "UR41.txt",
+  "title": "ur41-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ur41-datasheet-en.pdf"
+ },
+ "UR75": {
+  "file": "UR75.txt",
+  "title": "ur75-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ur75-datasheet-en.pdf"
+ },
+ "UF31": {
+  "file": "UF31.txt",
+  "title": "uf31-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/uf31-datasheet-en.pdf"
+ },
+ "UF51": {
+  "file": "UF51.txt",
+  "title": "uf51-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/uf51-datasheet-en.pdf"
  }
 }

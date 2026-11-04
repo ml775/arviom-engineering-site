@@ -42,9 +42,13 @@ def team(items):
         rows.append(f'        <div class="person"><div class="ph">{ph}</div><b>{e(p["name"])}</b>{e(p["role"])}</div>')
     return '<div class="team">\n' + '\n'.join(rows) + '\n      </div>'
 
-def logos(items):
-    cells = ''.join(f'<div class="ls">' + (f'<img src="{e(l["image"])}" alt="{e(l["name"])}">' if l.get('image') else e(l['name'])) + '</div>' for l in items)
-    return f'<div class="logos" aria-label="Клієнти й партнери"><span class="lb">З нами працюють</span>{cells}</div>'
+def logos(d):
+    # логотип, якщо є; інакше назва текстом. text=True — знак + назва поруч (дрібний логотип)
+    def cell(l):
+        img = f'<img src="{e(l["image"])}" alt="{e(l["name"])}">' if l.get('image') else ''
+        txt = e(l['name']) if (not l.get('image') or l.get('text')) else ''
+        return f'<div class="ls{" tx" if txt else ""}">{img}{(" <span>" + txt + "</span>") if txt else ""}</div>'
+    return f'<div class="logos" aria-label="{e(d["label"])}"><span class="lb">{e(d["label"])}</span>{"".join(cell(l) for l in d["items"])}</div>'
 
 MONTHS = ['січ.', 'лют.', 'бер.', 'квіт.', 'трав.', 'черв.', 'лип.', 'серп.', 'вер.', 'жовт.', 'лист.', 'груд.']
 

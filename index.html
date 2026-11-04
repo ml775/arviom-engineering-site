@@ -209,7 +209,9 @@ nav.main a{color:var(--text)}nav.main a:hover{color:var(--blue)}
 .person b{display:block;font-weight:400;color:var(--ink);font-size:15px}
 .logos{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
 .logos .lb{font-size:14px;color:var(--muted);margin-right:10px}
-.logos .ls{height:54px;min-width:140px;padding:0 20px;border:1px solid var(--line);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#8a97a6}
+.logos .ls{height:54px;min-width:140px;padding:0 20px;border:1px solid var(--line);border-radius:6px;display:flex;align-items:center;justify-content:center;gap:10px;color:var(--text);font-size:15px;white-space:nowrap}
+.logos .ls img{max-height:30px;max-width:150px;object-fit:contain}
+.logos .ls.tx img{max-height:36px}
 
 /* contact */
 .ct{background:var(--bg2)}
@@ -516,7 +518,7 @@ claude mcp add arviom-kb \
         <div class="person"><div class="ph">П</div><b>Павло Данилюк</b>SEO</div>
         <div class="person"><div class="ph">С</div><b>Сервісний відділ</b>Ремонт і гарантія</div>
       </div>
-      <div class="logos" aria-label="Клієнти й партнери"><span class="lb">З нами працюють</span><div class="ls">МХП</div><div class="ls">Партнер</div><div class="ls">Партнер</div><div class="ls">Партнер</div><div class="ls">Партнер</div></div>
+      <div class="logos" aria-label="Об&#x27;єкти, де працює наше обладнання"><span class="lb">Об&#x27;єкти, де працює наше обладнання</span><div class="ls"><img src="img/clients/mhp.png" alt="МХП"></div><div class="ls tx"><img src="img/clients/water-km.png" alt="Хмельницькводоканал"> <span>Хмельницькводоканал</span></div><div class="ls tx"> <span>КМДА</span></div><div class="ls tx"> <span>Мережа клінік «Веселка»</span></div><div class="ls tx"> <span>Слов&#x27;янські шпалери</span></div></div>
     </div>
   </section>
 

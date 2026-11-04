@@ -53,7 +53,13 @@ def page(key, S, models, cases=None):
     act['__A_GW__' if key == 'gateways' else '__A_CTL__' if key == 'controllers' else '__A_SENS__'] = ' aria-current="page"'
     for k, v in act.items(): tpl = tpl.replace(k, v)
     out = tpl.replace('__TITLE__', S['title']).replace('__DATA__', data, 1)
-    sr = '<nav class="agent-list" aria-label="Моделі серії (текстові версії)" style="position:absolute;left:-9999px">' + ''.join('<a href="models/%s.md">%s — %s</a> ' % (slug(x['model']), html.escape(x['model']), html.escape(x['name_uk'])) for x in models) + '</nav>'
+    def mdslug(m):
+        s_ = slug(m)
+        if os.path.exists(os.path.join(ROOT, 'models', s_ + '.md')): return s_
+        import glob as _g
+        c = [os.path.basename(f)[:-3] for f in _g.glob(os.path.join(ROOT, 'models', '*.md')) if s_ in os.path.basename(f) or s_.split("-")[-1] in os.path.basename(f)[:-3].split("-")]
+        return c[0] if c else s_
+    sr = '<nav class="agent-list" aria-label="Моделі серії (текстові версії)" style="position:absolute;left:-9999px">' + ''.join('<a href="models/%s.md">%s — %s</a> ' % (mdslug(x['model']), html.escape(x['model']), html.escape(x['name_uk'])) for x in models) + '</nav>'
     out = out.replace('<footer', sr + '\n<footer', 1)
     open(os.path.join(ROOT, FILE[key]), 'w').write(out)
     return FILE[key], sum(m['specs'] for m in models), len(models)

@@ -95,8 +95,7 @@ LCSS = """<style>
 .lh::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,20,35,.62) 0%,rgba(10,20,35,.25) 55%,rgba(10,20,35,.05) 100%)}
 .lh .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:center;height:100%;min-height:0}
 .lh .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-.lh .chips span{position:relative;font-size:14px;color:#fff;border:1px solid rgba(255,255,255,.6);padding:5px 12px 5px 16px;background:rgba(10,20,35,.35)}
-.lh .chips span::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:5px;background:var(--blue);transform:skewX(-14deg)}
+.lh .chips span{font-size:14px;color:#fff;border:1px solid rgba(255,255,255,.55);border-radius:4px;padding:5px 12px;background:rgba(10,20,35,.35)}
 .lh h1{font-weight:400;font-size:clamp(30px,3.6vw,48px);line-height:1.1;color:#fff;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.25)}
 .lh .eyebrow{color:#fff;opacity:.9}
 .lh .btn{margin-top:26px}
@@ -105,7 +104,7 @@ LCSS = """<style>
 .lh-cards a{flex:0 0 calc((100% - 32px)/3);scroll-snap-align:start;background:rgba(255,255,255,.16);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:14px;color:#fff;display:flex;flex-direction:column}
 .lh-cards b{display:block;font-weight:400;font-size:15px;line-height:1.3;min-height:3.9em}
 .lh-cards small{display:flex;align-items:center;gap:6px;margin:8px 0 10px;font-size:13px;opacity:.95}
-.lh-cards small::before{content:"";width:5px;height:12px;background:#5aa0ff;transform:skewX(-14deg)}
+
 .lh-cards img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;margin-top:auto}
 .lh-nav{display:flex;gap:8px;margin-top:16px;justify-content:flex-start}
 .lh-nav button{width:36px;height:36px;border:0;border-radius:4px;background:var(--blue);color:#fff;font-size:20px;cursor:pointer}
@@ -128,8 +127,8 @@ LCSS = """<style>
 .fl label{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:15px;color:var(--text);cursor:pointer}
 .fl label input{width:16px;height:16px;accent-color:var(--blue)}
 .fl label em{display:none}
-.fl .opts{padding-top:6px}
-.fl .dev .opts{max-height:320px;overflow:auto}
+.fl .opts{padding-top:6px;max-height:300px;overflow:auto;scrollbar-width:thin}
+.fl .sbox{padding:6px 0 8px}.fl .sbox input{width:100%;font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:4px;background:#fff}
 .fl .rst{font:inherit;font-size:15px;background:none;border:0;color:var(--blue);cursor:pointer;padding:4px 0}
 .lr .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;color:var(--muted);font-size:15px}
 .lg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
@@ -167,7 +166,7 @@ LJS = """<script>
 var cards=[].slice.call(document.querySelectorAll('.lc')),boxes=[].slice.call(document.querySelectorAll('.fl input')),PAGE=12,page=1;
 var pgn=document.querySelector('.pgn'),cnt=document.querySelector('.lr .cnt'),none=document.querySelector('.lr .none'),grid=document.querySelector('.lg');
 function sel(g){return boxes.filter(function(b){return b.name===g&&b.checked}).map(function(b){return b.value})}
-function apply(){var G=['dir','obj','dev','src'],S={};G.forEach(function(g){S[g]=sel(g)});var n=0;
+function apply(){var G=['ind','dir','dev','src'],S={};G.forEach(function(g){S[g]=sel(g)});var n=0;
 cards.forEach(function(c){var ok=G.every(function(g){if(!S[g].length)return true;var v=(c.dataset[g]||'').split(' ');return S[g].some(function(x){return v.indexOf(x)>-1})});
 c.hidden=!ok;c.classList.remove('pg');if(ok){n++;if(n<=(page-1)*PAGE||n>page*PAGE)c.classList.add('pg')}});
 cnt.textContent=n;none.hidden=n>0;
@@ -177,6 +176,7 @@ var gap=false;for(var i=1;i<=P;i++){if(P>7&&i>2&&i<P-1&&Math.abs(i-page)>1){if(!
 h+='<button type="button" data-p="'+(page+1)+'"'+(page>=P?' disabled':'')+' aria-label="Далі">›</button>'}pgn.innerHTML=h}
 pgn.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b||b.disabled)return;page=+b.dataset.p;apply();grid.scrollIntoView({behavior:'smooth',block:'start'})});
 boxes.forEach(function(b){b.addEventListener('change',function(){page=1;apply()})});
+var sb=document.querySelector('.fl .sbox input');if(sb)sb.addEventListener('input',function(){var q=sb.value.trim().toLowerCase();[].forEach.call(sb.closest('.opts').querySelectorAll('label'),function(l){l.hidden=q&&l.textContent.toLowerCase().indexOf(q)<0})});
 document.querySelector('.fl .rst').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});page=1;apply()});
 var t=document.querySelector('.fl-t');t.addEventListener('click',function(){var f=document.querySelector('.fl');f.classList.toggle('open');t.setAttribute('aria-expanded',f.classList.contains('open'))});
 var h=location.hash.slice(1),hb=boxes.filter(function(b){return b.name==='dir'&&b.value===h})[0];if(hb)hb.checked=true;
@@ -200,6 +200,32 @@ def slug(x):
     return re.sub(r'[^0-9a-zа-яіїєґ]+', '-', x.lower()).strip('-')
 
 
+# Галузь (Industry у Milesight): (ключ, назва, ключові слова по типу об'єкта, підгалузі)
+INDUSTRY = [
+    ('building', 'Будівлі', [], [
+        ('office', 'Офісні', ['офісн', 'склад і виробництво', 'банкомат']),
+        ('commercial', 'Комерційні', ['торгов', 'рітейл', 'готел', 'курортн', 'фітнес', 'самосховищ', 'елітні']),
+        ('public', 'Громадські', ['музе', 'театр', 'історичн', 'вбиральн', 'бібліотек', 'заклади догляду']),
+        ('residential', 'Житлові', ['житлов', 'вілл', 'будинки для літніх'])]),
+    ('retail', 'Рітейл', ['рітейл', 'торгов', 'банкомат'], []),
+    ('city', 'Місто', ['місто', 'міськ', 'каналізац', 'водоканал', 'дамб', 'фонтан', 'відход', 'сади', 'парки та', 'національні парки', 'метеозонд', 'дренаж'], []),
+    ('agro', 'Агро', ['теплиц', 'ферм', 'птахо', 'зрош', 'виноград', 'плантац', 'поля', 'чайне', 'лісове', 'ліси'], []),
+    ('industry', 'Промисловість', ['завод', 'виробництв', 'електростанц', 'нафтогаз', 'логістичн', 'будівельні майданчики', 'порти'], []),
+    ('education', 'Освіта', ['університет', 'кампус', 'школ', 'бібліотек'], []),
+    ('healthcare', 'Медицина', ['лікарн', 'медцентр', 'аптек', 'заклади догляду', 'будинки для літніх'], []),
+    ('transport', 'Транспорт', ['аеропорт', 'залізничн', 'локомотив', 'автобус', 'транспорт', 'порти'], []),
+]
+
+
+def industries(obj):
+    o = obj.lower(); out = []
+    for k, _, kw, subs in INDUSTRY:
+        hit = [sk for sk, _, skw in subs if any(w in o for w in skw)]
+        if hit or any(w in o for w in kw):
+            out.append(k); out += [f'{k}-{sk}' for sk in hit]
+    return out
+
+
 def build():
     items = [dict(c, src='ua') for c in C['own']] + [dict(c, src='ms') for c in C['ms']]
     for c in items:
@@ -208,12 +234,13 @@ def build():
         if c.get('page') and not usable(c['image']):
             c['image'] = c['page']['hero']  # абстрактний фон без змісту → головне фото кейсу
         c['_dev'] = devs(c)
+        c['_ind'] = industries(c['obj'])
     feat = sorted([c for c in items if c.get('featured')], key=lambda c: c['featured'])
     hero = next((c for c in feat if c.get('page')), feat[0])
     hero_img = hero['page']['hero'] if hero.get('page') else hero['image']
     ext = lambda c: '' if not c['link'].startswith('http') else ' target="_blank" rel="noopener"'
     nb = lambda t: re.sub(r'(\d) (\d)', '\\1\u00a0\\2', t)
-    side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><b>{e(nb(c["title"]))}</b><small>{e(DIRS[c["dir"]])} · {e(c["country"])}</small><img src="{e(c["image"])}" alt="" loading="lazy"></a>' for c in feat if c is not hero and "shot-" not in c["image"])
+    side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><b>{e(nb(c["title"]))}</b><small>{e(DIRS[c["dir"]])} · {e(c["country"])}</small><img src="{e(c["image"])}" alt="" loading="lazy"></a>' for c in ([c for c in feat if c is not hero] + [c for c in items if c.get('page') and c not in feat])[:6] if "shot-" not in c["image"])
     # filters
     def row(name, v, lbl):
         return f'<label><input type="checkbox" name="{name}" value="{e(v)}">{e(lbl)}</label>'
@@ -228,12 +255,14 @@ def build():
     g_dev = [(d.lower(), d, sum(1 for c in items if d in c['_dev'])) for d in alld]
     g_src = [('ua', 'Україна', cnt('src', 'ua')), ('ms', 'Milesight у світі', cnt('src', 'ms'))]
     # напрям → вкладені типи об'єктів (як Industry → підтипи на milesight.com)
-    nested = ''.join(row('dir', k, v) + '<div class="sub">' + ''.join(row('obj', slug(o), o) for o in sorted({c['obj'] for c in items if c['dir'] == k})) + '</div>' for k, v, n in g_dir)
-    filters = grp('dir', 'Напрям', [], rows=nested) + grp('src', 'Де', g_src) + grp('dev', 'Обладнання', g_dev, False)
+    used = {i for c in items for i in c['_ind']}
+    ind_rows = ''.join(row('ind', k, v) + (('<div class="sub">' + ''.join(row('ind', f'{k}-{sk}', sv) for sk, sv, _ in subs if f'{k}-{sk}' in used) + '</div>') if subs else '') for k, v, _, subs in INDUSTRY if k in used)
+    dev_rows = '<div class="sbox"><input type="search" placeholder="Пошук" aria-label="Пошук обладнання"></div>' + ''.join(row('dev', v, lbl) for v, lbl, n in g_dev)
+    filters = grp('ind', 'Галузь', [], rows=ind_rows) + grp('dir', 'Напрям', g_dir) + grp('src', 'Де', g_src) + grp('dev', 'Обладнання', [], rows=dev_rows)
     promo = '<div class="fl-promo grp"><b>Ваш об\'єкт тут</b><p>Зробили впровадження на Milesight? Розкажіть — опублікуємо кейс із вашим логотипом.</p><a href="./#contact">Надіслати кейс →</a></div>'
     def lcard(c):
         rb = '<span class="rb">Україна</span>' if c['src'] == 'ua' else ''
-        return (f'<a class="lc" href="{e(c["link"])}"{ext(c)} data-dir="{e(c["dir"])}" data-obj="{e(slug(c["obj"]))}" data-src="{c["src"]}" data-dev="{e(" ".join(d.lower() for d in c["_dev"]))}">'
+        return (f'<a class="lc" href="{e(c["link"])}"{ext(c)} data-dir="{e(c["dir"])}" data-obj="{e(slug(c["obj"]))}" data-src="{c["src"]}" data-ind="{e(" ".join(c["_ind"]))}" data-dev="{e(" ".join(d.lower() for d in c["_dev"]))}">'
                 f'<div class="im{" shot" if "shot-" in c["image"] else ""}"><img src="{e(c["image"])}" alt="" loading="lazy">{rb}</div>'
                 f'<div class="tx"><h3>{e(nb(c["title"]))}</h3><div class="mt"><span class="pin">{e(c["country"])}</span><span class="ind">{e(c["obj"])}</span></div></div></a>')
     order = [c for c in items if c['src'] == 'ua'] + sorted([c for c in items if c['src'] == 'ms'], key=lambda c: (not c.get('featured'), c.get('featured', 99)))

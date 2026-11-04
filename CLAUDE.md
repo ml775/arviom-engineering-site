@@ -7,3 +7,4 @@
 - Кейси Milesight: імпорт `build/import_cases.py <dir>` (вихід конвеєра /root/gd/cases/casepipe.py). Картинка для плашки — превью зі списку milesight.com (`build/ms_cards.py`, викликається автоматично), не фото зі сторінки кейсу. Абстрактні фони без змісту не показувати, прозорі PNG — на білому.
 - Сторінка кейсу генерується `build/gen_cases_v2.py` (стиль milesight.com/success-stories/iot-non-invasive-electricity-monitoring-solution-in-europe у нашому фірмовому стилі); старий `case_page` у gen_cases.py не використовується.
 - Новини: `content/news.json` (date, tag, title, image, link). Головна показує 4 останні, `news.html` — усі.
+- Форма на головній (#contact) шле POST JSON на n8n-вебхук https://n8n.arviom.com.ua/webhook/eng-lead (workflow «ENG site — заявка з форми», id 1VSgERxGGnzjptdi) → Telegram Максиму. Поле website — honeypot.

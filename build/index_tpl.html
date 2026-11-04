@@ -479,8 +479,10 @@ claude mcp add arviom-kb \
         <label>Тип об'єкта<select name="type"><option>Мале виробництво</option><option>ТЦ / бізнес-центр / супермаркет</option><option>Офіс або будівля</option><option>Школа / держустанова</option><option>Агро</option><option>Інше</option></select></label>
         <label class="full">Що потрібно<textarea name="msg" placeholder="Наприклад: облік енергії по 12 лініях, генератор і батарея"></textarea></label>
         <div class="full"><button class="btn" type="submit">Надіслати</button></div>
-        <p class="fnote full">У чернетці форма нікуди не надсилає дані.</p>
-        <p id="sent" class="full" role="status">Заявку прийнято (демо).</p>
+        <p class="fnote full">Відповідаємо протягом робочого дня. Або одразу: <a href="mailto:ml@arviom.com">ml@arviom.com</a>, <a href="tel:+380673813404">+380 67 381 34 04</a>.</p>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <p id="sent" class="full" role="status">Дякуємо, заявку отримали. Відповімо протягом робочого дня.</p>
+        <p id="fail" class="full" role="alert" style="display:none;color:#a32020">Не вдалося надіслати. Напишіть на <a href="mailto:ml@arviom.com">ml@arviom.com</a> або подзвоніть +380 67 381 34 04.</p>
       </form>
     </div>
   </section>
@@ -520,7 +522,13 @@ claude mcp add arviom-kb \
   var v=document.querySelector('.t.wide video');
   new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){v.play().catch(function(){})}else{v.pause()}})},{threshold:.3}).observe(v);
   // form demo
-  document.getElementById('lead').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sent').style.display='block'});
+  document.getElementById('lead').addEventListener('submit',function(e){e.preventDefault();var f=e.target,b=f.querySelector('button[type=submit]');if(f.website.value)return;
+    if(!f.name.value.trim()||!f.contact.value.trim()){f.reportValidity();return}
+    var d={name:f.name.value,company:f.company.value,contact:f.contact.value,type:f.type.value,msg:f.msg.value,page:location.href};
+    b.disabled=true;b.textContent='Надсилаємо…';
+    fetch('https://n8n.arviom.com.ua/webhook/eng-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
+    .then(function(r){if(!r.ok)throw 0;document.getElementById('sent').style.display='block';document.getElementById('fail').style.display='none';f.reset();b.textContent='Надіслано ✓'})
+    .catch(function(){document.getElementById('fail').style.display='block';b.disabled=false;b.textContent='Надіслати'})});
 })();
 </script>
 </body>

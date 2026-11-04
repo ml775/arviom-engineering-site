@@ -29,6 +29,7 @@ section.blk{padding-block:88px}
 .btn::after{content:"›";font-size:20px;line-height:1;transform:translateY(-1px)}
 .btn:hover{background:var(--blue2)}
 .btn.w{background:#fff;color:var(--blue)}
+.cta .btn.w{background:var(--blue);color:#fff}
 
 .hero{position:relative;height:min(560px,70vh);min-height:420px;overflow:hidden;background:#0d1520}
 .hero>img{width:100%;height:100%;object-fit:cover}
@@ -98,8 +99,8 @@ section.blk{padding-block:88px}
 .oc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.15),rgba(10,20,35,.85))}
 .oc b{position:relative;z-index:1;font-weight:400;font-size:18px}
 
-.cta{background:linear-gradient(100deg,#0b5cd6 0%,#2b7cf2 100%);border-radius:10px;color:#fff;padding:44px 48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
-.cta h2{color:#fff;font-size:30px}.cta p{opacity:.9;margin-top:6px}
+.cta{background:var(--bg2);border-radius:10px;color:var(--ink);padding:44px 48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta h2{color:var(--ink);font-size:30px}.cta p{color:var(--text);margin-top:6px}
 
 /* hub */
 .hub{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:44px}
@@ -261,7 +262,7 @@ section.blk{padding-block:88px}
 @media (max-width:1000px){.cp-facts .box{grid-template-columns:1fr 1fr;padding:22px}.cp-facts .f{border-right:0;padding-right:0}.cp-facts .btn{grid-column:1/-1;justify-self:start}.cp-sol{grid-template-columns:1fr 1fr}.cp-tabs .bc{display:none}}
 @media (max-width:640px){.cp-two,.cp-ch,.cp-res,.cp-sol{grid-template-columns:1fr}.cp-facts .box{grid-template-columns:1fr}.cp-facts{margin-top:-60px}.cp-sec{padding-block:48px}.cp-tabs{top:64px}}
 </style><style>
-.cta[style] h2{color:var(--ink)}.cta[style] p{color:var(--text);opacity:1}.cta[style] .btn.w{background:var(--blue);color:#fff}
+
 .h2l{font-weight:300;font-size:clamp(30px,3.2vw,42px);line-height:1.1;margin-bottom:28px}
 .v2-hero{position:relative;height:clamp(420px,38vw,520px);overflow:hidden;background:#24364b}
 .v2-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -323,7 +324,7 @@ section.blk{padding-block:88px}
 <section id="solution" class="cp-sec"><div class="wrap"><h2 class="h2l" style="text-align:center">Рішення</h2><figure class="v2-diag"><img src="img/cases/smart-lighting-control-system-dubai/smart-light-system-topology.webp" alt="Схема рішення" loading="lazy"><figcaption>Схема рішення — Milesight.</figcaption></figure><div class="v2-prose"><p><b>Централізоване керування.</b> Контролери WS558 LoRaWAN® інтегрували в існуюче освітлення. 15 контролерів керують 87 світильниками на восьми електричних колах.</p><p><b>Сценарії освітлення.</b> Сценарії налаштовані з урахуванням даних датчика руху й освітленості WS202, природного освітлення та робочих годин. Це економить енергію без втрати якості світла.</p><p><b>Платформа та безперервність роботи.</b> Дані з пристроїв збираються на IoT-платформі. Монтаж виконали з мінімальним впливом на роботу будівлі.</p></div><div class="v2-sh" style="--n:3"><img src="img/cases/smart-lighting-control-system-dubai/smart-light-system-iot-products.webp" alt="" loading="lazy"><img src="img/cases/smart-lighting-control-system-dubai/smart-light-system-automation.webp" alt="" loading="lazy"><img src="img/cases/smart-lighting-control-system-dubai/smart-light-system-sensors.webp" alt="" loading="lazy"></div></div></section>
 <section id="results" class="cp-sec v2-res"><div class="wrap"><h2 class="h2l">Результат</h2><div class="g"><div class="rv"><h3>−25% споживання на освітлення</h3><p>Зниження зафіксоване за місяць після запуску системи.</p></div><div class="rv"><h3>11 000 годин на місяць</h3><p>Стільки годин роботи освітлення щомісяця заощаджено завдяки оптимізованим графікам.</p></div><div class="rv"><h3>$3 000 економії на рік</h3><p>При тарифі близько $0,06 за кВт·год економія становить $250 на місяць.</p></div><div class="rv"><h3>Керованість і масштабування</h3><p>Керування освітленням покращилось, а систему можна розширити датчиками присутності та якості повітря.</p></div></div><figure class="rv" style="max-width:664px"><img src="img/cases/smart-lighting-control-system-dubai/smart-light-system-energy-saving.webp" alt="" loading="lazy"></figure><p class="note">Витрати на освітлення до впровадження — $10 000 на рік, після — $7 000. Вартість впровадження $8 000 (обладнання й підписка на платформу), окупність 2,67 року (32 місяці).</p></div></section>
 <section id="partner" class="cp-sec"><div class="wrap"><h2 class="h2l">Партнер</h2><div class="v2-pt rv"><div class="l"><span>Sensgreen</span></div><div class="r"><h2>Про Sensgreen</h2><p>Sensgreen — технологічний стартап із ОАЕ, який займається розумними та екологічними будівлями й якістю повітря в приміщеннях.</p></div></div><p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="https://www.milesight.com/company/success-stories/smart-lighting-control-system-dubai" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p></div></section>
-<section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta" style="background:var(--bg2);color:var(--ink)"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
+<section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
 </main><script>
 (function(){var a=[].slice.call(document.querySelectorAll('.cp-tabs nav a'));if(!('IntersectionObserver' in window))return;
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)a.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id)})})},{rootMargin:'-40% 0px -55% 0px'});

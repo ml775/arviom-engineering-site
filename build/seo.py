@@ -27,7 +27,7 @@ def run():
     n = 0
     for f in sorted(glob.glob(os.path.join(ROOT, '*.html'))):
         name = os.path.basename(f)
-        if name.startswith(('_', 'v2-')): continue
+        if name.startswith(('_', 'v2-', 'google')): continue
         t = open(f).read()
         t = re.sub(r'\n?<!--seo-->.*?<!--/seo-->', '', t, flags=re.S)
         t = re.sub(r'<meta name="robots" content="[^"]*">\n?', '', t)

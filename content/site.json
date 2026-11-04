@@ -22,5 +22,9 @@
     "zakhyst.html": {
       "image": "img/sol/ind-case.webp"
     }
+  },
+  "analytics": {
+    "script": "https://stats.arviom.cloud/script.js",
+    "website_id": "e7564b83-5c06-4623-b922-9ba1e83aa13b"
   }
 }

@@ -36,13 +36,15 @@ def run():
         desc = ov.get('description') or describe(t); img = ov.get('image') or og_image(t, name)
         url = S['url'] + ('' if name == 'index.html' else name)
         robots = 'noindex, nofollow' if S.get('noindex') else 'index, follow'
+        A = S.get('analytics')
+        an = f'\n<script defer src="{A["script"]}" data-website-id="{A["website_id"]}"></script>' if A else ''
         block = f'''<!--seo--><meta name="robots" content="{robots}">
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{e(url)}">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="{e(S['name'])}"><meta property="og:locale" content="uk_UA">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{e(url)}">
-<meta property="og:image" content="{e(S['url'] + img)}"><meta name="twitter:card" content="summary_large_image"><!--/seo-->'''
+<meta property="og:image" content="{e(S['url'] + img)}"><meta name="twitter:card" content="summary_large_image">{an}<!--/seo-->'''
         t = t.replace('</title>', '</title>\n' + block, 1)
         open(f, 'w').write(t); n += 1
     print('seo:', n, 'pages;', 'noindex' if S.get('noindex') else 'index', S['url'])

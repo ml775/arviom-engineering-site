@@ -6,6 +6,7 @@ from gen_cases import C, CSS, DIRS, ICONS, SPY, chrome, e, usable, img_info, ROO
 from PIL import Image
 
 V2CSS = '''<style>
+.cta[style] h2{color:var(--ink)}.cta[style] p{color:var(--text);opacity:1}.cta[style] .btn.w{background:var(--blue);color:#fff}
 .h2l{font-weight:300;font-size:clamp(30px,3.2vw,42px);line-height:1.1;margin-bottom:28px}
 .v2-hero{position:relative;height:clamp(420px,38vw,520px);overflow:hidden;background:#24364b}
 .v2-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -106,7 +107,7 @@ def case_page_v2(c, out=None):
 <section id="solution" class="cp-sec"><div class="wrap"><h2 class="h2l" style="text-align:center">Рішення</h2>{diag}<div class="v2-prose">{prose}</div>{ph}{sh}</div></section>
 <section id="results" class="cp-sec v2-res"><div class="wrap"><h2 class="h2l">Результат</h2><div class="g">{res}</div>{rimg}{f'<p class="note">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
 {PART}
-<section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
+<section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"{' style="background:var(--bg2);color:var(--ink)"' if P['slug'] == 'case-smart-lighting-control-system-dubai' else ''}><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
 </main>{SPY}"""
     html = chrome(body, P['h1'], 'case')
     html = html.replace('<a href="solutions.html" aria-current="page">Рішення</a>', '<a href="solutions.html">Рішення</a>')

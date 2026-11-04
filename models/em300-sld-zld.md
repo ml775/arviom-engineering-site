@@ -2,9 +2,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em300-sld-zld
-Відео (EN): https://demo.arviom.com.ua/eng/video/iot-based-smart-water-management-in-building-202508.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em300-sld-zld
+Відео (EN): https://engineering.arviom.com/video/iot-based-smart-water-management-in-building-202508.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

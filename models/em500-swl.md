@@ -2,9 +2,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-swl
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-em500-swl-lorawan-submersible-water-level-sensor-2.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-swl
+Відео (EN): https://engineering.arviom.com/video/milesight-em500-swl-lorawan-submersible-water-level-sensor-2.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

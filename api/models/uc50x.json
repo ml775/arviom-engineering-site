@@ -3,12 +3,12 @@
  "name": "Багатоінтерфейсний контролер",
  "series": "LoRaWAN-контролери",
  "vendor": "Milesight",
- "page": "https://demo.arviom.com.ua/eng/s-controllers.html#m-uc50x",
- "markdown": "https://demo.arviom.com.ua/eng/models/uc50x.md",
- "json": "https://demo.arviom.com.ua/eng/api/models/uc50x.json",
- "image": "https://demo.arviom.com.ua/eng/img/hd/uc50x.webp",
+ "page": "https://engineering.arviom.com/s-controllers.html#m-uc50x",
+ "markdown": "https://engineering.arviom.com/models/uc50x.md",
+ "json": "https://engineering.arviom.com/api/models/uc50x.json",
+ "image": "https://engineering.arviom.com/img/hd/uc50x.webp",
  "vendor_page": "https://www.milesight.com/iot/product/iot-controller/uc50x",
- "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
  "specs": {
   "purpose": "Збір даних із різних провідних датчиків та обладнання й передача їх через LoRaWAN, а також керування виходами.",
   "measures": [

@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://demo.arviom.com.ua/eng/sitemap.xml
-# Для ШІ-агентів: https://demo.arviom.com.ua/eng/llms.txt
+Sitemap: https://engineering.arviom.com/sitemap.xml
+# Для ШІ-агентів: https://engineering.arviom.com/llms.txt

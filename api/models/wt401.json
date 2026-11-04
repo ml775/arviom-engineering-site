@@ -3,12 +3,12 @@
  "name": "Бездротовий термостат",
  "series": "Серія WT · термостати",
  "vendor": "Milesight",
- "page": "https://demo.arviom.com.ua/eng/s-wt.html#m-wt401",
- "markdown": "https://demo.arviom.com.ua/eng/models/wt401.md",
- "json": "https://demo.arviom.com.ua/eng/api/models/wt401.json",
- "image": "https://demo.arviom.com.ua/eng/img/hd/wt401.webp",
+ "page": "https://engineering.arviom.com/s-wt.html#m-wt401",
+ "markdown": "https://engineering.arviom.com/models/wt401.md",
+ "json": "https://engineering.arviom.com/api/models/wt401.json",
+ "image": "https://engineering.arviom.com/img/hd/wt401.webp",
  "vendor_page": "https://www.milesight.com/iot/product/lorawan-sensor/wt401",
- "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://demo.arviom.com.ua/eng/#contact",
+ "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
  "specs": {
   "purpose": "Точне керування температурою в приміщеннях (офіси, готелі, магазини) через системи HVAC безпосередньо або через BMS і контролери Milesight, з постійним відображенням стану кімнати на e-ink екрані.",
   "measures": [

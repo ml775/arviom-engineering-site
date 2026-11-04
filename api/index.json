@@ -3,13 +3,13 @@
  "about": "Бездротова автоматизація об'єктів на обладнанні Milesight (LoRaWAN-датчики, шлюзи, контролери). Офіційний дистриб'ютор Milesight в Україні.",
  "updated": "2026-11-04",
  "resources": {
-  "catalog": "https://demo.arviom.com.ua/eng/api/catalog.json",
-  "series": "https://demo.arviom.com.ua/eng/api/series.json",
-  "solutions": "https://demo.arviom.com.ua/eng/api/solutions.json",
-  "model_json": "https://demo.arviom.com.ua/eng/api/models/{slug}.json",
-  "model_markdown": "https://demo.arviom.com.ua/eng/models/{slug}.md",
-  "full_text": "https://demo.arviom.com.ua/eng/llms-full.txt"
+  "catalog": "https://engineering.arviom.com/api/catalog.json",
+  "series": "https://engineering.arviom.com/api/series.json",
+  "solutions": "https://engineering.arviom.com/api/solutions.json",
+  "model_json": "https://engineering.arviom.com/api/models/{slug}.json",
+  "model_markdown": "https://engineering.arviom.com/models/{slug}.md",
+  "full_text": "https://engineering.arviom.com/llms-full.txt"
  },
  "slug_rule": "нижній регістр, усе крім a-z0-9 → «-» (EM300-SLD/ZLD → em300-sld-zld)",
- "private": "Ціни, наявність, замовлення, внутрішня база знань — лише через MCP-сервери для партнерів (ключ видається в кабінеті партнера: https://demo.arviom.com.ua/eng/partner.html)."
+ "private": "Ціни, наявність, замовлення, внутрішня база знань — лише через MCP-сервери для партнерів (ключ видається в кабінеті партнера: https://engineering.arviom.com/partner.html)."
 }

@@ -2,9 +2,9 @@
 
 Виробник: Milesight · Серія: Серія EM400 · відстань і рівень · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em400.html#m-em400-tld
-Відео (EN): https://demo.arviom.com.ua/eng/video/em400-series-distance-level-measuring-sensors-202304.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em400.html#m-em400-tld
+Відео (EN): https://engineering.arviom.com/video/em400-series-distance-level-measuring-sensors-202304.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

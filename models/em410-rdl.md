@@ -2,10 +2,10 @@
 
 Виробник: Milesight · Серія: Серія EM400 · відстань і рівень · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em400.html#m-em410-rdl
+Сторінка: https://engineering.arviom.com/s-em400.html#m-em410-rdl
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/em41x-rdl-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/em410-rdl-radar-distance-and-level-sensor-202504.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/em410-rdl-radar-distance-and-level-sensor-202504.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

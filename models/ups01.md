@@ -2,9 +2,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-ups01
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-ups01
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/ups01-datasheet-en.pdf
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

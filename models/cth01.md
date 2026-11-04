@@ -2,10 +2,10 @@
 
 Виробник: Milesight · Серія: Серія CT · струм і енергія · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ct.html#m-cth01
+Сторінка: https://engineering.arviom.com/s-ct.html#m-cth01
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/cth01-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/introducing-cth01-smart-power-monitor-hub-subtitles-202603.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/introducing-cth01-smart-power-monitor-hub-subtitles-202603.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

@@ -2,9 +2,9 @@
 
 Виробник: Milesight · Серія: Серія AM · якість повітря · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-am.html#m-am300-series
-Відео (EN): https://demo.arviom.com.ua/eng/video/am307-am319-iaq-sensor-introduction-202209.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-am.html#m-am300-series
+Відео (EN): https://engineering.arviom.com/video/am307-am319-iaq-sensor-introduction-202209.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

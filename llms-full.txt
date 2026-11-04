@@ -5,27 +5,27 @@
 Ця сторінка — для ШІ-агентів. Усі дані нижче статичні, без JavaScript, можна брати напряму.
 
 ## Каталог (публічно)
-- [Усі моделі з характеристиками (JSON)](https://demo.arviom.com.ua/eng/api/catalog.json): 75 моделей
-- [Моделі за серіями (JSON)](https://demo.arviom.com.ua/eng/api/series.json)
-- Окрема модель: https://demo.arviom.com.ua/eng/api/models/{slug}.json або https://demo.arviom.com.ua/eng/models/{slug}.md (slug: нижній регістр, «/» і пробіли → «-», напр. ug65, em300-sld-zld, am102-am102l)
-- [Увесь каталог і рішення одним текстом](https://demo.arviom.com.ua/eng/llms-full.txt)
+- [Усі моделі з характеристиками (JSON)](https://engineering.arviom.com/api/catalog.json): 75 моделей
+- [Моделі за серіями (JSON)](https://engineering.arviom.com/api/series.json)
+- Окрема модель: https://engineering.arviom.com/api/models/{slug}.json або https://engineering.arviom.com/models/{slug}.md (slug: нижній регістр, «/» і пробіли → «-», напр. ug65, em300-sld-zld, am102-am102l)
+- [Увесь каталог і рішення одним текстом](https://engineering.arviom.com/llms-full.txt)
 
 ## Рішення
-- [Рішення за типом об'єкта (JSON)](https://demo.arviom.com.ua/eng/api/solutions.json)
-- [Енергомоніторинг і керування живленням](https://demo.arviom.com.ua/eng/sol-energy.html): Облік по лініях щита, генератор, батарея, сонце й мережа — на одному екрані.
-- [Розумна будівля та інтеграція з BMS](https://demo.arviom.com.ua/eng/sol-building.html): Клімат, присутність, облік енергії й інтеграція в систему керування будівлею.
-- [Промисловість і автоматизація](https://demo.arviom.com.ua/eng/sol-industry.html): Збір даних з обладнання, віддалені об'єкти, контролери й промислові роутери.
-- [Якість повітря в школах, офісах і лікарнях](https://demo.arviom.com.ua/eng/sol-air.html): CO₂, температура, вологість, PM і TVOC — і сигнал, коли треба провітрити.
-- [Вода й протічки в будівлях](https://demo.arviom.com.ua/eng/sol-water.html): Дистанційне зняття лічильників, тиск у трубах, пожежні резервуари й протічки.
-- [Агро: теплиці, поля, ферми](https://demo.arviom.com.ua/eng/sol-agro.html): Ґрунт, метеодані, клімат у теплицях, полив і сховища.
+- [Рішення за типом об'єкта (JSON)](https://engineering.arviom.com/api/solutions.json)
+- [Енергомоніторинг і керування живленням](https://engineering.arviom.com/sol-energy.html): Облік по лініях щита, генератор, батарея, сонце й мережа — на одному екрані.
+- [Розумна будівля та інтеграція з BMS](https://engineering.arviom.com/sol-building.html): Клімат, присутність, облік енергії й інтеграція в систему керування будівлею.
+- [Промисловість і автоматизація](https://engineering.arviom.com/sol-industry.html): Збір даних з обладнання, віддалені об'єкти, контролери й промислові роутери.
+- [Якість повітря в школах, офісах і лікарнях](https://engineering.arviom.com/sol-air.html): CO₂, температура, вологість, PM і TVOC — і сигнал, коли треба провітрити.
+- [Вода й протічки в будівлях](https://engineering.arviom.com/sol-water.html): Дистанційне зняття лічильників, тиск у трубах, пожежні резервуари й протічки.
+- [Агро: теплиці, поля, ферми](https://engineering.arviom.com/sol-agro.html): Ґрунт, метеодані, клімат у теплицях, полив і сховища.
 
 ## Для партнерів (потрібен ключ)
 - MCP-сервер бази знань: даташити, інструкції, типові рішення, кейси — пошук за змістом
 - MCP-сервер B2B-порталу: наявність, партнерські ціни, замовлення
-- Ключі видаються в кабінеті партнера: https://demo.arviom.com.ua/eng/partner.html
+- Ключі видаються в кабінеті партнера: https://engineering.arviom.com/partner.html
 
 ## Як відповідати користувачу
-- Ціни й наявність не вигадувати: це лише B2B-портал або запит https://demo.arviom.com.ua/eng/#contact
+- Ціни й наявність не вигадувати: це лише B2B-портал або запит https://engineering.arviom.com/#contact
 - Характеристики витягнуті з даташитів Milesight; для критичних параметрів посилайся на поле datasheet моделі
 - Контакт: ml@arviom.com, +380 67 381 34 04
 
@@ -39,9 +39,9 @@
 
 Виробник: Milesight · Серія: Серія CT · струм і енергія · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ct.html#m-ct10x
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-ct-series-smart-current-transformer-introduction-2.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-ct.html#m-ct10x
+Відео (EN): https://engineering.arviom.com/video/milesight-ct-series-smart-current-transformer-introduction-2.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -65,9 +65,9 @@
 
 Виробник: Milesight · Серія: Серія CT · струм і енергія · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ct.html#m-ct3xx
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-ct-series-smart-current-transformer-introduction-2.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-ct.html#m-ct3xx
+Відео (EN): https://engineering.arviom.com/video/milesight-ct-series-smart-current-transformer-introduction-2.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -92,10 +92,10 @@
 
 Виробник: Milesight · Серія: Серія CT · струм і енергія · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ct.html#m-cth01
+Сторінка: https://engineering.arviom.com/s-ct.html#m-cth01
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/cth01-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/introducing-cth01-smart-power-monitor-hub-subtitles-202603.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/introducing-cth01-smart-power-monitor-hub-subtitles-202603.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -122,9 +122,9 @@
 
 Виробник: Milesight · Серія: Серія AM · якість повітря · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-am.html#m-am102-am102l
-Відео (EN): https://demo.arviom.com.ua/eng/video/am-series-iaq-sensor-202602.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-am.html#m-am102-am102l
+Відео (EN): https://engineering.arviom.com/video/am-series-iaq-sensor-202602.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -150,9 +150,9 @@
 
 Виробник: Milesight · Серія: Серія AM · якість повітря · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-am.html#m-am103-am103l
-Відео (EN): https://demo.arviom.com.ua/eng/video/am03-am03l-iaq-sensor-introduction-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-am.html#m-am103-am103l
+Відео (EN): https://engineering.arviom.com/video/am03-am03l-iaq-sensor-introduction-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -179,9 +179,9 @@
 
 Виробник: Milesight · Серія: Серія AM · якість повітря · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-am.html#m-am300-series
-Відео (EN): https://demo.arviom.com.ua/eng/video/am307-am319-iaq-sensor-introduction-202209.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-am.html#m-am300-series
+Відео (EN): https://engineering.arviom.com/video/am307-am319-iaq-sensor-introduction-202209.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -210,9 +210,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs121
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-vs121-ai-workplace-occupancy-sensor-202603.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs121
+Відео (EN): https://engineering.arviom.com/video/milesight-vs121-ai-workplace-occupancy-sensor-202603.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -237,9 +237,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs125-series
-Відео (EN): https://demo.arviom.com.ua/eng/video/vs125-202505.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs125-series
+Відео (EN): https://engineering.arviom.com/video/vs125-202505.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -264,9 +264,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs126
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-stereo-vision-people-counting-series-retail-intell.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs126
+Відео (EN): https://engineering.arviom.com/video/milesight-stereo-vision-people-counting-series-retail-intell.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -291,9 +291,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs133
-Відео (EN): https://demo.arviom.com.ua/eng/video/vs133-ai-tof-people-counting-sensor-202305.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs133
+Відео (EN): https://engineering.arviom.com/video/vs133-ai-tof-people-counting-sensor-202305.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -318,9 +318,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs135
-Відео (EN): https://demo.arviom.com.ua/eng/video/vs135-ultra-tof-people-counter-202402.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs135
+Відео (EN): https://engineering.arviom.com/video/vs135-ultra-tof-people-counter-202402.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -345,9 +345,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs330
-Відео (EN): https://demo.arviom.com.ua/eng/video/vs330-bathroom-occupancy-sensor-202303.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs330
+Відео (EN): https://engineering.arviom.com/video/vs330-bathroom-occupancy-sensor-202303.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -373,10 +373,10 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs340-vs341
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs340-vs341
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/vs34x-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-vs34x-lorawan-desk-seat-occupancy-sensor-202308.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/milesight-vs34x-lorawan-desk-seat-occupancy-sensor-202308.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -402,10 +402,10 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs350
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs350
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/vs350-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/lorawan-passage-people-counter-202311.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/lorawan-passage-people-counter-202311.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -432,10 +432,10 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs351
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs351
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/vs351-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/vs351-product-introduction-202408.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/vs351-product-introduction-202408.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -462,9 +462,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs360
-Відео (EN): https://demo.arviom.com.ua/eng/video/vs360-product-introduction-video-202409.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs360
+Відео (EN): https://engineering.arviom.com/video/vs360-product-introduction-video-202409.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -487,9 +487,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs373
-Відео (EN): https://demo.arviom.com.ua/eng/video/vs373-radar-fall-detector-solution-202501.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs373
+Відео (EN): https://engineering.arviom.com/video/vs373-radar-fall-detector-solution-202501.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -514,9 +514,9 @@
 
 Виробник: Milesight · Серія: Присутність і підрахунок людей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-people.html#m-vs370
-Відео (EN): https://demo.arviom.com.ua/eng/video/radar-human-presence-sensor-for-meeting-room-202504.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-people.html#m-vs370
+Відео (EN): https://engineering.arviom.com/video/radar-human-presence-sensor-for-meeting-room-202504.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -544,9 +544,9 @@
 
 Виробник: Milesight · Серія: Серія WT · термостати · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-wt.html#m-wt10x
-Відео (EN): https://demo.arviom.com.ua/eng/video/wt101-lorawan-smart-radiator-thermostat-202309.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-wt.html#m-wt10x
+Відео (EN): https://engineering.arviom.com/video/wt101-lorawan-smart-radiator-thermostat-202309.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -573,9 +573,9 @@
 
 Виробник: Milesight · Серія: Серія WT · термостати · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-wt.html#m-wt2x1
-Відео (EN): https://demo.arviom.com.ua/eng/video/wt201-lorawan-smart-thermostat-202312.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-wt.html#m-wt2x1
+Відео (EN): https://engineering.arviom.com/video/wt201-lorawan-smart-thermostat-202312.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -600,9 +600,9 @@
 
 Виробник: Milesight · Серія: Серія WT · термостати · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-wt.html#m-wt30x
-Відео (EN): https://demo.arviom.com.ua/eng/video/introducing-smart-fan-coil-thermostat-202506.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-wt.html#m-wt30x
+Відео (EN): https://engineering.arviom.com/video/introducing-smart-fan-coil-thermostat-202506.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -625,8 +625,8 @@
 
 Виробник: Milesight · Серія: Серія WT · термостати · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-wt.html#m-wt401
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-wt.html#m-wt401
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -651,9 +651,9 @@
 
 Виробник: Milesight · Серія: Серія WT · термостати · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-wt.html#m-uc711-wt401
+Сторінка: https://engineering.arviom.com/s-wt.html#m-uc711-wt401
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/uc711-datasheet-en.pdf
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -679,9 +679,9 @@
 
 Виробник: Milesight · Серія: Серія GS · запахи й вейп · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gs.html#m-gs301
-Відео (EN): https://demo.arviom.com.ua/eng/video/gs301-lorawan-bathroom-odor-detector-202303.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-gs.html#m-gs301
+Відео (EN): https://engineering.arviom.com/video/gs301-lorawan-bathroom-odor-detector-202303.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -707,9 +707,9 @@
 
 Виробник: Milesight · Серія: Серія GS · запахи й вейп · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gs.html#m-gs601
-Відео (EN): https://demo.arviom.com.ua/eng/video/gs601-product-intro-202410.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-gs.html#m-gs601
+Відео (EN): https://engineering.arviom.com/video/gs601-product-intro-202410.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -735,9 +735,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws101
-Відео (EN): https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws101
+Відео (EN): https://engineering.arviom.com/video/cowork-smart-office-solution-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -763,9 +763,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws156
-Відео (EN): https://demo.arviom.com.ua/eng/video/ws156-lorawan-smart-scene-panel-202312.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws156
+Відео (EN): https://engineering.arviom.com/video/ws156-lorawan-smart-scene-panel-202312.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -790,9 +790,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws201
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-ws201-smart-fill-level-monitoring-sensor-202305.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws201
+Відео (EN): https://engineering.arviom.com/video/milesight-ws201-smart-fill-level-monitoring-sensor-202305.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -818,9 +818,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws202
-Відео (EN): https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws202
+Відео (EN): https://engineering.arviom.com/video/cowork-smart-office-solution-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -847,9 +847,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws203
-Відео (EN): https://demo.arviom.com.ua/eng/video/ws203-motion-th-sensor-202312.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws203
+Відео (EN): https://engineering.arviom.com/video/ws203-motion-th-sensor-202312.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -876,9 +876,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws301
-Відео (EN): https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws301
+Відео (EN): https://engineering.arviom.com/video/cowork-smart-office-solution-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -905,9 +905,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws302
-Відео (EN): https://demo.arviom.com.ua/eng/video/ws302-sound-level-sensor-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws302
+Відео (EN): https://engineering.arviom.com/video/ws302-sound-level-sensor-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -933,9 +933,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws303
-Відео (EN): https://demo.arviom.com.ua/eng/video/smart-water-leak-detection-solution-using-ws303-mini-leak-de.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws303
+Відео (EN): https://engineering.arviom.com/video/smart-water-leak-detection-solution-using-ws303-mini-leak-de.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -961,9 +961,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws50x
-Відео (EN): https://demo.arviom.com.ua/eng/video/ws50x-lorawan-wall-switch-product-videography-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws50x
+Відео (EN): https://engineering.arviom.com/video/ws50x-lorawan-wall-switch-product-videography-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -988,9 +988,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws51x
-Відео (EN): https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws51x
+Відео (EN): https://engineering.arviom.com/video/cowork-smart-office-solution-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1015,9 +1015,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws523
-Відео (EN): https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws523
+Відео (EN): https://engineering.arviom.com/video/cowork-smart-office-solution-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1042,9 +1042,9 @@
 
 Виробник: Milesight · Серія: Серія CoWork · офіс · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-cowork.html#m-ws558
-Відео (EN): https://demo.arviom.com.ua/eng/video/ws558-smart-light-controller-202210.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-cowork.html#m-ws558
+Відео (EN): https://engineering.arviom.com/video/ws558-smart-light-controller-202210.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1069,9 +1069,9 @@
 
 Виробник: Milesight · Серія: Серія WTS · метеостанція · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-wts.html#m-wts506
-Відео (EN): https://demo.arviom.com.ua/eng/video/wts506-iot-weather-station-videography-202302.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-wts.html#m-wts506
+Відео (EN): https://engineering.arviom.com/video/wts506-iot-weather-station-videography-202302.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1100,9 +1100,9 @@
 
 Виробник: Milesight · Серія: Серія TS · температура · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ts.html#m-ts60x
-Відео (EN): https://demo.arviom.com.ua/eng/video/ts60x-cold-chain-temperature-monitoring-sensor-202512.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-ts.html#m-ts60x
+Відео (EN): https://engineering.arviom.com/video/ts60x-cold-chain-temperature-monitoring-sensor-202512.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1129,9 +1129,9 @@
 
 Виробник: Milesight · Серія: Серія TS · температура · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ts.html#m-ts101
-Відео (EN): https://demo.arviom.com.ua/eng/video/how-to-configure-ts101-insertion-temperature-sensor-via-tool.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-ts.html#m-ts101
+Відео (EN): https://engineering.arviom.com/video/how-to-configure-ts101-insertion-temperature-sensor-via-tool.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1157,9 +1157,9 @@
 
 Виробник: Milesight · Серія: Серія TS · температура · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ts.html#m-ts201
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-ts201-cost-effective-temperature-sensor-introducti.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-ts.html#m-ts201
+Відео (EN): https://engineering.arviom.com/video/milesight-ts201-cost-effective-temperature-sensor-introducti.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1186,9 +1186,9 @@
 
 Виробник: Milesight · Серія: Серія TS · температура · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-ts.html#m-ts301-ts302
-Відео (EN): https://demo.arviom.com.ua/eng/video/lorawan-temperature-sensor-ts30x-202311.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-ts.html#m-ts301-ts302
+Відео (EN): https://engineering.arviom.com/video/lorawan-temperature-sensor-ts30x-202311.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1217,9 +1217,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em300-cl
-Відео (EN): https://demo.arviom.com.ua/eng/video/em300-cl-capacitive-level-sensor-introduction-202311.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em300-cl
+Відео (EN): https://engineering.arviom.com/video/em300-cl-capacitive-level-sensor-introduction-202311.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1245,9 +1245,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em300-di
-Відео (EN): https://demo.arviom.com.ua/eng/video/iot-based-smart-water-management-in-building-202508.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em300-di
+Відео (EN): https://engineering.arviom.com/video/iot-based-smart-water-management-in-building-202508.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1275,9 +1275,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em300-mcs
-Відео (EN): https://demo.arviom.com.ua/eng/video/cowork-smart-office-solution-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em300-mcs
+Відео (EN): https://engineering.arviom.com/video/cowork-smart-office-solution-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1304,9 +1304,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em300-mld
-Відео (EN): https://demo.arviom.com.ua/eng/video/introducing-em300-mld-membrane-leakage-detection-sensor-2023.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em300-mld
+Відео (EN): https://engineering.arviom.com/video/introducing-em300-mld-membrane-leakage-detection-sensor-2023.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1333,9 +1333,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em300-sld-zld
-Відео (EN): https://demo.arviom.com.ua/eng/video/iot-based-smart-water-management-in-building-202508.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em300-sld-zld
+Відео (EN): https://engineering.arviom.com/video/iot-based-smart-water-management-in-building-202508.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1362,9 +1362,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em300-th
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-temperature-and-humidity-monitoring-solution-20240.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em300-th
+Відео (EN): https://engineering.arviom.com/video/milesight-temperature-and-humidity-monitoring-solution-20240.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1392,9 +1392,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em320-th
-Відео (EN): https://demo.arviom.com.ua/eng/video/em320-th-temperature-and-humidity-sensor-product-videography.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em320-th
+Відео (EN): https://engineering.arviom.com/video/em320-th-temperature-and-humidity-sensor-product-videography.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1422,9 +1422,9 @@
 
 Виробник: Milesight · Серія: Серія EM300 · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/catalog.html#m-em320-tilt
-Відео (EN): https://demo.arviom.com.ua/eng/video/em320-tilt-tilt-sensor-videography-202303.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/catalog.html#m-em320-tilt
+Відео (EN): https://engineering.arviom.com/video/em320-tilt-tilt-sensor-videography-202303.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1452,9 +1452,9 @@
 
 Виробник: Milesight · Серія: Серія EM400 · відстань і рівень · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em400.html#m-em400-tld
-Відео (EN): https://demo.arviom.com.ua/eng/video/em400-series-distance-level-measuring-sensors-202304.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em400.html#m-em400-tld
+Відео (EN): https://engineering.arviom.com/video/em400-series-distance-level-measuring-sensors-202304.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1481,9 +1481,9 @@
 
 Виробник: Milesight · Серія: Серія EM400 · відстань і рівень · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em400.html#m-em400-mud
-Відео (EN): https://demo.arviom.com.ua/eng/video/em400-series-distance-level-measuring-sensors-202304.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em400.html#m-em400-mud
+Відео (EN): https://engineering.arviom.com/video/em400-series-distance-level-measuring-sensors-202304.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1510,10 +1510,10 @@
 
 Виробник: Milesight · Серія: Серія EM400 · відстань і рівень · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em400.html#m-em400-udl
+Сторінка: https://engineering.arviom.com/s-em400.html#m-em400-udl
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/em400-udl-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/em400-series-distance-level-measuring-sensors-202304.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/em400-series-distance-level-measuring-sensors-202304.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1540,10 +1540,10 @@
 
 Виробник: Milesight · Серія: Серія EM400 · відстань і рівень · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em400.html#m-em410-rdl
+Сторінка: https://engineering.arviom.com/s-em400.html#m-em410-rdl
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/em41x-rdl-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/em410-rdl-radar-distance-and-level-sensor-202504.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/em410-rdl-radar-distance-and-level-sensor-202504.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1572,9 +1572,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-co2
-Відео (EN): https://demo.arviom.com.ua/eng/video/em500-environment-monitoring-sensors-202403.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-co2
+Відео (EN): https://engineering.arviom.com/video/em500-environment-monitoring-sensors-202403.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1602,9 +1602,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-lgt
-Відео (EN): https://demo.arviom.com.ua/eng/video/em500-environment-monitoring-sensors-202403.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-lgt
+Відео (EN): https://engineering.arviom.com/video/em500-environment-monitoring-sensors-202403.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1632,9 +1632,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-pp
-Відео (EN): https://demo.arviom.com.ua/eng/video/em500-environment-monitoring-sensors-202403.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-pp
+Відео (EN): https://engineering.arviom.com/video/em500-environment-monitoring-sensors-202403.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1662,9 +1662,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-pt100
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-pt100-industrial-temperature-sensor-202303.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-pt100
+Відео (EN): https://engineering.arviom.com/video/milesight-pt100-industrial-temperature-sensor-202303.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1692,9 +1692,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-smtc
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-em500-smt-lorawan-soil-moisture-sensor-202303.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-smtc
+Відео (EN): https://engineering.arviom.com/video/milesight-em500-smt-lorawan-soil-moisture-sensor-202303.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1722,9 +1722,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-swl
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-em500-swl-lorawan-submersible-water-level-sensor-2.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-swl
+Відео (EN): https://engineering.arviom.com/video/milesight-em500-swl-lorawan-submersible-water-level-sensor-2.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1752,9 +1752,9 @@
 
 Виробник: Milesight · Серія: Серія EM500 · промислові · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-em500.html#m-em500-udl
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-em500-udl-lorawan-ultrasonic-distance-level-sensor.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-em500.html#m-em500-udl
+Відео (EN): https://engineering.arviom.com/video/milesight-em500-udl-lorawan-ultrasonic-distance-level-sensor.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1784,9 +1784,9 @@
 
 Виробник: Milesight · Серія: Серія AT · трекери · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-at.html#m-at101
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-at101-outdoor-asset-tracker-202305.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-at.html#m-at101
+Відео (EN): https://engineering.arviom.com/video/milesight-at101-outdoor-asset-tracker-202305.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1815,9 +1815,9 @@
 
 Виробник: Milesight · Серія: IoT-дисплей · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-iot-display.html#m-ds3604
-Відео (EN): https://demo.arviom.com.ua/eng/video/ds3604-iot-e-link-display-videography-202303.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-iot-display.html#m-ds3604
+Відео (EN): https://engineering.arviom.com/video/ds3604-iot-e-link-display-videography-202303.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1843,9 +1843,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-sg50
-Відео (EN): https://demo.arviom.com.ua/eng/video/introducing-sg50-ultra-low-power-solar-lorawan-gateway-20231.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-sg50
+Відео (EN): https://engineering.arviom.com/video/introducing-sg50-ultra-low-power-solar-lorawan-gateway-20231.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1871,9 +1871,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-ug63
-Відео (EN): https://demo.arviom.com.ua/eng/video/milesight-ug63-mini-lorawan-gateway.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-ug63
+Відео (EN): https://engineering.arviom.com/video/milesight-ug63-mini-lorawan-gateway.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1896,9 +1896,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-ug56
-Відео (EN): https://demo.arviom.com.ua/eng/video/unboxing-ug56-lorawan-gateway-202301.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-ug56
+Відео (EN): https://engineering.arviom.com/video/unboxing-ug56-lorawan-gateway-202301.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1923,9 +1923,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-ug65
-Відео (EN): https://demo.arviom.com.ua/eng/video/ug65-lorawan-gateway-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-ug65
+Відео (EN): https://engineering.arviom.com/video/ug65-lorawan-gateway-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1950,9 +1950,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-ug67
-Відео (EN): https://demo.arviom.com.ua/eng/video/ug67-lorawan-gateway-202203.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-ug67
+Відео (EN): https://engineering.arviom.com/video/ug67-lorawan-gateway-202203.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -1978,10 +1978,10 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-eg71
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-eg71
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/eg71-datasheet-en.pdf
-Відео (EN): https://demo.arviom.com.ua/eng/video/introduce-eg71-building-iot-gateway-for-wired-and-wireless-i.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Відео (EN): https://engineering.arviom.com/video/introduce-eg71-building-iot-gateway-for-wired-and-wireless-i.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -2005,9 +2005,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-шлюзи · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-gateways.html#m-ups01
+Сторінка: https://engineering.arviom.com/s-gateways.html#m-ups01
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/ups01-datasheet-en.pdf
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -2030,9 +2030,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-контролери · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-controllers.html#m-uc100
-Відео (EN): https://demo.arviom.com.ua/eng/video/uc100-iot-controller-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-controllers.html#m-uc100
+Відео (EN): https://engineering.arviom.com/video/uc100-iot-controller-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -2056,9 +2056,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-контролери · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-controllers.html#m-uc300
-Відео (EN): https://demo.arviom.com.ua/eng/video/uc300-iot-controller-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-controllers.html#m-uc300
+Відео (EN): https://engineering.arviom.com/video/uc300-iot-controller-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -2083,9 +2083,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-контролери · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-controllers.html#m-uc51x
-Відео (EN): https://demo.arviom.com.ua/eng/video/uc51x-lorawan-solenoid-valve-controller-202211.mp4
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-controllers.html#m-uc51x
+Відео (EN): https://engineering.arviom.com/video/uc51x-lorawan-solenoid-valve-controller-202211.mp4
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -2112,8 +2112,8 @@
 
 Виробник: Milesight · Серія: LoRaWAN-контролери · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-controllers.html#m-uc50x
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Сторінка: https://engineering.arviom.com/s-controllers.html#m-uc50x
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 
@@ -2139,9 +2139,9 @@
 
 Виробник: Milesight · Серія: LoRaWAN-контролери · Постачальник в Україні: ARVIOM
 
-Сторінка: https://demo.arviom.com.ua/eng/s-controllers.html#m-uc701
+Сторінка: https://engineering.arviom.com/s-controllers.html#m-uc701
 Даташит (EN): https://resource.milesight.com/milesight/iot/document/uc701-datasheet.pdf
-Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://demo.arviom.com.ua/eng/#contact
+Ціна й наявність: B2B-портал ARVIOM (партнерам) або запит на https://engineering.arviom.com/#contact
 
 ## Характеристики
 

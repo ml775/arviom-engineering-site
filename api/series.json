@@ -3,405 +3,405 @@
   {
    "model": "CT10x",
    "name": "Розумний трансформатор струму",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ct10x.json"
+   "json": "https://engineering.arviom.com/api/models/ct10x.json"
   },
   {
    "model": "CT3xx",
    "name": "Розумний трансформатор струму",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ct3xx.json"
+   "json": "https://engineering.arviom.com/api/models/ct3xx.json"
   },
   {
    "model": "CTH01",
    "name": "Хаб моніторингу енергії",
-   "json": "https://demo.arviom.com.ua/eng/api/models/cth01.json"
+   "json": "https://engineering.arviom.com/api/models/cth01.json"
   }
  ],
  "Серія AM · якість повітря": [
   {
    "model": "AM102/AM102L",
    "name": "Датчик якості повітря 2-в-1",
-   "json": "https://demo.arviom.com.ua/eng/api/models/am102-am102l.json"
+   "json": "https://engineering.arviom.com/api/models/am102-am102l.json"
   },
   {
    "model": "AM103/AM103L",
    "name": "Датчик якості повітря 3-в-1",
-   "json": "https://demo.arviom.com.ua/eng/api/models/am103-am103l.json"
+   "json": "https://engineering.arviom.com/api/models/am103-am103l.json"
   },
   {
    "model": "AM300 Series",
    "name": "Датчик якості повітря «все в одному»",
-   "json": "https://demo.arviom.com.ua/eng/api/models/am300-series.json"
+   "json": "https://engineering.arviom.com/api/models/am300-series.json"
   }
  ],
  "Присутність і підрахунок людей": [
   {
    "model": "VS121",
    "name": "ШІ-датчик зайнятості робочих місць",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs121.json"
+   "json": "https://engineering.arviom.com/api/models/vs121.json"
   },
   {
    "model": "VS125 Series",
    "name": "ШІ-лічильник людей зі стереозором",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs125-series.json"
+   "json": "https://engineering.arviom.com/api/models/vs125-series.json"
   },
   {
    "model": "VS126",
    "name": "ШІ-лічильник людей для високих стель",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs126.json"
+   "json": "https://engineering.arviom.com/api/models/vs126.json"
   },
   {
    "model": "VS133",
    "name": "ToF-лічильник людей зі ШІ",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs133.json"
+   "json": "https://engineering.arviom.com/api/models/vs133.json"
   },
   {
    "model": "VS135",
    "name": "ToF-лічильник людей",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs135.json"
+   "json": "https://engineering.arviom.com/api/models/vs135.json"
   },
   {
    "model": "VS330",
    "name": "Датчик зайнятості санвузла",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs330.json"
+   "json": "https://engineering.arviom.com/api/models/vs330.json"
   },
   {
    "model": "VS340/VS341",
    "name": "Датчик зайнятості столу й місця",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs340-vs341.json"
+   "json": "https://engineering.arviom.com/api/models/vs340-vs341.json"
   },
   {
    "model": "VS350",
    "name": "Лічильник людей у проході",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs350.json"
+   "json": "https://engineering.arviom.com/api/models/vs350.json"
   },
   {
    "model": "VS351",
    "name": "Міні-лічильник людей (термопара, ШІ)",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs351.json"
+   "json": "https://engineering.arviom.com/api/models/vs351.json"
   },
   {
    "model": "VS360",
    "name": "ІЧ-лічильник людей на промінь",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs360.json"
+   "json": "https://engineering.arviom.com/api/models/vs360.json"
   },
   {
    "model": "VS373",
    "name": "Радарний датчик падіння",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs373.json"
+   "json": "https://engineering.arviom.com/api/models/vs373.json"
   },
   {
    "model": "VS370",
    "name": "Радарний датчик присутності",
-   "json": "https://demo.arviom.com.ua/eng/api/models/vs370.json"
+   "json": "https://engineering.arviom.com/api/models/vs370.json"
   }
  ],
  "Серія WT · термостати": [
   {
    "model": "WT10x",
    "name": "Термостат радіатора",
-   "json": "https://demo.arviom.com.ua/eng/api/models/wt10x.json"
+   "json": "https://engineering.arviom.com/api/models/wt10x.json"
   },
   {
    "model": "WT2x1",
    "name": "Розумний термостат",
-   "json": "https://demo.arviom.com.ua/eng/api/models/wt2x1.json"
+   "json": "https://engineering.arviom.com/api/models/wt2x1.json"
   },
   {
    "model": "WT30x",
    "name": "Термостат фанкойла",
-   "json": "https://demo.arviom.com.ua/eng/api/models/wt30x.json"
+   "json": "https://engineering.arviom.com/api/models/wt30x.json"
   },
   {
    "model": "WT401",
    "name": "Бездротовий термостат",
-   "json": "https://demo.arviom.com.ua/eng/api/models/wt401.json"
+   "json": "https://engineering.arviom.com/api/models/wt401.json"
   },
   {
    "model": "UC711 + WT401",
    "name": "Комплект термостата PTAC",
-   "json": "https://demo.arviom.com.ua/eng/api/models/uc711-wt401.json"
+   "json": "https://engineering.arviom.com/api/models/uc711-wt401.json"
   }
  ],
  "Серія GS · запахи й вейп": [
   {
    "model": "GS301",
    "name": "Датчик запаху в санвузлі",
-   "json": "https://demo.arviom.com.ua/eng/api/models/gs301.json"
+   "json": "https://engineering.arviom.com/api/models/gs301.json"
   },
   {
    "model": "GS601",
    "name": "Детектор вейпу",
-   "json": "https://demo.arviom.com.ua/eng/api/models/gs601.json"
+   "json": "https://engineering.arviom.com/api/models/gs601.json"
   }
  ],
  "Серія CoWork · офіс": [
   {
    "model": "WS101",
    "name": "Розумна кнопка",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws101.json"
+   "json": "https://engineering.arviom.com/api/models/ws101.json"
   },
   {
    "model": "WS156",
    "name": "Панель сценаріїв",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws156.json"
+   "json": "https://engineering.arviom.com/api/models/ws156.json"
   },
   {
    "model": "WS201",
    "name": "Датчик заповнення ємностей",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws201.json"
+   "json": "https://engineering.arviom.com/api/models/ws201.json"
   },
   {
    "model": "WS202",
    "name": "Датчик руху й освітленості",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws202.json"
+   "json": "https://engineering.arviom.com/api/models/ws202.json"
   },
   {
    "model": "WS203",
    "name": "Датчик руху, температури й вологості",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws203.json"
+   "json": "https://engineering.arviom.com/api/models/ws203.json"
   },
   {
    "model": "WS301",
    "name": "Магнітний датчик відкриття",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws301.json"
+   "json": "https://engineering.arviom.com/api/models/ws301.json"
   },
   {
    "model": "WS302",
    "name": "Датчик рівня шуму",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws302.json"
+   "json": "https://engineering.arviom.com/api/models/ws302.json"
   },
   {
    "model": "WS303",
    "name": "Міні-датчик протічки",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws303.json"
+   "json": "https://engineering.arviom.com/api/models/ws303.json"
   },
   {
    "model": "WS50x",
    "name": "Розумний настінний вимикач",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws50x.json"
+   "json": "https://engineering.arviom.com/api/models/ws50x.json"
   },
   {
    "model": "WS51x",
    "name": "Розумна настінна розетка",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws51x.json"
+   "json": "https://engineering.arviom.com/api/models/ws51x.json"
   },
   {
    "model": "WS523",
    "name": "Розумна переносна розетка",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws523.json"
+   "json": "https://engineering.arviom.com/api/models/ws523.json"
   },
   {
    "model": "WS558",
    "name": "Контролер освітлення",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ws558.json"
+   "json": "https://engineering.arviom.com/api/models/ws558.json"
   }
  ],
  "Серія WTS · метеостанція": [
   {
    "model": "WTS506",
    "name": "IoT-метеостанція",
-   "json": "https://demo.arviom.com.ua/eng/api/models/wts506.json"
+   "json": "https://engineering.arviom.com/api/models/wts506.json"
   }
  ],
  "Серія TS · температура": [
   {
    "model": "TS60x",
    "name": "Датчик температури й вологості",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ts60x.json"
+   "json": "https://engineering.arviom.com/api/models/ts60x.json"
   },
   {
    "model": "TS101",
    "name": "Зануреннєвий датчик температури",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ts101.json"
+   "json": "https://engineering.arviom.com/api/models/ts101.json"
   },
   {
    "model": "TS201",
    "name": "Бюджетний датчик температури",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ts201.json"
+   "json": "https://engineering.arviom.com/api/models/ts201.json"
   },
   {
    "model": "TS301/TS302",
    "name": "LoRaWAN-датчик температури",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ts301-ts302.json"
+   "json": "https://engineering.arviom.com/api/models/ts301-ts302.json"
   }
  ],
  "Серія EM300": [
   {
    "model": "EM300-CL",
    "name": "Ємнісний датчик рівня",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em300-cl.json"
+   "json": "https://engineering.arviom.com/api/models/em300-cl.json"
   },
   {
    "model": "EM300-DI",
    "name": "Лічильник імпульсів",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em300-di.json"
+   "json": "https://engineering.arviom.com/api/models/em300-di.json"
   },
   {
    "model": "EM300-MCS",
    "name": "Магнітний датчик відкриття",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em300-mcs.json"
+   "json": "https://engineering.arviom.com/api/models/em300-mcs.json"
   },
   {
    "model": "EM300-MLD",
    "name": "Мембранний датчик протічки",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em300-mld.json"
+   "json": "https://engineering.arviom.com/api/models/em300-mld.json"
   },
   {
    "model": "EM300-SLD/ZLD",
    "name": "Точковий / зональний датчик протічки",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em300-sld-zld.json"
+   "json": "https://engineering.arviom.com/api/models/em300-sld-zld.json"
   },
   {
    "model": "EM300-TH",
    "name": "Датчик температури й вологості",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em300-th.json"
+   "json": "https://engineering.arviom.com/api/models/em300-th.json"
   },
   {
    "model": "EM320-TH",
    "name": "Датчик температури й вологості",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em320-th.json"
+   "json": "https://engineering.arviom.com/api/models/em320-th.json"
   },
   {
    "model": "EM320-TILT",
    "name": "Датчик нахилу",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em320-tilt.json"
+   "json": "https://engineering.arviom.com/api/models/em320-tilt.json"
   }
  ],
  "Серія EM400 · відстань і рівень": [
   {
    "model": "EM400-TLD",
    "name": "Лазерний ToF-датчик відстані",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em400-tld.json"
+   "json": "https://engineering.arviom.com/api/models/em400-tld.json"
   },
   {
    "model": "EM400-MUD",
    "name": "Багатофункціональний датчик відстані",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em400-mud.json"
+   "json": "https://engineering.arviom.com/api/models/em400-mud.json"
   },
   {
    "model": "EM400-UDL",
    "name": "Ультразвуковий датчик відстані й рівня",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em400-udl.json"
+   "json": "https://engineering.arviom.com/api/models/em400-udl.json"
   },
   {
    "model": "EM410-RDL",
    "name": "Радарний датчик відстані й рівня",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em410-rdl.json"
+   "json": "https://engineering.arviom.com/api/models/em410-rdl.json"
   }
  ],
  "Серія EM500 · промислові": [
   {
    "model": "EM500-CO2",
    "name": "Вуличний датчик CO₂",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em500-co2.json"
+   "json": "https://engineering.arviom.com/api/models/em500-co2.json"
   },
   {
    "model": "EM500-LGT",
    "name": "Датчик освітленості",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em500-lgt.json"
+   "json": "https://engineering.arviom.com/api/models/em500-lgt.json"
   },
   {
    "model": "EM500-PP",
    "name": "Датчик тиску в трубі",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em500-pp.json"
+   "json": "https://engineering.arviom.com/api/models/em500-pp.json"
   },
   {
    "model": "EM500-PT100",
    "name": "Платиновий датчик температури (PT100)",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em500-pt100.json"
+   "json": "https://engineering.arviom.com/api/models/em500-pt100.json"
   },
   {
    "model": "EM500-SMTC",
    "name": "Датчик вологості, температури й провідності ґрунту",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em500-smtc.json"
+   "json": "https://engineering.arviom.com/api/models/em500-smtc.json"
   },
   {
    "model": "EM500-SWL",
    "name": "Заглибний датчик рівня води",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em500-swl.json"
+   "json": "https://engineering.arviom.com/api/models/em500-swl.json"
   },
   {
    "model": "EM500-UDL",
    "name": "Ультразвуковий датчик відстані й рівня",
-   "json": "https://demo.arviom.com.ua/eng/api/models/em500-udl.json"
+   "json": "https://engineering.arviom.com/api/models/em500-udl.json"
   }
  ],
  "Серія AT · трекери": [
   {
    "model": "AT101",
    "name": "Вуличний GPS-трекер",
-   "json": "https://demo.arviom.com.ua/eng/api/models/at101.json"
+   "json": "https://engineering.arviom.com/api/models/at101.json"
   }
  ],
  "IoT-дисплей": [
   {
    "model": "DS3604",
    "name": "E-ink дисплей LoRaWAN",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ds3604.json"
+   "json": "https://engineering.arviom.com/api/models/ds3604.json"
   }
  ],
  "LoRaWAN-шлюзи": [
   {
    "model": "SG50",
    "name": "Сонячний LoRaWAN-шлюз з наднизьким споживанням",
-   "json": "https://demo.arviom.com.ua/eng/api/models/sg50.json"
+   "json": "https://engineering.arviom.com/api/models/sg50.json"
   },
   {
    "model": "UG63",
    "name": "Міні LoRaWAN-шлюз",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ug63.json"
+   "json": "https://engineering.arviom.com/api/models/ug63.json"
   },
   {
    "model": "UG56",
    "name": "Промисловий LoRaWAN-шлюз",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ug56.json"
+   "json": "https://engineering.arviom.com/api/models/ug56.json"
   },
   {
    "model": "UG65",
    "name": "LoRaWAN-шлюз для приміщень",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ug65.json"
+   "json": "https://engineering.arviom.com/api/models/ug65.json"
   },
   {
    "model": "UG67",
    "name": "Вуличний LoRaWAN-шлюз",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ug67.json"
+   "json": "https://engineering.arviom.com/api/models/ug67.json"
   },
   {
    "model": "EG71",
    "name": "IoT-шлюз для будівель",
-   "json": "https://demo.arviom.com.ua/eng/api/models/eg71.json"
+   "json": "https://engineering.arviom.com/api/models/eg71.json"
   },
   {
    "model": "UPS01",
    "name": "Джерело безперебійного живлення",
-   "json": "https://demo.arviom.com.ua/eng/api/models/ups01.json"
+   "json": "https://engineering.arviom.com/api/models/ups01.json"
   }
  ],
  "LoRaWAN-контролери": [
   {
    "model": "UC100",
    "name": "Конвертер Modbus → LoRaWAN",
-   "json": "https://demo.arviom.com.ua/eng/api/models/uc100.json"
+   "json": "https://engineering.arviom.com/api/models/uc100.json"
   },
   {
    "model": "UC300",
    "name": "IoT-контролер LoRaWAN і 4G",
-   "json": "https://demo.arviom.com.ua/eng/api/models/uc300.json"
+   "json": "https://engineering.arviom.com/api/models/uc300.json"
   },
   {
    "model": "UC51x",
    "name": "Контролер електромагнітних клапанів",
-   "json": "https://demo.arviom.com.ua/eng/api/models/uc51x.json"
+   "json": "https://engineering.arviom.com/api/models/uc51x.json"
   },
   {
    "model": "UC50x",
    "name": "Багатоінтерфейсний контролер",
-   "json": "https://demo.arviom.com.ua/eng/api/models/uc50x.json"
+   "json": "https://engineering.arviom.com/api/models/uc50x.json"
   },
   {
    "model": "UC701",
    "name": "Контролер кондиціонера",
-   "json": "https://demo.arviom.com.ua/eng/api/models/uc701.json"
+   "json": "https://engineering.arviom.com/api/models/uc701.json"
   }
  ]
 }

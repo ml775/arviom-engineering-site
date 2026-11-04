@@ -3,11 +3,11 @@
   "noindex": false,
   "name": "ARVIOM Engineering",
   "description": "Бездротова автоматизація об'єктів на LoRaWAN: датчики, шлюзи й контролери Milesight з налаштуванням і підтримкою в Україні. Рішення, впровадження, навчання для партнерів.",
-  "og_image": "img/logo/og-default.png",
+  "og_image": "img/logo/og-default-v2.png",
   "pages": {
     "index.html": {
       "description": "Бездротова автоматизація об'єктів на LoRaWAN: датчики, шлюзи й контролери Milesight з налаштуванням і підтримкою в Україні. Рішення, впровадження, навчання для партнерів.",
-      "image": "img/logo/og-default.png"
+      "image": "img/logo/og-default-v2.png"
     },
     "vprovadzhennia.html": {
       "description": "Реалізовані IoT-проєкти на обладнанні Milesight: Україна разом із партнерами-інтеграторами та 100 кейсів Milesight у світі за галузями й напрямами."

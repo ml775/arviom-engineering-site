@@ -8,3 +8,4 @@
 - Сторінка кейсу генерується `build/gen_cases_v2.py` (стиль milesight.com/success-stories/iot-non-invasive-electricity-monitoring-solution-in-europe у нашому фірмовому стилі); старий `case_page` у gen_cases.py не використовується.
 - Новини: `content/news.json` (date, tag, title, image, link). Головна показує 4 останні, `news.html` — усі.
 - Форма на головній (#contact) шле POST JSON на n8n-вебхук https://n8n.arviom.com.ua/webhook/eng-lead (workflow «ENG site — заявка з форми», id 1VSgERxGGnzjptdi) → Telegram Максиму. Поле website — honeypot.
+- SEO/favicon: `build/seo.py` (останній крок build) додає в усі сторінки robots, description, canonical, favicon, Open Graph. Налаштування і перевизначення для окремих сторінок — `content/site.json` (url, noindex, pages). При переїзді на бойовий домен: змінити `url`, поставити `noindex: false`, зібрати.

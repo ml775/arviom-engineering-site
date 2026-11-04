@@ -82,4 +82,5 @@ if __name__ == '__main__':
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_news.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_learn.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_agents.py')], check=True)
+    subprocess.run([sys.executable, os.path.join(ROOT, 'build/seo.py')], check=True)  # завжди останнім
     print('ok: index.html, catalog.html, products.html')

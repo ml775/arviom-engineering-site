@@ -11,7 +11,7 @@ import json, os, re, sys, html, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'build'))
 from uk import UK, SERIES as SERIES_UK
-BASE = 'https://demo.arviom.com.ua/eng/'
+BASE = __import__('json').load(open(os.path.join(ROOT, 'content/site.json')))['url']
 C = os.path.join(ROOT, 'content/')
 ser = json.load(open(C + 'catalog/sensor_series.json')); cat = json.load(open(C + 'catalog/iot_catalog.json'))
 specs = json.load(open(C + 'catalog/specs.json')); files = json.load(open(C + 'catalog/series_files.json'))

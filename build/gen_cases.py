@@ -148,6 +148,9 @@ LCSS = """<style>
 .lc .mt .pin::before{content:"";width:8px;height:8px;border:1.5px solid var(--muted);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
 .lc .mt .ind{color:var(--blue)}
 .lc[hidden],.lc.pg{display:none!important}
+.cpl{font:inherit;font-size:14px;margin-left:14px;border:1px solid var(--line);background:#fff;border-radius:6px;padding:5px 12px;color:var(--ink);cursor:pointer}
+.cpl:hover{border-color:var(--blue);color:var(--blue)}
+.cpl.ok{border-color:var(--blue);background:var(--blue);color:#fff}
 .pgn{display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-top:30px}
 .pgn button{font:inherit;font-size:14px;min-width:30px;height:30px;border:0;border-radius:50%;background:none;color:var(--text);cursor:pointer;padding:0 6px}
 .pgn button.on{background:var(--blue);color:#fff}
@@ -173,13 +176,22 @@ cnt.textContent=n;none.hidden=n>0;
 [].forEach.call(document.querySelectorAll('.fl details'),function(d){var k=d.querySelectorAll('input:checked').length,i=d.querySelector('summary i');if(i)i.textContent='('+k+')'});
 var P=Math.ceil(n/PAGE),h='';if(P>1){h+='<button type="button" data-p="'+(page-1)+'"'+(page<=1?' disabled':'')+' aria-label="Назад">‹</button>';
 var gap=false;for(var i=1;i<=P;i++){if(P>7&&i>2&&i<P-1&&Math.abs(i-page)>1){if(!gap)h+='<span>…</span>';gap=true;continue}gap=false;h+='<button type="button" data-p="'+i+'"'+(i===page?' class="on"':'')+'>'+i+'</button>'}
-h+='<button type="button" data-p="'+(page+1)+'"'+(page>=P?' disabled':'')+' aria-label="Далі">›</button>'}pgn.innerHTML=h}
+h+='<button type="button" data-p="'+(page+1)+'"'+(page>=P?' disabled':'')+' aria-label="Далі">›</button>'}pgn.innerHTML=h;
+var q=[];G.forEach(function(g){if(S[g].length)q.push(g+'='+S[g].map(encodeURIComponent).join(','))});if(page>1)q.push('page='+page);
+var nh=q.length?'#'+q.join('&'):'';if(location.hash!==nh&&(nh||location.hash))history.replaceState(null,'',location.pathname+location.search+nh)}
 pgn.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b||b.disabled)return;page=+b.dataset.p;apply();grid.scrollIntoView({behavior:'smooth',block:'start'})});
 boxes.forEach(function(b){b.addEventListener('change',function(){page=1;apply()})});
 var sb=document.querySelector('.fl .sbox input');if(sb)sb.addEventListener('input',function(){var q=sb.value.trim().toLowerCase();[].forEach.call(sb.closest('.opts').querySelectorAll('label'),function(l){l.hidden=q&&l.textContent.toLowerCase().indexOf(q)<0})});
 document.querySelector('.fl .rst').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});page=1;apply()});
 var t=document.querySelector('.fl-t');t.addEventListener('click',function(){var f=document.querySelector('.fl');f.classList.toggle('open');t.setAttribute('aria-expanded',f.classList.contains('open'))});
-var h=location.hash.slice(1),hb=boxes.filter(function(b){return b.name==='dir'&&b.value===h})[0];if(hb)hb.checked=true;
+var h=location.hash.slice(1);
+if(h.indexOf('=')>-1){h.split('&').forEach(function(p){var kv=p.split('='),k=kv[0],v=kv.slice(1).join('=');if(k==='page'){page=Math.max(1,parseInt(v,10)||1);return}
+var vs=v.split(',').map(decodeURIComponent);boxes.forEach(function(b){if(b.name===k&&vs.indexOf(b.value)>-1)b.checked=true})});
+[].forEach.call(document.querySelectorAll('.fl details'),function(d){if(d.querySelector('input:checked'))d.open=true})}
+else{var hb=boxes.filter(function(b){return b.name==='dir'&&b.value===h})[0];if(hb)hb.checked=true}
+var cb=document.querySelector('.cpl');if(cb)cb.addEventListener('click',function(){var u=location.href,done=function(){var o=cb.textContent;cb.textContent='Скопійовано';cb.classList.add('ok');setTimeout(function(){cb.textContent=o;cb.classList.remove('ok')},1800)};
+if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(u).then(done,function(){fb()});else fb();
+function fb(){var a=document.createElement('textarea');a.value=u;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);done()}});
 apply();
 var tr=document.querySelector('.lh-cards');[].forEach.call(document.querySelectorAll('.lh-nav button'),function(b){b.addEventListener('click',function(){tr.scrollBy({left:(b.dataset.d==='1'?1:-1)*(tr.firstElementChild.offsetWidth+16)})})});
 })();
@@ -272,7 +284,7 @@ def build():
 <div class="lh-side"><div class="lh-cards">{side}</div><div class="lh-nav"><button type="button" data-d="-1" aria-label="Назад">‹</button><button type="button" data-d="1" aria-label="Далі">›</button></div></div></div></div>
 <main><div class="wrap lb">
 <aside class="fl" aria-label="Фільтри"><h2>Фільтр</h2><button type="button" class="fl-t" aria-expanded="false">Фільтри</button>{filters}<button type="button" class="rst grp">Скинути фільтри</button>{promo}</aside>
-<div class="lr"><div class="top"><span>Знайдено: <b class="cnt">{len(items)}</b></span><span>Проєкти в Україні — разом із партнерами-інтеграторами</span></div>
+<div class="lr"><div class="top"><span>Знайдено: <b class="cnt">{len(items)}</b> <button type="button" class="cpl">Скопіювати посилання</button></span><span>Проєкти в Україні — разом із партнерами-інтеграторами</span></div>
 <div class="lg">{cards}</div><p class="none" hidden>За цими фільтрами нічого не знайдено. Спробуйте прибрати частину позначок.</p><nav class="pgn" aria-label="Сторінки"></nav>
 <p class="note">Кейси Milesight — стислий виклад нашими словами за матеріалами milesight.com, фото — Milesight.</p></div>
 </div>

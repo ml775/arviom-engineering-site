@@ -88,5 +88,10 @@
   "file": "UF51.txt",
   "title": "uf51-datasheet-en",
   "url": "https://resource.milesight.com/milesight/iot/document/uf51-datasheet-en.pdf"
+ },
+ "FT101": {
+  "file": "FT101.txt",
+  "title": "ft101-datasheet-en",
+  "url": "https://resource.milesight.com/milesight/iot/document/ft101-datasheet-en.pdf"
  }
 }

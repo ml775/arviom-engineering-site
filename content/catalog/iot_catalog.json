@@ -702,6 +702,14 @@
      "UPS01",
      "Uninterruptible Power Supply"
     ]
+   },
+   {
+    "href": "https://www.milesight.com/product/accessories/ft101",
+    "img": "https://www.milesight.com/static/pc/en/iot/product/accessories/31-ft101-milesight-field-tester/ft101-milesight-field-tester-1.jpg",
+    "title": [
+     "FT101",
+     "Польовий тестер LoRaWAN"
+    ]
    }
   ]
  },

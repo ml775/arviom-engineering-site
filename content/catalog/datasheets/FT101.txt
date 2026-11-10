@@ -1,0 +1,99 @@
+                                                                                    FT101 Datasheet
+
+
+Milesight
+Field Tester
+Featuring LoRaWAN®
+
+
+FT101
+
+
+
+
+                              Milesight Field Tester is a portable LoRaWAN® network testing device.
+                              With different kinds of antennas, it can support global LoRaWAN®
+                              frequencies to record the signal status and packet loss rate to monitor the
+                              network status from field and verify the coverage of different LoRaWAN®
+                              gateways, to optimize the best places to deploy LoRaWAN® network
+                              devices.
+                              Equipped with a 5.72-inch touchscreen display, users are able to operate
+                              the signal test procedure and monitor the real-time network status
+                              friendly. With a built-in battery and type-C port, it can work for around 8
+                              hours and support type-C power bank charge to bring the device
+                              everywhere easily.
+
+   Features
+     Octa-core processor with Android system and big memory for flexible integration
+     Built-in one-channel SX1262 LoRaWAN® module for signal test
+     Support global LoRaWAN® frequencies with different antennas
+     Compatible with any standard LoRaWAN® gateways and global mainstream network servers
+     Compatible with Mileisght ToolBox App to configure Milesight sensors via NFC or Bluetooth
+     Support noise scan to optimize the locations and configurations of gateways
+     Support signal evaluation to optimize the locations and configurations of devices
+                                                                                   FT101 Datasheet
+
+
+   Support ping pong to simulate the connection between end device and gateway for cost
+    effective and efficient field testing.
+   Support to simulate the parameters of Milesight devices for accurate results
+   Support to get RSSI and SNR of the gateway and statistics of packet loss rate between
+    gateway and devices
+   Support GNSS positioning to record the location of the test field
+   Straightforward user interfaces presented on a 5.72-inch touchable LCD screen
+   With a built-in rechargeable lithium battery that works for around 8 hours
+   Support real-time data backup and charge through a USB type-C port
+
+
+ Specifications
+Display
+Screen                      5.72-inch TP LCD Touch Screen
+Resolution                  1440 x 720 Pixels
+Hardware System
+CPU                         Octa-core MTK6762, 2 GHz
+Memory                      4GB RAM + 64GB ROM
+Operating System            Android 12.0
+NFC                         Support ISO/IEC 14443A Protocol, Reading Distance: 1-3cm
+Extendable Storage          1 × Micro SD Slot Support up to 256G
+LoRaWAN®
+Channel                     1
+Antenna Connector           1 × 50 Ω SMA Female Connector
+Frequency Band1             CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4
+Sensitivity                 -137dBm@125kHz
+Max Output Power            19dBm (470 MHz) /16dBm (868 MHz)/22dBm (915 MHz)
+Protocol                    LoRaWAN® V1.0.3
+Work Mode                   OTAA Class A
+Interfaces
+                            IEEE 802.11 b/g/n, 2.4 GHz
+Wi-Fi
+                            IEEE 802.11 a/n/ac, 5 GHz
+Bluetooth                   Bluetooth 4.0 (BLE)
+GNSS                        GPS/Glonass/Beidou/Galileo
+USB                         1 x USB 3.0 Type-C Port for Power & OTG
+Physical Characteristics
+                                                                                       FT101 Datasheet
+
+
+                                   1. Built-in 4.3V/4300mAh Lithium-iron Chargeable Battery
+Power Supply
+                                   2. 5V⎓ 2A by USB Type-C
+Battery Life3                      Around 8 Hours (Standby Mode: >300h)
+Operating Temperature              -10°C - 50°C
+Storage Temperature                -20°C - 60°C
+Relative Humidity                  95% (Non-condensing)
+Color                              Black
+Ingress Protection                 IP65
+Dimension                          178 × 83 × 17 mm (7 × 3.26 × 0.67 in)
+Weight                             242 g (Without Antenna)
+Approvals
+Regulatory                         CE
+1
+    It requires different antennas for different frequencies.
+3
+    Tested under laboratory conditions and for guideline purposes only.
+
+
+
+
+ Dimensions(mm)
+

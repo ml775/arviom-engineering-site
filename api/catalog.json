@@ -1,7 +1,7 @@
 {
  "updated": "2026-11-10",
  "source": "https://engineering.arviom.com/",
- "count": 83,
+ "count": 84,
  "models": [
   {
    "model": "CT10x",
@@ -2854,6 +2854,41 @@
      "Захист IP67/IK08 та підігрів для суворих умов",
      "Plug-and-play, дві версії виходу (Type-C / M12) і моніторинг із пристроями Milesight"
     ]
+   }
+  },
+  {
+   "model": "FT101",
+   "name": "Польовий тестер LoRaWAN",
+   "series": "LoRaWAN-шлюзи",
+   "vendor": "Milesight",
+   "page": "https://engineering.arviom.com/s-gateways.html#m-ft101",
+   "markdown": "https://engineering.arviom.com/models/ft101.md",
+   "json": "https://engineering.arviom.com/api/models/ft101.json",
+   "image": "https://engineering.arviom.com/img/hd/ft101.webp",
+   "vendor_page": "https://www.milesight.com/product/accessories/ft101",
+   "price_and_stock": "Ціна й наявність — на B2B-порталі ARVIOM (для партнерів) або за запитом: https://engineering.arviom.com/#contact",
+   "datasheet": "https://resource.milesight.com/milesight/iot/document/ft101-datasheet-en.pdf",
+   "specs": {
+    "purpose": "Портативний тестер мережі LoRaWAN для обстеження об'єкта до монтажу: перевіряє покриття шлюзів, рівень сигналу й втрати пакетів, допомагає вибрати місця для шлюзів і датчиків.",
+    "measures": [
+     "Рівень сигналу RSSI і SNR",
+     "Втрати пакетів між датчиком і шлюзом",
+     "Радіошум у діапазоні (Noise Scan)",
+     "Координати точки заміру (GNSS)"
+    ],
+    "range_accuracy": "Чутливість −137 дБм @ 125 кГц; потужність передавача до 16 дБм (868 МГц), 19 дБм (470 МГц), 22 дБм (915 МГц)",
+    "probe": "Модуль LoRaWAN SX1262, 1 канал; LoRaWAN V1.0.3, OTAA Class A; режими Real-Time Testing, Signal Evaluation, PingPong, Noise Scan; імітація параметрів датчиків Milesight",
+    "interfaces": "1 × SMA-female 50 Ом (антена LoRaWAN); 1 × USB 3.0 Type-C (живлення, OTG, вивантаження даних); слот microSD до 256 ГБ; NFC ISO/IEC 14443A (1–3 см)",
+    "network": "LoRaWAN; Wi-Fi 802.11 b/g/n 2,4 ГГц та a/n/ac 5 ГГц; Bluetooth 4.0 (BLE); GNSS: GPS/ГЛОНАСС/BeiDou/Galileo",
+    "power": "Вбудований акумулятор 4,3 В / 4300 мА·год; заряджання 5 В / 2 А через USB Type-C, зокрема від павербанка",
+    "battery_life": "Близько 8 год роботи; в режимі очікування понад 300 год",
+    "ip": "IP65",
+    "temp": "від −10 °C до +50 °C; зберігання −20…+60 °C; вологість до 95 % без конденсату",
+    "config": "Застосунок Field Tester; Milesight ToolBox — налаштування датчиків Milesight через NFC або Bluetooth; експорт звітів",
+    "mounting": "Портативний, ручний",
+    "dimensions": "178 × 83 × 17 мм",
+    "weight": "242 г (без антени)",
+    "frequencies": "CN470 / IN865 / EU868 / RU864 / US915 / AU915 / KR920 / AS923-1…4 (для кожного діапазону — своя антена)"
    }
   },
   {

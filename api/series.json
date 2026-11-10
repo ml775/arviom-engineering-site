@@ -375,6 +375,11 @@
    "model": "UPS01",
    "name": "Джерело безперебійного живлення",
    "json": "https://engineering.arviom.com/api/models/ups01.json"
+  },
+  {
+   "model": "FT101",
+   "name": "Польовий тестер LoRaWAN",
+   "json": "https://engineering.arviom.com/api/models/ft101.json"
   }
  ],
  "LoRaWAN-контролери": [

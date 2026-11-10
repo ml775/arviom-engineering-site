@@ -5,7 +5,7 @@
 Ця сторінка — для ШІ-агентів. Усі дані нижче статичні, без JavaScript, можна брати напряму.
 
 ## Каталог (публічно)
-- [Усі моделі з характеристиками (JSON)](https://engineering.arviom.com/api/catalog.json): 83 моделей
+- [Усі моделі з характеристиками (JSON)](https://engineering.arviom.com/api/catalog.json): 84 моделей
 - [Моделі за серіями (JSON)](https://engineering.arviom.com/api/series.json)
 - Окрема модель: https://engineering.arviom.com/api/models/{slug}.json або https://engineering.arviom.com/models/{slug}.md (slug: нижній регістр, «/» і пробіли → «-», напр. ug65, em300-sld-zld, am102-am102l)
 - [Увесь каталог і рішення одним текстом](https://engineering.arviom.com/llms-full.txt)

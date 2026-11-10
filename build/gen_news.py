@@ -44,7 +44,8 @@ def article(x):
         elif 'h' in b: out.append(f'<h2>{e(b["h"])}</h2>')
         elif 'ul' in b: out.append('<ul>' + ''.join(f'<li>{e(i)}</li>' for i in b['ul']) + '</ul>')
         elif 'img' in b: out.append(f'<figure><img src="{e(b["img"])}" alt="" loading="lazy">' + (f'<figcaption>{e(b["cap"])}</figcaption>' if b.get('cap') else '') + '</figure>')
-    body = f'''{ACSS}<main><section class="blk"><div class="wrap"><article class="art"><div class="bc"><a href="./">Головна</a> › <a href="news.html">Новини</a></div><div class="meta"><span class="tag">{e(x['tag'])}</span>{int(d)} {MONTHS[int(m) - 1]} {y}</div><h1>{e(x['title'])}</h1>{''.join(out)}<div class="cta"><a class="btn" href="./#contact">Обговорити ваш об'єкт</a><a class="btn ghost" href="news.html">Усі новини</a></div></article></div></section></main>'''
+    cat = f'<a class="btn ghost" href="{e(x["catalog"]["href"])}">{e(x["catalog"]["t"])}</a>' if x.get('catalog') else ''
+    body = f'''{ACSS}<main><section class="blk"><div class="wrap"><article class="art"><div class="bc"><a href="./">Головна</a> › <a href="news.html">Новини</a></div><div class="meta"><span class="tag">{e(x['tag'])}</span>{int(d)} {MONTHS[int(m) - 1]} {y}</div><h1>{e(x['title'])}</h1>{''.join(out)}<div class="cta"><a class="btn" href="./#contact">Обговорити ваш об'єкт</a>{cat}<a class="btn ghost" href="news.html">Усі новини</a></div></article></div></section></main>'''
     fn = f"news-{x['slug']}.html"
     open(os.path.join(ROOT, fn), 'w').write(chrome(body, x['title'], 'news'))
     return fn

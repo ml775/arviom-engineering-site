@@ -7,14 +7,14 @@
    "date": "2026-11-10",
    "tag": "Обладнання",
    "title": "FT101: спершу міряємо, потім монтуємо",
-   "image": "img/news/ft101.webp",
-   "og": "img/news/ft101-og.jpg",
+   "image": "img/news/ft101-cover.webp",
+   "og": "img/news/ft101-cover-og.jpg",
    "slug": "ft101",
    "link": "news-ft101.html",
    "description": "Польовий тестер Milesight FT101: радіопланування LoRaWAN до монтажу, налаштування датчика на місці. Що отримують інтегратор і замовник.",
    "body": [
     {
-     "img": "img/news/ft101.webp",
+     "img": "img/news/ft101-cover.webp",
      "cap": "Milesight FT101. Джерело: Milesight"
     },
     {

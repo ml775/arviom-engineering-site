@@ -4,6 +4,13 @@
  "count": 4,
  "items": [
   {
+   "date": "2026-11-12",
+   "tag": "Подкаст",
+   "title": "LoRaWAN на практиці: 8 випусків українською",
+   "image": "img/podcast/news.webp",
+   "link": "learn.html#podcast"
+  },
+  {
    "date": "2026-11-10",
    "tag": "Обладнання",
    "title": "FT101: спершу міряємо, потім монтуємо",

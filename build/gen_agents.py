@@ -109,7 +109,7 @@ for s in sols:
     full.append('\n## %s\n\n%s\n\nЯк працює: %s\n\nЗастосування:\n' % (s['title'], s['summary'], s['how']))
     for a in s['applications']: full.append('- %s (%s): %s Пристрої: %s\n' % (a['title'], a['where'], a['what'], ', '.join(a['devices'])))
 open(os.path.join(ROOT, 'llms-full.txt'), 'w').write(''.join(full))
-pages = ['', 'products.html', 'solutions.html', 'learn.html', 'partner.html', 'zakhyst.html', 'news.html', 'vprovadzhennia.html'] + sorted(os.path.basename(x) for x in __import__('glob').glob(os.path.join(ROOT, 'case-*.html'))) + sorted(set(files.values())) + ['sol-%s.html' % k for k in sol['order']]
+pages = ['', 'products.html', 'solutions.html', 'learn.html', 'partner.html', 'zakhyst.html', 'news.html', 'vprovadzhennia.html'] + sorted(os.path.basename(x) for x in __import__('glob').glob(os.path.join(ROOT, 'news-*.html'))) + sorted(os.path.basename(x) for x in __import__('glob').glob(os.path.join(ROOT, 'case-*.html'))) + sorted(set(files.values())) + ['sol-%s.html' % k for k in sol['order']]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'<url><loc>{BASE}{p}</loc><lastmod>{now}</lastmod></url>\n' for p in pages) + \
      ''.join(f'<url><loc>{d["markdown"]}</loc></url>\n' for d in models.values()) + '</urlset>\n'
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(sm)

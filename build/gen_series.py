@@ -53,7 +53,9 @@ def page(key, S, models, cases=None):
     act = {'__A_SENS__': '', '__A_GW__': '', '__A_CTL__': '', '__A_RT__': ''}
     act['__A_GW__' if key == 'gateways' else '__A_CTL__' if key == 'controllers' else '__A_RT__' if key == 'routers' else '__A_SENS__'] = ' aria-current="page"'
     for k, v in act.items(): tpl = tpl.replace(k, v)
-    out = tpl.replace('__TITLE__', S['title']).replace('__DATA__', data, 1)
+    _d = '%s: %s. %s' % (S['title'], S['sub'].rstrip('.'), S['text'])
+    _d = _d if len(_d) <= 160 else _d[:157].rsplit(' ', 1)[0] + '…'
+    out = tpl.replace('__TITLE__', S['title']).replace('__DESC__', html.escape(_d, quote=True)).replace('__DATA__', data, 1)
     def mdslug(m):
         s_ = slug(m)
         if os.path.exists(os.path.join(ROOT, 'models', s_ + '.md')): return s_

@@ -1,34 +1,34 @@
 {
-  "url": "https://engineering.arviom.com/",
-  "noindex": false,
-  "name": "ARVIOM Engineering",
-  "description": "Бездротова автоматизація об'єктів на LoRaWAN: датчики, шлюзи й контролери Milesight з налаштуванням і підтримкою в Україні. Рішення, впровадження, навчання для партнерів.",
-  "og_image": "img/logo/og-default-v2.png",
-  "pages": {
-    "index.html": {
-      "description": "Бездротова автоматизація об'єктів на LoRaWAN: датчики, шлюзи й контролери Milesight з налаштуванням і підтримкою в Україні. Рішення, впровадження, навчання для партнерів.",
-      "image": "img/logo/og-default-v2.png"
-    },
-    "vprovadzhennia.html": {
-      "description": "Реалізовані IoT-проєкти на обладнанні Milesight: Україна разом із партнерами-інтеграторами та 100 кейсів Milesight у світі за галузями й напрямами.",
-      "image": "img/logo/og-vprovadzhennia.png"
-    },
-    "news.html": {
-      "description": "Новини ARVIOM Engineering: нові напрями, впровадження, матеріали для партнерів і навчання."
-    },
-    "partner.html": {
-      "description": "Кабінет партнера ARVIOM: партнерські ціни, склад, база знань, доступ для ШІ-асистентів, навчання й підтримка."
-    },
-    "zakhyst.html": {
-      "image": "img/sol/ind-case.webp"
-    },
-    "news-ft101.html": {
-      "description": "Польовий тестер Milesight FT101: радіопланування LoRaWAN до монтажу й налаштування датчика на місці. Що отримують інтегратор і замовник.",
-      "image": "img/news/ft101-cover-og.jpg"
-    }
+ "url": "https://engineering.arviom.com/",
+ "noindex": false,
+ "name": "ARVIOM Engineering",
+ "description": "Бездротова автоматизація об'єктів на LoRaWAN: датчики, шлюзи й контролери Milesight з налаштуванням і підтримкою в Україні. Рішення, впровадження, навчання для партнерів.",
+ "og_image": "img/logo/og-default-v2.png",
+ "pages": {
+  "index.html": {
+   "description": "Бездротова автоматизація об'єктів на LoRaWAN: датчики, шлюзи й контролери Milesight з налаштуванням і підтримкою в Україні. Рішення, впровадження, навчання для партнерів.",
+   "image": "img/logo/og-default-v2.png"
   },
-  "analytics": {
-    "script": "https://stats.arviom.cloud/script.js",
-    "website_id": "e7564b83-5c06-4623-b922-9ba1e83aa13b"
+  "vprovadzhennia.html": {
+   "description": "Реалізовані IoT-проєкти на обладнанні Milesight: Україна разом із партнерами-інтеграторами та 100 кейсів Milesight у світі за галузями й напрямами.",
+   "image": "img/logo/og-vprovadzhennia.jpg"
+  },
+  "news.html": {
+   "description": "Новини ARVIOM Engineering: нові напрями, впровадження, матеріали для партнерів і навчання."
+  },
+  "partner.html": {
+   "description": "Кабінет партнера ARVIOM: партнерські ціни, склад, база знань, доступ для ШІ-асистентів, навчання й підтримка."
+  },
+  "zakhyst.html": {
+   "image": "img/sol/ind-case.webp"
+  },
+  "news-ft101.html": {
+   "description": "Польовий тестер Milesight FT101: радіопланування LoRaWAN до монтажу й налаштування датчика на місці. Що отримують інтегратор і замовник.",
+   "image": "img/news/ft101-cover-og.jpg"
   }
+ },
+ "analytics": {
+  "script": "https://stats.arviom.cloud/script.js",
+  "website_id": "e7564b83-5c06-4623-b922-9ba1e83aa13b"
+ }
 }

@@ -11,7 +11,12 @@ P = json.load(open(os.path.join(ROOT, 'content/podcast.json')))
 pod = ''.join(f'<a class="pe rv" href="https://youtu.be/{e(x["yt"])}"{EXT}><img src="img/podcast/ep{x["n"]}.webp" alt="" loading="lazy"><div><span>Випуск {x["n"]} · {e(x["dur"])}</span><b>{e(x["t"])}</b><small>{e(x["d"])}</small></div><em>Слухати ↗</em></a>' for x in P['episodes'])
 aud = ''.join(f'<div class="rv"><i>0{i+1}</i><b>{e(a)}</b><span>{e(b)}</span></div>' for i, (a, b) in enumerate(L['audience']))
 ours = ''.join(f'<div class="pc rv lc"><div class="ph"><img src="{e(im)}" alt="" loading="lazy"><div class="tx"><div class="tag">{e(f)}</div><h3>{e(t)}</h3></div></div><div class="in"><p>{e(d)}</p><a href="./#contact">Записатися →</a></div></div>' for t, d, f, im in L['ours'])
-courses = ''.join(f'<a class="crs rv" href="{e(u)}"{EXT}><span>{e(c)}</span><b>{e(t)}</b>' + (f'<small>{e(m)}</small>' if m else '') + '<em>Академія Milesight ↗</em></a>' for c, t, u, m in L['courses'])
+def _crs(x):
+    c, t, u, m = x[:4]; pod = x[4] if len(x) > 4 else ''
+    meta = f'<small>{e(m)}</small>' if m else ''
+    if pod: return f'<div class="crs rv"><span>{e(c)}</span><b>{e(t)}</b>{meta}<a class="pb" href="{e(pod)}">Є українською в подкасті →</a><a class="ac" href="{e(u)}"{EXT}>Академія Milesight ↗</a></div>'
+    return f'<a class="crs rv" href="{e(u)}"{EXT}><span>{e(c)}</span><b>{e(t)}</b>{meta}<em>Академія Milesight ↗</em></a>'
+courses = ''.join(_crs(x) for x in L['courses'])
 faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(a)}</p></details>' for i, (q, a) in enumerate(L['faq']))
 CSS = '''<style>
 .lc{padding:0;overflow:hidden;display:flex;flex-direction:column}
@@ -36,6 +41,7 @@ CSS = '''<style>
 .pe img{width:200px;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--line);border-radius:6px;background:#fff}.pe div{display:flex;flex-direction:column;gap:6px}
 .pe span{font-size:13px;color:var(--blue)}.pe b{font-weight:400;font-size:21px;line-height:1.3}.pe small{font-size:15px;color:var(--muted);line-height:1.45}.pe em{font-style:normal;font-size:15px;color:var(--blue);white-space:nowrap}
 @media (max-width:760px){.pe{grid-template-columns:120px 1fr;gap:16px;align-items:start;padding:16px 0}.pe img{width:120px}.pe em{grid-column:2}.pe b{font-size:18px}}
+.crs .pb{align-self:flex-start;background:var(--chip);color:var(--blue);font-size:14px;padding:6px 12px;border-radius:99px;margin-top:4px}.crs .pb:hover{background:var(--blue);color:#fff}.crs .ac{font-size:14px;color:var(--muted);margin-top:auto}
 .faq{max-width:1000px;margin:40px auto 0;border-top:1px solid var(--line)}.faq details{border-bottom:1px solid var(--line)}
 .faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-size:18px;color:var(--ink)}.faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";position:absolute;right:6px;top:18px;font-size:24px;color:var(--blue);font-weight:300}.faq details[open] summary::after{content:"×"}

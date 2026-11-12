@@ -17,13 +17,13 @@ for s in ser:
         for p in s['products']: DEV.setdefault(p['model'], (img(p['img']), files[s['key']], UK.get(p['name'], p['name'])))
 for src, k in [('lorawan-gateway', 'gateways'), ('lorawan-controller', 'controllers')]:
     for x in cat[src]['products']: DEV.setdefault(x['title'][0], (img(x['img']), files[k], UK.get(' '.join(x['title'][1:]), ' '.join(x['title'][1:]))))
-EXTRA = {'UR32': ('img/ur32.webp', 'https://www.milesight.com/iot/product/5g-cellular-products/router-controller/ur32', 'Промисловий 4G-роутер'),
-         'UR35': ('img/ur32.webp', 'https://www.milesight.com/iot/product/5g-cellular-products/router-controller/ur35', 'Промисловий 4G-роутер'),
-         'UR75': ('img/ur75.webp', 'https://www.milesight.com/iot/product/5g-cellular-products/5g/ur75', 'Промисловий 5G-роутер')}
+EXTRA = {'UR32': ('img/ur32.webp', 's-routers.html#m-ur32', 'Промисловий 4G-роутер'),
+         'UR35': ('img/ur32.webp', 's-routers.html#m-ur35', 'Промисловий 4G-роутер'),
+         'UR75': ('img/ur75.webp', 's-routers.html#m-ur75', 'Промисловий 5G-роутер')}
 OURS = {'EM300-TH': 'em300-th', 'EM300-MCS': 'em300-mcs', 'EM300-MLD': 'em300-mld', 'EM300-SLD/ZLD': 'em300-sld', 'EM300-DI': 'em300-di'}
 def dev(m):
     if m in OURS: i, f, n = 'img/' + OURS[m] + '.webp', 'catalog.html#m-' + OURS[m], DEV.get(m, ('', '', m))[2]; ext = False
-    elif m in EXTRA: i, f, n = EXTRA[m]; ext = True
+    elif m in EXTRA: i, f, n = EXTRA[m]; ext = f.startswith('http')
     else:
         i, f, n = DEV[m]; f = f + ('#m-' + jslug(m) if m in specs else ''); ext = False
     t = ' target="_blank" rel="noopener"' if ext else ''

@@ -34,6 +34,7 @@ def run():
         title = strip(re.search(r'<title>(.*?)</title>', t, re.S).group(1))
         ov = S.get('pages', {}).get(name, {})
         desc = ov.get('description') or describe(t); img = ov.get('image') or og_image(t, name)
+        t = re.sub(r'<meta name="description" content="[^"]*">\n?', '', t)  # власний опис сторінки вже враховано в desc
         url = S['url'] + ('' if name == 'index.html' else name)
         robots = 'noindex, nofollow' if S.get('noindex') else 'index, follow'
         A = S.get('analytics')

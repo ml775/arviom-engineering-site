@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Серія EM300 — ARVIOM Engineering</title>
 <!--seo--><meta name="robots" content="index, follow">
-<meta name="description" content="Бездротова автоматизація об&#x27;єктів. Напрям IoT компанії ARVIOM.">
+<meta name="description" content="Серія EM300: Серія компактних датчиків LoRaWAN. Один корпус і одна логіка налаштування — різні сенсори: клімат, протікання, двері, імпульсні лічильники,…">
 <link rel="canonical" href="https://engineering.arviom.com/catalog.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="ARVIOM Engineering"><meta property="og:locale" content="uk_UA">
-<meta property="og:title" content="Серія EM300 — ARVIOM Engineering"><meta property="og:description" content="Бездротова автоматизація об&#x27;єктів. Напрям IoT компанії ARVIOM."><meta property="og:url" content="https://engineering.arviom.com/catalog.html">
+<meta property="og:title" content="Серія EM300 — ARVIOM Engineering"><meta property="og:description" content="Серія EM300: Серія компактних датчиків LoRaWAN. Один корпус і одна логіка налаштування — різні сенсори: клімат, протікання, двері, імпульсні лічильники,…"><meta property="og:url" content="https://engineering.arviom.com/catalog.html">
 <meta property="og:image" content="https://engineering.arviom.com/img/logo/og-default-v2.png"><meta name="twitter:card" content="summary_large_image">
 <script defer src="https://stats.arviom.cloud/script.js" data-website-id="e7564b83-5c06-4623-b922-9ba1e83aa13b"></script><!--/seo-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -259,7 +259,7 @@ function series(){
   document.getElementById("crumb-last").textContent=S.title;
   app.innerHTML=`
   <section class="shead"><div class="wrap shead-in">
-    <div><div class="series-code">${esc(S.code)}<small>${esc(S.sub)}</small></div>
+    <div><h1 class="series-code">${esc(S.code)}<small>${esc(S.sub)}</small></h1>
       <p>${esc(S.text)} ${MODELS.length>1?MODELS.length+" "+(MODELS.length<5?"моделі":"моделей")+" у серії.":""}</p></div>
     ${S.facts&&S.facts.length?`<div class="facts">${S.facts.map(f=>`<div><b>${esc(f[0])}</b><span>${esc(f[1])}</span></div>`).join("")}</div>`:""}
   </div></section>

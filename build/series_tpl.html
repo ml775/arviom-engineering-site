@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>__TITLE__ — ARVIOM Engineering</title>
+<meta name="description" content="__DESC__">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -250,7 +251,7 @@ function series(){
   document.getElementById("crumb-last").textContent=S.title;
   app.innerHTML=`
   <section class="shead"><div class="wrap shead-in">
-    <div><div class="series-code">${esc(S.code)}<small>${esc(S.sub)}</small></div>
+    <div><h1 class="series-code">${esc(S.code)}<small>${esc(S.sub)}</small></h1>
       <p>${esc(S.text)} ${MODELS.length>1?MODELS.length+" "+(MODELS.length<5?"моделі":"моделей")+" у серії.":""}</p></div>
     ${S.facts&&S.facts.length?`<div class="facts">${S.facts.map(f=>`<div><b>${esc(f[0])}</b><span>${esc(f[1])}</span></div>`).join("")}</div>`:""}
   </div></section>

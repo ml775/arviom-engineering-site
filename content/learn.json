@@ -21,17 +21,20 @@
   [
    "LoRaWAN з нуля",
    "Як працює LoRaWAN, як спланувати покриття об'єкта, як обрати шлюз і датчики.",
-   "Вебінар · українською"
+   "Вебінар · українською",
+   "img/cases/iot-smart-city-solution-turkey/smart-city-upgrade-in-turkey-solutions-tower.webp"
   ],
   [
    "Шлюзи й інтеграція",
    "Налаштування UG65/UG56/EG71, мережевий сервер, передача даних по MQTT, HTTP, Modbus і BACnet.",
-   "Практикум на стенді · Київ"
+   "Практикум на стенді · Київ",
+   "img/cases/iot-non-invasive-electricity-monitoring-solution-in-europe/non-invasive-electricity-monitoring-solution-facto.webp"
   ],
   [
    "Енергомоніторинг на практиці",
    "Облік по лініях щита з CTH01, генератор, батарея й мережа, сповіщення в Telegram.",
-   "Практикум · за запитом"
+   "Практикум · за запитом",
+   "img/cases/iot-non-invasive-electricity-monitoring-solution-in-europe/card.webp"
   ]
  ],
  "courses": [

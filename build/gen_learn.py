@@ -10,11 +10,17 @@ EXT = ' target="_blank" rel="noopener"'
 P = json.load(open(os.path.join(ROOT, 'content/podcast.json')))
 pod = ''.join(f'<a class="pe rv" href="https://youtu.be/{e(x["yt"])}"{EXT}><img src="img/podcast/ep{x["n"]}.webp" alt="" loading="lazy"><div><span>Випуск {x["n"]} · {e(x["dur"])}</span><b>{e(x["t"])}</b><small>{e(x["d"])}</small></div><em>Слухати ↗</em></a>' for x in P['episodes'])
 aud = ''.join(f'<div class="rv"><i>0{i+1}</i><b>{e(a)}</b><span>{e(b)}</span></div>' for i, (a, b) in enumerate(L['audience']))
-ours = ''.join(f'<div class="pc rv lc"><div class="tag">{e(f)}</div><h3>{e(t)}</h3><p>{e(d)}</p><a href="./#contact">Записатися →</a></div>' for t, d, f in L['ours'])
+ours = ''.join(f'<div class="pc rv lc"><div class="ph"><img src="{e(im)}" alt="" loading="lazy"><div class="tx"><div class="tag">{e(f)}</div><h3>{e(t)}</h3></div></div><div class="in"><p>{e(d)}</p><a href="./#contact">Записатися →</a></div></div>' for t, d, f, im in L['ours'])
 courses = ''.join(f'<a class="crs rv" href="{e(u)}"{EXT}><span>{e(c)}</span><b>{e(t)}</b>' + (f'<small>{e(m)}</small>' if m else '') + '<em>Академія Milesight ↗</em></a>' for c, t, u, m in L['courses'])
 faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(a)}</p></details>' for i, (q, a) in enumerate(L['faq']))
 CSS = '''<style>
-.lc{padding:28px 26px;display:flex;flex-direction:column;gap:10px}.lc h3,.lc p{padding:0}.lc .tag{font-size:13px;color:var(--blue)}.lc a{margin-top:auto}
+.lc{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.lc .ph{position:relative;height:230px;color:#fff}.lc .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lc .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,60,150,.92) 0%,rgba(11,92,214,.55) 42%,rgba(11,92,214,0) 78%)}
+.lc .ph .tx{position:relative;z-index:1;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.lc .ph .tag{align-self:flex-start;background:#fff;color:var(--blue);font-size:12.5px;padding:4px 10px;border-radius:3px}
+.lc .ph h3{color:#fff;font-size:23px;font-weight:500;line-height:1.25;padding:0}
+.lc .in{padding:20px 22px 22px;display:flex;flex-direction:column;gap:14px;flex:1}.lc .in p{padding:0}.lc .in a{margin-top:auto}
 .lv{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
 .lv>div{background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line)}.lv img{width:100%;height:220px;object-fit:cover}
 .lv .tx{padding:24px 26px}.lv h3{font-size:24px;margin-bottom:8px}.lv p{color:var(--muted)}.lv .tx a{display:inline-block;margin-top:14px}
@@ -42,7 +48,7 @@ body = CSS + f'''<div class="hero"><img src="img/learn/banner-academy.webp" alt=
 <div class="bc"><a href="./">Головна</a> › Навчання</div></div></div>
 <main>
 <section id="who" class="blk"><div class="wrap"><h2 class="st center">Для кого це навчання</h2><div class="ben">{aud}</div></div></section>
-<section id="ours" class="blk alt"><div class="wrap"><h2 class="st center">Наші курси й практикуми</h2><p class="center" style="color:var(--muted);margin-top:12px">Українською, на реальному обладнанні. Розклад — за запитом: залиште заявку, і ми запропонуємо дату.</p><div class="pgrid">{ours}</div></div></section>
+<section id="ours" class="blk alt"><div class="wrap"><h2 class="st center">Наші курси й практикуми</h2><p class="center" style="color:var(--muted);margin-top:12px">Українською, на реальному обладнанні. Розклад — за запитом: залиште заявку, і ми запропонуємо дату.</p><div class="pgrid">{ours}</div><p class="center" style="color:var(--muted);font-size:13px;margin-top:18px">Фото: джерело Milesight</p></div></section>
 <section id="podcast" class="blk"><div class="wrap"><div class="eyebrow center">Подкаст ARVIOM Engineering</div><h2 class="st center">{e(P['title'])}</h2><p class="center" style="color:var(--muted);margin-top:12px;max-width:72ch;margin-inline:auto">{e(P['lead'])}</p><div class="pod">{pod}</div><p class="center" style="margin-top:32px"><a class="btn" href="{e(P['playlist'])}"{EXT}>Увесь подкаст на YouTube</a></p><p class="center" style="color:var(--muted);font-size:14px;margin-top:14px">{e(P['source'])}</p></div></section>
 <section id="cert" class="blk alt"><div class="wrap"><div class="eyebrow center">Академія Milesight</div><h2 class="st center">Офіційна сертифікація Milesight</h2>
 <p class="center" style="color:var(--muted);margin-top:12px;max-width:80ch;margin-inline:auto">Програми сертифікації дають глибоку галузеву експертизу. Зараз доступна програма «Розумне керування HVAC»; нові напрями Milesight додає поступово.</p>

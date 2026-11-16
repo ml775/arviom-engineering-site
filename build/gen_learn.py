@@ -10,7 +10,45 @@ EXT = ' target="_blank" rel="noopener"'
 P = json.load(open(os.path.join(ROOT, 'content/podcast.json')))
 pod = ''.join(f'<a class="pe rv" href="https://youtu.be/{e(x["yt"])}"{EXT}><img src="img/podcast/ep{x["n"]}.webp" alt="" loading="lazy"><div><span>Випуск {x["n"]} · {e(x["dur"])}</span><b>{e(x["t"])}</b><small>{e(x["d"])}</small></div><em>Слухати ↗</em></a>' for x in P['episodes'])
 aud = ''.join(f'<div class="rv"><i>0{i+1}</i><b>{e(a)}</b><span>{e(b)}</span></div>' for i, (a, b) in enumerate(L['audience']))
-ours = ''.join(f'<div class="pc rv lc"><div class="ph"><img src="{e(im)}" alt="" loading="lazy"><div class="tx"><div class="tag">{e(f)}</div><h3>{e(t)}</h3></div></div><div class="in"><p>{e(d)}</p><a href="./#contact">Записатися →</a></div></div>' for t, d, f, im in L['ours'])
+ours = ''.join(f'<div class="pc rv lc"><div class="ph"><img src="{e(im)}" alt="" loading="lazy"><div class="tx"><div class="tag">{e(f)}</div><h3>{e(t)}</h3></div></div><div class="in"><p>{e(d)}</p><a href="./#contact" class="enr" data-c="{e(t)}" data-f="{e(f)}" data-q="{e(q[0])}" data-o="{e("|".join(q[1]))}">Записатися →</a></div></div>' for t, d, f, im, q in L['ours'])
+MODAL = r'''<div class="em" id="em" role="dialog" aria-modal="true" aria-labelledby="emt"><div class="emb">
+<button class="x" type="button" aria-label="Закрити">×</button>
+<div class="ey" id="emf"></div><h3 id="emt"></h3><p class="sub">Залиште контакт — запропонуємо дату й надішлемо програму.</p>
+<form id="emfm" novalidate>
+<label>Ім'я*<input type="text" name="name" autocomplete="name" required></label>
+<label>Телефон, Telegram або пошта*<input type="text" name="contact" required></label>
+<label>Компанія<input type="text" name="company" autocomplete="organization"></label>
+<div class="ql" id="emq"></div><div class="ch" id="emo"></div>
+<label>Зручний час або коментар<textarea name="msg"></textarea></label>
+<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<button class="btn" type="submit">Надіслати заявку</button>
+<p class="ok" role="status">Дякуємо, заявку отримали. Напишемо протягом робочого дня.</p>
+<p class="er" role="alert">Не вдалося надіслати. Напишіть на <a href="mailto:ml@arviom.com">ml@arviom.com</a> або подзвоніть +380 67 381 34 04.</p>
+<p class="nt">Без оплати й зобов'язань: спершу узгодимо дату.</p>
+</form></div></div>
+<script>
+(function(){var m=document.getElementById('em'),f=document.getElementById('emfm'),b=f.querySelector('button[type=submit]'),cur={},last;
+function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function open(a){cur={c:a.dataset.c,q:a.dataset.q};last=a;document.getElementById('emf').textContent=a.dataset.f;document.getElementById('emt').textContent='Запис: '+a.dataset.c;
+document.getElementById('emq').textContent=a.dataset.q;
+document.getElementById('emo').innerHTML=a.dataset.o.split('|').map(function(o){return '<label><input type="checkbox" name="opt" value="'+esc(o)+'"><span>'+esc(o)+'</span></label>'}).join('');
+f.querySelector('.ok').style.display='none';f.querySelector('.er').style.display='none';b.disabled=false;b.textContent='Надіслати заявку';
+m.classList.add('on');document.body.style.overflow='hidden';f.name.focus()}
+function close(){m.classList.remove('on');document.body.style.overflow='';if(last)last.focus()}
+document.querySelectorAll('a.enr').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();open(a)})});
+m.addEventListener('click',function(e){if(e.target===m||e.target.classList.contains('x'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('on'))close()});
+f.addEventListener('submit',function(e){e.preventDefault();if(f.website.value)return;
+if(!f.name.value.trim()||!f.contact.value.trim()){f.reportValidity();return}
+var o=[].slice.call(f.querySelectorAll('input[name=opt]:checked')).map(function(i){return i.value}).join(', ');
+var d={name:f.name.value,company:f.company.value,contact:f.contact.value,type:'Навчання: '+cur.c,msg:cur.q+': '+(o||'не вказано')+(f.msg.value.trim()?'. Коментар: '+f.msg.value.trim():''),page:location.href};
+b.disabled=true;b.textContent='Надсилаємо…';
+fetch('https://n8n.arviom.com.ua/webhook/eng-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
+.then(function(r){if(!r.ok)throw 0;f.querySelector('.ok').style.display='block';f.reset();b.textContent='Надіслано ✓'})
+.catch(function(){f.querySelector('.er').style.display='block';b.disabled=false;b.textContent='Надіслати заявку'})});
+})();
+</script>
+'''
 def _crs(x):
     c, t, u, m = x[:4]; pod = x[4] if len(x) > 4 else ''
     meta = f'<small>{e(m)}</small>' if m else ''
@@ -42,6 +80,18 @@ CSS = '''<style>
 .pe span{font-size:13px;color:var(--blue)}.pe b{font-weight:400;font-size:21px;line-height:1.3}.pe small{font-size:15px;color:var(--muted);line-height:1.45}.pe em{font-style:normal;font-size:15px;color:var(--blue);white-space:nowrap}
 @media (max-width:760px){.pe{grid-template-columns:120px 1fr;gap:16px;align-items:start;padding:16px 0}.pe img{width:120px}.pe em{grid-column:2}.pe b{font-size:18px}}
 .crs .pb{align-self:flex-start;background:var(--chip);color:var(--blue);font-size:14px;padding:6px 12px;border-radius:99px;margin-top:4px}.crs .pb:hover{background:var(--blue);color:#fff}.crs .ac{font-size:14px;color:var(--muted);margin-top:auto}
+.em{position:fixed;inset:0;z-index:200;background:rgba(10,23,48,.55);display:none;align-items:center;justify-content:center;padding:16px}.em.on{display:flex}
+.emb{background:#fff;border-radius:10px;width:100%;max-width:520px;max-height:calc(100vh - 32px);overflow:auto;padding:30px 32px 28px;position:relative}
+.emb .x{position:absolute;right:14px;top:10px;font-size:28px;line-height:1;background:none;border:0;color:var(--muted);cursor:pointer;padding:6px}
+.emb .ey{font-size:13px;color:var(--blue)}.emb h3{font-size:26px;font-weight:400;margin:6px 0 4px}.emb .sub{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+.emb label{display:block;font-size:13.5px;color:var(--muted);margin-top:12px}.emb input[type=text],.emb textarea{display:block;width:100%;margin-top:5px;padding:11px 12px;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:15.5px;color:var(--ink);background:#fff}
+.emb textarea{min-height:64px;resize:vertical}.emb input:focus,.emb textarea:focus{outline:2px solid var(--blue);outline-offset:-1px}
+.emb .ql{font-size:13.5px;color:var(--muted);margin-top:16px}.emb .ch{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.emb .ch label{margin:0;cursor:pointer}.emb .ch input{position:absolute;opacity:0}.emb .ch span{display:block;padding:8px 14px;border:1px solid var(--line);border-radius:99px;font-size:14.5px;color:var(--ink)}
+.emb .ch input:checked+span{background:var(--blue);border-color:var(--blue);color:#fff}.emb .ch input:focus-visible+span{outline:2px solid var(--blue);outline-offset:2px}
+.emb .btn{margin-top:20px;width:100%;justify-content:center;border:0;cursor:pointer;font:inherit}.emb .nt{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}
+.emb .ok,.emb .er{display:none;margin-top:14px;font-size:15px}.emb .er{color:#a32020}
+@media (max-width:560px){.emb{padding:24px 20px}.emb h3{font-size:22px}}
 .faq{max-width:1000px;margin:40px auto 0;border-top:1px solid var(--line)}.faq details{border-bottom:1px solid var(--line)}
 .faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-size:18px;color:var(--ink)}.faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";position:absolute;right:6px;top:18px;font-size:24px;color:var(--blue);font-weight:300}.faq details[open] summary::after{content:"×"}
@@ -74,6 +124,6 @@ body = CSS + f'''<div class="hero"><img src="img/learn/banner-academy.webp" alt=
 <section id="open" class="blk"><div class="wrap"><h2 class="st center">Відкриті курси</h2><p class="center" style="color:var(--muted);margin-top:12px">Окремі курси з програм сертифікації — без іспиту, для конкретної теми.</p><div class="crsg">{courses}</div></div></section>
 <section id="faq" class="blk alt"><div class="wrap"><h2 class="st center">Питання</h2><div class="faq">{faq}</div></div></section>
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Хочете навчити команду?</h2><p>Організуємо вебінар або практикум на стенді під ваші задачі.</p></div><a class="btn w" href="./#contact">Залишити заявку</a></div></div></section>
-</main>'''
+</main>''' + MODAL
 open(os.path.join(ROOT, 'learn.html'), 'w').write(chrome(body, 'Навчання', 'learn').replace('<a href="./#learn">Навчання</a>', '<a href="learn.html" aria-current="page">Навчання</a>'))
 print('learn.html')

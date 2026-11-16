@@ -22,19 +22,47 @@
    "LoRaWAN з нуля",
    "Як працює LoRaWAN, як спланувати покриття об'єкта, як обрати шлюз і датчики.",
    "Вебінар · українською",
-   "img/cases/iot-smart-city-solution-turkey/smart-city-upgrade-in-turkey-solutions-tower.webp"
+   "img/cases/iot-smart-city-solution-turkey/smart-city-upgrade-in-turkey-solutions-tower.webp",
+   [
+    "Ваш досвід з LoRaWAN",
+    [
+     "Починаю з нуля",
+     "Пробував на стенді",
+     "Маю об'єкти в роботі"
+    ]
+   ]
   ],
   [
    "Шлюзи й інтеграція",
    "Налаштування UG65/UG56/EG71, мережевий сервер, передача даних по MQTT, HTTP, Modbus і BACnet.",
    "Практикум на стенді · Київ",
-   "img/cases/iot-non-invasive-electricity-monitoring-solution-in-europe/non-invasive-electricity-monitoring-solution-facto.webp"
+   "img/cases/iot-non-invasive-electricity-monitoring-solution-in-europe/non-invasive-electricity-monitoring-solution-facto.webp",
+   [
+    "З чим інтегруєте",
+    [
+     "MQTT / HTTP",
+     "Modbus",
+     "BACnet",
+     "Своя платформа",
+     "Ще не знаю"
+    ]
+   ]
   ],
   [
    "Енергомоніторинг на практиці",
    "Облік по лініях щита з CTH01, інвертори Deye, Solis і Victron, генератор, батарея й мережа, сповіщення в Telegram.",
    "Практикум · за запитом",
-   "img/cases/iot-non-invasive-electricity-monitoring-solution-in-europe/card.webp"
+   "img/cases/iot-non-invasive-electricity-monitoring-solution-in-europe/card.webp",
+   [
+    "Яке обладнання на об'єкті",
+    [
+     "Deye",
+     "Solis",
+     "Victron",
+     "Генератор",
+     "Інше"
+    ]
+   ]
   ]
  ],
  "courses": [

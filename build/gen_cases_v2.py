@@ -99,7 +99,7 @@ def case_page_v2(c, out=None):
     place = dict(P['facts']).get('Локація', c['place'])
     OWN = bool(P.get('own'))
     SRC = f'<p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c["link"])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p>'
-    if OWN: SRC = '<p class="cp-src">Зображення обладнання: джерело Milesight.</p>'
+    if OWN: SRC = '<p class="cp-src">Фото: джерело Milesight.</p>'
     pname = dict(P['facts']).get('Партнер-інтегратор', '').split(' (')[0]
     PART = (f'<section id="partner" class="cp-sec"><div class="wrap"><h2 class="h2l">Партнер</h2><div class="v2-pt rv"><div class="l"><span>{e(pname)}</span></div><div class="r"><h2>Про {e(pname)}</h2><p>{e(P["partner"])}</p></div></div>{SRC}</div></section>'
             if P.get('partner') else f'<section class="cp-sec" style="padding-block:8px 0"><div class="wrap">{SRC}</div></section>')

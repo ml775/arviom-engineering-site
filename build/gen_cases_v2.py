@@ -97,14 +97,16 @@ def case_page_v2(c, out=None):
     res = ''.join(f'<div class="rv"><h3>{e(t)}</h3><p>{e(d)}</p></div>' for t, d in R['items'])
     rimg = (f'<figure class="rv" style="max-width:{img_info(R["img"])[0] + 24}px"><img src="{e(R["img"])}" alt="" loading="lazy">' + (f'<figcaption>{e(R["caption"])}</figcaption>' if R.get('caption') else '') + '</figure>') if usable(R.get('img')) else ''
     place = dict(P['facts']).get('Локація', c['place'])
+    OWN = bool(P.get('own'))
     SRC = f'<p class="cp-src">Джерело: Milesight. Стислий виклад нашими словами, фото — Milesight. <a href="{e(c["link"])}" target="_blank" rel="noopener">Повна історія на milesight.com ↗</a></p>'
+    if OWN: SRC = '<p class="cp-src">Зображення обладнання: джерело Milesight.</p>'
     pname = dict(P['facts']).get('Партнер-інтегратор', '').split(' (')[0]
     PART = (f'<section id="partner" class="cp-sec"><div class="wrap"><h2 class="h2l">Партнер</h2><div class="v2-pt rv"><div class="l"><span>{e(pname)}</span></div><div class="r"><h2>Про {e(pname)}</h2><p>{e(P["partner"])}</p></div></div>{SRC}</div></section>'
             if P.get('partner') else f'<section class="cp-sec" style="padding-block:8px 0"><div class="wrap">{SRC}</div></section>')
     from gen_cases import PCSS
     body = f"""{CSS}{PCSS}{V2CSS}
-<div class="v2-hero"><img src="{e(P['hero'])}" alt=""><div class="wrap"><div class="pan"><div class="eyebrow">Досвід Milesight у світі · {e(DIRS[c['dir']])}</div><h1>{e(P['h1'])}</h1><p>{e(P['sub'])}</p><span class="v2-loc">{e(place)}</span></div></div></div>
-<div class="cp-facts"><div class="wrap"><div class="box">{facts}<a class="btn" href="{e(c['link'])}" target="_blank" rel="noopener">Оригінал кейсу</a></div></div></div>
+<div class="v2-hero"><img src="{e(P['hero'])}" alt=""><div class="wrap"><div class="pan"><div class="eyebrow">{'Впровадження в Україні' if OWN else 'Досвід Milesight у світі'} · {e(DIRS[c['dir']])}</div><h1>{e(P['h1'])}</h1><p>{e(P['sub'])}</p><span class="v2-loc">{e(place)}</span></div></div></div>
+<div class="cp-facts"><div class="wrap"><div class="box">{facts}{'<a class="btn" href="./#contact">Обговорити задачу</a>' if OWN else f'<a class="btn" href="{e(c["link"])}" target="_blank" rel="noopener">Оригінал кейсу</a>'}</div></div></div>
 <div class="cp-tabs"><div class="wrap"><nav aria-label="Розділи кейсу">{nav}</nav><div class="bc"><a href="./">Головна</a> › <a href="vprovadzhennia.html">Впровадження</a> › {e(DIRS[c['dir']])}</div></div></div>
 <main>
 <section id="background" class="cp-sec"><div class="wrap"><h2 class="h2l">Передумови</h2><div class="v2-bg"><div class="card rv">{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg['img'] if usable(bg.get('img')) else P['hero'])}" alt="" loading="lazy"></div></div></section>

@@ -99,7 +99,7 @@ CSS = '''<style>
 @media (max-width:900px){.lv{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.steps{grid-template-columns:1fr}}
 </style>'''
-body = CSS + f'''<div class="hero"><img src="img/learn/banner-academy.webp" alt=""><div class="tx wrap"><div class="eyebrow">Навчання</div><h1>Навчання IoT для інтеграторів та інженерів</h1><p>Від основ LoRaWAN до офіційної сертифікації Milesight — з нашою підтримкою українською.</p><a class="btn" href="./#contact">Записатися на навчання</a></div></div>
+body = CSS + f'''<div class="hero"><img src="img/learn/banner-academy.webp" alt=""><div class="tx wrap"><div class="eyebrow">Навчання</div><h1>Навчання IoT для інтеграторів та інженерів</h1><p>Від основ LoRaWAN до офіційної сертифікації Milesight — з нашою підтримкою українською.</p><a class="btn" href="#ours">Обрати курс і записатися</a></div></div>
 <div class="tabs"><div class="wrap"><nav aria-label="Розділи"><a href="#who" class="on">Для кого</a><a href="#ours">Курси ARVIOM</a><a href="#podcast">Подкаст</a><a href="#cert">Сертифікація</a><a href="#open">Відкриті курси</a><a href="#faq">Питання</a></nav>
 <div class="bc"><a href="./">Головна</a> › Навчання</div></div></div>
 <main>

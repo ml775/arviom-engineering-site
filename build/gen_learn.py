@@ -55,6 +55,10 @@ def _crs(x):
     if pod: return f'<div class="crs rv"><span>{e(c)}</span><b>{e(t)}</b>{meta}<a class="pb" href="{e(pod)}">Є українською в подкасті →</a><a class="ac" href="{e(u)}"{EXT}>Академія Milesight ↗</a></div>'
     return f'<a class="crs rv" href="{e(u)}"{EXT}><span>{e(c)}</span><b>{e(t)}</b>{meta}<em>Академія Milesight ↗</em></a>'
 courses = ''.join(_crs(x) for x in L['courses'])
+S = L['simple']
+chain = ''.join(f'<div class="rv"><i>{e(n)}</i><b>{e(t)}</b><span>{e(d)}</span></div>' for n, t, d in S['chain'])
+terms = ''.join(f'<div class="rv"><b>{e(t)}</b><p>{e(d)}</p></div>' for t, d in S['terms'])
+vids = ''.join(f'<a class="vid rv" href="https://youtu.be/{e(i)}"{EXT}><div class="th"><img src="https://img.youtube.com/vi/{e(i)}/hqdefault.jpg" alt="" loading="lazy"></div><h3>{e(t)}</h3><small>{e(d)}</small></a>' for i, t, d in S['videos'])
 faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(a)}</p></details>' for i, (q, a) in enumerate(L['faq']))
 CSS = '''<style>
 .lc{padding:0;overflow:hidden;display:flex;flex-direction:column}
@@ -96,13 +100,28 @@ CSS = '''<style>
 .faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-size:18px;color:var(--ink)}.faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";position:absolute;right:6px;top:18px;font-size:24px;color:var(--blue);font-weight:300}.faq details[open] summary::after{content:"×"}
 .faq p{color:var(--muted);padding:0 40px 22px 0}
+.chain{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:44px}
+.chain div{position:relative;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 22px 24px}
+.chain div:not(:last-child)::after{content:"→";position:absolute;right:-18px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--blue);background:var(--bg,#fff);z-index:1;line-height:1}
+.chain i{display:block;font-style:normal;font-size:13px;color:var(--blue);margin-bottom:6px}.chain b{display:block;font-weight:500;font-size:22px;margin-bottom:8px;color:var(--ink)}.chain span{color:var(--muted);font-size:16px;line-height:1.5}
+.terms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 40px;margin-top:48px;max-width:1100px;margin-inline:auto}
+.terms div{border-top:1.5px solid var(--blue);padding-top:16px}.terms b{display:block;font-weight:500;font-size:20px;color:var(--ink);margin-bottom:6px}.terms p{color:var(--muted);font-size:16.5px;line-height:1.55;padding:0}
+.svg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:20px}
+.svg .vid small{display:block;color:var(--muted);font-size:14.5px;line-height:1.45;margin-top:6px}
+.svg .vid .th img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid var(--line);display:block}.svg .vid h3{font-size:18px;font-weight:500;margin-top:12px;color:var(--ink)}
+@media (max-width:1000px){.chain{grid-template-columns:1fr 1fr}.chain div:nth-child(2)::after{display:none}.svg{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.chain,.terms,.svg{grid-template-columns:1fr}.chain div::after{display:none!important}}
 @media (max-width:900px){.lv{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.steps{grid-template-columns:1fr}}
 </style>'''
 body = CSS + f'''<div class="hero"><img src="img/learn/banner-academy.webp" alt=""><div class="tx wrap"><div class="eyebrow">Навчання</div><h1>Навчання IoT для інтеграторів та інженерів</h1><p>Від основ LoRaWAN до офіційної сертифікації Milesight — з нашою підтримкою українською.</p><a class="btn" href="#ours">Обрати курс і записатися</a></div></div>
-<div class="tabs"><div class="wrap"><nav aria-label="Розділи"><a href="#who" class="on">Для кого</a><a href="#ours">Курси ARVIOM</a><a href="#podcast">Подкаст</a><a href="#cert">Сертифікація</a><a href="#open">Відкриті курси</a><a href="#faq">Питання</a></nav>
+<div class="tabs"><div class="wrap"><nav aria-label="Розділи"><a href="#simple" class="on">Простими словами</a><a href="#who">Для кого</a><a href="#ours">Курси ARVIOM</a><a href="#podcast">Подкаст</a><a href="#cert">Сертифікація</a><a href="#open">Відкриті курси</a><a href="#faq">Питання</a></nav>
 <div class="bc"><a href="./">Головна</a> › Навчання</div></div></div>
 <main>
+<section id="simple" class="blk alt"><div class="wrap"><div class="eyebrow center">{e(S['eyebrow'])}</div><h2 class="st center">{e(S['title'])}</h2><p class="center" style="color:var(--muted);margin-top:12px;max-width:72ch;margin-inline:auto">{e(S['lead'])}</p>
+<div class="chain">{chain}</div><div class="terms">{terms}</div>
+<h3 class="center" style="font-weight:500;font-size:24px;margin-top:64px">{e(S['videos_title'])}</h3><div class="svg">{vids}</div>
+<p class="center" style="margin-top:28px"><a class="btn" href="{e(S['playlist'])}"{EXT}>Усі відео серії на YouTube</a></p><p class="center" style="color:var(--muted);font-size:14px;margin-top:14px">Джерело відео: Milesight. Українська озвучка: ARVIOM Engineering.</p></div></section>
 <section id="who" class="blk"><div class="wrap"><h2 class="st center">Для кого це навчання</h2><div class="ben">{aud}</div></div></section>
 <section id="ours" class="blk alt"><div class="wrap"><h2 class="st center">Наші курси й практикуми</h2><p class="center" style="color:var(--muted);margin-top:12px">Українською, на реальному обладнанні. Розклад — за запитом: залиште заявку, і ми запропонуємо дату.</p><div class="pgrid">{ours}</div><p class="center" style="color:var(--muted);font-size:13px;margin-top:18px">Фото: джерело Milesight</p></div></section>
 <section id="podcast" class="blk"><div class="wrap"><div class="eyebrow center">Подкаст ARVIOM Engineering</div><h2 class="st center">{e(P['title'])}</h2><p class="center" style="color:var(--muted);margin-top:12px;max-width:72ch;margin-inline:auto">{e(P['lead'])}</p><div class="pod">{pod}</div><p class="center" style="margin-top:32px"><a class="btn" href="{e(P['playlist'])}"{EXT}>Увесь подкаст на YouTube</a></p><p class="center" style="color:var(--muted);font-size:14px;margin-top:14px">{e(P['source'])}</p></div></section>

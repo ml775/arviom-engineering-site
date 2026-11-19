@@ -104,6 +104,7 @@ CSS = '''<style>
 .chain div{position:relative;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 22px 24px}
 .chain div:not(:last-child)::after{content:"→";position:absolute;right:-18px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--blue);background:var(--bg,#fff);z-index:1;line-height:1}
 .chain i{display:block;font-style:normal;font-size:13px;color:var(--blue);margin-bottom:6px}.chain b{display:block;font-weight:500;font-size:22px;margin-bottom:8px;color:var(--ink)}.chain span{color:var(--muted);font-size:16px;line-height:1.5}
+.ctl{max-width:1100px;margin:28px auto 0;background:#fff;border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:10px;padding:22px 26px}.ctl b{display:block;font-weight:500;font-size:20px;color:var(--ink);margin-bottom:8px}.ctl p{color:var(--muted);font-size:16.5px;line-height:1.6;padding:0}
 .terms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 40px;margin-top:48px;max-width:1100px;margin-inline:auto}
 .terms div{border-top:1.5px solid var(--blue);padding-top:16px}.terms b{display:block;font-weight:500;font-size:20px;color:var(--ink);margin-bottom:6px}.terms p{color:var(--muted);font-size:16.5px;line-height:1.55;padding:0}
 .svg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:20px}
@@ -119,7 +120,7 @@ body = CSS + f'''<div class="hero"><img src="img/learn/banner-academy.webp" alt=
 <div class="bc"><a href="./">Головна</a> › Навчання</div></div></div>
 <main>
 <section id="simple" class="blk alt"><div class="wrap"><div class="eyebrow center">{e(S['eyebrow'])}</div><h2 class="st center">{e(S['title'])}</h2><p class="center" style="color:var(--muted);margin-top:12px;max-width:72ch;margin-inline:auto">{e(S['lead'])}</p>
-<div class="chain">{chain}</div><div class="terms">{terms}</div>
+<div class="chain">{chain}</div><div class="ctl rv"><b>{e(S['controller']['title'])}</b><p>{e(S['controller']['text'])}</p></div><div class="terms">{terms}</div>
 <h3 class="center" style="font-weight:500;font-size:24px;margin-top:64px">{e(S['videos_title'])}</h3><div class="svg">{vids}</div>
 <p class="center" style="margin-top:28px"><a class="btn" href="{e(S['playlist'])}"{EXT}>Усі відео серії на YouTube</a></p><p class="center" style="color:var(--muted);font-size:14px;margin-top:14px">Джерело відео: Milesight. Українська озвучка: ARVIOM Engineering.</p></div></section>
 <section id="who" class="blk"><div class="wrap"><h2 class="st center">Для кого це навчання</h2><div class="ben">{aud}</div></div></section>

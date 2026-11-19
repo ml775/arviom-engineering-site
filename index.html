@@ -204,10 +204,13 @@ nav.main a{color:var(--text)}nav.main a:hover{color:var(--blue)}
 .tr a{margin-top:auto;font-weight:400}
 
 /* team + logos */
-.team{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:16px;margin-top:40px}
+.team{display:flex;flex-wrap:wrap;justify-content:center;gap:36px 24px;margin-top:40px}
+.team .person{flex:0 0 calc((100% - 96px)/5);min-width:0}
 .person{text-align:center;font-size:14px;color:var(--muted)}
-.person .ph{aspect-ratio:1;border-radius:50%;background:var(--tile);display:flex;align-items:center;justify-content:center;font-size:30px;color:#9fb0c1;margin:0 auto 12px;max-width:120px}
-.person b{display:block;font-weight:400;color:var(--ink);font-size:15px}
+.person .ph{aspect-ratio:1;border-radius:50%;background:var(--tile);display:flex;align-items:center;justify-content:center;font-size:30px;color:#9fb0c1;margin:0 auto 12px;max-width:132px}
+.person b{display:block;font-weight:400;color:var(--ink);font-size:15px;line-height:1.3}
+.person em{display:block;font-style:normal;color:var(--blue);font-size:13.5px;margin-top:4px}
+.person span{display:block;color:var(--muted);font-size:13px;line-height:1.4;margin-top:6px}
 .logos{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
 .logos .lb{font-size:14px;color:var(--muted);margin-right:10px}
 .logos .ls{height:54px;min-width:140px;padding:0 20px;border:1px solid var(--line);border-radius:6px;display:flex;align-items:center;justify-content:center;gap:10px;color:var(--text);font-size:15px;white-space:nowrap}
@@ -245,7 +248,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 0 28p
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.slide,.slide .tx>*{transition:none}.hnav button.on i{animation:none;width:100%}}
 
-@media (max-width:1100px){nav.main{display:none}.track{grid-auto-columns:calc((100% - 20px)/2)}.team{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:1100px){nav.main{display:none}.track{grid-auto-columns:calc((100% - 20px)/2)}.team .person{flex-basis:calc((100% - 48px)/3)}}
 @media (max-width:900px){
   section{padding-block:64px}
   .phead,.devh,.ctg{grid-template-columns:1fr;gap:16px}
@@ -265,7 +268,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 0 28p
   .sc{grid-template-columns:1fr}
   .track{grid-auto-columns:82%}
   form{grid-template-columns:1fr}
-  .team{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .team .person{flex-basis:calc((100% - 24px)/2)}
   .ucimg ul{left:16px;right:16px;top:16px}
 }
 
@@ -511,13 +514,15 @@ claude mcp add arviom-kb \
 
       <div class="center" style="margin-top:96px"><div class="eyebrow">Команда</div><h2 class="h2">Хто доводить систему до роботи</h2></div>
       <div class="team">
-        <div class="person"><div class="ph"><img src="img/team/maksym.webp" alt=""></div><b>Максим</b>Напрям IoT</div>
-        <div class="person"><div class="ph">В</div><b>Володимир</b>Продажі</div>
-        <div class="person"><div class="ph">М</div><b>Михайло</b>Техпідтримка</div>
-        <div class="person"><div class="ph">О</div><b>Олександр</b>Розробка</div>
-        <div class="person"><div class="ph">О</div><b>Олег</b>Розробка</div>
-        <div class="person"><div class="ph">П</div><b>Павло Данилюк</b>SEO</div>
-        <div class="person"><div class="ph">С</div><b>Сервісний відділ</b>Ремонт і гарантія</div>
+        <div class="person"><div class="ph"><img src="img/team/danyliuk.webp" alt=""></div><b>Павло Данилюк</b><em>Директор</em><span>Стратегія та цифрове просування</span></div>
+        <div class="person"><div class="ph"><img src="img/team/lishchuk.webp" alt=""></div><b>Максим Ліщук</b><em>Фахівець з IoT</em><span>LoRaWAN, енергомоніторинг</span></div>
+        <div class="person"><div class="ph"><img src="img/team/pavlenok.webp" alt=""></div><b>Володимир Павленок</b><em>Рішення та продажі</em><span>Підбір обладнання під об&#x27;єкт</span></div>
+        <div class="person"><div class="ph"><img src="img/team/konotopskyi.webp" alt=""></div><b>Дмитро Конотопський</b><em>Рішення та продажі</em><span>Підбір обладнання під об&#x27;єкт</span></div>
+        <div class="person"><div class="ph"><img src="img/team/fastov.webp" alt=""></div><b>Ігор Фастов</b><em>Рішення та продажі</em><span>Підбір обладнання під об&#x27;єкт</span></div>
+        <div class="person"><div class="ph"><img src="img/team/matviienko.webp" alt=""></div><b>Михайло Матвієнко</b><em>Технічний лідер</em><span>Підтримка, розробка, навчання</span></div>
+        <div class="person"><div class="ph"><img src="img/team/blyzniuk.webp" alt=""></div><b>Олександр Близнюк</b><em>Інженер-розробник</em><span>Програмування та інтеграції</span></div>
+        <div class="person"><div class="ph"><img src="img/team/kovalevskyi.webp" alt=""></div><b>Олег Ковалевський</b><em>Програміст</em><span>Розробка</span></div>
+        <div class="person"><div class="ph"><img src="img/team/zviialov.webp" alt=""></div><b>Андрій Звʼялов</b><em>Сервісний відділ</em><span>Ремонт і гарантія</span></div>
       </div>
       <div class="logos" aria-label="Об&#x27;єкти, де працює наше обладнання"><span class="lb">Об&#x27;єкти, де працює наше обладнання</span><div class="ls"><img src="img/clients/mhp.png" alt="МХП"></div><div class="ls tx"><img src="img/clients/water-km.png" alt="Хмельницькводоканал"> <span>Хмельницькводоканал</span></div><div class="ls"><img src="img/clients/veselka.png" alt="Мережа клінік «Веселка»"></div><div class="ls"><img src="img/clients/slav-shpalery.svg" alt="Слов&#x27;янські шпалери"></div></div>
     </div>

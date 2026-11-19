@@ -126,39 +126,58 @@
   ],
   "team": [
     {
-      "name": "Максим",
-      "role": "Напрям IoT",
-      "photo": "img/team/maksym.webp"
-    },
-    {
-      "name": "Володимир",
-      "role": "Продажі",
-      "photo": ""
-    },
-    {
-      "name": "Михайло",
-      "role": "Техпідтримка",
-      "photo": ""
-    },
-    {
-      "name": "Олександр",
-      "role": "Розробка",
-      "photo": ""
-    },
-    {
-      "name": "Олег",
-      "role": "Розробка",
-      "photo": ""
-    },
-    {
       "name": "Павло Данилюк",
-      "role": "SEO",
-      "photo": ""
+      "role": "Директор",
+      "note": "Стратегія та цифрове просування",
+      "photo": "img/team/danyliuk.webp"
     },
     {
-      "name": "Сервісний відділ",
-      "role": "Ремонт і гарантія",
-      "photo": ""
+      "name": "Максим Ліщук",
+      "role": "Фахівець з IoT",
+      "note": "LoRaWAN, енергомоніторинг",
+      "photo": "img/team/lishchuk.webp"
+    },
+    {
+      "name": "Володимир Павленок",
+      "role": "Рішення та продажі",
+      "note": "Підбір обладнання під об'єкт",
+      "photo": "img/team/pavlenok.webp"
+    },
+    {
+      "name": "Дмитро Конотопський",
+      "role": "Рішення та продажі",
+      "note": "Підбір обладнання під об'єкт",
+      "photo": "img/team/konotopskyi.webp"
+    },
+    {
+      "name": "Ігор Фастов",
+      "role": "Рішення та продажі",
+      "note": "Підбір обладнання під об'єкт",
+      "photo": "img/team/fastov.webp"
+    },
+    {
+      "name": "Михайло Матвієнко",
+      "role": "Технічний лідер",
+      "note": "Підтримка, розробка, навчання",
+      "photo": "img/team/matviienko.webp"
+    },
+    {
+      "name": "Олександр Близнюк",
+      "role": "Інженер-розробник",
+      "note": "Програмування та інтеграції",
+      "photo": "img/team/blyzniuk.webp"
+    },
+    {
+      "name": "Олег Ковалевський",
+      "role": "Програміст",
+      "note": "Розробка",
+      "photo": "img/team/kovalevskyi.webp"
+    },
+    {
+      "name": "Андрій Звʼялов",
+      "role": "Сервісний відділ",
+      "note": "Ремонт і гарантія",
+      "photo": "img/team/zviialov.webp"
     }
   ],
   "logos": {

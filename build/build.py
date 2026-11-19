@@ -39,7 +39,8 @@ def team(items):
     rows = []
     for p in items:
         ph = f'<img src="{e(p["photo"])}" alt="">' if p.get('photo') else e(p['name'][:1])
-        rows.append(f'        <div class="person"><div class="ph">{ph}</div><b>{e(p["name"])}</b>{e(p["role"])}</div>')
+        note = f'<span>{e(p["note"])}</span>' if p.get('note') else ''
+        rows.append(f'        <div class="person"><div class="ph">{ph}</div><b>{e(p["name"])}</b><em>{e(p["role"])}</em>{note}</div>')
     return '<div class="team">\n' + '\n'.join(rows) + '\n      </div>'
 
 def logos(d):

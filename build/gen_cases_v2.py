@@ -39,6 +39,7 @@ V2CSS = '''<style>
 .v2-prose b{font-weight:500;color:var(--ink)}
 .v2-ph{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:18px;margin-top:30px}
 .v2-ph img{width:100%;height:280px;object-fit:cover;border-radius:6px}
+.v2-ph figure{margin:0}.v2-ph figcaption{font-size:14px;line-height:1.4;color:#545e6b;margin-top:10px}
 .v2-sh{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:18px;margin-top:22px}
 .v2-sh img{width:100%;height:auto;max-height:300px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px}
 .v2-res{background:linear-gradient(160deg,#0a2650 0%,#0b3f8f 100%);color:#fff}
@@ -90,7 +91,7 @@ def case_page_v2(c, out=None):
     imgs = [i for x in sols for i in (x.get('imgs') or []) if i != P.get('solution_img') and usable(i)]
     seen = []; [seen.append(i) for i in imgs if i not in seen]
     photos = [i for i in seen if not is_shot(i)][:4]; shots = [i for i in seen if is_shot(i)][:3]
-    ph = f'<div class="v2-ph" style="--n:{len(photos)}">' + ''.join(f'<img src="{e(i)}" alt="" loading="lazy">' for i in photos) + '</div>' if photos else ''
+    ph = f'<div class="v2-ph" style="--n:{len(photos)}">' + ''.join((f'<figure><img src="{e(i)}" alt="" loading="lazy"><figcaption>{e(P["captions"][i])}</figcaption></figure>' if i in (P.get('captions') or {}) else f'<img src="{e(i)}" alt="" loading="lazy">') for i in photos) + '</div>' if photos else ''
     sh = f'<div class="v2-sh" style="--n:{len(shots)}">' + ''.join(f'<img src="{e(i)}" alt="" loading="lazy">' for i in shots) + '</div>' if shots else ''
     diag = f'<figure class="v2-diag"><img src="{e(P["solution_img"])}" alt="Схема рішення" loading="lazy"><figcaption>{e(P.get("solution_caption", ""))}</figcaption></figure>' if P.get('solution_img') else ''
     R = P['results']

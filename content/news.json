@@ -4,6 +4,13 @@
  "count": 4,
  "items": [
   {
+   "date": "2026-11-23",
+   "tag": "Впровадження",
+   "title": "Три нових впровадження з живим демо: офіс, будинок і село на батареї",
+   "image": "img/cases/village-ua/card.webp",
+   "link": "vprovadzhennia.html"
+  },
+  {
    "date": "2026-11-12",
    "tag": "Подкаст",
    "title": "LoRaWAN на практиці: 8 випусків українською",

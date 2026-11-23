@@ -153,7 +153,8 @@
      "img/cases/energy-audit-ua/cth01-after.webp": "CTH01 і токові клещі на вводі щита",
      "img/cases/energy-audit-ua/ct-wireless.webp": "Бездротові датчики струму в щитку, кабелі між щитами не потрібні",
      "img/cases/energy-audit-ua/inverter-wide.webp": "Інвертор Deye: клеми CT і порт RS485"
-    }
+    },
+    "slide": "img/cases/energy-audit-ua/slide.webp"
    }
   },
   {

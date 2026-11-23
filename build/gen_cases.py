@@ -249,7 +249,7 @@ def build():
         c['_ind'] = industries(c['obj'])
     feat = sorted([c for c in items if c.get('featured')], key=lambda c: c['featured'])
     hero = next((c for c in feat if c.get('page')), feat[0])
-    hero_img = hero['page']['hero'] if hero.get('page') else hero['image']
+    hero_img = (hero['page'].get('slide') or hero['page']['hero']) if hero.get('page') else hero['image']
     ext = lambda c: '' if not c['link'].startswith('http') else ' target="_blank" rel="noopener"'
     nb = lambda t: re.sub(r'(\d) (\d)', '\\1\u00a0\\2', t)
     side = ''.join(f'<a href="{e(c["link"])}"{ext(c)}><b>{e(nb(c["title"]))}</b><small>{e(DIRS[c["dir"]])} · {e(c["country"])}</small><img src="{e(c["image"])}" alt="" loading="lazy"></a>' for c in ([c for c in feat if c is not hero] + [c for c in items if c.get('page') and c not in feat])[:6] if "shot-" not in c["image"])

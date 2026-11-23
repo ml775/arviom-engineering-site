@@ -42,6 +42,7 @@ def article(x):
     for b in x['body']:
         if 'p' in b: out.append(f'<p>{e(b["p"])}</p>')
         elif 'h' in b: out.append(f'<h2>{e(b["h"])}</h2>')
+        elif 'a' in b: out.append(f'<p><a class="btn ghost" href="{e(b["a"]["href"])}">{e(b["a"]["t"])} →</a></p>')
         elif 'ul' in b: out.append('<ul>' + ''.join(f'<li>{e(i)}</li>' for i in b['ul']) + '</ul>')
         elif 'img' in b: out.append(f'<figure><img src="{e(b["img"])}" alt="" loading="lazy">' + (f'<figcaption>{e(b["cap"])}</figcaption>' if b.get('cap') else '') + '</figure>')
     cat = f'<a class="btn ghost" href="{e(x["catalog"]["href"])}">{e(x["catalog"]["t"])}</a>' if x.get('catalog') else ''

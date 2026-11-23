@@ -53,6 +53,7 @@ V2CSS = '''<style>
 .v2-res figure img{display:block;width:100%;border-radius:4px}
 .v2-res figcaption{padding:10px 6px 2px;font-size:14px;color:var(--muted)}
 .v2-res .note{margin-top:16px;font-size:14px;color:rgba(255,255,255,.8)}
+.v2-res .demo{margin:22px 0 0}.v2-res .demo a{display:inline-block;color:#fff;font-size:16px;padding:12px 22px;border:1px solid rgba(255,255,255,.55);border-radius:999px;text-decoration:none}.v2-res .demo a:hover{background:rgba(255,255,255,.12)}
 .v2-pt{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);border-radius:8px;overflow:hidden;min-height:300px}
 .v2-pt .l{background:#e9edf2;display:flex;align-items:center;justify-content:center;padding:40px}
 .v2-pt .l span{background:#fff;border-radius:8px;padding:34px 42px;font-weight:500;font-size:26px;letter-spacing:.03em;color:var(--ink);text-align:center}
@@ -113,7 +114,7 @@ def case_page_v2(c, out=None):
 <section id="background" class="cp-sec"><div class="wrap"><h2 class="h2l">Передумови</h2><div class="v2-bg"><div class="card rv">{''.join(f'<p>{e(x)}</p>' for x in bg['text'])}</div><img src="{e(bg['img'] if usable(bg.get('img')) else P['hero'])}" alt="" loading="lazy"></div></div></section>
 <section id="challenges" class="cp-sec" style="background:var(--bg2)"><div class="wrap"><h2 class="h2l">Виклики</h2><div class="v2-ch" style="--n:{min(len(P['challenges']), 3)}">{ch}</div></div></section>
 <section id="solution" class="cp-sec"><div class="wrap"><h2 class="h2l" style="text-align:center">Рішення</h2>{diag}<div class="v2-prose">{prose}</div>{ph}{sh}</div></section>
-<section id="results" class="cp-sec v2-res"><div class="wrap"><h2 class="h2l">Результат</h2><div class="g">{res}</div>{rimg}{f'<p class="note">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
+<section id="results" class="cp-sec v2-res"><div class="wrap"><h2 class="h2l">Результат</h2><div class="g">{res}</div>{rimg}{f'<p class="demo"><a href="{e(P["demo"])}" target="_blank" rel="noopener">{e(P.get("demo_label", "Відкрити живе демо"))} →</a></p>' if P.get('demo') else ''}{f'<p class="note">{e(R["note"])}</p>' if R.get('note') else ''}</div></section>
 {PART}
 <section class="blk" style="padding-block:24px 72px"><div class="wrap"><div class="cta"><div><h2>Схожа задача на вашому об'єкті?</h2><p>Підберемо обладнання й знайдемо партнера-інтегратора у вашому регіоні.</p></div><a class="btn w" href="./#contact">Обговорити проєкт</a></div></div></section>
 </main>{SPY}"""

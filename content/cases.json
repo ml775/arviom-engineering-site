@@ -503,7 +503,7 @@
     },
     "demo": "https://demo.arviom.com.ua/obj-1/",
     "demo_label": "Відкрити живе демо",
-    "src_note": "Впровадження: АМ інтегратор. Дашборд і дані: ARVIOM Engineering. Фото в блоці «Передумови»: ілюстрація, джерело Milesight.",
+    "src_note": "Впровадження: АМ інтегратор. Дашборд і дані: ARVIOM Engineering. Фото в шапці й у блоці «Передумови»: ілюстрація, джерело Milesight.",
     "solution_img": "img/cases/office-ua/scheme.webp",
     "solution_caption": "Схема: датчики й інвертор через LoRaWAN і шлюз UG65 до сервера, керування кондиціонерами."
    }

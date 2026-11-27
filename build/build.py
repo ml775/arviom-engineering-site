@@ -88,4 +88,5 @@ if __name__ == '__main__':
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_learn.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_agents.py')], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, 'build/seo.py')], check=True)  # завжди останнім
+    subprocess.run([sys.executable, os.path.join(ROOT, 'build/gen_search.py')], check=True)  # пошук: індекс після seo (потрібні описи)
     print('ok: index.html, catalog.html, products.html')

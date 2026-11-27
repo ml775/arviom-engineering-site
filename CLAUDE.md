@@ -10,3 +10,4 @@
 - Новини: `content/news.json` (date, tag, title, image, link). Головна показує 4 останні, `news.html` — усі.
 - Форма на головній (#contact) шле POST JSON на n8n-вебхук https://n8n.arviom.com.ua/webhook/eng-lead (workflow «ENG site — заявка з форми», id 1VSgERxGGnzjptdi) → Telegram Максиму. Поле website — honeypot.
 - SEO/favicon: `build/seo.py` (останній крок build) додає в усі сторінки robots, description, canonical, favicon, Open Graph. Налаштування і перевизначення для окремих сторінок — `content/site.json` (url, noindex, pages). При переїзді на бойовий домен: змінити `url`, поставити `noindex: false`, зібрати.
+- Пошук по сайту (лупа в шапці, клавіші `/` і Ctrl+K): `build/gen_search.py` (крок build після seo) збирає `search-index.json` з усіх сторінок і моделей (`const MODELS` у `s-*.html`) та підключає `search.css` / `search.js` у кожну сторінку. Нові типи сторінок додавати в `KIND` у gen_search.py.

@@ -1,0 +1,23 @@
+.sq-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:99px;border:1.5px solid #0b5cd6;background:#fff;color:#0b5cd6;cursor:pointer;padding:0;flex:none;align-self:center}
+.sq-btn:hover{background:#0b5cd6;color:#fff}
+.sq-btn svg{width:16px;height:16px}
+.sq-ov{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:9999;display:none;font-family:'Inter Tight',system-ui,sans-serif}
+.sq-ov.on{display:block}
+.sq-box{max-width:720px;margin:9vh auto 0;background:#fff;border-radius:14px;box-shadow:0 24px 60px rgba(15,23,42,.3);overflow:hidden;width:calc(100% - 32px)}
+.sq-in{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid #e5eaf2;color:#64748b}
+.sq-in svg{width:20px;height:20px;flex:none}
+.sq-in input{flex:1;border:0;outline:0;font:400 19px 'Inter Tight',system-ui,sans-serif;color:#0f172a;background:none;min-width:0}
+.sq-in kbd{font:400 12px 'Inter Tight',sans-serif;border:1px solid #cbd5e1;border-radius:6px;padding:2px 7px;color:#64748b;cursor:pointer}
+.sq-res{max-height:62vh;overflow:auto;padding:6px}
+.sq-res a{display:flex;align-items:center;gap:14px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#0f172a}
+.sq-res a.cur,.sq-res a:hover{background:#eef4ff}
+.sq-res .im{width:46px;height:46px;border-radius:8px;background:#f3f6fb;flex:none;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#0b5cd6;font-size:18px}
+.sq-res .im img{max-width:100%;max-height:100%;object-fit:contain}
+.sq-res .tx{min-width:0;flex:1}
+.sq-res b{display:block;font-weight:500;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sq-res span{display:block;font-size:13.5px;color:#64748b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sq-res em{font-style:normal;font-size:12px;color:#0b5cd6;background:#eef4ff;border-radius:99px;padding:3px 10px;flex:none}
+.sq-res a.cur em{background:#fff}
+.sq-hint{padding:22px 20px;color:#64748b;font-size:15px}
+.sq-hint i{font-style:normal;color:#0b5cd6;cursor:pointer;margin-right:12px}
+@media(max-width:640px){.sq-box{margin-top:16px}.sq-res em{display:none}.sq-in kbd{display:none}}
